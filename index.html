@@ -4,875 +4,955 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>HBC Bazadais — Handball Club</title>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
 <style>
-:root {
-  --bleu: #0F1E41;
-  --rose: #EA3B79;
-  --rose-pale: #F8D8E1;
-  --blanc: #FFFCED;
-  --gris: #8a8a8a;
-  --transition: .4s cubic-bezier(.4,0,.2,1);
+:root{
+  --bleu:#0F1E41;
+  --rose:#EA3B79;
+  --rose-pale:#F8D8E1;
+  --blanc:#FFFCED;
+  --dark:#07101f;
+  --card:#0e1d35;
+  --border:rgba(234,59,121,.15);
+  --t:.4s cubic-bezier(.4,0,.2,1);
 }
-
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:'Montserrat',sans-serif;background:#080f1e;color:#fff;overflow-x:hidden}
+body{font-family:'DM Sans',sans-serif;background:var(--dark);color:var(--blanc);overflow-x:hidden;cursor:none}
 
-/* ─── LOADER ─── */
-#loader{position:fixed;inset:0;background:#080f1e;z-index:9999;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:1rem;transition:opacity .6s,visibility .6s}
-#loader.hide{opacity:0;visibility:hidden}
-.loader-logo{font-family:'Bebas Neue',sans-serif;font-size:4rem;color:var(--blanc);letter-spacing:.2em;animation:pulse 1.2s ease-in-out infinite}
-.loader-bar{width:200px;height:3px;background:rgba(255,255,255,.1);border-radius:99px;overflow:hidden}
-.loader-fill{height:100%;background:linear-gradient(90deg,var(--rose),var(--rose-pale));border-radius:99px;animation:load 1.8s ease forwards}
-@keyframes load{from{width:0}to{width:100%}}
-@keyframes pulse{0%,100%{opacity:.4}50%{opacity:1}}
+/* ── CURSOR ── */
+#cur{position:fixed;width:10px;height:10px;background:var(--rose);border-radius:50%;pointer-events:none;z-index:99999;transition:transform .15s,opacity .3s;mix-blend-mode:screen}
+#cur2{position:fixed;width:36px;height:36px;border:1.5px solid rgba(234,59,121,.5);border-radius:50%;pointer-events:none;z-index:99998;transition:transform .35s cubic-bezier(.4,0,.2,1),width .3s,height .3s}
+body:hover #cur{opacity:1}
 
-/* ─── NAV ─── */
-nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.2rem 4%;display:flex;align-items:center;justify-content:space-between;transition:background var(--transition),backdrop-filter var(--transition)}
-nav.scrolled{background:rgba(8,15,30,.92);backdrop-filter:blur(18px);border-bottom:1px solid rgba(234,59,121,.15)}
-.nav-logo{font-family:'Bebas Neue',sans-serif;font-size:1.8rem;color:var(--blanc);letter-spacing:.1em;text-decoration:none;display:flex;align-items:center;gap:.5rem}
-.nav-logo span{color:var(--rose)}
-.nav-links{display:flex;gap:2rem;list-style:none;align-items:center}
-.nav-links a{color:rgba(255,252,237,.7);text-decoration:none;font-size:.8rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;transition:color var(--transition);position:relative}
-.nav-links a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:2px;background:var(--rose);transition:width var(--transition)}
-.nav-links a:hover{color:var(--blanc)}
-.nav-links a:hover::after{width:100%}
-.nav-cta{background:var(--rose);color:#fff;padding:.6rem 1.4rem;border-radius:4px;font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;transition:transform var(--transition),box-shadow var(--transition)}
-.nav-cta:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(234,59,121,.4)}
-.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:.4rem}
-.hamburger span{display:block;width:24px;height:2px;background:var(--blanc);border-radius:2px;transition:transform var(--transition),opacity var(--transition)}
+/* ── LOADER ── */
+#loader{position:fixed;inset:0;background:var(--dark);z-index:9999;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2rem}
+#loader.out{animation:loaderOut .7s ease forwards}
+@keyframes loaderOut{to{opacity:0;pointer-events:none;visibility:hidden}}
+.loader-txt{font-family:'Bebas Neue',sans-serif;font-size:clamp(3rem,8vw,5rem);color:var(--blanc);letter-spacing:.3em;overflow:hidden}
+.loader-txt span{display:inline-block;animation:slideUp .6s cubic-bezier(.4,0,.2,1) both}
+.loader-txt span:nth-child(1){animation-delay:.05s}
+.loader-txt span:nth-child(2){animation-delay:.1s}
+.loader-txt span:nth-child(3){animation-delay:.15s}
+.loader-txt span:nth-child(4){animation-delay:.2s;color:var(--rose)}
+@keyframes slideUp{from{transform:translateY(100%);opacity:0}to{transform:translateY(0);opacity:1}}
+.loader-line{width:180px;height:1px;background:rgba(255,252,237,.1);position:relative;overflow:hidden}
+.loader-line::after{content:'';position:absolute;inset:0;background:var(--rose);animation:fill 1.6s ease forwards}
+@keyframes fill{from{transform:scaleX(0);transform-origin:left}to{transform:scaleX(1);transform-origin:left}}
 
-/* Dropdown équipes */
-.has-dropdown{position:relative}
-.dropdown{position:absolute;top:calc(100% + 1rem);left:50%;transform:translateX(-50%) translateY(-8px);background:rgba(8,15,30,.97);border:1px solid rgba(234,59,121,.2);border-radius:8px;padding:.8rem;display:grid;grid-template-columns:1fr 1fr;gap:.3rem;min-width:300px;opacity:0;visibility:hidden;transition:all var(--transition);backdrop-filter:blur(20px)}
-.has-dropdown:hover .dropdown{opacity:1;visibility:visible;transform:translateX(-50%) translateY(0)}
-.dropdown a{color:rgba(255,252,237,.7);font-size:.72rem;padding:.45rem .7rem;border-radius:4px;display:block;letter-spacing:.05em;white-space:nowrap;transition:background var(--transition),color var(--transition)}
-.dropdown a:hover{background:rgba(234,59,121,.15);color:var(--rose)}
-.dropdown a::after{display:none}
+/* ── NAV ── */
+#nav{position:fixed;inset:0 0 auto;z-index:200;padding:1.4rem 5%;display:flex;align-items:center;justify-content:space-between;transition:background var(--t),backdrop-filter var(--t)}
+#nav.solid{background:rgba(7,16,31,.9);backdrop-filter:blur(24px);border-bottom:1px solid var(--border)}
+.nav-logo{font-family:'Bebas Neue',sans-serif;font-size:1.6rem;letter-spacing:.15em;text-decoration:none;color:var(--blanc);display:flex;align-items:center;gap:.3rem}
+.nav-logo em{color:var(--rose);font-style:normal}
+.nav-links{display:flex;align-items:center;gap:2.2rem;list-style:none}
+.nav-links>li>a{color:rgba(255,252,237,.6);font-size:.78rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;transition:color var(--t);position:relative;padding-bottom:2px}
+.nav-links>li>a::after{content:'';position:absolute;bottom:0;left:0;width:0;height:1px;background:var(--rose);transition:width var(--t)}
+.nav-links>li>a:hover{color:var(--blanc)}
+.nav-links>li>a:hover::after{width:100%}
+.nav-cta-link{background:var(--rose);color:#fff !important;padding:.55rem 1.3rem !important;border-radius:3px;font-weight:600 !important}
+.nav-cta-link::after{display:none !important}
+.nav-cta-link:hover{opacity:.9}
+/* Dropdown */
+.ddp{position:relative}
+.ddp-menu{position:absolute;top:calc(100% + 1.2rem);left:50%;transform:translateX(-50%) translateY(-6px);background:rgba(7,16,31,.97);border:1px solid var(--border);border-radius:10px;padding:.7rem;min-width:280px;display:grid;grid-template-columns:1fr 1fr;gap:3px;opacity:0;visibility:hidden;transition:all var(--t);backdrop-filter:blur(24px)}
+.ddp:hover .ddp-menu{opacity:1;visibility:visible;transform:translateX(-50%) translateY(0)}
+.ddp-menu a{font-size:.73rem;color:rgba(255,252,237,.65);padding:.4rem .65rem;border-radius:5px;text-decoration:none;display:block;transition:background var(--t),color var(--t);white-space:nowrap}
+.ddp-menu a:hover{background:rgba(234,59,121,.12);color:var(--rose)}
+.ddp-menu a::after{display:none}
+/* Hamburger */
+.hbg{display:none;flex-direction:column;gap:5px;cursor:pointer;z-index:201;padding:.3rem}
+.hbg span{display:block;width:22px;height:1.5px;background:var(--blanc);transition:transform var(--t),opacity var(--t)}
+.hbg.open span:nth-child(1){transform:rotate(45deg) translate(4.5px,4.5px)}
+.hbg.open span:nth-child(2){opacity:0}
+.hbg.open span:nth-child(3){transform:rotate(-45deg) translate(4.5px,-4.5px)}
+/* Mobile nav */
+#mobileNav{display:none;position:fixed;inset:0;background:rgba(7,16,31,.98);z-index:199;flex-direction:column;align-items:center;justify-content:center;gap:1.5rem}
+#mobileNav.open{display:flex}
+#mobileNav a{font-family:'Bebas Neue',sans-serif;font-size:2.5rem;letter-spacing:.1em;color:var(--blanc);text-decoration:none;transition:color var(--t)}
+#mobileNav a:hover{color:var(--rose)}
 
-/* ─── HERO ─── */
-#hero{min-height:100vh;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;padding:8rem 4% 4rem}
-.hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 60% 40%,rgba(234,59,121,.12) 0%,transparent 60%),radial-gradient(ellipse 60% 80% at 10% 80%,rgba(15,30,65,.8) 0%,transparent 70%),linear-gradient(135deg,#080f1e 0%,#0F1E41 100%)}
-.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(234,59,121,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(234,59,121,.04) 1px,transparent 1px);background-size:60px 60px;mask-image:radial-gradient(ellipse at center,black 40%,transparent 80%)}
-.hero-glow{position:absolute;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(234,59,121,.15) 0%,transparent 70%);right:-100px;top:50%;transform:translateY(-50%);animation:float 6s ease-in-out infinite}
-@keyframes float{0%,100%{transform:translateY(-50%) scale(1)}50%{transform:translateY(-55%) scale(1.05)}}
-.hero-content{position:relative;z-index:2;max-width:700px}
-.hero-badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(234,59,121,.15);border:1px solid rgba(234,59,121,.3);color:var(--rose);padding:.4rem 1rem;border-radius:99px;font-size:.72rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;margin-bottom:1.5rem;animation:fadeUp .8s ease .2s both}
-.hero-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(4rem,10vw,8rem);line-height:.95;color:var(--blanc);margin-bottom:1.5rem;animation:fadeUp .8s ease .4s both}
-.hero-title span{color:var(--rose);display:block}
-.hero-subtitle{font-size:1rem;color:rgba(255,252,237,.6);line-height:1.7;max-width:480px;margin-bottom:2.5rem;font-weight:400;animation:fadeUp .8s ease .6s both}
-.hero-btns{display:flex;gap:1rem;flex-wrap:wrap;animation:fadeUp .8s ease .8s both}
-.btn-primary{background:var(--rose);color:#fff;padding:.9rem 2rem;border-radius:4px;font-size:.85rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;transition:transform var(--transition),box-shadow var(--transition);display:inline-flex;align-items:center;gap:.5rem}
-.btn-primary:hover{transform:translateY(-3px);box-shadow:0 12px 32px rgba(234,59,121,.5)}
-.btn-outline{border:1px solid rgba(255,252,237,.25);color:var(--blanc);padding:.9rem 2rem;border-radius:4px;font-size:.85rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;transition:all var(--transition);display:inline-flex;align-items:center;gap:.5rem}
-.btn-outline:hover{border-color:var(--rose);color:var(--rose);background:rgba(234,59,121,.05)}
-.hero-stats{display:flex;gap:3rem;margin-top:4rem;animation:fadeUp .8s ease 1s both}
-.stat-item{text-align:left}
-.stat-num{font-family:'Bebas Neue',sans-serif;font-size:2.5rem;color:var(--blanc);line-height:1}
-.stat-num span{color:var(--rose)}
-.stat-label{font-size:.7rem;color:rgba(255,252,237,.5);letter-spacing:.1em;text-transform:uppercase;margin-top:.2rem}
-@keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+/* ── SECTIONS ── */
+.page{display:none}
+.page.active{display:block}
+#pg-home{display:block}
 
-/* ─── SECTIONS COMMUNES ─── */
-.section{padding:6rem 4%;display:none}
-.section.active{display:block}
-#home{display:block}
-.section-tag{display:inline-block;color:var(--rose);font-size:.72rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;margin-bottom:.8rem}
-.section-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(2.5rem,5vw,4rem);color:var(--blanc);line-height:1;margin-bottom:1rem}
-.section-sub{color:rgba(255,252,237,.5);font-size:.95rem;line-height:1.7;max-width:500px}
+/* ── HERO ── */
+#hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;padding:9rem 5% 4rem}
+.hero-noise{position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");opacity:.4}
+.hero-grad{position:absolute;inset:0;background:radial-gradient(ellipse 70% 80% at 75% 50%,rgba(234,59,121,.1) 0%,transparent 65%),linear-gradient(160deg,var(--dark) 0%,var(--bleu) 50%,var(--dark) 100%)}
+.hero-lines{position:absolute;inset:0;background-image:linear-gradient(rgba(234,59,121,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(234,59,121,.03) 1px,transparent 1px);background-size:80px 80px}
+.hero-orb{position:absolute;right:-5%;top:10%;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle at 40% 40%,rgba(234,59,121,.18),transparent 65%);animation:orb 8s ease-in-out infinite}
+@keyframes orb{0%,100%{transform:scale(1) translate(0,0)}50%{transform:scale(1.06) translate(-20px,30px)}}
+.hero-ring{position:absolute;right:5%;top:15%;width:420px;height:420px;border-radius:50%;border:1px solid rgba(234,59,121,.12);animation:spin 40s linear infinite}
+.hero-ring2{position:absolute;right:12%;top:22%;width:280px;height:280px;border-radius:50%;border:1px solid rgba(234,59,121,.08);animation:spin 25s linear infinite reverse}
+@keyframes spin{to{transform:rotate(360deg)}}
+.hero-content{position:relative;z-index:2;max-width:680px}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:.6rem;margin-bottom:1.8rem;animation:fadeUp .9s ease .3s both}
+.hero-eyebrow span{width:32px;height:1px;background:var(--rose)}
+.hero-eyebrow p{font-size:.72rem;font-weight:600;letter-spacing:.2em;color:var(--rose);text-transform:uppercase}
+.hero-h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(4.5rem,11vw,9rem);line-height:.9;color:var(--blanc);margin-bottom:1.8rem;animation:fadeUp .9s ease .5s both}
+.hero-h1 em{color:var(--rose);font-style:normal;display:block}
+.hero-sub{font-size:1rem;color:rgba(255,252,237,.55);line-height:1.75;max-width:460px;margin-bottom:2.5rem;font-weight:300;animation:fadeUp .9s ease .7s both}
+.hero-actions{display:flex;gap:1rem;flex-wrap:wrap;animation:fadeUp .9s ease .9s both}
+.btn-p{display:inline-flex;align-items:center;gap:.6rem;background:var(--rose);color:#fff;padding:.85rem 2rem;border-radius:3px;font-size:.8rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;transition:all var(--t)}
+.btn-p:hover{transform:translateY(-3px);box-shadow:0 16px 40px rgba(234,59,121,.45)}
+.btn-o{display:inline-flex;align-items:center;gap:.6rem;border:1px solid rgba(255,252,237,.2);color:var(--blanc);padding:.85rem 2rem;border-radius:3px;font-size:.8rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;transition:all var(--t)}
+.btn-o:hover{border-color:var(--rose);color:var(--rose)}
+.hero-nums{display:flex;gap:3rem;margin-top:4.5rem;padding-top:3rem;border-top:1px solid rgba(255,252,237,.08);animation:fadeUp .9s ease 1.1s both}
+.num-item .n{font-family:'Bebas Neue',sans-serif;font-size:2.8rem;color:var(--blanc);line-height:1}
+.num-item .n b{color:var(--rose)}
+.num-item .l{font-size:.68rem;font-weight:500;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,252,237,.35);margin-top:.25rem}
+@keyframes fadeUp{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
 
-/* ─── À PROPOS (home) ─── */
-#about{background:linear-gradient(180deg,#080f1e 0%,#0a1220 100%);padding:6rem 4%}
-.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;max-width:1200px;margin:0 auto}
-.about-visual{position:relative}
-.about-card{background:linear-gradient(135deg,rgba(15,30,65,.8),rgba(234,59,121,.05));border:1px solid rgba(234,59,121,.2);border-radius:16px;padding:2.5rem;position:relative;overflow:hidden}
-.about-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--rose),transparent)}
-.about-icon{width:56px;height:56px;background:rgba(234,59,121,.15);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:1rem}
-.about-card h3{font-family:'Bebas Neue',sans-serif;font-size:1.8rem;color:var(--blanc);margin-bottom:.5rem}
-.about-card p{color:rgba(255,252,237,.6);font-size:.88rem;line-height:1.7}
-.about-cards-grid{display:grid;gap:1rem}
-.feature-list{list-style:none;display:flex;flex-direction:column;gap:1rem}
-.feature-list li{display:flex;align-items:flex-start;gap:1rem;color:rgba(255,252,237,.7);font-size:.9rem;line-height:1.6}
-.feature-list li::before{content:'';width:6px;height:6px;background:var(--rose);border-radius:50%;margin-top:.5rem;flex-shrink:0}
+/* ── ABOUT ── */
+#about-sec{padding:7rem 5%;background:var(--dark)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:center;max-width:1200px;margin:0 auto}
+.about-label{font-size:.72rem;font-weight:600;letter-spacing:.2em;color:var(--rose);text-transform:uppercase;margin-bottom:1rem}
+.about-h2{font-family:'Bebas Neue',sans-serif;font-size:clamp(2.8rem,5vw,4.5rem);line-height:1;color:var(--blanc);margin-bottom:1.5rem}
+.about-h2 em{color:var(--rose);font-style:normal}
+.about-body{font-size:.92rem;color:rgba(255,252,237,.55);line-height:1.8;margin-bottom:2rem;font-weight:300}
+.about-feats{list-style:none;display:flex;flex-direction:column;gap:.9rem}
+.about-feats li{display:flex;gap:1rem;align-items:flex-start;font-size:.87rem;color:rgba(255,252,237,.65);line-height:1.5}
+.about-feats li::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--rose);flex-shrink:0;margin-top:.55rem}
+.about-cards{display:flex;flex-direction:column;gap:1.2rem}
+.acard{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:2rem;position:relative;overflow:hidden;transition:border-color var(--t)}
+.acard:hover{border-color:rgba(234,59,121,.4)}
+.acard::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--rose),transparent)}
+.acard-icon{font-size:1.6rem;margin-bottom:.8rem}
+.acard h3{font-family:'Bebas Neue',sans-serif;font-size:1.5rem;color:var(--blanc);margin-bottom:.4rem}
+.acard p{font-size:.82rem;color:rgba(255,252,237,.5);line-height:1.6}
 
-/* ─── ACTUALITÉS ─── */
-#news-section{background:#080f1e}
-.news-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:1.5rem;margin-top:3rem}
-.news-card{background:rgba(15,30,65,.4);border:1px solid rgba(234,59,121,.1);border-radius:12px;overflow:hidden;cursor:pointer;transition:transform var(--transition),border-color var(--transition),box-shadow var(--transition)}
-.news-card:hover{transform:translateY(-6px);border-color:rgba(234,59,121,.4);box-shadow:0 20px 40px rgba(0,0,0,.4)}
-.news-img{height:200px;background:linear-gradient(135deg,var(--bleu),rgba(234,59,121,.3));display:flex;align-items:center;justify-content:center;font-size:3rem;position:relative;overflow:hidden}
-.news-img::after{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,transparent 50%,rgba(8,15,30,.8))}
-.news-tag{position:absolute;top:1rem;left:1rem;background:var(--rose);color:#fff;font-size:.65rem;font-weight:700;letter-spacing:.1em;padding:.3rem .7rem;border-radius:4px;text-transform:uppercase;z-index:1}
-.news-body{padding:1.5rem}
-.news-date{font-size:.72rem;color:var(--rose);font-weight:600;letter-spacing:.1em;text-transform:uppercase;margin-bottom:.5rem}
-.news-body h3{font-family:'Bebas Neue',sans-serif;font-size:1.4rem;color:var(--blanc);margin-bottom:.5rem;line-height:1.2}
-.news-body p{font-size:.83rem;color:rgba(255,252,237,.55);line-height:1.6}
-.ffhb-bloc{background:linear-gradient(135deg,rgba(15,30,65,.6),rgba(234,59,121,.05));border:1px dashed rgba(234,59,121,.3);border-radius:12px;padding:2rem;text-align:center;margin-top:2rem}
-.ffhb-bloc h4{font-family:'Bebas Neue',sans-serif;font-size:1.5rem;color:var(--blanc);margin-bottom:.5rem}
-.ffhb-bloc p{color:rgba(255,252,237,.4);font-size:.82rem}
-.soon-badge{display:inline-flex;align-items:center;gap:.4rem;background:rgba(234,59,121,.1);border:1px solid rgba(234,59,121,.2);color:var(--rose);font-size:.68rem;font-weight:700;letter-spacing:.15em;padding:.4rem .9rem;border-radius:99px;margin-bottom:1rem;text-transform:uppercase}
+/* ── MAP & HORAIRES ── */
+#map-sec{padding:7rem 5%;background:linear-gradient(180deg,var(--dark),#091628)}
+.sec-label{font-size:.72rem;font-weight:600;letter-spacing:.2em;color:var(--rose);text-transform:uppercase;margin-bottom:1rem}
+.sec-h2{font-family:'Bebas Neue',sans-serif;font-size:clamp(2.5rem,5vw,4rem);color:var(--blanc);margin-bottom:.5rem;line-height:1}
+.sec-sub{font-size:.9rem;color:rgba(255,252,237,.45);font-weight:300;margin-bottom:3rem}
+.map-frame{border-radius:14px;overflow:hidden;border:1px solid var(--border);margin-bottom:3rem}
+.map-frame iframe{width:100%;height:420px;border:none;display:block;filter:brightness(.8) saturate(.5) contrast(1.1) hue-rotate(185deg)}
+.horaires-table{width:100%;border-collapse:collapse}
+.horaires-table th{font-size:.68rem;font-weight:600;letter-spacing:.15em;color:var(--rose);text-transform:uppercase;padding:.8rem 1rem;text-align:left;border-bottom:1px solid rgba(234,59,121,.15);background:rgba(234,59,121,.05)}
+.horaires-table td{padding:.85rem 1rem;font-size:.83rem;color:rgba(255,252,237,.7);border-bottom:1px solid rgba(255,255,255,.04);vertical-align:top}
+.horaires-table tr:hover td{background:rgba(234,59,121,.04)}
+.horaires-table .team-col{font-weight:600;color:var(--blanc)}
+.tag-lieu{display:inline-block;font-size:.66rem;font-weight:600;letter-spacing:.08em;background:rgba(234,59,121,.12);color:var(--rose);padding:.2rem .6rem;border-radius:3px;margin-top:.3rem;text-transform:uppercase}
 
-/* ─── ÉQUIPES ─── */
-#teams-section{background:#080f1e}
-.teams-hub{margin-top:3rem}
-.teams-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:1.2rem}
-.team-card{background:linear-gradient(135deg,rgba(15,30,65,.6),rgba(8,15,30,.8));border:1px solid rgba(234,59,121,.12);border-radius:12px;padding:1.8rem;cursor:pointer;transition:all var(--transition);position:relative;overflow:hidden}
-.team-card::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(234,59,121,.08),transparent);opacity:0;transition:opacity var(--transition)}
-.team-card:hover{border-color:rgba(234,59,121,.4);transform:translateY(-4px);box-shadow:0 16px 40px rgba(0,0,0,.4)}
-.team-card:hover::before{opacity:1}
-.team-cat{font-size:.68rem;font-weight:700;letter-spacing:.15em;color:var(--rose);text-transform:uppercase;margin-bottom:.5rem}
-.team-name{font-family:'Bebas Neue',sans-serif;font-size:1.8rem;color:var(--blanc);line-height:1;margin-bottom:.8rem}
-.team-arrow{display:inline-flex;align-items:center;gap:.4rem;color:rgba(255,252,237,.4);font-size:.75rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;transition:color var(--transition)}
-.team-card:hover .team-arrow{color:var(--rose)}
+/* ── ACTUALITÉS ── */
+#pg-news{background:var(--dark)}
+.page-hero{padding:9rem 5% 4rem;background:linear-gradient(160deg,var(--dark),var(--bleu))}
+.page-hero-label{font-size:.72rem;font-weight:600;letter-spacing:.2em;color:var(--rose);text-transform:uppercase;margin-bottom:.8rem}
+.page-hero-h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(3rem,7vw,6rem);color:var(--blanc);line-height:1}
+.news-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.5rem;padding:4rem 5%}
+.ncard{background:var(--card);border:1px solid var(--border);border-radius:12px;overflow:hidden;cursor:pointer;transition:all var(--t)}
+.ncard:hover{border-color:rgba(234,59,121,.4);transform:translateY(-5px);box-shadow:0 20px 50px rgba(0,0,0,.5)}
+.ncard-img{height:190px;background:linear-gradient(135deg,var(--bleu),rgba(234,59,121,.25));display:flex;align-items:center;justify-content:center;font-size:2.5rem;position:relative}
+.ncard-tag{position:absolute;top:.8rem;left:.8rem;background:var(--rose);color:#fff;font-size:.62rem;font-weight:700;letter-spacing:.1em;padding:.25rem .6rem;border-radius:2px;text-transform:uppercase}
+.ncard-body{padding:1.4rem}
+.ncard-date{font-size:.68rem;color:var(--rose);font-weight:600;letter-spacing:.1em;text-transform:uppercase;margin-bottom:.4rem}
+.ncard-body h3{font-family:'Bebas Neue',sans-serif;font-size:1.3rem;color:var(--blanc);margin-bottom:.4rem;line-height:1.15}
+.ncard-body p{font-size:.8rem;color:rgba(255,252,237,.5);line-height:1.55}
+.ffhb-soon{background:linear-gradient(135deg,rgba(15,30,65,.7),rgba(234,59,121,.06));border:1px dashed rgba(234,59,121,.3);border-radius:12px;padding:3rem;text-align:center;margin:0 5% 5rem}
+.soon-chip{display:inline-flex;align-items:center;gap:.4rem;background:rgba(234,59,121,.1);border:1px solid rgba(234,59,121,.2);color:var(--rose);font-size:.68rem;font-weight:700;letter-spacing:.15em;padding:.35rem .8rem;border-radius:99px;margin-bottom:1rem;text-transform:uppercase}
+.ffhb-soon h4{font-family:'Bebas Neue',sans-serif;font-size:2rem;color:var(--blanc);margin-bottom:.5rem}
+.ffhb-soon p{color:rgba(255,252,237,.4);font-size:.83rem;line-height:1.6}
 
-/* Page équipe individuelle */
-#team-page{display:none;background:#080f1e;padding:6rem 4%}
-.team-page-header{text-align:center;margin-bottom:3rem;padding-top:2rem}
-.team-page-header h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(3rem,8vw,6rem);color:var(--blanc);line-height:1}
-.team-page-header h1 span{color:var(--rose)}
-.back-btn{display:inline-flex;align-items:center;gap:.5rem;color:rgba(255,252,237,.5);font-size:.8rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;margin-bottom:2rem;transition:color var(--transition)}
-.back-btn:hover{color:var(--rose)}
-.team-sub-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;max-width:900px;margin:0 auto}
-.team-sub-card{background:linear-gradient(135deg,rgba(15,30,65,.7),rgba(8,15,30,.9));border:1px solid rgba(234,59,121,.15);border-radius:16px;padding:2.5rem;cursor:pointer;transition:all var(--transition);text-align:center;position:relative;overflow:hidden}
-.team-sub-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:var(--rose);transform:scaleX(0);transition:transform var(--transition)}
-.team-sub-card:hover{border-color:rgba(234,59,121,.4);transform:translateY(-6px);box-shadow:0 20px 40px rgba(0,0,0,.5)}
-.team-sub-card:hover::after{transform:scaleX(1)}
-.sub-icon{font-size:2.5rem;margin-bottom:1rem;display:block}
-.sub-title{font-family:'Bebas Neue',sans-serif;font-size:1.5rem;color:var(--blanc);margin-bottom:.5rem}
-.sub-desc{font-size:.78rem;color:rgba(255,252,237,.45);line-height:1.5}
+/* ── ÉQUIPES ── */
+#pg-teams{background:var(--dark)}
+.teams-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1rem;padding:0 5% 4rem}
+.tcard{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:1.8rem;cursor:pointer;transition:all var(--t);position:relative;overflow:hidden}
+.tcard::after{content:'→';position:absolute;right:1.5rem;top:50%;transform:translateY(-50%);font-size:1.2rem;color:rgba(234,59,121,0);transition:all var(--t)}
+.tcard:hover{border-color:rgba(234,59,121,.4);transform:translateY(-4px);box-shadow:0 16px 40px rgba(0,0,0,.4)}
+.tcard:hover::after{color:var(--rose);right:1.2rem}
+.tcard-cat{font-size:.65rem;font-weight:600;letter-spacing:.15em;color:var(--rose);text-transform:uppercase;margin-bottom:.4rem}
+.tcard-name{font-family:'Bebas Neue',sans-serif;font-size:1.7rem;color:var(--blanc);line-height:1}
 
-/* Sous-pages équipe */
-#team-subpage{display:none;background:#080f1e;padding:6rem 4%}
-.subpage-header{margin-bottom:3rem}
-.data-table{width:100%;border-collapse:collapse;margin-top:1.5rem}
-.data-table th{background:rgba(234,59,121,.15);color:var(--rose);font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:1rem;text-align:left;border-bottom:1px solid rgba(234,59,121,.2)}
-.data-table td{padding:.9rem 1rem;color:rgba(255,252,237,.75);font-size:.85rem;border-bottom:1px solid rgba(255,255,255,.04)}
-.data-table tr:hover td{background:rgba(234,59,121,.04)}
-.data-table tr.highlight td{background:rgba(234,59,121,.08);color:var(--blanc)}
-.placeholder-bloc{background:rgba(15,30,65,.3);border:1px dashed rgba(234,59,121,.25);border-radius:12px;padding:3rem;text-align:center}
-.placeholder-bloc h3{font-family:'Bebas Neue',sans-serif;font-size:2rem;color:var(--blanc);margin-bottom:.5rem}
-.placeholder-bloc p{color:rgba(255,252,237,.4);font-size:.85rem}
-.effectif-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:1rem;margin-top:1.5rem}
-.player-card{background:rgba(15,30,65,.4);border:1px solid rgba(234,59,121,.1);border-radius:10px;padding:1.2rem;text-align:center;transition:all var(--transition)}
-.player-card:hover{border-color:rgba(234,59,121,.3);transform:translateY(-3px)}
-.player-num{font-family:'Bebas Neue',sans-serif;font-size:2rem;color:var(--rose)}
-.player-name{font-size:.82rem;font-weight:600;color:var(--blanc);margin-top:.3rem}
-.player-pos{font-size:.7rem;color:rgba(255,252,237,.4);margin-top:.2rem}
+/* Page équipe */
+#pg-team{display:none;background:var(--dark)}
+.team-ph{padding:9rem 5% 4rem;background:linear-gradient(160deg,var(--dark),var(--bleu));position:relative;overflow:hidden}
+.team-ph::after{content:'';position:absolute;right:-100px;top:-100px;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(234,59,121,.15),transparent 65%)}
+.back-link{display:inline-flex;align-items:center;gap:.5rem;color:rgba(255,252,237,.45);font-size:.75rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;transition:color var(--t);margin-bottom:2rem;text-decoration:none;background:none;border:none}
+.back-link:hover{color:var(--rose)}
+.team-sub-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;max-width:900px;margin:3rem auto 0;padding:0 5%}
+.sub-card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:2.5rem;text-align:center;cursor:pointer;transition:all var(--t);position:relative;overflow:hidden}
+.sub-card::before{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:var(--rose);transform:scaleX(0);transform-origin:left;transition:transform var(--t)}
+.sub-card:hover{border-color:rgba(234,59,121,.4);transform:translateY(-5px);box-shadow:0 20px 50px rgba(0,0,0,.5)}
+.sub-card:hover::before{transform:scaleX(1)}
+.sub-card-icon{font-size:2.2rem;margin-bottom:1rem}
+.sub-card-title{font-family:'Bebas Neue',sans-serif;font-size:1.4rem;color:var(--blanc);margin-bottom:.4rem}
+.sub-card-desc{font-size:.76rem;color:rgba(255,252,237,.4);line-height:1.5}
 
-/* ─── BOUTIQUE ─── */
-#shop-section{background:#080f1e}
-.shop-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1.5rem;margin-top:3rem}
-.product-card{background:rgba(15,30,65,.4);border:1px solid rgba(234,59,121,.1);border-radius:12px;overflow:hidden;transition:all var(--transition)}
-.product-card:hover{border-color:rgba(234,59,121,.35);transform:translateY(-5px);box-shadow:0 20px 40px rgba(0,0,0,.4)}
-.product-img{height:220px;background:linear-gradient(135deg,rgba(15,30,65,.8),rgba(234,59,121,.2));display:flex;align-items:center;justify-content:center;font-size:4rem;position:relative}
-.product-badge{position:absolute;top:1rem;right:1rem;background:var(--rose);color:#fff;font-size:.65rem;font-weight:700;padding:.3rem .7rem;border-radius:4px;letter-spacing:.08em;text-transform:uppercase}
-.product-body{padding:1.5rem}
-.product-name{font-family:'Bebas Neue',sans-serif;font-size:1.4rem;color:var(--blanc);margin-bottom:.3rem}
-.product-desc{font-size:.78rem;color:rgba(255,252,237,.5);margin-bottom:1rem;line-height:1.5}
-.product-footer{display:flex;align-items:center;justify-content:space-between}
-.product-price{font-family:'Bebas Neue',sans-serif;font-size:1.8rem;color:var(--blanc)}
-.product-price span{font-size:1rem;color:rgba(255,252,237,.4)}
-.btn-shop{background:var(--rose);color:#fff;padding:.6rem 1.2rem;border-radius:4px;font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;transition:all var(--transition);display:inline-flex;align-items:center;gap:.4rem}
-.btn-shop:hover{transform:scale(1.05);box-shadow:0 8px 24px rgba(234,59,121,.4)}
+/* Sous-page équipe */
+#pg-subteam{display:none;background:var(--dark)}
+/* Effectif style PSG */
+.eff-filters{display:flex;gap:1.5rem;margin-bottom:2.5rem;border-bottom:1px solid rgba(255,255,255,.06);padding-bottom:1rem;flex-wrap:wrap}
+.eff-filter{font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,252,237,.35);cursor:pointer;padding-bottom:.8rem;margin-bottom:-1.1rem;border-bottom:2px solid transparent;transition:color var(--t),border-color var(--t)}
+.eff-filter.on{color:var(--blanc);border-color:var(--rose)}
+.players-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:1px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.04);border-radius:10px;overflow:hidden}
+.player-card{background:var(--card);padding:1.5rem 1rem 1rem;transition:background var(--t);cursor:default;position:relative}
+.player-card:hover{background:rgba(15,30,65,.9)}
+.player-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:.8rem}
+.player-num{font-family:'Bebas Neue',sans-serif;font-size:2.5rem;color:rgba(234,59,121,.25);line-height:1}
+.player-pos{font-size:.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--rose);background:rgba(234,59,121,.1);padding:.2rem .5rem;border-radius:2px;height:fit-content}
+.player-fname{font-size:.72rem;color:rgba(255,252,237,.45);text-transform:uppercase;letter-spacing:.05em}
+.player-lname{font-family:'Bebas Neue',sans-serif;font-size:1.2rem;color:var(--blanc);letter-spacing:.05em;line-height:1.1}
+/* Classement / calendrier tables */
+.data-section{background:var(--card);border:1px solid var(--border);border-radius:12px;overflow:hidden;margin-bottom:2rem}
+.data-section-head{padding:1.2rem 1.5rem;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:.8rem}
+.data-section-head h3{font-family:'Bebas Neue',sans-serif;font-size:1.3rem;color:var(--blanc)}
+.dt{width:100%;border-collapse:collapse}
+.dt th{font-size:.65rem;font-weight:600;letter-spacing:.12em;color:rgba(255,252,237,.35);text-transform:uppercase;padding:.8rem 1.2rem;text-align:left;background:rgba(255,255,255,.02)}
+.dt td{padding:.85rem 1.2rem;font-size:.83rem;color:rgba(255,252,237,.7);border-top:1px solid rgba(255,255,255,.03)}
+.dt tr.me td{background:rgba(234,59,121,.07);color:var(--blanc);font-weight:600}
+.dt tr:hover td{background:rgba(255,255,255,.02)}
 
-/* ─── PARTENAIRES ─── */
-#partners-section{background:#080f1e}
-.partners-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1.2rem;margin-top:3rem}
-.partner-card{background:rgba(15,30,65,.4);border:1px solid rgba(234,59,121,.1);border-radius:12px;padding:2rem;text-align:center;text-decoration:none;transition:all var(--transition);display:block}
-.partner-card:hover{border-color:rgba(234,59,121,.4);transform:translateY(-4px);background:rgba(234,59,121,.05)}
-.partner-logo-box{width:80px;height:80px;background:rgba(255,252,237,.06);border-radius:12px;display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;font-size:2rem}
-.partner-name{font-family:'Bebas Neue',sans-serif;font-size:1.2rem;color:var(--blanc);margin-bottom:.3rem}
-.partner-type{font-size:.7rem;color:rgba(255,252,237,.4);letter-spacing:.1em;text-transform:uppercase}
-.recruit-bloc{background:linear-gradient(135deg,rgba(234,59,121,.12),rgba(15,30,65,.6));border:1px solid rgba(234,59,121,.25);border-radius:16px;padding:3rem;text-align:center;margin-top:4rem}
-.recruit-bloc h3{font-family:'Bebas Neue',sans-serif;font-size:2.5rem;color:var(--blanc);margin-bottom:.5rem}
-.recruit-bloc p{color:rgba(255,252,237,.55);font-size:.9rem;margin-bottom:2rem}
+/* ── BOUTIQUE ── */
+#pg-shop{background:var(--dark)}
+.shop-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1.5rem;padding:0 5% 5rem}
+.prod-card{background:var(--card);border:1px solid var(--border);border-radius:12px;overflow:hidden;transition:all var(--t)}
+.prod-card:hover{border-color:rgba(234,59,121,.35);transform:translateY(-4px);box-shadow:0 20px 50px rgba(0,0,0,.5)}
+.prod-img{height:200px;background:linear-gradient(135deg,rgba(15,30,65,.9),rgba(234,59,121,.2));display:flex;align-items:center;justify-content:center;font-size:3.5rem;position:relative}
+.prod-badge{position:absolute;top:.8rem;right:.8rem;background:var(--rose);color:#fff;font-size:.62rem;font-weight:700;padding:.25rem .6rem;border-radius:2px;text-transform:uppercase;letter-spacing:.06em}
+.prod-body{padding:1.4rem}
+.prod-name{font-family:'Bebas Neue',sans-serif;font-size:1.35rem;color:var(--blanc);margin-bottom:.3rem}
+.prod-desc{font-size:.78rem;color:rgba(255,252,237,.45);line-height:1.5;margin-bottom:1.2rem}
+.prod-foot{display:flex;align-items:center;justify-content:space-between}
+.prod-price{font-family:'Bebas Neue',sans-serif;font-size:1.7rem;color:var(--blanc)}
+.prod-price small{font-size:.9rem;color:rgba(255,252,237,.35)}
+.btn-buy{background:var(--rose);color:#fff;padding:.55rem 1.1rem;border-radius:3px;font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;transition:all var(--t);display:inline-flex;align-items:center;gap:.3rem}
+.btn-buy:hover{transform:scale(1.04);box-shadow:0 8px 24px rgba(234,59,121,.4)}
 
-/* ─── CONTACT ─── */
-#contact-section{background:#080f1e}
-.contact-wrap{display:grid;grid-template-columns:1fr 1.4fr;gap:4rem;max-width:1000px;margin:3rem auto 0;align-items:start}
-.contact-info h3{font-family:'Bebas Neue',sans-serif;font-size:2rem;color:var(--blanc);margin-bottom:1rem}
-.contact-info p{color:rgba(255,252,237,.55);font-size:.88rem;line-height:1.7;margin-bottom:1.5rem}
-.contact-detail{display:flex;align-items:flex-start;gap:.8rem;margin-bottom:1rem}
-.contact-detail-icon{width:36px;height:36px;background:rgba(234,59,121,.15);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:.9rem;flex-shrink:0}
-.contact-detail-text{font-size:.83rem;color:rgba(255,252,237,.65);line-height:1.5}
-.contact-form{background:rgba(15,30,65,.4);border:1px solid rgba(234,59,121,.15);border-radius:16px;padding:2.5rem}
-.form-group{margin-bottom:1.2rem}
-.form-group label{display:block;font-size:.72rem;font-weight:700;letter-spacing:.1em;color:rgba(255,252,237,.5);text-transform:uppercase;margin-bottom:.5rem}
-.form-group input,.form-group select,.form-group textarea{width:100%;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:8px;padding:.8rem 1rem;color:var(--blanc);font-family:'Montserrat',sans-serif;font-size:.88rem;transition:border-color var(--transition),background var(--transition);outline:none;appearance:none}
-.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:rgba(234,59,121,.5);background:rgba(234,59,121,.05)}
-.form-group select option{background:#0F1E41;color:#fff}
-.form-group textarea{resize:vertical;min-height:120px}
-.form-submit{width:100%;background:var(--rose);color:#fff;border:none;padding:1rem;border-radius:8px;font-family:'Bebas Neue',sans-serif;font-size:1.2rem;letter-spacing:.1em;cursor:pointer;transition:all var(--transition)}
+/* ── PARTENAIRES ── */
+#pg-partners{background:var(--dark)}
+.partners-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1rem;padding:0 5% 4rem}
+.pcard{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:1.8rem;text-align:center;text-decoration:none;display:block;transition:all var(--t)}
+.pcard:hover{border-color:rgba(234,59,121,.35);transform:translateY(-3px);background:rgba(15,30,65,.7)}
+.pcard-logo{width:64px;height:64px;border-radius:10px;background:rgba(255,252,237,.06);display:flex;align-items:center;justify-content:center;margin:0 auto .9rem;font-size:1.6rem;overflow:hidden}
+.pcard-logo img{width:100%;height:100%;object-fit:contain;padding:6px}
+.pcard-name{font-family:'Bebas Neue',sans-serif;font-size:1.1rem;color:var(--blanc);margin-bottom:.2rem;line-height:1.2}
+.pcard-type{font-size:.67rem;color:rgba(255,252,237,.35);letter-spacing:.1em;text-transform:uppercase}
+.recruit-cta{background:linear-gradient(135deg,rgba(234,59,121,.12),rgba(15,30,65,.5));border:1px solid rgba(234,59,121,.2);border-radius:14px;padding:3.5rem;text-align:center;margin:0 5% 5rem}
+.recruit-cta h3{font-family:'Bebas Neue',sans-serif;font-size:clamp(2rem,4vw,3rem);color:var(--blanc);margin-bottom:.6rem}
+.recruit-cta p{color:rgba(255,252,237,.5);font-size:.9rem;margin-bottom:2rem;font-weight:300}
+
+/* ── CONTACT ── */
+#pg-contact{background:var(--dark)}
+.contact-layout{display:grid;grid-template-columns:1fr 1.5fr;gap:5rem;max-width:1100px;margin:0 auto;padding:0 5% 5rem}
+.contact-left h3{font-family:'Bebas Neue',sans-serif;font-size:2.2rem;color:var(--blanc);margin-bottom:1rem}
+.contact-left p{font-size:.88rem;color:rgba(255,252,237,.5);line-height:1.75;margin-bottom:2rem;font-weight:300}
+.cdetail{display:flex;align-items:flex-start;gap:.9rem;margin-bottom:1.2rem}
+.cdetail-ico{width:38px;height:38px;border-radius:8px;background:rgba(234,59,121,.12);display:flex;align-items:center;justify-content:center;font-size:.95rem;flex-shrink:0}
+.cdetail-txt{font-size:.83rem;color:rgba(255,252,237,.6);line-height:1.55}
+.cdetail-txt a{color:var(--rose);text-decoration:none}
+.socials{display:flex;gap:.7rem;margin-top:1.5rem}
+.social-ico{width:38px;height:38px;border-radius:8px;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:.85rem;transition:all var(--t)}
+.social-ico:hover{border-color:var(--rose);background:rgba(234,59,121,.1)}
+.cform{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:2.5rem}
+.fg{margin-bottom:1.2rem}
+.fg label{display:block;font-size:.68rem;font-weight:600;letter-spacing:.12em;color:rgba(255,252,237,.4);text-transform:uppercase;margin-bottom:.5rem}
+.fg input,.fg select,.fg textarea{width:100%;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:7px;padding:.8rem 1rem;color:var(--blanc);font-family:'DM Sans',sans-serif;font-size:.88rem;outline:none;transition:border-color var(--t),background var(--t);appearance:none}
+.fg input:focus,.fg select:focus,.fg textarea:focus{border-color:rgba(234,59,121,.45);background:rgba(234,59,121,.04)}
+.fg select option{background:#0a1628}
+.fg textarea{resize:vertical;min-height:110px}
+.fg-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.form-submit{width:100%;background:var(--rose);color:#fff;border:none;padding:1rem;border-radius:7px;font-family:'Bebas Neue',sans-serif;font-size:1.15rem;letter-spacing:.1em;cursor:pointer;transition:all var(--t)}
 .form-submit:hover{transform:translateY(-2px);box-shadow:0 12px 32px rgba(234,59,121,.4)}
 
-/* ─── CARTE ─── */
-.map-section{padding:4rem 4%;background:#080f1e}
-.map-wrap{border-radius:16px;overflow:hidden;border:1px solid rgba(234,59,121,.15);max-width:1100px;margin:2rem auto 0}
-.map-wrap iframe{width:100%;height:400px;border:none;display:block;filter:brightness(.85) saturate(.6) contrast(1.1)}
-.horaires-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1rem;margin:2rem auto 0;max-width:1100px}
-.horaire-card{background:rgba(15,30,65,.5);border:1px solid rgba(234,59,121,.1);border-radius:10px;padding:1.2rem}
-.horaire-team{font-size:.7rem;font-weight:700;letter-spacing:.1em;color:var(--rose);text-transform:uppercase;margin-bottom:.3rem}
-.horaire-time{font-family:'Bebas Neue',sans-serif;font-size:1.3rem;color:var(--blanc)}
-.horaire-day{font-size:.78rem;color:rgba(255,252,237,.45);margin-top:.2rem}
-
-/* ─── FOOTER ─── */
-footer{background:#050b15;border-top:1px solid rgba(234,59,121,.1);padding:3rem 4% 2rem}
-.footer-top{display:grid;grid-template-columns:1fr 2fr;gap:3rem;margin-bottom:2rem;align-items:start}
-.footer-brand .nav-logo{font-size:2rem;margin-bottom:.8rem;display:inline-flex}
-.footer-brand p{color:rgba(255,252,237,.35);font-size:.8rem;line-height:1.6;max-width:240px}
-.footer-links-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
-.footer-col h4{font-size:.72rem;font-weight:700;letter-spacing:.15em;color:rgba(255,252,237,.4);text-transform:uppercase;margin-bottom:.8rem}
-.footer-col a{display:block;color:rgba(255,252,237,.5);font-size:.8rem;margin-bottom:.5rem;text-decoration:none;transition:color var(--transition)}
+/* ── FOOTER MODERNE ── */
+footer{background:#03080f;position:relative;overflow:hidden}
+footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(234,59,121,.4),transparent)}
+.footer-carousel-wrap{overflow:hidden;position:relative;padding:1.8rem 0;border-bottom:1px solid rgba(255,255,255,.04)}
+.footer-carousel-wrap::before,.footer-carousel-wrap::after{content:'';position:absolute;top:0;bottom:0;width:120px;z-index:2;pointer-events:none}
+.footer-carousel-wrap::before{left:0;background:linear-gradient(90deg,#03080f,transparent)}
+.footer-carousel-wrap::after{right:0;background:linear-gradient(-90deg,#03080f,transparent)}
+/* Infinite scroll — two tracks that tile seamlessly */
+.fcar-outer{display:flex;width:max-content}
+.fcar-track{display:flex;gap:1rem;animation:fcar 35s linear infinite}
+.fcar-track:hover{animation-play-state:paused}
+@keyframes fcar{0%{transform:translateX(0)}100%{transform:translateX(-100%)}}
+.fcar-item{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);border-radius:8px;padding:.7rem 1.4rem;display:flex;align-items:center;gap:.7rem;text-decoration:none;white-space:nowrap;transition:border-color var(--t),background var(--t);min-width:fit-content}
+.fcar-item:hover{border-color:rgba(234,59,121,.3);background:rgba(234,59,121,.04)}
+.fcar-logo{width:32px;height:32px;border-radius:5px;background:rgba(255,252,237,.06);display:flex;align-items:center;justify-content:center;overflow:hidden;flex-shrink:0}
+.fcar-logo img{width:100%;height:100%;object-fit:contain;padding:3px}
+.fcar-logo span{font-size:.85rem}
+.fcar-name{font-size:.78rem;font-weight:500;color:rgba(255,252,237,.55)}
+/* Footer main */
+.footer-main{display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:3rem;padding:4rem 5% 3rem}
+.footer-brand .logo{font-family:'Bebas Neue',sans-serif;font-size:1.8rem;letter-spacing:.15em;color:var(--blanc);display:block;margin-bottom:.8rem;text-decoration:none}
+.footer-brand .logo em{color:var(--rose);font-style:normal}
+.footer-brand p{font-size:.78rem;color:rgba(255,252,237,.3);line-height:1.7;font-weight:300;margin-bottom:1.2rem}
+.footer-socials{display:flex;gap:.6rem}
+.footer-soc{width:34px;height:34px;border-radius:6px;border:1px solid rgba(255,255,255,.07);display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:.78rem;color:rgba(255,252,237,.5);transition:all var(--t)}
+.footer-soc:hover{border-color:var(--rose);color:var(--rose);background:rgba(234,59,121,.08)}
+.footer-col h4{font-size:.65rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,252,237,.25);margin-bottom:1.2rem}
+.footer-col a{display:block;font-size:.78rem;color:rgba(255,252,237,.4);text-decoration:none;margin-bottom:.6rem;transition:color var(--t)}
 .footer-col a:hover{color:var(--rose)}
+.footer-bottom{display:flex;align-items:center;justify-content:space-between;padding:1.5rem 5%;border-top:1px solid rgba(255,255,255,.04)}
+.footer-bottom p{font-size:.7rem;color:rgba(255,252,237,.15)}
+.footer-bottom span{font-size:.7rem;color:rgba(255,252,237,.15)}
 
-/* ─── CAROUSEL PARTENAIRES ─── */
-.carousel-wrap{overflow:hidden;position:relative;padding:2rem 0;background:rgba(15,30,65,.3);border-top:1px solid rgba(234,59,121,.08);border-bottom:1px solid rgba(234,59,121,.08);margin:2rem 0}
-.carousel-wrap::before,.carousel-wrap::after{content:'';position:absolute;top:0;bottom:0;width:80px;z-index:2}
-.carousel-wrap::before{left:0;background:linear-gradient(90deg,#050b15,transparent)}
-.carousel-wrap::after{right:0;background:linear-gradient(-90deg,#050b15,transparent)}
-.carousel-track{display:flex;gap:1.5rem;width:max-content;animation:scroll 25s linear infinite}
-.carousel-track:hover{animation-play-state:paused}
-@keyframes scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
-.carousel-item{background:rgba(15,30,65,.6);border:1px solid rgba(234,59,121,.12);border-radius:10px;padding:1rem 1.8rem;display:flex;align-items:center;gap:.8rem;cursor:pointer;transition:border-color var(--transition);white-space:nowrap;text-decoration:none;color:inherit}
-.carousel-item:hover{border-color:rgba(234,59,121,.4)}
-.carousel-item-logo{width:40px;height:40px;background:rgba(255,252,237,.08);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:1.2rem}
-.carousel-item-name{font-size:.82rem;font-weight:600;color:rgba(255,252,237,.7)}
+/* ── REVEAL ── */
+.rv{opacity:0;transform:translateY(32px);transition:opacity .7s ease,transform .7s ease}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.1s}.rv.d2{transition-delay:.2s}.rv.d3{transition-delay:.3s}
 
-.footer-bottom{display:flex;align-items:center;justify-content:space-between;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.06)}
-.footer-bottom p{color:rgba(255,252,237,.2);font-size:.72rem}
-.footer-social{display:flex;gap:.8rem}
-.social-btn{width:34px;height:34px;background:rgba(255,255,255,.05);border-radius:6px;display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:.85rem;transition:background var(--transition)}
-.social-btn:hover{background:rgba(234,59,121,.2)}
-
-/* ─── ANIMATIONS SCROLL ─── */
-.reveal{opacity:0;transform:translateY(40px);transition:opacity .7s ease,transform .7s ease}
-.reveal.visible{opacity:1;transform:translateY(0)}
-.reveal-delay-1{transition-delay:.1s}
-.reveal-delay-2{transition-delay:.2s}
-.reveal-delay-3{transition-delay:.3s}
-
-/* ─── MOBILE ─── */
+/* ── RESPONSIVE ── */
+@media(max-width:900px){
+  .about-grid,.contact-layout,.footer-main{grid-template-columns:1fr}
+  .team-sub-cards{grid-template-columns:1fr}
+  .fg-row{grid-template-columns:1fr}
+  .footer-main{gap:2rem}
+}
 @media(max-width:768px){
-  .nav-links{display:none;position:fixed;inset:0;background:rgba(8,15,30,.98);flex-direction:column;align-items:center;justify-content:center;gap:2rem;z-index:99}
-  .nav-links.open{display:flex}
-  .hamburger{display:flex;z-index:100}
-  .about-grid,.contact-wrap,.footer-top{grid-template-columns:1fr}
-  .team-sub-grid{grid-template-columns:1fr}
-  .hero-stats{gap:1.5rem}
-  .footer-links-grid{grid-template-columns:1fr 1fr}
-  .dropdown{position:static;transform:none;display:flex;flex-direction:column;opacity:1;visibility:visible;background:transparent;border:none;padding:0}
+  .nav-links{display:none}
+  .hbg{display:flex}
+  .hero-ring,.hero-ring2,.hero-orb{display:none}
+  .hero-nums{gap:1.5rem}
+  #cur,#cur2{display:none}
 }
 </style>
 </head>
 <body>
 
-<!-- LOADER -->
+<!-- Cursor -->
+<div id="cur"></div>
+<div id="cur2"></div>
+
+<!-- Loader -->
 <div id="loader">
-  <div class="loader-logo">HBC<span style="color:var(--rose)">.</span></div>
-  <div class="loader-bar"><div class="loader-fill"></div></div>
+  <div class="loader-txt">
+    <span>H</span><span>B</span><span>C</span><span>.</span>
+  </div>
+  <div class="loader-line"></div>
 </div>
 
 <!-- NAV -->
-<nav id="navbar">
-  <a href="#" class="nav-logo" onclick="showSection('home')">HBC<span>.</span>Bazadais</a>
-  <ul class="nav-links" id="navLinks">
-    <li><a href="#" onclick="showSection('home');closeMenu()">Accueil</a></li>
-    <li><a href="#" onclick="showSection('news');closeMenu()">Actualités</a></li>
-    <li class="has-dropdown">
-      <a href="#" onclick="showSection('teams');closeMenu()">Équipes ▾</a>
-      <div class="dropdown" id="teamsDropdown"></div>
+<nav id="nav">
+  <a class="nav-logo" href="#" onclick="nav('home')"><img src="data:image/png;base64,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" style="height:42px;width:42px;object-fit:contain;filter:brightness(0) invert(1)" alt="Logo HBC Bazadais"> HBC<em>.</em>Bazadais</a>
+  <ul class="nav-links">
+    <li><a href="#" onclick="nav('home')">Accueil</a></li>
+    <li><a href="#" onclick="nav('news')">Actualités</a></li>
+    <li class="ddp">
+      <a href="#" onclick="nav('teams')">Équipes ▾</a>
+      <div class="ddp-menu" id="ddpMenu"></div>
     </li>
-    <li><a href="#" onclick="showSection('shop');closeMenu()">Boutique</a></li>
-    <li><a href="#" onclick="showSection('partners');closeMenu()">Partenaires</a></li>
-    <li><a href="#" class="nav-cta" onclick="showSection('contact');closeMenu()">Contact</a></li>
+    <li><a href="#" onclick="nav('shop')">Boutique</a></li>
+    <li><a href="#" onclick="nav('partners')">Partenaires</a></li>
+    <li><a href="#" class="nav-cta-link" onclick="nav('contact')">Contact</a></li>
   </ul>
-  <div class="hamburger" onclick="toggleMenu()" id="hamburger">
-    <span></span><span></span><span></span>
-  </div>
+  <div class="hbg" id="hbg" onclick="toggleMob()"><span></span><span></span><span></span></div>
 </nav>
+<div id="mobileNav">
+  <a href="#" onclick="nav('home');toggleMob()">Accueil</a>
+  <a href="#" onclick="nav('news');toggleMob()">Actualités</a>
+  <a href="#" onclick="nav('teams');toggleMob()">Équipes</a>
+  <a href="#" onclick="nav('shop');toggleMob()">Boutique</a>
+  <a href="#" onclick="nav('partners');toggleMob()">Partenaires</a>
+  <a href="#" onclick="nav('contact');toggleMob()">Contact</a>
+</div>
 
-<!-- ══════════════ HOME ══════════════ -->
-<div id="home">
-
-  <!-- HERO -->
+<!-- ══ HOME ══ -->
+<div id="pg-home" class="page active">
   <section id="hero">
-    <div class="hero-bg"></div>
-    <div class="hero-grid"></div>
-    <div class="hero-glow"></div>
+    <div class="hero-noise"></div>
+    <div class="hero-grad"></div>
+    <div class="hero-lines"></div>
+    <div class="hero-orb"></div>
+    <div class="hero-ring"></div>
+    <div class="hero-ring2"></div>
     <div class="hero-content">
-      <div class="hero-badge">⚡ Saison 2025–2026</div>
-      <h1 class="hero-title">Handball<span>Club Bazadais</span></h1>
-      <p class="hero-subtitle">Rejoignez une famille passionnée de handball au cœur de la Gironde. 12 équipes, toutes catégories, un club qui vous ressemble.</p>
-      <div class="hero-btns">
-        <a href="#" class="btn-primary" onclick="showSection('teams')">Découvrir les équipes →</a>
-        <a href="#" class="btn-outline" onclick="showSection('contact')">Nous rejoindre</a>
+      <div style="margin-bottom:1.8rem;animation:fadeUp .9s ease .1s both">
+        <img src="data:image/png;base64,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" style="height:88px;width:88px;object-fit:contain;filter:brightness(0) invert(1);animation:spin 20s linear infinite;display:block" alt="Logo HBC Bazadais">
       </div>
-      <div class="hero-stats">
-        <div class="stat-item"><div class="stat-num">12<span>+</span></div><div class="stat-label">Équipes</div></div>
-        <div class="stat-item"><div class="stat-num">200<span>+</span></div><div class="stat-label">Licenciés</div></div>
-        <div class="stat-item"><div class="stat-num">30<span>ans</span></div><div class="stat-label">D'histoire</div></div>
+      <div class="hero-eyebrow"><span></span><p>Saison 2025 — 2026</p></div>
+      <h1 class="hero-h1">Handball<em>Club Bazadais</em></h1>
+      <p class="hero-sub">Club convivial et dynamique à Bazas depuis 1993. 12 équipes, tous âges, tous niveaux — venez vivre le handball en famille.</p>
+      <div class="hero-actions">
+        <a href="#" class="btn-p" onclick="nav('teams')">Nos équipes →</a>
+        <a href="#" class="btn-o" onclick="nav('contact')">Nous rejoindre</a>
+      </div>
+      <div class="hero-nums">
+        <div class="num-item"><div class="n">12<b>+</b></div><div class="l">Équipes</div></div>
+        <div class="num-item"><div class="n">200<b>+</b></div><div class="l">Licenciés</div></div>
+        <div class="num-item"><div class="n">33<b>ans</b></div><div class="l">D'histoire</div></div>
       </div>
     </div>
   </section>
 
   <!-- À PROPOS -->
-  <section id="about">
+  <section id="about-sec">
     <div class="about-grid">
-      <div class="about-visual">
-        <div class="about-cards-grid">
-          <div class="about-card reveal">
-            <div class="about-icon">🏆</div>
-            <h3>Notre Club</h3>
-            <p>Le HBC Bazadais est un club convivial et ambitieux basé à Bazas, en Gironde. Nous accueillons joueurs et joueuses de tous niveaux, du loisir à la compétition.</p>
-          </div>
-          <div class="about-card reveal reveal-delay-1">
-            <div class="about-icon">❤️</div>
-            <h3>Notre Mission</h3>
-            <p>Former, accompagner et faire progresser chaque joueur dans un environnement bienveillant. Le sport comme vecteur de lien social et de dépassement de soi.</p>
-          </div>
-        </div>
-      </div>
-      <div class="reveal reveal-delay-2">
-        <span class="section-tag">À propos du club</span>
-        <h2 class="section-title">Une passion,<br>un territoire</h2>
-        <p class="section-sub" style="margin-bottom:2rem">Depuis plus de 30 ans, le HBC Bazadais porte les couleurs du handball girondin avec fierté. Venez nous rejoindre !</p>
-        <ul class="feature-list">
-          <li>12 équipes de la catégorie loisir aux seniors compétitifs</li>
+      <div class="rv">
+        <div class="about-label">À propos</div>
+        <h2 class="about-h2">Une passion,<br>un <em>territoire</em></h2>
+        <p class="about-body">Le HBC Bazadais est un club de handball situé à Bazas, en Gironde, créé en 1993. Club convivial et dynamique, il accueille les joueurs et joueuses de tous âges et de tous niveaux à travers 12 catégories. Le HBC Bazadais met en avant les valeurs du sport collectif : respect, esprit d'équipe, convivialité et passion du handball. <strong style="color:var(--rose)">SOUY BAZADES !</strong></p>
+        <ul class="about-feats">
+          <li>12 équipes de l'école de hand aux seniors compétitifs</li>
           <li>Encadrement qualifié et bienveillant pour chaque catégorie</li>
-          <li>Salle moderne équipée pour l'entraînement et les matchs</li>
-          <li>Évènements et sorties tout au long de la saison</li>
           <li>Affiliation FFHB — Comité Gironde de Handball</li>
+          <li>Événements et vie associative tout au long de la saison</li>
+          <li>Section loisirs ouverte à tous sans compétition</li>
         </ul>
-        <a href="#" class="btn-primary" style="margin-top:2rem;display:inline-flex" onclick="showSection('contact')">Nous rejoindre →</a>
+        <a href="#" class="btn-p" style="margin-top:2rem;display:inline-flex" onclick="nav('contact')">Rejoindre le club →</a>
+      </div>
+      <div class="about-cards rv d2">
+        <div class="acard">
+          <div class="acard-icon">🏆</div>
+          <h3>Compétition FFHB</h3>
+          <p>Toutes nos équipes participent aux championnats officiels de la Fédération Française de Handball.</p>
+        </div>
+        <div class="acard">
+          <div class="acard-icon">❤️</div>
+          <h3>Esprit familial</h3>
+          <p>Une ambiance chaleureuse et accueillante, que vous soyez débutant ou joueur confirmé.</p>
+        </div>
+        <div class="acard">
+          <div class="acard-icon">📍</div>
+          <h3>Bazas, Gironde</h3>
+          <p>Deux gymnases à votre disposition : le gymnase du Collège Ausone et le gymnase Sainte-Cluque.</p>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- CARTE & HORAIRES -->
-  <section class="map-section">
-    <div style="text-align:center;margin-bottom:2rem">
-      <span class="section-tag">Nous trouver</span>
-      <h2 class="section-title">Gymnase &amp; Horaires</h2>
-      <p class="section-sub" style="margin:0 auto;text-align:center">Av. du Prof Paul Lamarque, 33430 Bazas</p>
+  <section id="map-sec">
+    <div class="rv">
+      <div class="sec-label">Nous trouver</div>
+      <h2 class="sec-h2">Gymnases &amp; Horaires</h2>
+      <p class="sec-sub">Av. du Prof Paul Lamarque, 33430 Bazas · Gymnase Collège Ausone &amp; Gymnase Sainte-Cluque</p>
     </div>
-    <div class="map-wrap reveal">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2844.0!2d-0.2!3d44.43!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sAv.+du+Prof+Paul+Lamarque%2C+33430+Bazas!5e0!3m2!1sfr!2sfr!4v1" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="map-frame rv">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2849.0917081547245!2d-0.2243431226227602!3d44.43128100175925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd55777428a58faf%3A0xbb5f61fabac1c2ea!2sHbc%20bazadais!5e0!3m2!1sfr!2sfr!4v1779857208750!5m2!1sfr!2sfr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
-    <div class="horaires-grid reveal">
-      <div class="horaire-card"><div class="horaire-team">École du hand</div><div class="horaire-time">Mercredi</div><div class="horaire-day">14h00 – 15h30</div></div>
-      <div class="horaire-card"><div class="horaire-team">-11 Mixte</div><div class="horaire-time">Mercredi</div><div class="horaire-day">15h30 – 17h00</div></div>
-      <div class="horaire-card"><div class="horaire-team">-13 / -15</div><div class="horaire-time">Mardi & Jeudi</div><div class="horaire-day">18h00 – 19h30</div></div>
-      <div class="horaire-card"><div class="horaire-team">-18 F &amp; G</div><div class="horaire-time">Lundi & Mercredi</div><div class="horaire-day">19h00 – 20h30</div></div>
-      <div class="horaire-card"><div class="horaire-team">Seniors</div><div class="horaire-time">Mardi & Jeudi</div><div class="horaire-day">20h00 – 22h00</div></div>
-      <div class="horaire-card"><div class="horaire-team">Loisir</div><div class="horaire-time">Vendredi</div><div class="horaire-day">20h00 – 22h00</div></div>
+    <div class="rv">
+      <table class="horaires-table">
+        <thead><tr><th>Équipe</th><th>Jour(s)</th><th>Horaires</th><th>Lieu</th></tr></thead>
+        <tbody>
+          <tr><td class="team-col">École du Hand</td><td>Samedi</td><td>10h00 – 11h00</td><td><span class="tag-lieu">Collège Ausone</span></td></tr>
+          <tr><td class="team-col">Loisir</td><td>Jeudi</td><td>20h00 – 21h30</td><td><span class="tag-lieu">Collège Ausone</span></td></tr>
+          <tr><td class="team-col">-11 Mixte</td><td>Mercredi</td><td>17h00 – 18h30</td><td><span class="tag-lieu">Collège Ausone</span></td></tr>
+          <tr><td class="team-col">-13 Filles</td><td>Mercredi</td><td>18h30 – 20h00</td><td><span class="tag-lieu">Collège Ausone</span></td></tr>
+          <tr><td class="team-col">-13 Garçons</td><td>Jeudi</td><td>18h30 – 20h00</td><td><span class="tag-lieu">Collège Ausone</span></td></tr>
+          <tr><td class="team-col">-15 Filles</td><td>Mardi</td><td>17h30 – 19h00</td><td><span class="tag-lieu">Collège Ausone</span></td></tr>
+          <tr><td class="team-col">-15 Garçons</td><td>Mardi + Vendredi</td><td>17h30 – 19h00</td><td><span class="tag-lieu">Sainte-Cluque</span></td></tr>
+          <tr><td class="team-col">-18 Filles</td><td>Vendredi</td><td>19h00 – 20h30</td><td><span class="tag-lieu">Sainte-Cluque</span></td></tr>
+          <tr><td class="team-col">-18 Garçons</td><td>Mardi + Vendredi</td><td>17h30 – 19h30 / 17h30 – 19h00</td><td><span class="tag-lieu">Sainte-Cluque</span></td></tr>
+          <tr><td class="team-col">Seniors Filles</td><td>Mardi + Vendredi</td><td>19h30 – 21h00 / 19h00 – 20h30</td><td><span class="tag-lieu">Ausone + Sainte-Cluque</span></td></tr>
+          <tr><td class="team-col">Seniors Garçons 1 &amp; 2</td><td>Mardi + Vendredi</td><td>19h30 – 21h00 / 20h30 – 22h00</td><td><span class="tag-lieu">Sainte-Cluque</span></td></tr>
+        </tbody>
+      </table>
     </div>
   </section>
-
 </div><!-- /home -->
 
-<!-- ══════════════ ACTUALITÉS ══════════════ -->
-<div id="news" style="display:none">
-  <section class="section active" id="news-section" style="padding-top:8rem">
-    <span class="section-tag">Le club en direct</span>
-    <h2 class="section-title">Actualités</h2>
-    <p class="section-sub">Toutes les news du HBC Bazadais — résultats, événements, vie du club.</p>
-    <div class="news-grid">
-      <div class="news-card reveal">
-        <div class="news-img" style="background:linear-gradient(135deg,#0F1E41,rgba(234,59,121,.4))">
-          <span style="font-size:3rem;z-index:1">🏆</span>
-          <div class="news-tag">Résultat</div>
-        </div>
-        <div class="news-body">
-          <div class="news-date">Mai 2025</div>
-          <h3>Victoire des Seniors G1 en championnat !</h3>
-          <p>Belle performance de nos seniors garçons qui s'imposent 32-28 face à leur adversaire du week-end.</p>
-        </div>
-      </div>
-      <div class="news-card reveal reveal-delay-1">
-        <div class="news-img" style="background:linear-gradient(135deg,#0F1E41,rgba(248,216,225,.3))">
-          <span style="font-size:3rem;z-index:1">🎉</span>
-          <div class="news-tag">Événement</div>
-        </div>
-        <div class="news-body">
-          <div class="news-date">Avril 2025</div>
-          <h3>Tournoi de printemps — inscriptions ouvertes</h3>
-          <p>Le tournoi annuel du HBC Bazadais revient ! Inscrivez vos équipes dès maintenant.</p>
-        </div>
-      </div>
-      <div class="news-card reveal reveal-delay-2">
-        <div class="news-img" style="background:linear-gradient(135deg,#0F1E41,rgba(234,59,121,.25))">
-          <span style="font-size:3rem;z-index:1">📋</span>
-          <div class="news-tag">Club</div>
-        </div>
-        <div class="news-body">
-          <div class="news-date">Mars 2025</div>
-          <h3>Réunion de bilan mi-saison</h3>
-          <p>Retour sur la réunion du bureau avec les points clés de la saison en cours et les perspectives.</p>
-        </div>
-      </div>
+<!-- ══ ACTUALITÉS ══ -->
+<div id="pg-news" class="page">
+  <div class="page-hero">
+    <div class="page-hero-label">Le club en direct</div>
+    <h1 class="page-hero-h1">Actualités</h1>
+  </div>
+  <div class="news-grid">
+    <div class="ncard rv">
+      <div class="ncard-img" style="background:linear-gradient(135deg,#0F1E41,rgba(234,59,121,.4))"><span>🏆</span><div class="ncard-tag">Résultat</div></div>
+      <div class="ncard-body"><div class="ncard-date">Saison 2025-26</div><h3>Suivez nos équipes</h3><p>Retrouvez les résultats et actualités de toutes nos équipes tout au long de la saison.</p></div>
     </div>
-    <div class="ffhb-bloc reveal" style="margin-top:3rem">
-      <div class="soon-badge">⚡ Bientôt disponible</div>
-      <h4>Résultats &amp; Calendrier FFHB en temps réel</h4>
-      <p>Un module IA viendra automatiquement récupérer les résultats, classements et calendriers directement depuis la FFHB pour toutes nos équipes.</p>
+    <div class="ncard rv d1">
+      <div class="ncard-img" style="background:linear-gradient(135deg,#0F1E41,rgba(248,216,225,.3))"><span>🎉</span><div class="ncard-tag">Événement</div></div>
+      <div class="ncard-body"><div class="ncard-date">Saison 2025-26</div><h3>Rejoignez le HBC Bazadais</h3><p>Les inscriptions pour la saison 2025-2026 sont ouvertes. Venez nous rejoindre !</p></div>
     </div>
-  </section>
+    <div class="ncard rv d2">
+      <div class="ncard-img" style="background:linear-gradient(135deg,#0F1E41,rgba(234,59,121,.2))"><span>📋</span><div class="ncard-tag">Club</div></div>
+      <div class="ncard-body"><div class="ncard-date">Saison 2025-26</div><h3>Vie du club</h3><p>Ambiance familiale, convivialité et passion du handball — c'est le HBC Bazadais !</p></div>
+    </div>
+  </div>
+  <div class="ffhb-soon rv">
+    <div class="soon-chip">⚡ Bientôt disponible</div>
+    <h4>Résultats &amp; Calendrier FFHB en temps réel</h4>
+    <p>Un module IA récupérera automatiquement résultats, classements et calendriers depuis la FFHB pour toutes nos équipes.</p>
+  </div>
 </div>
 
-<!-- ══════════════ ÉQUIPES ══════════════ -->
-<div id="teams" style="display:none">
-  <section class="section active" id="teams-section" style="padding-top:8rem">
-    <span class="section-tag">Le club</span>
-    <h2 class="section-title">Nos Équipes</h2>
-    <p class="section-sub">12 équipes pour tous les âges et tous les niveaux. Cliquez sur une équipe pour découvrir son effectif, son classement et son calendrier.</p>
-    <div class="teams-grid" id="teamsGrid" style="margin-top:3rem"></div>
-  </section>
+<!-- ══ ÉQUIPES ══ -->
+<div id="pg-teams" class="page">
+  <div class="page-hero">
+    <div class="page-hero-label">Le club</div>
+    <h1 class="page-hero-h1">Nos 12 Équipes</h1>
+  </div>
+  <div class="teams-grid" id="teamsGrid" style="margin-top:3rem"></div>
 </div>
 
-<!-- PAGE ÉQUIPE INDIVIDUELLE -->
-<div id="team-page">
-  <section style="padding:8rem 4% 4rem">
-    <div onclick="goBackToTeams()" class="back-btn">← Retour aux équipes</div>
-    <div class="team-page-header">
-      <div class="section-tag" id="teamCatLabel"></div>
-      <h1 id="teamPageTitle">Seniors <span>Garçons 1</span></h1>
+<!-- ══ PAGE ÉQUIPE ══ -->
+<div id="pg-team">
+  <div class="team-ph">
+    <button class="back-link" onclick="backToTeams()">← Retour aux équipes</button>
+    <div class="page-hero-label" id="teamCat"></div>
+    <h1 class="page-hero-h1" id="teamName"></h1>
+  </div>
+  <div class="team-sub-cards">
+    <div class="sub-card" onclick="openSub('effectif')">
+      <div class="sub-card-icon">👥</div>
+      <div class="sub-card-title">Effectif</div>
+      <div class="sub-card-desc">Joueurs et joueuses de l'équipe</div>
     </div>
-    <div class="team-sub-grid">
-      <div class="team-sub-card" onclick="showSubPage('effectif')">
-        <span class="sub-icon">👥</span>
-        <div class="sub-title">Effectif</div>
-        <div class="sub-desc">Découvrez les joueurs et joueuses de l'équipe</div>
-      </div>
-      <div class="team-sub-card" onclick="showSubPage('classement')">
-        <span class="sub-icon">🏆</span>
-        <div class="sub-title">Classement</div>
-        <div class="sub-desc">Position au championnat et points</div>
-      </div>
-      <div class="team-sub-card" onclick="showSubPage('calendrier')">
-        <span class="sub-icon">📅</span>
-        <div class="sub-title">Calendrier &amp; Résultats</div>
-        <div class="sub-desc">Matchs à venir et résultats de la saison</div>
-      </div>
+    <div class="sub-card" onclick="openSub('classement')">
+      <div class="sub-card-icon">🏆</div>
+      <div class="sub-card-title">Classement</div>
+      <div class="sub-card-desc">Position au championnat</div>
     </div>
-  </section>
+    <div class="sub-card" onclick="openSub('calendrier')">
+      <div class="sub-card-icon">📅</div>
+      <div class="sub-card-title">Calendrier &amp; Résultats</div>
+      <div class="sub-card-desc">Matchs à venir et résultats</div>
+    </div>
+  </div>
 </div>
 
-<!-- SOUS-PAGE ÉQUIPE -->
-<div id="team-subpage">
-  <section style="padding:8rem 4% 4rem">
-    <div onclick="goBackToTeamPage()" class="back-btn">← Retour à l'équipe</div>
-    <div class="subpage-header">
-      <div class="section-tag" id="subpageTeamLabel"></div>
-      <h2 class="section-title" id="subpageTitle"></h2>
-    </div>
-    <div id="subpageContent"></div>
-  </section>
+<!-- ══ SOUS-PAGE ÉQUIPE ══ -->
+<div id="pg-subteam">
+  <div class="team-ph">
+    <button class="back-link" onclick="backToTeam()">← Retour à l'équipe</button>
+    <div class="page-hero-label" id="subTeamLabel"></div>
+    <h1 class="page-hero-h1" id="subTitle"></h1>
+  </div>
+  <div style="padding:2rem 5% 5rem" id="subContent"></div>
 </div>
 
-<!-- ══════════════ BOUTIQUE ══════════════ -->
-<div id="shop" style="display:none">
-  <section class="section active" id="shop-section" style="padding-top:8rem">
-    <span class="section-tag">Boutique officielle</span>
-    <h2 class="section-title">Nos Articles</h2>
-    <p class="section-sub">Portez les couleurs du HBC Bazadais. Chaque achat vous redirige vers notre boutique HelloAsso sécurisée.</p>
-    <div class="shop-grid">
-      <div class="product-card reveal">
-        <div class="product-img">👕<div class="product-badge">Nouveau</div></div>
-        <div class="product-body">
-          <div class="product-name">Maillot Officiel 2025</div>
-          <div class="product-desc">Maillot domicile saison 2025-2026, disponible en toutes tailles</div>
-          <div class="product-footer">
-            <div class="product-price">35<span>€</span></div>
-            <a href="#" class="btn-shop" target="_blank">Acheter →</a>
-          </div>
-        </div>
-      </div>
-      <div class="product-card reveal reveal-delay-1">
-        <div class="product-img">🧢</div>
-        <div class="product-body">
-          <div class="product-name">Casquette HBC</div>
-          <div class="product-desc">Casquette brodée aux couleurs du club, ajustable</div>
-          <div class="product-footer">
-            <div class="product-price">18<span>€</span></div>
-            <a href="#" class="btn-shop" target="_blank">Acheter →</a>
-          </div>
-        </div>
-      </div>
-      <div class="product-card reveal reveal-delay-2">
-        <div class="product-img">🎽</div>
-        <div class="product-body">
-          <div class="product-name">Survêtement Club</div>
-          <div class="product-desc">Ensemble veste + pantalon, logo brodé HBC Bazadais</div>
-          <div class="product-footer">
-            <div class="product-price">55<span>€</span></div>
-            <a href="#" class="btn-shop" target="_blank">Acheter →</a>
-          </div>
-        </div>
-      </div>
-      <div class="product-card reveal reveal-delay-1">
-        <div class="product-img">🏐</div>
-        <div class="product-body">
-          <div class="product-name">Ballon Officiel</div>
-          <div class="product-desc">Ballon de handball taille 2 / 3, logo HBC Bazadais</div>
-          <div class="product-footer">
-            <div class="product-price">28<span>€</span></div>
-            <a href="#" class="btn-shop" target="_blank">Acheter →</a>
-          </div>
-        </div>
-      </div>
+<!-- ══ BOUTIQUE ══ -->
+<div id="pg-shop" class="page">
+  <div class="page-hero">
+    <div class="page-hero-label">Boutique officielle</div>
+    <h1 class="page-hero-h1">Nos Articles</h1>
+  </div>
+  <div class="shop-grid" style="margin-top:3rem">
+    <div class="prod-card rv">
+      <div class="prod-img">👕<div class="prod-badge">Nouveau</div></div>
+      <div class="prod-body"><div class="prod-name">Maillot Officiel 2025</div><div class="prod-desc">Maillot domicile saison 2025-2026, disponible en toutes tailles</div><div class="prod-foot"><div class="prod-price">35<small>€</small></div><a href="#" class="btn-buy" target="_blank">Acheter →</a></div></div>
     </div>
-    <p style="color:rgba(255,252,237,.3);font-size:.75rem;text-align:center;margin-top:2.5rem">Les achats sont traités via HelloAsso, notre partenaire de paiement sécurisé. Vous serez redirigé vers leur plateforme.</p>
-  </section>
+    <div class="prod-card rv d1">
+      <div class="prod-img">🧢</div>
+      <div class="prod-body"><div class="prod-name">Casquette HBC</div><div class="prod-desc">Casquette brodée aux couleurs du club, ajustable</div><div class="prod-foot"><div class="prod-price">18<small>€</small></div><a href="#" class="btn-buy" target="_blank">Acheter →</a></div></div>
+    </div>
+    <div class="prod-card rv d2">
+      <div class="prod-img">🎽</div>
+      <div class="prod-body"><div class="prod-name">Survêtement Club</div><div class="prod-desc">Ensemble veste + pantalon, logo brodé HBC Bazadais</div><div class="prod-foot"><div class="prod-price">55<small>€</small></div><a href="#" class="btn-buy" target="_blank">Acheter →</a></div></div>
+    </div>
+    <div class="prod-card rv d1">
+      <div class="prod-img">🏐</div>
+      <div class="prod-body"><div class="prod-name">Ballon Officiel</div><div class="prod-desc">Ballon de handball taille 2/3, logo HBC Bazadais</div><div class="prod-foot"><div class="prod-price">28<small>€</small></div><a href="#" class="btn-buy" target="_blank">Acheter →</a></div></div>
+    </div>
+  </div>
+  <p style="color:rgba(255,252,237,.25);font-size:.73rem;text-align:center;padding-bottom:4rem">Achats traités via HelloAsso — vous serez redirigé vers leur plateforme sécurisée.</p>
 </div>
 
-<!-- ══════════════ PARTENAIRES ══════════════ -->
-<div id="partners" style="display:none">
-  <section class="section active" id="partners-section" style="padding-top:8rem">
-    <span class="section-tag">Ils nous soutiennent</span>
-    <h2 class="section-title">Nos Partenaires</h2>
-    <p class="section-sub">Merci à tous ceux qui font vivre le HBC Bazadais. Cliquez sur un partenaire pour visiter son site.</p>
-    <div class="partners-grid" id="partnersGrid"></div>
-    <div class="recruit-bloc reveal" style="margin-top:4rem">
-      <h3>Devenez Partenaire</h3>
-      <p>Associez votre image à celle du HBC Bazadais et soutenez le sport local. Plusieurs formules disponibles selon votre engagement.</p>
-      <a href="#" class="btn-primary" onclick="showSection('contact')">Nous contacter →</a>
-    </div>
-  </section>
+<!-- ══ PARTENAIRES ══ -->
+<div id="pg-partners" class="page">
+  <div class="page-hero">
+    <div class="page-hero-label">Ils nous soutiennent</div>
+    <h1 class="page-hero-h1">Nos Partenaires</h1>
+  </div>
+  <div class="partners-grid" style="margin-top:3rem" id="partnersGrid"></div>
+  <div class="recruit-cta rv">
+    <h3>Devenez Partenaire</h3>
+    <p>Associez votre image à celle du HBC Bazadais et soutenez le sport local en Gironde.</p>
+    <a href="#" class="btn-p" onclick="nav('contact')">Nous contacter →</a>
+  </div>
 </div>
 
-<!-- ══════════════ CONTACT ══════════════ -->
-<div id="contact" style="display:none">
-  <section class="section active" id="contact-section" style="padding-top:8rem">
-    <span class="section-tag">Contactez-nous</span>
-    <h2 class="section-title">Parlons-nous</h2>
-    <p class="section-sub">Une question, une envie de rejoindre le club, ou un projet de partenariat ? Écrivez-nous !</p>
-    <div class="contact-wrap">
-      <div class="contact-info">
+<!-- ══ CONTACT ══ -->
+<div id="pg-contact" class="page">
+  <div class="page-hero">
+    <div class="page-hero-label">Parlons-nous</div>
+    <h1 class="page-hero-h1">Contact</h1>
+  </div>
+  <div class="contact-layout" style="padding-top:4rem">
+    <div class="rv">
+      <div class="contact-left">
         <h3>HBC Bazadais</h3>
-        <p>N'hésitez pas à nous contacter pour toute question. Nous vous répondrons dans les meilleurs délais.</p>
-        <div class="contact-detail">
-          <div class="contact-detail-icon">📍</div>
-          <div class="contact-detail-text">Av. du Prof Paul Lamarque<br>33430 Bazas</div>
+        <p>Une question, une envie de rejoindre le club ou un projet de partenariat ? Écrivez-nous, nous vous répondrons dans les meilleurs délais.</p>
+        <div class="cdetail"><div class="cdetail-ico">📍</div><div class="cdetail-txt">Av. du Prof Paul Lamarque<br>33430 Bazas, Gironde</div></div>
+        <div class="cdetail"><div class="cdetail-ico">📞</div><div class="cdetail-txt"><a href="tel:0768680424">07 68 68 04 24</a></div></div>
+        <div class="cdetail"><div class="cdetail-ico">🌐</div><div class="cdetail-txt">Suivez-nous sur les réseaux</div></div>
+        <div class="socials">
+          <a class="social-ico" href="https://www.facebook.com/hbc.bazadais" target="_blank">f</a>
+          <a class="social-ico" href="https://www.instagram.com/hbcbazadais_/" target="_blank">ig</a>
+          <a class="social-ico" href="https://www.tiktok.com/@bazas.handball" target="_blank">tt</a>
         </div>
-        <div class="contact-detail">
-          <div class="contact-detail-icon">📧</div>
-          <div class="contact-detail-text">contact@hbc-bazadais.fr</div>
-        </div>
-        <div class="contact-detail">
-          <div class="contact-detail-icon">📱</div>
-          <div class="contact-detail-text">Suivez-nous sur les réseaux sociaux</div>
-        </div>
-      </div>
-      <div class="contact-form reveal">
-        <form action="https://formspree.io/f/VOTRE_ID_FORMSPREE" method="POST">
-          <div class="form-group">
-            <label>Sujet</label>
-            <select name="sujet" required>
-              <option value="" disabled selected>Choisissez un sujet</option>
-              <option value="general">💬 Question générale</option>
-              <option value="joueur">⚽ Inscription joueur / joueuse</option>
-              <option value="entraineur">🏋️ Candidature entraîneur</option>
-              <option value="partenaire">🤝 Devenir partenaire</option>
-              <option value="autre">📌 Autre</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label>Nom &amp; Prénom</label>
-            <input type="text" name="nom" placeholder="Votre nom complet" required>
-          </div>
-          <div class="form-group">
-            <label>Email</label>
-            <input type="email" name="email" placeholder="votre@email.fr" required>
-          </div>
-          <div class="form-group">
-            <label>Téléphone (optionnel)</label>
-            <input type="tel" name="tel" placeholder="06 XX XX XX XX">
-          </div>
-          <div class="form-group">
-            <label>Message</label>
-            <textarea name="message" placeholder="Votre message..." required></textarea>
-          </div>
-          <button type="submit" class="form-submit">Envoyer le message</button>
-        </form>
       </div>
     </div>
-  </section>
+    <div class="cform rv d1">
+      <form action="https://formspree.io/f/VOTRE_ID_FORMSPREE" method="POST">
+        <div class="fg">
+          <label>Sujet *</label>
+          <select name="sujet" required>
+            <option value="" disabled selected>Choisissez un sujet</option>
+            <option value="general">💬 Question générale</option>
+            <option value="joueur">⚽ Inscription joueur / joueuse</option>
+            <option value="entraineur">🏋️ Candidature entraîneur</option>
+            <option value="partenaire">🤝 Devenir partenaire</option>
+            <option value="autre">📌 Autre</option>
+          </select>
+        </div>
+        <div class="fg-row">
+          <div class="fg"><label>Prénom *</label><input type="text" name="prenom" required placeholder="Votre prénom"></div>
+          <div class="fg"><label>Nom *</label><input type="text" name="nom" required placeholder="Votre nom"></div>
+        </div>
+        <div class="fg"><label>Email *</label><input type="email" name="email" required placeholder="votre@email.fr"></div>
+        <div class="fg"><label>Téléphone</label><input type="tel" name="tel" placeholder="06 XX XX XX XX"></div>
+        <div class="fg"><label>Message *</label><textarea name="message" required placeholder="Votre message..."></textarea></div>
+        <button type="submit" class="form-submit">Envoyer le message</button>
+      </form>
+    </div>
+  </div>
 </div>
 
-<!-- ══════════════ FOOTER ══════════════ -->
+<!-- ══ FOOTER ══ -->
 <footer>
-  <!-- Carousel partenaires -->
-  <div class="carousel-wrap">
-    <div class="carousel-track" id="carouselTrack"></div>
+  <!-- Carousel infini partenaires -->
+  <div class="footer-carousel-wrap">
+    <div class="fcar-outer" id="fcarOuter"></div>
   </div>
-
-  <div class="footer-top">
+  <div class="footer-main">
     <div class="footer-brand">
-      <a class="nav-logo" href="#" onclick="showSection('home')">HBC<span>.</span>Bazadais</a>
-      <p>Club de handball de Bazas, en Gironde. Rejoignez-nous pour la saison 2025–2026 !</p>
+      <a class="logo" href="#" onclick="nav('home')"><img src="data:image/png;base64,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" style="height:42px;width:42px;object-fit:contain;filter:brightness(0) invert(1)" alt="Logo HBC Bazadais"> HBC<em>.</em>Bazadais</a>
+      <p>Club de handball à Bazas, Gironde. Depuis 1993, une famille passionnée au service du handball local.</p>
+      <div class="footer-socials">
+        <a class="footer-soc" href="https://www.facebook.com/hbc.bazadais" target="_blank">f</a>
+        <a class="footer-soc" href="https://www.instagram.com/hbcbazadais_/" target="_blank">ig</a>
+        <a class="footer-soc" href="https://www.tiktok.com/@bazas.handball" target="_blank">tt</a>
+      </div>
     </div>
-    <div class="footer-links-grid">
-      <div class="footer-col">
-        <h4>Navigation</h4>
-        <a href="#" onclick="showSection('home')">Accueil</a>
-        <a href="#" onclick="showSection('news')">Actualités</a>
-        <a href="#" onclick="showSection('teams')">Équipes</a>
-      </div>
-      <div class="footer-col">
-        <h4>Club</h4>
-        <a href="#" onclick="showSection('shop')">Boutique</a>
-        <a href="#" onclick="showSection('partners')">Partenaires</a>
-        <a href="#" onclick="showSection('contact')">Contact</a>
-      </div>
-      <div class="footer-col">
-        <h4>Infos</h4>
-        <a href="#">Mentions légales</a>
-        <a href="#">FFHB</a>
-        <a href="#">HelloAsso</a>
-      </div>
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <a href="#" onclick="nav('home')">Accueil</a>
+      <a href="#" onclick="nav('news')">Actualités</a>
+      <a href="#" onclick="nav('teams')">Équipes</a>
+      <a href="#" onclick="nav('shop')">Boutique</a>
+    </div>
+    <div class="footer-col">
+      <h4>Club</h4>
+      <a href="#" onclick="nav('partners')">Partenaires</a>
+      <a href="#" onclick="nav('contact')">Contact</a>
+      <a href="https://monclub.ffhandball.fr/clubs/hbc-bazadais/" target="_blank">FFHB</a>
+      <a href="#" target="_blank">HelloAsso</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <a href="tel:0768680424">07 68 68 04 24</a>
+      <a href="#">Bazas, Gironde 33430</a>
+      <a href="#">Mentions légales</a>
     </div>
   </div>
-
   <div class="footer-bottom">
     <p>© 2025 HBC Bazadais — Tous droits réservés</p>
-    <div class="footer-social">
-      <a href="#" class="social-btn">f</a>
-      <a href="#" class="social-btn">in</a>
-      <a href="#" class="social-btn">📸</a>
-    </div>
+    <span>SOUY BAZADES 🤝</span>
   </div>
 </footer>
 
 <script>
-// ─── DONNÉES ───
-const teams = [
-  {id:'loisir',cat:'Détente',name:'Loisir',emoji:'😄'},
-  {id:'ecole',cat:'Jeune',name:'École du Hand',emoji:'⭐'},
-  {id:'u11',cat:'Catégorie d\'âge',name:'-11 Mixte',emoji:'🌟'},
-  {id:'u13f',cat:'Catégorie d\'âge',name:'-13 Filles',emoji:'🩷'},
-  {id:'u13g',cat:'Catégorie d\'âge',name:'-13 Garçons',emoji:'💙'},
-  {id:'u15f',cat:'Catégorie d\'âge',name:'-15 Filles',emoji:'🩷'},
-  {id:'u15g',cat:'Catégorie d\'âge',name:'-15 Garçons',emoji:'💙'},
-  {id:'u18f',cat:'Catégorie d\'âge',name:'-18 Filles',emoji:'🩷'},
-  {id:'u18g',cat:'Catégorie d\'âge',name:'-18 Garçons',emoji:'💙'},
-  {id:'srf',cat:'Compétition',name:'Seniors Filles',emoji:'🏆'},
-  {id:'srg2',cat:'Compétition',name:'Seniors Garçons 2',emoji:'🥈'},
-  {id:'srg1',cat:'Compétition',name:'Seniors Garçons 1',emoji:'🥇'},
+// ══ DATA ══
+const TEAMS = [
+  {id:'loisir',cat:'Détente & Loisir',name:'Loisir',roster:[]},
+  {id:'ecole',cat:'École de Handball',name:'École du Hand',roster:[]},
+  {id:'u11',cat:'Catégorie U11',name:'-11 Mixte',roster:[]},
+  {id:'u13f',cat:'Catégorie U13',name:'-13 Filles',roster:[]},
+  {id:'u13g',cat:'Catégorie U13',name:'-13 Garçons',roster:[]},
+  {id:'u15f',cat:'Catégorie U15',name:'-15 Filles',roster:[]},
+  {id:'u15g',cat:'Catégorie U15',name:'-15 Garçons',roster:[]},
+  {id:'u18f',cat:'Catégorie U18',name:'-18 Filles',roster:[
+    {num:'12',fname:'Romane',lname:'BEZIADE',pos:'Gardienne'},
+    {num:'2',fname:'Cloé',lname:'BRICAUD',pos:''},
+    {num:'3',fname:'Inès',lname:'GIRARD',pos:''},
+    {num:'4',fname:'Inès',lname:'BUREAU',pos:''},
+    {num:'5',fname:'Jaëlle',lname:'LABROUCHE',pos:''},
+    {num:'6',fname:'Ange',lname:'WAVRANT',pos:''},
+    {num:'7',fname:'Naëlle',lname:'RENAC',pos:''},
+    {num:'8',fname:'Ainhoa',lname:'BENTEJAC',pos:''},
+    {num:'9',fname:'Héloïse',lname:'JOUGUET',pos:''},
+    {num:'10',fname:'Noélane',lname:'BROTET',pos:'Pivot'},
+    {num:'13',fname:'Lucile',lname:'VENNAT',pos:''},
+    {num:'14',fname:'Anaëlle',lname:'DUPEYRE',pos:'Ailière gauche'},
+  ]},
+  {id:'u18g',cat:'Catégorie U18',name:'-18 Garçons',roster:[
+    {num:'2',fname:'Gabriel',lname:'BEGUEY',pos:''},
+    {num:'3',fname:'Migwel',lname:'GINESTE',pos:''},
+    {num:'4',fname:'Enael',lname:'MAILLET',pos:'Gardien'},
+    {num:'6',fname:'Noa',lname:'DUBAR',pos:''},
+    {num:'7',fname:'Louis',lname:'DUBAR',pos:''},
+    {num:'8',fname:'Rafael',lname:'CARLIER',pos:''},
+    {num:'9',fname:'Tony',lname:'DAHERON',pos:''},
+    {num:'10',fname:'Aubin',lname:'DUPIOL',pos:''},
+    {num:'13',fname:'Noé',lname:'CAZADE',pos:''},
+    {num:'16',fname:'Hugo',lname:'DESCOUBES',pos:''},
+  ]},
+  {id:'srf',cat:'Compétition Senior',name:'Seniors Filles',roster:[
+    {num:'2',fname:'Charlotte',lname:'PAILLAUGUE',pos:''},
+    {num:'3',fname:'Chloé',lname:'LEGLISE',pos:''},
+    {num:'4',fname:'Maylis',lname:'BROTET',pos:''},
+    {num:'5',fname:'Lomane',lname:'DUPIOL',pos:''},
+    {num:'7',fname:'Laura',lname:'DESCACQ',pos:''},
+    {num:'8',fname:'Chloé',lname:'HUR',pos:''},
+    {num:'9',fname:'Déborah',lname:'DOUX',pos:''},
+    {num:'10',fname:'Lison',lname:'DUPLAN',pos:''},
+    {num:'13',fname:'Valérie',lname:'DUCOS',pos:''},
+    {num:'16',fname:'Clara',lname:'LAHAYE',pos:''},
+    {num:'17',fname:'Clémence',lname:'SORBIER',pos:''},
+    {num:'18',fname:'Camille',lname:'LEGLISE',pos:''},
+  ]},
+  {id:'srg2',cat:'Compétition Senior',name:'Seniors Garçons 2',roster:[
+    {num:'1',fname:'Maxime',lname:'CARLIER',pos:'Gardien'},
+    {num:'6',fname:'Aidan',lname:'LESCARRET',pos:'Arrière gauche'},
+    {num:'11',fname:'Quentin',lname:'SINNAEVE',pos:'Arrière droit'},
+    {num:'14',fname:'Noah',lname:'CHEVALIER',pos:'Pivot'},
+    {num:'16',fname:'Marc',lname:'GALINEAU',pos:'Pivot'},
+    {num:'19',fname:'Kevin',lname:'COURTOIS',pos:'Ailier droit'},
+    {num:'22',fname:'Corentin',lname:'ROBICHON',pos:'Gardien'},
+    {num:'29',fname:'Yanis',lname:'DAHERON',pos:'Pivot'},
+    {num:'31',fname:'Noa',lname:'CHANCONIE',pos:'Arrière gauche'},
+    {num:'47',fname:'Sébastien',lname:'DALLIES',pos:'Ailier gauche'},
+    {num:'62',fname:'Mathieu',lname:'LELONG',pos:'Arrière droit'},
+    {num:'64',fname:'Manuel',lname:'GONCALVES BORLIDO',pos:'Demi-centre'},
+  ]},
+  {id:'srg1',cat:'Compétition Senior',name:'Seniors Garçons 1',roster:[
+    {num:'2',fname:'Baptiste',lname:'DUFOUR CLARAC',pos:'Arrière gauche'},
+    {num:'5',fname:'Léo',lname:'LABROUCHE',pos:'Ailier droit'},
+    {num:'10',fname:'Bastien',lname:'POISSON',pos:'Demi-centre'},
+    {num:'15',fname:'Rémy',lname:'COUTHURES',pos:'Pivot'},
+    {num:'17',fname:'Alban',lname:'BONTEMPS',pos:'Ailier gauche'},
+    {num:'21',fname:'Evan',lname:'BEAUVALOT-CAPOULADE',pos:'Arrière gauche'},
+    {num:'22',fname:'Alexandre',lname:'BURONFOSSE',pos:'Gardien'},
+    {num:'23',fname:'William',lname:'VEYSSIERE',pos:'Ailier gauche'},
+    {num:'28',fname:'Baptiste',lname:'SANCHEZ',pos:'Arrière droit'},
+    {num:'53',fname:'Nicolas',lname:'MANGEARD',pos:'Pivot'},
+    {num:'77',fname:'Johan',lname:'DERNONCOURT',pos:'Arrière droit'},
+    {num:'93',fname:'Tom',lname:'LEFEVRE',pos:'Demi-centre'},
+  ]},
 ];
 
-const partners = [
-  {name:'Partenaire 1',type:'Sponsor officiel',emoji:'🏢',url:'#'},
-  {name:'Partenaire 2',type:'Équipementier',emoji:'👕',url:'#'},
-  {name:'Partenaire 3',type:'Sponsor local',emoji:'🏪',url:'#'},
-  {name:'Partenaire 4',type:'Partenaire médias',emoji:'📺',url:'#'},
-  {name:'Partenaire 5',type:'Sponsor',emoji:'🏗️',url:'#'},
-  {name:'Partenaire 6',type:'Partenaire',emoji:'⚡',url:'#'},
+const PARTNERS = [
+  {name:'Mairie de Bazas',type:'Collectivité',url:'https://www.ville-bazas.fr/'},
+  {name:'Boucherie Chez Val & Maë',type:'Artisan boucher',url:'https://boucherie-chez-val-et-mae-33.fr/'},
+  {name:"Central'liss",type:'Blanchisserie professionnelle',url:'https://blanchisserie-central-liss.fr/'},
+  {name:'V and B Langon',type:'Cave & bière',url:'https://www.vandb.fr/'},
+  {name:'Carrosserie Pitaud',type:'Réparation véhicule',url:'https://carrosserie-pitaud.fr/'},
+  {name:'SO FRUIT Primeur',type:'Primeur',url:'https://www.facebook.com/p/SO-FRUIT-Primeur-100063498852369/'},
+  {name:'Sport 2000 Langon',type:'Équipementier sportif',url:'https://www.sport2000.fr/magasins/fiche/331020-sport-2000-langon'},
+  {name:'Créamext Clôture & Paysage',type:'Aménagement extérieur',url:'https://creamext.com/'},
+  {name:'MRP Habitat',type:'Menuisier',url:'https://www.maximeratamrphabitat.fr/'},
+  {name:"Caisse d'Épargne Bazas",type:'Banque',url:'https://www.agences.caisse-epargne.fr/banque-assurance/bazas-id13335033051'},
+  {name:'OBJ Coaching',type:'Coach sportif',url:'https://www.objtrainer.fr/'},
+  {name:'La Ferme du Petit Cassé',type:'Agriculture',url:'https://fermedupetitcasse.com/'},
+  {name:'Lucas Denis',type:'Ramoneur & chauffagiste',url:'https://www.lucas-denis.fr/'},
+  {name:'OuiGlass Bazas',type:'Vitrage',url:'https://ouiglass.com/tous-centres/bazas'},
+  {name:'Carré Double',type:'Aménagement & décoration',url:'https://carredouble.fr/'},
+  {name:'Pest & Termites Bazas',type:'Traitement nuisibles',url:'https://www.pestandtermites.fr/'},
+  {name:'Intermarché Bazas',type:'Grande distribution',url:'https://www.intermarche.com/magasins/06743/bazas-33430/infos-pratiques'},
+  {name:'Viva La Vie Techni Coif',type:'Coiffeur',url:'https://www.planity.com/viva-la-vie-techni-coif-bazas-33430'},
+  {name:'Le Cercle Aillas',type:'Bar & Brasserie',url:'https://lecercle-restaurant-aillas.fr/'},
 ];
 
+// ══ STATE ══
 let currentTeam = null;
-let currentSubPage = null;
+let currentSub = null;
 
-// ─── INIT ───
-window.addEventListener('load', () => {
-  setTimeout(() => {
-    document.getElementById('loader').classList.add('hide');
-  }, 2000);
-  buildTeamsGrid();
-  buildDropdown();
-  buildPartners();
-  buildCarousel();
-  initScroll();
-  initReveal();
+// ══ CURSOR ══
+const cur = document.getElementById('cur');
+const cur2 = document.getElementById('cur2');
+document.addEventListener('mousemove', e => {
+  cur.style.left = e.clientX - 5 + 'px';
+  cur.style.top = e.clientY - 5 + 'px';
+  cur2.style.left = e.clientX - 18 + 'px';
+  cur2.style.top = e.clientY - 18 + 'px';
 });
 
-// ─── NAVIGATION ───
-const sections = ['home','news','teams','shop','partners','contact'];
-
-function showSection(name) {
-  sections.forEach(s => {
-    const el = document.getElementById(s);
-    if (el) el.style.display = 'none';
-  });
-  document.getElementById('team-page').style.display = 'none';
-  document.getElementById('team-subpage').style.display = 'none';
-
-  const target = document.getElementById(name);
-  if (target) {
-    target.style.display = 'block';
-    window.scrollTo({top:0,behavior:'smooth'});
-    initReveal();
-  }
-}
-
-function toggleMenu() {
-  document.getElementById('navLinks').classList.toggle('open');
-}
-function closeMenu() {
-  document.getElementById('navLinks').classList.remove('open');
-}
-
-// ─── SCROLL NAV ───
-function initScroll() {
-  window.addEventListener('scroll', () => {
-    const nav = document.getElementById('navbar');
-    nav.classList.toggle('scrolled', window.scrollY > 50);
-  });
-}
-
-// ─── REVEAL ───
-function initReveal() {
+// ══ LOADER ══
+window.addEventListener('load', () => {
   setTimeout(() => {
-    const els = document.querySelectorAll('.reveal');
-    const obs = new IntersectionObserver((entries) => {
-      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-    }, {threshold:.1});
-    els.forEach(el => { el.classList.remove('visible'); obs.observe(el); });
-  }, 100);
+    document.getElementById('loader').classList.add('out');
+    initReveal();
+  }, 2000);
+});
+
+// ══ NAV SCROLL ══
+window.addEventListener('scroll', () => {
+  document.getElementById('nav').classList.toggle('solid', window.scrollY > 40);
+});
+
+// ══ MOBILE ══
+function toggleMob() {
+  document.getElementById('mobileNav').classList.toggle('open');
+  document.getElementById('hbg').classList.toggle('open');
 }
 
-// ─── ÉQUIPES ───
-function buildTeamsGrid() {
+// ══ NAV ══
+const PAGES = ['home','news','teams','shop','partners','contact'];
+function nav(id) {
+  PAGES.forEach(p => {
+    const el = document.getElementById('pg-'+p);
+    if (el) el.classList.remove('active');
+  });
+  document.getElementById('pg-team').style.display = 'none';
+  document.getElementById('pg-subteam').style.display = 'none';
+
+  const el = document.getElementById('pg-'+id);
+  if (el) { el.classList.add('active'); }
+  window.scrollTo({top:0,behavior:'smooth'});
+  setTimeout(initReveal, 100);
+}
+
+// ══ REVEAL ══
+function initReveal() {
+  const els = document.querySelectorAll('.rv:not(.in)');
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
+  }, {threshold: .08});
+  els.forEach(el => obs.observe(el));
+}
+
+// ══ BUILD TEAMS ══
+function buildTeams() {
   const grid = document.getElementById('teamsGrid');
-  grid.innerHTML = teams.map(t => `
-    <div class="team-card" onclick="openTeam('${t.id}')">
-      <div class="team-cat">${t.cat}</div>
-      <div class="team-name">${t.emoji} ${t.name}</div>
-      <div class="team-arrow">Voir l'équipe →</div>
+  grid.innerHTML = TEAMS.map(t => `
+    <div class="tcard" onclick="openTeam('${t.id}')">
+      <div class="tcard-cat">${t.cat}</div>
+      <div class="tcard-name">${t.name}</div>
     </div>
   `).join('');
-}
 
-function buildDropdown() {
-  const dd = document.getElementById('teamsDropdown');
-  dd.innerHTML = teams.map(t => `
-    <a href="#" onclick="openTeam('${t.id}');closeMenu()">${t.emoji} ${t.name}</a>
+  const dd = document.getElementById('ddpMenu');
+  dd.innerHTML = TEAMS.map(t => `
+    <a href="#" onclick="openTeam('${t.id}')">${t.name}</a>
   `).join('');
 }
 
 function openTeam(id) {
-  currentTeam = teams.find(t => t.id === id);
-  sections.forEach(s => { const el = document.getElementById(s); if(el) el.style.display='none'; });
-  document.getElementById('team-subpage').style.display = 'none';
-
-  document.getElementById('teamCatLabel').textContent = currentTeam.cat;
-  document.getElementById('teamPageTitle').innerHTML = currentTeam.emoji + ' ' + currentTeam.name;
-
-  document.getElementById('team-page').style.display = 'block';
+  currentTeam = TEAMS.find(t => t.id === id);
+  PAGES.forEach(p => { const el = document.getElementById('pg-'+p); if(el) el.classList.remove('active'); });
+  document.getElementById('pg-subteam').style.display = 'none';
+  document.getElementById('teamCat').textContent = currentTeam.cat;
+  document.getElementById('teamName').textContent = currentTeam.name;
+  document.getElementById('pg-team').style.display = 'block';
   window.scrollTo({top:0,behavior:'smooth'});
 }
 
-function goBackToTeams() {
-  document.getElementById('team-page').style.display = 'none';
-  showSection('teams');
+function backToTeams() {
+  document.getElementById('pg-team').style.display = 'none';
+  nav('teams');
 }
 
-// ─── SOUS-PAGES ───
-function showSubPage(type) {
-  currentSubPage = type;
-  document.getElementById('team-page').style.display = 'none';
-  document.getElementById('subpageTeamLabel').textContent = currentTeam.emoji + ' ' + currentTeam.name;
-
+// ══ SUB-PAGES ══
+function openSub(type) {
+  currentSub = type;
+  document.getElementById('pg-team').style.display = 'none';
+  document.getElementById('subTeamLabel').textContent = currentTeam.name;
   const titles = {effectif:'Effectif',classement:'Classement',calendrier:'Calendrier & Résultats'};
-  document.getElementById('subpageTitle').textContent = titles[type];
-  document.getElementById('subpageContent').innerHTML = buildSubContent(type);
-
-  document.getElementById('team-subpage').style.display = 'block';
+  document.getElementById('subTitle').textContent = titles[type];
+  document.getElementById('subContent').innerHTML = buildSubContent(type, currentTeam);
+  document.getElementById('pg-subteam').style.display = 'block';
   window.scrollTo({top:0,behavior:'smooth'});
 }
 
-function goBackToTeamPage() {
-  document.getElementById('team-subpage').style.display = 'none';
-  document.getElementById('team-page').style.display = 'block';
+function backToTeam() {
+  document.getElementById('pg-subteam').style.display = 'none';
+  document.getElementById('pg-team').style.display = 'block';
   window.scrollTo({top:0,behavior:'smooth'});
 }
 
-function buildSubContent(type) {
+function buildSubContent(type, team) {
   if (type === 'effectif') {
-    return `
-      <div class="effectif-grid">
-        ${[
-          {num:'1',name:'À compléter',pos:'Gardien'},
-          {num:'7',name:'À compléter',pos:'Ailier gauche'},
-          {num:'10',name:'À compléter',pos:'Pivot'},
-          {num:'11',name:'À compléter',pos:'Demi-centre'},
-          {num:'14',name:'À compléter',pos:'Ailier droit'},
-          {num:'77',name:'À compléter',pos:'Arrière gauche'},
-        ].map(p => `
-          <div class="player-card">
-            <div class="player-num">#${p.num}</div>
-            <div class="player-name">${p.name}</div>
-            <div class="player-pos">${p.pos}</div>
-          </div>
-        `).join('')}
+    if (!team.roster || team.roster.length === 0) {
+      return `<div class="ffhb-soon" style="margin:0"><div class="soon-chip">🔜 À venir</div><h4>Effectif en cours de saisie</h4><p>L'effectif de l'équipe ${team.name} sera bientôt disponible.</p></div>`;
+    }
+    const positions = ['Tous', ...new Set(team.roster.map(p => p.pos).filter(Boolean))];
+    const filters = positions.map((p,i) => `<span class="eff-filter${i===0?' on':''}" onclick="filterPos(this,'${p}')">${p||'Tous'}</span>`).join('');
+    const cards = team.roster.map(p => `
+      <div class="player-card" data-pos="${p.pos}">
+        <div class="player-top">
+          <div class="player-num">${p.num}</div>
+          ${p.pos ? `<div class="player-pos">${p.pos}</div>` : ''}
+        </div>
+        <div class="player-fname">${p.fname}</div>
+        <div class="player-lname">${p.lname}</div>
       </div>
-      <div class="ffhb-bloc" style="margin-top:2rem">
-        <div class="soon-badge">⚡ Module IA FFHB</div>
-        <h4>Effectif complet automatique</h4>
-        <p>L'intégration FFHB permettra de récupérer l'effectif officiel automatiquement.</p>
-      </div>
-    `;
+    `).join('');
+    return `<div class="eff-filters">${filters}</div><div class="players-grid" id="pgrid">${cards}</div>`;
   }
   if (type === 'classement') {
     return `
-      <div class="placeholder-bloc">
-        <div class="soon-badge" style="margin-bottom:1rem">⚡ Bientôt disponible</div>
-        <h3>Classement FFHB</h3>
-        <p>Le classement de la poule sera affiché ici automatiquement grâce à l'intégration FFHB.<br><br>
-        En attendant, retrouvez le classement sur <a href="https://www.ffhb.fr" target="_blank" style="color:var(--rose)">ffhb.fr</a></p>
+      <div class="data-section">
+        <div class="data-section-head"><h3>Classement de poule</h3></div>
+        <table class="dt">
+          <thead><tr><th>#</th><th>Équipe</th><th>J</th><th>G</th><th>N</th><th>P</th><th>Pts</th></tr></thead>
+          <tbody>
+            <tr class="me"><td>—</td><td>HBC Bazadais — ${team.name}</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+            <tr><td>—</td><td>Adversaire 2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+            <tr><td>—</td><td>Adversaire 3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+          </tbody>
+        </table>
       </div>
-      <table class="data-table" style="margin-top:2rem">
-        <thead><tr><th>#</th><th>Équipe</th><th>J</th><th>G</th><th>N</th><th>P</th><th>Pts</th></tr></thead>
-        <tbody>
-          <tr class="highlight"><td>1</td><td>HBC Bazadais</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
-          <tr><td>2</td><td>À venir</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
-          <tr><td>3</td><td>À venir</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
-        </tbody>
-      </table>
-    `;
+      <div class="ffhb-soon" style="margin:0"><div class="soon-chip">⚡ Module IA FFHB</div><h4>Classement automatique bientôt disponible</h4><p>Le classement sera récupéré automatiquement via l'intégration FFHB.</p></div>`;
   }
   if (type === 'calendrier') {
     return `
-      <div class="placeholder-bloc">
-        <div class="soon-badge" style="margin-bottom:1rem">⚡ Bientôt disponible</div>
-        <h3>Calendrier &amp; Résultats FFHB</h3>
-        <p>Les matchs à venir et les résultats de la saison seront mis à jour automatiquement via l'intégration FFHB.</p>
+      <div class="data-section">
+        <div class="data-section-head"><h3>Calendrier &amp; Résultats</h3></div>
+        <table class="dt">
+          <thead><tr><th>Date</th><th>Domicile</th><th>Score</th><th>Extérieur</th><th>Statut</th></tr></thead>
+          <tbody>
+            <tr class="me"><td>À venir</td><td>HBC Bazadais</td><td>—</td><td>Adversaire</td><td style="color:var(--rose)">Prochain match</td></tr>
+            <tr><td>À venir</td><td>Adversaire</td><td>—</td><td>HBC Bazadais</td><td style="color:rgba(255,252,237,.3)">Programmé</td></tr>
+          </tbody>
+        </table>
       </div>
-      <table class="data-table" style="margin-top:2rem">
-        <thead><tr><th>Date</th><th>Domicile</th><th>Score</th><th>Extérieur</th><th>Statut</th></tr></thead>
-        <tbody>
-          <tr><td>À venir</td><td>HBC Bazadais</td><td>–</td><td>Adversaire</td><td style="color:var(--rose)">Prochain match</td></tr>
-          <tr><td>À venir</td><td>Adversaire</td><td>–</td><td>HBC Bazadais</td><td style="color:rgba(255,252,237,.4)">Programmé</td></tr>
-        </tbody>
-      </table>
-    `;
+      <div class="ffhb-soon" style="margin:0"><div class="soon-chip">⚡ Module IA FFHB</div><h4>Calendrier automatique bientôt disponible</h4><p>Matchs à venir et résultats mis à jour automatiquement depuis la FFHB.</p></div>`;
   }
 }
 
-// ─── PARTENAIRES ───
+function filterPos(el, pos) {
+  document.querySelectorAll('.eff-filter').forEach(f => f.classList.remove('on'));
+  el.classList.add('on');
+  document.querySelectorAll('#pgrid .player-card').forEach(card => {
+    card.style.display = (pos === 'Tous' || card.dataset.pos === pos) ? '' : 'none';
+  });
+}
+
+// ══ PARTNERS ══
 function buildPartners() {
   const grid = document.getElementById('partnersGrid');
-  if (!grid) return;
-  grid.innerHTML = partners.map(p => `
-    <a href="${p.url}" target="_blank" class="partner-card reveal">
-      <div class="partner-logo-box">${p.emoji}</div>
-      <div class="partner-name">${p.name}</div>
-      <div class="partner-type">${p.type}</div>
+  grid.innerHTML = PARTNERS.map(p => `
+    <a class="pcard rv" href="${p.url}" target="_blank" rel="noopener">
+      <div class="pcard-logo"><span>${p.name.charAt(0)}</span></div>
+      <div class="pcard-name">${p.name}</div>
+      <div class="pcard-type">${p.type}</div>
     </a>
   `).join('');
 }
 
-// ─── CAROUSEL ───
+// ══ CAROUSEL INFINI ══
 function buildCarousel() {
-  const track = document.getElementById('carouselTrack');
-  const items = [...partners, ...partners].map(p => `
-    <a href="${p.url}" target="_blank" class="carousel-item">
-      <div class="carousel-item-logo">${p.emoji}</div>
-      <div class="carousel-item-name">${p.name}</div>
+  const outer = document.getElementById('fcarOuter');
+  // On crée 2 pistes identiques côte à côte — la CSS les anime ensemble
+  // Quand la première piste sort à gauche, la deuxième prend le relais, créant un loop parfait
+  const itemsHTML = PARTNERS.map(p => `
+    <a class="fcar-item" href="${p.url}" target="_blank" rel="noopener">
+      <div class="fcar-logo"><span>${p.name.charAt(0)}</span></div>
+      <div class="fcar-name">${p.name}</div>
     </a>
   `).join('');
-  track.innerHTML = items;
+
+  // Deux tracks dans le même flex container — fcar-track anime translateX(-100%)
+  // ce qui fait glisser sur exactement une longueur de track, puis recommence
+  outer.innerHTML = `
+    <div class="fcar-track">${itemsHTML}</div>
+    <div class="fcar-track" aria-hidden="true">${itemsHTML}</div>
+  `;
 }
+
+// ══ INIT ══
+buildTeams();
+buildPartners();
+buildCarousel();
+setTimeout(initReveal, 100);
 </script>
 </body>
 </html>
