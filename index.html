@@ -222,16 +222,17 @@ body{font-family:'DM Sans',sans-serif;background:var(--dark);color:var(--blanc);
 .btn-buy:hover{transform:scale(1.04);box-shadow:0 8px 24px rgba(234,59,121,.4)}
 
 /* ── PARTENAIRES ── */
-.part-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:1.2rem}
-.partcard{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:1.6rem 1rem 1.2rem;text-align:center;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:.8rem;transition:all var(--t);position:relative;overflow:hidden}
-.partcard::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--rose),transparent);opacity:0;transition:opacity var(--t)}
-.partcard:hover{border-color:rgba(234,59,121,.4);transform:translateY(-5px);box-shadow:0 20px 40px rgba(0,0,0,.4)}
+.part-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1.5rem}
+.partcard{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:2rem 1.5rem 1.6rem;text-align:center;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:.9rem;transition:all var(--t);position:relative;overflow:hidden}
+.partcard::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,var(--rose),transparent);opacity:0;transition:opacity var(--t)}
+.partcard:hover{border-color:rgba(234,59,121,.4);transform:translateY(-6px);box-shadow:0 24px 50px rgba(0,0,0,.5)}
 .partcard:hover::before{opacity:1}
-.partcard-logo{width:90px;height:70px;display:flex;align-items:center;justify-content:center;overflow:hidden;flex-shrink:0}
-.partcard-logo img{max-width:100%;max-height:100%;object-fit:contain;filter:brightness(1.1)}
-.partcard-logo-placeholder{width:56px;height:56px;border-radius:10px;background:rgba(234,59,121,.1);display:flex;align-items:center;justify-content:center;font-family:'Bebas Neue',sans-serif;font-size:1.8rem;color:var(--rose)}
-.partcard-name{font-family:'Bebas Neue',sans-serif;font-size:.95rem;color:var(--blanc);line-height:1.2;letter-spacing:.03em}
-.partcard-type{font-size:.62rem;color:rgba(255,252,237,.3);letter-spacing:.1em;text-transform:uppercase}
+.partcard-logo{width:120px;height:80px;display:flex;align-items:center;justify-content:center;overflow:hidden;flex-shrink:0}
+.partcard-logo img{max-width:100%;max-height:100%;object-fit:contain;filter:brightness(1.15) contrast(1.05)}
+.partcard-logo-placeholder{width:64px;height:64px;border-radius:14px;background:rgba(234,59,121,.12);border:1px solid rgba(234,59,121,.2);display:flex;align-items:center;justify-content:center;font-family:'Bebas Neue',sans-serif;font-size:2rem;color:var(--rose)}
+.partcard-name{font-family:'Bebas Neue',sans-serif;font-size:1.1rem;color:var(--blanc);line-height:1.2;letter-spacing:.04em}
+.partcard-type{font-size:.6rem;font-weight:700;color:var(--rose);letter-spacing:.15em;text-transform:uppercase;background:rgba(234,59,121,.1);border:1px solid rgba(234,59,121,.2);padding:.2rem .7rem;border-radius:99px}
+.partcard-desc{font-size:.76rem;color:rgba(255,252,237,.38);line-height:1.55;font-weight:300;margin-top:.2rem}
 .recruit-box{background:linear-gradient(135deg,rgba(234,59,121,.1),rgba(15,30,65,.5));border:1px solid rgba(234,59,121,.2);border-radius:14px;padding:3.5rem;text-align:center;margin-top:3rem}
 .recruit-box h3{font-family:'Bebas Neue',sans-serif;font-size:clamp(2rem,4vw,3rem);color:var(--blanc);margin-bottom:.6rem}
 .recruit-box p{color:rgba(255,252,237,.5);font-size:.9rem;margin-bottom:2rem;font-weight:300}
@@ -574,7 +575,7 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;back
     <div class="footer-col"><h4>Contact</h4><a href="tel:0768680424">07 68 68 04 24</a><a href="mailto:bazashandballclub@gmail.com">bazashandballclub@gmail.com</a><a>33430 Bazas, Gironde</a><a href="#">Mentions légales</a></div>
   </div>
   <div class="footer-bottom">
-    <p>© 2026 Association Troubadours du Troisième Millénaire · Bazas · Gironde</p>
+    <p>© 2025 HBC Bazadais — Tous droits réservés · SOUY BAZADES 🤝</p>
     <span>Site internet créé par <a href="https://www.instagram.com/alban_btps/" target="_blank" rel="noopener" style="color:var(--rose);text-decoration:none;transition:opacity .3s" onmouseover="this.style.opacity='.7'" onmouseout="this.style.opacity='1'">Alban BONTEMPS</a></span>
   </div>
 </footer>
@@ -661,25 +662,25 @@ const TEAMS = [
 ];
 
 const PARTNERS = [
-  {name:'Mairie de Bazas',type:'Collectivité',url:'https://www.ville-bazas.fr/',logo:'ville-bazas.png'},
-  {name:'Boucherie Chez Val & Maë',type:'Artisan boucher',url:'https://boucherie-chez-val-et-mae-33.fr/',logo:'val&mae.png'},
-  {name:"Central'liss",type:'Blanchisserie pro',url:'https://blanchisserie-central-liss.fr/',logo:"central'liss.png"},
-  {name:'V and B Langon',type:'Cave & bière',url:'https://www.vandb.fr/',logo:'logo_V_and_B.png'},
-  {name:'Carrosserie Pitaud',type:'Carrosserie',url:'https://carrosserie-pitaud.fr/',logo:'lofocfp.png'},
-  {name:'SO FRUIT Primeur',type:'Primeur',url:'https://www.facebook.com/p/SO-FRUIT-Primeur-100063498852369/',logo:null},
-  {name:'Sport 2000 Langon',type:'Équipementier sportif',url:'https://www.sport2000.fr/magasins/fiche/331020-sport-2000-langon',logo:'sport2000.png'},
-  {name:'Créamext',type:'Clôture & Paysage',url:'https://creamext.com/',logo:'logo2-blanc.png'},
-  {name:'MRP Habitat',type:'Menuisier',url:'https://www.maximeratamrphabitat.fr/',logo:'mrp.png'},
-  {name:"Caisse d'Épargne Bazas",type:'Banque',url:'https://www.agences.caisse-epargne.fr/banque-assurance/bazas-id13335033051',logo:'national.png'},
-  {name:'OBJ Coaching',type:'Coach sportif',url:'https://www.objtrainer.fr/',logo:'645c9db43596a_OBJLogo.png'},
-  {name:'La Ferme du Petit Cassé',type:'Agriculture',url:'https://fermedupetitcasse.com/',logo:'logo_casse_blanc.png'},
-  {name:'Lucas Denis',type:'Ramoneur & chauffagiste',url:'https://www.lucas-denis.fr/',logo:'lucas.png'},
-  {name:'OuiGlass Bazas',type:'Vitrage',url:'https://ouiglass.com/tous-centres/bazas',logo:'logo-ouiglass.png'},
-  {name:'Carré Double',type:'Aménagement & décoration',url:'https://carredouble.fr/',logo:'CD-blanc.png'},
-  {name:'Pest & Termites Bazas',type:'Traitement nuisibles',url:'https://www.pestandtermites.fr/',logo:'pest.png'},
-  {name:'Intermarché Bazas',type:'Grande distribution',url:'https://www.intermarche.com/magasins/06743/bazas-33430/infos-pratiques',logo:'intermarche.png'},
-  {name:'Viva La Vie Techni Coif',type:'Coiffeur',url:'https://www.planity.com/viva-la-vie-techni-coif-bazas-33430',logo:'viva.png'},
-  {name:'Le Cercle Aillas',type:'Bar & Brasserie',url:'https://lecercle-restaurant-aillas.fr/',logo:'LOGO-CERCLE-PNG.png'},
+  {name:'Mairie de Bazas',type:'Collectivité',url:'https://www.ville-bazas.fr/',logo:'ville-bazas.png',desc:'Partenaire institutionnel du club, la Mairie de Bazas soutient activement la vie sportive et associative de notre belle cité girondine.'},
+  {name:'Boucherie Chez Val & Maë',type:'Artisan boucher',url:'https://boucherie-chez-val-et-mae-33.fr/',logo:'val&mae.png',desc:'Boucherie-charcuterie-traiteur au cœur de Bazas. Viandes Label Rouge, IGP Bœuf de Bazas, charcuteries maison… une adresse incontournable !'},
+  {name:"Central'liss",type:'Blanchisserie pro',url:'https://blanchisserie-central-liss.fr/',logo:"central'liss.png",desc:'Blanchisserie professionnelle basée à Lignan-de-Bazas. Spécialisée dans l\'hôtellerie, les collectivités et les professionnels — linge impeccable garanti.'},
+  {name:'V and B Langon',type:'Cave & bière',url:'https://www.vandb.fr/',logo:'logo_V_and_B.png',desc:'Cave à bières et vins à Langon. Plus de 400 références de bières artisanales et une sélection de vins soigneusement choisie pour tous les amateurs.'},
+  {name:'Carrosserie Pitaud',type:'Carrosserie',url:'https://carrosserie-pitaud.fr/',logo:'lofocfp.png',desc:'Votre carrosserie de confiance dans le Bazadais. Réparation, remise en état, peinture — pour que votre véhicule retrouve sa splendeur d\'avant.'},
+  {name:'SO FRUIT Primeur',type:'Primeur',url:'https://www.facebook.com/p/SO-FRUIT-Primeur-100063498852369/',logo:null,desc:'Primeur local proposant chaque jour fruits et légumes frais de saison. Bien manger, c\'est aussi la clé de la performance sportive !'},
+  {name:'Sport 2000 Langon',type:'Équipementier sportif',url:'https://www.sport2000.fr/magasins/fiche/331020-sport-2000-langon',logo:'sport2000.png',desc:'Magasin de sport à Langon avec tout l\'équipement dont vous avez besoin — chaussures, maillots, ballon. Le partenaire sportif naturel du HBC Bazadais.'},
+  {name:'Créamext',type:'Clôture & Paysage',url:'https://creamext.com/',logo:'logo2-blanc.png',desc:'Paysagiste et clôturiste basé à Bazas. Aménagement extérieur, entretien, portails et automatismes — plus de 20 ans d\'expertise dans toute la Gironde.'},
+  {name:'MRP Habitat',type:'Menuisier',url:'https://www.maximeratamrphabitat.fr/',logo:'mrp.png',desc:'Menuisier-charpentier dans le Bazadais. Fenêtres, portes, terrasses, ossature bois — des réalisations sur mesure avec le savoir-faire de l\'artisanat local.'},
+  {name:"Caisse d'Épargne Bazas",type:'Banque',url:'https://www.agences.caisse-epargne.fr/banque-assurance/bazas-id13335033051',logo:'national.png',desc:'L\'agence Caisse d\'Épargne de Bazas accompagne particuliers et associations dans leurs projets. Un partenaire financier de proximité pour le club.'},
+  {name:'OBJ Coaching',type:'Coach sportif',url:'https://www.objtrainer.fr/',logo:'645c9db43596a_OBJLogo.png',desc:'Johan Brière, personal trainer à Langon. Coaching personnalisé — perte de poids, renforcement, préparation physique. Plus de 200 personnes transformées !'},
+  {name:'La Ferme du Petit Cassé',type:'Canards & foie gras',url:'https://fermedupetitcasse.com/',logo:'logo_casse_blanc.png',desc:'Charlie Bertin élève ses canards gras à Cazats depuis 2010. Foie gras, rillettes, conserves maison — vente en direct à la ferme, sans intermédiaire.'},
+  {name:'Lucas Denis',type:'Ramoneur & chauffagiste',url:'https://www.lucas-denis.fr/',logo:'lucas.png',desc:'Entreprise familiale depuis 1992 dans le sud Gironde. Ramonage, installation de poêles et chauffages à bois — 30 ans d\'expérience et une réputation solide.'},
+  {name:'OuiGlass Bazas',type:'Vitrage',url:'https://ouiglass.com/tous-centres/bazas',logo:'logo-ouiglass.png',desc:'Centre OuiGlass de Bazas : réparation et remplacement de vitrages auto et habitation. Intervention rapide, devis gratuit, prise en charge assurance.'},
+  {name:'Carré Double',type:'Aménagement & décoration',url:'https://carredouble.fr/',logo:'CD-blanc.png',desc:'Studio d\'aménagement et décoration intérieure. Des espaces pensés sur mesure pour vous ressembler — du conseil à la réalisation clé en main.'},
+  {name:'Pest & Termites Bazas',type:'Traitement nuisibles',url:'https://www.pestandtermites.fr/',logo:'pest.png',desc:'Spécialiste du traitement des nuisibles et des termites en Gironde. Protection durable de votre habitat contre toutes les infestations.'},
+  {name:'Intermarché Bazas',type:'Grande distribution',url:'https://www.intermarche.com/magasins/06743/bazas-33430/infos-pratiques',logo:'intermarche.png',desc:'Le supermarché Intermarché de Bazas : courses du quotidien, produits locaux et promotions. Merci à eux de soutenir le handball local depuis plusieurs saisons !'},
+  {name:'Viva La Vie Techni Coif',type:'Coiffeur',url:'https://www.planity.com/viva-la-vie-techni-coif-bazas-33430',logo:'viva.png',desc:'Salon de coiffure à Bazas proposant coupes, colorations et soins pour toute la famille. Parce qu\'on se sent toujours mieux sur le terrain quand on est bien coiffé !'},
+  {name:'Le Cercle Aillas',type:'Bar & Brasserie',url:'https://lecercle-restaurant-aillas.fr/',logo:'LOGO-CERCLE-PNG.png',desc:'Bar-brasserie convivial à Aillas. Cuisine maison à base de produits frais, menu du jour, apéros et planches le soir. LE rendez-vous d\'après-match !'},
 ];
 
 // ── NAV ──
@@ -858,9 +859,10 @@ function filterPos(el, pos) {
 function buildPartners() {
   document.getElementById('partGrid').innerHTML = PARTNERS.map(p => {
     const logoHTML = p.logo
-      ? `<div class="partcard-logo"><img src="${GH}${p.logo}" alt="${p.name}" onerror="this.parentElement.innerHTML='<div class=partcard-logo-placeholder>${p.name.charAt(0)}</div>'"></div>`
+      ? `<div class="partcard-logo"><img src="${GH}${p.logo}" alt="${p.name}" onerror="this.parentElement.className='partcard-logo-placeholder';this.parentElement.textContent='${p.name.charAt(0)}'"></div>`
       : `<div class="partcard-logo-placeholder">${p.name.charAt(0)}</div>`;
-    return `<a class="partcard rv" href="${p.url}" target="_blank" rel="noopener">${logoHTML}<div class="partcard-name">${p.name}</div><div class="partcard-type">${p.type}</div></a>`;
+    const descHTML = p.desc ? `<div class="partcard-desc">${p.desc}</div>` : '';
+    return `<a class="partcard rv" href="${p.url}" target="_blank" rel="noopener">${logoHTML}<div class="partcard-name">${p.name}</div><div class="partcard-type">${p.type}</div>${descHTML}</a>`;
   }).join('');
 }
 
