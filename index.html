@@ -250,10 +250,10 @@ body{font-family:'DM Sans',sans-serif;background:var(--dark);color:var(--blanc);
 .soc:hover{border-color:var(--rose);background:rgba(234,59,121,.08)}
 .soc svg{width:18px;height:18px;fill:rgba(255,252,237,.55);transition:fill var(--t)}
 .soc:hover svg{fill:var(--rose)}
-.cform{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:2.5rem}
-.fg{margin-bottom:1.2rem;position:relative}
+.cform{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:2.5rem;position:relative;z-index:1}
+.fg{margin-bottom:1.2rem}
 .fg label{display:block;font-size:.68rem;font-weight:600;letter-spacing:.12em;color:rgba(255,252,237,.4);text-transform:uppercase;margin-bottom:.5rem}
-.fg input,.fg select,.fg textarea{width:100%;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:7px;padding:.8rem 1rem;color:var(--blanc);font-family:'DM Sans',sans-serif;font-size:.88rem;outline:none;transition:border-color var(--t);appearance:none;display:block}
+.fg input,.fg select,.fg textarea{width:100%;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:7px;padding:.8rem 1rem;color:var(--blanc);font-family:'DM Sans',sans-serif;font-size:.88rem;outline:none;transition:border-color var(--t);appearance:none;display:block;box-sizing:border-box}
 .fg input:focus,.fg select:focus,.fg textarea:focus{border-color:rgba(234,59,121,.45)}
 .fg select option{background:#0a1628}
 .fg textarea{resize:vertical;min-height:110px}
