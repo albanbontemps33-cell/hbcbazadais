@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HBC Bazadais — Handball Club</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bleu: #0F1E41;
+  --rose: #EA3B79;
+  --rose-pale: #F8D8E1;
+  --blanc: #FFFCED;
+  --gris: #8a8a8a;
+  --transition: .4s cubic-bezier(.4,0,.2,1);
+}
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Montserrat',sans-serif;background:#080f1e;color:#fff;overflow-x:hidden}
+
+/* ─── LOADER ─── */
+#loader{position:fixed;inset:0;background:#080f1e;z-index:9999;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:1rem;transition:opacity .6s,visibility .6s}
+#loader.hide{opacity:0;visibility:hidden}
+.loader-logo{font-family:'Bebas Neue',sans-serif;font-size:4rem;color:var(--blanc);letter-spacing:.2em;animation:pulse 1.2s ease-in-out infinite}
+.loader-bar{width:200px;height:3px;background:rgba(255,255,255,.1);border-radius:99px;overflow:hidden}
+.loader-fill{height:100%;background:linear-gradient(90deg,var(--rose),var(--rose-pale));border-radius:99px;animation:load 1.8s ease forwards}
+@keyframes load{from{width:0}to{width:100%}}
+@keyframes pulse{0%,100%{opacity:.4}50%{opacity:1}}
+
+/* ─── NAV ─── */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.2rem 4%;display:flex;align-items:center;justify-content:space-between;transition:background var(--transition),backdrop-filter var(--transition)}
+nav.scrolled{background:rgba(8,15,30,.92);backdrop-filter:blur(18px);border-bottom:1px solid rgba(234,59,121,.15)}
+.nav-logo{font-family:'Bebas Neue',sans-serif;font-size:1.8rem;color:var(--blanc);letter-spacing:.1em;text-decoration:none;display:flex;align-items:center;gap:.5rem}
+.nav-logo span{color:var(--rose)}
+.nav-links{display:flex;gap:2rem;list-style:none;align-items:center}
+.nav-links a{color:rgba(255,252,237,.7);text-decoration:none;font-size:.8rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;transition:color var(--transition);position:relative}
+.nav-links a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:2px;background:var(--rose);transition:width var(--transition)}
+.nav-links a:hover{color:var(--blanc)}
+.nav-links a:hover::after{width:100%}
+.nav-cta{background:var(--rose);color:#fff;padding:.6rem 1.4rem;border-radius:4px;font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;transition:transform var(--transition),box-shadow var(--transition)}
+.nav-cta:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(234,59,121,.4)}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:.4rem}
+.hamburger span{display:block;width:24px;height:2px;background:var(--blanc);border-radius:2px;transition:transform var(--transition),opacity var(--transition)}
+
+/* Dropdown équipes */
+.has-dropdown{position:relative}
+.dropdown{position:absolute;top:calc(100% + 1rem);left:50%;transform:translateX(-50%) translateY(-8px);background:rgba(8,15,30,.97);border:1px solid rgba(234,59,121,.2);border-radius:8px;padding:.8rem;display:grid;grid-template-columns:1fr 1fr;gap:.3rem;min-width:300px;opacity:0;visibility:hidden;transition:all var(--transition);backdrop-filter:blur(20px)}
+.has-dropdown:hover .dropdown{opacity:1;visibility:visible;transform:translateX(-50%) translateY(0)}
+.dropdown a{color:rgba(255,252,237,.7);font-size:.72rem;padding:.45rem .7rem;border-radius:4px;display:block;letter-spacing:.05em;white-space:nowrap;transition:background var(--transition),color var(--transition)}
+.dropdown a:hover{background:rgba(234,59,121,.15);color:var(--rose)}
+.dropdown a::after{display:none}
+
+/* ─── HERO ─── */
+#hero{min-height:100vh;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;padding:8rem 4% 4rem}
+.hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 60% 40%,rgba(234,59,121,.12) 0%,transparent 60%),radial-gradient(ellipse 60% 80% at 10% 80%,rgba(15,30,65,.8) 0%,transparent 70%),linear-gradient(135deg,#080f1e 0%,#0F1E41 100%)}
+.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(234,59,121,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(234,59,121,.04) 1px,transparent 1px);background-size:60px 60px;mask-image:radial-gradient(ellipse at center,black 40%,transparent 80%)}
+.hero-glow{position:absolute;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(234,59,121,.15) 0%,transparent 70%);right:-100px;top:50%;transform:translateY(-50%);animation:float 6s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translateY(-50%) scale(1)}50%{transform:translateY(-55%) scale(1.05)}}
+.hero-content{position:relative;z-index:2;max-width:700px}
+.hero-badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(234,59,121,.15);border:1px solid rgba(234,59,121,.3);color:var(--rose);padding:.4rem 1rem;border-radius:99px;font-size:.72rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;margin-bottom:1.5rem;animation:fadeUp .8s ease .2s both}
+.hero-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(4rem,10vw,8rem);line-height:.95;color:var(--blanc);margin-bottom:1.5rem;animation:fadeUp .8s ease .4s both}
+.hero-title span{color:var(--rose);display:block}
+.hero-subtitle{font-size:1rem;color:rgba(255,252,237,.6);line-height:1.7;max-width:480px;margin-bottom:2.5rem;font-weight:400;animation:fadeUp .8s ease .6s both}
+.hero-btns{display:flex;gap:1rem;flex-wrap:wrap;animation:fadeUp .8s ease .8s both}
+.btn-primary{background:var(--rose);color:#fff;padding:.9rem 2rem;border-radius:4px;font-size:.85rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;transition:transform var(--transition),box-shadow var(--transition);display:inline-flex;align-items:center;gap:.5rem}
+.btn-primary:hover{transform:translateY(-3px);box-shadow:0 12px 32px rgba(234,59,121,.5)}
+.btn-outline{border:1px solid rgba(255,252,237,.25);color:var(--blanc);padding:.9rem 2rem;border-radius:4px;font-size:.85rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;transition:all var(--transition);display:inline-flex;align-items:center;gap:.5rem}
+.btn-outline:hover{border-color:var(--rose);color:var(--rose);background:rgba(234,59,121,.05)}
+.hero-stats{display:flex;gap:3rem;margin-top:4rem;animation:fadeUp .8s ease 1s both}
+.stat-item{text-align:left}
+.stat-num{font-family:'Bebas Neue',sans-serif;font-size:2.5rem;color:var(--blanc);line-height:1}
+.stat-num span{color:var(--rose)}
+.stat-label{font-size:.7rem;color:rgba(255,252,237,.5);letter-spacing:.1em;text-transform:uppercase;margin-top:.2rem}
+@keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+
+/* ─── SECTIONS COMMUNES ─── */
+.section{padding:6rem 4%;display:none}
+.section.active{display:block}
+#home{display:block}
+.section-tag{display:inline-block;color:var(--rose);font-size:.72rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;margin-bottom:.8rem}
+.section-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(2.5rem,5vw,4rem);color:var(--blanc);line-height:1;margin-bottom:1rem}
+.section-sub{color:rgba(255,252,237,.5);font-size:.95rem;line-height:1.7;max-width:500px}
+
+/* ─── À PROPOS (home) ─── */
+#about{background:linear-gradient(180deg,#080f1e 0%,#0a1220 100%);padding:6rem 4%}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;max-width:1200px;margin:0 auto}
+.about-visual{position:relative}
+.about-card{background:linear-gradient(135deg,rgba(15,30,65,.8),rgba(234,59,121,.05));border:1px solid rgba(234,59,121,.2);border-radius:16px;padding:2.5rem;position:relative;overflow:hidden}
+.about-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--rose),transparent)}
+.about-icon{width:56px;height:56px;background:rgba(234,59,121,.15);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:1rem}
+.about-card h3{font-family:'Bebas Neue',sans-serif;font-size:1.8rem;color:var(--blanc);margin-bottom:.5rem}
+.about-card p{color:rgba(255,252,237,.6);font-size:.88rem;line-height:1.7}
+.about-cards-grid{display:grid;gap:1rem}
+.feature-list{list-style:none;display:flex;flex-direction:column;gap:1rem}
+.feature-list li{display:flex;align-items:flex-start;gap:1rem;color:rgba(255,252,237,.7);font-size:.9rem;line-height:1.6}
+.feature-list li::before{content:'';width:6px;height:6px;background:var(--rose);border-radius:50%;margin-top:.5rem;flex-shrink:0}
+
+/* ─── ACTUALITÉS ─── */
+#news-section{background:#080f1e}
+.news-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:1.5rem;margin-top:3rem}
+.news-card{background:rgba(15,30,65,.4);border:1px solid rgba(234,59,121,.1);border-radius:12px;overflow:hidden;cursor:pointer;transition:transform var(--transition),border-color var(--transition),box-shadow var(--transition)}
+.news-card:hover{transform:translateY(-6px);border-color:rgba(234,59,121,.4);box-shadow:0 20px 40px rgba(0,0,0,.4)}
+.news-img{height:200px;background:linear-gradient(135deg,var(--bleu),rgba(234,59,121,.3));display:flex;align-items:center;justify-content:center;font-size:3rem;position:relative;overflow:hidden}
+.news-img::after{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,transparent 50%,rgba(8,15,30,.8))}
+.news-tag{position:absolute;top:1rem;left:1rem;background:var(--rose);color:#fff;font-size:.65rem;font-weight:700;letter-spacing:.1em;padding:.3rem .7rem;border-radius:4px;text-transform:uppercase;z-index:1}
+.news-body{padding:1.5rem}
+.news-date{font-size:.72rem;color:var(--rose);font-weight:600;letter-spacing:.1em;text-transform:uppercase;margin-bottom:.5rem}
+.news-body h3{font-family:'Bebas Neue',sans-serif;font-size:1.4rem;color:var(--blanc);margin-bottom:.5rem;line-height:1.2}
+.news-body p{font-size:.83rem;color:rgba(255,252,237,.55);line-height:1.6}
+.ffhb-bloc{background:linear-gradient(135deg,rgba(15,30,65,.6),rgba(234,59,121,.05));border:1px dashed rgba(234,59,121,.3);border-radius:12px;padding:2rem;text-align:center;margin-top:2rem}
+.ffhb-bloc h4{font-family:'Bebas Neue',sans-serif;font-size:1.5rem;color:var(--blanc);margin-bottom:.5rem}
+.ffhb-bloc p{color:rgba(255,252,237,.4);font-size:.82rem}
+.soon-badge{display:inline-flex;align-items:center;gap:.4rem;background:rgba(234,59,121,.1);border:1px solid rgba(234,59,121,.2);color:var(--rose);font-size:.68rem;font-weight:700;letter-spacing:.15em;padding:.4rem .9rem;border-radius:99px;margin-bottom:1rem;text-transform:uppercase}
+
+/* ─── ÉQUIPES ─── */
+#teams-section{background:#080f1e}
+.teams-hub{margin-top:3rem}
+.teams-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:1.2rem}
+.team-card{background:linear-gradient(135deg,rgba(15,30,65,.6),rgba(8,15,30,.8));border:1px solid rgba(234,59,121,.12);border-radius:12px;padding:1.8rem;cursor:pointer;transition:all var(--transition);position:relative;overflow:hidden}
+.team-card::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(234,59,121,.08),transparent);opacity:0;transition:opacity var(--transition)}
+.team-card:hover{border-color:rgba(234,59,121,.4);transform:translateY(-4px);box-shadow:0 16px 40px rgba(0,0,0,.4)}
+.team-card:hover::before{opacity:1}
+.team-cat{font-size:.68rem;font-weight:700;letter-spacing:.15em;color:var(--rose);text-transform:uppercase;margin-bottom:.5rem}
+.team-name{font-family:'Bebas Neue',sans-serif;font-size:1.8rem;color:var(--blanc);line-height:1;margin-bottom:.8rem}
+.team-arrow{display:inline-flex;align-items:center;gap:.4rem;color:rgba(255,252,237,.4);font-size:.75rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;transition:color var(--transition)}
+.team-card:hover .team-arrow{color:var(--rose)}
+
+/* Page équipe individuelle */
+#team-page{display:none;background:#080f1e;padding:6rem 4%}
+.team-page-header{text-align:center;margin-bottom:3rem;padding-top:2rem}
+.team-page-header h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(3rem,8vw,6rem);color:var(--blanc);line-height:1}
+.team-page-header h1 span{color:var(--rose)}
+.back-btn{display:inline-flex;align-items:center;gap:.5rem;color:rgba(255,252,237,.5);font-size:.8rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;margin-bottom:2rem;transition:color var(--transition)}
+.back-btn:hover{color:var(--rose)}
+.team-sub-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;max-width:900px;margin:0 auto}
+.team-sub-card{background:linear-gradient(135deg,rgba(15,30,65,.7),rgba(8,15,30,.9));border:1px solid rgba(234,59,121,.15);border-radius:16px;padding:2.5rem;cursor:pointer;transition:all var(--transition);text-align:center;position:relative;overflow:hidden}
+.team-sub-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:var(--rose);transform:scaleX(0);transition:transform var(--transition)}
+.team-sub-card:hover{border-color:rgba(234,59,121,.4);transform:translateY(-6px);box-shadow:0 20px 40px rgba(0,0,0,.5)}
+.team-sub-card:hover::after{transform:scaleX(1)}
+.sub-icon{font-size:2.5rem;margin-bottom:1rem;display:block}
+.sub-title{font-family:'Bebas Neue',sans-serif;font-size:1.5rem;color:var(--blanc);margin-bottom:.5rem}
+.sub-desc{font-size:.78rem;color:rgba(255,252,237,.45);line-height:1.5}
+
+/* Sous-pages équipe */
+#team-subpage{display:none;background:#080f1e;padding:6rem 4%}
+.subpage-header{margin-bottom:3rem}
+.data-table{width:100%;border-collapse:collapse;margin-top:1.5rem}
+.data-table th{background:rgba(234,59,121,.15);color:var(--rose);font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:1rem;text-align:left;border-bottom:1px solid rgba(234,59,121,.2)}
+.data-table td{padding:.9rem 1rem;color:rgba(255,252,237,.75);font-size:.85rem;border-bottom:1px solid rgba(255,255,255,.04)}
+.data-table tr:hover td{background:rgba(234,59,121,.04)}
+.data-table tr.highlight td{background:rgba(234,59,121,.08);color:var(--blanc)}
+.placeholder-bloc{background:rgba(15,30,65,.3);border:1px dashed rgba(234,59,121,.25);border-radius:12px;padding:3rem;text-align:center}
+.placeholder-bloc h3{font-family:'Bebas Neue',sans-serif;font-size:2rem;color:var(--blanc);margin-bottom:.5rem}
+.placeholder-bloc p{color:rgba(255,252,237,.4);font-size:.85rem}
+.effectif-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:1rem;margin-top:1.5rem}
+.player-card{background:rgba(15,30,65,.4);border:1px solid rgba(234,59,121,.1);border-radius:10px;padding:1.2rem;text-align:center;transition:all var(--transition)}
+.player-card:hover{border-color:rgba(234,59,121,.3);transform:translateY(-3px)}
+.player-num{font-family:'Bebas Neue',sans-serif;font-size:2rem;color:var(--rose)}
+.player-name{font-size:.82rem;font-weight:600;color:var(--blanc);margin-top:.3rem}
+.player-pos{font-size:.7rem;color:rgba(255,252,237,.4);margin-top:.2rem}
+
+/* ─── BOUTIQUE ─── */
+#shop-section{background:#080f1e}
+.shop-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1.5rem;margin-top:3rem}
+.product-card{background:rgba(15,30,65,.4);border:1px solid rgba(234,59,121,.1);border-radius:12px;overflow:hidden;transition:all var(--transition)}
+.product-card:hover{border-color:rgba(234,59,121,.35);transform:translateY(-5px);box-shadow:0 20px 40px rgba(0,0,0,.4)}
+.product-img{height:220px;background:linear-gradient(135deg,rgba(15,30,65,.8),rgba(234,59,121,.2));display:flex;align-items:center;justify-content:center;font-size:4rem;position:relative}
+.product-badge{position:absolute;top:1rem;right:1rem;background:var(--rose);color:#fff;font-size:.65rem;font-weight:700;padding:.3rem .7rem;border-radius:4px;letter-spacing:.08em;text-transform:uppercase}
+.product-body{padding:1.5rem}
+.product-name{font-family:'Bebas Neue',sans-serif;font-size:1.4rem;color:var(--blanc);margin-bottom:.3rem}
+.product-desc{font-size:.78rem;color:rgba(255,252,237,.5);margin-bottom:1rem;line-height:1.5}
+.product-footer{display:flex;align-items:center;justify-content:space-between}
+.product-price{font-family:'Bebas Neue',sans-serif;font-size:1.8rem;color:var(--blanc)}
+.product-price span{font-size:1rem;color:rgba(255,252,237,.4)}
+.btn-shop{background:var(--rose);color:#fff;padding:.6rem 1.2rem;border-radius:4px;font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;transition:all var(--transition);display:inline-flex;align-items:center;gap:.4rem}
+.btn-shop:hover{transform:scale(1.05);box-shadow:0 8px 24px rgba(234,59,121,.4)}
+
+/* ─── PARTENAIRES ─── */
+#partners-section{background:#080f1e}
+.partners-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1.2rem;margin-top:3rem}
+.partner-card{background:rgba(15,30,65,.4);border:1px solid rgba(234,59,121,.1);border-radius:12px;padding:2rem;text-align:center;text-decoration:none;transition:all var(--transition);display:block}
+.partner-card:hover{border-color:rgba(234,59,121,.4);transform:translateY(-4px);background:rgba(234,59,121,.05)}
+.partner-logo-box{width:80px;height:80px;background:rgba(255,252,237,.06);border-radius:12px;display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;font-size:2rem}
+.partner-name{font-family:'Bebas Neue',sans-serif;font-size:1.2rem;color:var(--blanc);margin-bottom:.3rem}
+.partner-type{font-size:.7rem;color:rgba(255,252,237,.4);letter-spacing:.1em;text-transform:uppercase}
+.recruit-bloc{background:linear-gradient(135deg,rgba(234,59,121,.12),rgba(15,30,65,.6));border:1px solid rgba(234,59,121,.25);border-radius:16px;padding:3rem;text-align:center;margin-top:4rem}
+.recruit-bloc h3{font-family:'Bebas Neue',sans-serif;font-size:2.5rem;color:var(--blanc);margin-bottom:.5rem}
+.recruit-bloc p{color:rgba(255,252,237,.55);font-size:.9rem;margin-bottom:2rem}
+
+/* ─── CONTACT ─── */
+#contact-section{background:#080f1e}
+.contact-wrap{display:grid;grid-template-columns:1fr 1.4fr;gap:4rem;max-width:1000px;margin:3rem auto 0;align-items:start}
+.contact-info h3{font-family:'Bebas Neue',sans-serif;font-size:2rem;color:var(--blanc);margin-bottom:1rem}
+.contact-info p{color:rgba(255,252,237,.55);font-size:.88rem;line-height:1.7;margin-bottom:1.5rem}
+.contact-detail{display:flex;align-items:flex-start;gap:.8rem;margin-bottom:1rem}
+.contact-detail-icon{width:36px;height:36px;background:rgba(234,59,121,.15);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:.9rem;flex-shrink:0}
+.contact-detail-text{font-size:.83rem;color:rgba(255,252,237,.65);line-height:1.5}
+.contact-form{background:rgba(15,30,65,.4);border:1px solid rgba(234,59,121,.15);border-radius:16px;padding:2.5rem}
+.form-group{margin-bottom:1.2rem}
+.form-group label{display:block;font-size:.72rem;font-weight:700;letter-spacing:.1em;color:rgba(255,252,237,.5);text-transform:uppercase;margin-bottom:.5rem}
+.form-group input,.form-group select,.form-group textarea{width:100%;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:8px;padding:.8rem 1rem;color:var(--blanc);font-family:'Montserrat',sans-serif;font-size:.88rem;transition:border-color var(--transition),background var(--transition);outline:none;appearance:none}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:rgba(234,59,121,.5);background:rgba(234,59,121,.05)}
+.form-group select option{background:#0F1E41;color:#fff}
+.form-group textarea{resize:vertical;min-height:120px}
+.form-submit{width:100%;background:var(--rose);color:#fff;border:none;padding:1rem;border-radius:8px;font-family:'Bebas Neue',sans-serif;font-size:1.2rem;letter-spacing:.1em;cursor:pointer;transition:all var(--transition)}
+.form-submit:hover{transform:translateY(-2px);box-shadow:0 12px 32px rgba(234,59,121,.4)}
+
+/* ─── CARTE ─── */
+.map-section{padding:4rem 4%;background:#080f1e}
+.map-wrap{border-radius:16px;overflow:hidden;border:1px solid rgba(234,59,121,.15);max-width:1100px;margin:2rem auto 0}
+.map-wrap iframe{width:100%;height:400px;border:none;display:block;filter:brightness(.85) saturate(.6) contrast(1.1)}
+.horaires-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1rem;margin:2rem auto 0;max-width:1100px}
+.horaire-card{background:rgba(15,30,65,.5);border:1px solid rgba(234,59,121,.1);border-radius:10px;padding:1.2rem}
+.horaire-team{font-size:.7rem;font-weight:700;letter-spacing:.1em;color:var(--rose);text-transform:uppercase;margin-bottom:.3rem}
+.horaire-time{font-family:'Bebas Neue',sans-serif;font-size:1.3rem;color:var(--blanc)}
+.horaire-day{font-size:.78rem;color:rgba(255,252,237,.45);margin-top:.2rem}
+
+/* ─── FOOTER ─── */
+footer{background:#050b15;border-top:1px solid rgba(234,59,121,.1);padding:3rem 4% 2rem}
+.footer-top{display:grid;grid-template-columns:1fr 2fr;gap:3rem;margin-bottom:2rem;align-items:start}
+.footer-brand .nav-logo{font-size:2rem;margin-bottom:.8rem;display:inline-flex}
+.footer-brand p{color:rgba(255,252,237,.35);font-size:.8rem;line-height:1.6;max-width:240px}
+.footer-links-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.footer-col h4{font-size:.72rem;font-weight:700;letter-spacing:.15em;color:rgba(255,252,237,.4);text-transform:uppercase;margin-bottom:.8rem}
+.footer-col a{display:block;color:rgba(255,252,237,.5);font-size:.8rem;margin-bottom:.5rem;text-decoration:none;transition:color var(--transition)}
+.footer-col a:hover{color:var(--rose)}
+
+/* ─── CAROUSEL PARTENAIRES ─── */
+.carousel-wrap{overflow:hidden;position:relative;padding:2rem 0;background:rgba(15,30,65,.3);border-top:1px solid rgba(234,59,121,.08);border-bottom:1px solid rgba(234,59,121,.08);margin:2rem 0}
+.carousel-wrap::before,.carousel-wrap::after{content:'';position:absolute;top:0;bottom:0;width:80px;z-index:2}
+.carousel-wrap::before{left:0;background:linear-gradient(90deg,#050b15,transparent)}
+.carousel-wrap::after{right:0;background:linear-gradient(-90deg,#050b15,transparent)}
+.carousel-track{display:flex;gap:1.5rem;width:max-content;animation:scroll 25s linear infinite}
+.carousel-track:hover{animation-play-state:paused}
+@keyframes scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.carousel-item{background:rgba(15,30,65,.6);border:1px solid rgba(234,59,121,.12);border-radius:10px;padding:1rem 1.8rem;display:flex;align-items:center;gap:.8rem;cursor:pointer;transition:border-color var(--transition);white-space:nowrap;text-decoration:none;color:inherit}
+.carousel-item:hover{border-color:rgba(234,59,121,.4)}
+.carousel-item-logo{width:40px;height:40px;background:rgba(255,252,237,.08);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:1.2rem}
+.carousel-item-name{font-size:.82rem;font-weight:600;color:rgba(255,252,237,.7)}
+
+.footer-bottom{display:flex;align-items:center;justify-content:space-between;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.06)}
+.footer-bottom p{color:rgba(255,252,237,.2);font-size:.72rem}
+.footer-social{display:flex;gap:.8rem}
+.social-btn{width:34px;height:34px;background:rgba(255,255,255,.05);border-radius:6px;display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:.85rem;transition:background var(--transition)}
+.social-btn:hover{background:rgba(234,59,121,.2)}
+
+/* ─── ANIMATIONS SCROLL ─── */
+.reveal{opacity:0;transform:translateY(40px);transition:opacity .7s ease,transform .7s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.reveal-delay-1{transition-delay:.1s}
+.reveal-delay-2{transition-delay:.2s}
+.reveal-delay-3{transition-delay:.3s}
+
+/* ─── MOBILE ─── */
+@media(max-width:768px){
+  .nav-links{display:none;position:fixed;inset:0;background:rgba(8,15,30,.98);flex-direction:column;align-items:center;justify-content:center;gap:2rem;z-index:99}
+  .nav-links.open{display:flex}
+  .hamburger{display:flex;z-index:100}
+  .about-grid,.contact-wrap,.footer-top{grid-template-columns:1fr}
+  .team-sub-grid{grid-template-columns:1fr}
+  .hero-stats{gap:1.5rem}
+  .footer-links-grid{grid-template-columns:1fr 1fr}
+  .dropdown{position:static;transform:none;display:flex;flex-direction:column;opacity:1;visibility:visible;background:transparent;border:none;padding:0}
+}
+</style>
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader-logo">HBC<span style="color:var(--rose)">.</span></div>
+  <div class="loader-bar"><div class="loader-fill"></div></div>
+</div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="#" class="nav-logo" onclick="showSection('home')">HBC<span>.</span>Bazadais</a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#" onclick="showSection('home');closeMenu()">Accueil</a></li>
+    <li><a href="#" onclick="showSection('news');closeMenu()">Actualités</a></li>
+    <li class="has-dropdown">
+      <a href="#" onclick="showSection('teams');closeMenu()">Équipes ▾</a>
+      <div class="dropdown" id="teamsDropdown"></div>
+    </li>
+    <li><a href="#" onclick="showSection('shop');closeMenu()">Boutique</a></li>
+    <li><a href="#" onclick="showSection('partners');closeMenu()">Partenaires</a></li>
+    <li><a href="#" class="nav-cta" onclick="showSection('contact');closeMenu()">Contact</a></li>
+  </ul>
+  <div class="hamburger" onclick="toggleMenu()" id="hamburger">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- ══════════════ HOME ══════════════ -->
+<div id="home">
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-content">
+      <div class="hero-badge">⚡ Saison 2025–2026</div>
+      <h1 class="hero-title">Handball<span>Club Bazadais</span></h1>
+      <p class="hero-subtitle">Rejoignez une famille passionnée de handball au cœur de la Gironde. 12 équipes, toutes catégories, un club qui vous ressemble.</p>
+      <div class="hero-btns">
+        <a href="#" class="btn-primary" onclick="showSection('teams')">Découvrir les équipes →</a>
+        <a href="#" class="btn-outline" onclick="showSection('contact')">Nous rejoindre</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item"><div class="stat-num">12<span>+</span></div><div class="stat-label">Équipes</div></div>
+        <div class="stat-item"><div class="stat-num">200<span>+</span></div><div class="stat-label">Licenciés</div></div>
+        <div class="stat-item"><div class="stat-num">30<span>ans</span></div><div class="stat-label">D'histoire</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- À PROPOS -->
+  <section id="about">
+    <div class="about-grid">
+      <div class="about-visual">
+        <div class="about-cards-grid">
+          <div class="about-card reveal">
+            <div class="about-icon">🏆</div>
+            <h3>Notre Club</h3>
+            <p>Le HBC Bazadais est un club convivial et ambitieux basé à Bazas, en Gironde. Nous accueillons joueurs et joueuses de tous niveaux, du loisir à la compétition.</p>
+          </div>
+          <div class="about-card reveal reveal-delay-1">
+            <div class="about-icon">❤️</div>
+            <h3>Notre Mission</h3>
+            <p>Former, accompagner et faire progresser chaque joueur dans un environnement bienveillant. Le sport comme vecteur de lien social et de dépassement de soi.</p>
+          </div>
+        </div>
+      </div>
+      <div class="reveal reveal-delay-2">
+        <span class="section-tag">À propos du club</span>
+        <h2 class="section-title">Une passion,<br>un territoire</h2>
+        <p class="section-sub" style="margin-bottom:2rem">Depuis plus de 30 ans, le HBC Bazadais porte les couleurs du handball girondin avec fierté. Venez nous rejoindre !</p>
+        <ul class="feature-list">
+          <li>12 équipes de la catégorie loisir aux seniors compétitifs</li>
+          <li>Encadrement qualifié et bienveillant pour chaque catégorie</li>
+          <li>Salle moderne équipée pour l'entraînement et les matchs</li>
+          <li>Évènements et sorties tout au long de la saison</li>
+          <li>Affiliation FFHB — Comité Gironde de Handball</li>
+        </ul>
+        <a href="#" class="btn-primary" style="margin-top:2rem;display:inline-flex" onclick="showSection('contact')">Nous rejoindre →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARTE & HORAIRES -->
+  <section class="map-section">
+    <div style="text-align:center;margin-bottom:2rem">
+      <span class="section-tag">Nous trouver</span>
+      <h2 class="section-title">Gymnase &amp; Horaires</h2>
+      <p class="section-sub" style="margin:0 auto;text-align:center">Av. du Prof Paul Lamarque, 33430 Bazas</p>
+    </div>
+    <div class="map-wrap reveal">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2844.0!2d-0.2!3d44.43!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sAv.+du+Prof+Paul+Lamarque%2C+33430+Bazas!5e0!3m2!1sfr!2sfr!4v1" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="horaires-grid reveal">
+      <div class="horaire-card"><div class="horaire-team">École du hand</div><div class="horaire-time">Mercredi</div><div class="horaire-day">14h00 – 15h30</div></div>
+      <div class="horaire-card"><div class="horaire-team">-11 Mixte</div><div class="horaire-time">Mercredi</div><div class="horaire-day">15h30 – 17h00</div></div>
+      <div class="horaire-card"><div class="horaire-team">-13 / -15</div><div class="horaire-time">Mardi & Jeudi</div><div class="horaire-day">18h00 – 19h30</div></div>
+      <div class="horaire-card"><div class="horaire-team">-18 F &amp; G</div><div class="horaire-time">Lundi & Mercredi</div><div class="horaire-day">19h00 – 20h30</div></div>
+      <div class="horaire-card"><div class="horaire-team">Seniors</div><div class="horaire-time">Mardi & Jeudi</div><div class="horaire-day">20h00 – 22h00</div></div>
+      <div class="horaire-card"><div class="horaire-team">Loisir</div><div class="horaire-time">Vendredi</div><div class="horaire-day">20h00 – 22h00</div></div>
+    </div>
+  </section>
+
+</div><!-- /home -->
+
+<!-- ══════════════ ACTUALITÉS ══════════════ -->
+<div id="news" style="display:none">
+  <section class="section active" id="news-section" style="padding-top:8rem">
+    <span class="section-tag">Le club en direct</span>
+    <h2 class="section-title">Actualités</h2>
+    <p class="section-sub">Toutes les news du HBC Bazadais — résultats, événements, vie du club.</p>
+    <div class="news-grid">
+      <div class="news-card reveal">
+        <div class="news-img" style="background:linear-gradient(135deg,#0F1E41,rgba(234,59,121,.4))">
+          <span style="font-size:3rem;z-index:1">🏆</span>
+          <div class="news-tag">Résultat</div>
+        </div>
+        <div class="news-body">
+          <div class="news-date">Mai 2025</div>
+          <h3>Victoire des Seniors G1 en championnat !</h3>
+          <p>Belle performance de nos seniors garçons qui s'imposent 32-28 face à leur adversaire du week-end.</p>
+        </div>
+      </div>
+      <div class="news-card reveal reveal-delay-1">
+        <div class="news-img" style="background:linear-gradient(135deg,#0F1E41,rgba(248,216,225,.3))">
+          <span style="font-size:3rem;z-index:1">🎉</span>
+          <div class="news-tag">Événement</div>
+        </div>
+        <div class="news-body">
+          <div class="news-date">Avril 2025</div>
+          <h3>Tournoi de printemps — inscriptions ouvertes</h3>
+          <p>Le tournoi annuel du HBC Bazadais revient ! Inscrivez vos équipes dès maintenant.</p>
+        </div>
+      </div>
+      <div class="news-card reveal reveal-delay-2">
+        <div class="news-img" style="background:linear-gradient(135deg,#0F1E41,rgba(234,59,121,.25))">
+          <span style="font-size:3rem;z-index:1">📋</span>
+          <div class="news-tag">Club</div>
+        </div>
+        <div class="news-body">
+          <div class="news-date">Mars 2025</div>
+          <h3>Réunion de bilan mi-saison</h3>
+          <p>Retour sur la réunion du bureau avec les points clés de la saison en cours et les perspectives.</p>
+        </div>
+      </div>
+    </div>
+    <div class="ffhb-bloc reveal" style="margin-top:3rem">
+      <div class="soon-badge">⚡ Bientôt disponible</div>
+      <h4>Résultats &amp; Calendrier FFHB en temps réel</h4>
+      <p>Un module IA viendra automatiquement récupérer les résultats, classements et calendriers directement depuis la FFHB pour toutes nos équipes.</p>
+    </div>
+  </section>
+</div>
+
+<!-- ══════════════ ÉQUIPES ══════════════ -->
+<div id="teams" style="display:none">
+  <section class="section active" id="teams-section" style="padding-top:8rem">
+    <span class="section-tag">Le club</span>
+    <h2 class="section-title">Nos Équipes</h2>
+    <p class="section-sub">12 équipes pour tous les âges et tous les niveaux. Cliquez sur une équipe pour découvrir son effectif, son classement et son calendrier.</p>
+    <div class="teams-grid" id="teamsGrid" style="margin-top:3rem"></div>
+  </section>
+</div>
+
+<!-- PAGE ÉQUIPE INDIVIDUELLE -->
+<div id="team-page">
+  <section style="padding:8rem 4% 4rem">
+    <div onclick="goBackToTeams()" class="back-btn">← Retour aux équipes</div>
+    <div class="team-page-header">
+      <div class="section-tag" id="teamCatLabel"></div>
+      <h1 id="teamPageTitle">Seniors <span>Garçons 1</span></h1>
+    </div>
+    <div class="team-sub-grid">
+      <div class="team-sub-card" onclick="showSubPage('effectif')">
+        <span class="sub-icon">👥</span>
+        <div class="sub-title">Effectif</div>
+        <div class="sub-desc">Découvrez les joueurs et joueuses de l'équipe</div>
+      </div>
+      <div class="team-sub-card" onclick="showSubPage('classement')">
+        <span class="sub-icon">🏆</span>
+        <div class="sub-title">Classement</div>
+        <div class="sub-desc">Position au championnat et points</div>
+      </div>
+      <div class="team-sub-card" onclick="showSubPage('calendrier')">
+        <span class="sub-icon">📅</span>
+        <div class="sub-title">Calendrier &amp; Résultats</div>
+        <div class="sub-desc">Matchs à venir et résultats de la saison</div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- SOUS-PAGE ÉQUIPE -->
+<div id="team-subpage">
+  <section style="padding:8rem 4% 4rem">
+    <div onclick="goBackToTeamPage()" class="back-btn">← Retour à l'équipe</div>
+    <div class="subpage-header">
+      <div class="section-tag" id="subpageTeamLabel"></div>
+      <h2 class="section-title" id="subpageTitle"></h2>
+    </div>
+    <div id="subpageContent"></div>
+  </section>
+</div>
+
+<!-- ══════════════ BOUTIQUE ══════════════ -->
+<div id="shop" style="display:none">
+  <section class="section active" id="shop-section" style="padding-top:8rem">
+    <span class="section-tag">Boutique officielle</span>
+    <h2 class="section-title">Nos Articles</h2>
+    <p class="section-sub">Portez les couleurs du HBC Bazadais. Chaque achat vous redirige vers notre boutique HelloAsso sécurisée.</p>
+    <div class="shop-grid">
+      <div class="product-card reveal">
+        <div class="product-img">👕<div class="product-badge">Nouveau</div></div>
+        <div class="product-body">
+          <div class="product-name">Maillot Officiel 2025</div>
+          <div class="product-desc">Maillot domicile saison 2025-2026, disponible en toutes tailles</div>
+          <div class="product-footer">
+            <div class="product-price">35<span>€</span></div>
+            <a href="#" class="btn-shop" target="_blank">Acheter →</a>
+          </div>
+        </div>
+      </div>
+      <div class="product-card reveal reveal-delay-1">
+        <div class="product-img">🧢</div>
+        <div class="product-body">
+          <div class="product-name">Casquette HBC</div>
+          <div class="product-desc">Casquette brodée aux couleurs du club, ajustable</div>
+          <div class="product-footer">
+            <div class="product-price">18<span>€</span></div>
+            <a href="#" class="btn-shop" target="_blank">Acheter →</a>
+          </div>
+        </div>
+      </div>
+      <div class="product-card reveal reveal-delay-2">
+        <div class="product-img">🎽</div>
+        <div class="product-body">
+          <div class="product-name">Survêtement Club</div>
+          <div class="product-desc">Ensemble veste + pantalon, logo brodé HBC Bazadais</div>
+          <div class="product-footer">
+            <div class="product-price">55<span>€</span></div>
+            <a href="#" class="btn-shop" target="_blank">Acheter →</a>
+          </div>
+        </div>
+      </div>
+      <div class="product-card reveal reveal-delay-1">
+        <div class="product-img">🏐</div>
+        <div class="product-body">
+          <div class="product-name">Ballon Officiel</div>
+          <div class="product-desc">Ballon de handball taille 2 / 3, logo HBC Bazadais</div>
+          <div class="product-footer">
+            <div class="product-price">28<span>€</span></div>
+            <a href="#" class="btn-shop" target="_blank">Acheter →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p style="color:rgba(255,252,237,.3);font-size:.75rem;text-align:center;margin-top:2.5rem">Les achats sont traités via HelloAsso, notre partenaire de paiement sécurisé. Vous serez redirigé vers leur plateforme.</p>
+  </section>
+</div>
+
+<!-- ══════════════ PARTENAIRES ══════════════ -->
+<div id="partners" style="display:none">
+  <section class="section active" id="partners-section" style="padding-top:8rem">
+    <span class="section-tag">Ils nous soutiennent</span>
+    <h2 class="section-title">Nos Partenaires</h2>
+    <p class="section-sub">Merci à tous ceux qui font vivre le HBC Bazadais. Cliquez sur un partenaire pour visiter son site.</p>
+    <div class="partners-grid" id="partnersGrid"></div>
+    <div class="recruit-bloc reveal" style="margin-top:4rem">
+      <h3>Devenez Partenaire</h3>
+      <p>Associez votre image à celle du HBC Bazadais et soutenez le sport local. Plusieurs formules disponibles selon votre engagement.</p>
+      <a href="#" class="btn-primary" onclick="showSection('contact')">Nous contacter →</a>
+    </div>
+  </section>
+</div>
+
+<!-- ══════════════ CONTACT ══════════════ -->
+<div id="contact" style="display:none">
+  <section class="section active" id="contact-section" style="padding-top:8rem">
+    <span class="section-tag">Contactez-nous</span>
+    <h2 class="section-title">Parlons-nous</h2>
+    <p class="section-sub">Une question, une envie de rejoindre le club, ou un projet de partenariat ? Écrivez-nous !</p>
+    <div class="contact-wrap">
+      <div class="contact-info">
+        <h3>HBC Bazadais</h3>
+        <p>N'hésitez pas à nous contacter pour toute question. Nous vous répondrons dans les meilleurs délais.</p>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">📍</div>
+          <div class="contact-detail-text">Av. du Prof Paul Lamarque<br>33430 Bazas</div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">📧</div>
+          <div class="contact-detail-text">contact@hbc-bazadais.fr</div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">📱</div>
+          <div class="contact-detail-text">Suivez-nous sur les réseaux sociaux</div>
+        </div>
+      </div>
+      <div class="contact-form reveal">
+        <form action="https://formspree.io/f/VOTRE_ID_FORMSPREE" method="POST">
+          <div class="form-group">
+            <label>Sujet</label>
+            <select name="sujet" required>
+              <option value="" disabled selected>Choisissez un sujet</option>
+              <option value="general">💬 Question générale</option>
+              <option value="joueur">⚽ Inscription joueur / joueuse</option>
+              <option value="entraineur">🏋️ Candidature entraîneur</option>
+              <option value="partenaire">🤝 Devenir partenaire</option>
+              <option value="autre">📌 Autre</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Nom &amp; Prénom</label>
+            <input type="text" name="nom" placeholder="Votre nom complet" required>
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" name="email" placeholder="votre@email.fr" required>
+          </div>
+          <div class="form-group">
+            <label>Téléphone (optionnel)</label>
+            <input type="tel" name="tel" placeholder="06 XX XX XX XX">
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea name="message" placeholder="Votre message..." required></textarea>
+          </div>
+          <button type="submit" class="form-submit">Envoyer le message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ══════════════ FOOTER ══════════════ -->
+<footer>
+  <!-- Carousel partenaires -->
+  <div class="carousel-wrap">
+    <div class="carousel-track" id="carouselTrack"></div>
+  </div>
+
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a class="nav-logo" href="#" onclick="showSection('home')">HBC<span>.</span>Bazadais</a>
+      <p>Club de handball de Bazas, en Gironde. Rejoignez-nous pour la saison 2025–2026 !</p>
+    </div>
+    <div class="footer-links-grid">
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <a href="#" onclick="showSection('home')">Accueil</a>
+        <a href="#" onclick="showSection('news')">Actualités</a>
+        <a href="#" onclick="showSection('teams')">Équipes</a>
+      </div>
+      <div class="footer-col">
+        <h4>Club</h4>
+        <a href="#" onclick="showSection('shop')">Boutique</a>
+        <a href="#" onclick="showSection('partners')">Partenaires</a>
+        <a href="#" onclick="showSection('contact')">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Infos</h4>
+        <a href="#">Mentions légales</a>
+        <a href="#">FFHB</a>
+        <a href="#">HelloAsso</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 HBC Bazadais — Tous droits réservés</p>
+    <div class="footer-social">
+      <a href="#" class="social-btn">f</a>
+      <a href="#" class="social-btn">in</a>
+      <a href="#" class="social-btn">📸</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+// ─── DONNÉES ───
+const teams = [
+  {id:'loisir',cat:'Détente',name:'Loisir',emoji:'😄'},
+  {id:'ecole',cat:'Jeune',name:'École du Hand',emoji:'⭐'},
+  {id:'u11',cat:'Catégorie d\'âge',name:'-11 Mixte',emoji:'🌟'},
+  {id:'u13f',cat:'Catégorie d\'âge',name:'-13 Filles',emoji:'🩷'},
+  {id:'u13g',cat:'Catégorie d\'âge',name:'-13 Garçons',emoji:'💙'},
+  {id:'u15f',cat:'Catégorie d\'âge',name:'-15 Filles',emoji:'🩷'},
+  {id:'u15g',cat:'Catégorie d\'âge',name:'-15 Garçons',emoji:'💙'},
+  {id:'u18f',cat:'Catégorie d\'âge',name:'-18 Filles',emoji:'🩷'},
+  {id:'u18g',cat:'Catégorie d\'âge',name:'-18 Garçons',emoji:'💙'},
+  {id:'srf',cat:'Compétition',name:'Seniors Filles',emoji:'🏆'},
+  {id:'srg2',cat:'Compétition',name:'Seniors Garçons 2',emoji:'🥈'},
+  {id:'srg1',cat:'Compétition',name:'Seniors Garçons 1',emoji:'🥇'},
+];
+
+const partners = [
+  {name:'Partenaire 1',type:'Sponsor officiel',emoji:'🏢',url:'#'},
+  {name:'Partenaire 2',type:'Équipementier',emoji:'👕',url:'#'},
+  {name:'Partenaire 3',type:'Sponsor local',emoji:'🏪',url:'#'},
+  {name:'Partenaire 4',type:'Partenaire médias',emoji:'📺',url:'#'},
+  {name:'Partenaire 5',type:'Sponsor',emoji:'🏗️',url:'#'},
+  {name:'Partenaire 6',type:'Partenaire',emoji:'⚡',url:'#'},
+];
+
+let currentTeam = null;
+let currentSubPage = null;
+
+// ─── INIT ───
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    document.getElementById('loader').classList.add('hide');
+  }, 2000);
+  buildTeamsGrid();
+  buildDropdown();
+  buildPartners();
+  buildCarousel();
+  initScroll();
+  initReveal();
+});
+
+// ─── NAVIGATION ───
+const sections = ['home','news','teams','shop','partners','contact'];
+
+function showSection(name) {
+  sections.forEach(s => {
+    const el = document.getElementById(s);
+    if (el) el.style.display = 'none';
+  });
+  document.getElementById('team-page').style.display = 'none';
+  document.getElementById('team-subpage').style.display = 'none';
+
+  const target = document.getElementById(name);
+  if (target) {
+    target.style.display = 'block';
+    window.scrollTo({top:0,behavior:'smooth'});
+    initReveal();
+  }
+}
+
+function toggleMenu() {
+  document.getElementById('navLinks').classList.toggle('open');
+}
+function closeMenu() {
+  document.getElementById('navLinks').classList.remove('open');
+}
+
+// ─── SCROLL NAV ───
+function initScroll() {
+  window.addEventListener('scroll', () => {
+    const nav = document.getElementById('navbar');
+    nav.classList.toggle('scrolled', window.scrollY > 50);
+  });
+}
+
+// ─── REVEAL ───
+function initReveal() {
+  setTimeout(() => {
+    const els = document.querySelectorAll('.reveal');
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, {threshold:.1});
+    els.forEach(el => { el.classList.remove('visible'); obs.observe(el); });
+  }, 100);
+}
+
+// ─── ÉQUIPES ───
+function buildTeamsGrid() {
+  const grid = document.getElementById('teamsGrid');
+  grid.innerHTML = teams.map(t => `
+    <div class="team-card" onclick="openTeam('${t.id}')">
+      <div class="team-cat">${t.cat}</div>
+      <div class="team-name">${t.emoji} ${t.name}</div>
+      <div class="team-arrow">Voir l'équipe →</div>
+    </div>
+  `).join('');
+}
+
+function buildDropdown() {
+  const dd = document.getElementById('teamsDropdown');
+  dd.innerHTML = teams.map(t => `
+    <a href="#" onclick="openTeam('${t.id}');closeMenu()">${t.emoji} ${t.name}</a>
+  `).join('');
+}
+
+function openTeam(id) {
+  currentTeam = teams.find(t => t.id === id);
+  sections.forEach(s => { const el = document.getElementById(s); if(el) el.style.display='none'; });
+  document.getElementById('team-subpage').style.display = 'none';
+
+  document.getElementById('teamCatLabel').textContent = currentTeam.cat;
+  document.getElementById('teamPageTitle').innerHTML = currentTeam.emoji + ' ' + currentTeam.name;
+
+  document.getElementById('team-page').style.display = 'block';
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+function goBackToTeams() {
+  document.getElementById('team-page').style.display = 'none';
+  showSection('teams');
+}
+
+// ─── SOUS-PAGES ───
+function showSubPage(type) {
+  currentSubPage = type;
+  document.getElementById('team-page').style.display = 'none';
+  document.getElementById('subpageTeamLabel').textContent = currentTeam.emoji + ' ' + currentTeam.name;
+
+  const titles = {effectif:'Effectif',classement:'Classement',calendrier:'Calendrier & Résultats'};
+  document.getElementById('subpageTitle').textContent = titles[type];
+  document.getElementById('subpageContent').innerHTML = buildSubContent(type);
+
+  document.getElementById('team-subpage').style.display = 'block';
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+function goBackToTeamPage() {
+  document.getElementById('team-subpage').style.display = 'none';
+  document.getElementById('team-page').style.display = 'block';
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+function buildSubContent(type) {
+  if (type === 'effectif') {
+    return `
+      <div class="effectif-grid">
+        ${[
+          {num:'1',name:'À compléter',pos:'Gardien'},
+          {num:'7',name:'À compléter',pos:'Ailier gauche'},
+          {num:'10',name:'À compléter',pos:'Pivot'},
+          {num:'11',name:'À compléter',pos:'Demi-centre'},
+          {num:'14',name:'À compléter',pos:'Ailier droit'},
+          {num:'77',name:'À compléter',pos:'Arrière gauche'},
+        ].map(p => `
+          <div class="player-card">
+            <div class="player-num">#${p.num}</div>
+            <div class="player-name">${p.name}</div>
+            <div class="player-pos">${p.pos}</div>
+          </div>
+        `).join('')}
+      </div>
+      <div class="ffhb-bloc" style="margin-top:2rem">
+        <div class="soon-badge">⚡ Module IA FFHB</div>
+        <h4>Effectif complet automatique</h4>
+        <p>L'intégration FFHB permettra de récupérer l'effectif officiel automatiquement.</p>
+      </div>
+    `;
+  }
+  if (type === 'classement') {
+    return `
+      <div class="placeholder-bloc">
+        <div class="soon-badge" style="margin-bottom:1rem">⚡ Bientôt disponible</div>
+        <h3>Classement FFHB</h3>
+        <p>Le classement de la poule sera affiché ici automatiquement grâce à l'intégration FFHB.<br><br>
+        En attendant, retrouvez le classement sur <a href="https://www.ffhb.fr" target="_blank" style="color:var(--rose)">ffhb.fr</a></p>
+      </div>
+      <table class="data-table" style="margin-top:2rem">
+        <thead><tr><th>#</th><th>Équipe</th><th>J</th><th>G</th><th>N</th><th>P</th><th>Pts</th></tr></thead>
+        <tbody>
+          <tr class="highlight"><td>1</td><td>HBC Bazadais</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+          <tr><td>2</td><td>À venir</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+          <tr><td>3</td><td>À venir</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+        </tbody>
+      </table>
+    `;
+  }
+  if (type === 'calendrier') {
+    return `
+      <div class="placeholder-bloc">
+        <div class="soon-badge" style="margin-bottom:1rem">⚡ Bientôt disponible</div>
+        <h3>Calendrier &amp; Résultats FFHB</h3>
+        <p>Les matchs à venir et les résultats de la saison seront mis à jour automatiquement via l'intégration FFHB.</p>
+      </div>
+      <table class="data-table" style="margin-top:2rem">
+        <thead><tr><th>Date</th><th>Domicile</th><th>Score</th><th>Extérieur</th><th>Statut</th></tr></thead>
+        <tbody>
+          <tr><td>À venir</td><td>HBC Bazadais</td><td>–</td><td>Adversaire</td><td style="color:var(--rose)">Prochain match</td></tr>
+          <tr><td>À venir</td><td>Adversaire</td><td>–</td><td>HBC Bazadais</td><td style="color:rgba(255,252,237,.4)">Programmé</td></tr>
+        </tbody>
+      </table>
+    `;
+  }
+}
+
+// ─── PARTENAIRES ───
+function buildPartners() {
+  const grid = document.getElementById('partnersGrid');
+  if (!grid) return;
+  grid.innerHTML = partners.map(p => `
+    <a href="${p.url}" target="_blank" class="partner-card reveal">
+      <div class="partner-logo-box">${p.emoji}</div>
+      <div class="partner-name">${p.name}</div>
+      <div class="partner-type">${p.type}</div>
+    </a>
+  `).join('');
+}
+
+// ─── CAROUSEL ───
+function buildCarousel() {
+  const track = document.getElementById('carouselTrack');
+  const items = [...partners, ...partners].map(p => `
+    <a href="${p.url}" target="_blank" class="carousel-item">
+      <div class="carousel-item-logo">${p.emoji}</div>
+      <div class="carousel-item-name">${p.name}</div>
+    </a>
+  `).join('');
+  track.innerHTML = items;
+}
+</script>
+</body>
+</html>
