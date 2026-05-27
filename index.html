@@ -592,20 +592,20 @@ const TEAMS = [
   {id:'u15f',cat:'Catégorie U15',name:'-15 Filles',roster:[]},
   {id:'u15g',cat:'Catégorie U15',name:'-15 Garçons',roster:[]},
   {id:'u18f',cat:'Catégorie U18',name:'-18 Filles',roster:[
-    {num:'12',fname:'Romane',lname:'BEZIADE',pos:'Gardienne'},
-    {num:'2',fname:'Cloé',lname:'BRICAUD',pos:''},
-    {num:'3',fname:'Inès',lname:'GIRARD',pos:''},
-    {num:'4',fname:'Inès',lname:'BUREAU',pos:''},
-    {num:'5',fname:'Jaëlle',lname:'LABROUCHE',pos:''},
-    {num:'6',fname:'Ange',lname:'WAVRANT',pos:'Arrière gauche'},
-    {num:'7',fname:'Naëlle',lname:'RENAC',pos:''},
-    {num:'8',fname:'Ainhoa',lname:'BENTEJAC',pos:''},
-    {num:'9',fname:'Héloïse',lname:'JOUGUET',pos:''},
-    {num:'10',fname:'Noélane',lname:'BROTET',pos:'Pivot'},
+    {num:'12',fname:'Romane',lname:'BEZIADE',pos:'Gardienne',photo:'romane-beziade.jpg'},
+    {num:'2',fname:'Cloé',lname:'BRICAUD',pos:'',photo:'cloe-bricaud.jpg'},
+    {num:'3',fname:'Inès',lname:'GIRARD',pos:'',photo:'ines-girard.jpg'},
+    {num:'4',fname:'Inès',lname:'BUREAU',pos:'',photo:'ines-bureau.jpg'},
+    {num:'5',fname:'Jaëlle',lname:'LABROUCHE',pos:'',photo:'jaelle-labrouche.jpg'},
+    {num:'6',fname:'Ange',lname:'WAVRANT',pos:'Arrière gauche',photo:'ange-wavrant.jpg'},
+    {num:'7',fname:'Naëlle',lname:'RENAC',pos:'',photo:'naelle-renac.jpg'},
+    {num:'8',fname:'Ainhoa',lname:'BENTEJAC',pos:'',photo:'ainhoa-bentejac.jpg'},
+    {num:'9',fname:'Héloïse',lname:'JOUGUET',pos:'',photo:'heloise-jouguet.jpg'},
+    {num:'10',fname:'Noélane',lname:'BROTET',pos:'Pivot',photo:'noelane-brotet.jpg'},
     {num:'11',fname:'Yuna',lname:'MAEGERMAN--VEGA',pos:''},
     {num:'15',fname:'Océane',lname:'ESPAGNET--MICHEAU',pos:'Demi-centre'},
-    {num:'13',fname:'Lucile',lname:'VENNAT',pos:''},
-    {num:'14',fname:'Anaëlle',lname:'DUPEYRE',pos:'Ailière gauche'},
+    {num:'13',fname:'Lucile',lname:'VENNAT',pos:'',photo:'lucile-vennat.jpg'},
+    {num:'14',fname:'Anaëlle',lname:'DUPEYRE',pos:'Ailière gauche',photo:'anaelle-dupeyre.jpg'},
     {num:'16',fname:'Pauline',lname:'VACHET',pos:''},
   ]},
   {id:'u18g',cat:'Catégorie U18',name:'-18 Garçons',roster:[
@@ -794,12 +794,21 @@ function buildSub(type, team) {
       <div class="pcard" data-pos="${p.pos}">
         <div class="pcard-photo">
           <div class="pcard-num-big">${p.num}</div>
-          <div class="pcard-photo-placeholder">
-            <svg viewBox="0 0 80 140" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <ellipse cx="40" cy="22" rx="18" ry="18" fill="rgba(234,59,121,0.3)"/>
-              <path d="M8 120 C8 80 18 65 40 62 C62 65 72 80 72 120" fill="rgba(234,59,121,0.2)"/>
-            </svg>
-          </div>
+          ${p.photo
+            ? `<img class="pcard-photo-img" src="${GH}${p.photo}" alt="${p.fname} ${p.lname}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"  loading="lazy">
+               <div class="pcard-photo-placeholder" style="display:none">
+                 <svg viewBox="0 0 80 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+                   <ellipse cx="40" cy="22" rx="18" ry="18" fill="rgba(234,59,121,0.3)"/>
+                   <path d="M8 120 C8 80 18 65 40 62 C62 65 72 80 72 120" fill="rgba(234,59,121,0.2)"/>
+                 </svg>
+               </div>`
+            : `<div class="pcard-photo-placeholder">
+                 <svg viewBox="0 0 80 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+                   <ellipse cx="40" cy="22" rx="18" ry="18" fill="rgba(234,59,121,0.3)"/>
+                   <path d="M8 120 C8 80 18 65 40 62 C62 65 72 80 72 120" fill="rgba(234,59,121,0.2)"/>
+                 </svg>
+               </div>`
+          }
         </div>
         <div class="pcard-info">
           <div class="pcard-top-row">
