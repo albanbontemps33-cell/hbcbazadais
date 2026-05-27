@@ -269,12 +269,12 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;back
 .fcar-wrap::before{left:0;background:linear-gradient(90deg,#03080f,transparent)}
 .fcar-wrap::after{right:0;background:linear-gradient(-90deg,#03080f,transparent)}
 .fcar-inner{display:flex;gap:1rem;will-change:transform}
-.fcar-item{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);border-radius:8px;padding:.65rem 1.3rem;display:flex;align-items:center;gap:.65rem;text-decoration:none;white-space:nowrap;transition:border-color var(--t);flex-shrink:0}
-.fcar-item:hover{border-color:rgba(234,59,121,.3);background:rgba(234,59,121,.05)}
-.fcar-logo{width:32px;height:32px;border-radius:5px;overflow:hidden;display:flex;align-items:center;justify-content:center;flex-shrink:0;background:rgba(255,255,255,.05)}
-.fcar-logo img{max-width:100%;max-height:100%;object-fit:contain}
-.fcar-logo-txt{font-family:'Bebas Neue',sans-serif;font-size:.85rem;color:var(--rose)}
-.fcar-name{font-size:.77rem;font-weight:500;color:rgba(255,252,237,.55)}
+.fcar-item{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);border-radius:12px;padding:1rem .9rem .85rem;display:flex;flex-direction:column;align-items:center;gap:.55rem;text-decoration:none;white-space:nowrap;transition:border-color var(--t),background var(--t);flex-shrink:0;min-width:110px;text-align:center}
+.fcar-item:hover{border-color:rgba(234,59,121,.35);background:rgba(234,59,121,.06)}
+.fcar-logo{width:60px;height:44px;border-radius:7px;overflow:hidden;display:flex;align-items:center;justify-content:center;flex-shrink:0;background:rgba(255,255,255,.04)}
+.fcar-logo img{max-width:100%;max-height:100%;object-fit:contain;filter:brightness(1.1)}
+.fcar-logo-txt{font-family:'Bebas Neue',sans-serif;font-size:1.3rem;color:var(--rose)}
+.fcar-name{font-size:.68rem;font-weight:600;color:rgba(255,252,237,.5);letter-spacing:.04em;text-transform:uppercase;line-height:1.2;max-width:100px;white-space:normal;text-align:center}
 .footer-main{display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:3rem;padding:4rem 5% 3rem;max-width:1280px;margin:0 auto}
 .footer-brand .flogo{font-family:'Bebas Neue',sans-serif;font-size:1.6rem;letter-spacing:.12em;color:var(--blanc);display:flex;align-items:center;gap:.6rem;text-decoration:none;margin-bottom:.8rem}
 .footer-brand .flogo img{height:36px;width:36px;object-fit:cover;border-radius:50%;filter:drop-shadow(0 0 4px rgba(234,59,121,.4))}
