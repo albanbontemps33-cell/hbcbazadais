@@ -172,12 +172,12 @@ body{font-family:'DM Sans',sans-serif;background:var(--dark);color:var(--blanc);
 .players-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;border-radius:12px;overflow:visible}
 .pcard{background:var(--card);transition:background var(--t);position:relative;overflow:hidden;cursor:pointer;border-radius:10px;border:1px solid rgba(255,255,255,.05)}
 .pcard:hover{background:rgba(20,38,75,1)}
-.pcard:hover .pcard-photo-img{transform:scale(1.04)}
+.pcard:hover .pcard-photo-img{transform:scale(1.07)}
 /* Zone photo */
 .pcard-photo{height:240px;background:linear-gradient(170deg,#0d1c38 0%,rgba(15,30,65,.85) 40%,rgba(234,59,121,.12) 100%);display:flex;align-items:flex-end;justify-content:center;position:relative;overflow:hidden}
 /* Accent diagonal rouge (triangle bas droit comme PSG) */
 .pcard-photo::after{content:'';position:absolute;bottom:0;right:0;width:0;height:0;border-style:solid;border-width:0 0 60px 220px;border-color:transparent transparent rgba(234,59,121,.18) transparent;pointer-events:none}
-.pcard-photo-img{position:absolute;bottom:0;left:50%;transform:translateX(-50%);height:100%;width:auto;max-width:none;object-fit:cover;object-position:top center;transition:transform .5s ease}
+.pcard-photo-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top center;transition:transform .5s ease;transform-origin:top center}
 /* Placeholder silhouette quand pas de photo */
 .pcard-photo-placeholder{position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:110px;height:180px;opacity:.25;display:flex;flex-direction:column;align-items:center;justify-content:flex-end}
 .pcard-photo-placeholder svg{width:100%;height:100%}
@@ -603,7 +603,7 @@ const TEAMS = [
     {num:'9',fname:'Héloïse',lname:'JOUGUET',pos:'',photo:'heloise-jouguet.jpg'},
     {num:'10',fname:'Noélane',lname:'BROTET',pos:'Pivot',photo:'noelane-brotet.jpg'},
     {num:'11',fname:'Yuna',lname:'MAEGERMAN--VEGA',pos:''},
-    {num:'15',fname:'Océane',lname:'ESPAGNET--MICHEAU',pos:'Demi-centre'},
+    {num:'15',fname:'Océane',lname:'ESPAGNET--MICHEAU',pos:'Demi-centre',photo:'oceane-espagnet.jpg},
     {num:'13',fname:'Lucile',lname:'VENNAT',pos:'',photo:'lucile-vennat.jpg'},
     {num:'14',fname:'Anaëlle',lname:'DUPEYRE',pos:'Ailière gauche',photo:'anaelle-dupeyre.jpg'},
     {num:'16',fname:'Pauline',lname:'VACHET',pos:''},
