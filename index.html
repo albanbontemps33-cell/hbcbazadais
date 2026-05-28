@@ -918,13 +918,15 @@ function buildSub(type, team) {
             statHtml = `<span style="color:rgba(255,252,237,.4)">Reporté</span>`;
           }
           const score = (statut==='joue'||statut==='joué') ? `<strong>${sdom} – ${sext}</strong>` : '–';
-          return `<tr${hi}><td>${date}</td><td>${dom}</td><td style="text-align:center">${score}</td><td>${ext}</td><td>${statHtml}</td></tr>`;
+          const domHtml = isHome ? `<span style="font-weight:700;font-size:1rem;color:var(--blanc)">${dom}</span>` : dom;
+          const extHtml = isAway ? `<span style="font-weight:700;font-size:1rem;color:var(--blanc)">${ext}</span>` : ext;
+          return `<tr${hi}><td>${date}</td><td>${domHtml}</td><td style="text-align:center">${score}</td><td>${extHtml}</td><td>${statHtml}</td></tr>`;
         }).join('');
         container.innerHTML = `
           <div class="data-sec">
             <div class="data-sec-head"><h3>Calendrier &amp; Résultats — ${team.name}</h3></div>
             <table class="dt">
-              <thead><tr><th>Date</th><th>Domicile</th><th>Résultat</th><th>Extérieur</th><th>Statut</th></tr></thead>
+              <thead><tr><th>Date</th><th>Domicile</th><th>Score Dom.</th><th>Extérieur</th><th>Statut</th></tr></thead>
               <tbody>${tbody}</tbody>
             </table>
           </div>`;
