@@ -837,7 +837,7 @@ function buildSub(type, team) {
           return v !== null && v !== undefined && String(v).toLowerCase() !== 'rang' && String(v) !== '#';
         });
         if (!dataRows.length) {
-          container.innerHTML = `<div class="soon-box"><div class="soon-chip">🔜 À venir</div><h4>Classement non disponible</h4><p>Remplis l'onglet <strong>${team.id}</strong> dans le Google Sheets.</p></div>`;
+          container.innerHTML = `<div class="soon-box"><div class="soon-chip">🔜 À venir</div><h4>Classement non disponible</h4><p>Le classement n'est pas encore disponible !</p></div>`;
           return;
         }
         const tbody = dataRows.map(r => {
