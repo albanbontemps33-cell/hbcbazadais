@@ -913,7 +913,7 @@ function buildSub(type, team) {
             const col  = won ? '#4ade80' : lost ? 'var(--rose)' : 'rgba(255,252,237,.4)';
             statHtml   = `<span style="color:${col};font-weight:600">${won?'Victoire ✓':lost?'Défaite':'Nul'}</span>`;
           } else if (statut === 'a_venir' || statut === 'à venir') {
-            statHtml = `<span style="color:var(--rose)">À venir</span>`;
+            statHtml = `<span style="color:#5BB8F5">À venir</span>`;
           } else if (statut === 'reporte' || statut === 'reporté') {
             statHtml = `<span style="color:rgba(255,252,237,.4)">Reporté</span>`;
           }
