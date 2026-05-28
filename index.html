@@ -918,8 +918,8 @@ function buildSub(type, team) {
             statHtml = `<span style="color:rgba(255,252,237,.4)">Reporté</span>`;
           }
           const score = (statut==='joue'||statut==='joué') ? `<strong>${sdom} – ${sext}</strong>` : '–';
-          const domHtml = isHome ? `<span style="font-weight:700;font-size:1rem;color:var(--blanc)">${dom}</span>` : dom;
-          const extHtml = isAway ? `<span style="font-weight:700;font-size:1rem;color:var(--blanc)">${ext}</span>` : ext;
+          const domHtml = isHome ? `<span style="font-weight:700;font-size:1rem;color:var(--blanc);text-decoration:underline">${dom}</span>` : dom;
+          const extHtml = isAway ? `<span style="font-weight:700;font-size:1rem;color:var(--blanc);text-decoration:underline">${ext}</span>` : ext;
           return `<tr${hi}><td>${date}</td><td>${domHtml}</td><td style="text-align:center">${score}</td><td>${extHtml}</td><td>${statHtml}</td></tr>`;
         }).join('');
         container.innerHTML = `
