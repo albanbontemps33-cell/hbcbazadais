@@ -573,14 +573,14 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;back
 const GH = 'https://raw.githubusercontent.com/albanbontemps33-cell/hbcbazadais/main/';
 
 const TEAMS = [
-  {id:'loisir',cat:'Détente & Loisir',name:'Loisir',roster:[]},
-  {id:'ecole',cat:'École de Handball',name:'École du Hand',roster:[]},
-  {id:'u11',cat:'Catégorie U11',name:'-11 Mixte',roster:[]},
-  {id:'u13f',cat:'Catégorie U13',name:'-13 Filles',roster:[]},
-  {id:'u13g',cat:'Catégorie U13',name:'-13 Garçons',roster:[]},
-  {id:'u15f',cat:'Catégorie U15',name:'-15 Filles',roster:[]},
-  {id:'u15g',cat:'Catégorie U15',name:'-15 Garçons',roster:[]},
-  {id:'u18f',cat:'Catégorie U18',name:'-18 Filles',roster:[
+  {id:'loisir',cat:'Détente & Loisir',name:'Loisir',sheet:'loisir',roster:[]},
+  {id:'ecole',cat:'École de Handball',name:'École du Hand',sheet:'ecole du hand',roster:[]},
+  {id:'u11',cat:'Catégorie U11',name:'-11 Mixte',sheet:'u11',roster:[]},
+  {id:'u13f',cat:'Catégorie U13',name:'-13 Filles',sheet:'u13f',roster:[]},
+  {id:'u13g',cat:'Catégorie U13',name:'-13 Garçons',sheet:'u13g',roster:[]},
+  {id:'u15f',cat:'Catégorie U15',name:'-15 Filles',sheet:'u15f',roster:[]},
+  {id:'u15g',cat:'Catégorie U15',name:'-15 Garçons',sheet:'u15g',roster:[]},
+  {id:'u18f',cat:'Catégorie U18',name:'-18 Filles',sheet:'u18f',roster:[
     {num:'12',fname:'Romane',lname:'BEZIADE',pos:'Gardienne',photo:'romane-beziade.jpg'},
     {num:'2',fname:'Cloé',lname:'BRICAUD',pos:'Arrière droite',photo:'cloe-bricaud.jpg'},
     {num:'3',fname:'Inès',lname:'GIRARD',pos:'Aillière gauche',photo:'ines-girard.jpg'},
@@ -596,7 +596,7 @@ const TEAMS = [
     {num:'14',fname:'Anaëlle',lname:'DUPEYRE',pos:'Ailière gauche',photo:'anaelle-dupeyre.jpg'},
     {num:'15',fname:'Yuna',lname:'MAEGERMAN--VEGA',pos:'Aillière droite',photo:'yuna-MAEGERMAN.jpg'},
   ]},
-  {id:'u18g',cat:'Catégorie U18',name:'-18 Garçons',roster:[
+  {id:'u18g',cat:'Catégorie U18',name:'-18 Garçons',sheet:'u18g',roster:[
     {num:'2',fname:'Gabriel',lname:'BEGUEY',pos:''},
     {num:'3',fname:'Migwel',lname:'GINESTE',pos:''},
     {num:'4',fname:'Enael',lname:'MAILLET',pos:'Gardien'},
@@ -608,7 +608,7 @@ const TEAMS = [
     {num:'13',fname:'Noé',lname:'CAZADE',pos:''},
     {num:'16',fname:'Hugo',lname:'DESCOUBES',pos:''},
   ]},
-  {id:'srf',cat:'Compétition Senior',name:'Seniors Filles',roster:[
+  {id:'srf',cat:'Compétition Senior',name:'Seniors Filles',sheet:'srf',roster:[
     {num:'2',fname:'Charlotte',lname:'PAILLAUGUE',pos:'Aillière gauche',photo:'chachou.jpg'},
     {num:'3',fname:'Chloé',lname:'LEGLISE',pos:'Arrière droite',photo:'chloe-leglise.jpg'},
     {num:'4',fname:'Maylis',lname:'BROTET',pos:'Arrière gauche',photo:'maylis-brotet.jpg'},
@@ -627,7 +627,7 @@ const TEAMS = [
     {num:'17',fname:'Clémence',lname:'SORBIER',pos:'Aillière gauche',photo:'clemence-sorbier.jpg'},
     {num:'18',fname:'Camille',lname:'LEGLISE',pos:'Aillière droite',photo:'camille-leglise.jpg'},
   ]},
-  {id:'srg2',cat:'Compétition Senior',name:'Seniors Garçons 2',roster:[
+  {id:'srg2',cat:'Compétition Senior',name:'Seniors Garçons 2',sheet:'srg2',roster:[
     {num:'1',fname:'Maxime',lname:'CARLIER',pos:'Gardien'},
     {num:'6',fname:'Aidan',lname:'LESCARRET',pos:'Arrière gauche'},
     {num:'11',fname:'Quentin',lname:'SINNAEVE',pos:'Arrière droit'},
@@ -641,7 +641,7 @@ const TEAMS = [
     {num:'62',fname:'Mathieu',lname:'LELONG',pos:'Arrière droit'},
     {num:'64',fname:'Manuel',lname:'GONCALVES BORLIDO',pos:'Demi-centre'},
   ]},
-  {id:'srg1',cat:'Compétition Senior',name:'Seniors Garçons 1',roster:[
+  {id:'srg1',cat:'Compétition Senior',name:'Seniors Garçons 1',sheet:'srg1',roster:[
     {num:'2',fname:'Baptiste',lname:'DUFOUR CLARAC',pos:'Arrière gauche'},
     {num:'5',fname:'Léo',lname:'LABROUCHE',pos:'Ailier droit',photo:'leo-labrouche.jpg'},
     {num:'10',fname:'Bastien',lname:'POISSON',pos:'Demi-centre',photo:'bastien-poisson.jpg'},
@@ -815,9 +815,9 @@ function buildSub(type, team) {
   const SHEET_ID = '1b3s93bULXu2vO-una19bjCKpbkGBU9LDiaSZERYfCrs';
   const container = document.getElementById('subContent');
 
-  // Onglet = id de l'équipe (srg1, srg2, srf, u18f, u18g)
-  // Plage classement : A1 → G20, plage calendrier : I1 → N30
-  const range = type === 'classement' ? `${team.id}!A:G` : `${team.id}!I:N`;
+  // Onglet = nom exact de l'onglet Google Sheet (team.sheet)
+  const sheetName = encodeURIComponent(team.sheet || team.id);
+  const range = type === 'classement' ? `${sheetName}!A:G` : `${sheetName}!I:N`;
   const url = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:json&range=${range}`;
 
   container.innerHTML = `<div style="text-align:center;padding:4rem;color:rgba(255,252,237,.3)"><div style="font-size:2rem;margin-bottom:1rem;display:inline-block;animation:spin 1s linear infinite">⟳</div><p>Chargement…</p></div>`;
@@ -913,13 +913,13 @@ function buildSub(type, team) {
             const col  = won ? '#4ade80' : lost ? 'var(--rose)' : 'rgba(255,252,237,.4)';
             statHtml   = `<span style="color:${col};font-weight:600">${won?'Victoire ✓':lost?'Défaite':'Nul'}</span>`;
           } else if (statut === 'a_venir' || statut === 'à venir') {
-            statHtml = `<span style="color:#5BB8F5">À venir</span>`;
+            statHtml = `<span style="color:var(--rose)">À venir</span>`;
           } else if (statut === 'reporte' || statut === 'reporté') {
             statHtml = `<span style="color:rgba(255,252,237,.4)">Reporté</span>`;
           }
           const score = (statut==='joue'||statut==='joué') ? `<strong>${sdom} – ${sext}</strong>` : '–';
-          const domHtml = isHome ? `<span style="font-weight:700;font-size:1rem;color:var(--blanc);text-decoration:underline">${dom}</span>` : dom;
-          const extHtml = isAway ? `<span style="font-weight:700;font-size:1rem;color:var(--blanc);text-decoration:underline">${ext}</span>` : ext;
+          const domHtml = isHome ? `<span style="font-weight:700;font-size:1rem;color:var(--blanc)">${dom}</span>` : dom;
+          const extHtml = isAway ? `<span style="font-weight:700;font-size:1rem;color:var(--blanc)">${ext}</span>` : ext;
           return `<tr${hi}><td>${date}</td><td>${domHtml}</td><td style="text-align:center">${score}</td><td>${extHtml}</td><td>${statHtml}</td></tr>`;
         }).join('');
         container.innerHTML = `
