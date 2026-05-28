@@ -19,5 +19,13 @@
       "score_ext": "",
       "statut": "a_venir"
     }
+    {
+  "date": "21/09/2025",
+  "domicile": "HBC Bazadais 1",
+  "exterieur": "HBC Créonnais",
+  "score_dom": "28",
+  "score_ext": "24",
+  "statut": "joue"
+}
   ]
 }
