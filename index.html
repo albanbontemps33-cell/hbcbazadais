@@ -811,56 +811,104 @@ function buildSub(type, team) {
       <div class="players-grid" id="pgrid">${cards}</div>`;
   }
 
-  // ── CLASSEMENT & CALENDRIER : chargement depuis data/[id].json sur GitHub ──
+  // ── CLASSEMENT & CALENDRIER : lecture depuis Google Sheets ──
+  const SHEET_ID = '1b3s93bULXu2vO-una19bjCKpbkGBU9LDiaSZERYfCrs';
   const container = document.getElementById('subContent');
+
+  // Onglet = id de l'équipe (srg1, srg2, srf, u18f, u18g)
+  // Plage classement : A1 → G20, plage calendrier : I1 → N30
+  const range = type === 'classement' ? `${team.id}!A:G` : `${team.id}!I:N`;
+  const url = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:json&range=${range}`;
+
   container.innerHTML = `<div style="text-align:center;padding:4rem;color:rgba(255,252,237,.3)"><div style="font-size:2rem;margin-bottom:1rem;display:inline-block;animation:spin 1s linear infinite">⟳</div><p>Chargement…</p></div>`;
 
-  fetch(`${GH}data/${team.id}.json?t=${Date.now()}`)
-    .then(r => { if (!r.ok) throw new Error(); return r.json(); })
-    .then(data => {
+  fetch(url)
+    .then(r => r.text())
+    .then(raw => {
+      // Google renvoie du JS wrappé : google.visualization.Query.setResponse({...})
+      const json = JSON.parse(raw.match(/google\.visualization\.Query\.setResponse\(([\s\S]*)\)/)[1]);
+      const rows = json.table.rows;
+
       if (type === 'classement') {
-        // accepte "classement" comme clé
-        const rows = data.classement || [];
-        if (!rows.length) { container.innerHTML = `<div class="soon-box"><div class="soon-chip">🔜 À venir</div><h4>Classement non disponible</h4><p>Mets à jour <strong>data/${team.id}.json</strong> sur GitHub.</p></div>`; return; }
-        const tbody = rows.map(r => {
-          const isUs = (r.club||'').toLowerCase().includes('bazadais');
-          return `<tr${isUs?' class="me"':''}><td>${r.rang}</td><td>${r.club}</td><td>${r.joues??'—'}</td><td>${r.gagnes??r.Gagnes??'—'}</td><td>${r.nuls??'—'}</td><td>${r.perdus??'—'}</td><td><strong>${r.points??'—'}</strong></td></tr>`;
+        // Colonnes A:rang B:club C:joues D:gagnes E:nuls F:perdus G:points
+        // La ligne 1 est l'en-tête, on skip si la cellule A1 = "rang" ou "#"
+        const dataRows = rows.filter(r => {
+          const v = r.c[0]?.v;
+          return v !== null && v !== undefined && String(v).toLowerCase() !== 'rang' && String(v) !== '#';
+        });
+        if (!dataRows.length) {
+          container.innerHTML = `<div class="soon-box"><div class="soon-chip">🔜 À venir</div><h4>Classement non disponible</h4><p>Remplis l'onglet <strong>${team.id}</strong> dans le Google Sheets.</p></div>`;
+          return;
+        }
+        const tbody = dataRows.map(r => {
+          const rang  = r.c[0]?.v ?? '—';
+          const club  = r.c[1]?.v ?? '—';
+          const j     = r.c[2]?.v ?? '—';
+          const g     = r.c[3]?.v ?? '—';
+          const n     = r.c[4]?.v ?? '—';
+          const p     = r.c[5]?.v ?? '—';
+          const pts   = r.c[6]?.v ?? '—';
+          const isUs  = String(club).toLowerCase().includes('bazadais');
+          return `<tr${isUs?' class="me"':''}><td>${rang}</td><td>${club}</td><td>${j}</td><td>${g}</td><td>${n}</td><td>${p}</td><td><strong>${pts}</strong></td></tr>`;
         }).join('');
-        const poule = data.poule || data.competition || data.concours || team.name;
-        const maj = data.mise_a_jour ? `<p style="color:rgba(255,252,237,.2);font-size:.68rem;text-align:right;margin-top:.5rem">Mis à jour le ${data.mise_a_jour}</p>` : '';
-        container.innerHTML = `<div class="data-sec"><div class="data-sec-head"><h3>Classement — ${poule}</h3></div><table class="dt"><thead><tr><th>#</th><th>Équipe</th><th>J</th><th>G</th><th>N</th><th>P</th><th>Pts</th></tr></thead><tbody>${tbody}</tbody></table></div>${maj}`;
+        container.innerHTML = `
+          <div class="data-sec">
+            <div class="data-sec-head"><h3>Classement — ${team.name}</h3></div>
+            <table class="dt">
+              <thead><tr><th>#</th><th>Équipe</th><th>J</th><th>G</th><th>N</th><th>P</th><th>Pts</th></tr></thead>
+              <tbody>${tbody}</tbody>
+            </table>
+          </div>`;
       }
+
       if (type === 'calendrier') {
-        // accepte "matchs" ou "allumettes" comme clé
-        const matchs = data.matchs || data.allumettes || [];
-        if (!matchs.length) { container.innerHTML = `<div class="soon-box"><div class="soon-chip">🔜 À venir</div><h4>Calendrier non disponible</h4><p>Mets à jour <strong>data/${team.id}.json</strong> sur GitHub.</p></div>`; return; }
-        const tbody = matchs.map(m => {
-          const isHome = (m.domicile||'').toLowerCase().includes('bazadais');
-          const isAway = (m.exterieur||'').toLowerCase().includes('bazadais');
-          const hi = (isHome||isAway) ? ' class="me"' : '';
+        // Colonnes I:date J:domicile K:score_dom L:score_ext M:exterieur N:statut
+        const dataRows = rows.filter(r => {
+          const v = r.c[0]?.v;
+          return v !== null && v !== undefined && String(v).toLowerCase() !== 'date';
+        });
+        if (!dataRows.length) {
+          container.innerHTML = `<div class="soon-box"><div class="soon-chip">🔜 À venir</div><h4>Calendrier non disponible</h4><p>Remplis l'onglet <strong>${team.id}</strong> dans le Google Sheets.</p></div>`;
+          return;
+        }
+        const tbody = dataRows.map(r => {
+          const date   = r.c[0]?.v ?? '—';
+          const dom    = r.c[1]?.v ?? '—';
+          const sdom   = r.c[2]?.v ?? '';
+          const sext   = r.c[3]?.v ?? '';
+          const ext    = r.c[4]?.v ?? '—';
+          const statut = String(r.c[5]?.v ?? '').toLowerCase().trim();
+          const isHome = String(dom).toLowerCase().includes('bazadais');
+          const isAway = String(ext).toLowerCase().includes('bazadais');
+          const hi     = (isHome||isAway) ? ' class="me"' : '';
           let statHtml = '—';
-          if (m.statut === 'joue' || m.statut === 'jouer') {
-            const sd = parseInt(m.score_dom), se = parseInt(m.score_ext);
-            const won = (isHome && sd>se)||(isAway && se>sd);
+          if (statut === 'joue' || statut === 'joué') {
+            const sd = parseFloat(sdom), se = parseFloat(sext);
+            const won  = (isHome && sd>se)||(isAway && se>sd);
             const lost = (isHome && sd<se)||(isAway && se<sd);
-            const col = won?'#4ade80':lost?'var(--rose)':'rgba(255,252,237,.4)';
-            statHtml = `<span style="color:${col};font-weight:600">${won?'Victoire ✓':lost?'Défaite':'Nul'}</span>`;
-          } else if (m.statut === 'a_venir') {
+            const col  = won ? '#4ade80' : lost ? 'var(--rose)' : 'rgba(255,252,237,.4)';
+            statHtml   = `<span style="color:${col};font-weight:600">${won?'Victoire ✓':lost?'Défaite':'Nul'}</span>`;
+          } else if (statut === 'a_venir' || statut === 'à venir') {
             statHtml = `<span style="color:var(--rose)">À venir</span>`;
-          } else if (m.statut === 'reporte') {
+          } else if (statut === 'reporte' || statut === 'reporté') {
             statHtml = `<span style="color:rgba(255,252,237,.4)">Reporté</span>`;
           }
-          const score = (m.statut==='joue'||m.statut==='jouer') ? `<strong>${m.score_dom} – ${m.score_ext}</strong>` : '–';
-          return `<tr${hi}><td>${m.date||'—'}</td><td>${m.domicile}</td><td style="text-align:center">${score}</td><td>${m.exterieur}</td><td>${statHtml}</td></tr>`;
+          const score = (statut==='joue'||statut==='joué') ? `<strong>${sdom} – ${sext}</strong>` : '–';
+          return `<tr${hi}><td>${date}</td><td>${dom}</td><td style="text-align:center">${score}</td><td>${ext}</td><td>${statHtml}</td></tr>`;
         }).join('');
-        const comp = data.competition || data.concours || team.name;
-        const maj = data.mise_a_jour ? `<p style="color:rgba(255,252,237,.2);font-size:.68rem;text-align:right;margin-top:.5rem">Mis à jour le ${data.mise_a_jour}</p>` : '';
-        container.innerHTML = `<div class="data-sec"><div class="data-sec-head"><h3>Calendrier &amp; Résultats — ${comp}</h3></div><table class="dt"><thead><tr><th>Date</th><th>Domicile</th><th>Score</th><th>Extérieur</th><th>Statut</th></tr></thead><tbody>${tbody}</tbody></table></div>${maj}`;
+        container.innerHTML = `
+          <div class="data-sec">
+            <div class="data-sec-head"><h3>Calendrier &amp; Résultats — ${team.name}</h3></div>
+            <table class="dt">
+              <thead><tr><th>Date</th><th>Domicile</th><th>Score Dom.</th><th>Extérieur</th><th>Statut</th></tr></thead>
+              <tbody>${tbody}</tbody>
+            </table>
+          </div>`;
       }
       initReveal();
     })
     .catch(() => {
-      container.innerHTML = `<div class="soon-box"><div class="soon-chip">🔜 À venir</div><h4>${type==='classement'?'Classement':'Calendrier'} non disponible</h4><p>Mets à jour <strong>data/${team.id}.json</strong> sur GitHub pour afficher les données.</p></div>`;
+      container.innerHTML = `<div class="soon-box"><div class="soon-chip">🔜 À venir</div><h4>Données non disponibles</h4><p>Vérifie que le Google Sheets est bien partagé en lecture publique.</p></div>`;
     });
 }
 
