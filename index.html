@@ -863,6 +863,30 @@ function buildSub(type, team) {
 
       if (type === 'calendrier') {
         // Colonnes I:date J:domicile K:score_dom L:score_ext M:exterieur N:statut
+
+        // Formate "13/09/2025" → "Samedi 13 septembre 2025"
+        function formatDate(val) {
+          if (!val || val === '—') return val;
+          const str = String(val).trim();
+          // Gère le format Date(2025,8,13) renvoyé parfois par Sheets
+          const gvizMatch = str.match(/^Date\((\d{4}),(\d+),(\d+)\)$/);
+          let d;
+          if (gvizMatch) {
+            d = new Date(parseInt(gvizMatch[1]), parseInt(gvizMatch[2]), parseInt(gvizMatch[3]));
+          } else {
+            // Format jj/mm/aaaa
+            const parts = str.split('/');
+            if (parts.length === 3) {
+              d = new Date(parseInt(parts[2]), parseInt(parts[1]) - 1, parseInt(parts[0]));
+            } else {
+              return str; // format inconnu, on retourne tel quel
+            }
+          }
+          if (isNaN(d.getTime())) return str;
+          return d.toLocaleDateString('fr-FR', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' })
+                  .replace(/^\w/, c => c.toUpperCase()); // Majuscule sur le jour
+        }
+
         const dataRows = rows.filter(r => {
           const v = r.c[0]?.v;
           return v !== null && v !== undefined && String(v).toLowerCase() !== 'date';
@@ -872,7 +896,7 @@ function buildSub(type, team) {
           return;
         }
         const tbody = dataRows.map(r => {
-          const date   = r.c[0]?.v ?? '—';
+          const date   = formatDate(r.c[0]?.v ?? '—');
           const dom    = r.c[1]?.v ?? '—';
           const sdom   = r.c[2]?.v ?? '';
           const sext   = r.c[3]?.v ?? '';
@@ -900,7 +924,7 @@ function buildSub(type, team) {
           <div class="data-sec">
             <div class="data-sec-head"><h3>Calendrier &amp; Résultats — ${team.name}</h3></div>
             <table class="dt">
-              <thead><tr><th>Date</th><th>Domicile</th><th>Score Dom.</th><th>Extérieur</th><th>Statut</th></tr></thead>
+              <thead><tr><th>Date</th><th>Domicile</th><th>Résultat</th><th>Extérieur</th><th>Statut</th></tr></thead>
               <tbody>${tbody}</tbody>
             </table>
           </div>`;
