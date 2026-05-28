@@ -288,6 +288,55 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;back
 .rv.in{opacity:1;transform:none}
 .rv.d1{transition-delay:.1s}.rv.d2{transition-delay:.2s}.rv.d3{transition-delay:.3s}
 
+/* ── TRAINING SCHEDULE ON TEAM PAGE ── */
+.team-training{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:2rem;margin:0 auto 3rem;max-width:900px}
+.team-training h4{font-family:'Bebas Neue',sans-serif;font-size:1.3rem;color:var(--blanc);margin-bottom:1.2rem;display:flex;align-items:center;gap:.6rem}
+.team-training h4 span{color:var(--rose)}
+.training-slots{display:flex;flex-wrap:wrap;gap:.8rem}
+.tslot{background:rgba(234,59,121,.08);border:1px solid rgba(234,59,121,.2);border-radius:10px;padding:.9rem 1.2rem;flex:1;min-width:200px}
+.tslot-day{font-size:.65rem;font-weight:700;letter-spacing:.15em;color:var(--rose);text-transform:uppercase;margin-bottom:.3rem}
+.tslot-time{font-family:'Bebas Neue',sans-serif;font-size:1.3rem;color:var(--blanc);line-height:1;margin-bottom:.3rem}
+.tslot-lieu{font-size:.72rem;color:rgba(255,252,237,.45);display:flex;align-items:center;gap:.3rem}
+.tslot-lieu::before{content:'📍';font-size:.65rem}
+
+/* ── PAGE HORAIRES ── */
+#pg-horaires .sched-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:0;border:1px solid var(--border);border-radius:14px;overflow:hidden;margin-bottom:3rem}
+.sched-day-col{border-right:1px solid var(--border);min-width:0}
+.sched-day-col:last-child{border-right:none}
+.sched-day-header{background:rgba(234,59,121,.08);padding:.7rem .5rem;text-align:center;border-bottom:1px solid var(--border)}
+.sched-day-header span{font-size:.62rem;font-weight:700;letter-spacing:.12em;color:var(--rose);text-transform:uppercase;display:block}
+.sched-day-header strong{font-family:'Bebas Neue',sans-serif;font-size:1rem;color:var(--blanc);display:block;margin-top:.1rem}
+.sched-slots{padding:.5rem .4rem;display:flex;flex-direction:column;gap:.4rem;min-height:120px}
+.sched-slot{background:rgba(234,59,121,.09);border:1px solid rgba(234,59,121,.22);border-radius:7px;padding:.55rem .6rem;cursor:default}
+.sched-slot:hover{background:rgba(234,59,121,.16);border-color:rgba(234,59,121,.5)}
+.sched-slot-team{font-size:.68rem;font-weight:700;color:var(--blanc);line-height:1.2;margin-bottom:.2rem}
+.sched-slot-time{font-size:.6rem;color:rgba(255,252,237,.5);font-weight:500}
+.sched-slot-lieu{font-size:.58rem;color:var(--rose);font-weight:600;letter-spacing:.04em;margin-top:.15rem}
+.sched-empty{color:rgba(255,252,237,.12);font-size:.65rem;text-align:center;padding:1.5rem .5rem}
+
+/* ── MOBILE: calendar as cards ── */
+@media(max-width:700px){
+  .dt{display:block}
+  .dt thead{display:none}
+  .dt tbody{display:flex;flex-direction:column;gap:.6rem;padding:.6rem}
+  .dt tr{display:grid;grid-template-columns:1fr auto;grid-template-rows:auto auto;gap:.15rem .6rem;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);border-radius:10px;padding:.85rem 1rem;position:relative}
+  .dt tr.me{background:rgba(234,59,121,.09);border-color:rgba(234,59,121,.3)}
+  .dt tr td{padding:0;border:none;font-size:.82rem}
+  /* Date — full width top */
+  .dt tr td:nth-child(1){grid-column:1/3;font-size:.65rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--rose);margin-bottom:.25rem}
+  /* Domicile — left */
+  .dt tr td:nth-child(2){grid-column:1/2;font-size:.88rem}
+  /* Score — right, 2 rows tall */
+  .dt tr td:nth-child(3){grid-column:2/3;grid-row:2/4;text-align:right;font-family:'Bebas Neue',sans-serif;font-size:1.4rem;color:var(--blanc);align-self:center;white-space:nowrap}
+  /* Extérieur — left */
+  .dt tr td:nth-child(4){grid-column:1/2;font-size:.88rem;color:rgba(255,252,237,.5)}
+  /* Statut — bottom left */
+  .dt tr td:nth-child(5){grid-column:1/2;font-size:.72rem;margin-top:.3rem}
+  /* Mobile planning horaires: stack columns */
+  #pg-horaires .sched-grid{grid-template-columns:1fr 1fr;border-radius:10px}
+  #pg-horaires .sched-day-col{border-right:1px solid var(--border);border-bottom:1px solid var(--border)}
+}
+
 /* ── RESPONSIVE ── */
 @media(max-width:1024px){.about-grid{gap:3rem}}
 @media(max-width:900px){.about-grid,.contact-wrap,.footer-main{grid-template-columns:1fr}.sub-cards{grid-template-columns:1fr}.fg-row{grid-template-columns:1fr}}
@@ -310,6 +359,7 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;back
       <div class="ddp-menu" id="ddpMenu"></div>
     </li>
     <li><a href="#" onclick="goNav('shop')">Boutique</a></li>
+    <li><a href="#" onclick="goNav('horaires')">Horaires</a></li>
     <li><a href="#" onclick="goNav('partners')">Partenaires</a></li>
     <li><a href="#" class="nav-cta" onclick="goNav('contact')">Contact</a></li>
   </ul>
@@ -320,6 +370,7 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;back
   <a href="#" onclick="goNav('home');toggleMob()">Accueil</a>
   <a href="#" onclick="goNav('news');toggleMob()">Actualités</a>
   <a href="#" onclick="goNav('teams');toggleMob()">Équipes</a>
+  <a href="#" onclick="goNav('horaires');toggleMob()">Horaires</a>
   <a href="#" onclick="goNav('shop');toggleMob()">Boutique</a>
   <a href="#" onclick="goNav('partners');toggleMob()">Partenaires</a>
   <a href="#" onclick="goNav('contact');toggleMob()">Contact</a>
@@ -445,6 +496,23 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;back
       <div class="scard" onclick="openSub('classement')"><div class="scard-icon">🏆</div><div class="scard-title">Classement</div><div class="scard-desc">Position au championnat</div></div>
       <div class="scard" onclick="openSub('calendrier')"><div class="scard-icon">📅</div><div class="scard-title">Calendrier &amp; Résultats</div><div class="scard-desc">Matchs à venir et résultats</div></div>
     </div>
+    <div class="team-training rv" id="teamTraining"></div>
+  </div>
+</div>
+
+<!-- ══ PAGE HORAIRES ══ -->
+<div id="pg-horaires" class="page">
+  <div class="page-hero"><div class="page-hero-inner"><div class="ph-label">Planning de la semaine</div><h1 class="ph-h1">Horaires d'Entraînement</h1></div></div>
+  <div class="container" style="padding-top:3rem;padding-bottom:5rem">
+    <p class="rv" style="color:rgba(255,252,237,.45);font-size:.88rem;margin-bottom:2.5rem;font-weight:300">Gymnase Collège Ausone &amp; Gymnase Sainte-Cluque — Av. du Prof Paul Lamarque, 33430 Bazas</p>
+    <div class="sched-grid rv" id="schedGrid"></div>
+    <div class="rv" style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:1.5rem">
+      <div style="display:flex;align-items:center;gap:.5rem"><div style="width:12px;height:12px;border-radius:3px;background:rgba(234,59,121,.25);border:1px solid rgba(234,59,121,.5)"></div><span style="font-size:.74rem;color:rgba(255,252,237,.45)">Collège Ausone</span></div>
+      <div style="display:flex;align-items:center;gap:.5rem"><div style="width:12px;height:12px;border-radius:3px;background:rgba(74,158,255,.18);border:1px solid rgba(74,158,255,.4)"></div><span style="font-size:.74rem;color:rgba(255,252,237,.45)">Sainte-Cluque</span></div>
+    </div>
+    <div class="map-frame rv" style="margin-top:3rem">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2849.0917081547245!2d-0.2243431226227602!3d44.43128100175925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd55777428a58faf%3A0xbb5f61fabac1c2ea!2sHbc%20bazadais!5e0!3m2!1sfr!2sfr!4v1779857208750!5m2!1sfr!2sfr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
   </div>
 </div>
 
@@ -559,7 +627,7 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;back
         </a>
       </div>
     </div>
-    <div class="footer-col"><h4>Navigation</h4><a href="#" onclick="goNav('home')">Accueil</a><a href="#" onclick="goNav('news')">Actualités</a><a href="#" onclick="goNav('teams')">Équipes</a><a href="#" onclick="goNav('shop')">Boutique</a></div>
+    <div class="footer-col"><h4>Navigation</h4><a href="#" onclick="goNav('home')">Accueil</a><a href="#" onclick="goNav('news')">Actualités</a><a href="#" onclick="goNav('teams')">Équipes</a><a href="#" onclick="goNav('horaires')">Horaires</a><a href="#" onclick="goNav('shop')">Boutique</a></div>
     <div class="footer-col"><h4>Club</h4><a href="#" onclick="goNav('partners')">Partenaires</a><a href="#" onclick="goNav('contact')">Contact</a><a href="https://monclub.ffhandball.fr/clubs/hbc-bazadais/" target="_blank">FFHB</a><a href="#" target="_blank">HelloAsso</a></div>
     <div class="footer-col"><h4>Contact</h4><a href="tel:0768680424">07 68 68 04 24</a><a href="mailto:bazashandballclub@gmail.com">bazashandballclub@gmail.com</a><a>33430 Bazas, Gironde</a><a href="#">Mentions légales</a></div>
   </div>
@@ -680,8 +748,24 @@ const PARTNERS = [
 ];
 
 // ── NAV ──
-const PAGES = ['home','news','teams','shop','partners','contact'];
+const PAGES = ['home','news','teams','horaires','shop','partners','contact'];
 let currentTeam = null;
+
+// ── TRAINING DATA ──
+const TRAINING = {
+  loisir:  [{day:'Jeudi',   time:'20h00 – 21h30', lieu:'Collège Ausone'}],
+  ecole:   [{day:'Samedi',  time:'10h00 – 11h00', lieu:'Collège Ausone'}],
+  u11:     [{day:'Mercredi',time:'17h00 – 18h30', lieu:'Collège Ausone'}],
+  u13f:    [{day:'Mercredi',time:'18h30 – 20h00', lieu:'Collège Ausone'}],
+  u13g:    [{day:'Jeudi',   time:'18h30 – 20h00', lieu:'Collège Ausone'}],
+  u15f:    [{day:'Mardi',   time:'17h30 – 19h00', lieu:'Collège Ausone'}],
+  u15g:    [{day:'Mardi',   time:'17h30 – 19h00', lieu:'Sainte-Cluque'},{day:'Vendredi',time:'17h30 – 19h00', lieu:'Sainte-Cluque'}],
+  u18f:    [{day:'Vendredi',time:'19h00 – 20h30', lieu:'Sainte-Cluque'}],
+  u18g:    [{day:'Mardi',   time:'17h30 – 19h30', lieu:'Sainte-Cluque'},{day:'Vendredi',time:'17h30 – 19h00', lieu:'Sainte-Cluque'}],
+  srf:     [{day:'Mardi',   time:'19h30 – 21h00', lieu:'Collège Ausone'},{day:'Vendredi',time:'19h00 – 20h30', lieu:'Sainte-Cluque'}],
+  srg2:    [{day:'Mardi',   time:'19h30 – 21h00', lieu:'Sainte-Cluque'},{day:'Vendredi',time:'20h30 – 22h00', lieu:'Sainte-Cluque'}],
+  srg1:    [{day:'Mardi',   time:'19h30 – 21h00', lieu:'Sainte-Cluque'},{day:'Vendredi',time:'20h30 – 22h00', lieu:'Sainte-Cluque'}],
+};
 
 function goNav(id, subject) {
   PAGES.forEach(p => {
@@ -747,7 +831,45 @@ function openTeam(id) {
   document.getElementById('teamCat').textContent = currentTeam.cat;
   document.getElementById('teamName').textContent = currentTeam.name;
   document.getElementById('pg-team').style.display = 'block';
+  // Build training block
+  const slots = TRAINING[currentTeam.id] || [];
+  const trainingEl = document.getElementById('teamTraining');
+  if (slots.length) {
+    trainingEl.innerHTML = `<h4>🏋️ Entraînements — <span>${currentTeam.name}</span></h4><div class="training-slots">${slots.map(s=>`<div class="tslot"><div class="tslot-day">${s.day}</div><div class="tslot-time">${s.time}</div><div class="tslot-lieu">${s.lieu}</div></div>`).join('')}</div>`;
+    trainingEl.style.display = '';
+  } else {
+    trainingEl.style.display = 'none';
+  }
   window.scrollTo({top:0,behavior:'smooth'});
+}
+
+// ── SCHEDULE PAGE ──
+function buildSchedule() {
+  const DAYS = ['Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi','Dimanche'];
+  const SHORT = ['Lun','Mar','Mer','Jeu','Ven','Sam','Dim'];
+  // Gather all slots per day
+  const byDay = {};
+  DAYS.forEach(d => byDay[d] = []);
+  TEAMS.forEach(team => {
+    const slots = TRAINING[team.id] || [];
+    slots.forEach(s => {
+      if (byDay[s.day]) byDay[s.day].push({team: team.name, time: s.time, lieu: s.lieu});
+    });
+  });
+  // Sort by start time within each day
+  DAYS.forEach(d => byDay[d].sort((a,b) => a.time.localeCompare(b.time)));
+  const grid = document.getElementById('schedGrid');
+  grid.innerHTML = DAYS.map((day, i) => {
+    const slots = byDay[day];
+    const slotsHtml = slots.length
+      ? slots.map(s => {
+          const isCluque = s.lieu.toLowerCase().includes('cluque');
+          const bg = isCluque ? 'background:rgba(74,158,255,.1);border-color:rgba(74,158,255,.3)' : '';
+          return `<div class="sched-slot" style="${bg}"><div class="sched-slot-team">${s.team}</div><div class="sched-slot-time">${s.time}</div><div class="sched-slot-lieu">${s.lieu}</div></div>`;
+        }).join('')
+      : `<div class="sched-empty">—</div>`;
+    return `<div class="sched-day-col"><div class="sched-day-header"><span>${SHORT[i]}</span><strong>${day}</strong></div><div class="sched-slots">${slotsHtml}</div></div>`;
+  }).join('');
 }
 
 function backToTeams() {
@@ -988,6 +1110,7 @@ function buildCarousel() {
 buildTeams();
 buildPartners();
 buildCarousel();
+buildSchedule();
 initReveal();
 </script>
 </body>
