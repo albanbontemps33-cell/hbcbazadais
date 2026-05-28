@@ -1,0 +1,23 @@
+{
+  "equipe": "-18 Garçons",
+  "competition": "Championnat Départemental U18M — Gironde",
+  "poule": "Poule A",
+  "mise_a_jour": "28/05/2025",
+
+  "classement": [
+    { "rang": 1,  "club": "HBC Bazadais U18M",    "joues": 0, "gagnes": 0, "nuls": 0, "perdus": 0, "points": 0 },
+    { "rang": 2,  "club": "Adversaire 2",           "joues": 0, "gagnes": 0, "nuls": 0, "perdus": 0, "points": 0 },
+    { "rang": 3,  "club": "Adversaire 3",           "joues": 0, "gagnes": 0, "nuls": 0, "perdus": 0, "points": 0 }
+  ],
+
+  "matchs": [
+    {
+      "date": "14/09/2025",
+      "domicile": "HBC Bazadais U18M",
+      "exterieur": "Adversaire 1",
+      "score_dom": "",
+      "score_ext": "",
+      "statut": "a_venir"
+    }
+  ]
+}

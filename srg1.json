@@ -1,0 +1,33 @@
+{
+  "equipe": "Seniors Garçons 1",
+  "competition": "Pré-Régionale Masculine — Gironde",
+  "poule": "Poule A",
+  "mise_a_jour": "28/05/2025",
+
+  "classement": [
+    { "rang": 1,  "club": "HBC Bazadais 1",       "joues": 0, "gagnes": 0, "nuls": 0, "perdus": 0, "points": 0 },
+    { "rang": 2,  "club": "Adversaire 2",           "joues": 0, "gagnes": 0, "nuls": 0, "perdus": 0, "points": 0 },
+    { "rang": 3,  "club": "Adversaire 3",           "joues": 0, "gagnes": 0, "nuls": 0, "perdus": 0, "points": 0 },
+    { "rang": 4,  "club": "Adversaire 4",           "joues": 0, "gagnes": 0, "nuls": 0, "perdus": 0, "points": 0 },
+    { "rang": 5,  "club": "Adversaire 5",           "joues": 0, "gagnes": 0, "nuls": 0, "perdus": 0, "points": 0 }
+  ],
+
+  "matchs": [
+    {
+      "date": "14/09/2025",
+      "domicile": "HBC Bazadais 1",
+      "exterieur": "Adversaire 1",
+      "score_dom": "",
+      "score_ext": "",
+      "statut": "a_venir"
+    },
+    {
+      "date": "21/09/2025",
+      "domicile": "Adversaire 2",
+      "exterieur": "HBC Bazadais 1",
+      "score_dom": "",
+      "score_ext": "",
+      "statut": "a_venir"
+    }
+  ]
+}
