@@ -356,7 +356,42 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;back
 /* ── RESPONSIVE ── */
 @media(max-width:1024px){.about-grid{gap:3rem}}
 @media(max-width:900px){.about-grid,.contact-wrap,.footer-main{grid-template-columns:1fr}.sub-cards{grid-template-columns:1fr}.fg-row{grid-template-columns:1fr}}
-@media(max-width:768px){.nav-links{display:none}.hbg{display:flex}.hero-ring,.hero-ring2,.hero-orb{display:none}.hero-nums{gap:1.5rem}.players-grid{grid-template-columns:repeat(auto-fill,minmax(160px,1fr))}}
+@media(max-width:768px){
+  .nav-links{display:none}
+  .hbg{display:flex}
+  .hero-ring,.hero-ring2,.hero-orb{display:none}
+  .hero-nums{gap:1.5rem}
+  .players-grid{grid-template-columns:repeat(auto-fill,minmax(160px,1fr))}
+  #nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:.5rem 5%;
+    background:rgba(7,16,31,.85);
+    backdrop-filter:blur(16px);
+  }
+  .nav-logo{
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+  }
+  .nav-logo span{display:none}
+  .nav-logo em{display:none}
+  .nav-logo img{
+    height:110px;
+    width:110px;
+    border:2px solid rgba(255,252,237,.3);
+    box-shadow:0 4px 20px rgba(0,0,0,.6);
+  }
+  .hbg{
+    width:36px;
+    flex-shrink:0;
+  }
+  .hbg span{
+    width:28px;
+    height:2px;
+  }
+}
 
 /* ── LOGOS REDIMENSIONNÉS ── */
 /* Base : tous les logos agrandis */
