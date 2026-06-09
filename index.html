@@ -364,31 +364,35 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;back
   .players-grid{grid-template-columns:repeat(auto-fill,minmax(160px,1fr))}
   #nav{
     display:flex;
-    justify-content:space-between;
+    justify-content:flex-start;
     align-items:center;
-    padding:.5rem 5%;
-    background:rgba(7,16,31,.85);
+    padding:0 5%;
+    height:72px;
+    background:rgba(7,16,31,.92);
     backdrop-filter:blur(16px);
   }
   .nav-logo{
     position:absolute;
     left:50%;
     transform:translateX(-50%);
+    display:flex;
+    align-items:center;
   }
   .nav-logo span{display:none}
   .nav-logo em{display:none}
   .nav-logo img{
-    height:110px;
-    width:110px;
-    border:2px solid rgba(255,252,237,.3);
-    box-shadow:0 4px 20px rgba(0,0,0,.6);
+    height:56px;
+    width:56px;
+    border:2px solid rgba(255,252,237,.25);
+    box-shadow:0 2px 12px rgba(0,0,0,.5);
   }
   .hbg{
     width:36px;
     flex-shrink:0;
+    z-index:202;
   }
   .hbg span{
-    width:28px;
+    width:26px;
     height:2px;
   }
 }
