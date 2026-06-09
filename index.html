@@ -26,12 +26,12 @@ body{font-family:'DM Sans',sans-serif;background:var(--dark);color:var(--blanc);
 .container{max-width:1200px;margin:0 auto;padding:0 5%}
 
 /* ── NAV ── */
-#nav{position:fixed;inset:0 0 auto;z-index:200;padding:1.2rem 5%;display:flex;align-items:center;justify-content:space-between;transition:background var(--t),backdrop-filter var(--t)}
+#nav{position:fixed;inset:0 0 auto;z-index:200;padding:1.2rem 5%;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:1rem;transition:background var(--t),backdrop-filter var(--t)}
 #nav.solid{background:rgba(7,16,31,.95);backdrop-filter:blur(24px);border-bottom:1px solid var(--border)}
-.nav-logo{font-family:'Bebas Neue',sans-serif;font-size:1.5rem;letter-spacing:.12em;text-decoration:none;color:var(--blanc);display:flex;align-items:center;gap:.6rem}
+.nav-logo{font-family:'Bebas Neue',sans-serif;font-size:1.5rem;letter-spacing:.12em;text-decoration:none;color:var(--blanc);display:flex;align-items:center;gap:.6rem}.nav-logo-center{justify-content:center}
 .nav-logo em{color:var(--rose);font-style:normal}
-.nav-logo img{height:44px;width:44px;object-fit:cover;border-radius:50%;box-shadow:none}
-.nav-links{display:flex;align-items:center;gap:2rem;list-style:none}
+.nav-logo img{height:56px;width:56px;object-fit:cover;border-radius:50%;box-shadow:none}
+.nav-links{display:flex;align-items:center;gap:2rem;list-style:none}.nav-left{justify-content:flex-end}.nav-right{justify-content:flex-start}
 .nav-links>li>a{color:rgba(255,252,237,.6);font-size:.78rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;transition:color var(--t);position:relative;padding-bottom:2px}
 .nav-links>li>a::after{content:'';position:absolute;bottom:0;left:0;width:0;height:1px;background:var(--rose);transition:width var(--t)}
 .nav-links>li>a:hover{color:var(--blanc)}
@@ -62,7 +62,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--dark);color:var(--blanc);
 
 /* ── HERO ── */
 #hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;padding:9rem 5% 4rem}
-.hero-grad{position:absolute;inset:0;background:radial-gradient(ellipse 70% 80% at 75% 50%,rgba(234,59,121,.1) 0%,transparent 65%),linear-gradient(160deg,var(--dark) 0%,var(--bleu) 50%,var(--dark) 100%)}
+.hero-grad{position:absolute;inset:0;background:radial-gradient(ellipse 70% 80% at 75% 50%,rgba(234,59,121,.1) 0%,transparent 65%),linear-gradient(160deg,var(--dark) 0%,var(--dark) 50%,var(--dark) 100%)}
 .hero-lines{position:absolute;inset:0;background-image:linear-gradient(rgba(234,59,121,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(234,59,121,.03) 1px,transparent 1px);background-size:80px 80px}
 .hero-orb{position:absolute;right:-5%;top:10%;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle at 40% 40%,rgba(234,59,121,.18),transparent 65%);animation:orb 8s ease-in-out infinite;pointer-events:none}
 .hero-ring{position:absolute;right:5%;top:15%;width:420px;height:420px;border-radius:50%;border:1px solid rgba(234,59,121,.12);animation:spin 40s linear infinite;pointer-events:none}
@@ -108,7 +108,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--dark);color:var(--blanc);
 .acard p{font-size:.82rem;color:rgba(255,252,237,.5);line-height:1.6}
 
 /* ── MAP ── */
-#map-sec{padding:7rem 0;background:linear-gradient(180deg,var(--dark),#091628)}
+#map-sec{padding:7rem 0;background:var(--dark)}
 .map-frame{border-radius:14px;overflow:hidden;border:1px solid var(--border);margin-bottom:3rem}
 .map-frame iframe{width:100%;height:420px;border:none;display:block;filter:brightness(.8) saturate(.5) contrast(1.1) hue-rotate(185deg)}
 .htable{width:100%;border-collapse:collapse}
@@ -119,7 +119,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--dark);color:var(--blanc);
 .tlieu{display:inline-block;font-size:.64rem;font-weight:600;letter-spacing:.06em;background:rgba(234,59,121,.12);color:var(--rose);padding:.18rem .55rem;border-radius:3px;text-transform:uppercase}
 
 /* ── PAGE HERO ── */
-.page-hero{padding:9rem 5% 4rem;background:linear-gradient(160deg,var(--dark),var(--bleu));position:relative;overflow:hidden}
+.page-hero{padding:9rem 5% 4rem;background:linear-gradient(160deg,var(--dark),#081525);position:relative;overflow:hidden}
 .page-hero::after{content:'';position:absolute;right:-100px;top:-100px;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(234,59,121,.15),transparent 65%);pointer-events:none}
 .page-hero-inner{max-width:1200px;margin:0 auto}
 .ph-label{font-size:.72rem;font-weight:600;letter-spacing:.2em;color:var(--rose);text-transform:uppercase;margin-bottom:.8rem}
@@ -417,23 +417,40 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;back
   width:140px !important;
   max-height:85px;
 }
+
+/* ── MAPS GRID ── */
+.maps-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-bottom:3rem}
+.map-frame-item{border-radius:14px;overflow:hidden;border:1px solid var(--border)}
+.map-frame-item iframe{width:100%;height:360px;border:none;display:block;filter:brightness(.8) saturate(.5) contrast(1.1) hue-rotate(185deg)}
+.map-label{font-size:.72rem;font-weight:600;letter-spacing:.15em;color:var(--rose);text-transform:uppercase;padding:.8rem 1.2rem;background:rgba(234,59,121,.05);border-bottom:1px solid var(--border)}
+@media(max-width:700px){.maps-grid{grid-template-columns:1fr}}
+
+/* ── NAV MOBILE LOGO ── */
+@media(max-width:900px){
+  #nav{grid-template-columns:auto 1fr auto}
+  .nav-left,.nav-right{display:none}
+  .nav-logo-center{justify-content:center;font-size:1.3rem}
+  .nav-logo-center img{height:48px;width:48px}
+}
 </style>
 </head>
 <body>
 
 <!-- NAV -->
 <nav id="nav">
-  <a class="nav-logo" href="#" onclick="goNav('home')">
-    <img src="https://raw.githubusercontent.com/albanbontemps33-cell/hbcbazadais/main/hand.png" alt="Logo HBC Bazadais">
-    HBC<em>.</em>Bazadais
-  </a>
-  <ul class="nav-links">
+  <ul class="nav-links nav-left">
     <li><a href="#" onclick="goNav('home')">Accueil</a></li>
     <li><a href="#" onclick="goNav('news')">Actualités</a></li>
     <li class="ddp">
       <a href="#" onclick="goNav('teams')">Équipes ▾</a>
       <div class="ddp-menu" id="ddpMenu"></div>
     </li>
+  </ul>
+  <a class="nav-logo nav-logo-center" href="#" onclick="goNav('home')">
+    <img src="https://raw.githubusercontent.com/albanbontemps33-cell/hbcbazadais/main/hand.png" alt="Logo HBC Bazadais">
+    HBC<em>.</em>Bazadais
+  </a>
+  <ul class="nav-links nav-right">
     <li><a href="#" onclick="goNav('horaires')">Horaires</a></li>
     <li><a href="#" onclick="goNav('partners')">Partenaires</a></li>
     <li><a href="#" class="nav-cta" onclick="goNav('contact')">Contact</a></li>
@@ -493,11 +510,7 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;back
           </ul>
           <a href="#" class="btn-p" style="margin-top:2rem;display:inline-flex" onclick="goNav('contact')">Rejoindre le club →</a>
         </div>
-        <div class="acards rv d2">
-          <div class="acard"><div class="acard-icon">🏆</div><h3>Compétition FFHB</h3><p>Toutes nos équipes participent aux championnats officiels de la Fédération Française de Handball.</p></div>
-          <div class="acard"><div class="acard-icon">❤️</div><h3>Esprit familial</h3><p>Une ambiance chaleureuse et accueillante, que vous soyez débutant ou joueur confirmé.</p></div>
-          <div class="acard"><div class="acard-icon">📍</div><h3>Bazas, Gironde</h3><p>Deux gymnases : le gymnase du Collège Ausone et le gymnase Sainte-Cluque.</p></div>
-        </div>
+
       </div>
     </div>
   </section>
@@ -509,8 +522,15 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;back
         <h2 class="sec-h2">Gymnases &amp; Horaires</h2>
         <p style="font-size:.88rem;color:rgba(255,252,237,.4);margin-bottom:2.5rem;font-weight:300">Av. du Prof Paul Lamarque, 33430 Bazas · Gymnase Collège Ausone &amp; Gymnase Sainte-Cluque</p>
       </div>
-      <div class="map-frame rv">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2849.0917081547245!2d-0.2243431226227602!3d44.43128100175925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd55777428a58faf%3A0xbb5f61fabac1c2ea!2sHbc%20bazadais!5e0!3m2!1sfr!2sfr!4v1779857208750!5m2!1sfr!2sfr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="maps-grid rv">
+        <div class="map-frame-item">
+          <p class="map-label">🏟 Gymnase Sainte-Cluque</p>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2849.0917081547245!2d-0.2243431226227602!3d44.43128100175925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd55777428a58faf%3A0xbb5f61fabac1c2ea!2sHbc%20bazadais!5e0!3m2!1sfr!2sfr!4v1779857208750!5m2!1sfr!2sfr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="map-frame-item">
+          <p class="map-label">🏫 Collège Ausone</p>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d712.3072861224124!2d-0.22130517158510668!3d44.428461639606425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd55767ac9d10b41%3A0xc5846b2e10114fc3!2sColl%C3%A8ge%20Ausone!5e0!3m2!1sfr!2sfr!4v1781038006402!5m2!1sfr!2sfr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
       </div>
       <div class="rv">
         <table class="htable">
