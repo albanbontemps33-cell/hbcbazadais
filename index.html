@@ -359,19 +359,35 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;back
 @media(max-width:768px){.nav-links{display:none}.hbg{display:flex}.hero-ring,.hero-ring2,.hero-orb{display:none}.hero-nums{gap:1.5rem}.players-grid{grid-template-columns:repeat(auto-fill,minmax(160px,1fr))}}
 
 /* ── LOGOS REDIMENSIONNÉS ── */
-.partcard-logo img[alt="Viva la Vie"],
-.partcard-logo img[alt="MRP Habitat"],
-.partcard-logo img[alt="GlassAuto Bazas"],
-.partcard-logo img[alt="Lucas Denis"],
-.partcard-logo img[alt="Créamext"] {
-  width:110px !important;
+/* Base : tous les logos agrandis */
+.partcard-logo img {
+  width:110px;
   max-height:75px;
   object-fit:contain;
 }
-.partcard-logo img[alt="OBJ Trainer"] {
-  width:140px !important;
-  max-height:90px;
-  object-fit:contain;
+/* Niveau 2 : logos moyens */
+.partcard-logo img[alt="Intermarché Bazas"],
+.partcard-logo img[alt="Pest and Termites"],
+.partcard-logo img[alt="Carrosserie F. Pitaud"],
+.partcard-logo img[alt="Viva la Vie"],
+.partcard-logo img[alt="MRP Habitat"] {
+  width:130px !important;
+  max-height:85px;
+}
+/* Niveau 3 : logos petits */
+.partcard-logo img[alt="GlassAuto Bazas"],
+.partcard-logo img[alt="Lucas Denis"],
+.partcard-logo img[alt="OBJ Trainer"],
+.partcard-logo img[alt="Ville de Bazas"],
+.partcard-logo img[alt="Gironde — Le Département"] {
+  width:150px !important;
+  max-height:95px;
+}
+/* Niveau 4 : logos très petits */
+.partcard-logo img[alt="Carré Double"],
+.partcard-logo img[alt="Créamext"] {
+  width:170px !important;
+  max-height:105px;
 }
 </style>
 </head>
