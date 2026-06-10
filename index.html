@@ -464,7 +464,7 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;back
 .map-frame-item{border-radius:14px;overflow:hidden;border:1px solid var(--border)}
 .map-frame-item iframe{width:100%;height:360px;border:none;display:block;filter:brightness(.8) saturate(.5) contrast(1.1) hue-rotate(185deg)}
 .map-label{font-size:.72rem;font-weight:600;letter-spacing:.15em;color:var(--rose);text-transform:uppercase;padding:.8rem 1.2rem;background:rgba(234,59,121,.05);border-bottom:1px solid var(--border)}
-@media(max-width:700px){.maps-grid{grid-template-columns:1fr}.maps-horaires-grid{grid-template-columns:1fr !important}}
+@media(max-width:700px){.maps-grid{grid-template-columns:1fr}}
 
 /* ── NAV MOBILE LOGO ── */
 @media(max-width:900px){
@@ -599,7 +599,7 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;back
   <div class="page-hero"><div class="page-hero-inner"><div class="ph-label">Le club en direct</div><h1 class="ph-h1">Actualités</h1></div></div>
   <div class="container" style="padding-top:3rem;padding-bottom:3rem">
     <div class="news-grid">
-      <div class="ncard"><div class="ncard-img" style="background:linear-gradient(135deg,#0F1E41,rgba(234,59,121,.4))"><span>🏆</span><div class="ncard-tag">Résultat</div></div><div class="ncard-body"><div class="ncard-date">Saison 2025-26</div><h3>Suivez nos équipes</h3><p>Retrouvez les résultats et actualités de toutes nos équipes tout au long de la saison.</p></div></div>
+      <div class="ncard"><div class="ncard-img" style="padding:0;overflow:hidden"><img src="https://raw.githubusercontent.com/albanbontemps33-cell/hbcbazadais/main/fin.jpg" alt="Suivez nos équipes" style="width:100%;height:100%;object-fit:cover;display:block"><div class="ncard-tag">Résultat</div></div><div class="ncard-body"><div class="ncard-date">Saison 2025-26</div><h3>Suivez nos équipes</h3><p>Retrouvez les résultats et actualités de toutes nos équipes tout au long de la saison.</p></div></div>
       <div class="ncard"><div class="ncard-img" style="background:linear-gradient(135deg,#0F1E41,rgba(248,216,225,.3))"><span>🎉</span><div class="ncard-tag">Événement</div></div><div class="ncard-body"><div class="ncard-date">Saison 2025-26</div><h3>Rejoignez le HBC Bazadais</h3><p>Les inscriptions pour la saison 2025-2026 sont ouvertes. Venez nous rejoindre !</p></div></div>
       <div class="ncard"><div class="ncard-img" style="background:linear-gradient(135deg,#0F1E41,rgba(234,59,121,.2))"><span>📋</span><div class="ncard-tag">Club</div></div><div class="ncard-body"><div class="ncard-date">Saison 2025-26</div><h3>Vie du club</h3><p>Ambiance familiale, convivialité et passion du handball — c'est le HBC Bazadais !</p></div></div>
     </div>
@@ -644,19 +644,8 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;back
       <div style="display:flex;align-items:center;gap:.5rem"><div style="width:12px;height:12px;border-radius:3px;background:rgba(234,59,121,.25);border:1px solid rgba(234,59,121,.5)"></div><span style="font-size:.74rem;color:rgba(255,252,237,.45)">Collège Ausone</span></div>
       <div style="display:flex;align-items:center;gap:.5rem"><div style="width:12px;height:12px;border-radius:3px;background:rgba(74,158,255,.18);border:1px solid rgba(74,158,255,.4)"></div><span style="font-size:.74rem;color:rgba(255,252,237,.45)">Sainte-Cluque</span></div>
     </div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:3rem" class="rv maps-horaires-grid">
-      <div>
-        <p style="font-size:.72rem;font-weight:700;letter-spacing:.15em;color:var(--rose);text-transform:uppercase;margin-bottom:.8rem">Gymnase Sainte-Cluque</p>
-        <div class="map-frame" style="margin-bottom:0">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2849.0917081547245!2d-0.2243431226227602!3d44.43128100175925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd55777428a58faf%3A0xbb5f61fabac1c2ea!2sHbc%20bazadais!5e0!3m2!1sfr!2sfr!4v1779857208750!5m2!1sfr!2sfr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-      </div>
-      <div>
-        <p style="font-size:.72rem;font-weight:700;letter-spacing:.15em;color:var(--rose);text-transform:uppercase;margin-bottom:.8rem">Collège Ausone</p>
-        <div class="map-frame" style="margin-bottom:0">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d712.3072861224124!2d-0.22130517158510668!3d44.428461639606425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd55767ac9d10b41%3A0xc5846b2e10114fc3!2sColl%C3%A8ge%20Ausone!5e0!3m2!1sfr!2sfr!4v1781038006402!5m2!1sfr!2sfr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-      </div>
+    <div class="map-frame rv" style="margin-top:3rem">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2849.0917081547245!2d-0.2243431226227602!3d44.43128100175925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd55777428a58faf%3A0xbb5f61fabac1c2ea!2sHbc%20bazadais!5e0!3m2!1sfr!2sfr!4v1779857208750!5m2!1sfr!2sfr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </div>
 </div>
