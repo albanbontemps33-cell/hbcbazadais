@@ -406,6 +406,13 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;back
   max-height:75px;
   object-fit:contain;
 }
+/* Logos fond blanc : on efface le fond avec multiply */
+.partcard-logo img[alt="Maison Clément"],
+.partcard-logo img[alt="Le Cercle"] {
+  mix-blend-mode: multiply;
+  filter: brightness(1) contrast(1.1);
+  background: transparent;
+}
 /* Niveau 2 : logos moyens */
 .partcard-logo img[alt="Intermarché Bazas"],
 .partcard-logo img[alt="Pest and Termites"],
