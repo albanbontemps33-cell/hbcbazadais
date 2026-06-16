@@ -1108,131 +1108,63 @@ function buildSub(type, team) {
       <div class="players-grid" id="pgrid">${cards}</div>`;
   }
 
-  // ── CLASSEMENT & CALENDRIER : lecture depuis Google Sheets ──
-  const SHEET_ID = '1b3s93bULXu2vO-una19bjCKpbkGBU9LDiaSZERYfCrs';
+  // ── CLASSEMENT & CALENDRIER : widgets Score'n'co (temps réel, automatique) ──
+
+  // Correspondance team.sheet → teamId Score'n'co
+  const SCORENCO_IDS = {
+    srg1:  '1-2dc3',
+    srg2:  '2-2d8q',
+    srf:   'f1-tzdw',
+    u18g:  '1-u18-36k4',
+    u18f:  '1-u18-feminine-36j4',
+    u15g:  '1-u15-36m7',
+    u15f:  'u15-f1-avln',
+    u13g:  '1-u13-36qi',
+    u13f:  'u13-f1-5vbe',
+  };
+
   const container = document.getElementById('subContent');
 
-  // Onglet = nom exact de l'onglet Google Sheet (team.sheet)
-  const sheetName = encodeURIComponent(team.sheet || team.id);
-  const range = type === 'classement' ? `${sheetName}!A:G` : `${sheetName}!I:N`;
-  const url = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:json&range=${range}`;
+  const teamId = SCORENCO_IDS[team.sheet || team.id];
 
-  container.innerHTML = `<div style="text-align:center;padding:4rem;color:rgba(255,252,237,.3)"><div style="font-size:2rem;margin-bottom:1rem;display:inline-block;animation:spin 1s linear infinite">⟳</div><p>Chargement…</p></div>`;
+  if (!teamId) {
+    container.innerHTML = `<div class="soon-box"><div class="soon-chip">🔜 À venir</div><h4>Données non disponibles</h4><p>Cette équipe n'est pas encore reliée à Score'n'co.</p></div>`;
+    return '';
+  }
 
-  fetch(url)
-    .then(r => r.text())
-    .then(raw => {
-      // Google renvoie du JS wrappé : google.visualization.Query.setResponse({...})
-      const json = JSON.parse(raw.match(/google\.visualization\.Query\.setResponse\(([\s\S]*)\)/)[1]);
-      const rows = json.table.rows;
+  const CLUB_SNC = 'hbc-bazadais-2pv6';
+  const baseUrl  = 'https://scorenco.com/hand/clubs/' + CLUB_SNC + '/' + teamId;
+  const widgetType = type === 'classement' ? 'ranking' : 'schedule';
+  const iframeH  = type === 'classement' ? '540' : '640';
 
-      if (type === 'classement') {
-        // Colonnes A:rang B:club C:joues D:gagnes E:nuls F:perdus G:points
-        // La ligne 1 est l'en-tête, on skip si la cellule A1 = "rang" ou "#"
-        const dataRows = rows.filter(r => {
-          const v = r.c[0]?.v;
-          return v !== null && v !== undefined && String(v).toLowerCase() !== 'rang' && String(v) !== '#';
-        });
-        if (!dataRows.length) {
-          container.innerHTML = `<div class="soon-box"><div class="soon-chip">🔜 À venir</div><h4>Classement non disponible</h4><p>Le classement n'est pas encore disponible !</p></div>`;
-          return;
-        }
-        const tbody = dataRows.map(r => {
-          const rang  = r.c[0]?.v ?? '—';
-          const club  = r.c[1]?.v ?? '—';
-          const j     = r.c[2]?.v ?? '—';
-          const g     = r.c[3]?.v ?? '—';
-          const n     = r.c[4]?.v ?? '—';
-          const p     = r.c[5]?.v ?? '—';
-          const pts   = r.c[6]?.v ?? '—';
-          const isUs  = String(club).toLowerCase().includes('bazadais');
-          return `<tr${isUs?' class="me"':''}><td>${rang}</td><td>${club}</td><td>${j}</td><td>${g}</td><td>${n}</td><td>${p}</td><td><strong>${pts}</strong></td></tr>`;
-        }).join('');
-        container.innerHTML = `
-          <div class="data-sec">
-            <div class="data-sec-head"><h3>Classement — ${team.name}</h3></div>
-            <table class="dt dt-rank">
-              <thead><tr><th>#</th><th>Équipe</th><th>J</th><th>G</th><th>N</th><th>P</th><th>Pts</th></tr></thead>
-              <tbody>${tbody}</tbody>
-            </table>
-          </div>`;
-      }
-
-      if (type === 'calendrier') {
-        // Colonnes I:date J:domicile K:score_dom L:score_ext M:exterieur N:statut
-
-        // Formate "13/09/2025" → "Samedi 13 septembre 2025"
-        function formatDate(val) {
-          if (!val || val === '—') return val;
-          const str = String(val).trim();
-          // Gère le format Date(2025,8,13) renvoyé parfois par Sheets
-          const gvizMatch = str.match(/^Date\((\d{4}),(\d+),(\d+)\)$/);
-          let d;
-          if (gvizMatch) {
-            d = new Date(parseInt(gvizMatch[1]), parseInt(gvizMatch[2]), parseInt(gvizMatch[3]));
-          } else {
-            // Format jj/mm/aaaa
-            const parts = str.split('/');
-            if (parts.length === 3) {
-              d = new Date(parseInt(parts[2]), parseInt(parts[1]) - 1, parseInt(parts[0]));
-            } else {
-              return str; // format inconnu, on retourne tel quel
-            }
-          }
-          if (isNaN(d.getTime())) return str;
-          return d.toLocaleDateString('fr-FR', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' })
-                  .replace(/^\w/, c => c.toUpperCase()); // Majuscule sur le jour
-        }
-
-        const dataRows = rows.filter(r => {
-          const v = r.c[0]?.v;
-          return v !== null && v !== undefined && String(v).toLowerCase() !== 'date';
-        });
-        if (!dataRows.length) {
-          container.innerHTML = `<div class="soon-box"><div class="soon-chip">🔜 À venir</div><h4>Calendrier non disponible</h4><p>Aucun match n’a été joué pour la saison 2026/2027. Aucune information n’est disponible.</p></div>`;
-          return;
-        }
-        const tbody = dataRows.map(r => {
-          const date   = formatDate(r.c[0]?.v ?? '—');
-          const dom    = r.c[1]?.v ?? '—';
-          const sdom   = r.c[2]?.v ?? '';
-          const sext   = r.c[3]?.v ?? '';
-          const ext    = r.c[4]?.v ?? '—';
-          const statut = String(r.c[5]?.v ?? '').toLowerCase().trim();
-          const isHome = String(dom).toLowerCase().includes('bazadais');
-          const isAway = String(ext).toLowerCase().includes('bazadais');
-          const hi     = '';
-          let statHtml = '—';
-          if (statut === 'joue' || statut === 'joué') {
-            const sd = parseFloat(sdom), se = parseFloat(sext);
-            const won  = (isHome && sd>se)||(isAway && se>sd);
-            const lost = (isHome && sd<se)||(isAway && se<sd);
-            const col  = won ? '#4ade80' : lost ? 'var(--rose)' : 'rgba(255,252,237,.4)';
-            statHtml   = `<span style="color:${col};font-weight:600">${won?'Victoire ✓':lost?'Défaite':'Nul'}</span>`;
-          } else if (statut === 'a_venir' || statut === 'à venir') {
-            statHtml = `<span style="color:#5BB8F5">À venir</span>`;
-          } else if (statut === 'reporte' || statut === 'reporté') {
-            statHtml = `<span style="color:rgba(255,252,237,.4)">Reporté</span>`;
-          }
-          const score = (statut==='joue'||statut==='joué') ? `<strong>${sdom} – ${sext}</strong>` : '–';
-          const domHtml = isHome ? `<span style="font-weight:700;font-size:1rem;color:var(--blanc);text-decoration:underline">${dom}</span>` : dom;
-          const extHtml = isAway ? `<span style="font-weight:700;font-size:1rem;color:var(--blanc);text-decoration:underline">${ext}</span>` : ext;
-          return `<tr${hi}><td>${date}</td><td>${domHtml}</td><td style="text-align:center">${score}</td><td>${extHtml}</td><td>${statHtml}</td></tr>`;
-        }).join('');
-        container.innerHTML = `
-          <div class="data-sec">
-            <div class="data-sec-head"><h3>Calendrier &amp; Résultats — ${team.name}</h3></div>
-            <table class="dt dt-cal">
-              <thead><tr><th>Date</th><th>Domicile</th><th>Score Dom.</th><th>Extérieur</th><th>Statut</th></tr></thead>
-              <tbody>${tbody}</tbody>
-            </table>
-          </div>`;
-      }
-      initReveal();
-    })
-    .catch(() => {
-      container.innerHTML = `<div class="soon-box"><div class="soon-chip">🔜 À venir</div><h4>Données non disponibles</h4><p>Vérifie que le Google Sheets est bien partagé en lecture publique.</p></div>`;
-    });
+  container.innerHTML = `
+    <div class="data-sec">
+      <div class="data-sec-head">
+        <h3>${type === 'classement' ? 'Classement' : 'Calendrier & Résultats'} — ${team.name}</h3>
+        <a href="${baseUrl}" target="_blank" rel="noopener" style="font-size:.75rem;color:var(--rose);text-decoration:none;display:flex;align-items:center;gap:.3rem">
+          Voir sur Score'n'co ↗
+        </a>
+      </div>
+      <div class="snc-widget-wrap" style="position:relative">
+        <div id="sncLoading" style="text-align:center;padding:4rem;color:rgba(255,252,237,.3)">
+          <div style="font-size:2rem;margin-bottom:1rem;display:inline-block;animation:spin 1s linear infinite">⟳</div>
+          <p>Chargement depuis Score'n'co…</p>
+        </div>
+        <iframe
+          src="https://scorenco.com/widget/hand/clubs/${CLUB_SNC}/${teamId}/${widgetType}/"
+          style="opacity:0;transition:opacity .4s;border:none;width:100%;display:block"
+          height="${iframeH}"
+          frameborder="0"
+          scrolling="no"
+          allowtransparency="true"
+          onload="document.getElementById('sncLoading').style.display='none';this.style.opacity='1';"
+        ></iframe>
+      </div>
+      <p style="font-size:.72rem;color:rgba(255,252,237,.25);margin-top:.75rem;text-align:right">
+        Données en temps réel via Score'n'co
+      </p>
+    </div>`;
+  initReveal();
 }
 
 function filterPos(el, pos) {
