@@ -1133,37 +1133,39 @@ function buildSub(type, team) {
   }
 
   const CLUB_SNC = 'hbc-bazadais-2pv6';
-  const baseUrl  = 'https://scorenco.com/hand/clubs/' + CLUB_SNC + '/' + teamId;
+  const baseUrl   = 'https://scorenco.com/hand/clubs/' + CLUB_SNC + '/' + teamId;
   const widgetType = type === 'classement' ? 'ranking' : 'schedule';
-  const iframeH  = type === 'classement' ? '540' : '640';
+  const iframeH   = type === 'classement' ? '540' : '640';
+  const titre     = type === 'classement' ? 'Classement' : 'Calendrier & R\u00e9sultats';
+  const iframeSrc = 'https://scorenco.com/widget/hand/clubs/' + CLUB_SNC + '/' + teamId + '/' + widgetType + '/';
 
-  container.innerHTML = `
-    <div class="data-sec">
-      <div class="data-sec-head">
-        <h3>${type === 'classement' ? 'Classement' : 'Calendrier & Résultats'} — ${team.name}</h3>
-        <a href="${baseUrl}" target="_blank" rel="noopener" style="font-size:.75rem;color:var(--rose);text-decoration:none;display:flex;align-items:center;gap:.3rem">
-          Voir sur Score'n'co ↗
-        </a>
-      </div>
-      <div class="snc-widget-wrap" style="position:relative">
-        <div id="sncLoading" style="text-align:center;padding:4rem;color:rgba(255,252,237,.3)">
-          <div style="font-size:2rem;margin-bottom:1rem;display:inline-block;animation:spin 1s linear infinite">⟳</div>
-          <p>Chargement depuis Score'n'co…</p>
-        </div>
-        <iframe
-          src="https://scorenco.com/widget/hand/clubs/${CLUB_SNC}/${teamId}/${widgetType}/"
-          style="opacity:0;transition:opacity .4s;border:none;width:100%;display:block"
-          height="${iframeH}"
-          frameborder="0"
-          scrolling="no"
-          allowtransparency="true"
-          onload="document.getElementById('sncLoading').style.display='none';this.style.opacity='1';"
-        ></iframe>
-      </div>
-      <p style="font-size:.72rem;color:rgba(255,252,237,.25);margin-top:.75rem;text-align:right">
-        Données en temps réel via Score'n'co
-      </p>
-    </div>`;
+  container.innerHTML =
+    '<div class="data-sec">' +
+      '<div class="data-sec-head">' +
+        '<h3>' + titre + ' \u2014 ' + team.name + '</h3>' +
+        '<a href="' + baseUrl + '" target="_blank" rel="noopener" style="font-size:.75rem;color:var(--rose);text-decoration:none;display:flex;align-items:center;gap:.3rem">' +
+          'Voir sur Score\u2019n\u2019co \u2197' +
+        '</a>' +
+      '</div>' +
+      '<div class="snc-widget-wrap" style="position:relative">' +
+        '<div id="sncLoading" style="text-align:center;padding:4rem;color:rgba(255,252,237,.3)">' +
+          '<div style="font-size:2rem;margin-bottom:1rem;display:inline-block;animation:spin 1s linear infinite">\u27f3</div>' +
+          '<p>Chargement depuis Score\u2019n\u2019co\u2026</p>' +
+        '</div>' +
+        '<iframe' +
+          ' src="' + iframeSrc + '"' +
+          ' style="opacity:0;transition:opacity .4s;border:none;width:100%;display:block"' +
+          ' height="' + iframeH + '"' +
+          ' frameborder="0"' +
+          ' scrolling="no"' +
+          ' allowtransparency="true"' +
+          ' onload="document.getElementById('sncLoading').style.display='none';this.style.opacity='1';"' +
+        '></iframe>' +
+      '</div>' +
+      '<p style="font-size:.72rem;color:rgba(255,252,237,.25);margin-top:.75rem;text-align:right">' +
+        'Donn\u00e9es en temps r\u00e9el via Score\u2019n\u2019co' +
+      '</p>' +
+    '</div>';
   initReveal();
 }
 
