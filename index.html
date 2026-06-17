@@ -1128,7 +1128,7 @@ function buildSub(type, team) {
   const teamId = SCORENCO_IDS[team.sheet || team.id];
 
   if (!teamId) {
-    container.innerHTML = `<div class="soon-box"><div class="soon-chip">🔜 À venir</div><h4>Données non disponibles</h4><p>Cette équipe n'est pas encore reliée à Score'n'co.</p></div>`;
+    container.innerHTML = '<div class="soon-box"><div class="soon-chip">🔜 À venir</div><h4>Données non disponibles</h4><p>Cette équipe n\'est pas encore reliée à Score\'n\'co.</p></div>';
     return '';
   }
 
@@ -1159,7 +1159,7 @@ function buildSub(type, team) {
           ' frameborder="0"' +
           ' scrolling="no"' +
           ' allowtransparency="true"' +
-          ' onload="document.getElementById('sncLoading').style.display='none';this.style.opacity='1';"' +
+          ' onload="document.getElementById(\'sncLoading\').style.display=\'none\';this.style.opacity=\'1\';"' +
         '></iframe>' +
       '</div>' +
       '<p style="font-size:.72rem;color:rgba(255,252,237,.25);margin-top:.75rem;text-align:right">' +
