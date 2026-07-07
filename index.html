@@ -9,6 +9,7 @@
 <style>
 :root{
   --bleu:#0F1E41;
+  --brand-blue:#0B76C2;
   --rose:#EA3B79;
   --rose-pale:#F8D8E1;
   --cream:#FBF7EF;
@@ -68,18 +69,22 @@ body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--ink);o
 #pg-team{display:none}
 #pg-subteam{display:none}
 
-/* ── HERO ── */
-#hero{position:relative;overflow:hidden;padding-top:110px}
-.hero-media{position:relative;line-height:0}
-.hero-banner-img{width:100%;height:max(340px,41vw);object-fit:cover;object-position:center bottom;display:block}
-.hero-overlay{position:absolute;left:50%;bottom:8%;transform:translateX(-50%);width:100%;max-width:600px;padding:0 5%;text-align:center;z-index:2;line-height:normal}
-.hero-overlay .hero-eyebrow{justify-content:center}
-.hero-overlay .hero-eyebrow p{color:#fff}
-.hero-overlay .hero-eyebrow span{background:#fff}
-.hero-overlay .hero-sub{color:rgba(255,255,255,.92);margin:0 auto 1.8rem;text-shadow:0 2px 14px rgba(6,20,45,.35)}
-.hero-overlay .hero-actions{justify-content:center}
-.hero-overlay .btn-o{border-color:rgba(255,255,255,.55);color:#fff}
-.hero-overlay .btn-o:hover{border-color:#fff;color:#fff;background:rgba(255,255,255,.1)}
+/* ── HERO (motif carrés en pur CSS/SVG, plus d'image) ── */
+#hero{position:relative;overflow:hidden;padding:calc(110px + 3.5rem) 5% 4rem;background:var(--brand-blue);display:flex;align-items:center;justify-content:center;min-height:clamp(440px,52vw,640px)}
+.hero-pixel-rail{position:absolute;top:0;bottom:0;width:clamp(120px,24vw,340px);background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22240%22%20height%3D%22160%22%3E%0A%3Crect%20x%3D%220%22%20y%3D%220%22%20width%3D%2240%22%20height%3D%2240%22%20fill%3D%22%230F1E41%22/%3E%0A%3Crect%20x%3D%2240%22%20y%3D%220%22%20width%3D%2240%22%20height%3D%2240%22%20fill%3D%22%23ffffff%22/%3E%0A%3Crect%20x%3D%22120%22%20y%3D%220%22%20width%3D%2240%22%20height%3D%2240%22%20fill%3D%22%23EA3B79%22/%3E%0A%3Crect%20x%3D%2240%22%20y%3D%2240%22%20width%3D%2240%22%20height%3D%2240%22%20fill%3D%22%23EA3B79%22/%3E%0A%3Crect%20x%3D%2280%22%20y%3D%2240%22%20width%3D%2240%22%20height%3D%2240%22%20fill%3D%22%23ffffff%22/%3E%0A%3Crect%20x%3D%220%22%20y%3D%2280%22%20width%3D%2240%22%20height%3D%2240%22%20fill%3D%22%23ffffff%22/%3E%0A%3Crect%20x%3D%2280%22%20y%3D%2280%22%20width%3D%2240%22%20height%3D%2240%22%20fill%3D%22%230F1E41%22/%3E%0A%3Crect%20x%3D%22160%22%20y%3D%2280%22%20width%3D%2240%22%20height%3D%2240%22%20fill%3D%22%23EA3B79%22/%3E%0A%3Crect%20x%3D%220%22%20y%3D%22120%22%20width%3D%2240%22%20height%3D%2240%22%20fill%3D%22%23EA3B79%22/%3E%0A%3Crect%20x%3D%2240%22%20y%3D%22120%22%20width%3D%2240%22%20height%3D%2240%22%20fill%3D%22%230F1E41%22/%3E%0A%3Crect%20x%3D%22120%22%20y%3D%22120%22%20width%3D%2240%22%20height%3D%2240%22%20fill%3D%22%23ffffff%22/%3E%0A%3C/svg%3E");background-repeat:repeat;background-size:min(200px,17vw) auto;pointer-events:none}
+.hero-pixel-rail.left{left:0}
+.hero-pixel-rail.right{right:0;transform:scaleX(-1)}
+.hero-pixel-content{position:relative;z-index:2;max-width:640px;text-align:center}
+.hero-word{font-family:'Bebas Neue',sans-serif;color:#fff;line-height:.85;margin-bottom:1.6rem}
+.hw-small{display:block;font-size:clamp(1.5rem,3.2vw,2.4rem);letter-spacing:.18em}
+.hw-big{display:block;font-size:clamp(3rem,9.5vw,7rem);letter-spacing:.01em;text-transform:uppercase;transform:skewX(-3deg);margin-top:.1em}
+.hero-pixel-content .hero-eyebrow{justify-content:center}
+.hero-pixel-content .hero-eyebrow p{color:#fff}
+.hero-pixel-content .hero-eyebrow span{background:#fff}
+.hero-pixel-content .hero-sub{color:rgba(255,255,255,.92);margin:0 auto 1.8rem;text-shadow:0 2px 14px rgba(6,20,45,.3)}
+.hero-pixel-content .hero-actions{justify-content:center}
+.hero-pixel-content .btn-o{border-color:rgba(255,255,255,.55);color:#fff}
+.hero-pixel-content .btn-o:hover{border-color:#fff;color:#fff;background:rgba(255,255,255,.1)}
 #hero-info{position:relative;overflow:hidden;padding:3rem 5%;background:var(--blue-pale)}
 .hero-grad{position:absolute;inset:0;background:radial-gradient(ellipse 70% 80% at 75% 50%,rgba(234,59,121,.07) 0%,transparent 65%)}
 .hero-lines{position:absolute;inset:0;background-image:linear-gradient(rgba(15,30,65,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(15,30,65,.035) 1px,transparent 1px);background-size:80px 80px}
@@ -361,13 +366,15 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;back
   .hbg{display:flex}
   .hero-ring,.hero-ring2,.hero-orb{display:none}
   .hero-nums{gap:1.5rem}
-  .hero-banner-img{height:max(340px,58vw)}
-  .hero-overlay{bottom:5%}
-  .hero-overlay .hero-eyebrow{margin-bottom:.9rem}
-  .hero-overlay .hero-eyebrow p{font-size:.6rem}
-  .hero-overlay .hero-sub{font-size:.76rem;line-height:1.45;margin-bottom:1rem}
-  .hero-overlay .hero-actions{gap:.6rem}
-  .hero-overlay .btn-p,.hero-overlay .btn-o{padding:.55rem 1.1rem;font-size:.65rem}
+  #hero{min-height:clamp(380px,90vw,520px);padding:calc(72px + 2.5rem) 6% 3rem}
+  .hero-pixel-rail{width:clamp(40px,13vw,70px)}
+  .hero-pixel-rail{background-size:min(90px,20vw) auto}
+  .hero-pixel-content{padding:0 4.6rem}
+  .hero-pixel-content .hero-eyebrow{margin-bottom:.9rem}
+  .hero-pixel-content .hero-eyebrow p{font-size:.6rem}
+  .hero-pixel-content .hero-sub{font-size:.76rem;line-height:1.45;margin-bottom:1rem}
+  .hero-pixel-content .hero-actions{gap:.6rem}
+  .hero-pixel-content .btn-p,.hero-pixel-content .btn-o{padding:.55rem 1.1rem;font-size:.65rem}
   .players-grid{grid-template-columns:repeat(auto-fill,minmax(160px,1fr))}
   #nav{
     display:flex;
@@ -517,15 +524,15 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;back
 <!-- ══ HOME ══ -->
 <div id="pg-home" class="page active">
   <section id="hero">
-    <div class="hero-media">
-      <img src="https://raw.githubusercontent.com/albanbontemps33-cell/hbcbazadais/main/acceuil.png" class="hero-banner-img" alt="HBC Bazadais">
-      <div class="hero-overlay">
-        <div class="hero-eyebrow"><span></span><p>Saison 2025 — 2026</p></div>
-        <p class="hero-sub">Club convivial et dynamique à Bazas depuis 1993. 12 équipes, tous âges, tous niveaux — venez vivre le handball en famille.</p>
-        <div class="hero-actions">
-          <a href="#" class="btn-p" onclick="goNav('teams')">Nos équipes →</a>
-          <a href="#" class="btn-o" onclick="goNav('contact')">Nous rejoindre</a>
-        </div>
+    <div class="hero-pixel-rail left" aria-hidden="true"></div>
+    <div class="hero-pixel-rail right" aria-hidden="true"></div>
+    <div class="hero-pixel-content">
+      <h1 class="hero-word"><span class="hw-small">HBC</span><span class="hw-big">Bazadais</span></h1>
+      <div class="hero-eyebrow"><span></span><p>Saison 2025 — 2026</p></div>
+      <p class="hero-sub">Club convivial et dynamique à Bazas depuis 1993. 12 équipes, tous âges, tous niveaux — venez vivre le handball en famille.</p>
+      <div class="hero-actions">
+        <a href="#" class="btn-p" onclick="goNav('teams')">Nos équipes →</a>
+        <a href="#" class="btn-o" onclick="goNav('contact')">Nous rejoindre</a>
       </div>
     </div>
   </section>
