@@ -113,14 +113,14 @@ body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--ink);o
 
 /* ── ABOUT ── */
 #about-sec{padding-bottom:7rem;background:var(--cream)}
-.history-block{background:var(--bleu);padding:5rem 0;margin-bottom:5rem;position:relative;overflow:hidden}
+.history-block{background:var(--cream);padding:5rem 0;margin-bottom:5rem;position:relative;overflow:hidden;border-top:1px solid var(--border-navy);border-bottom:1px solid var(--border-navy)}
 .history-block::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--rose),transparent)}
-.history-h2{font-family:'Bebas Neue',sans-serif;font-size:clamp(2.6rem,5.5vw,4.2rem);letter-spacing:.02em;text-transform:uppercase;color:#fff;transform:skewX(-3deg);display:inline-block;margin-bottom:2.5rem}
+.history-h2{font-family:'Bebas Neue',sans-serif;font-size:clamp(2.6rem,5.5vw,4.2rem);letter-spacing:.02em;text-transform:uppercase;color:var(--bleu);transform:skewX(-3deg);display:inline-block;margin-bottom:2.5rem}
 .history-grid{display:grid;grid-template-columns:.85fr 1fr;gap:3.5rem;align-items:center}
-.history-img-ph{aspect-ratio:4/3;border:1.5px dashed rgba(255,252,237,.28);border-radius:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.7rem;color:rgba(255,252,237,.35)}
+.history-img-ph{aspect-ratio:4/3;border:1.5px dashed rgba(22,35,63,.22);border-radius:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.7rem;color:rgba(22,35,63,.35)}
 .history-img-ph svg{width:38px;height:38px}
 .history-img-ph span{font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase}
-.history-body{font-size:.94rem;color:rgba(255,252,237,.72);line-height:1.85;font-weight:300}
+.history-body{font-size:.94rem;color:rgba(22,35,63,.72);line-height:1.85;font-weight:300}
 .history-body strong{color:var(--rose);font-weight:700}
 .about-extra{max-width:600px}
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:center}
@@ -977,7 +977,7 @@ const TRAINING = {
   srg1:    [{day:'Mardi',   time:'19h30 – 21h00', lieu:'Sainte-Cluque'},{day:'Vendredi',time:'20h30 – 22h00', lieu:'Sainte-Cluque'}],
 };
 
-function goNav(id, subject) {
+function renderNav(id, subject) {
   PAGES.forEach(p => {
     const el = document.getElementById('pg-'+p);
     if (el) el.classList.remove('active');
@@ -1002,10 +1002,71 @@ function goNav(id, subject) {
   setTimeout(initReveal, 120);
 }
 
+function goNav(id, subject) {
+  renderNav(id, subject);
+  pushRoute({page:id, subject});
+}
+
 function toggleMob() {
   document.getElementById('mobileNav').classList.toggle('open');
   document.getElementById('hbg').classList.toggle('open');
 }
+
+// ── ROUTER (chaque écran a une URL propre, le bouton "retour" navigue dans le site) ──
+function routeToHash(route) {
+  if (route.page === 'team' && route.teamId) return '#team-' + route.teamId;
+  if (route.page === 'sub' && route.teamId && route.sub) return '#team-' + route.teamId + '-' + route.sub;
+  if (route.subject) return '#' + route.page + '~' + route.subject;
+  return '#' + (route.page || 'home');
+}
+
+function parseRoute(hash) {
+  const h = (hash || '').replace(/^#/, '');
+  if (!h) return {page:'home'};
+  if (h.startsWith('team-')) {
+    const rest = h.slice(5);
+    const m = rest.match(/^(.+)-(effectif|classement|calendrier)$/);
+    if (m) return {page:'sub', teamId:m[1], sub:m[2]};
+    return {page:'team', teamId:rest};
+  }
+  if (h.includes('~')) {
+    const [page, subject] = h.split('~');
+    return {page, subject};
+  }
+  return {page:h};
+}
+
+function pushRoute(route) {
+  const hash = routeToHash(route);
+  if (location.hash === hash) {
+    history.replaceState(route, '', hash);
+  } else {
+    history.pushState(route, '', hash);
+  }
+}
+
+function applyRoute(route) {
+  if (route.page === 'team' && route.teamId) {
+    renderTeam(route.teamId);
+  } else if (route.page === 'sub' && route.teamId) {
+    const team = TEAMS.find(t => t.id === route.teamId);
+    if (team) {
+      renderTeam(route.teamId);
+      renderSub(route.sub);
+    } else {
+      renderNav('teams');
+    }
+  } else if (PAGES.includes(route.page)) {
+    renderNav(route.page, route.subject);
+  } else {
+    renderNav('home');
+  }
+}
+
+window.addEventListener('popstate', (e) => {
+  const route = e.state || parseRoute(location.hash);
+  applyRoute(route);
+});
 
 window.addEventListener('scroll', () => {
   document.getElementById('nav').classList.toggle('solid', window.scrollY > 50);
@@ -1034,8 +1095,9 @@ function buildTeams() {
     `<a href="#" onclick="openTeam('${t.id}')">${t.name}</a>`).join('');
 }
 
-function openTeam(id) {
+function renderTeam(id) {
   currentTeam = TEAMS.find(t => t.id === id);
+  if (!currentTeam) return;
   PAGES.forEach(p => { const el = document.getElementById('pg-'+p); if(el) el.classList.remove('active'); });
   document.getElementById('pg-subteam').style.display = 'none';
   document.getElementById('teamCat').textContent = currentTeam.cat;
@@ -1051,6 +1113,11 @@ function openTeam(id) {
     trainingEl.style.display = 'none';
   }
   window.scrollTo({top:0,behavior:'smooth'});
+}
+
+function openTeam(id) {
+  renderTeam(id);
+  pushRoute({page:'team', teamId:id});
 }
 
 // ── SCHEDULE PAGE ──
@@ -1085,12 +1152,11 @@ function buildSchedule() {
 }
 
 function backToTeams() {
-  document.getElementById('pg-team').style.display = 'none';
-  goNav('teams');
+  history.back();
 }
 
 // ── SUBPAGES ──
-function openSub(type) {
+function renderSub(type) {
   document.getElementById('pg-team').style.display = 'none';
   document.getElementById('subLabel').textContent = currentTeam.name;
   document.getElementById('subTitle').textContent = {effectif:'Effectif',classement:'Classement',calendrier:'Calendrier & Résultats'}[type];
@@ -1099,10 +1165,13 @@ function openSub(type) {
   window.scrollTo({top:0,behavior:'smooth'});
 }
 
+function openSub(type) {
+  renderSub(type);
+  pushRoute({page:'sub', teamId: currentTeam.id, sub:type});
+}
+
 function backToTeam() {
-  document.getElementById('pg-subteam').style.display = 'none';
-  document.getElementById('pg-team').style.display = 'block';
-  window.scrollTo({top:0,behavior:'smooth'});
+  history.back();
 }
 
 function buildSub(type, team) {
@@ -1258,6 +1327,13 @@ buildSchedule();
 buildPartners();
 buildCarousel();
 initReveal();
+
+// Initialise le routeur avec l'URL actuelle (lien direct, actualisation de page, etc.)
+(function initRouter() {
+  const route = parseRoute(location.hash);
+  history.replaceState(route, '', routeToHash(route));
+  applyRoute(route);
+})();
 </script>
 </body>
 </html>
