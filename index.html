@@ -71,7 +71,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--ink);o
 /* ── HERO ── */
 #hero{position:relative;overflow:hidden;padding-top:110px}
 .hero-media{position:relative;line-height:0}
-.hero-banner-img{width:100%;height:clamp(340px,41vw,620px);object-fit:cover;object-position:center bottom;display:block}
+.hero-banner-img{width:100%;height:max(340px,41vw);object-fit:cover;object-position:center bottom;display:block}
 .hero-overlay{position:absolute;left:50%;bottom:8%;transform:translateX(-50%);width:100%;max-width:600px;padding:0 5%;text-align:center;z-index:2;line-height:normal}
 .hero-overlay .hero-eyebrow{justify-content:center}
 .hero-overlay .hero-eyebrow p{color:#fff}
@@ -361,7 +361,7 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;back
   .hbg{display:flex}
   .hero-ring,.hero-ring2,.hero-orb{display:none}
   .hero-nums{gap:1.5rem}
-  .hero-banner-img{height:clamp(340px,58vw,460px)}
+  .hero-banner-img{height:max(340px,58vw)}
   .hero-overlay{bottom:5%}
   .hero-overlay .hero-eyebrow{margin-bottom:.9rem}
   .hero-overlay .hero-eyebrow p{font-size:.6rem}
