@@ -225,6 +225,35 @@ body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--ink);o
 .dt th{font-size:.65rem;font-weight:600;letter-spacing:.12em;color:rgba(22,35,63,.4);text-transform:uppercase;padding:.8rem 1.2rem;text-align:left;background:rgba(15,30,65,.02)}
 .dt td{padding:.85rem 1.2rem;font-size:.83rem;color:rgba(22,35,63,.72);border-top:1px solid rgba(15,30,65,.05)}
 .dt tr:hover td{background:rgba(15,30,65,.025)}
+.dt tr.is-us td{background:rgba(234,59,121,.07);font-weight:600;color:var(--ink)}
+.dt tr.is-us td:first-child{position:relative}
+.dt tr.is-us td:first-child::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--rose)}
+.dt td.rk{font-family:'Bebas Neue',sans-serif;font-size:1.05rem;color:rgba(22,35,63,.35);width:2.4rem}
+.dt tr.is-us td.rk{color:var(--rose)}
+.data-sec-foot{padding:.8rem 1.5rem;font-size:.68rem;color:rgba(22,35,63,.35);border-top:1px solid rgba(15,30,65,.05);display:flex;justify-content:space-between;align-items:center;gap:1rem}
+.data-sec-foot button{background:none;border:1px solid var(--border-navy);border-radius:var(--radius);padding:.35rem .8rem;font-size:.68rem;color:var(--ink);cursor:pointer;font-family:inherit;transition:all var(--t)}
+.data-sec-foot button:hover{border-color:var(--rose);color:var(--rose)}
+.data-loading{text-align:center;padding:3.5rem 1rem;color:rgba(22,35,63,.4)}
+.data-loading .spin{font-size:1.8rem;display:inline-block;animation:spin 1s linear infinite;margin-bottom:.8rem}
+.data-error{text-align:center;padding:2.5rem 1.5rem}
+.data-error p{font-size:.8rem;color:rgba(22,35,63,.5);margin-top:.4rem}
+
+.match-list{display:flex;flex-direction:column}
+.match-card{display:grid;grid-template-columns:5.2rem 1fr auto 1fr auto;align-items:center;gap:1rem;padding:1rem 1.5rem;border-top:1px solid rgba(15,30,65,.05);transition:background var(--t)}
+.match-card:first-child{border-top:none}
+.match-card:hover{background:rgba(15,30,65,.02)}
+.match-card.is-us{background:rgba(234,59,121,.05)}
+.match-date{font-size:.7rem;color:rgba(22,35,63,.4);font-weight:600;letter-spacing:.03em}
+.match-team{font-size:.83rem;color:var(--ink);text-align:right}
+.match-team.ext{text-align:left}
+.match-card.is-us .match-team.home-us,.match-card.is-us .match-team.ext-us{color:var(--rose);font-weight:700}
+.match-score{font-family:'Bebas Neue',sans-serif;font-size:1.15rem;letter-spacing:.05em;color:var(--ink);background:var(--blue-pale);padding:.3rem .7rem;border-radius:var(--radius);min-width:4.2rem;text-align:center}
+.match-score.tbd{background:none;color:rgba(22,35,63,.3);font-size:.9rem;font-family:'DM Sans',sans-serif}
+.match-status{font-size:.62rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:.25rem .55rem;border-radius:20px;text-align:center;white-space:nowrap}
+.match-status.st-joue{background:rgba(15,30,65,.08);color:rgba(22,35,63,.5)}
+.match-status.st-avenir{background:rgba(11,118,194,.12);color:var(--brand-blue)}
+.match-status.st-reporte{background:rgba(234,59,121,.12);color:var(--rose)}
+@media(max-width:640px){.match-card{grid-template-columns:1fr;text-align:center;gap:.4rem}.match-team,.match-team.ext{text-align:center}.match-date{order:-1}}
 
 /* ── PARTENAIRES ── */
 .part-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1.5rem}
@@ -1160,7 +1189,7 @@ function renderSub(type) {
   document.getElementById('pg-team').style.display = 'none';
   document.getElementById('subLabel').textContent = currentTeam.name;
   document.getElementById('subTitle').textContent = {effectif:'Effectif',classement:'Classement',calendrier:'Calendrier & Résultats'}[type];
-  document.getElementById('subContent').innerHTML = buildSub(type, currentTeam);
+  buildSub(type, currentTeam);
   document.getElementById('pg-subteam').style.display = 'block';
   window.scrollTo({top:0,behavior:'smooth'});
 }
@@ -1175,9 +1204,12 @@ function backToTeam() {
 }
 
 function buildSub(type, team) {
+  const subContainer = document.getElementById('subContent');
   if (type === 'effectif') {
-    if (!team.roster || !team.roster.length)
-      return `<div class="soon-box"><div class="soon-chip">🔜 À venir</div><h4>Effectif en cours de saisie</h4><p>L'effectif de l'équipe ${team.name} sera bientôt disponible.</p></div>`;
+    if (!team.roster || !team.roster.length) {
+      subContainer.innerHTML = `<div class="soon-box"><div class="soon-chip">🔜 À venir</div><h4>Effectif en cours de saisie</h4><p>L'effectif de l'équipe ${team.name} sera bientôt disponible.</p></div>`;
+      return;
+    }
 
     const positions = ['Tous', ...new Set(team.roster.map(p => p.pos).filter(Boolean))];
     const filters = positions.map((p,i) =>
@@ -1206,73 +1238,193 @@ function buildSub(type, team) {
         </div>
       </div>`).join('');
 
-    return `
+    subContainer.innerHTML = `
       <div class="eff-header">
         <div class="eff-season">2025/26</div>
         <div class="eff-filters">${filters}</div>
       </div>
       <div class="players-grid" id="pgrid">${cards}</div>`;
+    initReveal();
+    return;
   }
 
-  // ── CLASSEMENT & CALENDRIER : widgets Score'n'co (temps réel, automatique) ──
+  // ── CLASSEMENT & CALENDRIER : données depuis Google Sheets (CSV publié, temps réel) ──
+  renderSheetData(type, team, subContainer);
+}
 
-  // Correspondance team.sheet → teamId Score'n'co
-  const SCORENCO_IDS = {
-    srg1:  '1-2dc3',
-    srg2:  '2-2d8q',
-    srf:   'f1-tzdw',
-    u18g:  '1-u18-36k4',
-    u18f:  '1-u18-feminine-36j4',
-    u15g:  '1-u15-36m7',
-    u15f:  'u15-f1-avln',
-    u13g:  '1-u13-36qi',
-    u13f:  'u13-f1-5vbe',
-  };
+// Correspondance team.sheet → lien CSV publié du Google Sheet (un onglet = une équipe)
+const SHEET_CSV_URLS = {
+  srg1:          'https://docs.google.com/spreadsheets/d/e/2PACX-1vSVwWf2uxkEbwxnQvyT4I5tuDQPYEW8nrMPlygxtE-N9b8BLdg85-5kO1bpCJpPbw2s8twcnvrBg1lx/pub?gid=0&single=true&output=csv',
+  srg2:          'https://docs.google.com/spreadsheets/d/e/2PACX-1vSVwWf2uxkEbwxnQvyT4I5tuDQPYEW8nrMPlygxtE-N9b8BLdg85-5kO1bpCJpPbw2s8twcnvrBg1lx/pub?gid=2024562386&single=true&output=csv',
+  srf:           'https://docs.google.com/spreadsheets/d/e/2PACX-1vSVwWf2uxkEbwxnQvyT4I5tuDQPYEW8nrMPlygxtE-N9b8BLdg85-5kO1bpCJpPbw2s8twcnvrBg1lx/pub?gid=1713134330&single=true&output=csv',
+  u18f:          'https://docs.google.com/spreadsheets/d/e/2PACX-1vSVwWf2uxkEbwxnQvyT4I5tuDQPYEW8nrMPlygxtE-N9b8BLdg85-5kO1bpCJpPbw2s8twcnvrBg1lx/pub?gid=2034944667&single=true&output=csv',
+  u18g:          'https://docs.google.com/spreadsheets/d/e/2PACX-1vSVwWf2uxkEbwxnQvyT4I5tuDQPYEW8nrMPlygxtE-N9b8BLdg85-5kO1bpCJpPbw2s8twcnvrBg1lx/pub?gid=788253266&single=true&output=csv',
+  u15f:          'https://docs.google.com/spreadsheets/d/e/2PACX-1vSVwWf2uxkEbwxnQvyT4I5tuDQPYEW8nrMPlygxtE-N9b8BLdg85-5kO1bpCJpPbw2s8twcnvrBg1lx/pub?gid=1639716402&single=true&output=csv',
+  u15g:          'https://docs.google.com/spreadsheets/d/e/2PACX-1vSVwWf2uxkEbwxnQvyT4I5tuDQPYEW8nrMPlygxtE-N9b8BLdg85-5kO1bpCJpPbw2s8twcnvrBg1lx/pub?gid=1494554168&single=true&output=csv',
+  u13f:          'https://docs.google.com/spreadsheets/d/e/2PACX-1vSVwWf2uxkEbwxnQvyT4I5tuDQPYEW8nrMPlygxtE-N9b8BLdg85-5kO1bpCJpPbw2s8twcnvrBg1lx/pub?gid=1414444974&single=true&output=csv',
+  u13g:          'https://docs.google.com/spreadsheets/d/e/2PACX-1vSVwWf2uxkEbwxnQvyT4I5tuDQPYEW8nrMPlygxtE-N9b8BLdg85-5kO1bpCJpPbw2s8twcnvrBg1lx/pub?gid=995232666&single=true&output=csv',
+  u11:           'https://docs.google.com/spreadsheets/d/e/2PACX-1vSVwWf2uxkEbwxnQvyT4I5tuDQPYEW8nrMPlygxtE-N9b8BLdg85-5kO1bpCJpPbw2s8twcnvrBg1lx/pub?gid=1480167727&single=true&output=csv',
+  'ecole du hand':'https://docs.google.com/spreadsheets/d/e/2PACX-1vSVwWf2uxkEbwxnQvyT4I5tuDQPYEW8nrMPlygxtE-N9b8BLdg85-5kO1bpCJpPbw2s8twcnvrBg1lx/pub?gid=987394857&single=true&output=csv',
+  loisir:        'https://docs.google.com/spreadsheets/d/e/2PACX-1vSVwWf2uxkEbwxnQvyT4I5tuDQPYEW8nrMPlygxtE-N9b8BLdg85-5kO1bpCJpPbw2s8twcnvrBg1lx/pub?gid=1909067595&single=true&output=csv',
+};
 
-  const container = document.getElementById('subContent');
+// Nom exact du club tel qu'écrit dans la colonne "club" / "domicile"/"exterieur" du Sheet, pour le surlignage
+const NOM_CLUB = 'HBC Bazadais';
 
-  const teamId = SCORENCO_IDS[team.sheet || team.id];
-
-  if (!teamId) {
-    container.innerHTML = '<div class="soon-box"><div class="soon-chip">🔜 À venir</div><h4>Données non disponibles</h4><p>Cette équipe n\'est pas encore reliée à Score\'n\'co.</p></div>';
-    return '';
+// Parseur CSV simple (gère les champs entre guillemets contenant des virgules)
+function parseCSV(text) {
+  const rows = [];
+  let row = [], field = '', inQuotes = false;
+  for (let i = 0; i < text.length; i++) {
+    const c = text[i], next = text[i + 1];
+    if (inQuotes) {
+      if (c === '"' && next === '"') { field += '"'; i++; }
+      else if (c === '"') { inQuotes = false; }
+      else { field += c; }
+    } else {
+      if (c === '"') inQuotes = true;
+      else if (c === ',') { row.push(field); field = ''; }
+      else if (c === '\r') { /* ignore */ }
+      else if (c === '\n') { row.push(field); rows.push(row); row = []; field = ''; }
+      else field += c;
+    }
   }
+  if (field.length || row.length) { row.push(field); rows.push(row); }
+  return rows.filter(r => r.some(f => f.trim() !== ''));
+}
 
-  const CLUB_SNC = 'hbc-bazadais-2pv6';
-  const baseUrl   = 'https://scorenco.com/hand/clubs/' + CLUB_SNC + '/' + teamId;
-  const widgetType = type === 'classement' ? 'ranking' : 'schedule';
-  const iframeH   = type === 'classement' ? '540' : '640';
-  const titre     = type === 'classement' ? 'Classement' : 'Calendrier & R\u00e9sultats';
-  const iframeSrc = 'https://scorenco.com/widget/hand/clubs/' + CLUB_SNC + '/' + teamId + '/' + widgetType + '/';
+// Cache mémoire pour éviter de re-télécharger le CSV à chaque clic dans la même session
+const _csvCache = {};
+
+async function fetchTeamCSV(sheetKey) {
+  if (_csvCache[sheetKey]) return _csvCache[sheetKey];
+  const url = SHEET_CSV_URLS[sheetKey];
+  if (!url) return null;
+  const resp = await fetch(url + '&_=' + Date.now()); // cache-bust pour avoir les données fraîches
+  if (!resp.ok) throw new Error('HTTP ' + resp.status);
+  const text = await resp.text();
+  const rows = parseCSV(text);
+  _csvCache[sheetKey] = rows;
+  return rows;
+}
+
+async function renderSheetData(type, team, container) {
+  const sheetKey = team.sheet || team.id;
+  const titre = type === 'classement' ? 'Classement' : 'Calendrier & Résultats';
+
+  if (!SHEET_CSV_URLS[sheetKey]) {
+    container.innerHTML = '<div class="soon-box"><div class="soon-chip">🔜 À venir</div><h4>Données non disponibles</h4><p>Cette équipe n\'est pas encore reliée au tableau de suivi.</p></div>';
+    return;
+  }
 
   container.innerHTML =
-    '<div class="data-sec">' +
-      '<div class="data-sec-head">' +
-        '<h3>' + titre + ' \u2014 ' + team.name + '</h3>' +
-        '<a href="' + baseUrl + '" target="_blank" rel="noopener" style="font-size:.75rem;color:var(--rose);text-decoration:none;display:flex;align-items:center;gap:.3rem">' +
-          'Voir sur Score\u2019n\u2019co \u2197' +
-        '</a>' +
-      '</div>' +
-      '<div class="snc-widget-wrap" style="position:relative">' +
-        '<div id="sncLoading" style="text-align:center;padding:4rem;color:rgba(22,35,63,.4)">' +
-          '<div style="font-size:2rem;margin-bottom:1rem;display:inline-block;animation:spin 1s linear infinite">\u27f3</div>' +
-          '<p>Chargement depuis Score\u2019n\u2019co\u2026</p>' +
-        '</div>' +
-        '<iframe' +
-          ' src="' + iframeSrc + '"' +
-          ' style="opacity:0;transition:opacity .4s;border:none;width:100%;display:block"' +
-          ' height="' + iframeH + '"' +
-          ' frameborder="0"' +
-          ' scrolling="no"' +
-          ' allowtransparency="true"' +
-          ' onload="document.getElementById(\'sncLoading\').style.display=\'none\';this.style.opacity=\'1\';"' +
-        '></iframe>' +
-      '</div>' +
-      '<p style="font-size:.72rem;color:rgba(22,35,63,.35);margin-top:.75rem;text-align:right">' +
-        'Donn\u00e9es en temps r\u00e9el via Score\u2019n\u2019co' +
-      '</p>' +
-    '</div>';
+    '<div class="data-sec"><div class="data-sec-head"><h3>' + titre + ' — ' + team.name + '</h3></div>' +
+    '<div class="data-loading"><div class="spin">⟳</div><p>Chargement des données…</p></div></div>';
+
+  let rows;
+  try {
+    rows = await fetchTeamCSV(sheetKey);
+  } catch (e) {
+    container.innerHTML =
+      '<div class="data-sec"><div class="data-sec-head"><h3>' + titre + ' — ' + team.name + '</h3></div>' +
+      '<div class="data-error"><div class="soon-chip">⚠️ Erreur</div><p>Impossible de récupérer les données pour le moment. Réessaie dans un instant.</p></div></div>';
+    return;
+  }
+
+  if (!rows || rows.length < 2) {
+    container.innerHTML =
+      '<div class="data-sec"><div class="data-sec-head"><h3>' + titre + ' — ' + team.name + '</h3></div>' +
+      '<div class="data-error"><p>Aucune donnée disponible pour l\'instant.</p></div></div>';
+    return;
+  }
+
+  const html = type === 'classement'
+    ? buildClassementHTML(rows, team, titre)
+    : buildCalendrierHTML(rows, team, titre);
+
+  container.innerHTML = html;
   initReveal();
+}
+
+// Colonnes A:G → rang, club, joues, gagnes, nuls, perdus, points
+function buildClassementHTML(rows, team, titre) {
+  const body = rows.slice(1)
+    .map(r => ({ rang: r[0], club: r[1], joues: r[2], gagnes: r[3], nuls: r[4], perdus: r[5], points: r[6] }))
+    .filter(r => r.rang && r.club);
+
+  if (!body.length) {
+    return '<div class="data-sec"><div class="data-sec-head"><h3>' + titre + ' — ' + team.name + '</h3></div><div class="data-error"><p>Classement pas encore disponible pour cette équipe.</p></div></div>';
+  }
+
+  const lignes = body.map(r => {
+    const isUs = (r.club || '').toLowerCase().includes(NOM_CLUB.toLowerCase()) || (r.club || '').toLowerCase().includes('bazadais');
+    return '<tr class="' + (isUs ? 'is-us' : '') + '">' +
+      '<td class="rk">' + r.rang + '</td>' +
+      '<td>' + r.club + (isUs ? ' <span style="color:var(--rose);font-size:.68rem">●</span>' : '') + '</td>' +
+      '<td>' + r.joues + '</td>' +
+      '<td>' + r.gagnes + '</td>' +
+      '<td>' + r.nuls + '</td>' +
+      '<td>' + r.perdus + '</td>' +
+      '<td><strong>' + r.points + '</strong></td>' +
+    '</tr>';
+  }).join('');
+
+  return '<div class="data-sec">' +
+    '<div class="data-sec-head"><h3>' + titre + ' — ' + team.name + '</h3></div>' +
+    '<div style="overflow-x:auto"><table class="dt"><thead><tr>' +
+      '<th>Rg</th><th>Club</th><th>J</th><th>G</th><th>N</th><th>P</th><th>Pts</th>' +
+    '</tr></thead><tbody>' + lignes + '</tbody></table></div>' +
+    '<div class="data-sec-foot"><span>Mis à jour automatiquement chaque semaine</span></div>' +
+  '</div>';
+}
+
+// Colonnes I:N → date, domicile, score_dom, score_ext, exterieur, statut
+function buildCalendrierHTML(rows, team, titre) {
+  // On repère l'index des colonnes "date" et "domicile" pour être robuste si des colonnes vides précèdent (ex: A:G puis H vide puis I:N)
+  const header = rows[0].map(h => (h || '').trim().toLowerCase());
+  let dateIdx = header.indexOf('date');
+  if (dateIdx === -1) dateIdx = 8; // fallback : colonne I
+
+  const body = rows.slice(1)
+    .map(r => ({
+      date: r[dateIdx], domicile: r[dateIdx + 1], scoreDom: r[dateIdx + 2],
+      scoreExt: r[dateIdx + 3], exterieur: r[dateIdx + 4], statut: r[dateIdx + 5]
+    }))
+    .filter(m => m.date && m.domicile);
+
+  if (!body.length) {
+    return '<div class="data-sec"><div class="data-sec-head"><h3>' + titre + ' — ' + team.name + '</h3></div><div class="data-error"><p>Calendrier pas encore disponible pour cette équipe.</p></div></div>';
+  }
+
+  const statusInfo = s => {
+    const st = (s || '').toLowerCase();
+    if (st.includes('venir')) return { cls: 'st-avenir', label: 'À venir' };
+    if (st.includes('report')) return { cls: 'st-reporte', label: 'Reporté' };
+    return { cls: 'st-joue', label: 'Joué' };
+  };
+
+  const cartes = body.map(m => {
+    const homeUs = (m.domicile || '').toLowerCase().includes('bazadais');
+    const extUs  = (m.exterieur || '').toLowerCase().includes('bazadais');
+    const st = statusInfo(m.statut);
+    const hasScore = m.scoreDom !== '' && m.scoreDom != null && m.scoreDom !== '-';
+    const score = hasScore
+      ? '<div class="match-score">' + m.scoreDom + ' – ' + m.scoreExt + '</div>'
+      : '<div class="match-score tbd">vs</div>';
+    return '<div class="match-card' + ((homeUs || extUs) ? ' is-us' : '') + '">' +
+      '<div class="match-date">' + m.date + '</div>' +
+      '<div class="match-team' + (homeUs ? ' home-us' : '') + '">' + m.domicile + '</div>' +
+      score +
+      '<div class="match-team ext' + (extUs ? ' ext-us' : '') + '">' + m.exterieur + '</div>' +
+      '<div class="match-status ' + st.cls + '">' + st.label + '</div>' +
+    '</div>';
+  }).join('');
+
+  return '<div class="data-sec">' +
+    '<div class="data-sec-head"><h3>' + titre + ' — ' + team.name + '</h3></div>' +
+    '<div class="match-list">' + cartes + '</div>' +
+    '<div class="data-sec-foot"><span>Mis à jour automatiquement chaque semaine</span></div>' +
+  '</div>';
 }
 
 function filterPos(el, pos) {
