@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>HBC Bazadais — Site en maintenance</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bleu:#0F1E41;
+  --brand-blue:#0B76C2;
+  --rose:#EA3B79;
+  --rose-pale:#F8D8E1;
+  --cream:#FBF7EF;
+  --blue-pale:#E9F1FA;
+  --ink:#16233F;
+  --card:#FFFFFF;
+  --border:rgba(234,59,121,.16);
+  --border-navy:rgba(15,30,65,.12);
+  --shadow-sm:0 6px 18px rgba(15,35,65,.07);
+  --shadow-md:0 16px 36px rgba(15,35,65,.11);
+  --t:.4s cubic-bezier(.4,0,.2,1);
+  --radius:13px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:'DM Sans',sans-serif;
+  background:
+    radial-gradient(1100px 600px at 15% -10%, rgba(234,59,121,.10), transparent 60%),
+    radial-gradient(900px 500px at 110% 10%, rgba(11,118,194,.12), transparent 55%),
+    var(--bleu);
+  color:var(--ink);
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  padding:2rem 0;
+  overflow-x:hidden;
+}
+
+.wrap{
+  width:100%;
+  max-width:620px;
+  text-align:center;
+  padding:0 1.25rem;
+  animation:riseIn .8s cubic-bezier(.16,1,.3,1) both;
+}
+@keyframes riseIn{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+
+.logo{
+  height:104px;width:104px;
+  object-fit:cover;
+  border-radius:50%;
+  border:2px solid rgba(255,252,237,.3);
+  box-shadow:0 4px 28px rgba(0,0,0,.4);
+  margin-bottom:1.6rem;
+  animation:pulseLogo 2.6s ease-in-out infinite;
+}
+@keyframes pulseLogo{0%,100%{transform:scale(1)}50%{transform:scale(1.045)}}
+
+.badge{
+  display:inline-flex;
+  align-items:center;
+  gap:.5rem;
+  background:rgba(234,59,121,.14);
+  border:1px solid rgba(234,59,121,.4);
+  color:#FFD9E7;
+  font-size:.68rem;
+  font-weight:700;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  padding:.5rem 1rem;
+  border-radius:30px;
+  margin-bottom:1.6rem;
+}
+.badge .dot{
+  width:7px;height:7px;border-radius:50%;
+  background:var(--rose);
+  box-shadow:0 0 0 0 rgba(234,59,121,.6);
+  animation:ping 1.6s ease-out infinite;
+}
+@keyframes ping{
+  0%{box-shadow:0 0 0 0 rgba(234,59,121,.55)}
+  70%{box-shadow:0 0 0 9px rgba(234,59,121,0)}
+  100%{box-shadow:0 0 0 0 rgba(234,59,121,0)}
+}
+
+.card{
+  background:var(--card);
+  border-radius:var(--radius);
+  border:1px solid var(--border);
+  box-shadow:var(--shadow-md);
+  padding:3rem 2.4rem 2.6rem;
+  position:relative;
+  overflow:hidden;
+}
+.card::before{
+  content:'';
+  position:absolute;top:0;left:0;right:0;height:4px;
+  background:linear-gradient(90deg,var(--rose),var(--brand-blue),var(--rose));
+  background-size:200% 100%;
+  animation:shimmer 3s linear infinite;
+}
+@keyframes shimmer{0%{background-position:0% 0}100%{background-position:200% 0}}
+
+.icon-wrap{
+  width:76px;height:76px;
+  margin:0 auto 1.4rem;
+  border-radius:50%;
+  background:var(--blue-pale);
+  display:flex;align-items:center;justify-content:center;
+}
+.icon-wrap svg{width:36px;height:36px;color:var(--brand-blue)}
+.icon-wrap svg .spin-part{
+  transform-origin:center;
+  animation:spinTool 3.2s linear infinite;
+}
+@keyframes spinTool{to{transform:rotate(360deg)}}
+
+h1{
+  font-family:'Bebas Neue',sans-serif;
+  font-size:clamp(2.2rem,6vw,2.9rem);
+  letter-spacing:.02em;
+  color:var(--ink);
+  line-height:1.05;
+  margin-bottom:.9rem;
+}
+h1 em{color:var(--rose);font-style:normal}
+
+p.lead{
+  font-size:.95rem;
+  line-height:1.65;
+  color:rgba(22,35,63,.68);
+  max-width:440px;
+  margin:0 auto 1.6rem;
+}
+
+.commit{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:.6rem;
+  background:rgba(234,59,121,.06);
+  border:1px dashed rgba(234,59,121,.3);
+  border-radius:var(--radius);
+  padding:.9rem 1.2rem;
+  font-size:.82rem;
+  font-weight:600;
+  color:var(--ink);
+  margin-bottom:2rem;
+}
+.commit svg{width:18px;height:18px;flex-shrink:0;color:var(--rose)}
+
+.progress-track{
+  width:100%;
+  height:6px;
+  background:rgba(15,30,65,.08);
+  border-radius:20px;
+  overflow:hidden;
+  margin-bottom:2rem;
+}
+.progress-fill{
+  height:100%;
+  width:40%;
+  border-radius:20px;
+  background:linear-gradient(90deg,var(--rose),var(--brand-blue));
+  animation:loadBar 2.2s ease-in-out infinite;
+}
+@keyframes loadBar{
+  0%{width:12%;margin-left:0}
+  50%{width:55%;margin-left:15%}
+  100%{width:12%;margin-left:88%}
+}
+
+.contact-box{
+  border-top:1px solid var(--border-navy);
+  padding-top:1.8rem;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:.7rem;
+}
+.contact-label{
+  font-size:.68rem;
+  font-weight:700;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:rgba(22,35,63,.4);
+}
+.contact-link{
+  display:inline-flex;
+  align-items:center;
+  gap:.55rem;
+  font-family:'DM Sans',sans-serif;
+  font-weight:600;
+  font-size:.92rem;
+  color:var(--ink);
+  text-decoration:none;
+  background:var(--cream);
+  border:1px solid var(--border-navy);
+  padding:.7rem 1.3rem;
+  border-radius:30px;
+  transition:all var(--t);
+}
+.contact-link:hover{
+  border-color:var(--rose);
+  color:var(--rose);
+  transform:translateY(-2px);
+  box-shadow:var(--shadow-sm);
+}
+.contact-link svg{width:17px;height:17px}
+
+.foot-note{
+  margin-top:1.8rem;
+  font-size:.72rem;
+  color:rgba(255,252,237,.55);
+  letter-spacing:.03em;
+}
+.foot-note em{color:var(--rose);font-style:normal}
+
+/* ── FOOTER PARTENAIRES (repris du site principal) ── */
+.site-footer{
+  width:100%;
+  margin-top:3.5rem;
+}
+.fcar-wrap{overflow:hidden;position:relative;padding:1.6rem 0;border-top:1px solid rgba(255,255,255,.1);border-bottom:1px solid rgba(255,255,255,.06)}
+.fcar-wrap::before,.fcar-wrap::after{content:'';position:absolute;top:0;bottom:0;width:100px;z-index:2;pointer-events:none}
+.fcar-wrap::before{left:0;background:linear-gradient(90deg,var(--bleu),transparent)}
+.fcar-wrap::after{right:0;background:linear-gradient(-90deg,var(--bleu),transparent)}
+.fcar-inner{display:flex;gap:1rem;will-change:transform}
+.fcar-item{background:transparent;border:none;border-radius:var(--radius);padding:.5rem .9rem;display:flex;flex-direction:column;align-items:center;gap:.55rem;text-decoration:none;white-space:nowrap;transition:background var(--t);flex-shrink:0;min-width:110px;text-align:center}
+.fcar-item:hover{background:rgba(234,59,121,.1)}
+.fcar-logo{width:70px;height:60px;border-radius:0;display:flex;align-items:center;justify-content:center;flex-shrink:0;background:transparent}
+.fcar-logo img{max-width:100%;max-height:100%;object-fit:contain}
+.fcar-logo-txt{font-family:'Bebas Neue',sans-serif;font-size:.85rem;color:var(--rose)}
+.fcar-name{font-size:.66rem;font-weight:600;color:rgba(255,252,237,.6);letter-spacing:.03em;text-transform:uppercase;line-height:1.2;max-width:100px;white-space:normal;text-align:center}
+
+.footer-bottom{
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:.4rem;padding:1.8rem 5% .5rem;text-align:center;
+}
+.footer-bottom p,.footer-bottom span{font-size:.7rem;color:rgba(255,252,237,.4)}
+.footer-bottom a{color:var(--rose);text-decoration:none;transition:opacity .3s}
+.footer-bottom a:hover{opacity:.7}
+
+@media(max-width:480px){
+  .card{padding:2.4rem 1.5rem 2rem}
+}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <img class="logo" src="https://raw.githubusercontent.com/albanbontemps33-cell/hbcbazadais/main/hand.png" alt="Logo HBC Bazadais">
+
+  <div class="badge"><span class="dot"></span>Intervention en cours</div>
+
+  <div class="card">
+    <div class="icon-wrap">
+      <svg class="spin-part" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+      </svg>
+    </div>
+
+    <!-- ═══ TEXTE MODIFIABLE ═══ -->
+    <h1>On est <em>sur le terrain</em>,<br>le site marque une pause.</h1>
+    <p class="lead">
+      Le site du HBC Bazadais rencontre actuellement un souci technique.
+      Notre équipe est déjà mobilisée pour le remettre en jeu au plus vite —
+      on y met tout notre cœur, promis !
+    </p>
+    <!-- ═══ FIN TEXTE MODIFIABLE ═══ -->
+
+    <div class="commit">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.42 4.58a5.4 5.4 0 0 0-7.65 0l-.77.77-.77-.77a5.4 5.4 0 0 0-7.65 7.65l8.42 8.42 8.42-8.42a5.4 5.4 0 0 0 0-7.65z"/></svg>
+      <span>On donne tout pour revenir au plus vite</span>
+    </div>
+
+    <div class="progress-track"><div class="progress-fill"></div></div>
+
+    <div class="contact-box">
+      <span class="contact-label">Besoin de nous contacter ?</span>
+      <a class="contact-link" href="mailto:bazashandballclub@gmail.com">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+        bazashandballclub@gmail.com
+      </a>
+    </div>
+  </div>
+
+  <p class="foot-note">HBC <em>Bazadais</em> — merci de votre patience 🤾</p>
+</div>
+
+<div class="site-footer">
+  <div class="fcar-wrap">
+    <div class="fcar-inner" id="fcarInner"></div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 HBC Bazadais — Tous droits réservés · SOUY BAZADES 🤝</p>
+    <span>Site internet créé par <a href="https://www.instagram.com/alban_btps/" target="_blank" rel="noopener">Alban BONTEMPS</a></span>
+  </div>
+</div>
+
+<script>
+const GH = 'https://raw.githubusercontent.com/albanbontemps33-cell/hbcbazadais/main/';
+const PARTNERS = [
+  {name:"Loïc Renac Élagage",logo:"loic.png",url:"https://renac-elagage-abattage-33.fr/"},
+  {name:"GL Utilitaire",logo:"gl.png",url:"#"},
+  {name:"Maison Clément",logo:"maison.png",url:"#"},
+  {name:"Le Cercle",logo:"cercle.png",url:"#"},
+  {name:"Viva la Vie",logo:"viva.png",url:"https://www.facebook.com/technicoifvlv/"},
+  {name:"MRP Habitat",logo:"mrp.png",url:"https://www.maximeratamrphabitat.fr/"},
+  {name:"So Fruit Primeur",logo:"sofruit.png",url:"https://www.facebook.com/people/SO-FRUIT-Primeur/100063498852369/"},
+  {name:"Caisse d'Épargne Bazas",logo:"caisse.png",url:"https://www.agences.caisse-epargne.fr/banque-assurance/bazas-id13335033051"},
+  {name:"Boucherie Chez Val et Maë",logo:"valetmae.png",url:"https://boucherie-chez-val-et-mae-33.fr/"},
+  {name:"GlassAuto Bazas",logo:"glass.png",url:"https://www.glassauto.fr/centre/glassauto-bazas-nord"},
+  {name:"Ville de Bazas",logo:"ville.png",url:"https://www.ville-bazas.fr/"},
+  {name:"Lucas Denis",logo:"lucas.png",url:"https://www.lucas-denis.fr/"},
+  {name:"V and B Langon",logo:"vandb.png",url:"https://www.vandb.fr/nos-magasins/v-and-b-langon"},
+  {name:"OBJ Trainer",logo:"obj.png",url:"https://www.objtrainer.fr/coach-sportif-langon"},
+  {name:"Carré Double",logo:"carre.png",url:"https://carredouble.fr/"},
+  {name:"Gironde — Le Département",logo:"gironde.png",url:"https://www.gironde.fr/"},
+  {name:"Créamext",logo:"creamext.png",url:"https://creamext.com/"},
+  {name:"Carrosserie F. Pitaud",logo:"cfp.png",url:"https://carrosserie-pitaud.fr/"},
+  {name:"Pest and Termites",logo:"pest.png",url:"https://www.pestandtermites.fr/"},
+  {name:"Intermarché Bazas",logo:"intermarche.png",url:"https://www.intermarche.com/magasins/06743/bazas-33430/infos-pratiques"},
+];
+
+function buildCarousel() {
+  const inner = document.getElementById('fcarInner');
+  const itemHTML = p => {
+    const logoHTML = p.logo
+      ? `<div class="fcar-logo"><img src="${GH}${p.logo}" alt="${p.name}" onerror="this.parentElement.innerHTML='<span class=fcar-logo-txt>${p.name.charAt(0)}</span>'"></div>`
+      : `<div class="fcar-logo"><span class="fcar-logo-txt">${p.name.charAt(0)}</span></div>`;
+    return `<a class="fcar-item" href="${p.url}" target="_blank" rel="noopener">${logoHTML}<div class="fcar-name">${p.name}</div></a>`;
+  };
+  inner.innerHTML = PARTNERS.map(itemHTML).join('') + PARTNERS.map(itemHTML).join('');
+
+  let x = 0, paused = false;
+  inner.addEventListener('mouseenter', () => paused = true);
+  inner.addEventListener('mouseleave', () => paused = false);
+
+  function tick() {
+    if (!paused) {
+      x -= 0.55;
+      const half = inner.scrollWidth / 2;
+      if (Math.abs(x) >= half) x = 0;
+      inner.style.transform = `translateX(${x}px)`;
+    }
+    requestAnimationFrame(tick);
+  }
+  requestAnimationFrame(tick);
+}
+buildCarousel();
+</script>
+</body>
+</html>
