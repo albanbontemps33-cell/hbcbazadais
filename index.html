@@ -143,6 +143,12 @@ body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--ink);o
 .history-body{font-size:.94rem;color:rgba(22,35,63,.72);line-height:1.85;font-weight:300}
 .history-body strong{color:var(--rose);font-weight:700}
 .about-extra{max-width:600px}
+.feat-grid{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:1.3rem;margin-bottom:2.2rem}
+.feat-grid li{background:var(--card);border:1px solid var(--border-navy);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-sm);transition:transform var(--t),box-shadow var(--t)}
+.feat-grid li:hover{transform:translateY(-5px);box-shadow:var(--shadow-md)}
+.feat-grid img{width:100%;height:auto;display:block}
+@media (max-width:820px){.feat-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:520px){.feat-grid{grid-template-columns:1fr}}
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:center}
 .sec-label{font-size:.72rem;font-weight:600;letter-spacing:.2em;color:var(--rose);text-transform:uppercase;margin-bottom:1rem}
 .sec-h2{font-family:'Bebas Neue',sans-serif;font-size:clamp(2.8rem,5vw,4.5rem);line-height:1;color:var(--ink);margin-bottom:1.5rem}
@@ -643,15 +649,15 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;back
     </div>
 
     <div class="container">
-      <div class="about-extra rv">
-        <ul class="feats">
-          <li>12 équipes de l'école de hand aux seniors compétitifs</li>
-          <li>Encadrement qualifié et bienveillant pour chaque catégorie</li>
-          <li>Affiliation FFHB — Comité Gironde de Handball</li>
-          <li>Événements et vie associative tout au long de la saison</li>
-          <li>Section loisirs ouverte à tous, sans compétition</li>
+      <div class="about-extra rv" style="max-width:900px">
+        <ul class="feat-grid">
+          <li><img src="https://raw.githubusercontent.com/albanbontemps33-cell/hbcbazadais/main/feat-equipes.png" alt="12 équipes de l'école de hand aux seniors compétitifs"></li>
+          <li><img src="https://raw.githubusercontent.com/albanbontemps33-cell/hbcbazadais/main/feat-encadrement.png" alt="Encadrement qualifié et bienveillant pour chaque catégorie"></li>
+          <li><img src="https://raw.githubusercontent.com/albanbontemps33-cell/hbcbazadais/main/feat-affiliation.png" alt="Affiliation FFHB — Comité Gironde de Handball"></li>
+          <li><img src="https://raw.githubusercontent.com/albanbontemps33-cell/hbcbazadais/main/feat-evenements.png" alt="Événements et vie associative tout au long de la saison"></li>
+          <li><img src="https://raw.githubusercontent.com/albanbontemps33-cell/hbcbazadais/main/feat-loisirs.png" alt="Section loisirs ouverte à tous, sans compétition"></li>
         </ul>
-        <a href="javascript:void(0)" class="btn-p" style="margin-top:2rem;display:inline-flex" onclick="goNav('contact')">Rejoindre le club →</a>
+        <a href="javascript:void(0)" class="btn-p" style="margin-top:.5rem;display:inline-flex" onclick="goNav('contact')">Rejoindre le club →</a>
       </div>
     </div>
   </section>
