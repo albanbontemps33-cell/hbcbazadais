@@ -47,10 +47,10 @@ body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--ink);o
 .container{max-width:1200px;margin:0 auto;padding:0 5%}
 
 /* ── MOTIF CARRÉS (DA du club) ── */
-.pixel-divider{position:fixed;top:0;left:0;right:0;height:10px;width:100%;z-index:201;background-image:repeating-linear-gradient(90deg,var(--bleu) 0 10px,transparent 10px 20px,var(--rose) 20px 30px,transparent 30px 40px,#fff 40px 50px,transparent 50px 60px);opacity:.55}
+.pixel-divider{height:10px;width:100%;background-image:repeating-linear-gradient(90deg,var(--bleu) 0 10px,transparent 10px 20px,var(--rose) 20px 30px,transparent 30px 40px,#fff 40px 50px,transparent 50px 60px);opacity:.55}
 
 /* ── NAV (reste toujours en bleu foncé, fort contraste) ── */
-#nav{position:fixed;inset:10px 0 auto;z-index:200;padding:.3rem 5%;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:3rem;background:var(--bleu);box-shadow:0 4px 20px rgba(15,30,65,.18);transition:box-shadow var(--t)}
+#nav{position:fixed;inset:0 0 auto;z-index:200;padding:.3rem 5%;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:3rem;background:var(--bleu);box-shadow:0 4px 20px rgba(15,30,65,.18);transition:box-shadow var(--t)}
 #nav.solid{box-shadow:0 4px 26px rgba(15,30,65,.28)}
 .nav-logo{font-family:'Bebas Neue',sans-serif;font-size:1.5rem;letter-spacing:.12em;text-decoration:none;color:#FFFCED;display:flex;align-items:center;gap:.6rem}.nav-logo-center{justify-content:center}
 .nav-logo em{color:var(--rose);font-style:normal}
@@ -85,7 +85,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--ink);o
 #pg-subteam{display:none}
 
 /* ── HERO (motif carrés en pur CSS/SVG, plus d'image) ── */
-#hero{position:relative;overflow:hidden;padding:calc(120px + 3.5rem) 5% 4rem;background:var(--brand-blue);display:flex;align-items:center;justify-content:center;min-height:clamp(440px,52vw,640px)}
+#hero{position:relative;overflow:hidden;padding:calc(110px + 3.5rem) 5% 4rem;background:var(--brand-blue);display:flex;align-items:center;justify-content:center;min-height:clamp(440px,52vw,640px)}
 .hero-pixel-content{position:relative;z-index:2;max-width:640px;text-align:center}
 .hero-word{font-family:'Bebas Neue',sans-serif;color:#fff;line-height:.85;margin-bottom:1.6rem}
 .hw-small{display:block;font-size:clamp(1.5rem,3.2vw,2.4rem);letter-spacing:.18em}
@@ -144,11 +144,11 @@ body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--ink);o
 .history-body{font-size:.94rem;color:rgba(22,35,63,.72);line-height:1.85;font-weight:300}
 .history-body strong{color:var(--rose);font-weight:700}
 .about-extra{max-width:600px}
-.feat-grid{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:1.3rem;margin-bottom:2.2rem;justify-items:center;justify-content:center}
-.feat-grid li{background:var(--card);border:1px solid var(--border-navy);border-radius:0;overflow:hidden;box-shadow:var(--shadow-sm);width:100%;max-width:320px}
+.feat-grid{list-style:none;display:flex;flex-wrap:wrap;justify-content:center;gap:1.3rem;margin-bottom:2.2rem}
+.feat-grid li{background:var(--card);border:1px solid var(--border-navy);border-radius:0;overflow:hidden;box-shadow:var(--shadow-sm);width:calc((100% - 2.6rem)/3);max-width:320px}
 .feat-grid img{width:100%;height:auto;display:block}
-@media (max-width:820px){.feat-grid{grid-template-columns:repeat(2,1fr)}}
-@media (max-width:520px){.feat-grid{grid-template-columns:1fr}}
+@media (max-width:820px){.feat-grid li{width:calc((100% - 1.3rem)/2)}}
+@media (max-width:520px){.feat-grid li{width:100%}}
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:center}
 .sec-label{font-size:.72rem;font-weight:600;letter-spacing:.2em;color:var(--rose);text-transform:uppercase;margin-bottom:1rem}
 .sec-h2{font-family:'Bebas Neue',sans-serif;font-size:clamp(2.8rem,5vw,4.5rem);line-height:1;color:var(--ink);margin-bottom:1.5rem}
@@ -434,7 +434,7 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;back
   .hero-nums-dark{gap:1.6rem;margin-top:1.6rem}
   .hero-nums-dark .num-item .n{font-size:2.2rem}
   .hero-nums-dark .num-item .l{font-size:.6rem}
-  #hero{min-height:clamp(380px,90vw,520px);padding:calc(82px + 2.5rem) 6% 3rem}
+  #hero{min-height:clamp(380px,90vw,520px);padding:calc(72px + 2.5rem) 6% 3rem}
   .hero-pixel-content{padding:0 1.2rem}
   .hero-pixel-content .hero-eyebrow{margin-bottom:.9rem}
   .hero-pixel-content .hero-eyebrow p{font-size:.6rem}
