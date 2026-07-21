@@ -254,8 +254,9 @@ body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--ink);o
 .coach-photo{width:56px;height:56px;border-radius:50%;overflow:hidden;flex-shrink:0;background:linear-gradient(160deg,var(--blue-pale) 0%,rgba(234,59,121,.08) 100%);display:flex;align-items:center;justify-content:center}
 .coach-photo img{width:100%;height:100%;object-fit:cover;object-position:top center}
 .coach-photo svg{width:28px;height:28px;opacity:.3}
-.coach-info-role{font-size:.62rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--rose);margin-bottom:.1rem}
-.coach-info-name{font-family:'Bebas Neue',sans-serif;font-size:1.1rem;color:var(--ink);letter-spacing:.03em;line-height:1.15}
+.coach-info-role{font-size:.62rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--rose);margin-bottom:.15rem}
+.coach-info-fname{font-size:.7rem;color:rgba(22,35,63,.4);text-transform:uppercase;letter-spacing:.05em;margin-bottom:.05rem}
+.coach-info-lname{font-family:'Bebas Neue',sans-serif;font-size:1.05rem;color:var(--ink);letter-spacing:.03em;line-height:1.15}
 
 /* ── DATA TABLES ── */
 .data-sec{background:var(--card);border:1px solid var(--border);border-radius:0;overflow:hidden;margin-bottom:2rem;box-shadow:var(--shadow-sm)}
@@ -951,14 +952,14 @@ const GH = 'https://raw.githubusercontent.com/albanbontemps33-cell/hbcbazadais/m
 const GH_PARTNERS = GH;
 
 const TEAMS = [
-  {id:'loisir',cat:'Détente & Loisir',name:'Loisir',sheet:'loisir',coach1:'',coach2:'',roster:[]},
-  {id:'ecole',cat:'École de Handball',name:'École du Hand',sheet:'ecole du hand',coach1:'',coach2:'',roster:[]},
-  {id:'u11',cat:'Catégorie U11',name:'-11 Mixte',sheet:'u11',coach1:'',coach2:'',roster:[]},
-  {id:'u13f',cat:'Catégorie U13',name:'-13 Filles',sheet:'u13f',coach1:'',coach2:'',roster:[]},
-  {id:'u13g',cat:'Catégorie U13',name:'-13 Garçons',sheet:'u13g',coach1:'',coach2:'',roster:[]},
-  {id:'u15f',cat:'Catégorie U15',name:'-15 Filles',sheet:'u15f',coach1:'',coach2:'',roster:[]},
-  {id:'u15g',cat:'Catégorie U15',name:'-15 Garçons',sheet:'u15g',coach1:'',coach2:'',roster:[]},
-  {id:'u18f',cat:'Catégorie U18',name:'-18 Filles',sheet:'u18f',coach1:'',coach2:'',roster:[
+  {id:'loisir',cat:'Détente & Loisir',name:'Loisir',sheet:'loisir',coach1:{fname:'Prénom coach',lname:'Nom coach',photo:''},coach2:{fname:'Prénom coach',lname:'Nom coach',photo:''},roster:[]},
+  {id:'ecole',cat:'École de Handball',name:'École du Hand',sheet:'ecole du hand',coach1:{fname:'Prénom coach',lname:'Nom coach',photo:''},coach2:{fname:'Prénom coach',lname:'Nom coach',photo:''},roster:[]},
+  {id:'u11',cat:'Catégorie U11',name:'-11 Mixte',sheet:'u11',coach1:{fname:'Prénom coach',lname:'Nom coach',photo:''},coach2:{fname:'Prénom coach',lname:'Nom coach',photo:''},roster:[]},
+  {id:'u13f',cat:'Catégorie U13',name:'-13 Filles',sheet:'u13f',coach1:{fname:'Prénom coach',lname:'Nom coach',photo:''},coach2:{fname:'Prénom coach',lname:'Nom coach',photo:''},roster:[]},
+  {id:'u13g',cat:'Catégorie U13',name:'-13 Garçons',sheet:'u13g',coach1:{fname:'Prénom coach',lname:'Nom coach',photo:''},coach2:{fname:'Prénom coach',lname:'Nom coach',photo:''},roster:[]},
+  {id:'u15f',cat:'Catégorie U15',name:'-15 Filles',sheet:'u15f',coach1:{fname:'Prénom coach',lname:'Nom coach',photo:''},coach2:{fname:'Prénom coach',lname:'Nom coach',photo:''},roster:[]},
+  {id:'u15g',cat:'Catégorie U15',name:'-15 Garçons',sheet:'u15g',coach1:{fname:'Prénom coach',lname:'Nom coach',photo:''},coach2:{fname:'Prénom coach',lname:'Nom coach',photo:''},roster:[]},
+  {id:'u18f',cat:'Catégorie U18',name:'-18 Filles',sheet:'u18f',coach1:{fname:'Prénom coach',lname:'Nom coach',photo:''},coach2:{fname:'Prénom coach',lname:'Nom coach',photo:''},roster:[
     {num:'12',fname:'Romane',lname:'BEZIADE',pos:'Gardienne',photo:'u18f-12.jpg'},
     {num:'2',fname:'Cloé',lname:'BRICAUD',pos:'Arrière droite',photo:'u18f-2.jpg'},
     {num:'3',fname:'Inès',lname:'GIRARD',pos:'Ailière gauche',photo:'u18f-3.jpg'},
@@ -974,7 +975,7 @@ const TEAMS = [
     {num:'14',fname:'Anaëlle',lname:'DUPEYRE',pos:'Ailière gauche',photo:'u18f-14.jpg'},
     {num:'15',fname:'Yuna',lname:'MAEGERMAN--VEGA',pos:'Ailière droite',photo:'u18f-15.jpg'},
   ]},
-  {id:'u18g',cat:'Catégorie U18',name:'-18 Garçons',sheet:'u18g',coach1:'',coach2:'',roster:[
+  {id:'u18g',cat:'Catégorie U18',name:'-18 Garçons',sheet:'u18g',coach1:{fname:'Prénom coach',lname:'Nom coach',photo:''},coach2:{fname:'Prénom coach',lname:'Nom coach',photo:''},roster:[
     {num:'2',fname:'Gabriel',lname:'BEGUEY',pos:''},
     {num:'3',fname:'Migwel',lname:'GINESTE',pos:''},
     {num:'4',fname:'Enael',lname:'MAILLET',pos:'Gardien'},
@@ -986,7 +987,7 @@ const TEAMS = [
     {num:'13',fname:'Noé',lname:'CAZADE',pos:''},
     {num:'16',fname:'Hugo',lname:'DESCOUBES',pos:''},
   ]},
-  {id:'srf',cat:'Compétition Senior',name:'Seniors Filles',sheet:'srf',coach1:'',coach2:'',roster:[
+  {id:'srf',cat:'Compétition Senior',name:'Seniors Filles',sheet:'srf',coach1:{fname:'Prénom coach',lname:'Nom coach',photo:''},coach2:{fname:'Prénom coach',lname:'Nom coach',photo:''},roster:[
     {num:'2',fname:'Charlotte',lname:'PAILLAUGUE',pos:'Ailière gauche',photo:'sf-2.jpg'},
     {num:'3',fname:'Chloé',lname:'LEGLISE',pos:'Arrière droite',photo:'sf-3.jpg'},
     {num:'4',fname:'Maylis',lname:'BROTET',pos:'Arrière gauche',photo:'sf-4.jpg'},
@@ -1005,7 +1006,7 @@ const TEAMS = [
     {num:'17',fname:'Clémence',lname:'SORBIER',pos:'Ailière gauche',photo:'sf-17.jpg'},
     {num:'18',fname:'Camille',lname:'LEGLISE',pos:'Ailière droite',photo:'sf-18.jpg'},
   ]},
-  {id:'srg2',cat:'Compétition Senior',name:'Seniors Garçons 2',sheet:'srg2',coach1:'',coach2:'',roster:[
+  {id:'srg2',cat:'Compétition Senior',name:'Seniors Garçons 2',sheet:'srg2',coach1:{fname:'Prénom coach',lname:'Nom coach',photo:''},coach2:{fname:'Prénom coach',lname:'Nom coach',photo:''},roster:[
     {num:'1',fname:'Maxime',lname:'CARLIER',pos:'Gardien'},
     {num:'6',fname:'Aidan',lname:'LESCARRET',pos:'Arrière gauche'},
     {num:'11',fname:'Quentin',lname:'SINNAEVE',pos:'Arrière droit'},
@@ -1019,7 +1020,7 @@ const TEAMS = [
     {num:'62',fname:'Mathieu',lname:'LELONG',pos:'Arrière droit'},
     {num:'64',fname:'Manuel',lname:'GONCALVES BORLIDO',pos:'Demi-centre'},
   ]},
-  {id:'srg1',cat:'Compétition Senior',name:'Seniors Garçons 1',sheet:'srg1',coach1:'',coach2:'',roster:[
+  {id:'srg1',cat:'Compétition Senior',name:'Seniors Garçons 1',sheet:'srg1',coach1:{fname:'Prénom coach',lname:'Nom coach',photo:''},coach2:{fname:'Prénom coach',lname:'Nom coach',photo:''},roster:[
     {num:'2',fname:'Baptiste',lname:'DUFOUR CLARAC',pos:'Arrière gauche'},
     {num:'5',fname:'Léo',lname:'LABROUCHE',pos:'Ailier droit',photo:'sg-5.jpg'},
     {num:'10',fname:'Bastien',lname:'POISSON',pos:'Demi-centre',photo:'sg-10.jpg'},
@@ -1278,8 +1279,33 @@ function backToTeam() {
 function buildSub(type, team) {
   const subContainer = document.getElementById('subContent');
   if (type === 'effectif') {
+    const coaches = [
+      team.coach1 ? {label:'Coach 1', fname:team.coach1.fname, lname:team.coach1.lname, photo:team.coach1.photo} : null,
+      team.coach2 ? {label:'Coach 2', fname:team.coach2.fname, lname:team.coach2.lname, photo:team.coach2.photo} : null,
+    ].filter(Boolean);
+
+    const coachHTML = coaches.length ? `
+      <div class="coach-section">
+        <div class="coach-label">Encadrement</div>
+        <div class="coach-grid">
+          ${coaches.map(c => `
+            <div class="coach-card">
+              <div class="coach-photo">
+                ${c.photo
+                  ? `<img src="${GH}${c.photo}" alt="${c.fname} ${c.lname}" onerror="this.style.display='none'" loading="lazy">`
+                  : `<svg viewBox="0 0 80 140" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="40" cy="22" rx="18" ry="18" fill="rgba(234,59,121,0.3)"/><path d="M8 120 C8 80 18 65 40 62 C62 65 72 80 72 120" fill="rgba(234,59,121,0.2)"/></svg>`}
+              </div>
+              <div class="coach-info">
+                <div class="coach-info-role">${c.label}</div>
+                <div class="coach-info-fname">${c.fname}</div>
+                <div class="coach-info-lname">${c.lname}</div>
+              </div>
+            </div>`).join('')}
+        </div>
+      </div>` : '';
+
     if (!team.roster || !team.roster.length) {
-      subContainer.innerHTML = `<div class="soon-box"><div class="soon-chip">🔜 À venir</div><h4>Effectif en cours de saisie</h4><p>L'effectif de l'équipe ${team.name} sera bientôt disponible.</p></div>`;
+      subContainer.innerHTML = coachHTML + `<div class="soon-box"><div class="soon-chip">🔜 À venir</div><h4>Effectif en cours de saisie</h4><p>L'effectif de l'équipe ${team.name} sera bientôt disponible.</p></div>`;
       return;
     }
 
@@ -1309,30 +1335,6 @@ function buildSub(type, team) {
           <div class="pcard-lname">${p.lname}</div>
         </div>
       </div>`).join('');
-
-    const coaches = [
-      team.coach1 ? {label:'Coach 1', name:team.coach1, photo:team.coach1Photo} : null,
-      team.coach2 ? {label:'Coach 2', name:team.coach2, photo:team.coach2Photo} : null,
-    ].filter(Boolean);
-
-    const coachHTML = coaches.length ? `
-      <div class="coach-section">
-        <div class="coach-label">Encadrement</div>
-        <div class="coach-grid">
-          ${coaches.map(c => `
-            <div class="coach-card">
-              <div class="coach-photo">
-                ${c.photo
-                  ? `<img src="${GH}${c.photo}" alt="${c.name}" onerror="this.style.display='none'" loading="lazy">`
-                  : `<svg viewBox="0 0 80 140" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="40" cy="22" rx="18" ry="18" fill="rgba(234,59,121,0.3)"/><path d="M8 120 C8 80 18 65 40 62 C62 65 72 80 72 120" fill="rgba(234,59,121,0.2)"/></svg>`}
-              </div>
-              <div class="coach-info">
-                <div class="coach-info-role">${c.label}</div>
-                <div class="coach-info-name">${c.name}</div>
-              </div>
-            </div>`).join('')}
-        </div>
-      </div>` : '';
 
     subContainer.innerHTML = `
       <div class="eff-header">
