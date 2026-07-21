@@ -246,6 +246,17 @@ body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--ink);o
 .pcard-fname{font-size:.72rem;color:rgba(22,35,63,.4);text-transform:uppercase;letter-spacing:.05em;margin-bottom:.1rem}
 .pcard-lname{font-family:'Bebas Neue',sans-serif;font-size:1.2rem;color:var(--ink);letter-spacing:.04em;line-height:1.1}
 
+/* ── COACHS ── */
+.coach-section{margin-bottom:2.2rem}
+.coach-label{font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:rgba(22,35,63,.4);margin-bottom:.9rem}
+.coach-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+.coach-card{background:var(--card);border-radius:var(--radius);border:1px solid var(--border-navy);box-shadow:var(--shadow-sm);display:flex;align-items:center;gap:1rem;padding:1rem 1.2rem}
+.coach-photo{width:56px;height:56px;border-radius:50%;overflow:hidden;flex-shrink:0;background:linear-gradient(160deg,var(--blue-pale) 0%,rgba(234,59,121,.08) 100%);display:flex;align-items:center;justify-content:center}
+.coach-photo img{width:100%;height:100%;object-fit:cover;object-position:top center}
+.coach-photo svg{width:28px;height:28px;opacity:.3}
+.coach-info-role{font-size:.62rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--rose);margin-bottom:.1rem}
+.coach-info-name{font-family:'Bebas Neue',sans-serif;font-size:1.1rem;color:var(--ink);letter-spacing:.03em;line-height:1.15}
+
 /* ── DATA TABLES ── */
 .data-sec{background:var(--card);border:1px solid var(--border);border-radius:0;overflow:hidden;margin-bottom:2rem;box-shadow:var(--shadow-sm)}
 .data-sec-head{padding:1.2rem 1.5rem;border-bottom:1px solid var(--border)}
@@ -940,30 +951,30 @@ const GH = 'https://raw.githubusercontent.com/albanbontemps33-cell/hbcbazadais/m
 const GH_PARTNERS = GH;
 
 const TEAMS = [
-  {id:'loisir',cat:'Détente & Loisir',name:'Loisir',sheet:'loisir',roster:[]},
-  {id:'ecole',cat:'École de Handball',name:'École du Hand',sheet:'ecole du hand',roster:[]},
-  {id:'u11',cat:'Catégorie U11',name:'-11 Mixte',sheet:'u11',roster:[]},
-  {id:'u13f',cat:'Catégorie U13',name:'-13 Filles',sheet:'u13f',roster:[]},
-  {id:'u13g',cat:'Catégorie U13',name:'-13 Garçons',sheet:'u13g',roster:[]},
-  {id:'u15f',cat:'Catégorie U15',name:'-15 Filles',sheet:'u15f',roster:[]},
-  {id:'u15g',cat:'Catégorie U15',name:'-15 Garçons',sheet:'u15g',roster:[]},
-  {id:'u18f',cat:'Catégorie U18',name:'-18 Filles',sheet:'u18f',roster:[
+  {id:'loisir',cat:'Détente & Loisir',name:'Loisir',sheet:'loisir',coach1:'',coach2:'',roster:[]},
+  {id:'ecole',cat:'École de Handball',name:'École du Hand',sheet:'ecole du hand',coach1:'',coach2:'',roster:[]},
+  {id:'u11',cat:'Catégorie U11',name:'-11 Mixte',sheet:'u11',coach1:'',coach2:'',roster:[]},
+  {id:'u13f',cat:'Catégorie U13',name:'-13 Filles',sheet:'u13f',coach1:'',coach2:'',roster:[]},
+  {id:'u13g',cat:'Catégorie U13',name:'-13 Garçons',sheet:'u13g',coach1:'',coach2:'',roster:[]},
+  {id:'u15f',cat:'Catégorie U15',name:'-15 Filles',sheet:'u15f',coach1:'',coach2:'',roster:[]},
+  {id:'u15g',cat:'Catégorie U15',name:'-15 Garçons',sheet:'u15g',coach1:'',coach2:'',roster:[]},
+  {id:'u18f',cat:'Catégorie U18',name:'-18 Filles',sheet:'u18f',coach1:'',coach2:'',roster:[
     {num:'12',fname:'Romane',lname:'BEZIADE',pos:'Gardienne',photo:'u18f-12.jpg'},
     {num:'2',fname:'Cloé',lname:'BRICAUD',pos:'Arrière droite',photo:'u18f-2.jpg'},
-    {num:'3',fname:'Inès',lname:'GIRARD',pos:'Aillière gauche',photo:'u18f-3.jpg'},
-    {num:'4',fname:'Inès',lname:'BUREAU',pos:'Aillière gauche',photo:'u18f-4.jpg'},
+    {num:'3',fname:'Inès',lname:'GIRARD',pos:'Ailière gauche',photo:'u18f-3.jpg'},
+    {num:'4',fname:'Inès',lname:'BUREAU',pos:'Ailière gauche',photo:'u18f-4.jpg'},
     {num:'5',fname:'Jaëlle',lname:'LABROUCHE',pos:'Demi-centre',photo:'u18f-5.jpg'},
     {num:'6',fname:'Ange',lname:'WAVRANT',pos:'Arrière gauche',photo:'u18f-6.jpg'},
     {num:'7',fname:'Naëlle',lname:'RENAC',pos:'Pivot',photo:'u18f-7.jpg'},
     {num:'8',fname:'Ainhoa',lname:'BENTEJAC',pos:'Arrière droite',photo:'u18f-8.jpg'},
-    {num:'9',fname:'Héloïse',lname:'JOUGUET',pos:'Aillière droite',photo:'u18f-9.jpg'},
+    {num:'9',fname:'Héloïse',lname:'JOUGUET',pos:'Ailière droite',photo:'u18f-9.jpg'},
     {num:'10',fname:'Noélane',lname:'BROTET',pos:'Pivot',photo:'u18f-10.jpg'},
     {num:'11',fname:'Océane',lname:'ESPAGNET--MICHEAU',pos:'Demi-centre',photo:'u18f-11.jpg'},
-    {num:'13',fname:'Lucile',lname:'VENNAT',pos:'Aillière droite',photo:'u18f-13.jpg'},
+    {num:'13',fname:'Lucile',lname:'VENNAT',pos:'Ailière droite',photo:'u18f-13.jpg'},
     {num:'14',fname:'Anaëlle',lname:'DUPEYRE',pos:'Ailière gauche',photo:'u18f-14.jpg'},
-    {num:'15',fname:'Yuna',lname:'MAEGERMAN--VEGA',pos:'Aillière droite',photo:'u18f-15.jpg'},
+    {num:'15',fname:'Yuna',lname:'MAEGERMAN--VEGA',pos:'Ailière droite',photo:'u18f-15.jpg'},
   ]},
-  {id:'u18g',cat:'Catégorie U18',name:'-18 Garçons',sheet:'u18g',roster:[
+  {id:'u18g',cat:'Catégorie U18',name:'-18 Garçons',sheet:'u18g',coach1:'',coach2:'',roster:[
     {num:'2',fname:'Gabriel',lname:'BEGUEY',pos:''},
     {num:'3',fname:'Migwel',lname:'GINESTE',pos:''},
     {num:'4',fname:'Enael',lname:'MAILLET',pos:'Gardien'},
@@ -975,26 +986,26 @@ const TEAMS = [
     {num:'13',fname:'Noé',lname:'CAZADE',pos:''},
     {num:'16',fname:'Hugo',lname:'DESCOUBES',pos:''},
   ]},
-  {id:'srf',cat:'Compétition Senior',name:'Seniors Filles',sheet:'srf',roster:[
-    {num:'2',fname:'Charlotte',lname:'PAILLAUGUE',pos:'Aillière gauche',photo:'sf-2.jpg'},
+  {id:'srf',cat:'Compétition Senior',name:'Seniors Filles',sheet:'srf',coach1:'',coach2:'',roster:[
+    {num:'2',fname:'Charlotte',lname:'PAILLAUGUE',pos:'Ailière gauche',photo:'sf-2.jpg'},
     {num:'3',fname:'Chloé',lname:'LEGLISE',pos:'Arrière droite',photo:'sf-3.jpg'},
     {num:'4',fname:'Maylis',lname:'BROTET',pos:'Arrière gauche',photo:'sf-4.jpg'},
-    {num:'5',fname:'Lomane',lname:'DUPIOL',pos:'Aillière droite',photo:'sf-5.jpg'},
-    {num:'7',fname:'Laura',lname:'DESCACQ',pos:'Aillière droite',photo:'sf-7.jpg'},
+    {num:'5',fname:'Lomane',lname:'DUPIOL',pos:'Ailière droite',photo:'sf-5.jpg'},
+    {num:'7',fname:'Laura',lname:'DESCACQ',pos:'Ailière droite',photo:'sf-7.jpg'},
     {num:'8',fname:'Chloé',lname:'HUR',pos:'Demi-centre',photo:'sf-8.jpg'},
     {num:'6',fname:'Déborah',lname:'DOUX',pos:'Pivot',photo:'sf-6.jpg'},
     {num:'9',fname:'Loriane',lname:'TOUTENUIT',pos:'Demi-centre',photo:'sf-9.jpg'},
-    {num:'10',fname:'Lison',lname:'DUPLAN',pos:'Aillière gauche',photo:'sf-10.jpg'},
+    {num:'10',fname:'Lison',lname:'DUPLAN',pos:'Ailière gauche',photo:'sf-10.jpg'},
     {num:'11',fname:'Jessica',lname:'LABROUCHE',pos:'Gardienne',photo:'sf-11.jpg'},
     {num:'12',fname:'Chloé',lname:'DARETTE--MORGADO',pos:'Pivot',photo:'sf-12.jpg'},
     {num:'13',fname:'Valérie',lname:'DUCOS',pos:'Pivot',photo:'sf-13.jpg'},
     {num:'14',fname:'Margot',lname:'AUDOIT',pos:'Arrière droite',photo:'sf-14.jpg'},
     {num:'16',fname:'Clara',lname:'LAHAYE',pos:'Gardienne',photo:'sf-16.jpg'},
     {num:'15',fname:'Zoé',lname:'BURONFOSSE',pos:'Arrière gauche',photo:'sf-15.jpg'},
-    {num:'17',fname:'Clémence',lname:'SORBIER',pos:'Aillière gauche',photo:'sf-17.jpg'},
-    {num:'18',fname:'Camille',lname:'LEGLISE',pos:'Aillière droite',photo:'sf-18.jpg'},
+    {num:'17',fname:'Clémence',lname:'SORBIER',pos:'Ailière gauche',photo:'sf-17.jpg'},
+    {num:'18',fname:'Camille',lname:'LEGLISE',pos:'Ailière droite',photo:'sf-18.jpg'},
   ]},
-  {id:'srg2',cat:'Compétition Senior',name:'Seniors Garçons 2',sheet:'srg2',roster:[
+  {id:'srg2',cat:'Compétition Senior',name:'Seniors Garçons 2',sheet:'srg2',coach1:'',coach2:'',roster:[
     {num:'1',fname:'Maxime',lname:'CARLIER',pos:'Gardien'},
     {num:'6',fname:'Aidan',lname:'LESCARRET',pos:'Arrière gauche'},
     {num:'11',fname:'Quentin',lname:'SINNAEVE',pos:'Arrière droit'},
@@ -1008,7 +1019,7 @@ const TEAMS = [
     {num:'62',fname:'Mathieu',lname:'LELONG',pos:'Arrière droit'},
     {num:'64',fname:'Manuel',lname:'GONCALVES BORLIDO',pos:'Demi-centre'},
   ]},
-  {id:'srg1',cat:'Compétition Senior',name:'Seniors Garçons 1',sheet:'srg1',roster:[
+  {id:'srg1',cat:'Compétition Senior',name:'Seniors Garçons 1',sheet:'srg1',coach1:'',coach2:'',roster:[
     {num:'2',fname:'Baptiste',lname:'DUFOUR CLARAC',pos:'Arrière gauche'},
     {num:'5',fname:'Léo',lname:'LABROUCHE',pos:'Ailier droit',photo:'sg-5.jpg'},
     {num:'10',fname:'Bastien',lname:'POISSON',pos:'Demi-centre',photo:'sg-10.jpg'},
@@ -1299,11 +1310,36 @@ function buildSub(type, team) {
         </div>
       </div>`).join('');
 
+    const coaches = [
+      team.coach1 ? {label:'Coach 1', name:team.coach1, photo:team.coach1Photo} : null,
+      team.coach2 ? {label:'Coach 2', name:team.coach2, photo:team.coach2Photo} : null,
+    ].filter(Boolean);
+
+    const coachHTML = coaches.length ? `
+      <div class="coach-section">
+        <div class="coach-label">Encadrement</div>
+        <div class="coach-grid">
+          ${coaches.map(c => `
+            <div class="coach-card">
+              <div class="coach-photo">
+                ${c.photo
+                  ? `<img src="${GH}${c.photo}" alt="${c.name}" onerror="this.style.display='none'" loading="lazy">`
+                  : `<svg viewBox="0 0 80 140" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="40" cy="22" rx="18" ry="18" fill="rgba(234,59,121,0.3)"/><path d="M8 120 C8 80 18 65 40 62 C62 65 72 80 72 120" fill="rgba(234,59,121,0.2)"/></svg>`}
+              </div>
+              <div class="coach-info">
+                <div class="coach-info-role">${c.label}</div>
+                <div class="coach-info-name">${c.name}</div>
+              </div>
+            </div>`).join('')}
+        </div>
+      </div>` : '';
+
     subContainer.innerHTML = `
       <div class="eff-header">
         <div class="eff-season">2025/26</div>
         <div class="eff-filters">${filters}</div>
       </div>
+      ${coachHTML}
       <div class="players-grid" id="pgrid">${cards}</div>`;
     initReveal();
     return;
