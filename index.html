@@ -1353,18 +1353,18 @@ function buildSub(type, team) {
 
 // Correspondance team.sheet → lien CSV publié du Google Sheet (un onglet = une équipe)
 const SHEET_CSV_URLS = {
-  srg1:          'https://docs.google.com/spreadsheets/d/e/2PACX-1vSVwWf2uxkEbwxnQvyT4I5tuDQPYEW8nrMPlygxtE-N9b8BLdg85-5kO1bpCJpPbw2s8twcnvrBg1lx/pub?gid=0&single=true&output=csv',
-  srg2:          'https://docs.google.com/spreadsheets/d/e/2PACX-1vSVwWf2uxkEbwxnQvyT4I5tuDQPYEW8nrMPlygxtE-N9b8BLdg85-5kO1bpCJpPbw2s8twcnvrBg1lx/pub?gid=2024562386&single=true&output=csv',
-  srf:           'https://docs.google.com/spreadsheets/d/e/2PACX-1vSVwWf2uxkEbwxnQvyT4I5tuDQPYEW8nrMPlygxtE-N9b8BLdg85-5kO1bpCJpPbw2s8twcnvrBg1lx/pub?gid=1713134330&single=true&output=csv',
-  u18f:          'https://docs.google.com/spreadsheets/d/e/2PACX-1vSVwWf2uxkEbwxnQvyT4I5tuDQPYEW8nrMPlygxtE-N9b8BLdg85-5kO1bpCJpPbw2s8twcnvrBg1lx/pub?gid=2034944667&single=true&output=csv',
-  u18g:          'https://docs.google.com/spreadsheets/d/e/2PACX-1vSVwWf2uxkEbwxnQvyT4I5tuDQPYEW8nrMPlygxtE-N9b8BLdg85-5kO1bpCJpPbw2s8twcnvrBg1lx/pub?gid=788253266&single=true&output=csv',
-  u15f:          'https://docs.google.com/spreadsheets/d/e/2PACX-1vSVwWf2uxkEbwxnQvyT4I5tuDQPYEW8nrMPlygxtE-N9b8BLdg85-5kO1bpCJpPbw2s8twcnvrBg1lx/pub?gid=1639716402&single=true&output=csv',
-  u15g:          'https://docs.google.com/spreadsheets/d/e/2PACX-1vSVwWf2uxkEbwxnQvyT4I5tuDQPYEW8nrMPlygxtE-N9b8BLdg85-5kO1bpCJpPbw2s8twcnvrBg1lx/pub?gid=1494554168&single=true&output=csv',
-  u13f:          'https://docs.google.com/spreadsheets/d/e/2PACX-1vSVwWf2uxkEbwxnQvyT4I5tuDQPYEW8nrMPlygxtE-N9b8BLdg85-5kO1bpCJpPbw2s8twcnvrBg1lx/pub?gid=1414444974&single=true&output=csv',
-  u13g:          'https://docs.google.com/spreadsheets/d/e/2PACX-1vSVwWf2uxkEbwxnQvyT4I5tuDQPYEW8nrMPlygxtE-N9b8BLdg85-5kO1bpCJpPbw2s8twcnvrBg1lx/pub?gid=995232666&single=true&output=csv',
-  u11:           'https://docs.google.com/spreadsheets/d/e/2PACX-1vSVwWf2uxkEbwxnQvyT4I5tuDQPYEW8nrMPlygxtE-N9b8BLdg85-5kO1bpCJpPbw2s8twcnvrBg1lx/pub?gid=1480167727&single=true&output=csv',
-  'ecole du hand':'https://docs.google.com/spreadsheets/d/e/2PACX-1vSVwWf2uxkEbwxnQvyT4I5tuDQPYEW8nrMPlygxtE-N9b8BLdg85-5kO1bpCJpPbw2s8twcnvrBg1lx/pub?gid=987394857&single=true&output=csv',
-  loisir:        'https://docs.google.com/spreadsheets/d/e/2PACX-1vSVwWf2uxkEbwxnQvyT4I5tuDQPYEW8nrMPlygxtE-N9b8BLdg85-5kO1bpCJpPbw2s8twcnvrBg1lx/pub?gid=1909067595&single=true&output=csv',
+  srg1:          'https://docs.google.com/spreadsheets/d/e/2PACX-1vTHtdFedebW69kCLndSiseuZXca_Tumv9XVCAbvDYnfOQ0gPU4N2Y78JlDmE0VE_P6iDl41GLXe7t12/pub?gid=0&single=true&output=csv',
+  srg2:          'https://docs.google.com/spreadsheets/d/e/2PACX-1vTHtdFedebW69kCLndSiseuZXca_Tumv9XVCAbvDYnfOQ0gPU4N2Y78JlDmE0VE_P6iDl41GLXe7t12/pub?gid=915629527&single=true&output=csv',
+  srf:           'https://docs.google.com/spreadsheets/d/e/2PACX-1vTHtdFedebW69kCLndSiseuZXca_Tumv9XVCAbvDYnfOQ0gPU4N2Y78JlDmE0VE_P6iDl41GLXe7t12/pub?gid=789017595&single=true&output=csv',
+  u18f:          'https://docs.google.com/spreadsheets/d/e/2PACX-1vTHtdFedebW69kCLndSiseuZXca_Tumv9XVCAbvDYnfOQ0gPU4N2Y78JlDmE0VE_P6iDl41GLXe7t12/pub?gid=1336380898&single=true&output=csv',
+  u18g:          'https://docs.google.com/spreadsheets/d/e/2PACX-1vTHtdFedebW69kCLndSiseuZXca_Tumv9XVCAbvDYnfOQ0gPU4N2Y78JlDmE0VE_P6iDl41GLXe7t12/pub?gid=812962704&single=true&output=csv',
+  u15f:          'https://docs.google.com/spreadsheets/d/e/2PACX-1vTHtdFedebW69kCLndSiseuZXca_Tumv9XVCAbvDYnfOQ0gPU4N2Y78JlDmE0VE_P6iDl41GLXe7t12/pub?gid=930445169&single=true&output=csv',
+  u15g:          'https://docs.google.com/spreadsheets/d/e/2PACX-1vTHtdFedebW69kCLndSiseuZXca_Tumv9XVCAbvDYnfOQ0gPU4N2Y78JlDmE0VE_P6iDl41GLXe7t12/pub?gid=935331897&single=true&output=csv',
+  u13f:          'https://docs.google.com/spreadsheets/d/e/2PACX-1vTHtdFedebW69kCLndSiseuZXca_Tumv9XVCAbvDYnfOQ0gPU4N2Y78JlDmE0VE_P6iDl41GLXe7t12/pub?gid=181506747&single=true&output=csv',
+  u13g:          'https://docs.google.com/spreadsheets/d/e/2PACX-1vTHtdFedebW69kCLndSiseuZXca_Tumv9XVCAbvDYnfOQ0gPU4N2Y78JlDmE0VE_P6iDl41GLXe7t12/pub?gid=1693896440&single=true&output=csv',
+  u11:           'https://docs.google.com/spreadsheets/d/e/2PACX-1vTHtdFedebW69kCLndSiseuZXca_Tumv9XVCAbvDYnfOQ0gPU4N2Y78JlDmE0VE_P6iDl41GLXe7t12/pub?gid=2032696759&single=true&output=csv',
+  'ecole du hand':'https://docs.google.com/spreadsheets/d/e/2PACX-1vTHtdFedebW69kCLndSiseuZXca_Tumv9XVCAbvDYnfOQ0gPU4N2Y78JlDmE0VE_P6iDl41GLXe7t12/pub?gid=1860051830&single=true&output=csv',
+  loisir:        'https://docs.google.com/spreadsheets/d/e/2PACX-1vTHtdFedebW69kCLndSiseuZXca_Tumv9XVCAbvDYnfOQ0gPU4N2Y78JlDmE0VE_P6iDl41GLXe7t12/pub?gid=933887710&single=true&output=csv',
 };
 
 // Nom exact du club tel qu'écrit dans la colonne "club" / "domicile"/"exterieur" du Sheet, pour le surlignage
