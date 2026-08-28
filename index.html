@@ -566,9 +566,62 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;back
   .nav-logo-center img{height:90px;width:90px}
 }
 
+/* ── POPUP TOURNOI ── */
+#tournoiOverlay{position:fixed;inset:0;z-index:500;background:rgba(15,30,65,.6);backdrop-filter:blur(3px);display:flex;align-items:center;justify-content:center;padding:1.2rem;opacity:0;visibility:hidden;transition:opacity var(--t),visibility var(--t)}
+#tournoiOverlay.open{opacity:1;visibility:visible}
+.tournoi-modal{position:relative;background:var(--cream);border-radius:var(--radius);box-shadow:var(--shadow-md);max-width:460px;width:100%;overflow:hidden;transform:translateY(16px) scale(.97);transition:transform var(--t);border:1px solid var(--border)}
+#tournoiOverlay.open .tournoi-modal{transform:translateY(0) scale(1)}
+.tournoi-strip{height:6px;width:100%;background:var(--bleu)}
+.tournoi-close{position:absolute;top:.9rem;right:.9rem;width:32px;height:32px;border-radius:50%;background:rgba(15,30,65,.06);border:none;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:background var(--t);z-index:2}
+.tournoi-close:hover{background:rgba(234,59,121,.18)}
+.tournoi-close svg{width:15px;height:15px}
+.tournoi-close svg path{stroke:var(--ink)}
+.tournoi-body{padding:2rem 1.8rem 1.8rem}
+.tournoi-tag{display:inline-block;background:var(--rose);color:#fff;font-size:.62rem;font-weight:700;letter-spacing:.1em;padding:.28rem .65rem;text-transform:uppercase;margin-bottom:1rem}
+.tournoi-title{font-family:'Bebas Neue',sans-serif;font-size:2.1rem;letter-spacing:.03em;color:var(--bleu);line-height:1;margin-bottom:.9rem}
+.tournoi-title em{color:var(--rose);font-style:normal}
+.tournoi-text{font-size:.92rem;line-height:1.55;color:var(--ink);opacity:.85;margin-bottom:.4rem}
+.tournoi-infos{display:flex;flex-wrap:wrap;gap:.5rem 1.2rem;margin:1.1rem 0 1.6rem;font-size:.82rem;font-weight:600;color:var(--bleu)}
+.tournoi-infos span{display:flex;align-items:center;gap:.4rem}
+.tournoi-actions{display:flex;flex-direction:column;gap:.7rem}
+.tournoi-btn-main{display:flex;align-items:center;justify-content:center;gap:.6rem;background:var(--rose);color:#fff;padding:.9rem 1.4rem;border-radius:var(--radius);font-size:.8rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;text-decoration:none;transition:all var(--t)}
+.tournoi-btn-main:hover{filter:brightness(1.08);transform:translateY(-1px)}
+.tournoi-btn-sec{display:flex;align-items:center;justify-content:center;gap:.6rem;border:1px solid rgba(15,30,65,.2);color:var(--ink);padding:.85rem 1.4rem;border-radius:var(--radius);font-size:.78rem;font-weight:600;letter-spacing:.04em;text-decoration:none;transition:all var(--t)}
+.tournoi-btn-sec:hover{border-color:var(--rose);color:var(--rose);background:rgba(234,59,121,.06)}
+.tournoi-btn-main svg,.tournoi-btn-sec svg{width:18px;height:18px;flex-shrink:0}
+.tournoi-note{text-align:center;font-size:.78rem;color:var(--ink);opacity:.65;margin-top:.2rem}
+.tournoi-note b{color:var(--rose);font-weight:700}
+@media(max-width:480px){.tournoi-title{font-size:1.7rem}.tournoi-body{padding:1.7rem 1.3rem 1.4rem}}
 </style>
 </head>
 <body>
+
+<!-- POPUP TOURNOI -->
+<div id="tournoiOverlay" role="dialog" aria-modal="true" aria-labelledby="tournoiTitle">
+  <div class="tournoi-modal">
+    <div class="tournoi-strip" aria-hidden="true"></div>
+    <button class="tournoi-close" onclick="closeTournoiPopup()" aria-label="Fermer">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 5L19 19M19 5L5 19" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+    <div class="tournoi-body">
+      <span class="tournoi-tag">Événement</span>
+      <h2 id="tournoiTitle" class="tournoi-title">Tournoi de <em>handball</em></h2>
+      <p class="tournoi-text">Tournoi de handball ouvert à tous, organisé par le HBC Bazadais. Venez nombreux, en famille ou entre amis !</p>
+      <div class="tournoi-infos">
+        <span>📅 Samedi 5 septembre</span>
+        <span>🕐 13h – 16h30</span>
+        <span>📍 Gymnase Sainte Cluque, Bazas</span>
+      </div>
+      <div class="tournoi-actions">
+        <a class="tournoi-btn-main" href="https://www.instagram.com/hbcbazadais_/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          Je m'inscris
+        </a>
+        <p class="tournoi-note">ou envoyez un message directement au compte <b>@hbcbazadais_</b> sur Instagram</p>
+      </div>
+    </div>
+  </div>
+</div>
 
 <div class="pixel-divider" aria-hidden="true"></div>
 
@@ -1508,6 +1561,33 @@ function buildCarousel() {
   }
   requestAnimationFrame(tick);
 }
+
+// ── POPUP TOURNOI ──
+function closeTournoiPopup() {
+  document.getElementById('tournoiOverlay').classList.remove('open');
+  document.body.style.overflow = '';
+}
+(function initTournoiPopup() {
+  const STORAGE_KEY = 'hbc_tournoi_popup_last_shown';
+  const ONE_DAY = 24 * 60 * 60 * 1000;
+  const last = localStorage.getItem(STORAGE_KEY);
+  const now = Date.now();
+  if (last && (now - parseInt(last, 10)) < ONE_DAY) return; // déjà vu aujourd'hui
+
+  setTimeout(() => {
+    const overlay = document.getElementById('tournoiOverlay');
+    overlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    localStorage.setItem(STORAGE_KEY, String(now));
+  }, 2000);
+
+  document.getElementById('tournoiOverlay').addEventListener('click', (e) => {
+    if (e.target.id === 'tournoiOverlay') closeTournoiPopup();
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeTournoiPopup();
+  });
+})();
 
 // ── INIT ──
 buildTeams();
