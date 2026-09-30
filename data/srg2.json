@@ -15,7 +15,8 @@
    "bc": 46,
    "diff": 18,
    "points": 6,
-   "nous": false
+   "nous": false,
+   "stats_partielles": false
   },
   {
    "rang": 2,
@@ -28,7 +29,8 @@
    "bc": 50,
    "diff": 12,
    "points": 6,
-   "nous": false
+   "nous": false,
+   "stats_partielles": false
   },
   {
    "rang": 3,
@@ -41,7 +43,8 @@
    "bc": 45,
    "diff": 4,
    "points": 4,
-   "nous": false
+   "nous": false,
+   "stats_partielles": false
   },
   {
    "rang": 4,
@@ -54,7 +57,8 @@
    "bc": 59,
    "diff": 1,
    "points": 4,
-   "nous": false
+   "nous": false,
+   "stats_partielles": false
   },
   {
    "rang": 5,
@@ -67,7 +71,8 @@
    "bc": 67,
    "diff": -13,
    "points": 2,
-   "nous": false
+   "nous": false,
+   "stats_partielles": false
   },
   {
    "rang": 6,
@@ -80,27 +85,16 @@
    "bc": 67,
    "diff": -22,
    "points": 2,
-   "nous": true
+   "nous": true,
+   "stats_partielles": false
   }
  ],
  "calendrier": [
   {
-   "id": "2676583",
-   "journee": 1,
-   "iso": "2026-09-19T00:00",
-   "date": "SAMEDI 19 SEPTEMBRE 2026 À 19h30",
-   "domicile": "HBC BAZADAIS 2",
-   "exterieur": "HANDBALL CLUB SAINT SYMPHORIEN",
-   "score_dom": 21,
-   "score_ext": 27,
-   "statut": "joué",
-   "nous": true
-  },
-  {
    "id": "2676584",
    "journee": 1,
-   "iso": "2026-09-19T00:00",
-   "date": "SAMEDI 19 SEPTEMBRE 2026 À 19h00",
+   "iso": "2026-09-19T19:00",
+   "date": "Samedi 19 septembre 2026 à 19h00",
    "domicile": "ASSOCIATION SPORTIVE DE HANDBALL BRANNAIS",
    "exterieur": "US MIOS BIGANOS 2",
    "score_dom": 35,
@@ -109,10 +103,22 @@
    "nous": false
   },
   {
+   "id": "2676583",
+   "journee": 1,
+   "iso": "2026-09-19T19:30",
+   "date": "Samedi 19 septembre 2026 à 19h30",
+   "domicile": "HBC BAZADAIS 2",
+   "exterieur": "HANDBALL CLUB SAINT SYMPHORIEN",
+   "score_dom": 21,
+   "score_ext": 27,
+   "statut": "joué",
+   "nous": true
+  },
+  {
    "id": "2676585",
    "journee": 1,
-   "iso": "2026-09-19T00:00",
-   "date": "SAMEDI 19 SEPTEMBRE 2026 À 21h00",
+   "iso": "2026-09-19T21:00",
+   "date": "Samedi 19 septembre 2026 à 21h00",
    "domicile": "HBC TEICHOIS 2",
    "exterieur": "ST MEDARD HANDBALL 2",
    "score_dom": 38,
@@ -121,22 +127,10 @@
    "nous": false
   },
   {
-   "id": "2676586",
-   "journee": 2,
-   "iso": "2026-09-26T00:00",
-   "date": "SAMEDI 26 SEPTEMBRE 2026 À 19h00",
-   "domicile": "HANDBALL CLUB SAINT SYMPHORIEN",
-   "exterieur": "HBC TEICHOIS 2",
-   "score_dom": 22,
-   "score_ext": 24,
-   "statut": "joué",
-   "nous": false
-  },
-  {
    "id": "2676587",
    "journee": 2,
-   "iso": "2026-09-26T00:00",
-   "date": "SAMEDI 26 SEPTEMBRE 2026 À 17h30",
+   "iso": "2026-09-26T17:30",
+   "date": "Samedi 26 septembre 2026 à 17h30",
    "domicile": "US MIOS BIGANOS 2",
    "exterieur": "HBC BAZADAIS 2",
    "score_dom": 40,
@@ -145,10 +139,22 @@
    "nous": true
   },
   {
+   "id": "2676586",
+   "journee": 2,
+   "iso": "2026-09-26T19:00",
+   "date": "Samedi 26 septembre 2026 à 19h00",
+   "domicile": "HANDBALL CLUB SAINT SYMPHORIEN",
+   "exterieur": "HBC TEICHOIS 2",
+   "score_dom": 22,
+   "score_ext": 24,
+   "statut": "joué",
+   "nous": false
+  },
+  {
    "id": "2676588",
    "journee": 2,
-   "iso": "2026-09-27T00:00",
-   "date": "DIMANCHE 27 SEPTEMBRE 2026 À 14h00",
+   "iso": "2026-09-27T14:00",
+   "date": "Dimanche 27 septembre 2026 à 14h00",
    "domicile": "ST MEDARD HANDBALL 2",
    "exterieur": "ASSOCIATION SPORTIVE DE HANDBALL BRANNAIS",
    "score_dom": 26,
@@ -159,8 +165,8 @@
   {
    "id": "2676591",
    "journee": 3,
-   "iso": "2026-10-03T00:00",
-   "date": "SAMEDI 3 OCTOBRE 2026 À 17h30",
+   "iso": "2026-10-03T17:30",
+   "date": "Samedi 3 octobre 2026 à 17h30",
    "domicile": "HBC BAZADAIS 2",
    "exterieur": "HBC TEICHOIS 2",
    "score_dom": null,
@@ -169,22 +175,10 @@
    "nous": true
   },
   {
-   "id": "2676589",
-   "journee": 3,
-   "iso": "2026-10-04T00:00",
-   "date": "DIMANCHE 4 OCTOBRE 2026 À 16h00",
-   "domicile": "ST MEDARD HANDBALL 2",
-   "exterieur": "US MIOS BIGANOS 2",
-   "score_dom": null,
-   "score_ext": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
    "id": "2676590",
    "journee": 3,
-   "iso": "2026-10-04T00:00",
-   "date": "DIMANCHE 4 OCTOBRE 2026 À 15h00",
+   "iso": "2026-10-04T15:00",
+   "date": "Dimanche 4 octobre 2026 à 15h00",
    "domicile": "ASSOCIATION SPORTIVE DE HANDBALL BRANNAIS",
    "exterieur": "HANDBALL CLUB SAINT SYMPHORIEN",
    "score_dom": null,
@@ -193,10 +187,34 @@
    "nous": false
   },
   {
+   "id": "2676589",
+   "journee": 3,
+   "iso": "2026-10-04T16:00",
+   "date": "Dimanche 4 octobre 2026 à 16h00",
+   "domicile": "ST MEDARD HANDBALL 2",
+   "exterieur": "US MIOS BIGANOS 2",
+   "score_dom": null,
+   "score_ext": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
+   "id": "2676594",
+   "journee": 4,
+   "iso": "2026-10-10T18:30",
+   "date": "Samedi 10 octobre 2026 à 18h30",
+   "domicile": "HANDBALL CLUB SAINT SYMPHORIEN",
+   "exterieur": "US MIOS BIGANOS 2",
+   "score_dom": null,
+   "score_ext": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
    "id": "2676592",
    "journee": 4,
-   "iso": "2026-10-10T00:00",
-   "date": "SAMEDI 10 OCTOBRE 2026 À 20h45",
+   "iso": "2026-10-10T20:45",
+   "date": "Samedi 10 octobre 2026 à 20h45",
    "domicile": "HBC TEICHOIS 2",
    "exterieur": "ASSOCIATION SPORTIVE DE HANDBALL BRANNAIS",
    "score_dom": null,
@@ -207,8 +225,8 @@
   {
    "id": "2676593",
    "journee": 4,
-   "iso": "2026-10-10T00:00",
-   "date": "SAMEDI 10 OCTOBRE 2026 À 21h30",
+   "iso": "2026-10-10T21:30",
+   "date": "Samedi 10 octobre 2026 à 21h30",
    "domicile": "HBC BAZADAIS 2",
    "exterieur": "ST MEDARD HANDBALL 2",
    "score_dom": null,
@@ -217,22 +235,10 @@
    "nous": true
   },
   {
-   "id": "2676594",
-   "journee": 4,
-   "iso": "2026-10-10T00:00",
-   "date": "SAMEDI 10 OCTOBRE 2026 À 18h30",
-   "domicile": "HANDBALL CLUB SAINT SYMPHORIEN",
-   "exterieur": "US MIOS BIGANOS 2",
-   "score_dom": null,
-   "score_ext": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
    "id": "2676596",
    "journee": 5,
-   "iso": "2026-10-31T00:00",
-   "date": "SAMEDI 31 OCTOBRE 2026 À 18h00",
+   "iso": "2026-10-31T18:00",
+   "date": "Samedi 31 octobre 2026 à 18h00",
    "domicile": "US MIOS BIGANOS 2",
    "exterieur": "HBC TEICHOIS 2",
    "score_dom": null,
@@ -243,8 +249,8 @@
   {
    "id": "2676597",
    "journee": 5,
-   "iso": "2026-10-31T00:00",
-   "date": "SAMEDI 31 OCTOBRE 2026 À 20h30",
+   "iso": "2026-10-31T20:30",
+   "date": "Samedi 31 octobre 2026 à 20h30",
    "domicile": "ST MEDARD HANDBALL 2",
    "exterieur": "HANDBALL CLUB SAINT SYMPHORIEN",
    "score_dom": null,
@@ -255,8 +261,8 @@
   {
    "id": "2676598",
    "journee": 6,
-   "iso": "2026-11-07T00:00",
-   "date": "SAMEDI 7 NOVEMBRE 2026 À 20h00",
+   "iso": "2026-11-07T20:00",
+   "date": "Samedi 7 novembre 2026 à 20h00",
    "domicile": "HANDBALL CLUB SAINT SYMPHORIEN",
    "exterieur": "HBC BAZADAIS 2",
    "score_dom": null,
@@ -265,22 +271,10 @@
    "nous": true
   },
   {
-   "id": "2676599",
-   "journee": 6,
-   "iso": "2026-11-08T00:00",
-   "date": "DIMANCHE 8 NOVEMBRE 2026 À 16h00",
-   "domicile": "US MIOS BIGANOS 2",
-   "exterieur": "ASSOCIATION SPORTIVE DE HANDBALL BRANNAIS",
-   "score_dom": null,
-   "score_ext": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
    "id": "2676600",
    "journee": 6,
-   "iso": "2026-11-08T00:00",
-   "date": "DIMANCHE 8 NOVEMBRE 2026 À 14h00",
+   "iso": "2026-11-08T14:00",
+   "date": "Dimanche 8 novembre 2026 à 14h00",
    "domicile": "ST MEDARD HANDBALL 2",
    "exterieur": "HBC TEICHOIS 2",
    "score_dom": null,
@@ -289,10 +283,22 @@
    "nous": false
   },
   {
+   "id": "2676599",
+   "journee": 6,
+   "iso": "2026-11-08T16:00",
+   "date": "Dimanche 8 novembre 2026 à 16h00",
+   "domicile": "US MIOS BIGANOS 2",
+   "exterieur": "ASSOCIATION SPORTIVE DE HANDBALL BRANNAIS",
+   "score_dom": null,
+   "score_ext": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
    "id": "2676602",
    "journee": 7,
-   "iso": "2026-11-14T00:00",
-   "date": "SAMEDI 14 NOVEMBRE 2026 À 19h30",
+   "iso": "2026-11-14T19:30",
+   "date": "Samedi 14 novembre 2026 à 19h30",
    "domicile": "HBC BAZADAIS 2",
    "exterieur": "US MIOS BIGANOS 2",
    "score_dom": null,
@@ -303,14 +309,26 @@
   {
    "id": "2676604",
    "journee": 8,
-   "iso": "2026-11-28T00:00",
-   "date": "SAMEDI 28 NOVEMBRE 2026 À 17h45",
+   "iso": "2026-11-28T17:45",
+   "date": "Samedi 28 novembre 2026 à 17h45",
    "domicile": "US MIOS BIGANOS 2",
    "exterieur": "ST MEDARD HANDBALL 2",
    "score_dom": null,
    "score_ext": null,
    "statut": "à venir",
    "nous": false
+  },
+  {
+   "id": "2676610",
+   "journee": 10,
+   "iso": "2026-12-13T16:00",
+   "date": "Dimanche 13 décembre 2026 à 16h00",
+   "domicile": "HBC BAZADAIS 2",
+   "exterieur": "ASSOCIATION SPORTIVE DE HANDBALL BRANNAIS",
+   "score_dom": null,
+   "score_ext": null,
+   "statut": "à venir",
+   "nous": true
   },
   {
    "id": "2676595",
@@ -409,18 +427,6 @@
    "nous": false
   },
   {
-   "id": "2676610",
-   "journee": 10,
-   "iso": "",
-   "date": "DIMANCHE 13 DÉCEMBRE 2026 À 16H00",
-   "domicile": "HBC BAZADAIS 2",
-   "exterieur": "ASSOCIATION SPORTIVE DE HANDBALL BRANNAIS",
-   "score_dom": null,
-   "score_ext": null,
-   "statut": "à venir",
-   "nous": true
-  },
-  {
    "id": "2676611",
    "journee": 10,
    "iso": "",
@@ -445,5 +451,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-09-30 18:46"
+ "genere_le": "2026-09-30 23:37"
 }

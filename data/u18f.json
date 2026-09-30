@@ -15,7 +15,8 @@
    "bc": 23,
    "diff": 2,
    "points": 6,
-   "nous": false
+   "nous": false,
+   "stats_partielles": true
   },
   {
    "rang": 2,
@@ -28,7 +29,8 @@
    "bc": 47,
    "diff": 3,
    "points": 4,
-   "nous": false
+   "nous": false,
+   "stats_partielles": false
   },
   {
    "rang": 3,
@@ -41,7 +43,8 @@
    "bc": 48,
    "diff": 4,
    "points": 4,
-   "nous": true
+   "nous": true,
+   "stats_partielles": false
   },
   {
    "rang": 4,
@@ -54,7 +57,8 @@
    "bc": 19,
    "diff": 11,
    "points": 3,
-   "nous": false
+   "nous": false,
+   "stats_partielles": false
   },
   {
    "rang": 5,
@@ -67,7 +71,8 @@
    "bc": 25,
    "diff": -2,
    "points": 1,
-   "nous": false
+   "nous": false,
+   "stats_partielles": false
   },
   {
    "rang": 6,
@@ -80,15 +85,16 @@
    "bc": 35,
    "diff": -18,
    "points": 1,
-   "nous": false
+   "nous": false,
+   "stats_partielles": false
   }
  ],
  "calendrier": [
   {
    "id": "2699860",
    "journee": 1,
-   "iso": "2026-09-19T00:00",
-   "date": "SAMEDI 19 SEPTEMBRE 2026 À 18h30",
+   "iso": "2026-09-19T18:30",
+   "date": "Samedi 19 septembre 2026 à 18h30",
    "domicile": "LEOGNAN - TALENCE",
    "exterieur": "HBC BAZADAIS",
    "score_dom": 31,
@@ -99,32 +105,21 @@
   {
    "id": "2699861",
    "journee": 1,
-   "iso": "2026-09-20T00:00",
-   "date": "DIMANCHE 20 SEPTEMBRE 2026 À 14h00",
+   "iso": "2026-09-20T14:00",
+   "date": "Dimanche 20 septembre 2026 à 14h00",
    "domicile": "CADILLAC - CERONS U18F",
    "exterieur": "HBC BELIN-BELIET",
    "score_dom": null,
    "score_ext": null,
    "statut": "à venir",
-   "nous": false
-  },
-  {
-   "id": "2699862",
-   "journee": 2,
-   "iso": "2026-09-26T00:00",
-   "date": "SAMEDI 26 SEPTEMBRE 2026 À 17h30",
-   "domicile": "GRADIGNAN HANDBALL CLUB",
-   "exterieur": "CADILLAC - CERONS U18F",
-   "score_dom": 23,
-   "score_ext": 25,
-   "statut": "joué",
-   "nous": false
+   "nous": false,
+   "brut": "DIMANCHE 20 SEPTEMBRE 2026 À 14H00 CADILLAC - CERONS U18F 20 PE HBC BELIN-BELIET VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2699863",
    "journee": 2,
-   "iso": "2026-09-26T00:00",
-   "date": "SAMEDI 26 SEPTEMBRE 2026 À 14h15",
+   "iso": "2026-09-26T14:15",
+   "date": "Samedi 26 septembre 2026 à 14h15",
    "domicile": "HBC BAZADAIS",
    "exterieur": "SC MONSEGUR HB",
    "score_dom": 35,
@@ -135,8 +130,8 @@
   {
    "id": "2699864",
    "journee": 2,
-   "iso": "2026-09-26T00:00",
-   "date": "SAMEDI 26 SEPTEMBRE 2026 À 14h15",
+   "iso": "2026-09-26T14:15",
+   "date": "Samedi 26 septembre 2026 à 14h15",
    "domicile": "HBC BELIN-BELIET",
    "exterieur": "LEOGNAN - TALENCE",
    "score_dom": 30,
@@ -145,10 +140,22 @@
    "nous": false
   },
   {
+   "id": "2699862",
+   "journee": 2,
+   "iso": "2026-09-26T17:30",
+   "date": "Samedi 26 septembre 2026 à 17h30",
+   "domicile": "GRADIGNAN HANDBALL CLUB",
+   "exterieur": "CADILLAC - CERONS U18F",
+   "score_dom": 23,
+   "score_ext": 25,
+   "statut": "joué",
+   "nous": false
+  },
+  {
    "id": "2699867",
    "journee": 3,
-   "iso": "2026-10-03T00:00",
-   "date": "SAMEDI 3 OCTOBRE 2026 À 17h00",
+   "iso": "2026-10-03T17:00",
+   "date": "Samedi 3 octobre 2026 à 17h00",
    "domicile": "SC MONSEGUR HB",
    "exterieur": "CADILLAC - CERONS U18F",
    "score_dom": null,
@@ -159,8 +166,8 @@
   {
    "id": "2699865",
    "journee": 3,
-   "iso": "2026-10-04T00:00",
-   "date": "DIMANCHE 4 OCTOBRE 2026 À 10h45",
+   "iso": "2026-10-04T10:45",
+   "date": "Dimanche 4 octobre 2026 à 10h45",
    "domicile": "HBC BELIN-BELIET",
    "exterieur": "HBC BAZADAIS",
    "score_dom": null,
@@ -171,8 +178,8 @@
   {
    "id": "2699866",
    "journee": 3,
-   "iso": "2026-10-04T00:00",
-   "date": "DIMANCHE 4 OCTOBRE 2026 À 14h00",
+   "iso": "2026-10-04T14:00",
+   "date": "Dimanche 4 octobre 2026 à 14h00",
    "domicile": "LEOGNAN - TALENCE",
    "exterieur": "GRADIGNAN HANDBALL CLUB",
    "score_dom": null,
@@ -183,8 +190,8 @@
   {
    "id": "2699868",
    "journee": 4,
-   "iso": "2026-10-10T00:00",
-   "date": "SAMEDI 10 OCTOBRE 2026 À 18h00",
+   "iso": "2026-10-10T18:00",
+   "date": "Samedi 10 octobre 2026 à 18h00",
    "domicile": "CADILLAC - CERONS U18F",
    "exterieur": "LEOGNAN - TALENCE",
    "score_dom": null,
@@ -195,8 +202,8 @@
   {
    "id": "2699869",
    "journee": 4,
-   "iso": "2026-10-10T00:00",
-   "date": "SAMEDI 10 OCTOBRE 2026 À 18h00",
+   "iso": "2026-10-10T18:00",
+   "date": "Samedi 10 octobre 2026 à 18h00",
    "domicile": "SC MONSEGUR HB",
    "exterieur": "HBC BELIN-BELIET",
    "score_dom": null,
@@ -207,8 +214,8 @@
   {
    "id": "2699870",
    "journee": 4,
-   "iso": "2026-10-11T00:00",
-   "date": "DIMANCHE 11 OCTOBRE 2026 À 13h00",
+   "iso": "2026-10-11T13:00",
+   "date": "Dimanche 11 octobre 2026 à 13h00",
    "domicile": "HBC BAZADAIS",
    "exterieur": "GRADIGNAN HANDBALL CLUB",
    "score_dom": null,
@@ -219,14 +226,26 @@
   {
    "id": "2699878",
    "journee": 7,
-   "iso": "2026-11-21T00:00",
-   "date": "SAMEDI 21 NOVEMBRE 2026 À 18h15",
+   "iso": "2026-11-21T18:15",
+   "date": "Samedi 21 novembre 2026 à 18h15",
    "domicile": "SC MONSEGUR HB",
    "exterieur": "HBC BAZADAIS",
    "score_dom": null,
    "score_ext": null,
    "statut": "à venir",
    "nous": true
+  },
+  {
+   "id": "2699886",
+   "journee": 10,
+   "iso": "2026-12-12T19:15",
+   "date": "Samedi 12 décembre 2026 à 19h15",
+   "domicile": "SC MONSEGUR HB",
+   "exterieur": "LEOGNAN - TALENCE",
+   "score_dom": null,
+   "score_ext": null,
+   "statut": "à venir",
+   "nous": false
   },
   {
    "id": "2699859",
@@ -409,18 +428,6 @@
    "nous": true
   },
   {
-   "id": "2699886",
-   "journee": 10,
-   "iso": "",
-   "date": "SAMEDI 12 DÉCEMBRE 2026 À 19H15",
-   "domicile": "SC MONSEGUR HB",
-   "exterieur": "LEOGNAN - TALENCE",
-   "score_dom": null,
-   "score_ext": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
    "id": "2699887",
    "journee": 10,
    "iso": "",
@@ -445,5 +452,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-09-30 18:49"
+ "genere_le": "2026-09-30 23:38"
 }

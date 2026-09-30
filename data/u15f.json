@@ -15,7 +15,8 @@
    "bc": 22,
    "diff": 69,
    "points": 6,
-   "nous": true
+   "nous": true,
+   "stats_partielles": false
   },
   {
    "rang": 2,
@@ -28,7 +29,8 @@
    "bc": 24,
    "diff": 5,
    "points": 4,
-   "nous": false
+   "nous": false,
+   "stats_partielles": false
   },
   {
    "rang": 3,
@@ -41,7 +43,8 @@
    "bc": 13,
    "diff": 5,
    "points": 3,
-   "nous": false
+   "nous": false,
+   "stats_partielles": false
   },
   {
    "rang": 4,
@@ -54,7 +57,8 @@
    "bc": 59,
    "diff": -41,
    "points": 2,
-   "nous": false
+   "nous": false,
+   "stats_partielles": false
   },
   {
    "rang": 5,
@@ -67,27 +71,16 @@
    "bc": 48,
    "diff": -38,
    "points": 1,
-   "nous": false
+   "nous": false,
+   "stats_partielles": false
   }
  ],
  "calendrier": [
   {
-   "id": "2699829",
-   "journee": 1,
-   "iso": "2026-09-20T00:00",
-   "date": "DIMANCHE 20 SEPTEMBRE 2026 À 15h50",
-   "domicile": "HBC BAZADAIS",
-   "exterieur": "CADILLAC CERONS U15F",
-   "score_dom": 43,
-   "score_ext": 12,
-   "statut": "joué",
-   "nous": true
-  },
-  {
    "id": "2699831",
    "journee": 1,
-   "iso": "2026-09-20T00:00",
-   "date": "DIMANCHE 20 SEPTEMBRE 2026 À 14h25",
+   "iso": "2026-09-20T14:25",
+   "date": "Dimanche 20 septembre 2026 à 14h25",
    "domicile": "HANDBALL SAINT MEDARD D'EYRANS 2",
    "exterieur": "BORDEAUX ETUDIANTS CLUB",
    "score_dom": 13,
@@ -96,22 +89,22 @@
    "nous": false
   },
   {
-   "id": "2699832",
-   "journee": 2,
-   "iso": "2026-09-26T00:00",
-   "date": "SAMEDI 26 SEPTEMBRE 2026 À 17h30",
-   "domicile": "CADILLAC CERONS U15F",
-   "exterieur": "HANDBALL SAINT MEDARD D'EYRANS 2",
-   "score_dom": 6,
-   "score_ext": 16,
+   "id": "2699829",
+   "journee": 1,
+   "iso": "2026-09-20T15:50",
+   "date": "Dimanche 20 septembre 2026 à 15h50",
+   "domicile": "HBC BAZADAIS",
+   "exterieur": "CADILLAC CERONS U15F",
+   "score_dom": 43,
+   "score_ext": 12,
    "statut": "joué",
-   "nous": false
+   "nous": true
   },
   {
    "id": "2699833",
    "journee": 2,
-   "iso": "2026-09-26T00:00",
-   "date": "SAMEDI 26 SEPTEMBRE 2026 À 16h00",
+   "iso": "2026-09-26T16:00",
+   "date": "Samedi 26 septembre 2026 à 16h00",
    "domicile": "SC MONSEGUR HB",
    "exterieur": "HBC BAZADAIS",
    "score_dom": 10,
@@ -120,10 +113,22 @@
    "nous": true
   },
   {
+   "id": "2699832",
+   "journee": 2,
+   "iso": "2026-09-26T17:30",
+   "date": "Samedi 26 septembre 2026 à 17h30",
+   "domicile": "CADILLAC CERONS U15F",
+   "exterieur": "HANDBALL SAINT MEDARD D'EYRANS 2",
+   "score_dom": 6,
+   "score_ext": 16,
+   "statut": "joué",
+   "nous": false
+  },
+  {
    "id": "2699835",
    "journee": 3,
-   "iso": "2026-10-03T00:00",
-   "date": "SAMEDI 3 OCTOBRE 2026 À 15h30",
+   "iso": "2026-10-03T15:30",
+   "date": "Samedi 3 octobre 2026 à 15h30",
    "domicile": "BORDEAUX ETUDIANTS CLUB",
    "exterieur": "SC MONSEGUR HB",
    "score_dom": null,
@@ -134,8 +139,8 @@
   {
    "id": "2699837",
    "journee": 3,
-   "iso": "2026-10-03T00:00",
-   "date": "SAMEDI 3 OCTOBRE 2026 À 15h45",
+   "iso": "2026-10-03T15:45",
+   "date": "Samedi 3 octobre 2026 à 15h45",
    "domicile": "HBC BAZADAIS",
    "exterieur": "HANDBALL SAINT MEDARD D'EYRANS 2",
    "score_dom": null,
@@ -144,22 +149,10 @@
    "nous": true
   },
   {
-   "id": "2699839",
-   "journee": 4,
-   "iso": "2026-10-10T00:00",
-   "date": "SAMEDI 10 OCTOBRE 2026 À 17h45",
-   "domicile": "HBC BAZADAIS",
-   "exterieur": "BORDEAUX ETUDIANTS CLUB",
-   "score_dom": null,
-   "score_ext": null,
-   "statut": "à venir",
-   "nous": true
-  },
-  {
    "id": "2699840",
    "journee": 4,
-   "iso": "2026-10-10T00:00",
-   "date": "SAMEDI 10 OCTOBRE 2026 À 16h00",
+   "iso": "2026-10-10T16:00",
+   "date": "Samedi 10 octobre 2026 à 16h00",
    "domicile": "CADILLAC CERONS U15F",
    "exterieur": "SC MONSEGUR HB",
    "score_dom": null,
@@ -168,12 +161,36 @@
    "nous": false
   },
   {
+   "id": "2699839",
+   "journee": 4,
+   "iso": "2026-10-10T17:45",
+   "date": "Samedi 10 octobre 2026 à 17h45",
+   "domicile": "HBC BAZADAIS",
+   "exterieur": "BORDEAUX ETUDIANTS CLUB",
+   "score_dom": null,
+   "score_ext": null,
+   "statut": "à venir",
+   "nous": true
+  },
+  {
    "id": "2699850",
    "journee": 8,
-   "iso": "2026-11-28T00:00",
-   "date": "SAMEDI 28 NOVEMBRE 2026 À 15h30",
+   "iso": "2026-11-28T15:30",
+   "date": "Samedi 28 novembre 2026 à 15h30",
    "domicile": "SC MONSEGUR HB",
    "exterieur": "BORDEAUX ETUDIANTS CLUB",
+   "score_dom": null,
+   "score_ext": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
+   "id": "2699855",
+   "journee": 9,
+   "iso": "2026-12-05T15:30",
+   "date": "Samedi 5 décembre 2026 à 15h30",
+   "domicile": "SC MONSEGUR HB",
+   "exterieur": "CADILLAC CERONS U15F",
    "score_dom": null,
    "score_ext": null,
    "statut": "à venir",
@@ -276,18 +293,6 @@
    "nous": true
   },
   {
-   "id": "2699855",
-   "journee": 9,
-   "iso": "",
-   "date": "SAMEDI 5 DÉCEMBRE 2026 À 15H30",
-   "domicile": "SC MONSEGUR HB",
-   "exterieur": "CADILLAC CERONS U15F",
-   "score_dom": null,
-   "score_ext": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
    "id": "2699857",
    "journee": 10,
    "iso": "",
@@ -312,5 +317,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-09-30 18:50"
+ "genere_le": "2026-09-30 23:39"
 }

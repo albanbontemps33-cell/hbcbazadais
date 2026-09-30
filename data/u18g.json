@@ -15,7 +15,8 @@
    "bc": 59,
    "diff": 9,
    "points": 6,
-   "nous": true
+   "nous": true,
+   "stats_partielles": false
   },
   {
    "rang": 2,
@@ -28,7 +29,8 @@
    "bc": 51,
    "diff": 10,
    "points": 4,
-   "nous": false
+   "nous": false,
+   "stats_partielles": false
   },
   {
    "rang": 3,
@@ -41,7 +43,8 @@
    "bc": 31,
    "diff": 2,
    "points": 3,
-   "nous": false
+   "nous": false,
+   "stats_partielles": false
   },
   {
    "rang": 4,
@@ -54,7 +57,8 @@
    "bc": 62,
    "diff": -14,
    "points": 2,
-   "nous": false
+   "nous": false,
+   "stats_partielles": false
   },
   {
    "rang": 5,
@@ -67,27 +71,16 @@
    "bc": 34,
    "diff": -7,
    "points": 1,
-   "nous": false
+   "nous": false,
+   "stats_partielles": false
   }
  ],
  "calendrier": [
   {
-   "id": "2700895",
-   "journee": 1,
-   "iso": "2026-09-19T00:00",
-   "date": "SAMEDI 19 SEPTEMBRE 2026 À 17h30",
-   "domicile": "HBC BAZADAIS",
-   "exterieur": "LEOGNAN HANDBALL 2",
-   "score_dom": 34,
-   "score_ext": 27,
-   "statut": "joué",
-   "nous": true
-  },
-  {
    "id": "2700896",
    "journee": 1,
-   "iso": "2026-09-19T00:00",
-   "date": "SAMEDI 19 SEPTEMBRE 2026 À 16h30",
+   "iso": "2026-09-19T16:30",
+   "date": "Samedi 19 septembre 2026 à 16h30",
    "domicile": "AVENIR PAILLETON",
    "exterieur": "SC MONSEGUR HB",
    "score_dom": 17,
@@ -96,10 +89,22 @@
    "nous": false
   },
   {
+   "id": "2700895",
+   "journee": 1,
+   "iso": "2026-09-19T17:30",
+   "date": "Samedi 19 septembre 2026 à 17h30",
+   "domicile": "HBC BAZADAIS",
+   "exterieur": "LEOGNAN HANDBALL 2",
+   "score_dom": 34,
+   "score_ext": 27,
+   "statut": "joué",
+   "nous": true
+  },
+  {
    "id": "2700899",
    "journee": 2,
-   "iso": "2026-09-26T00:00",
-   "date": "SAMEDI 26 SEPTEMBRE 2026 À 17h30",
+   "iso": "2026-09-26T17:30",
+   "date": "Samedi 26 septembre 2026 à 17h30",
    "domicile": "SC MONSEGUR HB",
    "exterieur": "HBC BAZADAIS",
    "score_dom": 32,
@@ -110,8 +115,8 @@
   {
    "id": "2700900",
    "journee": 2,
-   "iso": "2026-09-26T00:00",
-   "date": "SAMEDI 26 SEPTEMBRE 2026 À 19h30",
+   "iso": "2026-09-26T19:30",
+   "date": "Samedi 26 septembre 2026 à 19h30",
    "domicile": "CADILLAC - CERONS U18M",
    "exterieur": "AVENIR PAILLETON",
    "score_dom": 33,
@@ -122,8 +127,8 @@
   {
    "id": "2700901",
    "journee": 3,
-   "iso": "2026-10-03T00:00",
-   "date": "SAMEDI 3 OCTOBRE 2026 À 15h30",
+   "iso": "2026-10-03T15:30",
+   "date": "Samedi 3 octobre 2026 à 15h30",
    "domicile": "CADILLAC - CERONS U18M",
    "exterieur": "SC MONSEGUR HB",
    "score_dom": null,
@@ -134,8 +139,8 @@
   {
    "id": "2700902",
    "journee": 3,
-   "iso": "2026-10-03T00:00",
-   "date": "SAMEDI 3 OCTOBRE 2026 À 17h00",
+   "iso": "2026-10-03T17:00",
+   "date": "Samedi 3 octobre 2026 à 17h00",
    "domicile": "AVENIR PAILLETON",
    "exterieur": "LEOGNAN HANDBALL 2",
    "score_dom": null,
@@ -144,22 +149,10 @@
    "nous": false
   },
   {
-   "id": "2700905",
-   "journee": 4,
-   "iso": "2026-10-10T00:00",
-   "date": "SAMEDI 10 OCTOBRE 2026 À 19h30",
-   "domicile": "HBC BAZADAIS",
-   "exterieur": "CADILLAC - CERONS U18M",
-   "score_dom": null,
-   "score_ext": null,
-   "statut": "à venir",
-   "nous": true
-  },
-  {
    "id": "2700906",
    "journee": 4,
-   "iso": "2026-10-10T00:00",
-   "date": "SAMEDI 10 OCTOBRE 2026 À 18h30",
+   "iso": "2026-10-10T18:30",
+   "date": "Samedi 10 octobre 2026 à 18h30",
    "domicile": "LEOGNAN HANDBALL 2",
    "exterieur": "SC MONSEGUR HB",
    "score_dom": null,
@@ -168,10 +161,22 @@
    "nous": false
   },
   {
+   "id": "2700905",
+   "journee": 4,
+   "iso": "2026-10-10T19:30",
+   "date": "Samedi 10 octobre 2026 à 19h30",
+   "domicile": "HBC BAZADAIS",
+   "exterieur": "CADILLAC - CERONS U18M",
+   "score_dom": null,
+   "score_ext": null,
+   "statut": "à venir",
+   "nous": true
+  },
+  {
    "id": "2700911",
    "journee": 6,
-   "iso": "2026-11-14T00:00",
-   "date": "SAMEDI 14 NOVEMBRE 2026 À 18h15",
+   "iso": "2026-11-14T18:15",
+   "date": "Samedi 14 novembre 2026 à 18h15",
    "domicile": "SC MONSEGUR HB",
    "exterieur": "AVENIR PAILLETON",
    "score_dom": null,
@@ -182,10 +187,22 @@
   {
    "id": "2700916",
    "journee": 8,
-   "iso": "2026-11-28T00:00",
-   "date": "SAMEDI 28 NOVEMBRE 2026 À 18h45",
+   "iso": "2026-11-28T18:45",
+   "date": "Samedi 28 novembre 2026 à 18h45",
    "domicile": "SC MONSEGUR HB",
    "exterieur": "CADILLAC - CERONS U18M",
+   "score_dom": null,
+   "score_ext": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
+   "id": "2700921",
+   "journee": 9,
+   "iso": "2026-12-05T17:15",
+   "date": "Samedi 5 décembre 2026 à 17h15",
+   "domicile": "SC MONSEGUR HB",
+   "exterieur": "LEOGNAN HANDBALL 2",
    "score_dom": null,
    "score_ext": null,
    "statut": "à venir",
@@ -276,18 +293,6 @@
    "nous": true
   },
   {
-   "id": "2700921",
-   "journee": 9,
-   "iso": "",
-   "date": "SAMEDI 5 DÉCEMBRE 2026 À 17H15",
-   "domicile": "SC MONSEGUR HB",
-   "exterieur": "LEOGNAN HANDBALL 2",
-   "score_dom": null,
-   "score_ext": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
    "id": "2700922",
    "journee": 10,
    "iso": "",
@@ -312,5 +317,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-09-30 18:48"
+ "genere_le": "2026-09-30 23:37"
 }

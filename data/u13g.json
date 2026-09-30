@@ -15,7 +15,8 @@
    "bc": 13,
    "diff": 13,
    "points": 3,
-   "nous": false
+   "nous": false,
+   "stats_partielles": false
   },
   {
    "rang": 2,
@@ -28,7 +29,8 @@
    "bc": 19,
    "diff": 12,
    "points": 3,
-   "nous": false
+   "nous": false,
+   "stats_partielles": false
   },
   {
    "rang": 3,
@@ -41,7 +43,8 @@
    "bc": 22,
    "diff": 10,
    "points": 3,
-   "nous": false
+   "nous": false,
+   "stats_partielles": false
   },
   {
    "rang": 4,
@@ -54,7 +57,8 @@
    "bc": 32,
    "diff": -10,
    "points": 1,
-   "nous": false
+   "nous": false,
+   "stats_partielles": false
   },
   {
    "rang": 5,
@@ -67,7 +71,8 @@
    "bc": 31,
    "diff": -12,
    "points": 1,
-   "nous": true
+   "nous": true,
+   "stats_partielles": false
   },
   {
    "rang": 6,
@@ -80,15 +85,16 @@
    "bc": 26,
    "diff": -13,
    "points": 1,
-   "nous": false
+   "nous": false,
+   "stats_partielles": false
   }
  ],
  "calendrier": [
   {
    "id": "2699055",
    "journee": 1,
-   "iso": "2026-09-26T00:00",
-   "date": "SAMEDI 26 SEPTEMBRE 2026 À 11h00",
+   "iso": "2026-09-26T11:00",
+   "date": "Samedi 26 septembre 2026 à 11h00",
    "domicile": "HBC BAZADAIS",
    "exterieur": "HANDBALL SAINT MEDARD D'EYRANS 2",
    "score_dom": 19,
@@ -97,22 +103,10 @@
    "nous": true
   },
   {
-   "id": "2699056",
-   "journee": 1,
-   "iso": "2026-09-26T00:00",
-   "date": "SAMEDI 26 SEPTEMBRE 2026 À 17h00",
-   "domicile": "HANDBALL CLUB SAINT SYMPHORIEN",
-   "exterieur": "CADILLAC - CERONS U13M",
-   "score_dom": 32,
-   "score_ext": 22,
-   "statut": "joué",
-   "nous": false
-  },
-  {
    "id": "2699057",
    "journee": 1,
-   "iso": "2026-09-26T00:00",
-   "date": "SAMEDI 26 SEPTEMBRE 2026 À 14h45",
+   "iso": "2026-09-26T14:45",
+   "date": "Samedi 26 septembre 2026 à 14h45",
    "domicile": "SC MONSEGUR HB",
    "exterieur": "AVENIR PAILLETON",
    "score_dom": 26,
@@ -121,22 +115,22 @@
    "nous": false
   },
   {
-   "id": "2699058",
-   "journee": 2,
-   "iso": "2026-10-03T00:00",
-   "date": "SAMEDI 3 OCTOBRE 2026 À 16h00",
-   "domicile": "HANDBALL SAINT MEDARD D'EYRANS 2",
-   "exterieur": "SC MONSEGUR HB",
-   "score_dom": null,
-   "score_ext": null,
-   "statut": "à venir",
+   "id": "2699056",
+   "journee": 1,
+   "iso": "2026-09-26T17:00",
+   "date": "Samedi 26 septembre 2026 à 17h00",
+   "domicile": "HANDBALL CLUB SAINT SYMPHORIEN",
+   "exterieur": "CADILLAC - CERONS U13M",
+   "score_dom": 32,
+   "score_ext": 22,
+   "statut": "joué",
    "nous": false
   },
   {
    "id": "2699059",
    "journee": 2,
-   "iso": "2026-10-03T00:00",
-   "date": "SAMEDI 3 OCTOBRE 2026 À 13h45",
+   "iso": "2026-10-03T13:45",
+   "date": "Samedi 3 octobre 2026 à 13h45",
    "domicile": "CADILLAC - CERONS U13M",
    "exterieur": "HBC BAZADAIS",
    "score_dom": null,
@@ -145,10 +139,22 @@
    "nous": true
   },
   {
+   "id": "2699058",
+   "journee": 2,
+   "iso": "2026-10-03T16:00",
+   "date": "Samedi 3 octobre 2026 à 16h00",
+   "domicile": "HANDBALL SAINT MEDARD D'EYRANS 2",
+   "exterieur": "SC MONSEGUR HB",
+   "score_dom": null,
+   "score_ext": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
    "id": "2699060",
    "journee": 2,
-   "iso": "2026-10-04T00:00",
-   "date": "DIMANCHE 4 OCTOBRE 2026 À 14h00",
+   "iso": "2026-10-04T14:00",
+   "date": "Dimanche 4 octobre 2026 à 14h00",
    "domicile": "AVENIR PAILLETON",
    "exterieur": "HANDBALL CLUB SAINT SYMPHORIEN",
    "score_dom": null,
@@ -159,8 +165,8 @@
   {
    "id": "2699061",
    "journee": 3,
-   "iso": "2026-10-10T00:00",
-   "date": "SAMEDI 10 OCTOBRE 2026 À 15h00",
+   "iso": "2026-10-10T15:00",
+   "date": "Samedi 10 octobre 2026 à 15h00",
    "domicile": "AVENIR PAILLETON",
    "exterieur": "CADILLAC - CERONS U13M",
    "score_dom": null,
@@ -169,22 +175,10 @@
    "nous": false
   },
   {
-   "id": "2699062",
-   "journee": 3,
-   "iso": "2026-10-10T00:00",
-   "date": "SAMEDI 10 OCTOBRE 2026 À 16h30",
-   "domicile": "HANDBALL CLUB SAINT SYMPHORIEN",
-   "exterieur": "HANDBALL SAINT MEDARD D'EYRANS 2",
-   "score_dom": null,
-   "score_ext": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
    "id": "2699063",
    "journee": 3,
-   "iso": "2026-10-10T00:00",
-   "date": "SAMEDI 10 OCTOBRE 2026 À 16h15",
+   "iso": "2026-10-10T16:15",
+   "date": "Samedi 10 octobre 2026 à 16h15",
    "domicile": "HBC BAZADAIS",
    "exterieur": "SC MONSEGUR HB",
    "score_dom": null,
@@ -193,10 +187,22 @@
    "nous": true
   },
   {
+   "id": "2699062",
+   "journee": 3,
+   "iso": "2026-10-10T16:30",
+   "date": "Samedi 10 octobre 2026 à 16h30",
+   "domicile": "HANDBALL CLUB SAINT SYMPHORIEN",
+   "exterieur": "HANDBALL SAINT MEDARD D'EYRANS 2",
+   "score_dom": null,
+   "score_ext": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
    "id": "2699064",
    "journee": 4,
-   "iso": "2026-10-17T00:00",
-   "date": "SAMEDI 17 OCTOBRE 2026 À 15h15",
+   "iso": "2026-10-17T15:15",
+   "date": "Samedi 17 octobre 2026 à 15h15",
    "domicile": "SC MONSEGUR HB",
    "exterieur": "HANDBALL CLUB SAINT SYMPHORIEN",
    "score_dom": null,
@@ -207,8 +213,8 @@
   {
    "id": "2699065",
    "journee": 4,
-   "iso": "2026-10-17T00:00",
-   "date": "SAMEDI 17 OCTOBRE 2026 À 16h30",
+   "iso": "2026-10-17T16:30",
+   "date": "Samedi 17 octobre 2026 à 16h30",
    "domicile": "HBC BAZADAIS",
    "exterieur": "AVENIR PAILLETON",
    "score_dom": null,
@@ -219,8 +225,8 @@
   {
    "id": "2699067",
    "journee": 5,
-   "iso": "2026-11-07T00:00",
-   "date": "SAMEDI 7 NOVEMBRE 2026 À 18h00",
+   "iso": "2026-11-07T18:00",
+   "date": "Samedi 7 novembre 2026 à 18h00",
    "domicile": "HANDBALL CLUB SAINT SYMPHORIEN",
    "exterieur": "HBC BAZADAIS",
    "score_dom": null,
@@ -231,8 +237,8 @@
   {
    "id": "2699073",
    "journee": 7,
-   "iso": "2026-11-21T00:00",
-   "date": "SAMEDI 21 NOVEMBRE 2026 À 15h15",
+   "iso": "2026-11-21T15:15",
+   "date": "Samedi 21 novembre 2026 à 15h15",
    "domicile": "SC MONSEGUR HB",
    "exterieur": "HANDBALL SAINT MEDARD D'EYRANS 2",
    "score_dom": null,
@@ -243,14 +249,38 @@
   {
    "id": "2699078",
    "journee": 8,
-   "iso": "2026-11-28T00:00",
-   "date": "SAMEDI 28 NOVEMBRE 2026 À 14h15",
+   "iso": "2026-11-28T14:15",
+   "date": "Samedi 28 novembre 2026 à 14h15",
    "domicile": "SC MONSEGUR HB",
    "exterieur": "HBC BAZADAIS",
    "score_dom": null,
    "score_ext": null,
    "statut": "à venir",
    "nous": true
+  },
+  {
+   "id": "2699079",
+   "journee": 9,
+   "iso": "2026-12-05T18:30",
+   "date": "Samedi 5 décembre 2026 à 18h30",
+   "domicile": "HANDBALL CLUB SAINT SYMPHORIEN",
+   "exterieur": "SC MONSEGUR HB",
+   "score_dom": null,
+   "score_ext": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
+   "id": "2699083",
+   "journee": 10,
+   "iso": "2026-12-12T16:00",
+   "date": "Samedi 12 décembre 2026 à 16h00",
+   "domicile": "SC MONSEGUR HB",
+   "exterieur": "CADILLAC - CERONS U13M",
+   "score_dom": null,
+   "score_ext": null,
+   "statut": "à venir",
+   "nous": false
   },
   {
    "id": "2699066",
@@ -373,18 +403,6 @@
    "nous": false
   },
   {
-   "id": "2699079",
-   "journee": 9,
-   "iso": "",
-   "date": "SAMEDI 5 DÉCEMBRE 2026 À 18H30",
-   "domicile": "HANDBALL CLUB SAINT SYMPHORIEN",
-   "exterieur": "SC MONSEGUR HB",
-   "score_dom": null,
-   "score_ext": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
    "id": "2699080",
    "journee": 9,
    "iso": "",
@@ -421,18 +439,6 @@
    "nous": true
   },
   {
-   "id": "2699083",
-   "journee": 10,
-   "iso": "",
-   "date": "SAMEDI 12 DÉCEMBRE 2026 À 16H00",
-   "domicile": "SC MONSEGUR HB",
-   "exterieur": "CADILLAC - CERONS U13M",
-   "score_dom": null,
-   "score_ext": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
    "id": "2699084",
    "journee": 10,
    "iso": "",
@@ -445,5 +451,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-09-30 18:51"
+ "genere_le": "2026-09-30 23:39"
 }

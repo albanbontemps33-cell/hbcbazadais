@@ -1,7 +1,7 @@
 {
  "equipe": "-13 F 1",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u13-feminine-32777/poule-193722/",
- "source_mise_a_jour": "29 sept. 2026 à 15h38",
+ "source_mise_a_jour": "30 sept. 2026 à 19h22",
  "journees": 10,
  "classement": [
   {
@@ -15,7 +15,8 @@
    "bc": 48,
    "diff": 13,
    "points": 6,
-   "nous": false
+   "nous": false,
+   "stats_partielles": false
   },
   {
    "rang": 2,
@@ -28,7 +29,8 @@
    "bc": 41,
    "diff": 18,
    "points": 4,
-   "nous": false
+   "nous": false,
+   "stats_partielles": false
   },
   {
    "rang": 3,
@@ -41,7 +43,8 @@
    "bc": 48,
    "diff": -11,
    "points": 4,
-   "nous": false
+   "nous": false,
+   "stats_partielles": false
   },
   {
    "rang": 4,
@@ -54,7 +57,8 @@
    "bc": 33,
    "diff": 55,
    "points": 3,
-   "nous": false
+   "nous": false,
+   "stats_partielles": true
   },
   {
    "rang": 5,
@@ -67,7 +71,8 @@
    "bc": 81,
    "diff": -39,
    "points": 2,
-   "nous": true
+   "nous": true,
+   "stats_partielles": false
   },
   {
    "rang": 6,
@@ -80,27 +85,16 @@
    "bc": 64,
    "diff": -36,
    "points": 1,
-   "nous": false
+   "nous": false,
+   "stats_partielles": true
   }
  ],
  "calendrier": [
   {
-   "id": "2699500",
-   "journee": 1,
-   "iso": "2026-09-19T00:00",
-   "date": "SAMEDI 19 SEPTEMBRE 2026 À 14h50",
-   "domicile": "SA GAZINET CESTAS",
-   "exterieur": "PE2M HB 1",
-   "score_dom": 26,
-   "score_ext": 18,
-   "statut": "joué",
-   "nous": false
-  },
-  {
    "id": "2699501",
    "journee": 1,
-   "iso": "2026-09-19T00:00",
-   "date": "SAMEDI 19 SEPTEMBRE 2026 À 14h00",
+   "iso": "2026-09-19T14:00",
+   "date": "Samedi 19 septembre 2026 à 14h00",
    "domicile": "HBC CREONNAIS",
    "exterieur": "HBC TEICHOIS 1",
    "score_dom": 30,
@@ -109,10 +103,22 @@
    "nous": false
   },
   {
+   "id": "2699500",
+   "journee": 1,
+   "iso": "2026-09-19T14:50",
+   "date": "Samedi 19 septembre 2026 à 14h50",
+   "domicile": "SA GAZINET CESTAS",
+   "exterieur": "PE2M HB 1",
+   "score_dom": 26,
+   "score_ext": 18,
+   "statut": "joué",
+   "nous": false
+  },
+  {
    "id": "2699499",
    "journee": 1,
-   "iso": "2026-09-20T00:00",
-   "date": "DIMANCHE 20 SEPTEMBRE 2026 À 09h45",
+   "iso": "2026-09-20T09:45",
+   "date": "Dimanche 20 septembre 2026 à 09h45",
    "domicile": "STADE LANGONNAIS HB",
    "exterieur": "HBC BAZADAIS 1",
    "score_dom": 50,
@@ -123,8 +129,8 @@
   {
    "id": "2699504",
    "journee": 2,
-   "iso": "2026-09-26T00:00",
-   "date": "SAMEDI 26 SEPTEMBRE 2026 À 14h00",
+   "iso": "2026-09-26T14:00",
+   "date": "Samedi 26 septembre 2026 à 14h00",
    "domicile": "HBC TEICHOIS 1",
    "exterieur": "SA GAZINET CESTAS",
    "score_dom": 30,
@@ -135,8 +141,8 @@
   {
    "id": "2699502",
    "journee": 2,
-   "iso": "2026-09-27T00:00",
-   "date": "DIMANCHE 27 SEPTEMBRE 2026 À 11h30",
+   "iso": "2026-09-27T11:30",
+   "date": "Dimanche 27 septembre 2026 à 11h30",
    "domicile": "HBC BAZADAIS 1",
    "exterieur": "HBC CREONNAIS",
    "score_dom": 19,
@@ -147,8 +153,8 @@
   {
    "id": "2699503",
    "journee": 2,
-   "iso": "2026-09-27T00:00",
-   "date": "DIMANCHE 27 SEPTEMBRE 2026 À 12h30",
+   "iso": "2026-09-27T12:30",
+   "date": "Dimanche 27 septembre 2026 à 12h30",
    "domicile": "PE2M HB 1",
    "exterieur": "STADE LANGONNAIS HB",
    "score_dom": 10,
@@ -159,8 +165,8 @@
   {
    "id": "2699505",
    "journee": 3,
-   "iso": "2026-10-03T00:00",
-   "date": "SAMEDI 3 OCTOBRE 2026 À 13h30",
+   "iso": "2026-10-03T13:30",
+   "date": "Samedi 3 octobre 2026 à 13h30",
    "domicile": "HBC TEICHOIS 1",
    "exterieur": "PE2M HB 1",
    "score_dom": null,
@@ -171,8 +177,8 @@
   {
    "id": "2699506",
    "journee": 3,
-   "iso": "2026-10-03T00:00",
-   "date": "SAMEDI 3 OCTOBRE 2026 À 15h30",
+   "iso": "2026-10-03T15:30",
+   "date": "Samedi 3 octobre 2026 à 15h30",
    "domicile": "SA GAZINET CESTAS",
    "exterieur": "HBC BAZADAIS 1",
    "score_dom": null,
@@ -183,8 +189,8 @@
   {
    "id": "2699507",
    "journee": 3,
-   "iso": "2026-10-04T00:00",
-   "date": "DIMANCHE 4 OCTOBRE 2026 À 11h15",
+   "iso": "2026-10-04T11:15",
+   "date": "Dimanche 4 octobre 2026 à 11h15",
    "domicile": "STADE LANGONNAIS HB",
    "exterieur": "HBC CREONNAIS",
    "score_dom": null,
@@ -193,34 +199,10 @@
    "nous": false
   },
   {
-   "id": "2699508",
-   "journee": 4,
-   "iso": "2026-10-11T00:00",
-   "date": "DIMANCHE 11 OCTOBRE 2026 À 15h40",
-   "domicile": "HBC CREONNAIS",
-   "exterieur": "SA GAZINET CESTAS",
-   "score_dom": null,
-   "score_ext": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
-   "id": "2699509",
-   "journee": 4,
-   "iso": "2026-10-11T00:00",
-   "date": "DIMANCHE 11 OCTOBRE 2026 À 14h20",
-   "domicile": "STADE LANGONNAIS HB",
-   "exterieur": "HBC TEICHOIS 1",
-   "score_dom": null,
-   "score_ext": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
    "id": "2699510",
    "journee": 4,
-   "iso": "2026-10-11T00:00",
-   "date": "DIMANCHE 11 OCTOBRE 2026 À 13h00",
+   "iso": "2026-10-11T13:00",
+   "date": "Dimanche 11 octobre 2026 à 13h00",
    "domicile": "HBC BAZADAIS 1",
    "exterieur": "PE2M HB 1",
    "score_dom": null,
@@ -229,10 +211,46 @@
    "nous": true
   },
   {
+   "id": "2699509",
+   "journee": 4,
+   "iso": "2026-10-11T14:20",
+   "date": "Dimanche 11 octobre 2026 à 14h20",
+   "domicile": "STADE LANGONNAIS HB",
+   "exterieur": "HBC TEICHOIS 1",
+   "score_dom": null,
+   "score_ext": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
+   "id": "2699508",
+   "journee": 4,
+   "iso": "2026-10-11T15:40",
+   "date": "Dimanche 11 octobre 2026 à 15h40",
+   "domicile": "HBC CREONNAIS",
+   "exterieur": "SA GAZINET CESTAS",
+   "score_dom": null,
+   "score_ext": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
+   "id": "2699513",
+   "journee": 5,
+   "iso": "2026-11-07T12:30",
+   "date": "Samedi 7 novembre 2026 à 12h30",
+   "domicile": "HBC TEICHOIS 1",
+   "exterieur": "HBC BAZADAIS 1",
+   "score_dom": null,
+   "score_ext": null,
+   "statut": "à venir",
+   "nous": true
+  },
+  {
    "id": "2699511",
    "journee": 5,
-   "iso": "2026-11-07T00:00",
-   "date": "SAMEDI 7 NOVEMBRE 2026 À 14h00",
+   "iso": "2026-11-07T14:00",
+   "date": "Samedi 7 novembre 2026 à 14h00",
    "domicile": "SA GAZINET CESTAS",
    "exterieur": "STADE LANGONNAIS HB",
    "score_dom": null,
@@ -243,8 +261,8 @@
   {
    "id": "2699512",
    "journee": 5,
-   "iso": "2026-11-07T00:00",
-   "date": "SAMEDI 7 NOVEMBRE 2026 À 14h15",
+   "iso": "2026-11-07T14:15",
+   "date": "Samedi 7 novembre 2026 à 14h15",
    "domicile": "PE2M HB 1",
    "exterieur": "HBC CREONNAIS",
    "score_dom": null,
@@ -255,8 +273,8 @@
   {
    "id": "2699515",
    "journee": 6,
-   "iso": "2026-11-14T00:00",
-   "date": "SAMEDI 14 NOVEMBRE 2026 À 14h15",
+   "iso": "2026-11-14T14:15",
+   "date": "Samedi 14 novembre 2026 à 14h15",
    "domicile": "PE2M HB 1",
    "exterieur": "SA GAZINET CESTAS",
    "score_dom": null,
@@ -267,8 +285,8 @@
   {
    "id": "2699520",
    "journee": 8,
-   "iso": "2026-11-28T00:00",
-   "date": "SAMEDI 28 NOVEMBRE 2026 À 14h30",
+   "iso": "2026-11-28T14:30",
+   "date": "Samedi 28 novembre 2026 à 14h30",
    "domicile": "PE2M HB 1",
    "exterieur": "HBC TEICHOIS 1",
    "score_dom": null,
@@ -277,11 +295,11 @@
    "nous": false
   },
   {
-   "id": "2699513",
-   "journee": 5,
-   "iso": "",
-   "date": "",
-   "domicile": "HBC TEICHOIS 1",
+   "id": "2699525",
+   "journee": 9,
+   "iso": "2026-12-05T15:00",
+   "date": "Samedi 5 décembre 2026 à 15h00",
+   "domicile": "PE2M HB 1",
    "exterieur": "HBC BAZADAIS 1",
    "score_dom": null,
    "score_ext": null,
@@ -397,18 +415,6 @@
    "nous": false
   },
   {
-   "id": "2699525",
-   "journee": 9,
-   "iso": "",
-   "date": "SAMEDI 5 DÉCEMBRE 2026 À 15H00",
-   "domicile": "PE2M HB 1",
-   "exterieur": "HBC BAZADAIS 1",
-   "score_dom": null,
-   "score_ext": null,
-   "statut": "à venir",
-   "nous": true
-  },
-  {
    "id": "2699526",
    "journee": 10,
    "iso": "",
@@ -445,5 +451,5 @@
    "nous": true
   }
  ],
- "genere_le": "2026-09-30 18:52"
+ "genere_le": "2026-09-30 23:39"
 }
