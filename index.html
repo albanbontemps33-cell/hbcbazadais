@@ -293,6 +293,9 @@ body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--ink);o
 .match-status.st-joue{background:rgba(15,30,65,.08);color:rgba(22,35,63,.5)}
 .match-status.st-avenir{background:rgba(11,118,194,.12);color:var(--brand-blue)}
 .match-status.st-reporte{background:rgba(234,59,121,.12);color:var(--rose)}
+.match-list[data-all="0"] .match-other{display:none}
+.match-card.is-us{background:rgba(234,59,121,.04)}
+.match-date small{font-weight:500;opacity:.8}
 @media(max-width:640px){.match-card{grid-template-columns:1fr;text-align:center;gap:.4rem}.match-team,.match-team.ext{text-align:center}.match-date{order:-1}}
 
 /* ── PARTENAIRES ── */
@@ -566,62 +569,9 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;back
   .nav-logo-center img{height:90px;width:90px}
 }
 
-/* ── POPUP TOURNOI ── */
-#tournoiOverlay{position:fixed;inset:0;z-index:500;background:rgba(15,30,65,.6);backdrop-filter:blur(3px);display:flex;align-items:center;justify-content:center;padding:1.2rem;opacity:0;visibility:hidden;transition:opacity var(--t),visibility var(--t)}
-#tournoiOverlay.open{opacity:1;visibility:visible}
-.tournoi-modal{position:relative;background:var(--cream);border-radius:var(--radius);box-shadow:var(--shadow-md);max-width:460px;width:100%;overflow:hidden;transform:translateY(16px) scale(.97);transition:transform var(--t);border:1px solid var(--border)}
-#tournoiOverlay.open .tournoi-modal{transform:translateY(0) scale(1)}
-.tournoi-strip{height:6px;width:100%;background:var(--bleu)}
-.tournoi-close{position:absolute;top:.9rem;right:.9rem;width:32px;height:32px;border-radius:50%;background:rgba(15,30,65,.06);border:none;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:background var(--t);z-index:2}
-.tournoi-close:hover{background:rgba(234,59,121,.18)}
-.tournoi-close svg{width:15px;height:15px}
-.tournoi-close svg path{stroke:var(--ink)}
-.tournoi-body{padding:2rem 1.8rem 1.8rem}
-.tournoi-tag{display:inline-block;background:var(--rose);color:#fff;font-size:.62rem;font-weight:700;letter-spacing:.1em;padding:.28rem .65rem;text-transform:uppercase;margin-bottom:1rem}
-.tournoi-title{font-family:'Bebas Neue',sans-serif;font-size:2.1rem;letter-spacing:.03em;color:var(--bleu);line-height:1;margin-bottom:.9rem}
-.tournoi-title em{color:var(--rose);font-style:normal}
-.tournoi-text{font-size:.92rem;line-height:1.55;color:var(--ink);opacity:.85;margin-bottom:.4rem}
-.tournoi-infos{display:flex;flex-wrap:wrap;gap:.5rem 1.2rem;margin:1.1rem 0 1.6rem;font-size:.82rem;font-weight:600;color:var(--bleu)}
-.tournoi-infos span{display:flex;align-items:center;gap:.4rem}
-.tournoi-actions{display:flex;flex-direction:column;gap:.7rem}
-.tournoi-btn-main{display:flex;align-items:center;justify-content:center;gap:.6rem;background:var(--rose);color:#fff;padding:.9rem 1.4rem;border-radius:var(--radius);font-size:.8rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;text-decoration:none;transition:all var(--t)}
-.tournoi-btn-main:hover{filter:brightness(1.08);transform:translateY(-1px)}
-.tournoi-btn-sec{display:flex;align-items:center;justify-content:center;gap:.6rem;border:1px solid rgba(15,30,65,.2);color:var(--ink);padding:.85rem 1.4rem;border-radius:var(--radius);font-size:.78rem;font-weight:600;letter-spacing:.04em;text-decoration:none;transition:all var(--t)}
-.tournoi-btn-sec:hover{border-color:var(--rose);color:var(--rose);background:rgba(234,59,121,.06)}
-.tournoi-btn-main svg,.tournoi-btn-sec svg{width:18px;height:18px;flex-shrink:0}
-.tournoi-note{text-align:center;font-size:.78rem;color:var(--ink);opacity:.65;margin-top:.2rem}
-.tournoi-note b{color:var(--rose);font-weight:700}
-@media(max-width:480px){.tournoi-title{font-size:1.7rem}.tournoi-body{padding:1.7rem 1.3rem 1.4rem}}
 </style>
 </head>
 <body>
-
-<!-- POPUP TOURNOI -->
-<div id="tournoiOverlay" role="dialog" aria-modal="true" aria-labelledby="tournoiTitle">
-  <div class="tournoi-modal">
-    <div class="tournoi-strip" aria-hidden="true"></div>
-    <button class="tournoi-close" onclick="closeTournoiPopup()" aria-label="Fermer">
-      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 5L19 19M19 5L5 19" stroke-width="2" stroke-linecap="round"/></svg>
-    </button>
-    <div class="tournoi-body">
-      <span class="tournoi-tag">Événement</span>
-      <h2 id="tournoiTitle" class="tournoi-title">Tournoi de <em>handball</em></h2>
-      <p class="tournoi-text">Tournoi de handball ouvert à tous, organisé par le HBC Bazadais. Venez nombreux, en famille ou entre amis !</p>
-      <div class="tournoi-infos">
-        <span>📅 Samedi 5 septembre</span>
-        <span>🕐 13h – 16h30</span>
-        <span>📍 Gymnase Sainte Cluque, Bazas</span>
-      </div>
-      <div class="tournoi-actions">
-        <a class="tournoi-btn-main" href="https://www.instagram.com/hbcbazadais_/" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-          Je m'inscris
-        </a>
-        <p class="tournoi-note">ou envoyez un message directement au compte <b>@hbcbazadais_</b> sur Instagram</p>
-      </div>
-    </div>
-  </div>
-</div>
 
 <div class="pixel-divider" aria-hidden="true"></div>
 
@@ -696,9 +646,8 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;back
       <div class="container">
         <h2 class="history-h2">Histoire</h2>
         <div class="history-grid">
-          <div class="history-img-ph">
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="4" width="20" height="16" rx="1.5" stroke="currentColor" stroke-width="1.4"/><circle cx="8" cy="10" r="1.6" stroke="currentColor" stroke-width="1.4"/><path d="M3 17l5.5-5.5a1.5 1.5 0 0 1 2.1 0L15 16l1.8-1.8a1.5 1.5 0 0 1 2.1 0L21 16.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <span>Photo à venir</span>
+          <div class="history-img-ph" style="border:none;padding:0;overflow:hidden">
+            <img src="https://raw.githubusercontent.com/albanbontemps33-cell/hbcbazadais/main/histoire.png" alt="Histoire du HBC Bazadais" style="width:100%;height:100%;object-fit:cover;display:block">
           </div>
           <p class="history-body">Le HBC Bazadais est un club de handball situé à Bazas, en Gironde, créé en 1993. Club convivial et dynamique, il accueille les joueurs et joueuses de tous âges et de tous niveaux à travers 12 catégories. Le HBC Bazadais met en avant les valeurs du sport collectif : respect, esprit d'équipe, convivialité et passion du handball. <strong>SOUY BAZADES !</strong></p>
         </div>
@@ -727,7 +676,6 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;back
   <div class="page-hero"><div class="page-hero-inner"><div class="ph-label">Le club en direct</div><h1 class="ph-h1">Actualités</h1></div></div>
   <div class="container" style="padding-top:3rem;padding-bottom:3rem">
     <div class="news-grid">
-      <div class="ncard"><div class="ncard-img" style="padding:0;overflow:hidden;background:#E9F1FA"><img src="https://raw.githubusercontent.com/albanbontemps33-cell/hbcbazadais/main/tournoi.png" alt="Vie du club" style="width:100%;height:100%;object-fit:cover;display:block"><div class="ncard-tag">Événement</div></div><div class="ncard-body"><div class="ncard-date">Saison 2026-27</div><h3>Vie du club</h3><p>Tournoi de handball ouvert à tous, le samedi 5 septembre de 13h à 16h30, au gymnase Sainte Cluque à Bazas.</p></div></div>
       <a href="https://cirqueabandonne.github.io/cirque-abandonne/" target="_blank" style="text-decoration:none;color:inherit;display:block"><div class="ncard"><div class="ncard-img" style="padding:0;overflow:hidden;background:#E9F1FA"><img src="https://raw.githubusercontent.com/albanbontemps33-cell/hbcbazadais/main/cirque.png" alt="Le Cirque Abandonné" style="width:100%;height:100%;object-fit:cover;display:block"><div class="ncard-tag">Événement</div></div><div class="ncard-body"><div class="ncard-date">Saison 2026-27</div><h3>Le Cirque Abandonné</h3><p>Revient en 2026 pour effrayer les plus petits et les plus grands ! Cliquez sur le cadre pour plus d'infos !</p></div></div></a>
       <div class="ncard" onclick="goNav('teams')" style="cursor:pointer"><div class="ncard-img" style="padding:0;overflow:hidden;background:#E9F1FA"><img src="https://raw.githubusercontent.com/albanbontemps33-cell/hbcbazadais/main/fin.jpg" alt="Suivez nos équipes" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block"><div class="ncard-tag">Résultat</div></div><div class="ncard-body"><div class="ncard-date">Saison 2026-27</div><h3>Suivez nos équipes</h3><p>Retrouvez les résultats et actualités de toutes nos équipes tout au long de la saison.</p></div></div>
       <div class="ncard" onclick="goNav('teams')" style="cursor:pointer"><div class="ncard-img" style="padding:0;overflow:hidden;background:#E9F1FA"><img src="https://raw.githubusercontent.com/albanbontemps33-cell/hbcbazadais/main/amettre.png" alt="Résultats et calendrier" style="width:100%;height:100%;object-fit:cover;display:block"><div class="ncard-tag">Résultat</div></div><div class="ncard-body"><div class="ncard-date">Saison 2026-27</div><h3>Résultats &amp; calendrier</h3><p>Les résultats, classements et calendriers de tous les matchs sont disponibles directement ici, sur le site !</p></div></div>
@@ -1008,8 +956,8 @@ const GH_PARTNERS = GH;
 const TEAMS = [
   {id:'loisir',cat:'Détente & Loisir',name:'Loisir',sheet:'loisir',coach1:{fname:'Prénom coach',lname:'Nom coach',photo:''},coach2:{fname:'Prénom coach',lname:'Nom coach',photo:''},roster:[]},
   {id:'ecole',cat:'École de Handball',name:'École du Hand',sheet:'ecole du hand',coach1:{fname:'Prénom coach',lname:'Nom coach',photo:''},coach2:{fname:'Prénom coach',lname:'Nom coach',photo:''},roster:[]},
-  {id:'u11',cat:'Catégorie U11',name:'-11 Mixte',sheet:'u11',coach1:{fname:'Prénom coach',lname:'Nom coach',photo:''},coach2:{fname:'Prénom coach',lname:'Nom coach',photo:''},roster:[]},
-  {id:'u13f',cat:'Catégorie U13',name:'-13 Filles',sheet:'u13f',coach1:{fname:'Prénom coach',lname:'Nom coach',photo:''},coach2:{fname:'Prénom coach',lname:'Nom coach',photo:''},roster:[]},
+  {id:'u13',cat:'Catégorie U13',name:'-13 Filles 2',sheet:'u13',coach1:{fname:'Prénom coach',lname:'Nom coach',photo:''},coach2:{fname:'Prénom coach',lname:'Nom coach',photo:''},roster:[]},
+  {id:'u13f',cat:'Catégorie U13',name:'-13 Filles 1',sheet:'u13f',coach1:{fname:'Prénom coach',lname:'Nom coach',photo:''},coach2:{fname:'Prénom coach',lname:'Nom coach',photo:''},roster:[]},
   {id:'u13g',cat:'Catégorie U13',name:'-13 Garçons',sheet:'u13g',coach1:{fname:'Prénom coach',lname:'Nom coach',photo:''},coach2:{fname:'Prénom coach',lname:'Nom coach',photo:''},roster:[]},
   {id:'u15f',cat:'Catégorie U15',name:'-15 Filles',sheet:'u15f',coach1:{fname:'Prénom coach',lname:'Nom coach',photo:''},coach2:{fname:'Prénom coach',lname:'Nom coach',photo:''},roster:[]},
   {id:'u15g',cat:'Catégorie U15',name:'-15 Garçons',sheet:'u15g',coach1:{fname:'Prénom coach',lname:'Nom coach',photo:''},coach2:{fname:'Prénom coach',lname:'Nom coach',photo:''},roster:[]},
@@ -1051,9 +999,8 @@ let currentTeam = null;
 const TRAINING = {
   loisir:  [{day:'Jeudi',   time:'20h00 – 21h30', lieu:'Collège Ausone'}],
   ecole:   [{day:'Samedi',  time:'10h00 – 11h00', lieu:'Collège Ausone'}],
-  u11:     [{day:'Mercredi',time:'17h00 – 18h30', lieu:'Collège Ausone'}],
   u13f:    [{day:'Mercredi',time:'18h30 – 20h00', lieu:'Collège Ausone'}],
-  u13g:    [{day:'Jeudi',   time:'18h30 – 20h00', lieu:'Collège Ausone'}],
+  u13g:    [{day:'Mercredi',time:'17h00 – 18h30', lieu:'Collège Ausone'}],
   u15f:    [{day:'Mardi',   time:'17h30 – 19h00', lieu:'Collège Ausone'}],
   u15g:    [{day:'Mardi',   time:'17h30 – 19h00', lieu:'Sainte-Cluque'},{day:'Vendredi',time:'17h30 – 19h00', lieu:'Sainte-Cluque'}],
   u18f:    [{day:'Vendredi',time:'19h00 – 20h30', lieu:'Sainte-Cluque'}],
@@ -1346,7 +1293,6 @@ const SHEET_CSV_URLS = {
   u15g:          'https://docs.google.com/spreadsheets/d/e/2PACX-1vTHtdFedebW69kCLndSiseuZXca_Tumv9XVCAbvDYnfOQ0gPU4N2Y78JlDmE0VE_P6iDl41GLXe7t12/pub?gid=935331897&single=true&output=csv',
   u13f:          'https://docs.google.com/spreadsheets/d/e/2PACX-1vTHtdFedebW69kCLndSiseuZXca_Tumv9XVCAbvDYnfOQ0gPU4N2Y78JlDmE0VE_P6iDl41GLXe7t12/pub?gid=181506747&single=true&output=csv',
   u13g:          'https://docs.google.com/spreadsheets/d/e/2PACX-1vTHtdFedebW69kCLndSiseuZXca_Tumv9XVCAbvDYnfOQ0gPU4N2Y78JlDmE0VE_P6iDl41GLXe7t12/pub?gid=1693896440&single=true&output=csv',
-  u11:           'https://docs.google.com/spreadsheets/d/e/2PACX-1vTHtdFedebW69kCLndSiseuZXca_Tumv9XVCAbvDYnfOQ0gPU4N2Y78JlDmE0VE_P6iDl41GLXe7t12/pub?gid=2032696759&single=true&output=csv',
   'ecole du hand':'https://docs.google.com/spreadsheets/d/e/2PACX-1vTHtdFedebW69kCLndSiseuZXca_Tumv9XVCAbvDYnfOQ0gPU4N2Y78JlDmE0VE_P6iDl41GLXe7t12/pub?gid=1860051830&single=true&output=csv',
   loisir:        'https://docs.google.com/spreadsheets/d/e/2PACX-1vTHtdFedebW69kCLndSiseuZXca_Tumv9XVCAbvDYnfOQ0gPU4N2Y78JlDmE0VE_P6iDl41GLXe7t12/pub?gid=933887710&single=true&output=csv',
 };
@@ -1391,11 +1337,126 @@ async function fetchTeamCSV(sheetKey) {
   return rows;
 }
 
+// ── DONNÉES AUTOMATIQUES FFHANDBALL ──────────────────────────────────────────────
+// Les fichiers data/<clé>.json sont régénérés plusieurs fois par jour par GitHub Actions (scripts/update_ffhandball.py).
+// team.sheet → nom du fichier JSON. Une équipe absente de cette liste garde son Google Sheet.
+const JSON_KEYS = { srg1:'srg1', srg2:'srg2', srf:'srf', u18g:'u18g', u18f:'u18f', u15g:'u15g', u15f:'u15f', u13g:'u13g', u13f:'u13f', u13:'u13f2' };
+const _jsonCache = {};
+
+async function fetchTeamJSON(key) {
+  if (_jsonCache[key]) return _jsonCache[key];
+  const bucket = Math.floor(Date.now() / 300000); // GitHub met les fichiers en cache ~5 min
+  const resp = await fetch(GH + 'data/' + key + '.json?t=' + bucket);
+  if (!resp.ok) throw new Error('HTTP ' + resp.status);
+  const data = await resp.json();
+  if (!data || !Array.isArray(data.classement) || !Array.isArray(data.calendrier)) throw new Error('JSON invalide');
+  _jsonCache[key] = data;
+  return data;
+}
+
+function ffEsc(v) {
+  return String(v == null ? '' : v).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+function ffFooter(data, extra) {
+  const maj = data.source_mise_a_jour ? 'Données FFHandball — mise à jour du ' + ffEsc(data.source_mise_a_jour) : 'Données FFHandball';
+  return '<div class="data-sec-foot"><span>' + maj + '</span>' + (extra || '') + '</div>';
+}
+
+function buildClassementFromJSON(data, team, titre) {
+  const rows = data.classement || [];
+  if (!rows.length) {
+    return '<div class="data-sec"><div class="data-sec-head"><h3>' + titre + ' — ' + team.name + '</h3></div><div class="data-error"><p>Classement pas encore disponible pour cette équipe.</p></div></div>';
+  }
+  let partiel = false;
+  const lignes = rows.map(r => {
+    const isUs = !!r.nous;
+    if (r.stats_partielles) partiel = true;
+    const star = r.stats_partielles ? '*' : '';
+    return '<tr class="' + (isUs ? 'is-us' : '') + '">' +
+      '<td class="rk">' + ffEsc(r.rang) + '</td>' +
+      '<td>' + ffEsc(r.club) + (isUs ? ' <span style="color:var(--rose);font-size:.68rem">●</span>' : '') + '</td>' +
+      '<td>' + ffEsc(r.joues) + star + '</td>' +
+      '<td>' + ffEsc(r.gagnes) + '</td>' +
+      '<td>' + ffEsc(r.nuls) + '</td>' +
+      '<td>' + ffEsc(r.perdus) + '</td>' +
+      '<td><strong>' + ffEsc(r.points) + '</strong></td>' +
+    '</tr>';
+  }).join('');
+  return '<div class="data-sec">' +
+    '<div class="data-sec-head"><h3>' + titre + ' — ' + team.name + '</h3></div>' +
+    '<div style="overflow-x:auto"><table class="dt"><thead><tr>' +
+      '<th>Rg</th><th>Club</th><th>J</th><th>G</th><th>N</th><th>P</th><th>Pts</th>' +
+    '</tr></thead><tbody>' + lignes + '</tbody></table></div>' +
+    ffFooter(data, partiel ? '<span>* matchs non détaillés (points officiels FFHandball)</span>' : '') +
+  '</div>';
+}
+
+function ffFormatDate(m) {
+  const mt = /^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2})$/.exec(m.iso || '');
+  if (!mt) return 'J' + ffEsc(m.journee) + '<br><small>date à définir</small>';
+  const jours = ['dim.', 'lun.', 'mar.', 'mer.', 'jeu.', 'ven.', 'sam.'];
+  const d = new Date(+mt[1], +mt[2] - 1, +mt[3]);
+  let out = jours[d.getDay()] + ' ' + mt[3] + '/' + mt[2];
+  if (mt[4] + mt[5] !== '0000') out += '<br><small>' + mt[4] + 'h' + mt[5] + '</small>';
+  return out;
+}
+
+function ffToggleAll(btn) {
+  const list = btn.closest('.data-sec').querySelector('.match-list');
+  const all = list.getAttribute('data-all') === '1';
+  list.setAttribute('data-all', all ? '0' : '1');
+  btn.textContent = all ? 'Voir toute la poule' : 'Seulement nos matchs';
+}
+
+function buildCalendrierFromJSON(data, team, titre) {
+  const matchs = data.calendrier || [];
+  if (!matchs.length) {
+    return '<div class="data-sec"><div class="data-sec-head"><h3>' + titre + ' — ' + team.name + '</h3></div><div class="data-error"><p>Calendrier pas encore disponible pour cette équipe.</p></div></div>';
+  }
+  const statusInfo = st => {
+    if (st === 'reporté') return { cls: 'st-reporte', label: 'Reporté' };
+    if (st === 'pénalité') return { cls: 'st-joue', label: 'Pénalité' };
+    if (st === 'forfait') return { cls: 'st-joue', label: 'Forfait' };
+    if (st === 'joué') return { cls: 'st-joue', label: 'Joué' };
+    return { cls: 'st-avenir', label: 'À venir' };
+  };
+  const nbNous = matchs.filter(m => m.nous).length;
+
+  const cartes = matchs.map(m => {
+    const st = statusInfo(m.statut);
+    const affiche = m.affiche || ((m.score_dom != null && m.score_ext != null) ? m.score_dom + ' – ' + m.score_ext : null);
+    let vainqueur = m.vainqueur;
+    if (vainqueur === undefined && m.score_dom != null && m.score_ext != null) {
+      vainqueur = m.score_dom > m.score_ext ? 'dom' : (m.score_ext > m.score_dom ? 'ext' : 'nul');
+    }
+    const score = affiche
+      ? '<div class="match-score">' + ffEsc(affiche) + '</div>'
+      : '<div class="match-score tbd">vs</div>';
+    return '<div class="match-card ' + (m.nous ? 'is-us' : 'match-other') + '">' +
+      '<div class="match-date">' + ffFormatDate(m) + '</div>' +
+      '<div class="match-team' + (vainqueur === 'dom' ? ' winner' : '') + '">' + ffEsc(m.domicile) + '</div>' +
+      score +
+      '<div class="match-team ext' + (vainqueur === 'ext' ? ' winner' : '') + '">' + ffEsc(m.exterieur) + '</div>' +
+      '<div class="match-status ' + st.cls + '">' + st.label + '</div>' +
+    '</div>';
+  }).join('');
+
+  // Par défaut : uniquement les matchs du club (toute la poule disponible via le bouton)
+  const toggle = nbNous ? '<button type="button" onclick="ffToggleAll(this)">Voir toute la poule</button>' : '';
+  return '<div class="data-sec">' +
+    '<div class="data-sec-head"><h3>' + titre + ' — ' + team.name + '</h3></div>' +
+    '<div class="match-list" data-all="' + (nbNous ? '0' : '1') + '">' + cartes + '</div>' +
+    ffFooter(data, toggle) +
+  '</div>';
+}
+
 async function renderSheetData(type, team, container) {
   const sheetKey = team.sheet || team.id;
   const titre = type === 'classement' ? 'Classement' : 'Calendrier & Résultats';
+  const jsonKey = JSON_KEYS[sheetKey];
 
-  if (!SHEET_CSV_URLS[sheetKey]) {
+  if (!jsonKey && !SHEET_CSV_URLS[sheetKey]) {
     container.innerHTML = '<div class="soon-box"><div class="soon-chip">🔜 À venir</div><h4>Données non disponibles</h4><p>Cette équipe n\'est pas encore reliée au tableau de suivi.</p></div>';
     return;
   }
@@ -1404,6 +1465,28 @@ async function renderSheetData(type, team, container) {
     '<div class="data-sec"><div class="data-sec-head"><h3>' + titre + ' — ' + team.name + '</h3></div>' +
     '<div class="data-loading"><div class="spin">⟳</div><p>Chargement des données…</p></div></div>';
 
+  // 1) Source automatique FFHandball (fichiers data/*.json)
+  if (jsonKey) {
+    try {
+      const data = await fetchTeamJSON(jsonKey);
+      container.innerHTML = type === 'classement'
+        ? buildClassementFromJSON(data, team, titre)
+        : buildCalendrierFromJSON(data, team, titre);
+      initReveal();
+      return;
+    } catch (e) {
+      console.warn('Données FFHandball indisponibles pour', sheetKey, e);
+      if (!SHEET_CSV_URLS[sheetKey]) {
+        container.innerHTML =
+          '<div class="data-sec"><div class="data-sec-head"><h3>' + titre + ' — ' + team.name + '</h3></div>' +
+          '<div class="data-error"><div class="soon-chip">⚠️ Erreur</div><p>Impossible de récupérer les données pour le moment. Réessaie dans un instant.</p></div></div>';
+        return;
+      }
+      // sinon : repli automatique sur le Google Sheet ci-dessous
+    }
+  }
+
+  // 2) Repli : Google Sheet (CSV publié)
   let rows;
   try {
     rows = await fetchTeamCSV(sheetKey);
@@ -1561,33 +1644,6 @@ function buildCarousel() {
   }
   requestAnimationFrame(tick);
 }
-
-// ── POPUP TOURNOI ──
-function closeTournoiPopup() {
-  document.getElementById('tournoiOverlay').classList.remove('open');
-  document.body.style.overflow = '';
-}
-(function initTournoiPopup() {
-  const STORAGE_KEY = 'hbc_tournoi_popup_last_shown';
-  const ONE_DAY = 24 * 60 * 60 * 1000;
-  const last = localStorage.getItem(STORAGE_KEY);
-  const now = Date.now();
-  if (last && (now - parseInt(last, 10)) < ONE_DAY) return; // déjà vu aujourd'hui
-
-  setTimeout(() => {
-    const overlay = document.getElementById('tournoiOverlay');
-    overlay.classList.add('open');
-    document.body.style.overflow = 'hidden';
-    localStorage.setItem(STORAGE_KEY, String(now));
-  }, 2000);
-
-  document.getElementById('tournoiOverlay').addEventListener('click', (e) => {
-    if (e.target.id === 'tournoiOverlay') closeTournoiPopup();
-  });
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') closeTournoiPopup();
-  });
-})();
 
 // ── INIT ──
 buildTeams();
