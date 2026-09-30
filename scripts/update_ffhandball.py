@@ -204,22 +204,41 @@ def build_json(name, url, raw_matches, raw_classement, source_updated, total_jou
     stats = {}  # club -> dict
 
     def st(club):
-        return stats.setdefault(club, {"j": 0, "g": 0, "n": 0, "p": 0, "bp": 0, "bc": 0})
+        return stats.setdefault(club, {"j": 0, "g": 0, "n": 0, "p": 0, "f": 0, "bp": 0, "bc": 0})
+
+    def is_code(x):
+        x = (x or "").strip()
+        return bool(x) and x not in ("-", "–", "—") and not x.isdigit()
 
     for m in raw_matches:
         iso, display = parse_date(m["date"])
-        sd, se = to_int(m["sdom"]), to_int(m["sext"])
+        sd_raw, se_raw = (m["sdom"] or "").strip(), (m["sext"] or "").strip()
+        sd, se = to_int(sd_raw), to_int(se_raw)
         played = sd is not None and se is not None
+        # Ex. "PE 20" : la FFHandball attribue le match (0 point pour l'équipe sanctionnée, 20 à l'autre)
+        penalite = (not played) and (is_code(sd_raw) or is_code(se_raw))
         low = m["text"].lower()
         if played:
             statut = "joué"
+        elif penalite:
+            statut = "pénalité"
         elif "forfait" in low:
             statut = "forfait"
         elif "report" in low:
             statut = "reporté"
         else:
             statut = "à venir"
-        passe_sans_score = (not played) and iso and iso < datetime.now(TZ).strftime("%Y-%m-%dT%H:%M")
+
+        vainqueur = None
+        if played:
+            vainqueur = "dom" if sd > se else ("ext" if se > sd else "nul")
+        elif penalite:
+            if sd is not None:
+                vainqueur = "dom"
+            elif se is not None:
+                vainqueur = "ext"
+
+        passe_sans_score = (statut == "à venir") and iso and iso < datetime.now(TZ).strftime("%Y-%m-%dT%H:%M")
         rid = re.search(r"rencontre-(\d+)", m["href"])
         calendrier.append({
             "id": rid.group(1) if rid else "",
@@ -230,29 +249,35 @@ def build_json(name, url, raw_matches, raw_classement, source_updated, total_jou
             "exterieur": m["ext"],
             "score_dom": sd if played else None,
             "score_ext": se if played else None,
+            "affiche": f"{sd_raw} – {se_raw}" if (played or penalite) else None,
+            "vainqueur": vainqueur,
             "statut": statut,
             "nous": CLUB_KEYWORD in (m["dom"] + " " + m["ext"]).upper(),
         })
         if passe_sans_score:
-            # match passé sans score affiché (forfait ? score pas encore saisi ?) : on garde le texte brut pour diagnostic
+            # match passé sans score ni code affiché : on garde le texte brut pour diagnostic
             calendrier[-1]["brut"] = " ".join(m["text"].split())
-        if played:
-            a, b = st(m["dom"]), st(m["ext"])
-            a["j"] += 1; b["j"] += 1
-            a["bp"] += sd; a["bc"] += se
-            b["bp"] += se; b["bc"] += sd
-            if sd > se:
-                a["g"] += 1; b["p"] += 1
-            elif sd < se:
-                b["g"] += 1; a["p"] += 1
+
+        if played or (penalite and vainqueur in ("dom", "ext")):
+            a_, b_ = st(m["dom"]), st(m["ext"])
+            a_["j"] += 1; b_["j"] += 1
+            if played:
+                a_["bp"] += sd; a_["bc"] += se
+                b_["bp"] += se; b_["bc"] += sd
+            if vainqueur == "dom":
+                a_["g"] += 1; b_["p"] += 1
+                if penalite: b_["f"] += 1
+            elif vainqueur == "ext":
+                b_["g"] += 1; a_["p"] += 1
+                if penalite: a_["f"] += 1
             else:
-                a["n"] += 1; b["n"] += 1
+                a_["n"] += 1; b_["n"] += 1
 
     calendrier.sort(key=lambda x: (x["iso"] or "9999", x["journee"], x["id"]))
 
     classement = []
     for r in raw_classement:
-        s = stats.get(r["club"], {"j": 0, "g": 0, "n": 0, "p": 0, "bp": 0, "bc": 0})
+        s = stats.get(r["club"], {"j": 0, "g": 0, "n": 0, "p": 0, "f": 0, "bp": 0, "bc": 0})
         classement.append({
             "rang": to_int(r["pos"]) or r["pos"],
             "club": r["club"],
@@ -262,7 +287,7 @@ def build_json(name, url, raw_matches, raw_classement, source_updated, total_jou
             "nous": CLUB_KEYWORD in r["club"].upper(),
         })
         pts = classement[-1]["points"]
-        attendus = 3 * s["g"] + 2 * s["n"] + s["p"]
+        attendus = 3 * s["g"] + 2 * s["n"] + (s["p"] - s["f"])  # défaite 1 pt, perdu par pénalité 0 pt
         # si les points officiels ne collent pas avec les scores lus (forfait, pénalité...), on le signale
         classement[-1]["stats_partielles"] = isinstance(pts, int) and pts != attendus
 
