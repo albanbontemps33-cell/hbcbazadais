@@ -1,0 +1,49 @@
+name: Mise à jour FFHandball
+
+on:
+  schedule:
+    # 4 fois par jour (heure UTC) : ~8h, 14h, 20h et minuit en France
+    - cron: "17 6,12,18,22 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-ffhandball
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install playwright && playwright install --with-deps chromium
+
+      - name: Récupérer classements et calendriers
+        id: scrape
+        continue-on-error: true
+        run: python scripts/update_ffhandball.py
+
+      - name: Enregistrer les changements
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          if git diff --cached --quiet; then
+            echo "Aucun changement."
+          else
+            git commit -m "MAJ automatique FFHandball"
+            git pull --rebase
+            git push
+          fi
+
+      - name: Signaler un échec partiel
+        if: steps.scrape.outcome == 'failure'
+        run: |
+          echo "Certaines équipes n'ont pas pu être mises à jour (voir les logs de l'étape précédente)."
+          exit 1
