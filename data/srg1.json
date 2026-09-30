@@ -15,7 +15,8 @@
    "bc": 56,
    "diff": 24,
    "points": 6,
-   "nous": false
+   "nous": false,
+   "stats_partielles": false
   },
   {
    "rang": 2,
@@ -28,7 +29,8 @@
    "bc": 24,
    "diff": 4,
    "points": 6,
-   "nous": true
+   "nous": true,
+   "stats_partielles": true
   },
   {
    "rang": 3,
@@ -41,7 +43,8 @@
    "bc": 50,
    "diff": 18,
    "points": 6,
-   "nous": false
+   "nous": false,
+   "stats_partielles": false
   },
   {
    "rang": 4,
@@ -54,7 +57,8 @@
    "bc": 49,
    "diff": 12,
    "points": 4,
-   "nous": false
+   "nous": false,
+   "stats_partielles": false
   },
   {
    "rang": 5,
@@ -67,7 +71,8 @@
    "bc": 60,
    "diff": -4,
    "points": 4,
-   "nous": false
+   "nous": false,
+   "stats_partielles": false
   },
   {
    "rang": 6,
@@ -80,7 +85,8 @@
    "bc": 53,
    "diff": -3,
    "points": 4,
-   "nous": false
+   "nous": false,
+   "stats_partielles": false
   },
   {
    "rang": 7,
@@ -93,7 +99,8 @@
    "bc": 63,
    "diff": 2,
    "points": 4,
-   "nous": false
+   "nous": false,
+   "stats_partielles": false
   },
   {
    "rang": 8,
@@ -106,7 +113,8 @@
    "bc": 65,
    "diff": -6,
    "points": 4,
-   "nous": false
+   "nous": false,
+   "stats_partielles": false
   },
   {
    "rang": 9,
@@ -119,7 +127,8 @@
    "bc": 26,
    "diff": 14,
    "points": 3,
-   "nous": false
+   "nous": false,
+   "stats_partielles": false
   },
   {
    "rang": 10,
@@ -132,7 +141,8 @@
    "bc": 72,
    "diff": -18,
    "points": 2,
-   "nous": false
+   "nous": false,
+   "stats_partielles": false
   },
   {
    "rang": 11,
@@ -145,7 +155,8 @@
    "bc": 70,
    "diff": -21,
    "points": 2,
-   "nous": false
+   "nous": false,
+   "stats_partielles": false
   },
   {
    "rang": 12,
@@ -158,39 +169,16 @@
    "bc": 82,
    "diff": -22,
    "points": 2,
-   "nous": false
+   "nous": false,
+   "stats_partielles": false
   }
  ],
  "calendrier": [
   {
-   "id": "2635462",
-   "journee": 1,
-   "iso": "2026-09-19T00:00",
-   "date": "SAMEDI 19 SEPTEMBRE 2026 À 21h00",
-   "domicile": "ES BLANQUEFORTAISE HBC 2",
-   "exterieur": "HAILLAN HANDBALL 1",
-   "score_dom": 36,
-   "score_ext": 23,
-   "statut": "joué",
-   "nous": false
-  },
-  {
-   "id": "2635463",
-   "journee": 1,
-   "iso": "2026-09-19T00:00",
-   "date": "SAMEDI 19 SEPTEMBRE 2026 À 19h00",
-   "domicile": "BORDEAUX ETUDIANTS CLUB",
-   "exterieur": "CM FLOIRAC CENON HANDBALL 2",
-   "score_dom": 26,
-   "score_ext": 40,
-   "statut": "joué",
-   "nous": false
-  },
-  {
    "id": "2635466",
    "journee": 1,
-   "iso": "2026-09-19T00:00",
-   "date": "SAMEDI 19 SEPTEMBRE 2026 À 18h30",
+   "iso": "2026-09-19T18:30",
+   "date": "Samedi 19 septembre 2026 à 18h30",
    "domicile": "AS AMBARESIENNE 2",
    "exterieur": "ST MEDARD HANDBALL 2",
    "score_dom": 39,
@@ -199,10 +187,46 @@
    "nous": false
   },
   {
+   "id": "2635463",
+   "journee": 1,
+   "iso": "2026-09-19T19:00",
+   "date": "Samedi 19 septembre 2026 à 19h00",
+   "domicile": "BORDEAUX ETUDIANTS CLUB",
+   "exterieur": "CM FLOIRAC CENON HANDBALL 2",
+   "score_dom": 26,
+   "score_ext": 40,
+   "statut": "joué",
+   "nous": false
+  },
+  {
+   "id": "2635462",
+   "journee": 1,
+   "iso": "2026-09-19T21:00",
+   "date": "Samedi 19 septembre 2026 à 21h00",
+   "domicile": "ES BLANQUEFORTAISE HBC 2",
+   "exterieur": "HAILLAN HANDBALL 1",
+   "score_dom": 36,
+   "score_ext": 23,
+   "statut": "joué",
+   "nous": false
+  },
+  {
+   "id": "2635465",
+   "journee": 1,
+   "iso": "2026-09-20T14:00",
+   "date": "Dimanche 20 septembre 2026 à 14h00",
+   "domicile": "CANEJAN HBC 2",
+   "exterieur": "HBC LIBOURNE 3",
+   "score_dom": 37,
+   "score_ext": 27,
+   "statut": "joué",
+   "nous": false
+  },
+  {
    "id": "2635461",
    "journee": 1,
-   "iso": "2026-09-20T00:00",
-   "date": "DIMANCHE 20 SEPTEMBRE 2026 À 14h30",
+   "iso": "2026-09-20T14:30",
+   "date": "Dimanche 20 septembre 2026 à 14h30",
    "domicile": "HBC BAZADAIS 1",
    "exterieur": "HBC TEICHOIS",
    "score_dom": 28,
@@ -213,8 +237,8 @@
   {
    "id": "2635464",
    "journee": 1,
-   "iso": "2026-09-20T00:00",
-   "date": "DIMANCHE 20 SEPTEMBRE 2026 À 17h00",
+   "iso": "2026-09-20T17:00",
+   "date": "Dimanche 20 septembre 2026 à 17h00",
    "domicile": "GRADIGNAN HANDBALL CLUB",
    "exterieur": "SC MONSEGUR HB",
    "score_dom": 41,
@@ -223,82 +247,10 @@
    "nous": false
   },
   {
-   "id": "2635465",
-   "journee": 1,
-   "iso": "2026-09-20T00:00",
-   "date": "DIMANCHE 20 SEPTEMBRE 2026 À 14h00",
-   "domicile": "CANEJAN HBC 2",
-   "exterieur": "HBC LIBOURNE 3",
-   "score_dom": 37,
-   "score_ext": 27,
-   "statut": "joué",
-   "nous": false
-  },
-  {
-   "id": "2635467",
-   "journee": 2,
-   "iso": "2026-09-26T00:00",
-   "date": "SAMEDI 26 SEPTEMBRE 2026 À 21h30",
-   "domicile": "HBC TEICHOIS",
-   "exterieur": "ES BLANQUEFORTAISE HBC 2",
-   "score_dom": 26,
-   "score_ext": 25,
-   "statut": "joué",
-   "nous": false
-  },
-  {
-   "id": "2635468",
-   "journee": 2,
-   "iso": "2026-09-26T00:00",
-   "date": "SAMEDI 26 SEPTEMBRE 2026 À 19h00",
-   "domicile": "CM FLOIRAC CENON HANDBALL 2",
-   "exterieur": "HBC BAZADAIS 1",
-   "score_dom": null,
-   "score_ext": null,
-   "statut": "à venir",
-   "nous": true
-  },
-  {
-   "id": "2635469",
-   "journee": 2,
-   "iso": "2026-09-26T00:00",
-   "date": "SAMEDI 26 SEPTEMBRE 2026 À 21h30",
-   "domicile": "HAILLAN HANDBALL 1",
-   "exterieur": "GRADIGNAN HANDBALL CLUB",
-   "score_dom": 33,
-   "score_ext": 24,
-   "statut": "joué",
-   "nous": false
-  },
-  {
-   "id": "2635470",
-   "journee": 2,
-   "iso": "2026-09-26T00:00",
-   "date": "SAMEDI 26 SEPTEMBRE 2026 À 19h00",
-   "domicile": "HBC LIBOURNE 3",
-   "exterieur": "BORDEAUX ETUDIANTS CLUB",
-   "score_dom": 32,
-   "score_ext": 28,
-   "statut": "joué",
-   "nous": false
-  },
-  {
-   "id": "2635471",
-   "journee": 2,
-   "iso": "2026-09-26T00:00",
-   "date": "SAMEDI 26 SEPTEMBRE 2026 À 21h30",
-   "domicile": "SC MONSEGUR HB",
-   "exterieur": "AS AMBARESIENNE 2",
-   "score_dom": 30,
-   "score_ext": 41,
-   "statut": "joué",
-   "nous": false
-  },
-  {
    "id": "2635472",
    "journee": 2,
-   "iso": "2026-09-26T00:00",
-   "date": "SAMEDI 26 SEPTEMBRE 2026 À 18h30",
+   "iso": "2026-09-26T18:30",
+   "date": "Samedi 26 septembre 2026 à 18h30",
    "domicile": "ST MEDARD HANDBALL 2",
    "exterieur": "CANEJAN HBC 2",
    "score_dom": 23,
@@ -307,22 +259,71 @@
    "nous": false
   },
   {
-   "id": "2635475",
-   "journee": 3,
-   "iso": "2026-10-03T00:00",
-   "date": "SAMEDI 3 OCTOBRE 2026 À 21h30",
-   "domicile": "HBC BAZADAIS 1",
-   "exterieur": "HBC LIBOURNE 3",
+   "id": "2635468",
+   "journee": 2,
+   "iso": "2026-09-26T19:00",
+   "date": "Samedi 26 septembre 2026 à 19h00",
+   "domicile": "CM FLOIRAC CENON HANDBALL 2",
+   "exterieur": "HBC BAZADAIS 1",
    "score_dom": null,
    "score_ext": null,
    "statut": "à venir",
-   "nous": true
+   "nous": true,
+   "brut": "SAMEDI 26 SEPTEMBRE 2026 À 19H00 CM FLOIRAC CENON HANDBALL 2 PE 20 HBC BAZADAIS 1 VOIR DÉTAIL DU MATCH"
+  },
+  {
+   "id": "2635470",
+   "journee": 2,
+   "iso": "2026-09-26T19:00",
+   "date": "Samedi 26 septembre 2026 à 19h00",
+   "domicile": "HBC LIBOURNE 3",
+   "exterieur": "BORDEAUX ETUDIANTS CLUB",
+   "score_dom": 32,
+   "score_ext": 28,
+   "statut": "joué",
+   "nous": false
+  },
+  {
+   "id": "2635467",
+   "journee": 2,
+   "iso": "2026-09-26T21:30",
+   "date": "Samedi 26 septembre 2026 à 21h30",
+   "domicile": "HBC TEICHOIS",
+   "exterieur": "ES BLANQUEFORTAISE HBC 2",
+   "score_dom": 26,
+   "score_ext": 25,
+   "statut": "joué",
+   "nous": false
+  },
+  {
+   "id": "2635469",
+   "journee": 2,
+   "iso": "2026-09-26T21:30",
+   "date": "Samedi 26 septembre 2026 à 21h30",
+   "domicile": "HAILLAN HANDBALL 1",
+   "exterieur": "GRADIGNAN HANDBALL CLUB",
+   "score_dom": 33,
+   "score_ext": 24,
+   "statut": "joué",
+   "nous": false
+  },
+  {
+   "id": "2635471",
+   "journee": 2,
+   "iso": "2026-09-26T21:30",
+   "date": "Samedi 26 septembre 2026 à 21h30",
+   "domicile": "SC MONSEGUR HB",
+   "exterieur": "AS AMBARESIENNE 2",
+   "score_dom": 30,
+   "score_ext": 41,
+   "statut": "joué",
+   "nous": false
   },
   {
    "id": "2635476",
    "journee": 3,
-   "iso": "2026-10-03T00:00",
-   "date": "SAMEDI 3 OCTOBRE 2026 À 18h00",
+   "iso": "2026-10-03T18:00",
+   "date": "Samedi 3 octobre 2026 à 18h00",
    "domicile": "AS AMBARESIENNE 2",
    "exterieur": "HAILLAN HANDBALL 1",
    "score_dom": null,
@@ -333,8 +334,8 @@
   {
    "id": "2635477",
    "journee": 3,
-   "iso": "2026-10-03T00:00",
-   "date": "SAMEDI 3 OCTOBRE 2026 À 19h00",
+   "iso": "2026-10-03T19:00",
+   "date": "Samedi 3 octobre 2026 à 19h00",
    "domicile": "BORDEAUX ETUDIANTS CLUB",
    "exterieur": "ST MEDARD HANDBALL 2",
    "score_dom": null,
@@ -345,8 +346,8 @@
   {
    "id": "2635478",
    "journee": 3,
-   "iso": "2026-10-03T00:00",
-   "date": "SAMEDI 3 OCTOBRE 2026 À 19h00",
+   "iso": "2026-10-03T19:00",
+   "date": "Samedi 3 octobre 2026 à 19h00",
    "domicile": "CANEJAN HBC 2",
    "exterieur": "SC MONSEGUR HB",
    "score_dom": null,
@@ -355,10 +356,22 @@
    "nous": false
   },
   {
+   "id": "2635475",
+   "journee": 3,
+   "iso": "2026-10-03T21:30",
+   "date": "Samedi 3 octobre 2026 à 21h30",
+   "domicile": "HBC BAZADAIS 1",
+   "exterieur": "HBC LIBOURNE 3",
+   "score_dom": null,
+   "score_ext": null,
+   "statut": "à venir",
+   "nous": true
+  },
+  {
    "id": "2635474",
    "journee": 3,
-   "iso": "2026-10-04T00:00",
-   "date": "DIMANCHE 4 OCTOBRE 2026 À 17h00",
+   "iso": "2026-10-04T17:00",
+   "date": "Dimanche 4 octobre 2026 à 17h00",
    "domicile": "GRADIGNAN HANDBALL CLUB",
    "exterieur": "ES BLANQUEFORTAISE HBC 2",
    "score_dom": null,
@@ -367,46 +380,10 @@
    "nous": false
   },
   {
-   "id": "2635479",
-   "journee": 4,
-   "iso": "2026-10-10T00:00",
-   "date": "SAMEDI 10 OCTOBRE 2026 À 21h30",
-   "domicile": "GRADIGNAN HANDBALL CLUB",
-   "exterieur": "HBC TEICHOIS",
-   "score_dom": null,
-   "score_ext": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
-   "id": "2635480",
-   "journee": 4,
-   "iso": "2026-10-10T00:00",
-   "date": "SAMEDI 10 OCTOBRE 2026 À 21h00",
-   "domicile": "HBC LIBOURNE 3",
-   "exterieur": "CM FLOIRAC CENON HANDBALL 2",
-   "score_dom": null,
-   "score_ext": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
-   "id": "2635481",
-   "journee": 4,
-   "iso": "2026-10-10T00:00",
-   "date": "SAMEDI 10 OCTOBRE 2026 À 21h00",
-   "domicile": "ES BLANQUEFORTAISE HBC 2",
-   "exterieur": "AS AMBARESIENNE 2",
-   "score_dom": null,
-   "score_ext": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
    "id": "2635482",
    "journee": 4,
-   "iso": "2026-10-10T00:00",
-   "date": "SAMEDI 10 OCTOBRE 2026 À 18h45",
+   "iso": "2026-10-10T18:45",
+   "date": "Samedi 10 octobre 2026 à 18h45",
    "domicile": "ST MEDARD HANDBALL 2",
    "exterieur": "HBC BAZADAIS 1",
    "score_dom": null,
@@ -417,8 +394,8 @@
   {
    "id": "2635483",
    "journee": 4,
-   "iso": "2026-10-10T00:00",
-   "date": "SAMEDI 10 OCTOBRE 2026 À 19h45",
+   "iso": "2026-10-10T19:45",
+   "date": "Samedi 10 octobre 2026 à 19h45",
    "domicile": "HAILLAN HANDBALL 1",
    "exterieur": "CANEJAN HBC 2",
    "score_dom": null,
@@ -429,8 +406,8 @@
   {
    "id": "2635484",
    "journee": 4,
-   "iso": "2026-10-10T00:00",
-   "date": "SAMEDI 10 OCTOBRE 2026 À 20h00",
+   "iso": "2026-10-10T20:00",
+   "date": "Samedi 10 octobre 2026 à 20h00",
    "domicile": "SC MONSEGUR HB",
    "exterieur": "BORDEAUX ETUDIANTS CLUB",
    "score_dom": null,
@@ -439,10 +416,46 @@
    "nous": false
   },
   {
+   "id": "2635480",
+   "journee": 4,
+   "iso": "2026-10-10T21:00",
+   "date": "Samedi 10 octobre 2026 à 21h00",
+   "domicile": "HBC LIBOURNE 3",
+   "exterieur": "CM FLOIRAC CENON HANDBALL 2",
+   "score_dom": null,
+   "score_ext": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
+   "id": "2635481",
+   "journee": 4,
+   "iso": "2026-10-10T21:00",
+   "date": "Samedi 10 octobre 2026 à 21h00",
+   "domicile": "ES BLANQUEFORTAISE HBC 2",
+   "exterieur": "AS AMBARESIENNE 2",
+   "score_dom": null,
+   "score_ext": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
+   "id": "2635479",
+   "journee": 4,
+   "iso": "2026-10-10T21:30",
+   "date": "Samedi 10 octobre 2026 à 21h30",
+   "domicile": "GRADIGNAN HANDBALL CLUB",
+   "exterieur": "HBC TEICHOIS",
+   "score_dom": null,
+   "score_ext": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
    "id": "2635473",
    "journee": 3,
-   "iso": "2026-10-17T00:00",
-   "date": "SAMEDI 17 OCTOBRE 2026 À 20h00",
+   "iso": "2026-10-17T20:00",
+   "date": "Samedi 17 octobre 2026 à 20h00",
    "domicile": "HBC TEICHOIS",
    "exterieur": "CM FLOIRAC CENON HANDBALL 2",
    "score_dom": null,
@@ -453,8 +466,8 @@
   {
    "id": "2635489",
    "journee": 5,
-   "iso": "2026-10-24T00:00",
-   "date": "SAMEDI 24 OCTOBRE 2026 À 20h30",
+   "iso": "2026-10-24T20:30",
+   "date": "Samedi 24 octobre 2026 à 20h30",
    "domicile": "HBC BAZADAIS 1",
    "exterieur": "SC MONSEGUR HB",
    "score_dom": null,
@@ -463,22 +476,10 @@
    "nous": true
   },
   {
-   "id": "2635485",
-   "journee": 5,
-   "iso": "2026-10-31T00:00",
-   "date": "SAMEDI 31 OCTOBRE 2026 À 21h00",
-   "domicile": "HBC TEICHOIS",
-   "exterieur": "HBC LIBOURNE 3",
-   "score_dom": null,
-   "score_ext": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
    "id": "2635486",
    "journee": 5,
-   "iso": "2026-10-31T00:00",
-   "date": "SAMEDI 31 OCTOBRE 2026 À 18h30",
+   "iso": "2026-10-31T18:30",
+   "date": "Samedi 31 octobre 2026 à 18h30",
    "domicile": "AS AMBARESIENNE 2",
    "exterieur": "GRADIGNAN HANDBALL CLUB",
    "score_dom": null,
@@ -489,8 +490,8 @@
   {
    "id": "2635487",
    "journee": 5,
-   "iso": "2026-10-31T00:00",
-   "date": "SAMEDI 31 OCTOBRE 2026 À 19h00",
+   "iso": "2026-10-31T19:00",
+   "date": "Samedi 31 octobre 2026 à 19h00",
    "domicile": "CM FLOIRAC CENON HANDBALL 2",
    "exterieur": "ST MEDARD HANDBALL 2",
    "score_dom": null,
@@ -499,10 +500,22 @@
    "nous": false
   },
   {
+   "id": "2635485",
+   "journee": 5,
+   "iso": "2026-10-31T21:00",
+   "date": "Samedi 31 octobre 2026 à 21h00",
+   "domicile": "HBC TEICHOIS",
+   "exterieur": "HBC LIBOURNE 3",
+   "score_dom": null,
+   "score_ext": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
    "id": "2635488",
    "journee": 5,
-   "iso": "2026-11-01T00:00",
-   "date": "DIMANCHE 1 NOVEMBRE 2026 À 14h00",
+   "iso": "2026-11-01T14:00",
+   "date": "Dimanche 1er novembre 2026 à 14h00",
    "domicile": "CANEJAN HBC 2",
    "exterieur": "ES BLANQUEFORTAISE HBC 2",
    "score_dom": null,
@@ -513,8 +526,8 @@
   {
    "id": "2635490",
    "journee": 5,
-   "iso": "2026-11-01T00:00",
-   "date": "DIMANCHE 1 NOVEMBRE 2026 À 15h00",
+   "iso": "2026-11-01T15:00",
+   "date": "Dimanche 1er novembre 2026 à 15h00",
    "domicile": "BORDEAUX ETUDIANTS CLUB",
    "exterieur": "HAILLAN HANDBALL 1",
    "score_dom": null,
@@ -525,8 +538,8 @@
   {
    "id": "2635491",
    "journee": 6,
-   "iso": "2026-11-07T00:00",
-   "date": "SAMEDI 7 NOVEMBRE 2026 À 18h30",
+   "iso": "2026-11-07T18:30",
+   "date": "Samedi 7 novembre 2026 à 18h30",
    "domicile": "AS AMBARESIENNE 2",
    "exterieur": "HBC TEICHOIS",
    "score_dom": null,
@@ -537,8 +550,8 @@
   {
    "id": "2635492",
    "journee": 6,
-   "iso": "2026-11-07T00:00",
-   "date": "SAMEDI 7 NOVEMBRE 2026 À 19h30",
+   "iso": "2026-11-07T19:30",
+   "date": "Samedi 7 novembre 2026 à 19h30",
    "domicile": "ST MEDARD HANDBALL 2",
    "exterieur": "HBC LIBOURNE 3",
    "score_dom": null,
@@ -549,8 +562,8 @@
   {
    "id": "2635494",
    "journee": 6,
-   "iso": "2026-11-07T00:00",
-   "date": "SAMEDI 7 NOVEMBRE 2026 À 20h45",
+   "iso": "2026-11-07T20:45",
+   "date": "Samedi 7 novembre 2026 à 20h45",
    "domicile": "SC MONSEGUR HB",
    "exterieur": "CM FLOIRAC CENON HANDBALL 2",
    "score_dom": null,
@@ -561,8 +574,8 @@
   {
    "id": "2635495",
    "journee": 6,
-   "iso": "2026-11-07T00:00",
-   "date": "SAMEDI 7 NOVEMBRE 2026 À 21h00",
+   "iso": "2026-11-07T21:00",
+   "date": "Samedi 7 novembre 2026 à 21h00",
    "domicile": "ES BLANQUEFORTAISE HBC 2",
    "exterieur": "BORDEAUX ETUDIANTS CLUB",
    "score_dom": null,
@@ -573,8 +586,8 @@
   {
    "id": "2635496",
    "journee": 6,
-   "iso": "2026-11-07T00:00",
-   "date": "SAMEDI 7 NOVEMBRE 2026 À 21h00",
+   "iso": "2026-11-07T21:00",
+   "date": "Samedi 7 novembre 2026 à 21h00",
    "domicile": "HAILLAN HANDBALL 1",
    "exterieur": "HBC BAZADAIS 1",
    "score_dom": null,
@@ -583,22 +596,10 @@
    "nous": true
   },
   {
-   "id": "2635498",
-   "journee": 7,
-   "iso": "2026-11-14T00:00",
-   "date": "SAMEDI 14 NOVEMBRE 2026 À 19h00",
-   "domicile": "CANEJAN HBC 2",
-   "exterieur": "AS AMBARESIENNE 2",
-   "score_dom": null,
-   "score_ext": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
    "id": "2635499",
    "journee": 7,
-   "iso": "2026-11-14T00:00",
-   "date": "SAMEDI 14 NOVEMBRE 2026 À 18h30",
+   "iso": "2026-11-14T18:30",
+   "date": "Samedi 14 novembre 2026 à 18h30",
    "domicile": "HBC LIBOURNE 3",
    "exterieur": "SC MONSEGUR HB",
    "score_dom": null,
@@ -607,10 +608,22 @@
    "nous": false
   },
   {
+   "id": "2635498",
+   "journee": 7,
+   "iso": "2026-11-14T19:00",
+   "date": "Samedi 14 novembre 2026 à 19h00",
+   "domicile": "CANEJAN HBC 2",
+   "exterieur": "AS AMBARESIENNE 2",
+   "score_dom": null,
+   "score_ext": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
    "id": "2635501",
    "journee": 7,
-   "iso": "2026-11-14T00:00",
-   "date": "SAMEDI 14 NOVEMBRE 2026 À 20h30",
+   "iso": "2026-11-14T20:30",
+   "date": "Samedi 14 novembre 2026 à 20h30",
    "domicile": "CM FLOIRAC CENON HANDBALL 2",
    "exterieur": "HAILLAN HANDBALL 1",
    "score_dom": null,
@@ -621,8 +634,8 @@
   {
    "id": "2635502",
    "journee": 7,
-   "iso": "2026-11-14T00:00",
-   "date": "SAMEDI 14 NOVEMBRE 2026 À 21h30",
+   "iso": "2026-11-14T21:30",
+   "date": "Samedi 14 novembre 2026 à 21h30",
    "domicile": "HBC BAZADAIS 1",
    "exterieur": "ES BLANQUEFORTAISE HBC 2",
    "score_dom": null,
@@ -631,22 +644,10 @@
    "nous": true
   },
   {
-   "id": "2635504",
-   "journee": 8,
-   "iso": "2026-11-28T00:00",
-   "date": "SAMEDI 28 NOVEMBRE 2026 À 20h30",
-   "domicile": "SC MONSEGUR HB",
-   "exterieur": "ST MEDARD HANDBALL 2",
-   "score_dom": null,
-   "score_ext": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
    "id": "2635505",
    "journee": 8,
-   "iso": "2026-11-28T00:00",
-   "date": "SAMEDI 28 NOVEMBRE 2026 À 18h30",
+   "iso": "2026-11-28T18:30",
+   "date": "Samedi 28 novembre 2026 à 18h30",
    "domicile": "AS AMBARESIENNE 2",
    "exterieur": "BORDEAUX ETUDIANTS CLUB",
    "score_dom": null,
@@ -655,10 +656,22 @@
    "nous": false
   },
   {
+   "id": "2635504",
+   "journee": 8,
+   "iso": "2026-11-28T20:30",
+   "date": "Samedi 28 novembre 2026 à 20h30",
+   "domicile": "SC MONSEGUR HB",
+   "exterieur": "ST MEDARD HANDBALL 2",
+   "score_dom": null,
+   "score_ext": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
    "id": "2635508",
    "journee": 8,
-   "iso": "2026-11-28T00:00",
-   "date": "SAMEDI 28 NOVEMBRE 2026 À 21h00",
+   "iso": "2026-11-28T21:00",
+   "date": "Samedi 28 novembre 2026 à 21h00",
    "domicile": "ES BLANQUEFORTAISE HBC 2",
    "exterieur": "CM FLOIRAC CENON HANDBALL 2",
    "score_dom": null,
@@ -667,10 +680,70 @@
    "nous": false
   },
   {
+   "id": "2635513",
+   "journee": 9,
+   "iso": "2026-12-05T19:00",
+   "date": "Samedi 5 décembre 2026 à 19h00",
+   "domicile": "HBC LIBOURNE 3",
+   "exterieur": "ES BLANQUEFORTAISE HBC 2",
+   "score_dom": null,
+   "score_ext": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
+   "id": "2635512",
+   "journee": 9,
+   "iso": "2026-12-05T21:30",
+   "date": "Samedi 5 décembre 2026 à 21h30",
+   "domicile": "HBC BAZADAIS 1",
+   "exterieur": "AS AMBARESIENNE 2",
+   "score_dom": null,
+   "score_ext": null,
+   "statut": "à venir",
+   "nous": true
+  },
+  {
+   "id": "2635519",
+   "journee": 10,
+   "iso": "2026-12-12T18:30",
+   "date": "Samedi 12 décembre 2026 à 18h30",
+   "domicile": "AS AMBARESIENNE 2",
+   "exterieur": "CM FLOIRAC CENON HANDBALL 2",
+   "score_dom": null,
+   "score_ext": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
+   "id": "2635518",
+   "journee": 10,
+   "iso": "2026-12-12T21:30",
+   "date": "Samedi 12 décembre 2026 à 21h30",
+   "domicile": "ES BLANQUEFORTAISE HBC 2",
+   "exterieur": "ST MEDARD HANDBALL 2",
+   "score_dom": null,
+   "score_ext": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
+   "id": "2635520",
+   "journee": 10,
+   "iso": "2026-12-13T16:00",
+   "date": "Dimanche 13 décembre 2026 à 16h00",
+   "domicile": "HBC LIBOURNE 3",
+   "exterieur": "GRADIGNAN HANDBALL CLUB",
+   "score_dom": null,
+   "score_ext": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
    "id": "2635526",
    "journee": 11,
-   "iso": "2027-01-09T00:00",
-   "date": "SAMEDI 9 JANVIER 2027 À 18h30",
+   "iso": "2027-01-09T18:30",
+   "date": "Samedi 9 janvier 2027 à 18h30",
    "domicile": "HBC LIBOURNE 3",
    "exterieur": "AS AMBARESIENNE 2",
    "score_dom": null,
@@ -681,8 +754,8 @@
   {
    "id": "2635531",
    "journee": 12,
-   "iso": "2027-01-23T00:00",
-   "date": "SAMEDI 23 JANVIER 2027 À 18h30",
+   "iso": "2027-01-23T18:30",
+   "date": "Samedi 23 janvier 2027 à 18h30",
    "domicile": "HBC LIBOURNE 3",
    "exterieur": "CANEJAN HBC 2",
    "score_dom": null,
@@ -693,8 +766,8 @@
   {
    "id": "2635537",
    "journee": 13,
-   "iso": "2027-01-30T00:00",
-   "date": "SAMEDI 30 JANVIER 2027 À 18h30",
+   "iso": "2027-01-30T18:30",
+   "date": "Samedi 30 janvier 2027 à 18h30",
    "domicile": "AS AMBARESIENNE 2",
    "exterieur": "SC MONSEGUR HB",
    "score_dom": null,
@@ -705,8 +778,8 @@
   {
    "id": "2635547",
    "journee": 15,
-   "iso": "2027-03-06T00:00",
-   "date": "SAMEDI 6 MARS 2027 À 18h30",
+   "iso": "2027-03-06T18:30",
+   "date": "Samedi 6 mars 2027 à 18h30",
    "domicile": "AS AMBARESIENNE 2",
    "exterieur": "ES BLANQUEFORTAISE HBC 2",
    "score_dom": null,
@@ -717,8 +790,8 @@
   {
    "id": "2635564",
    "journee": 18,
-   "iso": "2027-04-03T00:00",
-   "date": "SAMEDI 3 AVRIL 2027 À 18h30",
+   "iso": "2027-04-03T18:30",
+   "date": "Samedi 3 avril 2027 à 18h30",
    "domicile": "AS AMBARESIENNE 2",
    "exterieur": "CANEJAN HBC 2",
    "score_dom": null,
@@ -729,8 +802,8 @@
   {
    "id": "2635578",
    "journee": 20,
-   "iso": "2027-05-01T00:00",
-   "date": "SAMEDI 1 MAI 2027 À 18h30",
+   "iso": "2027-05-01T18:30",
+   "date": "Samedi 1er mai 2027 à 18h30",
    "domicile": "AS AMBARESIENNE 2",
    "exterieur": "HBC BAZADAIS 1",
    "score_dom": null,
@@ -741,8 +814,8 @@
   {
    "id": "2635592",
    "journee": 22,
-   "iso": "2027-05-22T00:00",
-   "date": "SAMEDI 22 MAI 2027 À 18h30",
+   "iso": "2027-05-22T18:30",
+   "date": "Samedi 22 mai 2027 à 18h30",
    "domicile": "AS AMBARESIENNE 2",
    "exterieur": "HBC LIBOURNE 3",
    "score_dom": null,
@@ -859,30 +932,6 @@
    "nous": false
   },
   {
-   "id": "2635512",
-   "journee": 9,
-   "iso": "",
-   "date": "SAMEDI 5 DÉCEMBRE 2026 À 21H30",
-   "domicile": "HBC BAZADAIS 1",
-   "exterieur": "AS AMBARESIENNE 2",
-   "score_dom": null,
-   "score_ext": null,
-   "statut": "à venir",
-   "nous": true
-  },
-  {
-   "id": "2635513",
-   "journee": 9,
-   "iso": "",
-   "date": "SAMEDI 5 DÉCEMBRE 2026 À 19H00",
-   "domicile": "HBC LIBOURNE 3",
-   "exterieur": "ES BLANQUEFORTAISE HBC 2",
-   "score_dom": null,
-   "score_ext": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
    "id": "2635514",
    "journee": 9,
    "iso": "",
@@ -929,42 +978,6 @@
    "score_ext": null,
    "statut": "à venir",
    "nous": true
-  },
-  {
-   "id": "2635518",
-   "journee": 10,
-   "iso": "",
-   "date": "SAMEDI 12 DÉCEMBRE 2026 À 21H30",
-   "domicile": "ES BLANQUEFORTAISE HBC 2",
-   "exterieur": "ST MEDARD HANDBALL 2",
-   "score_dom": null,
-   "score_ext": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
-   "id": "2635519",
-   "journee": 10,
-   "iso": "",
-   "date": "SAMEDI 12 DÉCEMBRE 2026 À 18H30",
-   "domicile": "AS AMBARESIENNE 2",
-   "exterieur": "CM FLOIRAC CENON HANDBALL 2",
-   "score_dom": null,
-   "score_ext": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
-   "id": "2635520",
-   "journee": 10,
-   "iso": "",
-   "date": "DIMANCHE 13 DÉCEMBRE 2026 À 16H00",
-   "domicile": "HBC LIBOURNE 3",
-   "exterieur": "GRADIGNAN HANDBALL CLUB",
-   "score_dom": null,
-   "score_ext": null,
-   "statut": "à venir",
-   "nous": false
   },
   {
    "id": "2635521",
@@ -1747,5 +1760,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-09-30 18:45"
+ "genere_le": "2026-09-30 23:54"
 }
