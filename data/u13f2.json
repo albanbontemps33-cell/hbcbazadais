@@ -99,6 +99,8 @@
    "exterieur": "SC MONSEGUR HB",
    "score_dom": 13,
    "score_ext": 20,
+   "affiche": "13 – 20",
+   "vainqueur": "ext",
    "statut": "joué",
    "nous": false
   },
@@ -111,6 +113,8 @@
    "exterieur": "HANDBALL SAINT MEDARD D'EYRANS",
    "score_dom": 34,
    "score_ext": 18,
+   "affiche": "34 – 18",
+   "vainqueur": "dom",
    "statut": "joué",
    "nous": false
   },
@@ -123,6 +127,8 @@
    "exterieur": "PE2M HB 2",
    "score_dom": 6,
    "score_ext": 20,
+   "affiche": "6 – 20",
+   "vainqueur": "ext",
    "statut": "joué",
    "nous": true
   },
@@ -135,6 +141,8 @@
    "exterieur": "AVENIR PAILLETON",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -147,6 +155,8 @@
    "exterieur": "HBC BAZADAIS 2",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": true
   },
@@ -159,6 +169,8 @@
    "exterieur": "CADILLAC CERONS U13F",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -171,6 +183,8 @@
    "exterieur": "AVENIR PAILLETON",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -183,6 +197,8 @@
    "exterieur": "SC MONSEGUR HB",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": true
   },
@@ -195,6 +211,8 @@
    "exterieur": "PE2M HB 2",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -207,6 +225,8 @@
    "exterieur": "PE2M HB 2",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -219,6 +239,8 @@
    "exterieur": "HBC BAZADAIS 2",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": true
   },
@@ -231,6 +253,8 @@
    "exterieur": "AVENIR PAILLETON",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -243,6 +267,8 @@
    "exterieur": "HBC BAZADAIS 2",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": true
   },
@@ -255,6 +281,8 @@
    "exterieur": "CADILLAC CERONS U13F",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -267,6 +295,8 @@
    "exterieur": "HANDBALL SAINT MEDARD D'EYRANS",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -279,6 +309,8 @@
    "exterieur": "HBC BAZADAIS 2",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": true
   },
@@ -291,6 +323,8 @@
    "exterieur": "SC MONSEGUR HB",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -303,6 +337,8 @@
    "exterieur": "HANDBALL SAINT MEDARD D'EYRANS",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -315,6 +351,8 @@
    "exterieur": "HANDBALL SAINT MEDARD D'EYRANS",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -327,6 +365,8 @@
    "exterieur": "CADILLAC CERONS U13F",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": true
   },
@@ -339,6 +379,8 @@
    "exterieur": "SC MONSEGUR HB",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -351,6 +393,8 @@
    "exterieur": "AVENIR PAILLETON",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -363,6 +407,8 @@
    "exterieur": "SC MONSEGUR HB",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -375,6 +421,8 @@
    "exterieur": "PE2M HB 2",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -387,6 +435,8 @@
    "exterieur": "HANDBALL SAINT MEDARD D'EYRANS",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": true
   },
@@ -399,6 +449,8 @@
    "exterieur": "CADILLAC CERONS U13F",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -411,6 +463,8 @@
    "exterieur": "AVENIR PAILLETON",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": true
   },
@@ -423,6 +477,8 @@
    "exterieur": "CADILLAC CERONS U13F",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -435,6 +491,8 @@
    "exterieur": "HBC BAZADAIS 2",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": true
   },
@@ -447,9 +505,11 @@
    "exterieur": "PE2M HB 2",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   }
  ],
- "genere_le": "2026-09-30 23:40"
+ "genere_le": "2026-10-01 00:07"
 }

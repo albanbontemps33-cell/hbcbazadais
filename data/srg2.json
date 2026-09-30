@@ -99,6 +99,8 @@
    "exterieur": "US MIOS BIGANOS 2",
    "score_dom": 35,
    "score_ext": 20,
+   "affiche": "35 – 20",
+   "vainqueur": "dom",
    "statut": "joué",
    "nous": false
   },
@@ -111,6 +113,8 @@
    "exterieur": "HANDBALL CLUB SAINT SYMPHORIEN",
    "score_dom": 21,
    "score_ext": 27,
+   "affiche": "21 – 27",
+   "vainqueur": "ext",
    "statut": "joué",
    "nous": true
   },
@@ -123,6 +127,8 @@
    "exterieur": "ST MEDARD HANDBALL 2",
    "score_dom": 38,
    "score_ext": 28,
+   "affiche": "38 – 28",
+   "vainqueur": "dom",
    "statut": "joué",
    "nous": false
   },
@@ -135,6 +141,8 @@
    "exterieur": "HBC BAZADAIS 2",
    "score_dom": 40,
    "score_ext": 24,
+   "affiche": "40 – 24",
+   "vainqueur": "dom",
    "statut": "joué",
    "nous": true
   },
@@ -147,6 +155,8 @@
    "exterieur": "HBC TEICHOIS 2",
    "score_dom": 22,
    "score_ext": 24,
+   "affiche": "22 – 24",
+   "vainqueur": "ext",
    "statut": "joué",
    "nous": false
   },
@@ -159,6 +169,8 @@
    "exterieur": "ASSOCIATION SPORTIVE DE HANDBALL BRANNAIS",
    "score_dom": 26,
    "score_ext": 29,
+   "affiche": "26 – 29",
+   "vainqueur": "ext",
    "statut": "joué",
    "nous": false
   },
@@ -171,6 +183,8 @@
    "exterieur": "HBC TEICHOIS 2",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": true
   },
@@ -183,6 +197,8 @@
    "exterieur": "HANDBALL CLUB SAINT SYMPHORIEN",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -195,6 +211,8 @@
    "exterieur": "US MIOS BIGANOS 2",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -207,6 +225,8 @@
    "exterieur": "US MIOS BIGANOS 2",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -219,6 +239,8 @@
    "exterieur": "ASSOCIATION SPORTIVE DE HANDBALL BRANNAIS",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -231,6 +253,8 @@
    "exterieur": "ST MEDARD HANDBALL 2",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": true
   },
@@ -243,6 +267,8 @@
    "exterieur": "HBC TEICHOIS 2",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -255,6 +281,8 @@
    "exterieur": "HANDBALL CLUB SAINT SYMPHORIEN",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -267,6 +295,8 @@
    "exterieur": "HBC BAZADAIS 2",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": true
   },
@@ -279,6 +309,8 @@
    "exterieur": "HBC TEICHOIS 2",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -291,6 +323,8 @@
    "exterieur": "ASSOCIATION SPORTIVE DE HANDBALL BRANNAIS",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -303,6 +337,8 @@
    "exterieur": "US MIOS BIGANOS 2",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": true
   },
@@ -315,6 +351,8 @@
    "exterieur": "ST MEDARD HANDBALL 2",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -327,6 +365,8 @@
    "exterieur": "ASSOCIATION SPORTIVE DE HANDBALL BRANNAIS",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": true
   },
@@ -339,6 +379,8 @@
    "exterieur": "HBC BAZADAIS 2",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": true
   },
@@ -351,6 +393,8 @@
    "exterieur": "HANDBALL CLUB SAINT SYMPHORIEN",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -363,6 +407,8 @@
    "exterieur": "ST MEDARD HANDBALL 2",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -375,6 +421,8 @@
    "exterieur": "ASSOCIATION SPORTIVE DE HANDBALL BRANNAIS",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -387,6 +435,8 @@
    "exterieur": "HBC BAZADAIS 2",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": true
   },
@@ -399,6 +449,8 @@
    "exterieur": "HBC TEICHOIS 2",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -411,6 +463,8 @@
    "exterieur": "HBC BAZADAIS 2",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": true
   },
@@ -423,6 +477,8 @@
    "exterieur": "HANDBALL CLUB SAINT SYMPHORIEN",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -435,6 +491,8 @@
    "exterieur": "US MIOS BIGANOS 2",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -447,9 +505,11 @@
    "exterieur": "ST MEDARD HANDBALL 2",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   }
  ],
- "genere_le": "2026-09-30 23:37"
+ "genere_le": "2026-10-01 00:06"
 }

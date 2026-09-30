@@ -183,6 +183,8 @@
    "exterieur": "SA GAZINET CESTAS 2",
    "score_dom": 13,
    "score_ext": 27,
+   "affiche": "13 – 27",
+   "vainqueur": "ext",
    "statut": "joué",
    "nous": false
   },
@@ -195,6 +197,8 @@
    "exterieur": "HANDBALL CUBZAGUAIS",
    "score_dom": 30,
    "score_ext": 32,
+   "affiche": "30 – 32",
+   "vainqueur": "ext",
    "statut": "joué",
    "nous": false
   },
@@ -207,6 +211,8 @@
    "exterieur": "LORMONT HANDBALL HAUTS DE GARONNE",
    "score_dom": 15,
    "score_ext": 37,
+   "affiche": "15 – 37",
+   "vainqueur": "ext",
    "statut": "joué",
    "nous": false
   },
@@ -219,6 +225,8 @@
    "exterieur": "HAILLAN HANDBALL",
    "score_dom": 18,
    "score_ext": 23,
+   "affiche": "18 – 23",
+   "vainqueur": "ext",
    "statut": "joué",
    "nous": false
   },
@@ -231,6 +239,8 @@
    "exterieur": "PE2M HB 2",
    "score_dom": 30,
    "score_ext": 29,
+   "affiche": "30 – 29",
+   "vainqueur": "dom",
    "statut": "joué",
    "nous": true
   },
@@ -243,6 +253,8 @@
    "exterieur": "HANDBALL SAINT MEDARD D'EYRANS",
    "score_dom": 25,
    "score_ext": 15,
+   "affiche": "25 – 15",
+   "vainqueur": "dom",
    "statut": "joué",
    "nous": false
   },
@@ -255,6 +267,8 @@
    "exterieur": "AVENIR PAILLETON 2",
    "score_dom": 40,
    "score_ext": 17,
+   "affiche": "40 – 17",
+   "vainqueur": "dom",
    "statut": "joué",
    "nous": false
   },
@@ -267,6 +281,8 @@
    "exterieur": "MEDOC HANDBALL 2",
    "score_dom": 32,
    "score_ext": 24,
+   "affiche": "32 – 24",
+   "vainqueur": "dom",
    "statut": "joué",
    "nous": false
   },
@@ -279,6 +295,8 @@
    "exterieur": "ARCACHON LA TESTE HBC",
    "score_dom": 31,
    "score_ext": 22,
+   "affiche": "31 – 22",
+   "vainqueur": "dom",
    "statut": "joué",
    "nous": false
   },
@@ -291,6 +309,8 @@
    "exterieur": "AS HB DU FRONSADAIS",
    "score_dom": 30,
    "score_ext": 16,
+   "affiche": "30 – 16",
+   "vainqueur": "dom",
    "statut": "joué",
    "nous": false
   },
@@ -303,6 +323,8 @@
    "exterieur": "PE2M HB 2",
    "score_dom": 24,
    "score_ext": 21,
+   "affiche": "24 – 21",
+   "vainqueur": "dom",
    "statut": "joué",
    "nous": false
   },
@@ -315,6 +337,8 @@
    "exterieur": "HBC BAZADAIS",
    "score_dom": 27,
    "score_ext": 28,
+   "affiche": "27 – 28",
+   "vainqueur": "ext",
    "statut": "joué",
    "nous": true
   },
@@ -327,6 +351,8 @@
    "exterieur": "HANDBALL CUBZAGUAIS",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -339,6 +365,8 @@
    "exterieur": "HANDBALL SAINT MEDARD D'EYRANS",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -351,6 +379,8 @@
    "exterieur": "HBC PAYS CASTILLONNAIS",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -363,6 +393,8 @@
    "exterieur": "LORMONT HANDBALL HAUTS DE GARONNE",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": true
   },
@@ -375,6 +407,8 @@
    "exterieur": "SA GAZINET CESTAS 2",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -387,6 +421,8 @@
    "exterieur": "HAILLAN HANDBALL",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -399,6 +435,8 @@
    "exterieur": "SA GAZINET CESTAS 2",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -411,6 +449,8 @@
    "exterieur": "PE2M HB 2",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -423,6 +463,8 @@
    "exterieur": "MEDOC HANDBALL 2",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -435,6 +477,8 @@
    "exterieur": "HBC BAZADAIS",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": true
   },
@@ -447,6 +491,8 @@
    "exterieur": "ARCACHON LA TESTE HBC",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -459,6 +505,8 @@
    "exterieur": "AVENIR PAILLETON 2",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -471,6 +519,8 @@
    "exterieur": "LORMONT HANDBALL HAUTS DE GARONNE",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -483,6 +533,8 @@
    "exterieur": "HAILLAN HANDBALL",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -495,6 +547,8 @@
    "exterieur": "HANDBALL SAINT MEDARD D'EYRANS",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -507,6 +561,8 @@
    "exterieur": "HBC PAYS CASTILLONNAIS",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -519,6 +575,8 @@
    "exterieur": "HBC BAZADAIS",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": true
   },
@@ -531,6 +589,8 @@
    "exterieur": "ARCACHON LA TESTE HBC",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -543,6 +603,8 @@
    "exterieur": "HANDBALL CUBZAGUAIS",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -555,6 +617,8 @@
    "exterieur": "MEDOC HANDBALL 2",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -567,6 +631,8 @@
    "exterieur": "HANDBALL SAINT MEDARD D'EYRANS",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -579,6 +645,8 @@
    "exterieur": "LORMONT HANDBALL HAUTS DE GARONNE",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -591,6 +659,8 @@
    "exterieur": "HBC PAYS CASTILLONNAIS",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": true
   },
@@ -603,6 +673,8 @@
    "exterieur": "HANDBALL SAINT MEDARD D'EYRANS",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -615,6 +687,8 @@
    "exterieur": "PE2M HB 2",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -627,6 +701,8 @@
    "exterieur": "MEDOC HANDBALL 2",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": true
   },
@@ -639,6 +715,8 @@
    "exterieur": "HANDBALL CUBZAGUAIS",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -651,6 +729,8 @@
    "exterieur": "HBC BAZADAIS",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": true
   },
@@ -663,6 +743,8 @@
    "exterieur": "AS HB DU FRONSADAIS",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -675,6 +757,8 @@
    "exterieur": "HANDBALL CUBZAGUAIS",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": true
   },
@@ -687,6 +771,8 @@
    "exterieur": "PE2M HB 2",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -699,6 +785,8 @@
    "exterieur": "LORMONT HANDBALL HAUTS DE GARONNE",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -711,6 +799,8 @@
    "exterieur": "AVENIR PAILLETON 2",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -723,6 +813,8 @@
    "exterieur": "AS HB DU FRONSADAIS",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -735,6 +827,8 @@
    "exterieur": "HAILLAN HANDBALL",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -747,6 +841,8 @@
    "exterieur": "AVENIR PAILLETON 2",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -759,6 +855,8 @@
    "exterieur": "LORMONT HANDBALL HAUTS DE GARONNE",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -771,6 +869,8 @@
    "exterieur": "HBC BAZADAIS",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": true
   },
@@ -783,6 +883,8 @@
    "exterieur": "SA GAZINET CESTAS 2",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -795,6 +897,8 @@
    "exterieur": "ARCACHON LA TESTE HBC",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -807,6 +911,8 @@
    "exterieur": "HAILLAN HANDBALL",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -819,6 +925,8 @@
    "exterieur": "HBC PAYS CASTILLONNAIS",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -831,6 +939,8 @@
    "exterieur": "AS HB DU FRONSADAIS",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -843,6 +953,8 @@
    "exterieur": "PE2M HB 2",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -855,6 +967,8 @@
    "exterieur": "HANDBALL CUBZAGUAIS",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -867,6 +981,8 @@
    "exterieur": "HANDBALL SAINT MEDARD D'EYRANS",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -879,6 +995,8 @@
    "exterieur": "SA GAZINET CESTAS 2",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -891,6 +1009,8 @@
    "exterieur": "LORMONT HANDBALL HAUTS DE GARONNE",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -903,6 +1023,8 @@
    "exterieur": "HAILLAN HANDBALL",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -915,6 +1037,8 @@
    "exterieur": "AVENIR PAILLETON 2",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": true
   },
@@ -927,6 +1051,8 @@
    "exterieur": "HBC PAYS CASTILLONNAIS",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -939,6 +1065,8 @@
    "exterieur": "ARCACHON LA TESTE HBC",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -951,6 +1079,8 @@
    "exterieur": "AS HB DU FRONSADAIS",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -963,6 +1093,8 @@
    "exterieur": "MEDOC HANDBALL 2",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -975,6 +1107,8 @@
    "exterieur": "HBC BAZADAIS",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": true
   },
@@ -987,6 +1121,8 @@
    "exterieur": "HBC PAYS CASTILLONNAIS",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -999,6 +1135,8 @@
    "exterieur": "AVENIR PAILLETON 2",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -1011,6 +1149,8 @@
    "exterieur": "AS HB DU FRONSADAIS",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -1023,6 +1163,8 @@
    "exterieur": "ARCACHON LA TESTE HBC",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -1035,6 +1177,8 @@
    "exterieur": "MEDOC HANDBALL 2",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -1047,6 +1191,8 @@
    "exterieur": "HBC PAYS CASTILLONNAIS",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -1059,6 +1205,8 @@
    "exterieur": "SA GAZINET CESTAS 2",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": true
   },
@@ -1071,6 +1219,8 @@
    "exterieur": "HAILLAN HANDBALL",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -1083,6 +1233,8 @@
    "exterieur": "LORMONT HANDBALL HAUTS DE GARONNE",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -1095,6 +1247,8 @@
    "exterieur": "HANDBALL CUBZAGUAIS",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -1107,6 +1261,8 @@
    "exterieur": "HANDBALL SAINT MEDARD D'EYRANS",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -1119,6 +1275,8 @@
    "exterieur": "PE2M HB 2",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -1131,6 +1289,8 @@
    "exterieur": "AS HB DU FRONSADAIS",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -1143,6 +1303,8 @@
    "exterieur": "HBC BAZADAIS",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": true
   },
@@ -1155,6 +1317,8 @@
    "exterieur": "MEDOC HANDBALL 2",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -1167,6 +1331,8 @@
    "exterieur": "AVENIR PAILLETON 2",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -1179,6 +1345,8 @@
    "exterieur": "ARCACHON LA TESTE HBC",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -1191,6 +1359,8 @@
    "exterieur": "AS HB DU FRONSADAIS",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -1203,6 +1373,8 @@
    "exterieur": "LORMONT HANDBALL HAUTS DE GARONNE",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -1215,6 +1387,8 @@
    "exterieur": "HBC PAYS CASTILLONNAIS",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -1227,6 +1401,8 @@
    "exterieur": "HANDBALL SAINT MEDARD D'EYRANS",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": true
   },
@@ -1239,6 +1415,8 @@
    "exterieur": "HAILLAN HANDBALL",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -1251,6 +1429,8 @@
    "exterieur": "HANDBALL CUBZAGUAIS",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -1263,6 +1443,8 @@
    "exterieur": "PE2M HB 2",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -1275,6 +1457,8 @@
    "exterieur": "MEDOC HANDBALL 2",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -1287,6 +1471,8 @@
    "exterieur": "SA GAZINET CESTAS 2",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -1299,6 +1485,8 @@
    "exterieur": "ARCACHON LA TESTE HBC",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -1311,6 +1499,8 @@
    "exterieur": "HBC BAZADAIS",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": true
   },
@@ -1323,6 +1513,8 @@
    "exterieur": "AVENIR PAILLETON 2",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -1335,6 +1527,8 @@
    "exterieur": "MEDOC HANDBALL 2",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -1347,6 +1541,8 @@
    "exterieur": "HANDBALL SAINT MEDARD D'EYRANS",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -1359,6 +1555,8 @@
    "exterieur": "AS HB DU FRONSADAIS",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -1371,6 +1569,8 @@
    "exterieur": "SA GAZINET CESTAS 2",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -1383,6 +1583,8 @@
    "exterieur": "HBC PAYS CASTILLONNAIS",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -1395,6 +1597,8 @@
    "exterieur": "HAILLAN HANDBALL",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": true
   },
@@ -1407,6 +1611,8 @@
    "exterieur": "PE2M HB 2",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -1419,6 +1625,8 @@
    "exterieur": "ARCACHON LA TESTE HBC",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -1431,6 +1639,8 @@
    "exterieur": "HANDBALL CUBZAGUAIS",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -1443,6 +1653,8 @@
    "exterieur": "AVENIR PAILLETON 2",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -1455,6 +1667,8 @@
    "exterieur": "SA GAZINET CESTAS 2",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -1467,6 +1681,8 @@
    "exterieur": "HBC BAZADAIS",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": true
   },
@@ -1479,6 +1695,8 @@
    "exterieur": "ARCACHON LA TESTE HBC",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -1491,6 +1709,8 @@
    "exterieur": "HANDBALL CUBZAGUAIS",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -1503,6 +1723,8 @@
    "exterieur": "MEDOC HANDBALL 2",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -1515,6 +1737,8 @@
    "exterieur": "HAILLAN HANDBALL",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -1527,6 +1751,8 @@
    "exterieur": "AS HB DU FRONSADAIS",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": true
   },
@@ -1539,6 +1765,8 @@
    "exterieur": "HBC PAYS CASTILLONNAIS",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -1551,6 +1779,8 @@
    "exterieur": "PE2M HB 2",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -1563,6 +1793,8 @@
    "exterieur": "AVENIR PAILLETON 2",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -1575,6 +1807,8 @@
    "exterieur": "HANDBALL SAINT MEDARD D'EYRANS",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -1587,6 +1821,8 @@
    "exterieur": "HBC BAZADAIS",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": true
   },
@@ -1599,6 +1835,8 @@
    "exterieur": "LORMONT HANDBALL HAUTS DE GARONNE",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -1611,6 +1849,8 @@
    "exterieur": "SA GAZINET CESTAS 2",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -1623,6 +1863,8 @@
    "exterieur": "AVENIR PAILLETON 2",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -1635,6 +1877,8 @@
    "exterieur": "HAILLAN HANDBALL",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -1647,6 +1891,8 @@
    "exterieur": "ARCACHON LA TESTE HBC",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": true
   },
@@ -1659,6 +1905,8 @@
    "exterieur": "HBC PAYS CASTILLONNAIS",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -1671,6 +1919,8 @@
    "exterieur": "MEDOC HANDBALL 2",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -1683,6 +1933,8 @@
    "exterieur": "AS HB DU FRONSADAIS",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -1695,6 +1947,8 @@
    "exterieur": "PE2M HB 2",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -1707,6 +1961,8 @@
    "exterieur": "HBC BAZADAIS",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": true
   },
@@ -1719,6 +1975,8 @@
    "exterieur": "HANDBALL CUBZAGUAIS",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -1731,6 +1989,8 @@
    "exterieur": "SA GAZINET CESTAS 2",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -1743,6 +2003,8 @@
    "exterieur": "HANDBALL SAINT MEDARD D'EYRANS",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -1755,9 +2017,11 @@
    "exterieur": "LORMONT HANDBALL HAUTS DE GARONNE",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   }
  ],
- "genere_le": "2026-09-30 23:37"
+ "genere_le": "2026-10-01 00:06"
 }

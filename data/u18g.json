@@ -85,6 +85,8 @@
    "exterieur": "SC MONSEGUR HB",
    "score_dom": 17,
    "score_ext": 29,
+   "affiche": "17 – 29",
+   "vainqueur": "ext",
    "statut": "joué",
    "nous": false
   },
@@ -97,6 +99,8 @@
    "exterieur": "LEOGNAN HANDBALL 2",
    "score_dom": 34,
    "score_ext": 27,
+   "affiche": "34 – 27",
+   "vainqueur": "dom",
    "statut": "joué",
    "nous": true
   },
@@ -109,6 +113,8 @@
    "exterieur": "HBC BAZADAIS",
    "score_dom": 32,
    "score_ext": 34,
+   "affiche": "32 – 34",
+   "vainqueur": "ext",
    "statut": "joué",
    "nous": true
   },
@@ -121,6 +127,8 @@
    "exterieur": "AVENIR PAILLETON",
    "score_dom": 33,
    "score_ext": 31,
+   "affiche": "33 – 31",
+   "vainqueur": "dom",
    "statut": "joué",
    "nous": false
   },
@@ -133,6 +141,8 @@
    "exterieur": "SC MONSEGUR HB",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -145,6 +155,8 @@
    "exterieur": "LEOGNAN HANDBALL 2",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -157,6 +169,8 @@
    "exterieur": "SC MONSEGUR HB",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -169,6 +183,8 @@
    "exterieur": "CADILLAC - CERONS U18M",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": true
   },
@@ -181,6 +197,8 @@
    "exterieur": "AVENIR PAILLETON",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -193,6 +211,8 @@
    "exterieur": "CADILLAC - CERONS U18M",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -205,6 +225,8 @@
    "exterieur": "LEOGNAN HANDBALL 2",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -217,6 +239,8 @@
    "exterieur": "HBC BAZADAIS",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": true
   },
@@ -229,6 +253,8 @@
    "exterieur": "LEOGNAN HANDBALL 2",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -241,6 +267,8 @@
    "exterieur": "HBC BAZADAIS",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": true
   },
@@ -253,6 +281,8 @@
    "exterieur": "SC MONSEGUR HB",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": true
   },
@@ -265,6 +295,8 @@
    "exterieur": "CADILLAC - CERONS U18M",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -277,6 +309,8 @@
    "exterieur": "AVENIR PAILLETON",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -289,6 +323,8 @@
    "exterieur": "HBC BAZADAIS",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": true
   },
@@ -301,6 +337,8 @@
    "exterieur": "AVENIR PAILLETON",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": true
   },
@@ -313,9 +351,11 @@
    "exterieur": "CADILLAC - CERONS U18M",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   }
  ],
- "genere_le": "2026-09-30 23:37"
+ "genere_le": "2026-10-01 00:06"
 }

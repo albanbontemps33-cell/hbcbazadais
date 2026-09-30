@@ -7,8 +7,8 @@
   {
    "rang": 1,
    "club": "CADILLAC - CERONS U18F",
-   "joues": 1,
-   "gagnes": 1,
+   "joues": 2,
+   "gagnes": 2,
    "nuls": 0,
    "perdus": 0,
    "bp": 25,
@@ -16,7 +16,7 @@
    "diff": 2,
    "points": 6,
    "nous": false,
-   "stats_partielles": true
+   "stats_partielles": false
   },
   {
    "rang": 2,
@@ -49,10 +49,10 @@
   {
    "rang": 4,
    "club": "HBC BELIN-BELIET",
-   "joues": 1,
+   "joues": 2,
    "gagnes": 1,
    "nuls": 0,
-   "perdus": 0,
+   "perdus": 1,
    "bp": 30,
    "bc": 19,
    "diff": 11,
@@ -99,6 +99,8 @@
    "exterieur": "HBC BAZADAIS",
    "score_dom": 31,
    "score_ext": 17,
+   "affiche": "31 – 17",
+   "vainqueur": "dom",
    "statut": "joué",
    "nous": true
   },
@@ -111,9 +113,10 @@
    "exterieur": "HBC BELIN-BELIET",
    "score_dom": null,
    "score_ext": null,
-   "statut": "à venir",
-   "nous": false,
-   "brut": "DIMANCHE 20 SEPTEMBRE 2026 À 14H00 CADILLAC - CERONS U18F 20 PE HBC BELIN-BELIET VOIR DÉTAIL DU MATCH"
+   "affiche": "20 – PE",
+   "vainqueur": "dom",
+   "statut": "pénalité",
+   "nous": false
   },
   {
    "id": "2699863",
@@ -124,6 +127,8 @@
    "exterieur": "SC MONSEGUR HB",
    "score_dom": 35,
    "score_ext": 17,
+   "affiche": "35 – 17",
+   "vainqueur": "dom",
    "statut": "joué",
    "nous": true
   },
@@ -136,6 +141,8 @@
    "exterieur": "LEOGNAN - TALENCE",
    "score_dom": 30,
    "score_ext": 19,
+   "affiche": "30 – 19",
+   "vainqueur": "dom",
    "statut": "joué",
    "nous": false
   },
@@ -148,6 +155,8 @@
    "exterieur": "CADILLAC - CERONS U18F",
    "score_dom": 23,
    "score_ext": 25,
+   "affiche": "23 – 25",
+   "vainqueur": "ext",
    "statut": "joué",
    "nous": false
   },
@@ -160,6 +169,8 @@
    "exterieur": "CADILLAC - CERONS U18F",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -172,6 +183,8 @@
    "exterieur": "HBC BAZADAIS",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": true
   },
@@ -184,6 +197,8 @@
    "exterieur": "GRADIGNAN HANDBALL CLUB",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -196,6 +211,8 @@
    "exterieur": "LEOGNAN - TALENCE",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -208,6 +225,8 @@
    "exterieur": "HBC BELIN-BELIET",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -220,6 +239,8 @@
    "exterieur": "GRADIGNAN HANDBALL CLUB",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": true
   },
@@ -232,6 +253,8 @@
    "exterieur": "HBC BAZADAIS",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": true
   },
@@ -244,6 +267,8 @@
    "exterieur": "LEOGNAN - TALENCE",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -256,6 +281,8 @@
    "exterieur": "GRADIGNAN HANDBALL CLUB",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -268,6 +295,8 @@
    "exterieur": "SC MONSEGUR HB",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -280,6 +309,8 @@
    "exterieur": "CADILLAC - CERONS U18F",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": true
   },
@@ -292,6 +323,8 @@
    "exterieur": "GRADIGNAN HANDBALL CLUB",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -304,6 +337,8 @@
    "exterieur": "SC MONSEGUR HB",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -316,6 +351,8 @@
    "exterieur": "LEOGNAN - TALENCE",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": true
   },
@@ -328,6 +365,8 @@
    "exterieur": "CADILLAC - CERONS U18F",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -340,6 +379,8 @@
    "exterieur": "GRADIGNAN HANDBALL CLUB",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -352,6 +393,8 @@
    "exterieur": "HBC BELIN-BELIET",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -364,6 +407,8 @@
    "exterieur": "HBC BELIN-BELIET",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": true
   },
@@ -376,6 +421,8 @@
    "exterieur": "LEOGNAN - TALENCE",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -388,6 +435,8 @@
    "exterieur": "SC MONSEGUR HB",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -400,6 +449,8 @@
    "exterieur": "CADILLAC - CERONS U18F",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -412,6 +463,8 @@
    "exterieur": "SC MONSEGUR HB",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   },
@@ -424,6 +477,8 @@
    "exterieur": "HBC BAZADAIS",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": true
   },
@@ -436,6 +491,8 @@
    "exterieur": "HBC BAZADAIS",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": true
   },
@@ -448,9 +505,11 @@
    "exterieur": "HBC BELIN-BELIET",
    "score_dom": null,
    "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
    "statut": "à venir",
    "nous": false
   }
  ],
- "genere_le": "2026-09-30 23:38"
+ "genere_le": "2026-10-01 00:07"
 }
