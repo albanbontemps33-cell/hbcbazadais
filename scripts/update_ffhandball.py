@@ -13,6 +13,7 @@ import sys
 from datetime import datetime
 from zoneinfo import ZoneInfo
 
+from playwright.sync_api import TimeoutError as PlaywrightTimeout
 from playwright.sync_api import sync_playwright
 
 BASE = "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/"
@@ -132,33 +133,43 @@ def click_js(page, selector):
     return ok
 
 
-def wait_signature_change(page, previous, timeout=20000):
-    page.wait_for_function(
-        """prev => {
-             const s = Array.from(document.querySelectorAll('a[class*="styles_rencontre"]'))
-               .map(a => a.getAttribute('href')).join('|');
-             return s && s !== prev;
-           }""",
-        arg=previous,
-        timeout=timeout,
-    )
+JS_CLICK_DIRECT = """label => {
+  const b = Array.from(document.querySelectorAll('[class*="styles_pagination"] button'))
+    .find(x => x.innerText.trim() === label);
+  if (!b) return false;
+  b.click();
+  return true;
+}"""
+
+JS_WAIT_JOURNEE = """([prev, label]) => {
+  const b = document.querySelector('[class*="styles_pagination"] button[class*="styles_selected"]');
+  const sel = b ? b.innerText.trim() : '';
+  const s = Array.from(document.querySelectorAll('a[class*="styles_rencontre"]'))
+    .map(a => a.getAttribute('href')).join('|');
+  return sel === label && s && s !== prev;
+}"""
 
 
-def go_to_first_journee(page):
-    """Se place sur J1 (sans rien faire si on y est déjà)."""
-    if page.evaluate(JS_SELECTED) == "J1":
-        return
-    before = match_signature(page)
-    clicked = page.evaluate(
-        """() => {
-             const b = Array.from(document.querySelectorAll('[class*="styles_pagination"] button'))
-               .find(x => x.innerText.trim() === 'J1');
-             if (!b) return false; b.click(); return true;
-           }"""
-    )
-    if not clicked:
-        raise RuntimeError("bouton J1 introuvable")
-    wait_signature_change(page, before)
+def goto_journee(page, j, previous_sig):
+    """Va à la journée j et attend qu'elle soit réellement affichée.
+    Si un clic est ignoré (page encore en chargement), on recommence jusqu'à 5 fois."""
+    label = f"J{j}"
+    for attempt in range(1, 6):
+        if page.evaluate(JS_SELECTED) != label:
+            direct = (j == 1) or attempt > 1
+            clicked = direct and page.evaluate(JS_CLICK_DIRECT, label)
+            if not clicked and j > 1:
+                if not click_js(page, 'button[title="Journée suivante"]'):
+                    raise RuntimeError("bouton 'Journée suivante' introuvable")
+            elif not clicked:
+                raise RuntimeError("bouton J1 introuvable")
+        try:
+            page.wait_for_function(JS_WAIT_JOURNEE, arg=[previous_sig, label], timeout=7000)
+            page.wait_for_timeout(400)
+            return
+        except PlaywrightTimeout:
+            page.wait_for_timeout(1500)
+    raise RuntimeError(f"impossible d'atteindre {label}")
 
 
 def scrape_all_journees(page):
@@ -170,14 +181,14 @@ def scrape_all_journees(page):
     source_updated = ""
     all_matches = {}
 
-    go_to_first_journee(page)
+    if page.evaluate(JS_SELECTED) != "J1":
+        goto_journee(page, 1, match_signature(page))
     for j in range(1, total + 1):
         if j > 1:
-            before = match_signature(page)
-            if not click_js(page, 'button[title="Journée suivante"]'):
-                raise RuntimeError("bouton 'Journée suivante' introuvable")
-            wait_signature_change(page, before)
+            goto_journee(page, j, match_signature(page))
         matches, cl, upd = extract_current(page)
+        if not matches:
+            raise RuntimeError(f"aucun match lu en J{j}")
         if classement is None and cl:
             classement = cl
             source_updated = upd
