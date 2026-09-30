@@ -86,19 +86,21 @@ JS_MAX_JOURNEE = """() => {
 
 # ── Outils ────────────────────────────────────────────────────────────────────
 def parse_date(text):
-    """'samedi 17 octobre 2026 à 20H00' -> ('2026-10-17T20:00', 'Samedi 17 octobre 2026 à 20h00')."""
-    m = re.search(r"(\d{1,2})\s+([A-Za-zéèêûîôàç]+)\s+(\d{4})(?:\s+à\s+(\d{1,2})[Hh](\d{2}))?", text)
+    """'SAMEDI 17 OCTOBRE 2026 À 20H00' -> ('2026-10-17T20:00', 'Samedi 17 octobre 2026 à 20h00')."""
+    text = (text or "").strip()
+    m = re.search(
+        r"(\d{1,2})\s+([^\W\d_]+)\s+(\d{4})(?:\s+à\s+(\d{1,2})\s*h\s*(\d{2}))?",
+        text, re.IGNORECASE,
+    )
     if not m:
-        return "", text.strip()
+        return "", text
     day, month_name, year, hh, mm = m.groups()
     month = MONTHS.get(month_name.lower())
     if not month:
-        return "", text.strip()
-    hh = int(hh) if hh is not None else 0
-    mm = int(mm) if mm is not None else 0
-    iso = f"{int(year):04d}-{month:02d}-{int(day):02d}T{hh:02d}:{mm:02d}"
-    display = text.strip()
-    display = re.sub(r"(\d)H(\d{2})", r"\1h\2", display)
+        return "", text
+    iso = f"{int(year):04d}-{month:02d}-{int(day):02d}T{int(hh or 0):02d}:{int(mm or 0):02d}"
+    display = re.sub(r"(\d)\s*h\s*(\d{2})", r"\1h\2", text.lower())
+    display = re.sub(r"^([^\W\d_]+) 1 ", r"\1 1er ", display)
     display = display[:1].upper() + display[1:]
     return iso, display
 
@@ -200,10 +202,13 @@ def build_json(name, url, raw_matches, raw_classement, source_updated, total_jou
         low = m["text"].lower()
         if played:
             statut = "joué"
+        elif "forfait" in low:
+            statut = "forfait"
         elif "report" in low:
             statut = "reporté"
         else:
             statut = "à venir"
+        passe_sans_score = (not played) and iso and iso < datetime.now(TZ).strftime("%Y-%m-%dT%H:%M")
         rid = re.search(r"rencontre-(\d+)", m["href"])
         calendrier.append({
             "id": rid.group(1) if rid else "",
@@ -217,6 +222,9 @@ def build_json(name, url, raw_matches, raw_classement, source_updated, total_jou
             "statut": statut,
             "nous": CLUB_KEYWORD in (m["dom"] + " " + m["ext"]).upper(),
         })
+        if passe_sans_score:
+            # match passé sans score affiché (forfait ? score pas encore saisi ?) : on garde le texte brut pour diagnostic
+            calendrier[-1]["brut"] = " ".join(m["text"].split())
         if played:
             a, b = st(m["dom"]), st(m["ext"])
             a["j"] += 1; b["j"] += 1
@@ -242,6 +250,10 @@ def build_json(name, url, raw_matches, raw_classement, source_updated, total_jou
             "points": to_int(r["pts"]) if to_int(r["pts"]) is not None else r["pts"],
             "nous": CLUB_KEYWORD in r["club"].upper(),
         })
+        pts = classement[-1]["points"]
+        attendus = 3 * s["g"] + 2 * s["n"] + s["p"]
+        # si les points officiels ne collent pas avec les scores lus (forfait, pénalité...), on le signale
+        classement[-1]["stats_partielles"] = isinstance(pts, int) and pts != attendus
 
     if not calendrier:
         raise RuntimeError("aucun match trouvé")
