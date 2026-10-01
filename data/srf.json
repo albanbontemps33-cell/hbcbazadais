@@ -1,7 +1,7 @@
 {
  "equipe": "SF",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-16-feminines-honneur-32465/",
- "source_mise_a_jour": "30 sept. 2026 à 19h46",
+ "source_mise_a_jour": "1 oct. 2026 à 11h33",
  "journees": 22,
  "classement": [
   {
@@ -48,6 +48,20 @@
   },
   {
    "rang": 4,
+   "club": "HBC BAZADAIS",
+   "joues": 2,
+   "gagnes": 2,
+   "nuls": 0,
+   "perdus": 0,
+   "bp": 58,
+   "bc": 56,
+   "diff": 2,
+   "points": 6,
+   "nous": true,
+   "stats_partielles": false
+  },
+  {
+   "rang": 5,
    "club": "MEDOC HANDBALL 2",
    "joues": 2,
    "gagnes": 1,
@@ -61,7 +75,7 @@
    "stats_partielles": false
   },
   {
-   "rang": 5,
+   "rang": 6,
    "club": "HANDBALL SAINT MEDARD D'EYRANS",
    "joues": 2,
    "gagnes": 1,
@@ -70,20 +84,6 @@
    "bp": 46,
    "bc": 47,
    "diff": -1,
-   "points": 4,
-   "nous": false,
-   "stats_partielles": false
-  },
-  {
-   "rang": 6,
-   "club": "HBC PAYS CASTILLONNAIS",
-   "joues": 2,
-   "gagnes": 1,
-   "nuls": 0,
-   "perdus": 1,
-   "bp": 42,
-   "bc": 44,
-   "diff": -2,
    "points": 4,
    "nous": false,
    "stats_partielles": false
@@ -98,23 +98,23 @@
    "bp": 54,
    "bc": 41,
    "diff": 13,
-   "points": 3,
+   "points": 4,
    "nous": false,
-   "stats_partielles": true
+   "stats_partielles": false
   },
   {
    "rang": 8,
-   "club": "HBC BAZADAIS",
+   "club": "HBC PAYS CASTILLONNAIS",
    "joues": 2,
-   "gagnes": 2,
+   "gagnes": 1,
    "nuls": 0,
-   "perdus": 0,
-   "bp": 58,
-   "bc": 56,
-   "diff": 2,
-   "points": 3,
-   "nous": true,
-   "stats_partielles": true
+   "perdus": 1,
+   "bp": 42,
+   "bc": 44,
+   "diff": -2,
+   "points": 4,
+   "nous": false,
+   "stats_partielles": false
   },
   {
    "rang": 9,
@@ -2023,5 +2023,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-01 00:06"
+ "genere_le": "2026-10-01 15:12"
 }
