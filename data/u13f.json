@@ -1,7 +1,7 @@
 {
  "equipe": "-13 F 1",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u13-feminine-32777/poule-193722/",
- "source_mise_a_jour": "30 sept. 2026 à 19h22",
+ "source_mise_a_jour": "1 oct. 2026 à 16h45",
  "journees": 10,
  "classement": [
   {
@@ -315,6 +315,34 @@
    "nous": false
   },
   {
+   "id": "2699514",
+   "journee": 6,
+   "iso": "2026-11-14T16:15",
+   "date": "Samedi 14 novembre 2026 à 16h15",
+   "domicile": "HBC BAZADAIS 1",
+   "exterieur": "STADE LANGONNAIS HB",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": true
+  },
+  {
+   "id": "2699521",
+   "journee": 8,
+   "iso": "2026-11-28T11:00",
+   "date": "Samedi 28 novembre 2026 à 11h00",
+   "domicile": "HBC BAZADAIS 1",
+   "exterieur": "SA GAZINET CESTAS",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": true
+  },
+  {
    "id": "2699520",
    "journee": 8,
    "iso": "2026-11-28T14:30",
@@ -343,12 +371,12 @@
    "nous": true
   },
   {
-   "id": "2699514",
-   "journee": 6,
-   "iso": "",
-   "date": "",
+   "id": "2699528",
+   "journee": 10,
+   "iso": "2026-12-12T12:30",
+   "date": "Samedi 12 décembre 2026 à 12h30",
    "domicile": "HBC BAZADAIS 1",
-   "exterieur": "STADE LANGONNAIS HB",
+   "exterieur": "HBC TEICHOIS 1",
    "score_dom": null,
    "score_ext": null,
    "affiche": null,
@@ -411,20 +439,6 @@
    "vainqueur": null,
    "statut": "à venir",
    "nous": false
-  },
-  {
-   "id": "2699521",
-   "journee": 8,
-   "iso": "",
-   "date": "",
-   "domicile": "HBC BAZADAIS 1",
-   "exterieur": "SA GAZINET CESTAS",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": true
   },
   {
    "id": "2699522",
@@ -495,21 +509,7 @@
    "vainqueur": null,
    "statut": "à venir",
    "nous": false
-  },
-  {
-   "id": "2699528",
-   "journee": 10,
-   "iso": "",
-   "date": "",
-   "domicile": "HBC BAZADAIS 1",
-   "exterieur": "HBC TEICHOIS 1",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": true
   }
  ],
- "genere_le": "2026-10-01 00:07"
+ "genere_le": "2026-10-02 00:42"
 }

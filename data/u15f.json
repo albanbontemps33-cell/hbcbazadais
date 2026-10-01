@@ -1,7 +1,7 @@
 {
  "equipe": "-15 F",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u15-feminine-32776/poule-194055/",
- "source_mise_a_jour": "27 sept. 2026 à 13h43",
+ "source_mise_a_jour": "1 oct. 2026 à 16h32",
  "journees": 10,
  "classement": [
   {
@@ -189,6 +189,20 @@
    "nous": true
   },
   {
+   "id": "2699848",
+   "journee": 7,
+   "iso": "2026-11-21T14:00",
+   "date": "Samedi 21 novembre 2026 à 14h00",
+   "domicile": "HBC BAZADAIS",
+   "exterieur": "SC MONSEGUR HB",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": true
+  },
+  {
    "id": "2699850",
    "journee": 8,
    "iso": "2026-11-28T15:30",
@@ -287,20 +301,6 @@
    "nous": false
   },
   {
-   "id": "2699848",
-   "journee": 7,
-   "iso": "",
-   "date": "",
-   "domicile": "HBC BAZADAIS",
-   "exterieur": "SC MONSEGUR HB",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": true
-  },
-  {
    "id": "2699852",
    "journee": 8,
    "iso": "",
@@ -357,5 +357,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-01 00:07"
+ "genere_le": "2026-10-02 00:42"
 }

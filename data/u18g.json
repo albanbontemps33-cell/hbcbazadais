@@ -1,7 +1,7 @@
 {
  "equipe": "-18 G",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u18-masculins-32774/poule-194137/",
- "source_mise_a_jour": "30 sept. 2026 à 14h16",
+ "source_mise_a_jour": "1 oct. 2026 à 21h42",
  "journees": 10,
  "classement": [
   {
@@ -189,6 +189,20 @@
    "nous": true
   },
   {
+   "id": "2700909",
+   "journee": 5,
+   "iso": "2026-11-07T16:30",
+   "date": "Samedi 7 novembre 2026 à 16h30",
+   "domicile": "CADILLAC - CERONS U18M",
+   "exterieur": "LEOGNAN HANDBALL 2",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
    "id": "2700911",
    "journee": 6,
    "iso": "2026-11-14T18:15",
@@ -201,6 +215,20 @@
    "vainqueur": null,
    "statut": "à venir",
    "nous": false
+  },
+  {
+   "id": "2700914",
+   "journee": 7,
+   "iso": "2026-11-21T15:45",
+   "date": "Samedi 21 novembre 2026 à 15h45",
+   "domicile": "HBC BAZADAIS",
+   "exterieur": "SC MONSEGUR HB",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": true
   },
   {
    "id": "2700916",
@@ -231,6 +259,20 @@
    "nous": false
   },
   {
+   "id": "2700922",
+   "journee": 10,
+   "iso": "2026-12-13T14:00",
+   "date": "Dimanche 13 décembre 2026 à 14h00",
+   "domicile": "HBC BAZADAIS",
+   "exterieur": "AVENIR PAILLETON",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": true
+  },
+  {
    "id": "2700907",
    "journee": 5,
    "iso": "",
@@ -245,40 +287,12 @@
    "nous": true
   },
   {
-   "id": "2700909",
-   "journee": 5,
-   "iso": "",
-   "date": "",
-   "domicile": "CADILLAC - CERONS U18M",
-   "exterieur": "LEOGNAN HANDBALL 2",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
    "id": "2700910",
    "journee": 6,
    "iso": "",
    "date": "",
    "domicile": "LEOGNAN HANDBALL 2",
    "exterieur": "HBC BAZADAIS",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": true
-  },
-  {
-   "id": "2700914",
-   "journee": 7,
-   "iso": "",
-   "date": "",
-   "domicile": "HBC BAZADAIS",
-   "exterieur": "SC MONSEGUR HB",
    "score_dom": null,
    "score_ext": null,
    "affiche": null,
@@ -329,20 +343,6 @@
    "nous": true
   },
   {
-   "id": "2700922",
-   "journee": 10,
-   "iso": "",
-   "date": "",
-   "domicile": "HBC BAZADAIS",
-   "exterieur": "AVENIR PAILLETON",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": true
-  },
-  {
    "id": "2700924",
    "journee": 10,
    "iso": "",
@@ -357,5 +357,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-01 00:06"
+ "genere_le": "2026-10-02 00:42"
 }

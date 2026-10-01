@@ -1,7 +1,7 @@
 {
  "equipe": "-18 F",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u18-feminine-32775/poule-193706/",
- "source_mise_a_jour": "29 sept. 2026 à 10h17",
+ "source_mise_a_jour": "1 oct. 2026 à 19h27",
  "journees": 10,
  "classement": [
   {
@@ -245,12 +245,68 @@
    "nous": true
   },
   {
+   "id": "2699872",
+   "journee": 5,
+   "iso": "2026-11-07T12:30",
+   "date": "Samedi 7 novembre 2026 à 12h30",
+   "domicile": "HBC BAZADAIS",
+   "exterieur": "CADILLAC - CERONS U18F",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": true
+  },
+  {
+   "id": "2699871",
+   "journee": 5,
+   "iso": "2026-11-08T16:00",
+   "date": "Dimanche 8 novembre 2026 à 16h00",
+   "domicile": "LEOGNAN - TALENCE",
+   "exterieur": "SC MONSEGUR HB",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
+   "id": "2699875",
+   "journee": 6,
+   "iso": "2026-11-15T13:00",
+   "date": "Dimanche 15 novembre 2026 à 13h00",
+   "domicile": "HBC BAZADAIS",
+   "exterieur": "LEOGNAN - TALENCE",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": true
+  },
+  {
    "id": "2699878",
    "journee": 7,
    "iso": "2026-11-21T18:15",
    "date": "Samedi 21 novembre 2026 à 18h15",
    "domicile": "SC MONSEGUR HB",
    "exterieur": "HBC BAZADAIS",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": true
+  },
+  {
+   "id": "2699880",
+   "journee": 8,
+   "iso": "2026-11-28T14:15",
+   "date": "Samedi 28 novembre 2026 à 14h15",
+   "domicile": "HBC BAZADAIS",
+   "exterieur": "HBC BELIN-BELIET",
    "score_dom": null,
    "score_ext": null,
    "affiche": null,
@@ -287,34 +343,6 @@
    "nous": false
   },
   {
-   "id": "2699871",
-   "journee": 5,
-   "iso": "",
-   "date": "",
-   "domicile": "LEOGNAN - TALENCE",
-   "exterieur": "SC MONSEGUR HB",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
-   "id": "2699872",
-   "journee": 5,
-   "iso": "",
-   "date": "",
-   "domicile": "HBC BAZADAIS",
-   "exterieur": "CADILLAC - CERONS U18F",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": true
-  },
-  {
    "id": "2699873",
    "journee": 5,
    "iso": "",
@@ -341,20 +369,6 @@
    "vainqueur": null,
    "statut": "à venir",
    "nous": false
-  },
-  {
-   "id": "2699875",
-   "journee": 6,
-   "iso": "",
-   "date": "",
-   "domicile": "HBC BAZADAIS",
-   "exterieur": "LEOGNAN - TALENCE",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": true
   },
   {
    "id": "2699876",
@@ -397,20 +411,6 @@
    "vainqueur": null,
    "statut": "à venir",
    "nous": false
-  },
-  {
-   "id": "2699880",
-   "journee": 8,
-   "iso": "",
-   "date": "",
-   "domicile": "HBC BAZADAIS",
-   "exterieur": "HBC BELIN-BELIET",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": true
   },
   {
    "id": "2699881",
@@ -511,5 +511,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-01 00:07"
+ "genere_le": "2026-10-02 00:42"
 }
