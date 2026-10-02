@@ -1,7 +1,7 @@
 {
  "equipe": "-18 G",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u18-masculins-32774/poule-194137/",
- "source_mise_a_jour": "1 oct. 2026 à 21h42",
+ "source_mise_a_jour": "2 oct. 2026 à 22h59",
  "journees": 10,
  "classement": [
   {
@@ -20,29 +20,29 @@
   },
   {
    "rang": 2,
-   "club": "SC MONSEGUR HB",
-   "joues": 2,
-   "gagnes": 1,
-   "nuls": 0,
-   "perdus": 1,
-   "bp": 61,
-   "bc": 51,
-   "diff": 10,
-   "points": 4,
-   "nous": false,
-   "stats_partielles": false
-  },
-  {
-   "rang": 3,
    "club": "CADILLAC - CERONS U18M",
-   "joues": 1,
-   "gagnes": 1,
+   "joues": 2,
+   "gagnes": 2,
    "nuls": 0,
    "perdus": 0,
    "bp": 33,
    "bc": 31,
    "diff": 2,
-   "points": 3,
+   "points": 6,
+   "nous": false,
+   "stats_partielles": false
+  },
+  {
+   "rang": 3,
+   "club": "SC MONSEGUR HB",
+   "joues": 3,
+   "gagnes": 1,
+   "nuls": 0,
+   "perdus": 2,
+   "bp": 61,
+   "bc": 51,
+   "diff": 10,
+   "points": 4,
    "nous": false,
    "stats_partielles": false
   },
@@ -141,9 +141,9 @@
    "exterieur": "SC MONSEGUR HB",
    "score_dom": null,
    "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
+   "affiche": "20 – FO",
+   "vainqueur": "dom",
+   "statut": "pénalité",
    "nous": false
   },
   {
@@ -357,5 +357,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-02 00:42"
+ "genere_le": "2026-10-03 00:14"
 }

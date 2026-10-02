@@ -1,7 +1,7 @@
 {
  "equipe": "-13 F 2",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u13-feminine-32777/poule-194061/",
- "source_mise_a_jour": "28 sept. 2026 à 22h04",
+ "source_mise_a_jour": "2 oct. 2026 à 15h23",
  "journees": 10,
  "classement": [
   {
@@ -245,6 +245,20 @@
    "nous": true
   },
   {
+   "id": "2699721",
+   "journee": 5,
+   "iso": "2026-11-07T11:00",
+   "date": "Samedi 7 novembre 2026 à 11h00",
+   "domicile": "HBC BAZADAIS 2",
+   "exterieur": "CADILLAC CERONS U13F",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": true
+  },
+  {
    "id": "2699722",
    "journee": 5,
    "iso": "2026-11-07T13:00",
@@ -287,6 +301,20 @@
    "nous": false
   },
   {
+   "id": "2699729",
+   "journee": 7,
+   "iso": "2026-11-21T12:30",
+   "date": "Samedi 21 novembre 2026 à 12h30",
+   "domicile": "HBC BAZADAIS 2",
+   "exterieur": "HANDBALL SAINT MEDARD D'EYRANS",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": true
+  },
+  {
    "id": "2699730",
    "journee": 8,
    "iso": "2026-11-28T13:00",
@@ -307,6 +335,20 @@
    "date": "Samedi 28 novembre 2026 à 13h00",
    "domicile": "SC MONSEGUR HB",
    "exterieur": "HBC BAZADAIS 2",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": true
+  },
+  {
+   "id": "2699733",
+   "journee": 9,
+   "iso": "2026-12-05T16:15",
+   "date": "Samedi 5 décembre 2026 à 16h15",
+   "domicile": "HBC BAZADAIS 2",
+   "exterieur": "AVENIR PAILLETON",
    "score_dom": null,
    "score_ext": null,
    "affiche": null,
@@ -355,20 +397,6 @@
    "vainqueur": null,
    "statut": "à venir",
    "nous": false
-  },
-  {
-   "id": "2699721",
-   "journee": 5,
-   "iso": "",
-   "date": "",
-   "domicile": "HBC BAZADAIS 2",
-   "exterieur": "CADILLAC CERONS U13F",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": true
   },
   {
    "id": "2699723",
@@ -427,20 +455,6 @@
    "nous": false
   },
   {
-   "id": "2699729",
-   "journee": 7,
-   "iso": "",
-   "date": "",
-   "domicile": "HBC BAZADAIS 2",
-   "exterieur": "HANDBALL SAINT MEDARD D'EYRANS",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": true
-  },
-  {
    "id": "2699732",
    "journee": 8,
    "iso": "",
@@ -453,20 +467,6 @@
    "vainqueur": null,
    "statut": "à venir",
    "nous": false
-  },
-  {
-   "id": "2699733",
-   "journee": 9,
-   "iso": "",
-   "date": "",
-   "domicile": "HBC BAZADAIS 2",
-   "exterieur": "AVENIR PAILLETON",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": true
   },
   {
    "id": "2699734",
@@ -511,5 +511,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-01 00:07"
+ "genere_le": "2026-10-03 00:15"
 }
