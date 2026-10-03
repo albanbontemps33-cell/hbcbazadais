@@ -186,7 +186,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "SAMEDI 3 OCTOBRE 2026 À 13H30 HBC TEICHOIS 1 - - PE2M HB 1 VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2699506",
@@ -511,5 +512,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-02 00:42"
+ "genere_le": "2026-10-03 13:40"
 }

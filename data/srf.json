@@ -1,7 +1,7 @@
 {
  "equipe": "SF",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-16-feminines-honneur-32465/",
- "source_mise_a_jour": "1 oct. 2026 à 11h33",
+ "source_mise_a_jour": "3 oct. 2026 à 07h57",
  "journees": 22,
  "classement": [
   {
@@ -609,6 +609,20 @@
    "nous": false
   },
   {
+   "id": "2636288",
+   "journee": 6,
+   "iso": "2026-11-08T16:30",
+   "date": "Dimanche 8 novembre 2026 à 16h30",
+   "domicile": "MEDOC HANDBALL 2",
+   "exterieur": "PE2M HB 2",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
    "id": "2636295",
    "journee": 7,
    "iso": "2026-11-14T18:30",
@@ -761,20 +775,6 @@
    "vainqueur": null,
    "statut": "à venir",
    "nous": true
-  },
-  {
-   "id": "2636288",
-   "journee": 6,
-   "iso": "",
-   "date": "",
-   "domicile": "MEDOC HANDBALL 2",
-   "exterieur": "PE2M HB 2",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false
   },
   {
    "id": "2636289",
@@ -2023,5 +2023,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-01 15:12"
+ "genere_le": "2026-10-03 13:39"
 }
