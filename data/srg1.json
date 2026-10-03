@@ -48,6 +48,20 @@
   },
   {
    "rang": 4,
+   "club": "ST MEDARD HANDBALL 2",
+   "joues": 3,
+   "gagnes": 1,
+   "nuls": 0,
+   "perdus": 2,
+   "bp": 84,
+   "bc": 102,
+   "diff": -18,
+   "points": 5,
+   "nous": false,
+   "stats_partielles": false
+  },
+  {
+   "rang": 5,
    "club": "ES BLANQUEFORTAISE HBC 2",
    "joues": 2,
    "gagnes": 1,
@@ -61,7 +75,7 @@
    "stats_partielles": false
   },
   {
-   "rang": 5,
+   "rang": 6,
    "club": "HAILLAN HANDBALL 1",
    "joues": 2,
    "gagnes": 1,
@@ -75,7 +89,7 @@
    "stats_partielles": false
   },
   {
-   "rang": 6,
+   "rang": 7,
    "club": "HBC TEICHOIS",
    "joues": 2,
    "gagnes": 1,
@@ -89,7 +103,7 @@
    "stats_partielles": false
   },
   {
-   "rang": 7,
+   "rang": 8,
    "club": "GRADIGNAN HANDBALL CLUB",
    "joues": 2,
    "gagnes": 1,
@@ -103,7 +117,7 @@
    "stats_partielles": false
   },
   {
-   "rang": 8,
+   "rang": 9,
    "club": "HBC LIBOURNE 3",
    "joues": 2,
    "gagnes": 1,
@@ -117,7 +131,7 @@
    "stats_partielles": false
   },
   {
-   "rang": 9,
+   "rang": 10,
    "club": "CM FLOIRAC CENON HANDBALL 2",
    "joues": 2,
    "gagnes": 1,
@@ -131,30 +145,16 @@
    "stats_partielles": false
   },
   {
-   "rang": 10,
-   "club": "BORDEAUX ETUDIANTS CLUB",
-   "joues": 2,
-   "gagnes": 0,
-   "nuls": 0,
-   "perdus": 2,
-   "bp": 54,
-   "bc": 72,
-   "diff": -18,
-   "points": 2,
-   "nous": false,
-   "stats_partielles": false
-  },
-  {
    "rang": 11,
-   "club": "ST MEDARD HANDBALL 2",
-   "joues": 2,
+   "club": "BORDEAUX ETUDIANTS CLUB",
+   "joues": 3,
    "gagnes": 0,
    "nuls": 0,
-   "perdus": 2,
-   "bp": 49,
-   "bc": 70,
+   "perdus": 3,
+   "bp": 86,
+   "bc": 107,
    "diff": -21,
-   "points": 2,
+   "points": 3,
    "nous": false,
    "stats_partielles": false
   },
@@ -364,11 +364,11 @@
    "date": "Samedi 3 octobre 2026 à 19h00",
    "domicile": "BORDEAUX ETUDIANTS CLUB",
    "exterieur": "ST MEDARD HANDBALL 2",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
+   "score_dom": 32,
+   "score_ext": 35,
+   "affiche": "32 – 35",
+   "vainqueur": "ext",
+   "statut": "joué",
    "nous": false
   },
   {
@@ -383,7 +383,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "SAMEDI 3 OCTOBRE 2026 À 19H00 CANEJAN HBC 2 - - SC MONSEGUR HB 1 VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2635475",
@@ -397,7 +398,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": true
+   "nous": true,
+   "brut": "SAMEDI 3 OCTOBRE 2026 À 21H30 HBC BAZADAIS 1 - - HBC LIBOURNE 3 VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2635474",
@@ -2024,5 +2026,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-03 18:17"
+ "genere_le": "2026-10-03 23:13"
 }

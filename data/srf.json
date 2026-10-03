@@ -1,25 +1,53 @@
 {
  "equipe": "SF",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-16-feminines-honneur-32465/",
- "source_mise_a_jour": "3 oct. 2026 à 07h57",
+ "source_mise_a_jour": "3 oct. 2026 à 21h08",
  "journees": 22,
  "classement": [
   {
    "rang": 1,
-   "club": "LORMONT HANDBALL HAUTS DE GARONNE",
-   "joues": 2,
-   "gagnes": 2,
+   "club": "HANDBALL CUBZAGUAIS",
+   "joues": 3,
+   "gagnes": 3,
    "nuls": 0,
    "perdus": 0,
-   "bp": 77,
-   "bc": 32,
-   "diff": 45,
-   "points": 6,
+   "bp": 94,
+   "bc": 77,
+   "diff": 17,
+   "points": 9,
    "nous": false,
    "stats_partielles": false
   },
   {
    "rang": 2,
+   "club": "HBC BAZADAIS",
+   "joues": 3,
+   "gagnes": 3,
+   "nuls": 0,
+   "perdus": 0,
+   "bp": 79,
+   "bc": 75,
+   "diff": 4,
+   "points": 9,
+   "nous": true,
+   "stats_partielles": false
+  },
+  {
+   "rang": 3,
+   "club": "LORMONT HANDBALL HAUTS DE GARONNE",
+   "joues": 3,
+   "gagnes": 2,
+   "nuls": 0,
+   "perdus": 1,
+   "bp": 96,
+   "bc": 53,
+   "diff": 43,
+   "points": 7,
+   "nous": false,
+   "stats_partielles": false
+  },
+  {
+   "rang": 4,
    "club": "HAILLAN HANDBALL",
    "joues": 2,
    "gagnes": 2,
@@ -30,34 +58,6 @@
    "diff": 19,
    "points": 6,
    "nous": false,
-   "stats_partielles": false
-  },
-  {
-   "rang": 3,
-   "club": "HANDBALL CUBZAGUAIS",
-   "joues": 2,
-   "gagnes": 2,
-   "nuls": 0,
-   "perdus": 0,
-   "bp": 64,
-   "bc": 54,
-   "diff": 10,
-   "points": 6,
-   "nous": false,
-   "stats_partielles": false
-  },
-  {
-   "rang": 4,
-   "club": "HBC BAZADAIS",
-   "joues": 2,
-   "gagnes": 2,
-   "nuls": 0,
-   "perdus": 0,
-   "bp": 58,
-   "bc": 56,
-   "diff": 2,
-   "points": 6,
-   "nous": true,
    "stats_partielles": false
   },
   {
@@ -118,6 +118,20 @@
   },
   {
    "rang": 9,
+   "club": "ARCACHON LA TESTE HBC",
+   "joues": 3,
+   "gagnes": 0,
+   "nuls": 0,
+   "perdus": 3,
+   "bp": 60,
+   "bc": 98,
+   "diff": -38,
+   "points": 3,
+   "nous": false,
+   "stats_partielles": false
+  },
+  {
+   "rang": 10,
    "club": "PE2M HB 2",
    "joues": 2,
    "gagnes": 0,
@@ -131,7 +145,7 @@
    "stats_partielles": false
   },
   {
-   "rang": 10,
+   "rang": 11,
    "club": "AS HB DU FRONSADAIS",
    "joues": 2,
    "gagnes": 0,
@@ -140,20 +154,6 @@
    "bp": 46,
    "bc": 62,
    "diff": -16,
-   "points": 2,
-   "nous": false,
-   "stats_partielles": false
-  },
-  {
-   "rang": 11,
-   "club": "ARCACHON LA TESTE HBC",
-   "joues": 2,
-   "gagnes": 0,
-   "nuls": 0,
-   "perdus": 2,
-   "bp": 37,
-   "bc": 68,
-   "diff": -31,
    "points": 2,
    "nous": false,
    "stats_partielles": false
@@ -349,11 +349,11 @@
    "date": "Samedi 3 octobre 2026 à 18h30",
    "domicile": "ARCACHON LA TESTE HBC",
    "exterieur": "HANDBALL CUBZAGUAIS",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
+   "score_dom": 23,
+   "score_ext": 30,
+   "affiche": "23 – 30",
+   "vainqueur": "ext",
+   "statut": "joué",
    "nous": false
   },
   {
@@ -368,7 +368,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "SAMEDI 3 OCTOBRE 2026 À 19H00 AVENIR PAILLETON 2 - - HANDBALL SAINT MEDARD D'EYRANS VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2636271",
@@ -382,7 +383,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "SAMEDI 3 OCTOBRE 2026 À 19H30 AS HB DU FRONSADAIS - - HBC PAYS CASTILLONNAIS VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2636272",
@@ -391,11 +393,11 @@
    "date": "Samedi 3 octobre 2026 à 19h30",
    "domicile": "HBC BAZADAIS",
    "exterieur": "LORMONT HANDBALL HAUTS DE GARONNE",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
+   "score_dom": 21,
+   "score_ext": 19,
+   "affiche": "21 – 19",
+   "vainqueur": "dom",
+   "statut": "joué",
    "nous": true
   },
   {
@@ -2023,5 +2025,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-03 13:39"
+ "genere_le": "2026-10-03 23:14"
 }

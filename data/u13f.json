@@ -1,7 +1,7 @@
 {
  "equipe": "-13 F 1",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u13-feminine-32777/poule-193722/",
- "source_mise_a_jour": "3 oct. 2026 à 17h01",
+ "source_mise_a_jour": "3 oct. 2026 à 17h50",
  "journees": 10,
  "classement": [
   {
@@ -48,6 +48,20 @@
   },
   {
    "rang": 4,
+   "club": "HBC BAZADAIS 1",
+   "joues": 3,
+   "gagnes": 1,
+   "nuls": 0,
+   "perdus": 2,
+   "bp": 75,
+   "bc": 106,
+   "diff": -31,
+   "points": 5,
+   "nous": true,
+   "stats_partielles": false
+  },
+  {
+   "rang": 5,
    "club": "SA GAZINET CESTAS",
    "joues": 3,
    "gagnes": 1,
@@ -56,12 +70,12 @@
    "bp": 62,
    "bc": 81,
    "diff": -19,
-   "points": 4,
+   "points": 5,
    "nous": false,
-   "stats_partielles": true
+   "stats_partielles": false
   },
   {
-   "rang": 5,
+   "rang": 6,
    "club": "PE2M HB 1",
    "joues": 3,
    "gagnes": 0,
@@ -73,20 +87,6 @@
    "points": 3,
    "nous": false,
    "stats_partielles": false
-  },
-  {
-   "rang": 6,
-   "club": "HBC BAZADAIS 1",
-   "joues": 3,
-   "gagnes": 1,
-   "nuls": 0,
-   "perdus": 2,
-   "bp": 75,
-   "bc": 106,
-   "diff": -31,
-   "points": 2,
-   "nous": true,
-   "stats_partielles": true
   }
  ],
  "calendrier": [
@@ -511,5 +511,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-03 18:18"
+ "genere_le": "2026-10-03 23:15"
 }

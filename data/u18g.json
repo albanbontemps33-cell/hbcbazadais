@@ -1,7 +1,7 @@
 {
  "equipe": "-18 G",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u18-masculins-32774/poule-194137/",
- "source_mise_a_jour": "2 oct. 2026 à 22h59",
+ "source_mise_a_jour": "3 oct. 2026 à 18h27",
  "journees": 10,
  "classement": [
   {
@@ -49,30 +49,30 @@
   {
    "rang": 4,
    "club": "AVENIR PAILLETON",
-   "joues": 2,
+   "joues": 3,
    "gagnes": 0,
    "nuls": 0,
-   "perdus": 2,
-   "bp": 48,
-   "bc": 62,
-   "diff": -14,
+   "perdus": 3,
+   "bp": 82,
+   "bc": 98,
+   "diff": -16,
    "points": 2,
    "nous": false,
-   "stats_partielles": false
+   "stats_partielles": true
   },
   {
    "rang": 5,
    "club": "LEOGNAN HANDBALL 2",
-   "joues": 1,
-   "gagnes": 0,
+   "joues": 2,
+   "gagnes": 1,
    "nuls": 0,
    "perdus": 1,
-   "bp": 27,
-   "bc": 34,
-   "diff": -7,
+   "bp": 63,
+   "bc": 68,
+   "diff": -5,
    "points": 1,
    "nous": false,
-   "stats_partielles": false
+   "stats_partielles": true
   }
  ],
  "calendrier": [
@@ -153,13 +153,12 @@
    "date": "Samedi 3 octobre 2026 à 17h00",
    "domicile": "AVENIR PAILLETON",
    "exterieur": "LEOGNAN HANDBALL 2",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false,
-   "brut": "SAMEDI 3 OCTOBRE 2026 À 17H00 AVENIR PAILLETON - - LEOGNAN HANDBALL 2 VOIR DÉTAIL DU MATCH"
+   "score_dom": 34,
+   "score_ext": 36,
+   "affiche": "34 – 36",
+   "vainqueur": "ext",
+   "statut": "joué",
+   "nous": false
   },
   {
    "id": "2700906",
@@ -358,5 +357,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-03 18:18"
+ "genere_le": "2026-10-03 23:14"
 }
