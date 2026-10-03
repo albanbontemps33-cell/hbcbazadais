@@ -172,7 +172,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "SAMEDI 3 OCTOBRE 2026 À 17H00 SC MONSEGUR HB - - CADILLAC - CERONS U18F VOIR DÉTAIL DU MATCH REMATCH DISPONIBLE"
   },
   {
    "id": "2699865",
@@ -511,5 +512,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-02 14:34"
+ "genere_le": "2026-10-03 18:18"
 }

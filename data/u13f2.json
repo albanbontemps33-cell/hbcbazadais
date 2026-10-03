@@ -144,7 +144,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "SAMEDI 3 OCTOBRE 2026 À 15H15 SC MONSEGUR HB - - AVENIR PAILLETON VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2699714",
@@ -158,7 +159,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": true
+   "nous": true,
+   "brut": "SAMEDI 3 OCTOBRE 2026 À 17H15 HANDBALL SAINT MEDARD D'EYRANS - - HBC BAZADAIS 2 VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2699713",
@@ -511,5 +513,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-03 00:15"
+ "genere_le": "2026-10-03 18:19"
 }

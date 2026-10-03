@@ -186,7 +186,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": true
+   "nous": true,
+   "brut": "SAMEDI 3 OCTOBRE 2026 À 17H30 HBC BAZADAIS 2 - - HBC TEICHOIS 2 VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2676590",
@@ -511,5 +512,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-01 00:06"
+ "genere_le": "2026-10-03 18:17"
 }

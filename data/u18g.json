@@ -158,7 +158,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "SAMEDI 3 OCTOBRE 2026 À 17H00 AVENIR PAILLETON - - LEOGNAN HANDBALL 2 VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2700906",
@@ -357,5 +358,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-03 00:14"
+ "genere_le": "2026-10-03 18:18"
 }

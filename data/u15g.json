@@ -1,7 +1,7 @@
 {
  "equipe": "-15 G",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u15-masculin-32826/poule-194103/",
- "source_mise_a_jour": "1 oct. 2026 à 21h43",
+ "source_mise_a_jour": "3 oct. 2026 à 16h36",
  "journees": 10,
  "classement": [
   {
@@ -35,16 +35,16 @@
   {
    "rang": 3,
    "club": "SC MONSEGUR HB",
-   "joues": 2,
-   "gagnes": 1,
+   "joues": 3,
+   "gagnes": 2,
    "nuls": 0,
    "perdus": 1,
-   "bp": 19,
-   "bc": 30,
-   "diff": -11,
+   "bp": 60,
+   "bc": 54,
+   "diff": 6,
    "points": 4,
    "nous": false,
-   "stats_partielles": false
+   "stats_partielles": true
   },
   {
    "rang": 4,
@@ -77,16 +77,16 @@
   {
    "rang": 6,
    "club": "AVENIR PAILLETON",
-   "joues": 2,
+   "joues": 3,
    "gagnes": 0,
    "nuls": 0,
-   "perdus": 2,
-   "bp": 37,
-   "bc": 102,
-   "diff": -65,
+   "perdus": 3,
+   "bp": 61,
+   "bc": 143,
+   "diff": -82,
    "points": 2,
    "nous": false,
-   "stats_partielles": false
+   "stats_partielles": true
   }
  ],
  "calendrier": [
@@ -186,7 +186,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "SAMEDI 3 OCTOBRE 2026 À 15H15 PE2M HB - - UNION SPORTIVE TALENCE HANDBALL VOIR DÉTAIL DU MATCH REMATCH DISPONIBLE"
   },
   {
    "id": "2698107",
@@ -195,11 +196,11 @@
    "date": "Samedi 3 octobre 2026 à 15h15",
    "domicile": "AVENIR PAILLETON",
    "exterieur": "SC MONSEGUR HB",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
+   "score_dom": 24,
+   "score_ext": 41,
+   "affiche": "24 – 41",
+   "vainqueur": "ext",
+   "statut": "joué",
    "nous": false
   },
   {
@@ -214,7 +215,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": true
+   "nous": true,
+   "brut": "SAMEDI 3 OCTOBRE 2026 À 17H45 CADILLAC/CERONS U15M - - HBC BAZADAIS VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2698108",
@@ -511,5 +513,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-02 00:42"
+ "genere_le": "2026-10-03 18:18"
 }

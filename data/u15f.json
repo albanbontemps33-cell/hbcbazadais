@@ -1,50 +1,50 @@
 {
  "equipe": "-15 F",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u15-feminine-32776/poule-194055/",
- "source_mise_a_jour": "1 oct. 2026 à 16h32",
+ "source_mise_a_jour": "3 oct. 2026 à 16h57",
  "journees": 10,
  "classement": [
   {
    "rang": 1,
    "club": "HBC BAZADAIS",
+   "joues": 3,
+   "gagnes": 3,
+   "nuls": 0,
+   "perdus": 0,
+   "bp": 111,
+   "bc": 30,
+   "diff": 81,
+   "points": 6,
+   "nous": true,
+   "stats_partielles": true
+  },
+  {
+   "rang": 2,
+   "club": "BORDEAUX ETUDIANTS CLUB",
    "joues": 2,
    "gagnes": 2,
    "nuls": 0,
    "perdus": 0,
-   "bp": 91,
-   "bc": 22,
-   "diff": 69,
+   "bp": 39,
+   "bc": 26,
+   "diff": 13,
    "points": 6,
-   "nous": true,
-   "stats_partielles": false
-  },
-  {
-   "rang": 2,
-   "club": "HANDBALL SAINT MEDARD D'EYRANS 2",
-   "joues": 2,
-   "gagnes": 1,
-   "nuls": 0,
-   "perdus": 1,
-   "bp": 29,
-   "bc": 24,
-   "diff": 5,
-   "points": 4,
    "nous": false,
    "stats_partielles": false
   },
   {
    "rang": 3,
-   "club": "BORDEAUX ETUDIANTS CLUB",
-   "joues": 1,
+   "club": "HANDBALL SAINT MEDARD D'EYRANS 2",
+   "joues": 3,
    "gagnes": 1,
    "nuls": 0,
-   "perdus": 0,
-   "bp": 18,
-   "bc": 13,
-   "diff": 5,
-   "points": 3,
+   "perdus": 2,
+   "bp": 37,
+   "bc": 44,
+   "diff": -7,
+   "points": 4,
    "nous": false,
-   "stats_partielles": false
+   "stats_partielles": true
   },
   {
    "rang": 4,
@@ -63,14 +63,14 @@
   {
    "rang": 5,
    "club": "SC MONSEGUR HB",
-   "joues": 1,
+   "joues": 2,
    "gagnes": 0,
    "nuls": 0,
-   "perdus": 1,
-   "bp": 10,
-   "bc": 48,
-   "diff": -38,
-   "points": 1,
+   "perdus": 2,
+   "bp": 23,
+   "bc": 69,
+   "diff": -46,
+   "points": 2,
    "nous": false,
    "stats_partielles": false
   }
@@ -139,11 +139,11 @@
    "date": "Samedi 3 octobre 2026 à 15h30",
    "domicile": "BORDEAUX ETUDIANTS CLUB",
    "exterieur": "SC MONSEGUR HB",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
+   "score_dom": 21,
+   "score_ext": 13,
+   "affiche": "21 – 13",
+   "vainqueur": "dom",
+   "statut": "joué",
    "nous": false
   },
   {
@@ -153,11 +153,11 @@
    "date": "Samedi 3 octobre 2026 à 15h45",
    "domicile": "HBC BAZADAIS",
    "exterieur": "HANDBALL SAINT MEDARD D'EYRANS 2",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
+   "score_dom": 20,
+   "score_ext": 8,
+   "affiche": "20 – 8",
+   "vainqueur": "dom",
+   "statut": "joué",
    "nous": true
   },
   {
@@ -357,5 +357,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-02 00:42"
+ "genere_le": "2026-10-03 18:18"
 }

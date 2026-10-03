@@ -354,7 +354,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "SAMEDI 3 OCTOBRE 2026 À 18H00 AS AMBARESIENNE 2 - - HAILLAN HANDBALL 1 VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2635477",
@@ -2023,5 +2024,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-02 00:41"
+ "genere_le": "2026-10-03 18:17"
 }
