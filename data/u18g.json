@@ -1,25 +1,11 @@
 {
  "equipe": "-18 G",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u18-masculins-32774/poule-194137/",
- "source_mise_a_jour": "4 oct. 2026 à 06h58",
+ "source_mise_a_jour": "4 oct. 2026 à 17h11",
  "journees": 10,
  "classement": [
   {
    "rang": 1,
-   "club": "HBC BAZADAIS",
-   "joues": 2,
-   "gagnes": 2,
-   "nuls": 0,
-   "perdus": 0,
-   "bp": 68,
-   "bc": 59,
-   "diff": 9,
-   "points": 6,
-   "nous": true,
-   "stats_partielles": false
-  },
-  {
-   "rang": 2,
    "club": "CADILLAC - CERONS U18M",
    "joues": 2,
    "gagnes": 2,
@@ -33,21 +19,21 @@
    "stats_partielles": false
   },
   {
-   "rang": 3,
-   "club": "SC MONSEGUR HB",
-   "joues": 3,
-   "gagnes": 1,
+   "rang": 2,
+   "club": "HBC BAZADAIS",
+   "joues": 2,
+   "gagnes": 2,
    "nuls": 0,
-   "perdus": 2,
-   "bp": 61,
-   "bc": 51,
-   "diff": 10,
-   "points": 4,
-   "nous": false,
+   "perdus": 0,
+   "bp": 68,
+   "bc": 59,
+   "diff": 9,
+   "points": 6,
+   "nous": true,
    "stats_partielles": false
   },
   {
-   "rang": 4,
+   "rang": 3,
    "club": "LEOGNAN HANDBALL 2",
    "joues": 2,
    "gagnes": 1,
@@ -56,6 +42,20 @@
    "bp": 63,
    "bc": 68,
    "diff": -5,
+   "points": 4,
+   "nous": false,
+   "stats_partielles": false
+  },
+  {
+   "rang": 4,
+   "club": "SC MONSEGUR HB",
+   "joues": 3,
+   "gagnes": 1,
+   "nuls": 0,
+   "perdus": 2,
+   "bp": 61,
+   "bc": 51,
+   "diff": 10,
    "points": 4,
    "nous": false,
    "stats_partielles": false
@@ -357,5 +357,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-04 14:21"
+ "genere_le": "2026-10-04 23:25"
 }

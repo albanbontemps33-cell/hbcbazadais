@@ -1,7 +1,7 @@
 {
  "equipe": "-13 F 1",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u13-feminine-32777/poule-193722/",
- "source_mise_a_jour": "3 oct. 2026 à 17h50",
+ "source_mise_a_jour": "4 oct. 2026 à 20h11",
  "journees": 10,
  "classement": [
   {
@@ -21,30 +21,30 @@
   {
    "rang": 2,
    "club": "STADE LANGONNAIS HB",
-   "joues": 2,
-   "gagnes": 2,
+   "joues": 3,
+   "gagnes": 3,
    "nuls": 0,
    "perdus": 0,
-   "bp": 88,
-   "bc": 33,
-   "diff": 55,
+   "bp": 118,
+   "bc": 60,
+   "diff": 58,
    "points": 6,
    "nous": false,
-   "stats_partielles": false
+   "stats_partielles": true
   },
   {
    "rang": 3,
    "club": "HBC CREONNAIS",
-   "joues": 2,
+   "joues": 3,
    "gagnes": 2,
    "nuls": 0,
-   "perdus": 0,
-   "bp": 61,
-   "bc": 48,
-   "diff": 13,
+   "perdus": 1,
+   "bp": 88,
+   "bc": 78,
+   "diff": 10,
    "points": 6,
    "nous": false,
-   "stats_partielles": false
+   "stats_partielles": true
   },
   {
    "rang": 4,
@@ -209,13 +209,12 @@
    "date": "Dimanche 4 octobre 2026 à 11h15",
    "domicile": "STADE LANGONNAIS HB",
    "exterieur": "HBC CREONNAIS",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false,
-   "brut": "DIMANCHE 4 OCTOBRE 2026 À 11H15 STADE LANGONNAIS HB - - HBC CREONNAIS VOIR DÉTAIL DU MATCH"
+   "score_dom": 30,
+   "score_ext": 27,
+   "affiche": "30 – 27",
+   "vainqueur": "dom",
+   "statut": "joué",
+   "nous": false
   },
   {
    "id": "2699510",
@@ -512,5 +511,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-04 14:22"
+ "genere_le": "2026-10-04 23:25"
 }

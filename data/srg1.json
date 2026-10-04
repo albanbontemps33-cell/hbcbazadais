@@ -1,7 +1,7 @@
 {
  "equipe": "SG1",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-16-masculins-pre-regionale-32457/poule-190872/",
- "source_mise_a_jour": "4 oct. 2026 à 07h48",
+ "source_mise_a_jour": "4 oct. 2026 à 18h49",
  "journees": 22,
  "classement": [
   {
@@ -105,30 +105,30 @@
   {
    "rang": 8,
    "club": "ES BLANQUEFORTAISE HBC 2",
-   "joues": 2,
-   "gagnes": 1,
+   "joues": 3,
+   "gagnes": 2,
    "nuls": 0,
    "perdus": 1,
-   "bp": 61,
-   "bc": 49,
-   "diff": 12,
+   "bp": 108,
+   "bc": 77,
+   "diff": 31,
    "points": 4,
    "nous": false,
-   "stats_partielles": false
+   "stats_partielles": true
   },
   {
    "rang": 9,
    "club": "GRADIGNAN HANDBALL CLUB",
-   "joues": 2,
+   "joues": 3,
    "gagnes": 1,
    "nuls": 0,
-   "perdus": 1,
-   "bp": 65,
-   "bc": 63,
-   "diff": 2,
+   "perdus": 2,
+   "bp": 93,
+   "bc": 110,
+   "diff": -17,
    "points": 4,
    "nous": false,
-   "stats_partielles": false
+   "stats_partielles": true
   },
   {
    "rang": 10,
@@ -405,11 +405,11 @@
    "date": "Dimanche 4 octobre 2026 à 17h00",
    "domicile": "GRADIGNAN HANDBALL CLUB",
    "exterieur": "ES BLANQUEFORTAISE HBC 2",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
+   "score_dom": 28,
+   "score_ext": 47,
+   "affiche": "28 – 47",
+   "vainqueur": "ext",
+   "statut": "joué",
    "nous": false
   },
   {
@@ -707,6 +707,20 @@
    "nous": false
   },
   {
+   "id": "2635497",
+   "journee": 7,
+   "iso": "2026-11-14T21:30",
+   "date": "Samedi 14 novembre 2026 à 21h30",
+   "domicile": "HBC TEICHOIS",
+   "exterieur": "ST MEDARD HANDBALL 2",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
    "id": "2635502",
    "journee": 7,
    "iso": "2026-11-14T21:30",
@@ -937,20 +951,6 @@
    "date": "",
    "domicile": "CANEJAN HBC 2",
    "exterieur": "GRADIGNAN HANDBALL CLUB",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
-   "id": "2635497",
-   "journee": 7,
-   "iso": "",
-   "date": "",
-   "domicile": "HBC TEICHOIS",
-   "exterieur": "ST MEDARD HANDBALL 2",
    "score_dom": null,
    "score_ext": null,
    "affiche": null,
@@ -2023,5 +2023,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-04 14:20"
+ "genere_le": "2026-10-04 23:24"
 }

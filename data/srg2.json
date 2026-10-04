@@ -1,11 +1,25 @@
 {
  "equipe": "SG2",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-16-masculins-promotion-32460/",
- "source_mise_a_jour": "4 oct. 2026 à 07h13",
+ "source_mise_a_jour": "4 oct. 2026 à 17h27",
  "journees": 10,
  "classement": [
   {
    "rang": 1,
+   "club": "ASSOCIATION SPORTIVE DE HANDBALL BRANNAIS",
+   "joues": 3,
+   "gagnes": 3,
+   "nuls": 0,
+   "perdus": 0,
+   "bp": 100,
+   "bc": 76,
+   "diff": 24,
+   "points": 9,
+   "nous": false,
+   "stats_partielles": false
+  },
+  {
+   "rang": 2,
    "club": "HBC TEICHOIS 2",
    "joues": 3,
    "gagnes": 3,
@@ -19,63 +33,35 @@
    "stats_partielles": false
   },
   {
-   "rang": 2,
-   "club": "ASSOCIATION SPORTIVE DE HANDBALL BRANNAIS",
-   "joues": 2,
-   "gagnes": 2,
-   "nuls": 0,
-   "perdus": 0,
-   "bp": 64,
-   "bc": 46,
-   "diff": 18,
-   "points": 6,
-   "nous": false,
-   "stats_partielles": false
-  },
-  {
    "rang": 3,
    "club": "HANDBALL CLUB SAINT SYMPHORIEN",
-   "joues": 2,
+   "joues": 3,
    "gagnes": 1,
    "nuls": 0,
-   "perdus": 1,
-   "bp": 49,
-   "bc": 45,
-   "diff": 4,
-   "points": 4,
+   "perdus": 2,
+   "bp": 79,
+   "bc": 81,
+   "diff": -2,
+   "points": 5,
    "nous": false,
    "stats_partielles": false
   },
   {
    "rang": 4,
    "club": "US MIOS BIGANOS 2",
-   "joues": 2,
-   "gagnes": 1,
+   "joues": 3,
+   "gagnes": 2,
    "nuls": 0,
    "perdus": 1,
-   "bp": 60,
-   "bc": 59,
-   "diff": 1,
+   "bp": 95,
+   "bc": 78,
+   "diff": 17,
    "points": 4,
    "nous": false,
-   "stats_partielles": false
+   "stats_partielles": true
   },
   {
    "rang": 5,
-   "club": "ST MEDARD HANDBALL 2",
-   "joues": 2,
-   "gagnes": 0,
-   "nuls": 0,
-   "perdus": 2,
-   "bp": 54,
-   "bc": 67,
-   "diff": -13,
-   "points": 2,
-   "nous": false,
-   "stats_partielles": false
-  },
-  {
-   "rang": 6,
    "club": "HBC BAZADAIS 2",
    "joues": 3,
    "gagnes": 0,
@@ -87,6 +73,20 @@
    "points": 3,
    "nous": true,
    "stats_partielles": false
+  },
+  {
+   "rang": 6,
+   "club": "ST MEDARD HANDBALL 2",
+   "joues": 3,
+   "gagnes": 0,
+   "nuls": 0,
+   "perdus": 3,
+   "bp": 73,
+   "bc": 102,
+   "diff": -29,
+   "points": 2,
+   "nous": false,
+   "stats_partielles": true
   }
  ],
  "calendrier": [
@@ -195,11 +195,11 @@
    "date": "Dimanche 4 octobre 2026 à 15h00",
    "domicile": "ASSOCIATION SPORTIVE DE HANDBALL BRANNAIS",
    "exterieur": "HANDBALL CLUB SAINT SYMPHORIEN",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
+   "score_dom": 36,
+   "score_ext": 30,
+   "affiche": "36 – 30",
+   "vainqueur": "dom",
+   "statut": "joué",
    "nous": false
   },
   {
@@ -209,11 +209,11 @@
    "date": "Dimanche 4 octobre 2026 à 16h00",
    "domicile": "ST MEDARD HANDBALL 2",
    "exterieur": "US MIOS BIGANOS 2",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
+   "score_dom": 19,
+   "score_ext": 35,
+   "affiche": "19 – 35",
+   "vainqueur": "ext",
+   "statut": "joué",
    "nous": false
   },
   {
@@ -343,6 +343,20 @@
    "nous": true
   },
   {
+   "id": "2676601",
+   "journee": 7,
+   "iso": "2026-11-15T16:00",
+   "date": "Dimanche 15 novembre 2026 à 16h00",
+   "domicile": "HBC TEICHOIS 2",
+   "exterieur": "HANDBALL CLUB SAINT SYMPHORIEN",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
    "id": "2676604",
    "journee": 8,
    "iso": "2026-11-28T17:45",
@@ -383,20 +397,6 @@
    "vainqueur": null,
    "statut": "à venir",
    "nous": true
-  },
-  {
-   "id": "2676601",
-   "journee": 7,
-   "iso": "",
-   "date": "",
-   "domicile": "HBC TEICHOIS 2",
-   "exterieur": "HANDBALL CLUB SAINT SYMPHORIEN",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false
   },
   {
    "id": "2676603",
@@ -511,5 +511,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-04 14:21"
+ "genere_le": "2026-10-04 23:24"
 }

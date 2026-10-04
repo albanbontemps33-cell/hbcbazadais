@@ -1,7 +1,7 @@
 {
  "equipe": "-18 F",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u18-feminine-32775/poule-193706/",
- "source_mise_a_jour": "2 oct. 2026 à 06h52",
+ "source_mise_a_jour": "4 oct. 2026 à 15h53",
  "journees": 10,
  "classement": [
   {
@@ -20,15 +20,15 @@
   },
   {
    "rang": 2,
-   "club": "LEOGNAN - TALENCE",
-   "joues": 2,
-   "gagnes": 1,
+   "club": "HBC BELIN-BELIET",
+   "joues": 3,
+   "gagnes": 2,
    "nuls": 0,
    "perdus": 1,
-   "bp": 50,
-   "bc": 47,
-   "diff": 3,
-   "points": 4,
+   "bp": 60,
+   "bc": 35,
+   "diff": 25,
+   "points": 6,
    "nous": false,
    "stats_partielles": false
   },
@@ -42,21 +42,21 @@
    "bp": 68,
    "bc": 78,
    "diff": -10,
-   "points": 4,
+   "points": 5,
    "nous": true,
-   "stats_partielles": true
+   "stats_partielles": false
   },
   {
    "rang": 4,
-   "club": "HBC BELIN-BELIET",
+   "club": "LEOGNAN - TALENCE",
    "joues": 3,
-   "gagnes": 2,
-   "nuls": 0,
+   "gagnes": 1,
+   "nuls": 1,
    "perdus": 1,
-   "bp": 60,
-   "bc": 35,
-   "diff": 25,
-   "points": 3,
+   "bp": 73,
+   "bc": 70,
+   "diff": 3,
+   "points": 4,
    "nous": false,
    "stats_partielles": true
   },
@@ -77,16 +77,16 @@
   {
    "rang": 6,
    "club": "GRADIGNAN HANDBALL CLUB",
-   "joues": 1,
+   "joues": 2,
    "gagnes": 0,
-   "nuls": 0,
+   "nuls": 1,
    "perdus": 1,
-   "bp": 23,
-   "bc": 25,
+   "bp": 46,
+   "bc": 48,
    "diff": -2,
    "points": 1,
    "nous": false,
-   "stats_partielles": false
+   "stats_partielles": true
   }
  ],
  "calendrier": [
@@ -195,13 +195,12 @@
    "date": "Dimanche 4 octobre 2026 à 14h00",
    "domicile": "LEOGNAN - TALENCE",
    "exterieur": "GRADIGNAN HANDBALL CLUB",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false,
-   "brut": "DIMANCHE 4 OCTOBRE 2026 À 14H00 LEOGNAN - TALENCE - - GRADIGNAN HANDBALL CLUB VOIR DÉTAIL DU MATCH REMATCH DISPONIBLE"
+   "score_dom": 23,
+   "score_ext": 23,
+   "affiche": "23 – 23",
+   "vainqueur": "nul",
+   "statut": "joué",
+   "nous": false
   },
   {
    "id": "2699868",
@@ -512,5 +511,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-04 14:21"
+ "genere_le": "2026-10-04 23:25"
 }

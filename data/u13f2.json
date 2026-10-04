@@ -1,11 +1,39 @@
 {
  "equipe": "-13 F 2",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u13-feminine-32777/poule-194061/",
- "source_mise_a_jour": "3 oct. 2026 à 20h22",
+ "source_mise_a_jour": "4 oct. 2026 à 19h25",
  "journees": 10,
  "classement": [
   {
    "rang": 1,
+   "club": "AVENIR PAILLETON",
+   "joues": 2,
+   "gagnes": 2,
+   "nuls": 0,
+   "perdus": 0,
+   "bp": 58,
+   "bc": 33,
+   "diff": 25,
+   "points": 6,
+   "nous": false,
+   "stats_partielles": false
+  },
+  {
+   "rang": 2,
+   "club": "SC MONSEGUR HB",
+   "joues": 2,
+   "gagnes": 1,
+   "nuls": 0,
+   "perdus": 1,
+   "bp": 35,
+   "bc": 37,
+   "diff": -2,
+   "points": 4,
+   "nous": false,
+   "stats_partielles": false
+  },
+  {
+   "rang": 3,
    "club": "HANDBALL SAINT MEDARD D'EYRANS",
    "joues": 2,
    "gagnes": 1,
@@ -19,43 +47,15 @@
    "stats_partielles": false
   },
   {
-   "rang": 2,
-   "club": "AVENIR PAILLETON",
-   "joues": 2,
-   "gagnes": 2,
-   "nuls": 0,
-   "perdus": 0,
-   "bp": 58,
-   "bc": 33,
-   "diff": 25,
-   "points": 3,
-   "nous": false,
-   "stats_partielles": true
-  },
-  {
-   "rang": 3,
-   "club": "PE2M HB 2",
-   "joues": 1,
-   "gagnes": 1,
-   "nuls": 0,
-   "perdus": 0,
-   "bp": 20,
-   "bc": 6,
-   "diff": 14,
-   "points": 3,
-   "nous": false,
-   "stats_partielles": false
-  },
-  {
    "rang": 4,
-   "club": "SC MONSEGUR HB",
+   "club": "PE2M HB 2",
    "joues": 2,
    "gagnes": 1,
    "nuls": 0,
    "perdus": 1,
-   "bp": 35,
-   "bc": 37,
-   "diff": -2,
+   "bp": 31,
+   "bc": 29,
+   "diff": 2,
    "points": 3,
    "nous": false,
    "stats_partielles": true
@@ -77,16 +77,16 @@
   {
    "rang": 6,
    "club": "CADILLAC CERONS U13F",
-   "joues": 1,
-   "gagnes": 0,
+   "joues": 2,
+   "gagnes": 1,
    "nuls": 0,
    "perdus": 1,
-   "bp": 13,
-   "bc": 20,
-   "diff": -7,
+   "bp": 36,
+   "bc": 31,
+   "diff": 5,
    "points": 1,
    "nous": false,
-   "stats_partielles": false
+   "stats_partielles": true
   }
  ],
  "calendrier": [
@@ -167,13 +167,12 @@
    "date": "Dimanche 4 octobre 2026 à 11h30",
    "domicile": "PE2M HB 2",
    "exterieur": "CADILLAC CERONS U13F",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false,
-   "brut": "DIMANCHE 4 OCTOBRE 2026 À 11H30 PE2M HB 2 - - CADILLAC CERONS U13F VOIR DÉTAIL DU MATCH"
+   "score_dom": 11,
+   "score_ext": 23,
+   "affiche": "11 – 23",
+   "vainqueur": "ext",
+   "statut": "joué",
+   "nous": false
   },
   {
    "id": "2699717",
@@ -512,5 +511,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-04 14:22"
+ "genere_le": "2026-10-04 23:26"
 }
