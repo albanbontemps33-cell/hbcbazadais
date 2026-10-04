@@ -7,14 +7,14 @@
   {
    "rang": 1,
    "club": "CADILLAC - CERONS U18F",
-   "joues": 2,
+   "joues": 3,
    "gagnes": 2,
-   "nuls": 0,
+   "nuls": 1,
    "perdus": 0,
-   "bp": 25,
-   "bc": 23,
+   "bp": 61,
+   "bc": 59,
    "diff": 2,
-   "points": 6,
+   "points": 8,
    "nous": false,
    "stats_partielles": false
   },
@@ -35,33 +35,47 @@
   {
    "rang": 3,
    "club": "HBC BAZADAIS",
-   "joues": 2,
+   "joues": 3,
    "gagnes": 1,
    "nuls": 0,
-   "perdus": 1,
-   "bp": 52,
-   "bc": 48,
-   "diff": 4,
+   "perdus": 2,
+   "bp": 68,
+   "bc": 78,
+   "diff": -10,
    "points": 4,
    "nous": true,
-   "stats_partielles": false
+   "stats_partielles": true
   },
   {
    "rang": 4,
    "club": "HBC BELIN-BELIET",
-   "joues": 2,
-   "gagnes": 1,
+   "joues": 3,
+   "gagnes": 2,
    "nuls": 0,
    "perdus": 1,
-   "bp": 30,
-   "bc": 19,
-   "diff": 11,
+   "bp": 60,
+   "bc": 35,
+   "diff": 25,
+   "points": 3,
+   "nous": false,
+   "stats_partielles": true
+  },
+  {
+   "rang": 5,
+   "club": "SC MONSEGUR HB",
+   "joues": 2,
+   "gagnes": 0,
+   "nuls": 1,
+   "perdus": 1,
+   "bp": 53,
+   "bc": 71,
+   "diff": -18,
    "points": 3,
    "nous": false,
    "stats_partielles": false
   },
   {
-   "rang": 5,
+   "rang": 6,
    "club": "GRADIGNAN HANDBALL CLUB",
    "joues": 1,
    "gagnes": 0,
@@ -70,20 +84,6 @@
    "bp": 23,
    "bc": 25,
    "diff": -2,
-   "points": 1,
-   "nous": false,
-   "stats_partielles": false
-  },
-  {
-   "rang": 6,
-   "club": "SC MONSEGUR HB",
-   "joues": 1,
-   "gagnes": 0,
-   "nuls": 0,
-   "perdus": 1,
-   "bp": 17,
-   "bc": 35,
-   "diff": -18,
    "points": 1,
    "nous": false,
    "stats_partielles": false
@@ -167,13 +167,12 @@
    "date": "Samedi 3 octobre 2026 à 17h00",
    "domicile": "SC MONSEGUR HB",
    "exterieur": "CADILLAC - CERONS U18F",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false,
-   "brut": "SAMEDI 3 OCTOBRE 2026 À 17H00 SC MONSEGUR HB - - CADILLAC - CERONS U18F VOIR DÉTAIL DU MATCH REMATCH DISPONIBLE"
+   "score_dom": 36,
+   "score_ext": 36,
+   "affiche": "36 – 36",
+   "vainqueur": "nul",
+   "statut": "joué",
+   "nous": false
   },
   {
    "id": "2699865",
@@ -182,11 +181,11 @@
    "date": "Dimanche 4 octobre 2026 à 10h45",
    "domicile": "HBC BELIN-BELIET",
    "exterieur": "HBC BAZADAIS",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
+   "score_dom": 30,
+   "score_ext": 16,
+   "affiche": "30 – 16",
+   "vainqueur": "dom",
+   "statut": "joué",
    "nous": true
   },
   {
@@ -201,7 +200,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "DIMANCHE 4 OCTOBRE 2026 À 14H00 LEOGNAN - TALENCE - - GRADIGNAN HANDBALL CLUB VOIR DÉTAIL DU MATCH REMATCH DISPONIBLE"
   },
   {
    "id": "2699868",
@@ -512,5 +512,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-03 18:18"
+ "genere_le": "2026-10-04 14:21"
 }

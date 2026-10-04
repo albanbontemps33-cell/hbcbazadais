@@ -21,16 +21,16 @@
   {
    "rang": 2,
    "club": "AVENIR PAILLETON",
-   "joues": 1,
-   "gagnes": 1,
+   "joues": 2,
+   "gagnes": 2,
    "nuls": 0,
    "perdus": 0,
-   "bp": 34,
-   "bc": 18,
-   "diff": 16,
+   "bp": 58,
+   "bc": 33,
+   "diff": 25,
    "points": 3,
    "nous": false,
-   "stats_partielles": false
+   "stats_partielles": true
   },
   {
    "rang": 3,
@@ -49,16 +49,16 @@
   {
    "rang": 4,
    "club": "SC MONSEGUR HB",
-   "joues": 1,
+   "joues": 2,
    "gagnes": 1,
    "nuls": 0,
-   "perdus": 0,
-   "bp": 20,
-   "bc": 13,
-   "diff": 7,
+   "perdus": 1,
+   "bp": 35,
+   "bc": 37,
+   "diff": -2,
    "points": 3,
    "nous": false,
-   "stats_partielles": false
+   "stats_partielles": true
   },
   {
    "rang": 5,
@@ -139,13 +139,12 @@
    "date": "Samedi 3 octobre 2026 à 15h15",
    "domicile": "SC MONSEGUR HB",
    "exterieur": "AVENIR PAILLETON",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false,
-   "brut": "SAMEDI 3 OCTOBRE 2026 À 15H15 SC MONSEGUR HB - - AVENIR PAILLETON VOIR DÉTAIL DU MATCH"
+   "score_dom": 15,
+   "score_ext": 24,
+   "affiche": "15 – 24",
+   "vainqueur": "ext",
+   "statut": "joué",
+   "nous": false
   },
   {
    "id": "2699714",
@@ -173,7 +172,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "DIMANCHE 4 OCTOBRE 2026 À 11H30 PE2M HB 2 - - CADILLAC CERONS U13F VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2699717",
@@ -512,5 +512,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-03 23:15"
+ "genere_le": "2026-10-04 14:22"
 }

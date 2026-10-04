@@ -172,7 +172,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "DIMANCHE 4 OCTOBRE 2026 À 14H00 AVENIR PAILLETON - - HANDBALL CLUB SAINT SYMPHORIEN VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2699061",
@@ -251,6 +252,20 @@
    "date": "Samedi 7 novembre 2026 à 12h45",
    "domicile": "CADILLAC - CERONS U13M",
    "exterieur": "SC MONSEGUR HB",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
+   "id": "2699069",
+   "journee": 5,
+   "iso": "2026-11-07T15:15",
+   "date": "Samedi 7 novembre 2026 à 15h15",
+   "domicile": "AVENIR PAILLETON",
+   "exterieur": "HANDBALL SAINT MEDARD D'EYRANS 2",
    "score_dom": null,
    "score_ext": null,
    "affiche": null,
@@ -363,20 +378,6 @@
    "date": "",
    "domicile": "HANDBALL SAINT MEDARD D'EYRANS 2",
    "exterieur": "CADILLAC - CERONS U13M",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
-   "id": "2699069",
-   "journee": 5,
-   "iso": "",
-   "date": "",
-   "domicile": "AVENIR PAILLETON",
-   "exterieur": "HANDBALL SAINT MEDARD D'EYRANS 2",
    "score_dom": null,
    "score_ext": null,
    "affiche": null,
@@ -511,5 +512,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-03 23:15"
+ "genere_le": "2026-10-04 14:22"
 }

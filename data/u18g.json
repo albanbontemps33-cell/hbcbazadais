@@ -1,7 +1,7 @@
 {
  "equipe": "-18 G",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u18-masculins-32774/poule-194137/",
- "source_mise_a_jour": "3 oct. 2026 à 18h27",
+ "source_mise_a_jour": "4 oct. 2026 à 06h58",
  "journees": 10,
  "classement": [
   {
@@ -48,20 +48,6 @@
   },
   {
    "rang": 4,
-   "club": "AVENIR PAILLETON",
-   "joues": 3,
-   "gagnes": 0,
-   "nuls": 0,
-   "perdus": 3,
-   "bp": 82,
-   "bc": 98,
-   "diff": -16,
-   "points": 2,
-   "nous": false,
-   "stats_partielles": true
-  },
-  {
-   "rang": 5,
    "club": "LEOGNAN HANDBALL 2",
    "joues": 2,
    "gagnes": 1,
@@ -70,9 +56,23 @@
    "bp": 63,
    "bc": 68,
    "diff": -5,
-   "points": 1,
+   "points": 4,
    "nous": false,
-   "stats_partielles": true
+   "stats_partielles": false
+  },
+  {
+   "rang": 5,
+   "club": "AVENIR PAILLETON",
+   "joues": 3,
+   "gagnes": 0,
+   "nuls": 0,
+   "perdus": 3,
+   "bp": 82,
+   "bc": 98,
+   "diff": -16,
+   "points": 3,
+   "nous": false,
+   "stats_partielles": false
   }
  ],
  "calendrier": [
@@ -203,6 +203,20 @@
    "nous": false
   },
   {
+   "id": "2700907",
+   "journee": 5,
+   "iso": "2026-11-07T17:00",
+   "date": "Samedi 7 novembre 2026 à 17h00",
+   "domicile": "AVENIR PAILLETON",
+   "exterieur": "HBC BAZADAIS",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": true
+  },
+  {
    "id": "2700911",
    "journee": 6,
    "iso": "2026-11-14T18:15",
@@ -265,20 +279,6 @@
    "date": "Dimanche 13 décembre 2026 à 14h00",
    "domicile": "HBC BAZADAIS",
    "exterieur": "AVENIR PAILLETON",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": true
-  },
-  {
-   "id": "2700907",
-   "journee": 5,
-   "iso": "",
-   "date": "",
-   "domicile": "AVENIR PAILLETON",
-   "exterieur": "HBC BAZADAIS",
    "score_dom": null,
    "score_ext": null,
    "affiche": null,
@@ -357,5 +357,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-03 23:14"
+ "genere_le": "2026-10-04 14:21"
 }

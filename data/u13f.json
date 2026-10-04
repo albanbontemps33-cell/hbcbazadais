@@ -214,7 +214,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "DIMANCHE 4 OCTOBRE 2026 À 11H15 STADE LANGONNAIS HB - - HBC CREONNAIS VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2699510",
@@ -511,5 +512,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-03 23:15"
+ "genere_le": "2026-10-04 14:22"
 }

@@ -1,7 +1,7 @@
 {
  "equipe": "-15 G",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u15-masculin-32826/poule-194103/",
- "source_mise_a_jour": "3 oct. 2026 à 23h32",
+ "source_mise_a_jour": "4 oct. 2026 à 11h20",
  "journees": 10,
  "classement": [
   {
@@ -20,6 +20,20 @@
   },
   {
    "rang": 2,
+   "club": "HBC BAZADAIS",
+   "joues": 3,
+   "gagnes": 2,
+   "nuls": 0,
+   "perdus": 1,
+   "bp": 125,
+   "bc": 91,
+   "diff": 34,
+   "points": 7,
+   "nous": true,
+   "stats_partielles": false
+  },
+  {
+   "rang": 3,
    "club": "SC MONSEGUR HB",
    "joues": 3,
    "gagnes": 2,
@@ -33,21 +47,21 @@
    "stats_partielles": false
   },
   {
-   "rang": 3,
-   "club": "HBC BAZADAIS",
+   "rang": 4,
+   "club": "CADILLAC/CERONS U15M",
    "joues": 3,
-   "gagnes": 2,
-   "nuls": 0,
+   "gagnes": 1,
+   "nuls": 1,
    "perdus": 1,
-   "bp": 125,
-   "bc": 91,
-   "diff": 34,
-   "points": 6,
-   "nous": true,
-   "stats_partielles": true
+   "bp": 77,
+   "bc": 72,
+   "diff": 5,
+   "points": 5,
+   "nous": false,
+   "stats_partielles": false
   },
   {
-   "rang": 4,
+   "rang": 5,
    "club": "PE2M HB",
    "joues": 3,
    "gagnes": 0,
@@ -61,7 +75,7 @@
    "stats_partielles": false
   },
   {
-   "rang": 5,
+   "rang": 6,
    "club": "AVENIR PAILLETON",
    "joues": 3,
    "gagnes": 0,
@@ -73,20 +87,6 @@
    "points": 3,
    "nous": false,
    "stats_partielles": false
-  },
-  {
-   "rang": 6,
-   "club": "CADILLAC/CERONS U15M",
-   "joues": 3,
-   "gagnes": 1,
-   "nuls": 1,
-   "perdus": 1,
-   "bp": 77,
-   "bc": 72,
-   "diff": 5,
-   "points": 2,
-   "nous": false,
-   "stats_partielles": true
   }
  ],
  "calendrier": [
@@ -511,5 +511,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-04 02:38"
+ "genere_le": "2026-10-04 14:21"
 }

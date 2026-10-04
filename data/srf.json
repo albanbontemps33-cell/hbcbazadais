@@ -1,7 +1,7 @@
 {
  "equipe": "SF",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-16-feminines-honneur-32465/",
- "source_mise_a_jour": "3 oct. 2026 à 23h42",
+ "source_mise_a_jour": "4 oct. 2026 à 07h18",
  "journees": 22,
  "classement": [
   {
@@ -410,7 +410,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "DIMANCHE 4 OCTOBRE 2026 À 14H00 PE2M HB 2 - - SA GAZINET CESTAS 2 VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2636273",
@@ -424,7 +425,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "DIMANCHE 4 OCTOBRE 2026 À 14H00 MEDOC HANDBALL 2 - - HAILLAN HANDBALL VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2636277",
@@ -665,6 +667,20 @@
    "nous": false
   },
   {
+   "id": "2636297",
+   "journee": 7,
+   "iso": "2026-11-14T21:15",
+   "date": "Samedi 14 novembre 2026 à 21h15",
+   "domicile": "AVENIR PAILLETON 2",
+   "exterieur": "AS HB DU FRONSADAIS",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
    "id": "2636299",
    "journee": 7,
    "iso": "2026-11-15T15:00",
@@ -797,20 +813,6 @@
    "date": "",
    "domicile": "HBC PAYS CASTILLONNAIS",
    "exterieur": "AVENIR PAILLETON 2",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
-   "id": "2636297",
-   "journee": 7,
-   "iso": "",
-   "date": "",
-   "domicile": "AVENIR PAILLETON 2",
-   "exterieur": "AS HB DU FRONSADAIS",
    "score_dom": null,
    "score_ext": null,
    "affiche": null,
@@ -2023,5 +2025,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-04 02:38"
+ "genere_le": "2026-10-04 14:21"
 }
