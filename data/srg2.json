@@ -1,11 +1,25 @@
 {
  "equipe": "SG2",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-16-masculins-promotion-32460/",
- "source_mise_a_jour": "30 sept. 2026 à 15h35",
+ "source_mise_a_jour": "4 oct. 2026 à 00h59",
  "journees": 10,
  "classement": [
   {
    "rang": 1,
+   "club": "HBC TEICHOIS 2",
+   "joues": 3,
+   "gagnes": 3,
+   "nuls": 0,
+   "perdus": 0,
+   "bp": 94,
+   "bc": 74,
+   "diff": 20,
+   "points": 9,
+   "nous": false,
+   "stats_partielles": false
+  },
+  {
+   "rang": 2,
    "club": "ASSOCIATION SPORTIVE DE HANDBALL BRANNAIS",
    "joues": 2,
    "gagnes": 2,
@@ -14,20 +28,6 @@
    "bp": 64,
    "bc": 46,
    "diff": 18,
-   "points": 6,
-   "nous": false,
-   "stats_partielles": false
-  },
-  {
-   "rang": 2,
-   "club": "HBC TEICHOIS 2",
-   "joues": 2,
-   "gagnes": 2,
-   "nuls": 0,
-   "perdus": 0,
-   "bp": 62,
-   "bc": 50,
-   "diff": 12,
    "points": 6,
    "nous": false,
    "stats_partielles": false
@@ -77,14 +77,14 @@
   {
    "rang": 6,
    "club": "HBC BAZADAIS 2",
-   "joues": 2,
+   "joues": 3,
    "gagnes": 0,
    "nuls": 0,
-   "perdus": 2,
-   "bp": 45,
-   "bc": 67,
-   "diff": -22,
-   "points": 2,
+   "perdus": 3,
+   "bp": 69,
+   "bc": 99,
+   "diff": -30,
+   "points": 3,
    "nous": true,
    "stats_partielles": false
   }
@@ -181,13 +181,12 @@
    "date": "Samedi 3 octobre 2026 à 17h30",
    "domicile": "HBC BAZADAIS 2",
    "exterieur": "HBC TEICHOIS 2",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": true,
-   "brut": "SAMEDI 3 OCTOBRE 2026 À 17H30 HBC BAZADAIS 2 - - HBC TEICHOIS 2 VOIR DÉTAIL DU MATCH"
+   "score_dom": 24,
+   "score_ext": 32,
+   "affiche": "24 – 32",
+   "vainqueur": "ext",
+   "statut": "joué",
+   "nous": true
   },
   {
    "id": "2676590",
@@ -512,5 +511,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-03 18:17"
+ "genere_le": "2026-10-04 02:37"
 }

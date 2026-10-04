@@ -1,7 +1,7 @@
 {
  "equipe": "SF",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-16-feminines-honneur-32465/",
- "source_mise_a_jour": "3 oct. 2026 à 21h08",
+ "source_mise_a_jour": "3 oct. 2026 à 23h42",
  "journees": 22,
  "classement": [
   {
@@ -48,6 +48,20 @@
   },
   {
    "rang": 4,
+   "club": "HBC PAYS CASTILLONNAIS",
+   "joues": 3,
+   "gagnes": 2,
+   "nuls": 0,
+   "perdus": 1,
+   "bp": 69,
+   "bc": 65,
+   "diff": 4,
+   "points": 7,
+   "nous": false,
+   "stats_partielles": false
+  },
+  {
+   "rang": 5,
    "club": "HAILLAN HANDBALL",
    "joues": 2,
    "gagnes": 2,
@@ -61,7 +75,7 @@
    "stats_partielles": false
   },
   {
-   "rang": 5,
+   "rang": 6,
    "club": "MEDOC HANDBALL 2",
    "joues": 2,
    "gagnes": 1,
@@ -75,21 +89,21 @@
    "stats_partielles": false
   },
   {
-   "rang": 6,
+   "rang": 7,
    "club": "HANDBALL SAINT MEDARD D'EYRANS",
-   "joues": 2,
+   "joues": 3,
    "gagnes": 1,
    "nuls": 0,
-   "perdus": 1,
-   "bp": 46,
-   "bc": 47,
-   "diff": -1,
-   "points": 4,
+   "perdus": 2,
+   "bp": 59,
+   "bc": 67,
+   "diff": -8,
+   "points": 5,
    "nous": false,
    "stats_partielles": false
   },
   {
-   "rang": 7,
+   "rang": 8,
    "club": "SA GAZINET CESTAS 2",
    "joues": 2,
    "gagnes": 1,
@@ -103,21 +117,21 @@
    "stats_partielles": false
   },
   {
-   "rang": 8,
-   "club": "HBC PAYS CASTILLONNAIS",
-   "joues": 2,
-   "gagnes": 1,
+   "rang": 9,
+   "club": "AS HB DU FRONSADAIS",
+   "joues": 3,
+   "gagnes": 0,
    "nuls": 0,
-   "perdus": 1,
-   "bp": 42,
-   "bc": 44,
-   "diff": -2,
-   "points": 4,
+   "perdus": 3,
+   "bp": 67,
+   "bc": 89,
+   "diff": -22,
+   "points": 3,
    "nous": false,
    "stats_partielles": false
   },
   {
-   "rang": 9,
+   "rang": 10,
    "club": "ARCACHON LA TESTE HBC",
    "joues": 3,
    "gagnes": 0,
@@ -131,7 +145,7 @@
    "stats_partielles": false
   },
   {
-   "rang": 10,
+   "rang": 11,
    "club": "PE2M HB 2",
    "joues": 2,
    "gagnes": 0,
@@ -145,30 +159,16 @@
    "stats_partielles": false
   },
   {
-   "rang": 11,
-   "club": "AS HB DU FRONSADAIS",
-   "joues": 2,
-   "gagnes": 0,
-   "nuls": 0,
-   "perdus": 2,
-   "bp": 46,
-   "bc": 62,
-   "diff": -16,
-   "points": 2,
-   "nous": false,
-   "stats_partielles": false
-  },
-  {
    "rang": 12,
    "club": "AVENIR PAILLETON 2",
-   "joues": 2,
-   "gagnes": 0,
+   "joues": 3,
+   "gagnes": 1,
    "nuls": 0,
    "perdus": 2,
-   "bp": 30,
-   "bc": 67,
-   "diff": -37,
-   "points": 2,
+   "bp": 50,
+   "bc": 80,
+   "diff": -30,
+   "points": 5,
    "nous": false,
    "stats_partielles": false
   }
@@ -363,13 +363,12 @@
    "date": "Samedi 3 octobre 2026 à 19h00",
    "domicile": "AVENIR PAILLETON 2",
    "exterieur": "HANDBALL SAINT MEDARD D'EYRANS",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false,
-   "brut": "SAMEDI 3 OCTOBRE 2026 À 19H00 AVENIR PAILLETON 2 - - HANDBALL SAINT MEDARD D'EYRANS VOIR DÉTAIL DU MATCH"
+   "score_dom": 20,
+   "score_ext": 13,
+   "affiche": "20 – 13",
+   "vainqueur": "dom",
+   "statut": "joué",
+   "nous": false
   },
   {
    "id": "2636271",
@@ -378,13 +377,12 @@
    "date": "Samedi 3 octobre 2026 à 19h30",
    "domicile": "AS HB DU FRONSADAIS",
    "exterieur": "HBC PAYS CASTILLONNAIS",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false,
-   "brut": "SAMEDI 3 OCTOBRE 2026 À 19H30 AS HB DU FRONSADAIS - - HBC PAYS CASTILLONNAIS VOIR DÉTAIL DU MATCH"
+   "score_dom": 21,
+   "score_ext": 27,
+   "affiche": "21 – 27",
+   "vainqueur": "ext",
+   "statut": "joué",
+   "nous": false
   },
   {
    "id": "2636272",
@@ -2025,5 +2023,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-03 23:14"
+ "genere_le": "2026-10-04 02:38"
 }
