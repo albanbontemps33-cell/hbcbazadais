@@ -1,7 +1,7 @@
 {
  "equipe": "SF",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-16-feminines-honneur-32465/",
- "source_mise_a_jour": "4 oct. 2026 à 19h33",
+ "source_mise_a_jour": "5 oct. 2026 à 07h03",
  "journees": 22,
  "classement": [
   {
@@ -637,6 +637,20 @@
    "nous": false
   },
   {
+   "id": "2636298",
+   "journee": 7,
+   "iso": "2026-11-14T19:30",
+   "date": "Samedi 14 novembre 2026 à 19h30",
+   "domicile": "SA GAZINET CESTAS 2",
+   "exterieur": "HAILLAN HANDBALL",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
    "id": "2636294",
    "journee": 7,
    "iso": "2026-11-14T21:00",
@@ -749,6 +763,20 @@
    "nous": false
   },
   {
+   "id": "2636311",
+   "journee": 9,
+   "iso": "2026-12-06T16:00",
+   "date": "Dimanche 6 décembre 2026 à 16h00",
+   "domicile": "SA GAZINET CESTAS 2",
+   "exterieur": "AS HB DU FRONSADAIS",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
    "id": "2636314",
    "journee": 10,
    "iso": "2026-12-12T18:30",
@@ -761,6 +789,20 @@
    "vainqueur": null,
    "statut": "à venir",
    "nous": true
+  },
+  {
+   "id": "2636321",
+   "journee": 11,
+   "iso": "2027-01-09T21:30",
+   "date": "Samedi 9 janvier 2027 à 21h30",
+   "domicile": "SA GAZINET CESTAS 2",
+   "exterieur": "ARCACHON LA TESTE HBC",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": false
   },
   {
    "id": "2636283",
@@ -811,20 +853,6 @@
    "date": "",
    "domicile": "HBC PAYS CASTILLONNAIS",
    "exterieur": "AVENIR PAILLETON 2",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
-   "id": "2636298",
-   "journee": 7,
-   "iso": "",
-   "date": "",
-   "domicile": "SA GAZINET CESTAS 2",
-   "exterieur": "HAILLAN HANDBALL",
    "score_dom": null,
    "score_ext": null,
    "affiche": null,
@@ -923,20 +951,6 @@
    "date": "",
    "domicile": "LORMONT HANDBALL HAUTS DE GARONNE",
    "exterieur": "HBC PAYS CASTILLONNAIS",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
-   "id": "2636311",
-   "journee": 9,
-   "iso": "",
-   "date": "",
-   "domicile": "SA GAZINET CESTAS 2",
-   "exterieur": "AS HB DU FRONSADAIS",
    "score_dom": null,
    "score_ext": null,
    "affiche": null,
@@ -1049,20 +1063,6 @@
    "date": "",
    "domicile": "HANDBALL CUBZAGUAIS",
    "exterieur": "HBC PAYS CASTILLONNAIS",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
-   "id": "2636321",
-   "journee": 11,
-   "iso": "",
-   "date": "",
-   "domicile": "SA GAZINET CESTAS 2",
-   "exterieur": "ARCACHON LA TESTE HBC",
    "score_dom": null,
    "score_ext": null,
    "affiche": null,
@@ -2023,5 +2023,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-04 23:24"
+ "genere_le": "2026-10-05 16:36"
 }
