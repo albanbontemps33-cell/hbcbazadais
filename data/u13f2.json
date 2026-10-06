@@ -1,7 +1,7 @@
 {
  "equipe": "-13 F 2",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u13-feminine-32777/poule-194061/",
- "source_mise_a_jour": "6 oct. 2026 à 11h16",
+ "source_mise_a_jour": "6 oct. 2026 à 17h31",
  "journees": 10,
  "classement": [
   {
@@ -217,12 +217,12 @@
    "nous": false
   },
   {
-   "id": "2699720",
+   "id": "2699719",
    "journee": 4,
-   "iso": "2026-10-17T14:00",
-   "date": "Samedi 17 octobre 2026 à 14h00",
-   "domicile": "SC MONSEGUR HB",
-   "exterieur": "PE2M HB 2",
+   "iso": "2026-10-17T09:10",
+   "date": "Samedi 17 octobre 2026 à 09h10",
+   "domicile": "CADILLAC CERONS U13F",
+   "exterieur": "HANDBALL SAINT MEDARD D'EYRANS",
    "score_dom": null,
    "score_ext": null,
    "affiche": null,
@@ -233,8 +233,8 @@
   {
    "id": "2699718",
    "journee": 4,
-   "iso": "2026-10-18T14:00",
-   "date": "Dimanche 18 octobre 2026 à 14h00",
+   "iso": "2026-10-17T10:30",
+   "date": "Samedi 17 octobre 2026 à 10h30",
    "domicile": "AVENIR PAILLETON",
    "exterieur": "HBC BAZADAIS 2",
    "score_dom": null,
@@ -243,6 +243,20 @@
    "vainqueur": null,
    "statut": "à venir",
    "nous": true
+  },
+  {
+   "id": "2699720",
+   "journee": 4,
+   "iso": "2026-10-17T15:50",
+   "date": "Samedi 17 octobre 2026 à 15h50",
+   "domicile": "SC MONSEGUR HB",
+   "exterieur": "PE2M HB 2",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": false
   },
   {
    "id": "2699721",
@@ -273,6 +287,20 @@
    "nous": false
   },
   {
+   "id": "2699723",
+   "journee": 5,
+   "iso": "2026-11-07T16:00",
+   "date": "Samedi 7 novembre 2026 à 16h00",
+   "domicile": "HANDBALL SAINT MEDARD D'EYRANS",
+   "exterieur": "SC MONSEGUR HB",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
    "id": "2699725",
    "journee": 6,
    "iso": "2026-11-14T13:00",
@@ -293,6 +321,20 @@
    "date": "Samedi 14 novembre 2026 à 14h00",
    "domicile": "SC MONSEGUR HB",
    "exterieur": "CADILLAC CERONS U13F",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
+   "id": "2699726",
+   "journee": 6,
+   "iso": "2026-11-14T17:30",
+   "date": "Samedi 14 novembre 2026 à 17h30",
+   "domicile": "HANDBALL SAINT MEDARD D'EYRANS",
+   "exterieur": "AVENIR PAILLETON",
    "score_dom": null,
    "score_ext": null,
    "affiche": null,
@@ -343,6 +385,20 @@
    "nous": true
   },
   {
+   "id": "2699734",
+   "journee": 9,
+   "iso": "2026-12-05T16:00",
+   "date": "Samedi 5 décembre 2026 à 16h00",
+   "domicile": "HANDBALL SAINT MEDARD D'EYRANS",
+   "exterieur": "CADILLAC CERONS U13F",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
    "id": "2699733",
    "journee": 9,
    "iso": "2026-12-05T16:15",
@@ -377,48 +433,6 @@
    "date": "Samedi 12 décembre 2026 à 14h30",
    "domicile": "SC MONSEGUR HB",
    "exterieur": "HANDBALL SAINT MEDARD D'EYRANS",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
-   "id": "2699719",
-   "journee": 4,
-   "iso": "",
-   "date": "",
-   "domicile": "CADILLAC CERONS U13F",
-   "exterieur": "HANDBALL SAINT MEDARD D'EYRANS",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
-   "id": "2699723",
-   "journee": 5,
-   "iso": "",
-   "date": "",
-   "domicile": "HANDBALL SAINT MEDARD D'EYRANS",
-   "exterieur": "SC MONSEGUR HB",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
-   "id": "2699726",
-   "journee": 6,
-   "iso": "",
-   "date": "",
-   "domicile": "HANDBALL SAINT MEDARD D'EYRANS",
-   "exterieur": "AVENIR PAILLETON",
    "score_dom": null,
    "score_ext": null,
    "affiche": null,
@@ -469,20 +483,6 @@
    "nous": false
   },
   {
-   "id": "2699734",
-   "journee": 9,
-   "iso": "",
-   "date": "",
-   "domicile": "HANDBALL SAINT MEDARD D'EYRANS",
-   "exterieur": "CADILLAC CERONS U13F",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
    "id": "2699736",
    "journee": 10,
    "iso": "",
@@ -511,5 +511,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-06 15:19"
+ "genere_le": "2026-10-07 00:41"
 }

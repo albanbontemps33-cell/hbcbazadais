@@ -1,7 +1,7 @@
 {
  "equipe": "-13 G",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u13-masculin-32827/poule-194151/",
- "source_mise_a_jour": "4 oct. 2026 à 18h03",
+ "source_mise_a_jour": "6 oct. 2026 à 17h41",
  "journees": 10,
  "classement": [
   {
@@ -287,6 +287,20 @@
    "nous": true
   },
   {
+   "id": "2699070",
+   "journee": 6,
+   "iso": "2026-11-14T14:45",
+   "date": "Samedi 14 novembre 2026 à 14h45",
+   "domicile": "HANDBALL SAINT MEDARD D'EYRANS 2",
+   "exterieur": "HBC BAZADAIS",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": true
+  },
+  {
    "id": "2699074",
    "journee": 7,
    "iso": "2026-11-21T11:00",
@@ -329,6 +343,20 @@
    "nous": true
   },
   {
+   "id": "2699077",
+   "journee": 8,
+   "iso": "2026-11-29T10:00",
+   "date": "Dimanche 29 novembre 2026 à 10h00",
+   "domicile": "HANDBALL SAINT MEDARD D'EYRANS 2",
+   "exterieur": "HANDBALL CLUB SAINT SYMPHORIEN",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
    "id": "2699079",
    "journee": 9,
    "iso": "2026-12-05T18:30",
@@ -357,6 +385,20 @@
    "nous": true
   },
   {
+   "id": "2699084",
+   "journee": 10,
+   "iso": "2026-12-12T14:45",
+   "date": "Samedi 12 décembre 2026 à 14h45",
+   "domicile": "HANDBALL SAINT MEDARD D'EYRANS 2",
+   "exterieur": "AVENIR PAILLETON",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
    "id": "2699083",
    "journee": 10,
    "iso": "2026-12-12T16:00",
@@ -383,20 +425,6 @@
    "vainqueur": null,
    "statut": "à venir",
    "nous": false
-  },
-  {
-   "id": "2699070",
-   "journee": 6,
-   "iso": "",
-   "date": "",
-   "domicile": "HANDBALL SAINT MEDARD D'EYRANS 2",
-   "exterieur": "HBC BAZADAIS",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": true
   },
   {
    "id": "2699071",
@@ -455,20 +483,6 @@
    "nous": false
   },
   {
-   "id": "2699077",
-   "journee": 8,
-   "iso": "",
-   "date": "",
-   "domicile": "HANDBALL SAINT MEDARD D'EYRANS 2",
-   "exterieur": "HANDBALL CLUB SAINT SYMPHORIEN",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
    "id": "2699080",
    "journee": 9,
    "iso": "",
@@ -495,21 +509,7 @@
    "vainqueur": null,
    "statut": "à venir",
    "nous": false
-  },
-  {
-   "id": "2699084",
-   "journee": 10,
-   "iso": "",
-   "date": "",
-   "domicile": "HANDBALL SAINT MEDARD D'EYRANS 2",
-   "exterieur": "AVENIR PAILLETON",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false
   }
  ],
- "genere_le": "2026-10-04 23:25"
+ "genere_le": "2026-10-07 00:41"
 }

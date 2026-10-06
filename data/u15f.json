@@ -1,7 +1,7 @@
 {
  "equipe": "-15 F",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u15-feminine-32776/poule-194055/",
- "source_mise_a_jour": "6 oct. 2026 à 10h59",
+ "source_mise_a_jour": "6 oct. 2026 à 17h22",
  "journees": 10,
  "classement": [
   {
@@ -217,6 +217,20 @@
    "nous": true
   },
   {
+   "id": "2699847",
+   "journee": 7,
+   "iso": "2026-11-22T11:30",
+   "date": "Dimanche 22 novembre 2026 à 11h30",
+   "domicile": "HANDBALL SAINT MEDARD D'EYRANS 2",
+   "exterieur": "CADILLAC CERONS U15F",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
    "id": "2699850",
    "journee": 8,
    "iso": "2026-11-28T15:30",
@@ -229,6 +243,20 @@
    "vainqueur": null,
    "statut": "à venir",
    "nous": false
+  },
+  {
+   "id": "2699852",
+   "journee": 8,
+   "iso": "2026-11-28T16:00",
+   "date": "Samedi 28 novembre 2026 à 16h00",
+   "domicile": "HANDBALL SAINT MEDARD D'EYRANS 2",
+   "exterieur": "HBC BAZADAIS",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": true
   },
   {
    "id": "2699855",
@@ -287,34 +315,6 @@
    "nous": false
   },
   {
-   "id": "2699847",
-   "journee": 7,
-   "iso": "",
-   "date": "",
-   "domicile": "HANDBALL SAINT MEDARD D'EYRANS 2",
-   "exterieur": "CADILLAC CERONS U15F",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
-   "id": "2699852",
-   "journee": 8,
-   "iso": "",
-   "date": "",
-   "domicile": "HANDBALL SAINT MEDARD D'EYRANS 2",
-   "exterieur": "HBC BAZADAIS",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": true
-  },
-  {
    "id": "2699854",
    "journee": 9,
    "iso": "",
@@ -357,5 +357,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-06 15:19"
+ "genere_le": "2026-10-07 00:41"
 }
