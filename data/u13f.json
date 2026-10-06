@@ -1,7 +1,7 @@
 {
  "equipe": "-13 F 1",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u13-feminine-32777/poule-193722/",
- "source_mise_a_jour": "4 oct. 2026 à 20h11",
+ "source_mise_a_jour": "6 oct. 2026 à 13h03",
  "journees": 10,
  "classement": [
   {
@@ -329,6 +329,20 @@
    "nous": true
   },
   {
+   "id": "2699518",
+   "journee": 7,
+   "iso": "2026-11-21T13:00",
+   "date": "Samedi 21 novembre 2026 à 13h00",
+   "domicile": "STADE LANGONNAIS HB",
+   "exterieur": "PE2M HB 1",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
    "id": "2699521",
    "journee": 8,
    "iso": "2026-11-28T11:00",
@@ -411,20 +425,6 @@
    "vainqueur": null,
    "statut": "à venir",
    "nous": true
-  },
-  {
-   "id": "2699518",
-   "journee": 7,
-   "iso": "",
-   "date": "",
-   "domicile": "STADE LANGONNAIS HB",
-   "exterieur": "PE2M HB 1",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false
   },
   {
    "id": "2699519",
@@ -511,5 +511,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-04 23:25"
+ "genere_le": "2026-10-06 15:19"
 }

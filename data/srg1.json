@@ -1,7 +1,7 @@
 {
  "equipe": "SG1",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-16-masculins-pre-regionale-32457/poule-190872/",
- "source_mise_a_jour": "5 oct. 2026 à 18h02",
+ "source_mise_a_jour": "6 oct. 2026 à 11h18",
  "journees": 22,
  "classement": [
   {
@@ -625,8 +625,8 @@
   {
    "id": "2635494",
    "journee": 6,
-   "iso": "2026-11-07T20:45",
-   "date": "Samedi 7 novembre 2026 à 20h45",
+   "iso": "2026-11-07T19:45",
+   "date": "Samedi 7 novembre 2026 à 19h45",
    "domicile": "SC MONSEGUR HB 1",
    "exterieur": "CM FLOIRAC CENON HANDBALL 2",
    "score_dom": null,
@@ -2023,5 +2023,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-06 02:03"
+ "genere_le": "2026-10-06 15:17"
 }
