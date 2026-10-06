@@ -1,7 +1,7 @@
 {
  "equipe": "SG1",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-16-masculins-pre-regionale-32457/poule-190872/",
- "source_mise_a_jour": "5 oct. 2026 à 06h58",
+ "source_mise_a_jour": "5 oct. 2026 à 18h02",
  "journees": 22,
  "classement": [
   {
@@ -415,8 +415,8 @@
   {
    "id": "2635482",
    "journee": 4,
-   "iso": "2026-10-10T18:45",
-   "date": "Samedi 10 octobre 2026 à 18h45",
+   "iso": "2026-10-10T19:15",
+   "date": "Samedi 10 octobre 2026 à 19h15",
    "domicile": "ST MEDARD HANDBALL 2",
    "exterieur": "HBC BAZADAIS 1",
    "score_dom": null,
@@ -2023,5 +2023,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-05 16:36"
+ "genere_le": "2026-10-06 02:03"
 }
