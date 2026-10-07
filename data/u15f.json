@@ -1,7 +1,7 @@
 {
  "equipe": "-15 F",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u15-feminine-32776/poule-194055/",
- "source_mise_a_jour": "6 oct. 2026 à 17h22",
+ "source_mise_a_jour": "7 oct. 2026 à 11h37",
  "journees": 10,
  "classement": [
   {
@@ -203,6 +203,20 @@
    "nous": false
   },
   {
+   "id": "2699844",
+   "journee": 6,
+   "iso": "2026-11-14T15:30",
+   "date": "Samedi 14 novembre 2026 à 15h30",
+   "domicile": "CADILLAC CERONS U15F",
+   "exterieur": "HBC BAZADAIS",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": true
+  },
+  {
    "id": "2699848",
    "journee": 7,
    "iso": "2026-11-21T14:00",
@@ -287,20 +301,6 @@
    "nous": false
   },
   {
-   "id": "2699844",
-   "journee": 6,
-   "iso": "",
-   "date": "",
-   "domicile": "CADILLAC CERONS U15F",
-   "exterieur": "HBC BAZADAIS",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": true
-  },
-  {
    "id": "2699846",
    "journee": 6,
    "iso": "",
@@ -357,5 +357,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-07 00:41"
+ "genere_le": "2026-10-07 15:23"
 }

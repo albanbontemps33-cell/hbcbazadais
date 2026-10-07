@@ -1,7 +1,7 @@
 {
  "equipe": "-13 G",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u13-masculin-32827/poule-194151/",
- "source_mise_a_jour": "6 oct. 2026 à 17h41",
+ "source_mise_a_jour": "7 oct. 2026 à 11h42",
  "journees": 10,
  "classement": [
   {
@@ -301,6 +301,20 @@
    "nous": true
   },
   {
+   "id": "2699071",
+   "journee": 6,
+   "iso": "2026-11-14T17:15",
+   "date": "Samedi 14 novembre 2026 à 17h15",
+   "domicile": "CADILLAC - CERONS U13M",
+   "exterieur": "HANDBALL CLUB SAINT SYMPHORIEN",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
    "id": "2699074",
    "journee": 7,
    "iso": "2026-11-21T11:00",
@@ -427,20 +441,6 @@
    "nous": false
   },
   {
-   "id": "2699071",
-   "journee": 6,
-   "iso": "",
-   "date": "",
-   "domicile": "CADILLAC - CERONS U13M",
-   "exterieur": "HANDBALL CLUB SAINT SYMPHORIEN",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
    "id": "2699072",
    "journee": 6,
    "iso": "",
@@ -511,5 +511,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-07 00:41"
+ "genere_le": "2026-10-07 15:23"
 }
