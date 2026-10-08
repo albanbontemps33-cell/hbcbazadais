@@ -1,7 +1,7 @@
 {
  "equipe": "SF",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-16-feminines-honneur-32465/",
- "source_mise_a_jour": "7 oct. 2026 à 12h22",
+ "source_mise_a_jour": "8 oct. 2026 à 09h36",
  "journees": 22,
  "classement": [
   {
@@ -34,28 +34,28 @@
   },
   {
    "rang": 3,
-   "club": "LORMONT HANDBALL HAUTS DE GARONNE",
+   "club": "HAILLAN HANDBALL",
    "joues": 3,
    "gagnes": 2,
    "nuls": 0,
    "perdus": 1,
-   "bp": 96,
-   "bc": 53,
-   "diff": 43,
+   "bp": 73,
+   "bc": 59,
+   "diff": 14,
    "points": 7,
    "nous": false,
    "stats_partielles": false
   },
   {
    "rang": 4,
-   "club": "SA GAZINET CESTAS 2",
+   "club": "MEDOC HANDBALL 2",
    "joues": 3,
    "gagnes": 2,
    "nuls": 0,
    "perdus": 1,
-   "bp": 80,
-   "bc": 64,
-   "diff": 16,
+   "bp": 74,
+   "bc": 67,
+   "diff": 7,
    "points": 7,
    "nous": false,
    "stats_partielles": false
@@ -76,20 +76,34 @@
   },
   {
    "rang": 6,
-   "club": "HAILLAN HANDBALL",
+   "club": "LORMONT HANDBALL HAUTS DE GARONNE",
    "joues": 3,
    "gagnes": 2,
    "nuls": 0,
    "perdus": 1,
-   "bp": 73,
-   "bc": 59,
-   "diff": 14,
-   "points": 6,
+   "bp": 96,
+   "bc": 53,
+   "diff": 43,
+   "points": 7,
    "nous": false,
-   "stats_partielles": true
+   "stats_partielles": false
   },
   {
    "rang": 7,
+   "club": "SA GAZINET CESTAS 2",
+   "joues": 3,
+   "gagnes": 2,
+   "nuls": 0,
+   "perdus": 1,
+   "bp": 80,
+   "bc": 64,
+   "diff": 16,
+   "points": 7,
+   "nous": false,
+   "stats_partielles": false
+  },
+  {
+   "rang": 8,
    "club": "AVENIR PAILLETON 2",
    "joues": 3,
    "gagnes": 1,
@@ -103,7 +117,7 @@
    "stats_partielles": false
   },
   {
-   "rang": 8,
+   "rang": 9,
    "club": "HANDBALL SAINT MEDARD D'EYRANS",
    "joues": 3,
    "gagnes": 1,
@@ -115,20 +129,6 @@
    "points": 5,
    "nous": false,
    "stats_partielles": false
-  },
-  {
-   "rang": 9,
-   "club": "MEDOC HANDBALL 2",
-   "joues": 3,
-   "gagnes": 2,
-   "nuls": 0,
-   "perdus": 1,
-   "bp": 74,
-   "bc": 67,
-   "diff": 7,
-   "points": 4,
-   "nous": false,
-   "stats_partielles": true
   },
   {
    "rang": 10,
@@ -2023,5 +2023,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-07 15:22"
+ "genere_le": "2026-10-08 15:28"
 }
