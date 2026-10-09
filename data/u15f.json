@@ -1,7 +1,7 @@
 {
  "equipe": "-15 F",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u15-feminine-32776/poule-194055/",
- "source_mise_a_jour": "7 oct. 2026 à 11h37",
+ "source_mise_a_jour": "9 oct. 2026 à 08h31",
  "journees": 10,
  "classement": [
   {
@@ -287,6 +287,20 @@
    "nous": false
   },
   {
+   "id": "2699857",
+   "journee": 10,
+   "iso": "2026-12-13T10:00",
+   "date": "Dimanche 13 décembre 2026 à 10h00",
+   "domicile": "HANDBALL SAINT MEDARD D'EYRANS 2",
+   "exterieur": "SC MONSEGUR HB",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
    "id": "2699843",
    "journee": 5,
    "iso": "",
@@ -329,20 +343,6 @@
    "nous": true
   },
   {
-   "id": "2699857",
-   "journee": 10,
-   "iso": "",
-   "date": "",
-   "domicile": "HANDBALL SAINT MEDARD D'EYRANS 2",
-   "exterieur": "SC MONSEGUR HB",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
    "id": "2699858",
    "journee": 10,
    "iso": "",
@@ -357,5 +357,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-07 15:23"
+ "genere_le": "2026-10-09 15:16"
 }
