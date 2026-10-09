@@ -1,7 +1,7 @@
 {
  "equipe": "SF",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-16-feminines-honneur-32465/",
- "source_mise_a_jour": "8 oct. 2026 à 21h38",
+ "source_mise_a_jour": "9 oct. 2026 à 17h17",
  "journees": 22,
  "classement": [
   {
@@ -455,20 +455,6 @@
    "nous": false
   },
   {
-   "id": "2636278",
-   "journee": 4,
-   "iso": "2026-10-10T19:30",
-   "date": "Samedi 10 octobre 2026 à 19h30",
-   "domicile": "HBC PAYS CASTILLONNAIS",
-   "exterieur": "MEDOC HANDBALL 2",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
    "id": "2636279",
    "journee": 4,
    "iso": "2026-10-10T21:30",
@@ -601,6 +587,20 @@
    "date": "Samedi 7 novembre 2026 à 19h45",
    "domicile": "AS HB DU FRONSADAIS",
    "exterieur": "ARCACHON LA TESTE HBC",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
+   "id": "2636292",
+   "journee": 6,
+   "iso": "2026-11-07T20:00",
+   "date": "Samedi 7 novembre 2026 à 20h00",
+   "domicile": "HBC PAYS CASTILLONNAIS",
+   "exterieur": "AVENIR PAILLETON 2",
    "score_dom": null,
    "score_ext": null,
    "affiche": null,
@@ -833,6 +833,20 @@
    "nous": false
   },
   {
+   "id": "2636278",
+   "journee": 4,
+   "iso": "2027-01-16T20:00",
+   "date": "Samedi 16 janvier 2027 à 20h00",
+   "domicile": "HBC PAYS CASTILLONNAIS",
+   "exterieur": "MEDOC HANDBALL 2",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
    "id": "2636283",
    "journee": 5,
    "iso": "",
@@ -859,20 +873,6 @@
    "vainqueur": null,
    "statut": "à venir",
    "nous": true
-  },
-  {
-   "id": "2636292",
-   "journee": 6,
-   "iso": "",
-   "date": "",
-   "domicile": "HBC PAYS CASTILLONNAIS",
-   "exterieur": "AVENIR PAILLETON 2",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false
   },
   {
    "id": "2636302",
@@ -2023,5 +2023,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-09 01:21"
+ "genere_le": "2026-10-10 00:38"
 }
