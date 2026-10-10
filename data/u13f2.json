@@ -186,7 +186,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "SAMEDI 10 OCTOBRE 2026 À 14H15 CADILLAC CERONS U13F - - AVENIR PAILLETON VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2699716",
@@ -511,5 +512,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-07 00:41"
+ "genere_le": "2026-10-10 14:31"
 }
