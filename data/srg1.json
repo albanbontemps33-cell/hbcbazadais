@@ -1,11 +1,25 @@
 {
  "equipe": "SG1",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-16-masculins-pre-regionale-32457/poule-190872/",
- "source_mise_a_jour": "7 oct. 2026 à 06h47",
+ "source_mise_a_jour": "10 oct. 2026 à 21h08",
  "journees": 22,
  "classement": [
   {
    "rang": 1,
+   "club": "HBC BAZADAIS 1",
+   "joues": 4,
+   "gagnes": 3,
+   "nuls": 0,
+   "perdus": 1,
+   "bp": 94,
+   "bc": 88,
+   "diff": 6,
+   "points": 10,
+   "nous": true,
+   "stats_partielles": false
+  },
+  {
+   "rang": 2,
    "club": "CANEJAN HBC 2",
    "joues": 3,
    "gagnes": 3,
@@ -19,7 +33,7 @@
    "stats_partielles": false
   },
   {
-   "rang": 2,
+   "rang": 3,
    "club": "AS AMBARESIENNE 2",
    "joues": 3,
    "gagnes": 3,
@@ -33,35 +47,7 @@
    "stats_partielles": false
   },
   {
-   "rang": 3,
-   "club": "HBC LIBOURNE 3",
-   "joues": 3,
-   "gagnes": 2,
-   "nuls": 0,
-   "perdus": 1,
-   "bp": 92,
-   "bc": 96,
-   "diff": -4,
-   "points": 7,
-   "nous": false,
-   "stats_partielles": false
-  },
-  {
    "rang": 4,
-   "club": "HBC BAZADAIS 1",
-   "joues": 3,
-   "gagnes": 2,
-   "nuls": 0,
-   "perdus": 1,
-   "bp": 59,
-   "bc": 57,
-   "diff": 2,
-   "points": 7,
-   "nous": true,
-   "stats_partielles": false
-  },
-  {
-   "rang": 5,
    "club": "ES BLANQUEFORTAISE HBC 2",
    "joues": 3,
    "gagnes": 2,
@@ -75,7 +61,35 @@
    "stats_partielles": false
   },
   {
+   "rang": 5,
+   "club": "HBC LIBOURNE 3",
+   "joues": 3,
+   "gagnes": 2,
+   "nuls": 0,
+   "perdus": 1,
+   "bp": 92,
+   "bc": 96,
+   "diff": -4,
+   "points": 7,
+   "nous": false,
+   "stats_partielles": false
+  },
+  {
    "rang": 6,
+   "club": "ST MEDARD HANDBALL 2",
+   "joues": 4,
+   "gagnes": 1,
+   "nuls": 0,
+   "perdus": 3,
+   "bp": 115,
+   "bc": 137,
+   "diff": -22,
+   "points": 6,
+   "nous": false,
+   "stats_partielles": false
+  },
+  {
+   "rang": 7,
    "club": "HAILLAN HANDBALL 1",
    "joues": 3,
    "gagnes": 1,
@@ -89,7 +103,7 @@
    "stats_partielles": false
   },
   {
-   "rang": 7,
+   "rang": 8,
    "club": "GRADIGNAN HANDBALL CLUB",
    "joues": 3,
    "gagnes": 1,
@@ -98,20 +112,6 @@
    "bp": 93,
    "bc": 110,
    "diff": -17,
-   "points": 5,
-   "nous": false,
-   "stats_partielles": false
-  },
-  {
-   "rang": 8,
-   "club": "ST MEDARD HANDBALL 2",
-   "joues": 3,
-   "gagnes": 1,
-   "nuls": 0,
-   "perdus": 2,
-   "bp": 84,
-   "bc": 102,
-   "diff": -18,
    "points": 5,
    "nous": false,
    "stats_partielles": false
@@ -419,11 +419,11 @@
    "date": "Samedi 10 octobre 2026 à 19h15",
    "domicile": "ST MEDARD HANDBALL 2",
    "exterieur": "HBC BAZADAIS 1",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
+   "score_dom": 31,
+   "score_ext": 35,
+   "affiche": "31 – 35",
+   "vainqueur": "ext",
+   "statut": "joué",
    "nous": true
   },
   {
@@ -438,7 +438,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "SAMEDI 10 OCTOBRE 2026 À 19H45 HAILLAN HANDBALL 1 - - CANEJAN HBC 2 VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2635484",
@@ -452,7 +453,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "SAMEDI 10 OCTOBRE 2026 À 20H00 SC MONSEGUR HB 1 - - BORDEAUX ETUDIANTS CLUB VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2635480",
@@ -466,7 +468,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "SAMEDI 10 OCTOBRE 2026 À 21H00 HBC LIBOURNE 3 - - CM FLOIRAC CENON HANDBALL 2 VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2635481",
@@ -480,7 +483,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "SAMEDI 10 OCTOBRE 2026 À 21H00 ES BLANQUEFORTAISE HBC 2 - - AS AMBARESIENNE 2 VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2635479",
@@ -494,7 +498,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "SAMEDI 10 OCTOBRE 2026 À 21H30 GRADIGNAN HANDBALL CLUB - - HBC TEICHOIS VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2635473",
@@ -2023,5 +2028,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-07 15:22"
+ "genere_le": "2026-10-10 23:43"
 }

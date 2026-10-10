@@ -186,7 +186,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "SAMEDI 10 OCTOBRE 2026 À 15H00 AVENIR PAILLETON - - CADILLAC - CERONS U13M VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2699063",
@@ -200,7 +201,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": true
+   "nous": true,
+   "brut": "SAMEDI 10 OCTOBRE 2026 À 16H15 HBC BAZADAIS - - SC MONSEGUR HB VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2699062",
@@ -214,7 +216,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "SAMEDI 10 OCTOBRE 2026 À 16H30 HANDBALL CLUB SAINT SYMPHORIEN - - HANDBALL SAINT MEDARD D'EYRANS 2 VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2699064",
@@ -511,5 +514,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-09 01:22"
+ "genere_le": "2026-10-10 23:45"
 }

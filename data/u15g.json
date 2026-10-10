@@ -1,36 +1,36 @@
 {
  "equipe": "-15 G",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u15-masculin-32826/poule-194103/",
- "source_mise_a_jour": "6 oct. 2026 à 11h02",
+ "source_mise_a_jour": "10 oct. 2026 à 18h42",
  "journees": 10,
  "classement": [
   {
    "rang": 1,
    "club": "UNION SPORTIVE TALENCE HANDBALL",
-   "joues": 3,
-   "gagnes": 3,
+   "joues": 4,
+   "gagnes": 4,
    "nuls": 0,
    "perdus": 0,
-   "bp": 116,
-   "bc": 71,
-   "diff": 45,
+   "bp": 163,
+   "bc": 108,
+   "diff": 55,
    "points": 9,
    "nous": false,
-   "stats_partielles": false
+   "stats_partielles": true
   },
   {
    "rang": 2,
    "club": "HBC BAZADAIS",
-   "joues": 3,
+   "joues": 4,
    "gagnes": 2,
    "nuls": 0,
-   "perdus": 1,
-   "bp": 125,
-   "bc": 91,
-   "diff": 34,
+   "perdus": 2,
+   "bp": 162,
+   "bc": 138,
+   "diff": 24,
    "points": 7,
    "nous": true,
-   "stats_partielles": false
+   "stats_partielles": true
   },
   {
    "rang": 3,
@@ -228,7 +228,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "SAMEDI 10 OCTOBRE 2026 À 16H15 SC MONSEGUR HB - - PE2M HB VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2698110",
@@ -237,11 +238,11 @@
    "date": "Samedi 10 octobre 2026 à 17h30",
    "domicile": "UNION SPORTIVE TALENCE HANDBALL",
    "exterieur": "HBC BAZADAIS",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
+   "score_dom": 47,
+   "score_ext": 37,
+   "affiche": "47 – 37",
+   "vainqueur": "dom",
+   "statut": "joué",
    "nous": true
   },
   {
@@ -511,5 +512,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-06 15:18"
+ "genere_le": "2026-10-10 23:44"
 }

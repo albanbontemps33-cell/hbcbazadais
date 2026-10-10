@@ -1,7 +1,7 @@
 {
  "equipe": "SF",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-16-feminines-honneur-32465/",
- "source_mise_a_jour": "10 oct. 2026 à 06h57",
+ "source_mise_a_jour": "10 oct. 2026 à 21h29",
  "journees": 22,
  "classement": [
   {
@@ -133,30 +133,30 @@
   {
    "rang": 10,
    "club": "PE2M HB 2",
-   "joues": 3,
+   "joues": 4,
    "gagnes": 0,
-   "nuls": 0,
+   "nuls": 1,
    "perdus": 3,
-   "bp": 73,
-   "bc": 80,
+   "bp": 102,
+   "bc": 109,
    "diff": -7,
    "points": 3,
    "nous": false,
-   "stats_partielles": false
+   "stats_partielles": true
   },
   {
    "rang": 11,
    "club": "AS HB DU FRONSADAIS",
-   "joues": 3,
+   "joues": 4,
    "gagnes": 0,
-   "nuls": 0,
+   "nuls": 1,
    "perdus": 3,
-   "bp": 67,
-   "bc": 89,
+   "bp": 96,
+   "bc": 118,
    "diff": -22,
    "points": 3,
    "nous": false,
-   "stats_partielles": false
+   "stats_partielles": true
   },
   {
    "rang": 12,
@@ -438,7 +438,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "SAMEDI 10 OCTOBRE 2026 À 18H30 LORMONT HANDBALL HAUTS DE GARONNE - - SA GAZINET CESTAS 2 VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2636276",
@@ -447,11 +448,11 @@
    "date": "Samedi 10 octobre 2026 à 19h30",
    "domicile": "AS HB DU FRONSADAIS",
    "exterieur": "PE2M HB 2",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
+   "score_dom": 29,
+   "score_ext": 29,
+   "affiche": "29 – 29",
+   "vainqueur": "nul",
+   "statut": "joué",
    "nous": false
   },
   {
@@ -466,7 +467,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": true
+   "nous": true,
+   "brut": "SAMEDI 10 OCTOBRE 2026 À 21H30 HANDBALL SAINT MEDARD D'EYRANS - - HBC BAZADAIS VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2636280",
@@ -480,7 +482,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "SAMEDI 10 OCTOBRE 2026 À 21H30 HAILLAN HANDBALL - - ARCACHON LA TESTE HBC VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2636281",
@@ -494,7 +497,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "SAMEDI 10 OCTOBRE 2026 À 21H30 HANDBALL CUBZAGUAIS - - AVENIR PAILLETON 2 VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2636282",
@@ -2023,5 +2027,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-10 14:30"
+ "genere_le": "2026-10-10 23:44"
 }

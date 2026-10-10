@@ -228,7 +228,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "SAMEDI 10 OCTOBRE 2026 À 18H30 HANDBALL CLUB SAINT SYMPHORIEN - - US MIOS BIGANOS 2 VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2676592",
@@ -242,7 +243,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "SAMEDI 10 OCTOBRE 2026 À 20H45 HBC TEICHOIS 2 - - ASSOCIATION SPORTIVE DE HANDBALL BRANNAIS VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2676593",
@@ -256,7 +258,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": true
+   "nous": true,
+   "brut": "SAMEDI 10 OCTOBRE 2026 À 21H30 HBC BAZADAIS 2 - - ST MEDARD HANDBALL 2 VOIR DÉTAIL DU MATCH REMATCH DISPONIBLE"
   },
   {
    "id": "2676596",
@@ -511,5 +514,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-07 15:22"
+ "genere_le": "2026-10-10 23:43"
 }

@@ -172,7 +172,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "SAMEDI 10 OCTOBRE 2026 À 18H30 LEOGNAN HANDBALL 2 - - SC MONSEGUR HB VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2700905",
@@ -186,7 +187,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": true
+   "nous": true,
+   "brut": "SAMEDI 10 OCTOBRE 2026 À 19H30 HBC BAZADAIS - - CADILLAC - CERONS U18M VOIR DÉTAIL DU MATCH REMATCH DISPONIBLE"
   },
   {
    "id": "2700909",
@@ -357,5 +359,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-10 00:38"
+ "genere_le": "2026-10-10 23:44"
 }

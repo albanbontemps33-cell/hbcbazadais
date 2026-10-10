@@ -1,7 +1,7 @@
 {
  "equipe": "-15 F",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u15-feminine-32776/poule-194055/",
- "source_mise_a_jour": "9 oct. 2026 à 08h31",
+ "source_mise_a_jour": "10 oct. 2026 à 21h45",
  "journees": 10,
  "classement": [
   {
@@ -49,30 +49,30 @@
   {
    "rang": 4,
    "club": "CADILLAC CERONS U15F",
-   "joues": 2,
+   "joues": 3,
    "gagnes": 0,
    "nuls": 0,
-   "perdus": 2,
-   "bp": 18,
-   "bc": 59,
-   "diff": -41,
+   "perdus": 3,
+   "bp": 36,
+   "bc": 85,
+   "diff": -49,
    "points": 2,
    "nous": false,
-   "stats_partielles": false
+   "stats_partielles": true
   },
   {
    "rang": 5,
    "club": "SC MONSEGUR HB",
-   "joues": 2,
-   "gagnes": 0,
+   "joues": 3,
+   "gagnes": 1,
    "nuls": 0,
    "perdus": 2,
-   "bp": 23,
-   "bc": 69,
-   "diff": -46,
+   "bp": 49,
+   "bc": 87,
+   "diff": -38,
    "points": 2,
    "nous": false,
-   "stats_partielles": false
+   "stats_partielles": true
   }
  ],
  "calendrier": [
@@ -167,11 +167,11 @@
    "date": "Samedi 10 octobre 2026 à 16h00",
    "domicile": "CADILLAC CERONS U15F",
    "exterieur": "SC MONSEGUR HB",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
+   "score_dom": 18,
+   "score_ext": 26,
+   "affiche": "18 – 26",
+   "vainqueur": "ext",
+   "statut": "joué",
    "nous": false
   },
   {
@@ -186,7 +186,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": true
+   "nous": true,
+   "brut": "SAMEDI 10 OCTOBRE 2026 À 17H45 HBC BAZADAIS - - BORDEAUX ETUDIANTS CLUB VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2699842",
@@ -357,5 +358,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-09 15:16"
+ "genere_le": "2026-10-10 23:44"
 }
