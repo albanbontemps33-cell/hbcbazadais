@@ -1,35 +1,35 @@
 {
  "equipe": "-18 G",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u18-masculins-32774/poule-194137/",
- "source_mise_a_jour": "9 oct. 2026 à 17h34",
+ "source_mise_a_jour": "11 oct. 2026 à 00h32",
  "journees": 10,
  "classement": [
   {
    "rang": 1,
-   "club": "CADILLAC - CERONS U18M",
-   "joues": 2,
-   "gagnes": 2,
+   "club": "HBC BAZADAIS",
+   "joues": 3,
+   "gagnes": 3,
    "nuls": 0,
    "perdus": 0,
-   "bp": 33,
-   "bc": 31,
-   "diff": 2,
-   "points": 6,
-   "nous": false,
+   "bp": 100,
+   "bc": 84,
+   "diff": 16,
+   "points": 9,
+   "nous": true,
    "stats_partielles": false
   },
   {
    "rang": 2,
-   "club": "HBC BAZADAIS",
-   "joues": 2,
+   "club": "CADILLAC - CERONS U18M",
+   "joues": 3,
    "gagnes": 2,
    "nuls": 0,
-   "perdus": 0,
-   "bp": 68,
-   "bc": 59,
-   "diff": 9,
-   "points": 6,
-   "nous": true,
+   "perdus": 1,
+   "bp": 58,
+   "bc": 63,
+   "diff": -5,
+   "points": 7,
+   "nous": false,
    "stats_partielles": false
   },
   {
@@ -182,13 +182,12 @@
    "date": "Samedi 10 octobre 2026 à 19h30",
    "domicile": "HBC BAZADAIS",
    "exterieur": "CADILLAC - CERONS U18M",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": true,
-   "brut": "SAMEDI 10 OCTOBRE 2026 À 19H30 HBC BAZADAIS - - CADILLAC - CERONS U18M VOIR DÉTAIL DU MATCH REMATCH DISPONIBLE"
+   "score_dom": 32,
+   "score_ext": 25,
+   "affiche": "32 – 25",
+   "vainqueur": "dom",
+   "statut": "joué",
+   "nous": true
   },
   {
    "id": "2700909",
@@ -359,5 +358,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-10 23:44"
+ "genere_le": "2026-10-11 03:01"
 }

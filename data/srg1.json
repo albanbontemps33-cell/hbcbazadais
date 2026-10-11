@@ -1,11 +1,53 @@
 {
  "equipe": "SG1",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-16-masculins-pre-regionale-32457/poule-190872/",
- "source_mise_a_jour": "10 oct. 2026 à 21h08",
+ "source_mise_a_jour": "11 oct. 2026 à 01h51",
  "journees": 22,
  "classement": [
   {
    "rang": 1,
+   "club": "CANEJAN HBC 2",
+   "joues": 4,
+   "gagnes": 4,
+   "nuls": 0,
+   "perdus": 0,
+   "bp": 157,
+   "bc": 100,
+   "diff": 57,
+   "points": 12,
+   "nous": false,
+   "stats_partielles": false
+  },
+  {
+   "rang": 2,
+   "club": "ES BLANQUEFORTAISE HBC 2",
+   "joues": 4,
+   "gagnes": 3,
+   "nuls": 0,
+   "perdus": 1,
+   "bp": 142,
+   "bc": 110,
+   "diff": 32,
+   "points": 10,
+   "nous": false,
+   "stats_partielles": false
+  },
+  {
+   "rang": 3,
+   "club": "AS AMBARESIENNE 2",
+   "joues": 4,
+   "gagnes": 3,
+   "nuls": 0,
+   "perdus": 1,
+   "bp": 141,
+   "bc": 111,
+   "diff": 30,
+   "points": 10,
+   "nous": false,
+   "stats_partielles": false
+  },
+  {
+   "rang": 4,
    "club": "HBC BAZADAIS 1",
    "joues": 4,
    "gagnes": 3,
@@ -19,60 +61,18 @@
    "stats_partielles": false
   },
   {
-   "rang": 2,
-   "club": "CANEJAN HBC 2",
-   "joues": 3,
-   "gagnes": 3,
-   "nuls": 0,
-   "perdus": 0,
-   "bp": 114,
-   "bc": 75,
-   "diff": 39,
-   "points": 9,
-   "nous": false,
-   "stats_partielles": false
-  },
-  {
-   "rang": 3,
-   "club": "AS AMBARESIENNE 2",
-   "joues": 3,
-   "gagnes": 3,
-   "nuls": 0,
-   "perdus": 0,
-   "bp": 108,
-   "bc": 77,
-   "diff": 31,
-   "points": 9,
-   "nous": false,
-   "stats_partielles": false
-  },
-  {
-   "rang": 4,
-   "club": "ES BLANQUEFORTAISE HBC 2",
-   "joues": 3,
-   "gagnes": 2,
-   "nuls": 0,
-   "perdus": 1,
-   "bp": 108,
-   "bc": 77,
-   "diff": 31,
-   "points": 7,
-   "nous": false,
-   "stats_partielles": false
-  },
-  {
    "rang": 5,
    "club": "HBC LIBOURNE 3",
-   "joues": 3,
+   "joues": 4,
    "gagnes": 2,
    "nuls": 0,
-   "perdus": 1,
-   "bp": 92,
-   "bc": 96,
-   "diff": -4,
+   "perdus": 2,
+   "bp": 126,
+   "bc": 140,
+   "diff": -14,
    "points": 7,
    "nous": false,
-   "stats_partielles": false
+   "stats_partielles": true
   },
   {
    "rang": 6,
@@ -91,14 +91,14 @@
   {
    "rang": 7,
    "club": "HAILLAN HANDBALL 1",
-   "joues": 3,
+   "joues": 4,
    "gagnes": 1,
    "nuls": 0,
-   "perdus": 2,
-   "bp": 77,
-   "bc": 88,
-   "diff": -11,
-   "points": 5,
+   "perdus": 3,
+   "bp": 102,
+   "bc": 131,
+   "diff": -29,
+   "points": 6,
    "nous": false,
    "stats_partielles": false
   },
@@ -133,16 +133,16 @@
   {
    "rang": 10,
    "club": "CM FLOIRAC CENON HANDBALL 2",
-   "joues": 2,
-   "gagnes": 1,
+   "joues": 3,
+   "gagnes": 2,
    "nuls": 0,
    "perdus": 1,
-   "bp": 40,
-   "bc": 26,
-   "diff": 14,
+   "bp": 84,
+   "bc": 60,
+   "diff": 24,
    "points": 3,
    "nous": false,
-   "stats_partielles": false
+   "stats_partielles": true
   },
   {
    "rang": 11,
@@ -433,13 +433,12 @@
    "date": "Samedi 10 octobre 2026 à 19h45",
    "domicile": "HAILLAN HANDBALL 1",
    "exterieur": "CANEJAN HBC 2",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false,
-   "brut": "SAMEDI 10 OCTOBRE 2026 À 19H45 HAILLAN HANDBALL 1 - - CANEJAN HBC 2 VOIR DÉTAIL DU MATCH"
+   "score_dom": 25,
+   "score_ext": 43,
+   "affiche": "25 – 43",
+   "vainqueur": "ext",
+   "statut": "joué",
+   "nous": false
   },
   {
    "id": "2635484",
@@ -463,13 +462,12 @@
    "date": "Samedi 10 octobre 2026 à 21h00",
    "domicile": "HBC LIBOURNE 3",
    "exterieur": "CM FLOIRAC CENON HANDBALL 2",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false,
-   "brut": "SAMEDI 10 OCTOBRE 2026 À 21H00 HBC LIBOURNE 3 - - CM FLOIRAC CENON HANDBALL 2 VOIR DÉTAIL DU MATCH"
+   "score_dom": 34,
+   "score_ext": 44,
+   "affiche": "34 – 44",
+   "vainqueur": "ext",
+   "statut": "joué",
+   "nous": false
   },
   {
    "id": "2635481",
@@ -478,13 +476,12 @@
    "date": "Samedi 10 octobre 2026 à 21h00",
    "domicile": "ES BLANQUEFORTAISE HBC 2",
    "exterieur": "AS AMBARESIENNE 2",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false,
-   "brut": "SAMEDI 10 OCTOBRE 2026 À 21H00 ES BLANQUEFORTAISE HBC 2 - - AS AMBARESIENNE 2 VOIR DÉTAIL DU MATCH"
+   "score_dom": 34,
+   "score_ext": 33,
+   "affiche": "34 – 33",
+   "vainqueur": "dom",
+   "statut": "joué",
+   "nous": false
   },
   {
    "id": "2635479",
@@ -2028,5 +2025,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-10 23:43"
+ "genere_le": "2026-10-11 03:00"
 }

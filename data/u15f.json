@@ -1,34 +1,34 @@
 {
  "equipe": "-15 F",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u15-feminine-32776/poule-194055/",
- "source_mise_a_jour": "10 oct. 2026 à 21h45",
+ "source_mise_a_jour": "10 oct. 2026 à 23h54",
  "journees": 10,
  "classement": [
   {
    "rang": 1,
    "club": "HBC BAZADAIS",
-   "joues": 3,
-   "gagnes": 3,
+   "joues": 4,
+   "gagnes": 4,
    "nuls": 0,
    "perdus": 0,
-   "bp": 111,
-   "bc": 30,
-   "diff": 81,
-   "points": 9,
+   "bp": 154,
+   "bc": 50,
+   "diff": 104,
+   "points": 12,
    "nous": true,
    "stats_partielles": false
   },
   {
    "rang": 2,
    "club": "BORDEAUX ETUDIANTS CLUB",
-   "joues": 2,
+   "joues": 3,
    "gagnes": 2,
    "nuls": 0,
-   "perdus": 0,
-   "bp": 39,
-   "bc": 26,
-   "diff": 13,
-   "points": 6,
+   "perdus": 1,
+   "bp": 59,
+   "bc": 69,
+   "diff": -10,
+   "points": 7,
    "nous": false,
    "stats_partielles": false
   },
@@ -48,20 +48,6 @@
   },
   {
    "rang": 4,
-   "club": "CADILLAC CERONS U15F",
-   "joues": 3,
-   "gagnes": 0,
-   "nuls": 0,
-   "perdus": 3,
-   "bp": 36,
-   "bc": 85,
-   "diff": -49,
-   "points": 2,
-   "nous": false,
-   "stats_partielles": true
-  },
-  {
-   "rang": 5,
    "club": "SC MONSEGUR HB",
    "joues": 3,
    "gagnes": 1,
@@ -70,9 +56,23 @@
    "bp": 49,
    "bc": 87,
    "diff": -38,
-   "points": 2,
+   "points": 5,
    "nous": false,
-   "stats_partielles": true
+   "stats_partielles": false
+  },
+  {
+   "rang": 5,
+   "club": "CADILLAC CERONS U15F",
+   "joues": 3,
+   "gagnes": 0,
+   "nuls": 0,
+   "perdus": 3,
+   "bp": 36,
+   "bc": 85,
+   "diff": -49,
+   "points": 3,
+   "nous": false,
+   "stats_partielles": false
   }
  ],
  "calendrier": [
@@ -181,13 +181,12 @@
    "date": "Samedi 10 octobre 2026 à 17h45",
    "domicile": "HBC BAZADAIS",
    "exterieur": "BORDEAUX ETUDIANTS CLUB",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": true,
-   "brut": "SAMEDI 10 OCTOBRE 2026 À 17H45 HBC BAZADAIS - - BORDEAUX ETUDIANTS CLUB VOIR DÉTAIL DU MATCH"
+   "score_dom": 43,
+   "score_ext": 20,
+   "affiche": "43 – 20",
+   "vainqueur": "dom",
+   "statut": "joué",
+   "nous": true
   },
   {
    "id": "2699842",
@@ -358,5 +357,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-10 23:44"
+ "genere_le": "2026-10-11 03:01"
 }

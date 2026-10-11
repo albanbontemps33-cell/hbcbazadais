@@ -1,22 +1,22 @@
 {
  "equipe": "-13 G",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u13-masculin-32827/poule-194151/",
- "source_mise_a_jour": "8 oct. 2026 à 17h19",
+ "source_mise_a_jour": "11 oct. 2026 à 00h49",
  "journees": 10,
  "classement": [
   {
    "rang": 1,
    "club": "HANDBALL CLUB SAINT SYMPHORIEN",
-   "joues": 2,
-   "gagnes": 2,
+   "joues": 3,
+   "gagnes": 3,
    "nuls": 0,
    "perdus": 0,
-   "bp": 57,
-   "bc": 36,
-   "diff": 21,
+   "bp": 98,
+   "bc": 51,
+   "diff": 47,
    "points": 6,
    "nous": false,
-   "stats_partielles": false
+   "stats_partielles": true
   },
   {
    "rang": 2,
@@ -35,16 +35,16 @@
   {
    "rang": 3,
    "club": "HANDBALL SAINT MEDARD D'EYRANS 2",
-   "joues": 2,
+   "joues": 3,
    "gagnes": 1,
    "nuls": 0,
-   "perdus": 1,
-   "bp": 47,
-   "bc": 42,
-   "diff": 5,
+   "perdus": 2,
+   "bp": 62,
+   "bc": 83,
+   "diff": -21,
    "points": 4,
    "nous": false,
-   "stats_partielles": false
+   "stats_partielles": true
   },
   {
    "rang": 4,
@@ -211,13 +211,12 @@
    "date": "Samedi 10 octobre 2026 à 16h30",
    "domicile": "HANDBALL CLUB SAINT SYMPHORIEN",
    "exterieur": "HANDBALL SAINT MEDARD D'EYRANS 2",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false,
-   "brut": "SAMEDI 10 OCTOBRE 2026 À 16H30 HANDBALL CLUB SAINT SYMPHORIEN - - HANDBALL SAINT MEDARD D'EYRANS 2 VOIR DÉTAIL DU MATCH"
+   "score_dom": 41,
+   "score_ext": 15,
+   "affiche": "41 – 15",
+   "vainqueur": "dom",
+   "statut": "joué",
+   "nous": false
   },
   {
    "id": "2699064",
@@ -514,5 +513,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-10 23:45"
+ "genere_le": "2026-10-11 03:02"
 }
