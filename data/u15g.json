@@ -1,7 +1,7 @@
 {
  "equipe": "-15 G",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u15-masculin-32826/poule-194103/",
- "source_mise_a_jour": "11 oct. 2026 à 12h16",
+ "source_mise_a_jour": "11 oct. 2026 à 18h41",
  "journees": 10,
  "classement": [
   {
@@ -20,6 +20,34 @@
   },
   {
    "rang": 2,
+   "club": "SC MONSEGUR HB",
+   "joues": 4,
+   "gagnes": 3,
+   "nuls": 0,
+   "perdus": 1,
+   "bp": 98,
+   "bc": 91,
+   "diff": 7,
+   "points": 10,
+   "nous": false,
+   "stats_partielles": false
+  },
+  {
+   "rang": 3,
+   "club": "CADILLAC/CERONS U15M",
+   "joues": 4,
+   "gagnes": 2,
+   "nuls": 1,
+   "perdus": 1,
+   "bp": 120,
+   "bc": 103,
+   "diff": 17,
+   "points": 8,
+   "nous": false,
+   "stats_partielles": false
+  },
+  {
+   "rang": 4,
    "club": "HBC BAZADAIS",
    "joues": 4,
    "gagnes": 2,
@@ -33,34 +61,6 @@
    "stats_partielles": false
   },
   {
-   "rang": 3,
-   "club": "SC MONSEGUR HB",
-   "joues": 4,
-   "gagnes": 3,
-   "nuls": 0,
-   "perdus": 1,
-   "bp": 98,
-   "bc": 91,
-   "diff": 7,
-   "points": 7,
-   "nous": false,
-   "stats_partielles": true
-  },
-  {
-   "rang": 4,
-   "club": "CADILLAC/CERONS U15M",
-   "joues": 3,
-   "gagnes": 1,
-   "nuls": 1,
-   "perdus": 1,
-   "bp": 77,
-   "bc": 72,
-   "diff": 5,
-   "points": 5,
-   "nous": false,
-   "stats_partielles": false
-  },
-  {
    "rang": 5,
    "club": "PE2M HB",
    "joues": 4,
@@ -70,21 +70,21 @@
    "bp": 142,
    "bc": 151,
    "diff": -9,
-   "points": 4,
+   "points": 5,
    "nous": false,
-   "stats_partielles": true
+   "stats_partielles": false
   },
   {
    "rang": 6,
    "club": "AVENIR PAILLETON",
-   "joues": 3,
+   "joues": 4,
    "gagnes": 0,
    "nuls": 0,
-   "perdus": 3,
-   "bp": 61,
-   "bc": 143,
-   "diff": -82,
-   "points": 3,
+   "perdus": 4,
+   "bp": 92,
+   "bc": 186,
+   "diff": -94,
+   "points": 4,
    "nous": false,
    "stats_partielles": false
   }
@@ -251,13 +251,12 @@
    "date": "Dimanche 11 octobre 2026 à 14h00",
    "domicile": "AVENIR PAILLETON",
    "exterieur": "CADILLAC/CERONS U15M",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false,
-   "brut": "DIMANCHE 11 OCTOBRE 2026 À 14H00 AVENIR PAILLETON - - CADILLAC/CERONS U15M VOIR DÉTAIL DU MATCH"
+   "score_dom": 31,
+   "score_ext": 43,
+   "affiche": "31 – 43",
+   "vainqueur": "ext",
+   "statut": "joué",
+   "nous": false
   },
   {
    "id": "2698112",
@@ -512,5 +511,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-11 14:49"
+ "genere_le": "2026-10-11 23:58"
 }
