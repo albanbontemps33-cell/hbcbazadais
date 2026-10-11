@@ -200,7 +200,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": true
+   "nous": true,
+   "brut": "DIMANCHE 11 OCTOBRE 2026 À 11H00 HBC BAZADAIS 2 - - SC MONSEGUR HB VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2699715",
@@ -214,7 +215,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "DIMANCHE 11 OCTOBRE 2026 À 11H30 HANDBALL SAINT MEDARD D'EYRANS - - PE2M HB 2 VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2699719",
@@ -511,5 +513,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-10 23:45"
+ "genere_le": "2026-10-11 14:50"
 }

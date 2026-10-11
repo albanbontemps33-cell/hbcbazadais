@@ -1,7 +1,7 @@
 {
  "equipe": "-18 G",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u18-masculins-32774/poule-194137/",
- "source_mise_a_jour": "11 oct. 2026 à 00h32",
+ "source_mise_a_jour": "11 oct. 2026 à 07h23",
  "journees": 10,
  "classement": [
   {
@@ -35,30 +35,30 @@
   {
    "rang": 3,
    "club": "LEOGNAN HANDBALL 2",
-   "joues": 2,
-   "gagnes": 1,
+   "joues": 3,
+   "gagnes": 2,
    "nuls": 0,
    "perdus": 1,
-   "bp": 63,
-   "bc": 68,
-   "diff": -5,
+   "bp": 91,
+   "bc": 95,
+   "diff": -4,
    "points": 4,
    "nous": false,
-   "stats_partielles": false
+   "stats_partielles": true
   },
   {
    "rang": 4,
    "club": "SC MONSEGUR HB",
-   "joues": 3,
+   "joues": 4,
    "gagnes": 1,
    "nuls": 0,
-   "perdus": 2,
-   "bp": 61,
-   "bc": 51,
-   "diff": 10,
+   "perdus": 3,
+   "bp": 88,
+   "bc": 79,
+   "diff": 9,
    "points": 4,
    "nous": false,
-   "stats_partielles": false
+   "stats_partielles": true
   },
   {
    "rang": 5,
@@ -167,13 +167,12 @@
    "date": "Samedi 10 octobre 2026 à 18h30",
    "domicile": "LEOGNAN HANDBALL 2",
    "exterieur": "SC MONSEGUR HB",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false,
-   "brut": "SAMEDI 10 OCTOBRE 2026 À 18H30 LEOGNAN HANDBALL 2 - - SC MONSEGUR HB VOIR DÉTAIL DU MATCH"
+   "score_dom": 28,
+   "score_ext": 27,
+   "affiche": "28 – 27",
+   "vainqueur": "dom",
+   "statut": "joué",
+   "nous": false
   },
   {
    "id": "2700905",
@@ -358,5 +357,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-11 03:01"
+ "genere_le": "2026-10-11 14:49"
 }

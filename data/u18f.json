@@ -1,39 +1,11 @@
 {
  "equipe": "-18 F",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u18-feminine-32775/poule-193706/",
- "source_mise_a_jour": "10 oct. 2026 à 21h43",
+ "source_mise_a_jour": "11 oct. 2026 à 12h16",
  "journees": 10,
  "classement": [
   {
    "rang": 1,
-   "club": "CADILLAC - CERONS U18F",
-   "joues": 4,
-   "gagnes": 2,
-   "nuls": 1,
-   "perdus": 1,
-   "bp": 97,
-   "bc": 101,
-   "diff": -4,
-   "points": 8,
-   "nous": false,
-   "stats_partielles": true
-  },
-  {
-   "rang": 2,
-   "club": "HBC BELIN-BELIET",
-   "joues": 3,
-   "gagnes": 2,
-   "nuls": 0,
-   "perdus": 1,
-   "bp": 60,
-   "bc": 35,
-   "diff": 25,
-   "points": 6,
-   "nous": false,
-   "stats_partielles": false
-  },
-  {
-   "rang": 3,
    "club": "LEOGNAN - TALENCE",
    "joues": 4,
    "gagnes": 2,
@@ -42,6 +14,34 @@
    "bp": 115,
    "bc": 106,
    "diff": 9,
+   "points": 9,
+   "nous": false,
+   "stats_partielles": false
+  },
+  {
+   "rang": 2,
+   "club": "CADILLAC - CERONS U18F",
+   "joues": 4,
+   "gagnes": 2,
+   "nuls": 1,
+   "perdus": 1,
+   "bp": 97,
+   "bc": 101,
+   "diff": -4,
+   "points": 9,
+   "nous": false,
+   "stats_partielles": false
+  },
+  {
+   "rang": 3,
+   "club": "HBC BELIN-BELIET",
+   "joues": 4,
+   "gagnes": 3,
+   "nuls": 0,
+   "perdus": 1,
+   "bp": 102,
+   "bc": 49,
+   "diff": 53,
    "points": 6,
    "nous": false,
    "stats_partielles": true
@@ -77,16 +77,16 @@
   {
    "rang": 6,
    "club": "SC MONSEGUR HB",
-   "joues": 2,
+   "joues": 3,
    "gagnes": 0,
    "nuls": 1,
-   "perdus": 1,
-   "bp": 53,
-   "bc": 71,
-   "diff": -18,
+   "perdus": 2,
+   "bp": 67,
+   "bc": 113,
+   "diff": -46,
    "points": 3,
    "nous": false,
-   "stats_partielles": false
+   "stats_partielles": true
   }
  ],
  "calendrier": [
@@ -223,13 +223,12 @@
    "date": "Samedi 10 octobre 2026 à 18h00",
    "domicile": "SC MONSEGUR HB",
    "exterieur": "HBC BELIN-BELIET",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false,
-   "brut": "SAMEDI 10 OCTOBRE 2026 À 18H00 SC MONSEGUR HB - - HBC BELIN-BELIET VOIR DÉTAIL DU MATCH"
+   "score_dom": 14,
+   "score_ext": 42,
+   "affiche": "14 – 42",
+   "vainqueur": "ext",
+   "statut": "joué",
+   "nous": false
   },
   {
    "id": "2699870",
@@ -243,7 +242,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": true
+   "nous": true,
+   "brut": "DIMANCHE 11 OCTOBRE 2026 À 13H00 HBC BAZADAIS - - GRADIGNAN HANDBALL CLUB VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2699872",
@@ -512,5 +512,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-10 23:44"
+ "genere_le": "2026-10-11 14:49"
 }

@@ -228,7 +228,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": true
+   "nous": true,
+   "brut": "DIMANCHE 11 OCTOBRE 2026 À 13H00 HBC BAZADAIS 1 - - PE2M HB 1 VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2699509",
@@ -242,7 +243,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "DIMANCHE 11 OCTOBRE 2026 À 14H20 STADE LANGONNAIS HB - - HBC TEICHOIS 1 VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2699508",
@@ -511,5 +513,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-10 23:45"
+ "genere_le": "2026-10-11 14:49"
 }

@@ -1,7 +1,7 @@
 {
  "equipe": "-15 G",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u15-masculin-32826/poule-194103/",
- "source_mise_a_jour": "10 oct. 2026 à 18h42",
+ "source_mise_a_jour": "11 oct. 2026 à 12h16",
  "journees": 10,
  "classement": [
   {
@@ -14,9 +14,9 @@
    "bp": 163,
    "bc": 108,
    "diff": 55,
-   "points": 9,
+   "points": 12,
    "nous": false,
-   "stats_partielles": true
+   "stats_partielles": false
   },
   {
    "rang": 2,
@@ -28,23 +28,23 @@
    "bp": 162,
    "bc": 138,
    "diff": 24,
-   "points": 7,
+   "points": 8,
    "nous": true,
-   "stats_partielles": true
+   "stats_partielles": false
   },
   {
    "rang": 3,
    "club": "SC MONSEGUR HB",
-   "joues": 3,
-   "gagnes": 2,
+   "joues": 4,
+   "gagnes": 3,
    "nuls": 0,
    "perdus": 1,
-   "bp": 60,
-   "bc": 54,
-   "diff": 6,
+   "bp": 98,
+   "bc": 91,
+   "diff": 7,
    "points": 7,
    "nous": false,
-   "stats_partielles": false
+   "stats_partielles": true
   },
   {
    "rang": 4,
@@ -63,16 +63,16 @@
   {
    "rang": 5,
    "club": "PE2M HB",
-   "joues": 3,
+   "joues": 4,
    "gagnes": 0,
    "nuls": 1,
-   "perdus": 2,
-   "bp": 105,
-   "bc": 113,
-   "diff": -8,
+   "perdus": 3,
+   "bp": 142,
+   "bc": 151,
+   "diff": -9,
    "points": 4,
    "nous": false,
-   "stats_partielles": false
+   "stats_partielles": true
   },
   {
    "rang": 6,
@@ -223,13 +223,12 @@
    "date": "Samedi 10 octobre 2026 à 16h15",
    "domicile": "SC MONSEGUR HB",
    "exterieur": "PE2M HB",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false,
-   "brut": "SAMEDI 10 OCTOBRE 2026 À 16H15 SC MONSEGUR HB - - PE2M HB VOIR DÉTAIL DU MATCH"
+   "score_dom": 38,
+   "score_ext": 37,
+   "affiche": "38 – 37",
+   "vainqueur": "dom",
+   "statut": "joué",
+   "nous": false
   },
   {
    "id": "2698110",
@@ -257,7 +256,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "DIMANCHE 11 OCTOBRE 2026 À 14H00 AVENIR PAILLETON - - CADILLAC/CERONS U15M VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2698112",
@@ -512,5 +512,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-10 23:44"
+ "genere_le": "2026-10-11 14:49"
 }
