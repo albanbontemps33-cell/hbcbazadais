@@ -1,7 +1,7 @@
 {
  "equipe": "-13 F 1",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u13-feminine-32777/poule-193722/",
- "source_mise_a_jour": "11 oct. 2026 à 17h50",
+ "source_mise_a_jour": "12 oct. 2026 à 14h36",
  "journees": 10,
  "classement": [
   {
@@ -343,6 +343,20 @@
    "nous": false
   },
   {
+   "id": "2699519",
+   "journee": 7,
+   "iso": "2026-11-21T13:20",
+   "date": "Samedi 21 novembre 2026 à 13h20",
+   "domicile": "SA GAZINET CESTAS",
+   "exterieur": "HBC TEICHOIS 1",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
    "id": "2699521",
    "journee": 8,
    "iso": "2026-11-28T11:00",
@@ -427,20 +441,6 @@
    "nous": true
   },
   {
-   "id": "2699519",
-   "journee": 7,
-   "iso": "",
-   "date": "",
-   "domicile": "SA GAZINET CESTAS",
-   "exterieur": "HBC TEICHOIS 1",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
    "id": "2699522",
    "journee": 8,
    "iso": "",
@@ -511,5 +511,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-11 23:59"
+ "genere_le": "2026-10-12 17:24"
 }

@@ -1,7 +1,7 @@
 {
  "equipe": "SG1",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-16-masculins-pre-regionale-32457/poule-190872/",
- "source_mise_a_jour": "11 oct. 2026 à 12h16",
+ "source_mise_a_jour": "12 oct. 2026 à 11h14",
  "journees": 22,
  "classement": [
   {
@@ -90,34 +90,6 @@
   },
   {
    "rang": 7,
-   "club": "HAILLAN HANDBALL 1",
-   "joues": 4,
-   "gagnes": 1,
-   "nuls": 0,
-   "perdus": 3,
-   "bp": 102,
-   "bc": 131,
-   "diff": -29,
-   "points": 6,
-   "nous": false,
-   "stats_partielles": false
-  },
-  {
-   "rang": 8,
-   "club": "GRADIGNAN HANDBALL CLUB",
-   "joues": 4,
-   "gagnes": 1,
-   "nuls": 0,
-   "perdus": 3,
-   "bp": 114,
-   "bc": 151,
-   "diff": -37,
-   "points": 6,
-   "nous": false,
-   "stats_partielles": false
-  },
-  {
-   "rang": 9,
    "club": "CM FLOIRAC CENON HANDBALL 2",
    "joues": 3,
    "gagnes": 2,
@@ -131,7 +103,7 @@
    "stats_partielles": false
   },
   {
-   "rang": 10,
+   "rang": 8,
    "club": "ST MEDARD HANDBALL 2",
    "joues": 4,
    "gagnes": 1,
@@ -145,7 +117,21 @@
    "stats_partielles": false
   },
   {
-   "rang": 11,
+   "rang": 9,
+   "club": "HAILLAN HANDBALL 1",
+   "joues": 4,
+   "gagnes": 1,
+   "nuls": 0,
+   "perdus": 3,
+   "bp": 102,
+   "bc": 131,
+   "diff": -29,
+   "points": 6,
+   "nous": false,
+   "stats_partielles": false
+  },
+  {
+   "rang": 10,
    "club": "BORDEAUX ETUDIANTS CLUB",
    "joues": 4,
    "gagnes": 1,
@@ -154,9 +140,23 @@
    "bp": 125,
    "bc": 135,
    "diff": -10,
-   "points": 3,
+   "points": 6,
    "nous": false,
-   "stats_partielles": true
+   "stats_partielles": false
+  },
+  {
+   "rang": 11,
+   "club": "GRADIGNAN HANDBALL CLUB",
+   "joues": 4,
+   "gagnes": 1,
+   "nuls": 0,
+   "perdus": 3,
+   "bp": 114,
+   "bc": 151,
+   "diff": -37,
+   "points": 6,
+   "nous": false,
+   "stats_partielles": false
   },
   {
    "rang": 12,
@@ -168,9 +168,9 @@
    "bp": 113,
    "bc": 167,
    "diff": -54,
-   "points": 3,
+   "points": 4,
    "nous": false,
-   "stats_partielles": true
+   "stats_partielles": false
   }
  ],
  "calendrier": [
@@ -2023,5 +2023,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-11 14:48"
+ "genere_le": "2026-10-12 17:22"
 }
