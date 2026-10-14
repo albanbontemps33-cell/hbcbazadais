@@ -707,6 +707,20 @@
    "nous": false
   },
   {
+   "id": "2635500",
+   "journee": 7,
+   "iso": "2026-11-14T20:00",
+   "date": "Samedi 14 novembre 2026 à 20h00",
+   "domicile": "BORDEAUX ETUDIANTS CLUB",
+   "exterieur": "GRADIGNAN HANDBALL CLUB",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
    "id": "2635501",
    "journee": 7,
    "iso": "2026-11-14T20:30",
@@ -951,20 +965,6 @@
    "date": "Samedi 22 mai 2027 à 18h30",
    "domicile": "AS AMBARESIENNE 2",
    "exterieur": "HBC LIBOURNE 3",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
-   "id": "2635500",
-   "journee": 7,
-   "iso": "",
-   "date": "",
-   "domicile": "BORDEAUX ETUDIANTS CLUB",
-   "exterieur": "GRADIGNAN HANDBALL CLUB",
    "score_dom": null,
    "score_ext": null,
    "affiche": null,
@@ -2023,5 +2023,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-14 13:50"
+ "genere_le": "2026-10-14 19:09"
 }
