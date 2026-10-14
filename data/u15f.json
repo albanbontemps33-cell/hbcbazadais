@@ -1,7 +1,7 @@
 {
  "equipe": "-15 F",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u15-feminine-32776/poule-194055/",
- "source_mise_a_jour": "10 oct. 2026 à 23h54",
+ "source_mise_a_jour": "14 oct. 2026 à 18h34",
  "journees": 10,
  "classement": [
   {
@@ -203,6 +203,20 @@
    "nous": false
   },
   {
+   "id": "2699843",
+   "journee": 5,
+   "iso": "2026-11-07T18:30",
+   "date": "Samedi 7 novembre 2026 à 18h30",
+   "domicile": "BORDEAUX ETUDIANTS CLUB",
+   "exterieur": "CADILLAC CERONS U15F",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
    "id": "2699844",
    "journee": 6,
    "iso": "2026-11-14T15:30",
@@ -215,6 +229,20 @@
    "vainqueur": null,
    "statut": "à venir",
    "nous": true
+  },
+  {
+   "id": "2699846",
+   "journee": 6,
+   "iso": "2026-11-15T13:30",
+   "date": "Dimanche 15 novembre 2026 à 13h30",
+   "domicile": "BORDEAUX ETUDIANTS CLUB",
+   "exterieur": "HANDBALL SAINT MEDARD D'EYRANS 2",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": false
   },
   {
    "id": "2699848",
@@ -301,34 +329,6 @@
    "nous": false
   },
   {
-   "id": "2699843",
-   "journee": 5,
-   "iso": "",
-   "date": "",
-   "domicile": "BORDEAUX ETUDIANTS CLUB",
-   "exterieur": "CADILLAC CERONS U15F",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
-   "id": "2699846",
-   "journee": 6,
-   "iso": "",
-   "date": "",
-   "domicile": "BORDEAUX ETUDIANTS CLUB",
-   "exterieur": "HANDBALL SAINT MEDARD D'EYRANS 2",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
    "id": "2699854",
    "journee": 9,
    "iso": "",
@@ -357,5 +357,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-11 03:01"
+ "genere_le": "2026-10-14 23:42"
 }
