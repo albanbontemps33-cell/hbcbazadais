@@ -1,7 +1,7 @@
 {
  "equipe": "-18 G",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u18-masculins-32774/poule-194137/",
- "source_mise_a_jour": "11 oct. 2026 à 17h07",
+ "source_mise_a_jour": "16 oct. 2026 à 17h43",
  "journees": 10,
  "classement": [
   {
@@ -217,6 +217,20 @@
    "nous": true
   },
   {
+   "id": "2700910",
+   "journee": 6,
+   "iso": "2026-11-14T18:00",
+   "date": "Samedi 14 novembre 2026 à 18h00",
+   "domicile": "LEOGNAN HANDBALL 2",
+   "exterieur": "HBC BAZADAIS",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": true
+  },
+  {
    "id": "2700911",
    "journee": 6,
    "iso": "2026-11-14T18:15",
@@ -265,20 +279,6 @@
    "date": "Dimanche 13 décembre 2026 à 14h00",
    "domicile": "HBC BAZADAIS",
    "exterieur": "AVENIR PAILLETON",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": true
-  },
-  {
-   "id": "2700910",
-   "journee": 6,
-   "iso": "",
-   "date": "",
-   "domicile": "LEOGNAN HANDBALL 2",
-   "exterieur": "HBC BAZADAIS",
    "score_dom": null,
    "score_ext": null,
    "affiche": null,
@@ -357,5 +357,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-11 23:58"
+ "genere_le": "2026-10-16 23:08"
 }
