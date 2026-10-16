@@ -1,7 +1,7 @@
 {
  "equipe": "SG2",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-16-masculins-promotion-32460/",
- "source_mise_a_jour": "15 oct. 2026 à 20h45",
+ "source_mise_a_jour": "16 oct. 2026 à 16h10",
  "journees": 10,
  "classement": [
   {
@@ -70,9 +70,9 @@
    "bp": 109,
    "bc": 122,
    "diff": -13,
-   "points": 3,
+   "points": 6,
    "nous": false,
-   "stats_partielles": true
+   "stats_partielles": false
   },
   {
    "rang": 6,
@@ -84,9 +84,9 @@
    "bp": 89,
    "bc": 135,
    "diff": -46,
-   "points": 3,
+   "points": 4,
    "nous": true,
-   "stats_partielles": true
+   "stats_partielles": false
   }
  ],
  "calendrier": [
@@ -511,5 +511,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-15 23:22"
+ "genere_le": "2026-10-16 18:38"
 }

@@ -1,7 +1,7 @@
 {
  "equipe": "-13 F 2",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u13-feminine-32777/poule-194061/",
- "source_mise_a_jour": "11 oct. 2026 à 19h23",
+ "source_mise_a_jour": "16 oct. 2026 à 16h38",
  "journees": 10,
  "classement": [
   {
@@ -219,24 +219,10 @@
   {
    "id": "2699719",
    "journee": 4,
-   "iso": "2026-10-17T09:10",
-   "date": "Samedi 17 octobre 2026 à 09h10",
+   "iso": "2026-10-17T15:30",
+   "date": "Samedi 17 octobre 2026 à 15h30",
    "domicile": "CADILLAC CERONS U13F",
    "exterieur": "HANDBALL SAINT MEDARD D'EYRANS",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
-   "id": "2699720",
-   "journee": 4,
-   "iso": "2026-10-17T15:50",
-   "date": "Samedi 17 octobre 2026 à 15h50",
-   "domicile": "SC MONSEGUR HB",
-   "exterieur": "PE2M HB 2",
    "score_dom": null,
    "score_ext": null,
    "affiche": null,
@@ -441,6 +427,20 @@
    "nous": false
   },
   {
+   "id": "2699720",
+   "journee": 4,
+   "iso": "",
+   "date": "",
+   "domicile": "SC MONSEGUR HB",
+   "exterieur": "PE2M HB 2",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
    "id": "2699727",
    "journee": 7,
    "iso": "",
@@ -511,5 +511,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-16 13:24"
+ "genere_le": "2026-10-16 18:40"
 }

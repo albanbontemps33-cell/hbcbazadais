@@ -1,7 +1,7 @@
 {
  "equipe": "-13 G",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u13-masculin-32827/poule-194151/",
- "source_mise_a_jour": "16 oct. 2026 à 10h22",
+ "source_mise_a_jour": "16 oct. 2026 à 17h09",
  "journees": 10,
  "classement": [
   {
@@ -217,18 +217,18 @@
    "nous": false
   },
   {
-   "id": "2699064",
+   "id": "2699065",
    "journee": 4,
-   "iso": "2026-10-17T14:50",
-   "date": "Samedi 17 octobre 2026 à 14h50",
-   "domicile": "SC MONSEGUR HB",
-   "exterieur": "HANDBALL CLUB SAINT SYMPHORIEN",
+   "iso": "2026-10-17T15:00",
+   "date": "Samedi 17 octobre 2026 à 15h00",
+   "domicile": "HBC BAZADAIS",
+   "exterieur": "AVENIR PAILLETON",
    "score_dom": null,
    "score_ext": null,
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": true
   },
   {
    "id": "2699066",
@@ -243,20 +243,6 @@
    "vainqueur": null,
    "statut": "à venir",
    "nous": false
-  },
-  {
-   "id": "2699065",
-   "journee": 4,
-   "iso": "2026-10-18T10:20",
-   "date": "Dimanche 18 octobre 2026 à 10h20",
-   "domicile": "HBC BAZADAIS",
-   "exterieur": "AVENIR PAILLETON",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": true
   },
   {
    "id": "2699068",
@@ -441,6 +427,20 @@
    "nous": false
   },
   {
+   "id": "2699064",
+   "journee": 4,
+   "iso": "",
+   "date": "",
+   "domicile": "SC MONSEGUR HB",
+   "exterieur": "HANDBALL CLUB SAINT SYMPHORIEN",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
    "id": "2699072",
    "journee": 6,
    "iso": "",
@@ -511,5 +511,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-16 13:23"
+ "genere_le": "2026-10-16 18:39"
 }
