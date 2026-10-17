@@ -1,11 +1,25 @@
 {
  "equipe": "-13 F 2",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u13-feminine-32777/poule-194061/",
- "source_mise_a_jour": "16 oct. 2026 à 17h11",
+ "source_mise_a_jour": "17 oct. 2026 à 20h36",
  "journees": 10,
  "classement": [
   {
    "rang": 1,
+   "club": "HANDBALL SAINT MEDARD D'EYRANS",
+   "joues": 4,
+   "gagnes": 3,
+   "nuls": 0,
+   "perdus": 1,
+   "bp": 103,
+   "bc": 65,
+   "diff": 38,
+   "points": 10,
+   "nous": false,
+   "stats_partielles": false
+  },
+  {
+   "rang": 2,
    "club": "AVENIR PAILLETON",
    "joues": 3,
    "gagnes": 3,
@@ -19,35 +33,35 @@
    "stats_partielles": false
   },
   {
-   "rang": 2,
-   "club": "HANDBALL SAINT MEDARD D'EYRANS",
+   "rang": 3,
+   "club": "SC MONSEGUR HB",
    "joues": 3,
    "gagnes": 2,
    "nuls": 0,
    "perdus": 1,
-   "bp": 69,
-   "bc": 56,
-   "diff": 13,
+   "bp": 63,
+   "bc": 43,
+   "diff": 20,
    "points": 7,
    "nous": false,
    "stats_partielles": false
   },
   {
-   "rang": 3,
+   "rang": 4,
    "club": "CADILLAC CERONS U13F",
-   "joues": 3,
+   "joues": 4,
    "gagnes": 1,
    "nuls": 0,
-   "perdus": 2,
-   "bp": 46,
-   "bc": 73,
-   "diff": -27,
-   "points": 5,
+   "perdus": 3,
+   "bp": 55,
+   "bc": 107,
+   "diff": -52,
+   "points": 6,
    "nous": false,
    "stats_partielles": false
   },
   {
-   "rang": 4,
+   "rang": 5,
    "club": "PE2M HB 2",
    "joues": 3,
    "gagnes": 1,
@@ -61,20 +75,6 @@
    "stats_partielles": false
   },
   {
-   "rang": 5,
-   "club": "SC MONSEGUR HB",
-   "joues": 3,
-   "gagnes": 2,
-   "nuls": 0,
-   "perdus": 1,
-   "bp": 63,
-   "bc": 43,
-   "diff": 20,
-   "points": 4,
-   "nous": false,
-   "stats_partielles": true
-  },
-  {
    "rang": 6,
    "club": "HBC BAZADAIS 2",
    "joues": 3,
@@ -84,9 +84,9 @@
    "bp": 31,
    "bc": 73,
    "diff": -42,
-   "points": 2,
+   "points": 3,
    "nous": true,
-   "stats_partielles": true
+   "stats_partielles": false
   }
  ],
  "calendrier": [
@@ -223,13 +223,27 @@
    "date": "Samedi 17 octobre 2026 à 15h30",
    "domicile": "CADILLAC CERONS U13F",
    "exterieur": "HANDBALL SAINT MEDARD D'EYRANS",
+   "score_dom": 9,
+   "score_ext": 34,
+   "affiche": "9 – 34",
+   "vainqueur": "ext",
+   "statut": "joué",
+   "nous": false
+  },
+  {
+   "id": "2699720",
+   "journee": 4,
+   "iso": "2026-10-17T15:50",
+   "date": "Samedi 17 octobre 2026 à 15h50",
+   "domicile": "SC MONSEGUR HB",
+   "exterieur": "PE2M HB 2",
    "score_dom": null,
    "score_ext": null,
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
    "nous": false,
-   "brut": "SAMEDI 17 OCTOBRE 2026 À 15H30 CADILLAC CERONS U13F - - HANDBALL SAINT MEDARD D'EYRANS VOIR DÉTAIL DU MATCH"
+   "brut": "SAMEDI 17 OCTOBRE 2026 À 15H50 SC MONSEGUR HB - - PE2M HB 2 VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2699718",
@@ -428,20 +442,6 @@
    "nous": false
   },
   {
-   "id": "2699720",
-   "journee": 4,
-   "iso": "",
-   "date": "",
-   "domicile": "SC MONSEGUR HB",
-   "exterieur": "PE2M HB 2",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
    "id": "2699727",
    "journee": 7,
    "iso": "",
@@ -512,5 +512,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-17 17:35"
+ "genere_le": "2026-10-17 22:37"
 }

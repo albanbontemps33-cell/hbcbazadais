@@ -1,7 +1,7 @@
 {
  "equipe": "SG1",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-16-masculins-pre-regionale-32457/poule-190872/",
- "source_mise_a_jour": "16 oct. 2026 à 15h41",
+ "source_mise_a_jour": "17 oct. 2026 à 17h42",
  "journees": 22,
  "classement": [
   {
@@ -497,20 +497,6 @@
    "nous": false
   },
   {
-   "id": "2635473",
-   "journee": 3,
-   "iso": "2026-10-17T20:00",
-   "date": "Samedi 17 octobre 2026 à 20h00",
-   "domicile": "HBC TEICHOIS",
-   "exterieur": "CM FLOIRAC CENON HANDBALL 2",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
    "id": "2635489",
    "journee": 5,
    "iso": "2026-10-24T20:30",
@@ -761,6 +747,20 @@
    "vainqueur": null,
    "statut": "à venir",
    "nous": true
+  },
+  {
+   "id": "2635473",
+   "journee": 3,
+   "iso": "2026-11-21T00:00",
+   "date": "Samedi 21 novembre 2026 à 00h00",
+   "domicile": "HBC TEICHOIS",
+   "exterieur": "CM FLOIRAC CENON HANDBALL 2",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": false
   },
   {
    "id": "2635505",
@@ -2023,5 +2023,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-16 18:38"
+ "genere_le": "2026-10-17 22:36"
 }

@@ -1,7 +1,7 @@
 {
  "equipe": "-13 G",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u13-masculin-32827/poule-194151/",
- "source_mise_a_jour": "17 oct. 2026 à 16h16",
+ "source_mise_a_jour": "17 oct. 2026 à 17h41",
  "journees": 10,
  "classement": [
   {
@@ -35,33 +35,19 @@
   {
    "rang": 3,
    "club": "CADILLAC - CERONS U13M",
-   "joues": 3,
+   "joues": 4,
    "gagnes": 2,
    "nuls": 0,
-   "perdus": 1,
-   "bp": 77,
-   "bc": 73,
-   "diff": 4,
+   "perdus": 2,
+   "bp": 94,
+   "bc": 106,
+   "diff": -12,
    "points": 7,
    "nous": false,
-   "stats_partielles": false
+   "stats_partielles": true
   },
   {
    "rang": 4,
-   "club": "HANDBALL SAINT MEDARD D'EYRANS 2",
-   "joues": 3,
-   "gagnes": 1,
-   "nuls": 0,
-   "perdus": 2,
-   "bp": 62,
-   "bc": 83,
-   "diff": -21,
-   "points": 5,
-   "nous": false,
-   "stats_partielles": false
-  },
-  {
-   "rang": 5,
    "club": "HBC BAZADAIS",
    "joues": 4,
    "gagnes": 1,
@@ -70,8 +56,22 @@
    "bp": 88,
    "bc": 105,
    "diff": -17,
-   "points": 3,
+   "points": 6,
    "nous": true,
+   "stats_partielles": false
+  },
+  {
+   "rang": 5,
+   "club": "HANDBALL SAINT MEDARD D'EYRANS 2",
+   "joues": 4,
+   "gagnes": 2,
+   "nuls": 0,
+   "perdus": 2,
+   "bp": 95,
+   "bc": 100,
+   "diff": -5,
+   "points": 5,
+   "nous": false,
    "stats_partielles": true
   },
   {
@@ -84,9 +84,9 @@
    "bp": 55,
    "bc": 98,
    "diff": -43,
-   "points": 3,
+   "points": 4,
    "nous": false,
-   "stats_partielles": true
+   "stats_partielles": false
   }
  ],
  "calendrier": [
@@ -217,6 +217,21 @@
    "nous": false
   },
   {
+   "id": "2699064",
+   "journee": 4,
+   "iso": "2026-10-17T14:50",
+   "date": "Samedi 17 octobre 2026 à 14h50",
+   "domicile": "SC MONSEGUR HB",
+   "exterieur": "HANDBALL CLUB SAINT SYMPHORIEN",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": false,
+   "brut": "SAMEDI 17 OCTOBRE 2026 À 14H50 SC MONSEGUR HB - - HANDBALL CLUB SAINT SYMPHORIEN VOIR DÉTAIL DU MATCH"
+  },
+  {
    "id": "2699065",
    "journee": 4,
    "iso": "2026-10-17T15:00",
@@ -237,13 +252,12 @@
    "date": "Samedi 17 octobre 2026 à 16h15",
    "domicile": "HANDBALL SAINT MEDARD D'EYRANS 2",
    "exterieur": "CADILLAC - CERONS U13M",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false,
-   "brut": "SAMEDI 17 OCTOBRE 2026 À 16H15 HANDBALL SAINT MEDARD D'EYRANS 2 - - CADILLAC - CERONS U13M VOIR DÉTAIL DU MATCH"
+   "score_dom": 33,
+   "score_ext": 17,
+   "affiche": "33 – 17",
+   "vainqueur": "dom",
+   "statut": "joué",
+   "nous": false
   },
   {
    "id": "2699068",
@@ -428,20 +442,6 @@
    "nous": false
   },
   {
-   "id": "2699064",
-   "journee": 4,
-   "iso": "",
-   "date": "",
-   "domicile": "SC MONSEGUR HB",
-   "exterieur": "HANDBALL CLUB SAINT SYMPHORIEN",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
    "id": "2699072",
    "journee": 6,
    "iso": "",
@@ -512,5 +512,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-17 17:35"
+ "genere_le": "2026-10-17 22:37"
 }
