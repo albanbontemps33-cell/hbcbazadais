@@ -763,6 +763,20 @@
    "nous": false
   },
   {
+   "id": "2636304",
+   "journee": 8,
+   "iso": "2026-11-28T19:30",
+   "date": "Samedi 28 novembre 2026 à 19h30",
+   "domicile": "AS HB DU FRONSADAIS",
+   "exterieur": "HBC BAZADAIS",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": true
+  },
+  {
    "id": "2636300",
    "journee": 8,
    "iso": "2026-11-28T20:30",
@@ -847,6 +861,20 @@
    "nous": true
   },
   {
+   "id": "2636317",
+   "journee": 10,
+   "iso": "2026-12-12T19:45",
+   "date": "Samedi 12 décembre 2026 à 19h45",
+   "domicile": "AS HB DU FRONSADAIS",
+   "exterieur": "LORMONT HANDBALL HAUTS DE GARONNE",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
    "id": "2636321",
    "journee": 11,
    "iso": "2027-01-09T21:30",
@@ -901,20 +929,6 @@
    "vainqueur": null,
    "statut": "à venir",
    "nous": false
-  },
-  {
-   "id": "2636304",
-   "journee": 8,
-   "iso": "",
-   "date": "",
-   "domicile": "AS HB DU FRONSADAIS",
-   "exterieur": "HBC BAZADAIS",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": true
   },
   {
    "id": "2636305",
@@ -1007,20 +1021,6 @@
    "date": "",
    "domicile": "MEDOC HANDBALL 2",
    "exterieur": "SA GAZINET CESTAS 2",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
-   "id": "2636317",
-   "journee": 10,
-   "iso": "",
-   "date": "",
-   "domicile": "AS HB DU FRONSADAIS",
-   "exterieur": "LORMONT HANDBALL HAUTS DE GARONNE",
    "score_dom": null,
    "score_ext": null,
    "affiche": null,
@@ -2023,5 +2023,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-15 13:28"
+ "genere_le": "2026-10-17 12:43"
 }
