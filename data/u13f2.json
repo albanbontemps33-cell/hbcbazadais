@@ -228,7 +228,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "SAMEDI 17 OCTOBRE 2026 À 15H30 CADILLAC CERONS U13F - - HANDBALL SAINT MEDARD D'EYRANS VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2699718",
@@ -511,5 +512,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-16 23:09"
+ "genere_le": "2026-10-17 17:35"
 }

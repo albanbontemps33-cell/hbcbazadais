@@ -1,7 +1,7 @@
 {
  "equipe": "-13 G",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u13-masculin-32827/poule-194151/",
- "source_mise_a_jour": "16 oct. 2026 à 17h09",
+ "source_mise_a_jour": "17 oct. 2026 à 16h16",
  "journees": 10,
  "classement": [
   {
@@ -63,30 +63,30 @@
   {
    "rang": 5,
    "club": "HBC BAZADAIS",
-   "joues": 3,
-   "gagnes": 0,
+   "joues": 4,
+   "gagnes": 1,
    "nuls": 0,
    "perdus": 3,
-   "bp": 64,
-   "bc": 90,
-   "diff": -26,
+   "bp": 88,
+   "bc": 105,
+   "diff": -17,
    "points": 3,
    "nous": true,
-   "stats_partielles": false
+   "stats_partielles": true
   },
   {
    "rang": 6,
    "club": "AVENIR PAILLETON",
-   "joues": 3,
+   "joues": 4,
    "gagnes": 0,
    "nuls": 0,
-   "perdus": 3,
-   "bp": 40,
-   "bc": 74,
-   "diff": -34,
+   "perdus": 4,
+   "bp": 55,
+   "bc": 98,
+   "diff": -43,
    "points": 3,
    "nous": false,
-   "stats_partielles": false
+   "stats_partielles": true
   }
  ],
  "calendrier": [
@@ -223,11 +223,11 @@
    "date": "Samedi 17 octobre 2026 à 15h00",
    "domicile": "HBC BAZADAIS",
    "exterieur": "AVENIR PAILLETON",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
+   "score_dom": 24,
+   "score_ext": 15,
+   "affiche": "24 – 15",
+   "vainqueur": "dom",
+   "statut": "joué",
    "nous": true
   },
   {
@@ -242,7 +242,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "SAMEDI 17 OCTOBRE 2026 À 16H15 HANDBALL SAINT MEDARD D'EYRANS 2 - - CADILLAC - CERONS U13M VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2699068",
@@ -511,5 +512,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-16 18:39"
+ "genere_le": "2026-10-17 17:35"
 }
