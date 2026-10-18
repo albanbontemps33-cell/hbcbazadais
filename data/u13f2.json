@@ -1,7 +1,7 @@
 {
  "equipe": "-13 F 2",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u13-feminine-32777/poule-194061/",
- "source_mise_a_jour": "17 oct. 2026 à 20h36",
+ "source_mise_a_jour": "18 oct. 2026 à 15h07",
  "journees": 10,
  "classement": [
   {
@@ -21,16 +21,16 @@
   {
    "rang": 2,
    "club": "AVENIR PAILLETON",
-   "joues": 3,
-   "gagnes": 3,
+   "joues": 4,
+   "gagnes": 4,
    "nuls": 0,
    "perdus": 0,
-   "bp": 100,
-   "bc": 43,
-   "diff": 57,
+   "bp": 138,
+   "bc": 59,
+   "diff": 79,
    "points": 9,
    "nous": false,
-   "stats_partielles": false
+   "stats_partielles": true
   },
   {
    "rang": 3,
@@ -77,16 +77,16 @@
   {
    "rang": 6,
    "club": "HBC BAZADAIS 2",
-   "joues": 3,
+   "joues": 4,
    "gagnes": 0,
    "nuls": 0,
-   "perdus": 3,
-   "bp": 31,
-   "bc": 73,
-   "diff": -42,
+   "perdus": 4,
+   "bp": 47,
+   "bc": 111,
+   "diff": -64,
    "points": 3,
    "nous": true,
-   "stats_partielles": false
+   "stats_partielles": true
   }
  ],
  "calendrier": [
@@ -252,11 +252,11 @@
    "date": "Dimanche 18 octobre 2026 à 14h00",
    "domicile": "AVENIR PAILLETON",
    "exterieur": "HBC BAZADAIS 2",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
+   "score_dom": 38,
+   "score_ext": 16,
+   "affiche": "38 – 16",
+   "vainqueur": "dom",
+   "statut": "joué",
    "nous": true
   },
   {
@@ -512,5 +512,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-17 22:37"
+ "genere_le": "2026-10-18 17:53"
 }
