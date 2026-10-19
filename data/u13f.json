@@ -1,7 +1,7 @@
 {
  "equipe": "-13 F 1",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u13-feminine-32777/poule-193722/",
- "source_mise_a_jour": "15 oct. 2026 à 20h25",
+ "source_mise_a_jour": "19 oct. 2026 à 19h48",
  "journees": 10,
  "classement": [
   {
@@ -301,12 +301,12 @@
    "nous": false
   },
   {
-   "id": "2699515",
+   "id": "2699516",
    "journee": 6,
    "iso": "2026-11-14T14:15",
    "date": "Samedi 14 novembre 2026 à 14h15",
-   "domicile": "PE2M HB 1",
-   "exterieur": "SA GAZINET CESTAS",
+   "domicile": "HBC TEICHOIS 1",
+   "exterieur": "HBC CREONNAIS",
    "score_dom": null,
    "score_ext": null,
    "affiche": null,
@@ -315,12 +315,12 @@
    "nous": false
   },
   {
-   "id": "2699516",
+   "id": "2699515",
    "journee": 6,
-   "iso": "2026-11-14T14:15",
-   "date": "Samedi 14 novembre 2026 à 14h15",
-   "domicile": "HBC TEICHOIS 1",
-   "exterieur": "HBC CREONNAIS",
+   "iso": "2026-11-14T15:30",
+   "date": "Samedi 14 novembre 2026 à 15h30",
+   "domicile": "PE2M HB 1",
+   "exterieur": "SA GAZINET CESTAS",
    "score_dom": null,
    "score_ext": null,
    "affiche": null,
@@ -387,8 +387,8 @@
   {
    "id": "2699520",
    "journee": 8,
-   "iso": "2026-11-28T14:30",
-   "date": "Samedi 28 novembre 2026 à 14h30",
+   "iso": "2026-11-28T15:15",
+   "date": "Samedi 28 novembre 2026 à 15h15",
    "domicile": "PE2M HB 1",
    "exterieur": "HBC TEICHOIS 1",
    "score_dom": null,
@@ -511,5 +511,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-15 23:23"
+ "genere_le": "2026-10-20 00:22"
 }

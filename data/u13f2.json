@@ -1,7 +1,7 @@
 {
  "equipe": "-13 F 2",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u13-feminine-32777/poule-194061/",
- "source_mise_a_jour": "18 oct. 2026 à 17h57",
+ "source_mise_a_jour": "19 oct. 2026 à 19h50",
  "journees": 10,
  "classement": [
   {
@@ -301,20 +301,6 @@
    "nous": false
   },
   {
-   "id": "2699725",
-   "journee": 6,
-   "iso": "2026-11-14T13:00",
-   "date": "Samedi 14 novembre 2026 à 13h00",
-   "domicile": "PE2M HB 2",
-   "exterieur": "HBC BAZADAIS 2",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": true
-  },
-  {
    "id": "2699724",
    "journee": 6,
    "iso": "2026-11-14T14:00",
@@ -327,6 +313,20 @@
    "vainqueur": null,
    "statut": "à venir",
    "nous": false
+  },
+  {
+   "id": "2699725",
+   "journee": 6,
+   "iso": "2026-11-14T14:15",
+   "date": "Samedi 14 novembre 2026 à 14h15",
+   "domicile": "PE2M HB 2",
+   "exterieur": "HBC BAZADAIS 2",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": true
   },
   {
    "id": "2699726",
@@ -357,20 +357,6 @@
    "nous": true
   },
   {
-   "id": "2699730",
-   "journee": 8,
-   "iso": "2026-11-28T13:00",
-   "date": "Samedi 28 novembre 2026 à 13h00",
-   "domicile": "PE2M HB 2",
-   "exterieur": "HANDBALL SAINT MEDARD D'EYRANS",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
    "id": "2699731",
    "journee": 8,
    "iso": "2026-11-28T13:00",
@@ -383,6 +369,20 @@
    "vainqueur": null,
    "statut": "à venir",
    "nous": true
+  },
+  {
+   "id": "2699730",
+   "journee": 8,
+   "iso": "2026-11-28T14:00",
+   "date": "Samedi 28 novembre 2026 à 14h00",
+   "domicile": "PE2M HB 2",
+   "exterieur": "HANDBALL SAINT MEDARD D'EYRANS",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": false
   },
   {
    "id": "2699734",
@@ -511,5 +511,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-18 22:43"
+ "genere_le": "2026-10-20 00:23"
 }

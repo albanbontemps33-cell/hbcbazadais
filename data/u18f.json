@@ -1,7 +1,7 @@
 {
  "equipe": "-18 F",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u18-feminine-32775/poule-193706/",
- "source_mise_a_jour": "15 oct. 2026 à 06h37",
+ "source_mise_a_jour": "19 oct. 2026 à 18h10",
  "journees": 10,
  "classement": [
   {
@@ -329,6 +329,20 @@
    "nous": true
   },
   {
+   "id": "2699882",
+   "journee": 8,
+   "iso": "2026-11-28T19:15",
+   "date": "Samedi 28 novembre 2026 à 19h15",
+   "domicile": "CADILLAC - CERONS U18F",
+   "exterieur": "SC MONSEGUR HB",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
    "id": "2699886",
    "journee": 10,
    "iso": "2026-12-12T19:15",
@@ -427,20 +441,6 @@
    "nous": false
   },
   {
-   "id": "2699882",
-   "journee": 8,
-   "iso": "",
-   "date": "",
-   "domicile": "CADILLAC - CERONS U18F",
-   "exterieur": "SC MONSEGUR HB",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
    "id": "2699883",
    "journee": 9,
    "iso": "",
@@ -511,5 +511,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-15 13:28"
+ "genere_le": "2026-10-20 00:22"
 }
