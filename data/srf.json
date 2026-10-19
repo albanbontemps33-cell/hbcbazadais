@@ -1,7 +1,7 @@
 {
  "equipe": "SF",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-16-feminines-honneur-32465/",
- "source_mise_a_jour": "17 oct. 2026 à 11h15",
+ "source_mise_a_jour": "19 oct. 2026 à 10h12",
  "journees": 22,
  "classement": [
   {
@@ -749,6 +749,20 @@
    "nous": true
   },
   {
+   "id": "2636302",
+   "journee": 8,
+   "iso": "2026-11-28T19:00",
+   "date": "Samedi 28 novembre 2026 à 19h00",
+   "domicile": "MEDOC HANDBALL 2",
+   "exterieur": "AVENIR PAILLETON 2",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
    "id": "2636301",
    "journee": 8,
    "iso": "2026-11-28T19:30",
@@ -783,6 +797,20 @@
    "date": "Samedi 28 novembre 2026 à 20h30",
    "domicile": "ARCACHON LA TESTE HBC",
    "exterieur": "PE2M HB 2",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
+   "id": "2636310",
+   "journee": 9,
+   "iso": "2026-12-05T18:30",
+   "date": "Samedi 5 décembre 2026 à 18h30",
+   "domicile": "LORMONT HANDBALL HAUTS DE GARONNE",
+   "exterieur": "HBC PAYS CASTILLONNAIS",
    "score_dom": null,
    "score_ext": null,
    "affiche": null,
@@ -903,20 +931,6 @@
    "nous": false
   },
   {
-   "id": "2636302",
-   "journee": 8,
-   "iso": "",
-   "date": "",
-   "domicile": "MEDOC HANDBALL 2",
-   "exterieur": "AVENIR PAILLETON 2",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
    "id": "2636303",
    "journee": 8,
    "iso": "",
@@ -951,20 +965,6 @@
    "date": "",
    "domicile": "AVENIR PAILLETON 2",
    "exterieur": "ARCACHON LA TESTE HBC",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
-   "id": "2636310",
-   "journee": 9,
-   "iso": "",
-   "date": "",
-   "domicile": "LORMONT HANDBALL HAUTS DE GARONNE",
-   "exterieur": "HBC PAYS CASTILLONNAIS",
    "score_dom": null,
    "score_ext": null,
    "affiche": null,
@@ -2023,5 +2023,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-17 17:34"
+ "genere_le": "2026-10-19 15:12"
 }

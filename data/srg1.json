@@ -1,7 +1,7 @@
 {
  "equipe": "SG1",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-16-masculins-pre-regionale-32457/poule-190872/",
- "source_mise_a_jour": "18 oct. 2026 à 22h27",
+ "source_mise_a_jour": "19 oct. 2026 à 11h57",
  "journees": 22,
  "classement": [
   {
@@ -763,6 +763,20 @@
    "nous": false
   },
   {
+   "id": "2635503",
+   "journee": 8,
+   "iso": "2026-11-28T19:00",
+   "date": "Samedi 28 novembre 2026 à 19h00",
+   "domicile": "CANEJAN HBC 2",
+   "exterieur": "HBC TEICHOIS",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
    "id": "2635508",
    "journee": 8,
    "iso": "2026-11-28T19:00",
@@ -979,20 +993,6 @@
    "date": "Samedi 22 mai 2027 à 18h30",
    "domicile": "AS AMBARESIENNE 2",
    "exterieur": "HBC LIBOURNE 3",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
-   "id": "2635503",
-   "journee": 8,
-   "iso": "",
-   "date": "",
-   "domicile": "CANEJAN HBC 2",
-   "exterieur": "HBC TEICHOIS",
    "score_dom": null,
    "score_ext": null,
    "affiche": null,
@@ -2023,5 +2023,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-19 02:13"
+ "genere_le": "2026-10-19 15:12"
 }
