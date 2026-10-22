@@ -1,7 +1,7 @@
 {
  "equipe": "-18 F",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u18-feminine-32775/poule-193706/",
- "source_mise_a_jour": "19 oct. 2026 à 18h10",
+ "source_mise_a_jour": "22 oct. 2026 à 18h28",
  "journees": 10,
  "classement": [
   {
@@ -273,6 +273,20 @@
    "nous": false
   },
   {
+   "id": "2699876",
+   "journee": 6,
+   "iso": "2026-11-14T15:15",
+   "date": "Samedi 14 novembre 2026 à 15h15",
+   "domicile": "HBC BELIN-BELIET",
+   "exterieur": "CADILLAC - CERONS U18F",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
    "id": "2699875",
    "journee": 6,
    "iso": "2026-11-15T13:00",
@@ -293,6 +307,20 @@
    "date": "Dimanche 15 novembre 2026 à 14h05",
    "domicile": "GRADIGNAN HANDBALL CLUB",
    "exterieur": "SC MONSEGUR HB",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
+   "id": "2699877",
+   "journee": 7,
+   "iso": "2026-11-21T17:00",
+   "date": "Samedi 21 novembre 2026 à 17h00",
+   "domicile": "CADILLAC - CERONS U18F",
+   "exterieur": "GRADIGNAN HANDBALL CLUB",
    "score_dom": null,
    "score_ext": null,
    "affiche": null,
@@ -334,6 +362,20 @@
    "iso": "2026-11-28T19:15",
    "date": "Samedi 28 novembre 2026 à 19h15",
    "domicile": "CADILLAC - CERONS U18F",
+   "exterieur": "SC MONSEGUR HB",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
+   "id": "2699884",
+   "journee": 9,
+   "iso": "2026-12-05T17:30",
+   "date": "Samedi 5 décembre 2026 à 17h30",
+   "domicile": "HBC BELIN-BELIET",
    "exterieur": "SC MONSEGUR HB",
    "score_dom": null,
    "score_ext": null,
@@ -385,34 +427,6 @@
    "nous": false
   },
   {
-   "id": "2699876",
-   "journee": 6,
-   "iso": "",
-   "date": "",
-   "domicile": "HBC BELIN-BELIET",
-   "exterieur": "CADILLAC - CERONS U18F",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
-   "id": "2699877",
-   "journee": 7,
-   "iso": "",
-   "date": "",
-   "domicile": "CADILLAC - CERONS U18F",
-   "exterieur": "GRADIGNAN HANDBALL CLUB",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
    "id": "2699879",
    "journee": 7,
    "iso": "",
@@ -447,20 +461,6 @@
    "date": "",
    "domicile": "LEOGNAN HANDBALL",
    "exterieur": "CADILLAC - CERONS U18F",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
-   "id": "2699884",
-   "journee": 9,
-   "iso": "",
-   "date": "",
-   "domicile": "HBC BELIN-BELIET",
-   "exterieur": "SC MONSEGUR HB",
    "score_dom": null,
    "score_ext": null,
    "affiche": null,
@@ -511,5 +511,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-20 00:22"
+ "genere_le": "2026-10-22 19:10"
 }
