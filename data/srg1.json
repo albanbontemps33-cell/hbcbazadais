@@ -1,7 +1,7 @@
 {
  "equipe": "SG1",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-16-masculins-pre-regionale-32457/poule-190872/",
- "source_mise_a_jour": "21 oct. 2026 à 15h48",
+ "source_mise_a_jour": "22 oct. 2026 à 20h01",
  "journees": 22,
  "classement": [
   {
@@ -875,6 +875,20 @@
    "nous": false
   },
   {
+   "id": "2635517",
+   "journee": 10,
+   "iso": "2026-12-12T19:00",
+   "date": "Samedi 12 décembre 2026 à 19h00",
+   "domicile": "CANEJAN HBC 2",
+   "exterieur": "HBC BAZADAIS 1",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": true
+  },
+  {
    "id": "2635518",
    "journee": 10,
    "iso": "2026-12-12T21:30",
@@ -1111,20 +1125,6 @@
    "vainqueur": null,
    "statut": "à venir",
    "nous": false
-  },
-  {
-   "id": "2635517",
-   "journee": 10,
-   "iso": "",
-   "date": "",
-   "domicile": "CANEJAN HBC 2",
-   "exterieur": "HBC BAZADAIS 1",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": true
   },
   {
    "id": "2635521",
@@ -2023,5 +2023,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-21 19:11"
+ "genere_le": "2026-10-22 23:35"
 }
