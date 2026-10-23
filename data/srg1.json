@@ -1,7 +1,7 @@
 {
  "equipe": "SG1",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-16-masculins-pre-regionale-32457/poule-190872/",
- "source_mise_a_jour": "23 oct. 2026 à 00h56",
+ "source_mise_a_jour": "23 oct. 2026 à 09h30",
  "journees": 22,
  "classement": [
   {
@@ -679,20 +679,6 @@
    "nous": false
   },
   {
-   "id": "2635498",
-   "journee": 7,
-   "iso": "2026-11-14T19:00",
-   "date": "Samedi 14 novembre 2026 à 19h00",
-   "domicile": "CANEJAN HBC 2",
-   "exterieur": "AS AMBARESIENNE 2",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
    "id": "2635500",
    "journee": 7,
    "iso": "2026-11-14T20:00",
@@ -747,6 +733,20 @@
    "vainqueur": null,
    "statut": "à venir",
    "nous": true
+  },
+  {
+   "id": "2635498",
+   "journee": 7,
+   "iso": "2026-11-15T14:00",
+   "date": "Dimanche 15 novembre 2026 à 14h00",
+   "domicile": "CANEJAN HBC 2",
+   "exterieur": "AS AMBARESIENNE 2",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": false
   },
   {
    "id": "2635505",
@@ -2023,5 +2023,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-23 02:49"
+ "genere_le": "2026-10-23 13:37"
 }
