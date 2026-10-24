@@ -48,6 +48,20 @@
   },
   {
    "rang": 4,
+   "club": "GRADIGNAN HANDBALL CLUB",
+   "joues": 3,
+   "gagnes": 1,
+   "nuls": 1,
+   "perdus": 1,
+   "bp": 70,
+   "bc": 71,
+   "diff": -1,
+   "points": 6,
+   "nous": false,
+   "stats_partielles": false
+  },
+  {
+   "rang": 5,
    "club": "HBC BAZADAIS",
    "joues": 4,
    "gagnes": 1,
@@ -56,12 +70,12 @@
    "bp": 91,
    "bc": 102,
    "diff": -11,
-   "points": 5,
+   "points": 6,
    "nous": true,
-   "stats_partielles": true
+   "stats_partielles": false
   },
   {
-   "rang": 5,
+   "rang": 6,
    "club": "SC MONSEGUR HB",
    "joues": 3,
    "gagnes": 0,
@@ -73,20 +87,6 @@
    "points": 4,
    "nous": false,
    "stats_partielles": false
-  },
-  {
-   "rang": 6,
-   "club": "GRADIGNAN HANDBALL CLUB",
-   "joues": 3,
-   "gagnes": 1,
-   "nuls": 1,
-   "perdus": 1,
-   "bp": 70,
-   "bc": 71,
-   "diff": -1,
-   "points": 3,
-   "nous": false,
-   "stats_partielles": true
   }
  ],
  "calendrier": [
@@ -511,5 +511,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-23 13:38"
+ "genere_le": "2026-10-24 17:57"
 }
