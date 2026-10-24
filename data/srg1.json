@@ -508,7 +508,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": true
+   "nous": true,
+   "brut": "SAMEDI 24 OCTOBRE 2026 À 20H30 HBC BAZADAIS 1 - - SC MONSEGUR HB 1 VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2635486",
@@ -2023,5 +2024,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-23 13:37"
+ "genere_le": "2026-10-24 22:49"
 }
