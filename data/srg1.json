@@ -1,11 +1,25 @@
 {
  "equipe": "SG1",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-16-masculins-pre-regionale-32457/poule-190872/",
- "source_mise_a_jour": "23 oct. 2026 à 09h30",
+ "source_mise_a_jour": "24 oct. 2026 à 22h15",
  "journees": 22,
  "classement": [
   {
    "rang": 1,
+   "club": "HBC BAZADAIS 1",
+   "joues": 5,
+   "gagnes": 4,
+   "nuls": 0,
+   "perdus": 1,
+   "bp": 139,
+   "bc": 114,
+   "diff": 25,
+   "points": 13,
+   "nous": true,
+   "stats_partielles": false
+  },
+  {
+   "rang": 2,
    "club": "CANEJAN HBC 2",
    "joues": 4,
    "gagnes": 4,
@@ -19,7 +33,7 @@
    "stats_partielles": false
   },
   {
-   "rang": 2,
+   "rang": 3,
    "club": "ES BLANQUEFORTAISE HBC 2",
    "joues": 4,
    "gagnes": 3,
@@ -33,7 +47,7 @@
    "stats_partielles": false
   },
   {
-   "rang": 3,
+   "rang": 4,
    "club": "AS AMBARESIENNE 2",
    "joues": 4,
    "gagnes": 3,
@@ -44,20 +58,6 @@
    "diff": 30,
    "points": 10,
    "nous": false,
-   "stats_partielles": false
-  },
-  {
-   "rang": 4,
-   "club": "HBC BAZADAIS 1",
-   "joues": 4,
-   "gagnes": 3,
-   "nuls": 0,
-   "perdus": 1,
-   "bp": 94,
-   "bc": 88,
-   "diff": 6,
-   "points": 10,
-   "nous": true,
    "stats_partielles": false
   },
   {
@@ -161,14 +161,14 @@
   {
    "rang": 12,
    "club": "SC MONSEGUR HB 1",
-   "joues": 4,
+   "joues": 5,
    "gagnes": 0,
    "nuls": 0,
-   "perdus": 4,
-   "bp": 113,
-   "bc": 167,
-   "diff": -54,
-   "points": 4,
+   "perdus": 5,
+   "bp": 139,
+   "bc": 212,
+   "diff": -73,
+   "points": 5,
    "nous": false,
    "stats_partielles": false
   }
@@ -503,13 +503,12 @@
    "date": "Samedi 24 octobre 2026 à 20h30",
    "domicile": "HBC BAZADAIS 1",
    "exterieur": "SC MONSEGUR HB 1",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": true,
-   "brut": "SAMEDI 24 OCTOBRE 2026 À 20H30 HBC BAZADAIS 1 - - SC MONSEGUR HB 1 VOIR DÉTAIL DU MATCH"
+   "score_dom": 45,
+   "score_ext": 26,
+   "affiche": "45 – 26",
+   "vainqueur": "dom",
+   "statut": "joué",
+   "nous": true
   },
   {
    "id": "2635486",
@@ -2024,5 +2023,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-24 22:49"
+ "genere_le": "2026-10-25 02:20"
 }

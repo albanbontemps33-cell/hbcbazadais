@@ -1,25 +1,53 @@
 {
  "equipe": "SF",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-16-feminines-honneur-32465/",
- "source_mise_a_jour": "19 oct. 2026 à 12h29",
+ "source_mise_a_jour": "24 oct. 2026 à 22h15",
  "journees": 22,
  "classement": [
   {
    "rang": 1,
    "club": "HANDBALL CUBZAGUAIS",
-   "joues": 4,
+   "joues": 5,
    "gagnes": 4,
-   "nuls": 0,
+   "nuls": 1,
    "perdus": 0,
-   "bp": 123,
-   "bc": 94,
+   "bp": 158,
+   "bc": 129,
    "diff": 29,
-   "points": 12,
+   "points": 14,
    "nous": false,
    "stats_partielles": false
   },
   {
    "rang": 2,
+   "club": "HBC BAZADAIS",
+   "joues": 5,
+   "gagnes": 3,
+   "nuls": 1,
+   "perdus": 1,
+   "bp": 131,
+   "bc": 128,
+   "diff": 3,
+   "points": 12,
+   "nous": true,
+   "stats_partielles": false
+  },
+  {
+   "rang": 3,
+   "club": "LORMONT HANDBALL HAUTS DE GARONNE",
+   "joues": 4,
+   "gagnes": 3,
+   "nuls": 0,
+   "perdus": 1,
+   "bp": 132,
+   "bc": 81,
+   "diff": 51,
+   "points": 10,
+   "nous": false,
+   "stats_partielles": false
+  },
+  {
+   "rang": 4,
    "club": "HAILLAN HANDBALL",
    "joues": 4,
    "gagnes": 3,
@@ -33,21 +61,21 @@
    "stats_partielles": false
   },
   {
-   "rang": 3,
-   "club": "HBC BAZADAIS",
+   "rang": 5,
+   "club": "SA GAZINET CESTAS 2",
    "joues": 4,
-   "gagnes": 3,
+   "gagnes": 2,
    "nuls": 0,
-   "perdus": 1,
-   "bp": 96,
-   "bc": 93,
-   "diff": 3,
-   "points": 10,
-   "nous": true,
+   "perdus": 2,
+   "bp": 108,
+   "bc": 100,
+   "diff": 8,
+   "points": 8,
+   "nous": false,
    "stats_partielles": false
   },
   {
-   "rang": 4,
+   "rang": 6,
    "club": "HANDBALL SAINT MEDARD D'EYRANS",
    "joues": 4,
    "gagnes": 2,
@@ -59,34 +87,6 @@
    "points": 8,
    "nous": false,
    "stats_partielles": false
-  },
-  {
-   "rang": 5,
-   "club": "LORMONT HANDBALL HAUTS DE GARONNE",
-   "joues": 4,
-   "gagnes": 3,
-   "nuls": 0,
-   "perdus": 1,
-   "bp": 132,
-   "bc": 81,
-   "diff": 51,
-   "points": 7,
-   "nous": false,
-   "stats_partielles": true
-  },
-  {
-   "rang": 6,
-   "club": "SA GAZINET CESTAS 2",
-   "joues": 4,
-   "gagnes": 2,
-   "nuls": 0,
-   "perdus": 2,
-   "bp": 108,
-   "bc": 100,
-   "diff": 8,
-   "points": 7,
-   "nous": false,
-   "stats_partielles": true
   },
   {
    "rang": 7,
@@ -503,13 +503,12 @@
    "date": "Samedi 24 octobre 2026 à 18h30",
    "domicile": "HBC BAZADAIS",
    "exterieur": "HANDBALL CUBZAGUAIS",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": true,
-   "brut": "SAMEDI 24 OCTOBRE 2026 À 18H30 HBC BAZADAIS - - HANDBALL CUBZAGUAIS VOIR DÉTAIL DU MATCH"
+   "score_dom": 35,
+   "score_ext": 35,
+   "affiche": "35 – 35",
+   "vainqueur": "nul",
+   "statut": "joué",
+   "nous": true
   },
   {
    "id": "2636282",
@@ -2024,5 +2023,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-24 22:49"
+ "genere_le": "2026-10-25 02:21"
 }
