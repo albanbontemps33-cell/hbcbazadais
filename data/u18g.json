@@ -1,7 +1,7 @@
 {
  "equipe": "-18 G",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u18-masculins-32774/poule-194137/",
- "source_mise_a_jour": "25 oct. 2026 à 14h09",
+ "source_mise_a_jour": "27 oct. 2026 à 17h02",
  "journees": 10,
  "classement": [
   {
@@ -273,6 +273,20 @@
    "nous": false
   },
   {
+   "id": "2700917",
+   "journee": 8,
+   "iso": "2026-11-28T17:00",
+   "date": "Samedi 28 novembre 2026 à 17h00",
+   "domicile": "LEOGNAN HANDBALL 2",
+   "exterieur": "AVENIR PAILLETON",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
    "id": "2700916",
    "journee": 8,
    "iso": "2026-11-28T17:15",
@@ -315,20 +329,6 @@
    "nous": true
   },
   {
-   "id": "2700917",
-   "journee": 8,
-   "iso": "",
-   "date": "",
-   "domicile": "LEOGNAN HANDBALL 2",
-   "exterieur": "AVENIR PAILLETON",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
    "id": "2700920",
    "journee": 9,
    "iso": "",
@@ -357,5 +357,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-25 17:17"
+ "genere_le": "2026-10-27 19:10"
 }
