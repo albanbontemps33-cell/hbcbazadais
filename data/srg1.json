@@ -1,7 +1,7 @@
 {
  "equipe": "SG1",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-16-masculins-pre-regionale-32457/poule-190872/",
- "source_mise_a_jour": "27 oct. 2026 à 17h12",
+ "source_mise_a_jour": "29 oct. 2026 à 10h46",
  "journees": 22,
  "classement": [
   {
@@ -735,20 +735,6 @@
    "nous": true
   },
   {
-   "id": "2635498",
-   "journee": 7,
-   "iso": "2026-11-15T14:00",
-   "date": "Dimanche 15 novembre 2026 à 14h00",
-   "domicile": "CANEJAN HBC 2",
-   "exterieur": "AS AMBARESIENNE 2",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
    "id": "2635505",
    "journee": 8,
    "iso": "2026-11-28T18:30",
@@ -1029,20 +1015,6 @@
    "nous": false
   },
   {
-   "id": "2635564",
-   "journee": 18,
-   "iso": "2027-04-03T18:30",
-   "date": "Samedi 3 avril 2027 à 18h30",
-   "domicile": "AS AMBARESIENNE 2",
-   "exterieur": "CANEJAN HBC 2",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
    "id": "2635578",
    "journee": 20,
    "iso": "2027-05-01T18:30",
@@ -1063,6 +1035,20 @@
    "date": "Samedi 22 mai 2027 à 18h30",
    "domicile": "AS AMBARESIENNE 2",
    "exterieur": "HBC LIBOURNE 3",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
+   "id": "2635498",
+   "journee": 7,
+   "iso": "",
+   "date": "",
+   "domicile": "AS AMBARESIENNE 2",
+   "exterieur": "CANEJAN HBC 2",
    "score_dom": null,
    "score_ext": null,
    "affiche": null,
@@ -1659,6 +1645,20 @@
    "nous": false
   },
   {
+   "id": "2635564",
+   "journee": 18,
+   "iso": "",
+   "date": "",
+   "domicile": "CANEJAN HBC 2",
+   "exterieur": "AS AMBARESIENNE 2",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
    "id": "2635565",
    "journee": 18,
    "iso": "",
@@ -2023,5 +2023,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-27 19:09"
+ "genere_le": "2026-10-29 13:58"
 }

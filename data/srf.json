@@ -1,7 +1,7 @@
 {
  "equipe": "SF",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-16-feminines-honneur-32465/",
- "source_mise_a_jour": "28 oct. 2026 à 16h51",
+ "source_mise_a_jour": "29 oct. 2026 à 10h43",
  "journees": 22,
  "classement": [
   {
@@ -511,20 +511,6 @@
    "nous": true
   },
   {
-   "id": "2636282",
-   "journee": 5,
-   "iso": "2026-10-31T21:00",
-   "date": "Samedi 31 octobre 2026 à 21h00",
-   "domicile": "PE2M HB 2",
-   "exterieur": "LORMONT HANDBALL HAUTS DE GARONNE",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
    "id": "2636287",
    "journee": 5,
    "iso": "2026-10-31T21:15",
@@ -937,6 +923,20 @@
    "date": "Samedi 16 janvier 2027 à 20h00",
    "domicile": "HBC PAYS CASTILLONNAIS",
    "exterieur": "MEDOC HANDBALL 2",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
+   "id": "2636282",
+   "journee": 5,
+   "iso": "2027-02-13T18:30",
+   "date": "Samedi 13 février 2027 à 18h30",
+   "domicile": "PE2M HB 2",
+   "exterieur": "LORMONT HANDBALL HAUTS DE GARONNE",
    "score_dom": null,
    "score_ext": null,
    "affiche": null,
@@ -2023,5 +2023,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-28 23:34"
+ "genere_le": "2026-10-29 13:59"
 }
