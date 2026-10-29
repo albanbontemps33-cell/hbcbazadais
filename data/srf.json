@@ -1,7 +1,7 @@
 {
  "equipe": "SF",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-16-feminines-honneur-32465/",
- "source_mise_a_jour": "29 oct. 2026 à 10h43",
+ "source_mise_a_jour": "29 oct. 2026 à 14h47",
  "journees": 22,
  "classement": [
   {
@@ -903,6 +903,20 @@
    "nous": false
   },
   {
+   "id": "2636323",
+   "journee": 11,
+   "iso": "2027-01-09T18:30",
+   "date": "Samedi 9 janvier 2027 à 18h30",
+   "domicile": "LORMONT HANDBALL HAUTS DE GARONNE",
+   "exterieur": "MEDOC HANDBALL 2",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
    "id": "2636321",
    "journee": 11,
    "iso": "2027-01-09T21:30",
@@ -1077,20 +1091,6 @@
    "date": "",
    "domicile": "HANDBALL SAINT MEDARD D'EYRANS",
    "exterieur": "AS HB DU FRONSADAIS",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
-   "id": "2636323",
-   "journee": 11,
-   "iso": "",
-   "date": "",
-   "domicile": "LORMONT HANDBALL HAUTS DE GARONNE",
-   "exterieur": "MEDOC HANDBALL 2",
    "score_dom": null,
    "score_ext": null,
    "affiche": null,
@@ -2023,5 +2023,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-29 13:59"
+ "genere_le": "2026-10-29 23:45"
 }

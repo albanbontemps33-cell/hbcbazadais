@@ -1,7 +1,7 @@
 {
  "equipe": "SG2",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-16-masculins-promotion-32460/",
- "source_mise_a_jour": "29 oct. 2026 à 10h01",
+ "source_mise_a_jour": "29 oct. 2026 à 22h53",
  "journees": 10,
  "classement": [
   {
@@ -273,6 +273,20 @@
    "nous": true
   },
   {
+   "id": "2676596",
+   "journee": 5,
+   "iso": "2026-10-31T18:00",
+   "date": "Samedi 31 octobre 2026 à 18h00",
+   "domicile": "US MIOS BIGANOS 2",
+   "exterieur": "HBC TEICHOIS 2",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
    "id": "2676597",
    "journee": 5,
    "iso": "2026-10-31T20:30",
@@ -371,20 +385,6 @@
    "nous": false
   },
   {
-   "id": "2676611",
-   "journee": 10,
-   "iso": "2026-11-21T20:30",
-   "date": "Samedi 21 novembre 2026 à 20h30",
-   "domicile": "HBC TEICHOIS 2",
-   "exterieur": "US MIOS BIGANOS 2",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
    "id": "2676604",
    "journee": 8,
    "iso": "2026-11-28T17:45",
@@ -469,20 +469,6 @@
    "nous": true
   },
   {
-   "id": "2676596",
-   "journee": 5,
-   "iso": "",
-   "date": "",
-   "domicile": "HBC TEICHOIS 2",
-   "exterieur": "US MIOS BIGANOS 2",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
    "id": "2676607",
    "journee": 9,
    "iso": "",
@@ -509,7 +495,21 @@
    "vainqueur": null,
    "statut": "à venir",
    "nous": false
+  },
+  {
+   "id": "2676611",
+   "journee": 10,
+   "iso": "",
+   "date": "",
+   "domicile": "US MIOS BIGANOS 2",
+   "exterieur": "HBC TEICHOIS 2",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": false
   }
  ],
- "genere_le": "2026-10-29 13:58"
+ "genere_le": "2026-10-29 23:45"
 }
