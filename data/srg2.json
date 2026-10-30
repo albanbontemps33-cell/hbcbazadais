@@ -1,20 +1,20 @@
 {
  "equipe": "SG2",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-16-masculins-promotion-32460/",
- "source_mise_a_jour": "30 oct. 2026 à 11h37",
+ "source_mise_a_jour": "30 oct. 2026 à 22h05",
  "journees": 10,
  "classement": [
   {
    "rang": 1,
    "club": "ASSOCIATION SPORTIVE DE HANDBALL BRANNAIS",
-   "joues": 4,
-   "gagnes": 4,
+   "joues": 5,
+   "gagnes": 5,
    "nuls": 0,
    "perdus": 0,
-   "bp": 137,
-   "bc": 109,
-   "diff": 28,
-   "points": 12,
+   "bp": 176,
+   "bc": 142,
+   "diff": 34,
+   "points": 15,
    "nous": false,
    "stats_partielles": false
   },
@@ -77,14 +77,14 @@
   {
    "rang": 6,
    "club": "HBC BAZADAIS 2",
-   "joues": 4,
+   "joues": 5,
    "gagnes": 0,
    "nuls": 0,
-   "perdus": 4,
-   "bp": 89,
-   "bc": 135,
-   "diff": -46,
-   "points": 4,
+   "perdus": 5,
+   "bp": 122,
+   "bc": 174,
+   "diff": -52,
+   "points": 5,
    "nous": true,
    "stats_partielles": false
   }
@@ -265,11 +265,11 @@
    "date": "Vendredi 30 octobre 2026 à 20h30",
    "domicile": "ASSOCIATION SPORTIVE DE HANDBALL BRANNAIS",
    "exterieur": "HBC BAZADAIS 2",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
+   "score_dom": 39,
+   "score_ext": 33,
+   "affiche": "39 – 33",
+   "vainqueur": "dom",
+   "statut": "joué",
    "nous": true
   },
   {
@@ -511,5 +511,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-30 13:53"
+ "genere_le": "2026-10-30 23:18"
 }

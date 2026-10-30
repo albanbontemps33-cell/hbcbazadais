@@ -1,7 +1,7 @@
 {
  "equipe": "-13 F 1",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u13-feminine-32777/poule-193722/",
- "source_mise_a_jour": "19 oct. 2026 à 19h48",
+ "source_mise_a_jour": "30 oct. 2026 à 15h36",
  "journees": 10,
  "classement": [
   {
@@ -427,6 +427,20 @@
    "nous": false
   },
   {
+   "id": "2699523",
+   "journee": 9,
+   "iso": "2026-12-06T10:30",
+   "date": "Dimanche 6 décembre 2026 à 10h30",
+   "domicile": "SA GAZINET CESTAS",
+   "exterieur": "HBC CREONNAIS",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
    "id": "2699528",
    "journee": 10,
    "iso": "2026-12-12T12:30",
@@ -469,20 +483,6 @@
    "nous": false
   },
   {
-   "id": "2699523",
-   "journee": 9,
-   "iso": "",
-   "date": "",
-   "domicile": "SA GAZINET CESTAS",
-   "exterieur": "HBC CREONNAIS",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
    "id": "2699526",
    "journee": 10,
    "iso": "",
@@ -511,5 +511,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-20 00:22"
+ "genere_le": "2026-10-30 23:19"
 }
