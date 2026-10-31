@@ -1,7 +1,7 @@
 {
  "equipe": "SG2",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-16-masculins-promotion-32460/",
- "source_mise_a_jour": "31 oct. 2026 à 10h17",
+ "source_mise_a_jour": "31 oct. 2026 à 19h50",
  "journees": 10,
  "classement": [
   {
@@ -21,28 +21,28 @@
   {
    "rang": 2,
    "club": "US MIOS BIGANOS 2",
-   "joues": 4,
-   "gagnes": 3,
+   "joues": 5,
+   "gagnes": 4,
    "nuls": 0,
    "perdus": 1,
-   "bp": 133,
-   "bc": 110,
-   "diff": 23,
-   "points": 10,
+   "bp": 163,
+   "bc": 134,
+   "diff": 29,
+   "points": 13,
    "nous": false,
    "stats_partielles": false
   },
   {
    "rang": 3,
    "club": "HBC TEICHOIS 2",
-   "joues": 4,
+   "joues": 5,
    "gagnes": 3,
    "nuls": 0,
-   "perdus": 1,
-   "bp": 127,
-   "bc": 111,
-   "diff": 16,
-   "points": 10,
+   "perdus": 2,
+   "bp": 151,
+   "bc": 141,
+   "diff": 10,
+   "points": 11,
    "nous": false,
    "stats_partielles": false
   },
@@ -279,11 +279,11 @@
    "date": "Samedi 31 octobre 2026 à 18h00",
    "domicile": "US MIOS BIGANOS 2",
    "exterieur": "HBC TEICHOIS 2",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
+   "score_dom": 30,
+   "score_ext": 24,
+   "affiche": "30 – 24",
+   "vainqueur": "dom",
+   "statut": "joué",
    "nous": false
   },
   {
@@ -298,7 +298,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "SAMEDI 31 OCTOBRE 2026 À 20H30 ST MEDARD HANDBALL 2 - - HANDBALL CLUB SAINT SYMPHORIEN VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2676598",
@@ -511,5 +512,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-31 13:26"
+ "genere_le": "2026-10-31 22:32"
 }

@@ -1,7 +1,7 @@
 {
  "equipe": "SF",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-16-feminines-honneur-32465/",
- "source_mise_a_jour": "31 oct. 2026 à 06h47",
+ "source_mise_a_jour": "31 oct. 2026 à 18h52",
  "journees": 22,
  "classement": [
   {
@@ -522,7 +522,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "SAMEDI 31 OCTOBRE 2026 À 21H15 AVENIR PAILLETON 2 - - HAILLAN HANDBALL VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2636283",
@@ -2023,5 +2024,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-31 13:27"
+ "genere_le": "2026-10-31 22:32"
 }

@@ -1,7 +1,7 @@
 {
  "equipe": "SG1",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-16-masculins-pre-regionale-32457/poule-190872/",
- "source_mise_a_jour": "31 oct. 2026 à 06h47",
+ "source_mise_a_jour": "31 oct. 2026 à 20h46",
  "journees": 22,
  "classement": [
   {
@@ -91,30 +91,30 @@
   {
    "rang": 7,
    "club": "CM FLOIRAC CENON HANDBALL 2",
-   "joues": 3,
-   "gagnes": 2,
+   "joues": 4,
+   "gagnes": 3,
    "nuls": 0,
    "perdus": 1,
-   "bp": 84,
-   "bc": 60,
-   "diff": 24,
+   "bp": 114,
+   "bc": 85,
+   "diff": 29,
    "points": 6,
    "nous": false,
-   "stats_partielles": false
+   "stats_partielles": true
   },
   {
    "rang": 8,
    "club": "ST MEDARD HANDBALL 2",
-   "joues": 4,
+   "joues": 5,
    "gagnes": 1,
    "nuls": 0,
-   "perdus": 3,
-   "bp": 115,
-   "bc": 137,
-   "diff": -22,
+   "perdus": 4,
+   "bp": 140,
+   "bc": 167,
+   "diff": -27,
    "points": 6,
    "nous": false,
-   "stats_partielles": false
+   "stats_partielles": true
   },
   {
    "rang": 9,
@@ -522,7 +522,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "SAMEDI 31 OCTOBRE 2026 À 18H30 AS AMBARESIENNE 2 - - GRADIGNAN HANDBALL CLUB VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2635487",
@@ -531,11 +532,11 @@
    "date": "Samedi 31 octobre 2026 à 19h00",
    "domicile": "CM FLOIRAC CENON HANDBALL 2",
    "exterieur": "ST MEDARD HANDBALL 2",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
+   "score_dom": 30,
+   "score_ext": 25,
+   "affiche": "30 – 25",
+   "vainqueur": "dom",
+   "statut": "joué",
    "nous": false
   },
   {
@@ -550,7 +551,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "SAMEDI 31 OCTOBRE 2026 À 21H00 HBC TEICHOIS - - HBC LIBOURNE 3 VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2635488",
@@ -2023,5 +2025,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-31 13:26"
+ "genere_le": "2026-10-31 22:31"
 }
