@@ -1,7 +1,7 @@
 {
  "equipe": "SG2",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-16-masculins-promotion-32460/",
- "source_mise_a_jour": "30 oct. 2026 à 22h05",
+ "source_mise_a_jour": "31 oct. 2026 à 10h17",
  "journees": 10,
  "classement": [
   {
@@ -385,6 +385,20 @@
    "nous": false
   },
   {
+   "id": "2676611",
+   "journee": 10,
+   "iso": "2026-11-21T20:30",
+   "date": "Samedi 21 novembre 2026 à 20h30",
+   "domicile": "HBC TEICHOIS 2",
+   "exterieur": "US MIOS BIGANOS 2",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
    "id": "2676604",
    "journee": 8,
    "iso": "2026-11-28T17:45",
@@ -495,21 +509,7 @@
    "vainqueur": null,
    "statut": "à venir",
    "nous": false
-  },
-  {
-   "id": "2676611",
-   "journee": 10,
-   "iso": "",
-   "date": "",
-   "domicile": "HBC TEICHOIS 2",
-   "exterieur": "US MIOS BIGANOS 2",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false
   }
  ],
- "genere_le": "2026-10-30 23:18"
+ "genere_le": "2026-10-31 13:26"
 }
