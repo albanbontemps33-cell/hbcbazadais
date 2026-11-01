@@ -1,11 +1,25 @@
 {
  "equipe": "SG1",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-16-masculins-pre-regionale-32457/poule-190872/",
- "source_mise_a_jour": "1 nov. 2026 à 07h02",
+ "source_mise_a_jour": "1 nov. 2026 à 19h30",
  "journees": 22,
  "classement": [
   {
    "rang": 1,
+   "club": "CANEJAN HBC 2",
+   "joues": 5,
+   "gagnes": 5,
+   "nuls": 0,
+   "perdus": 0,
+   "bp": 191,
+   "bc": 132,
+   "diff": 59,
+   "points": 15,
+   "nous": false,
+   "stats_partielles": false
+  },
+  {
+   "rang": 2,
    "club": "HBC BAZADAIS 1",
    "joues": 5,
    "gagnes": 4,
@@ -19,7 +33,7 @@
    "stats_partielles": false
   },
   {
-   "rang": 2,
+   "rang": 3,
    "club": "AS AMBARESIENNE 2",
    "joues": 5,
    "gagnes": 4,
@@ -33,35 +47,35 @@
    "stats_partielles": false
   },
   {
-   "rang": 3,
-   "club": "CANEJAN HBC 2",
-   "joues": 4,
-   "gagnes": 4,
-   "nuls": 0,
-   "perdus": 0,
-   "bp": 157,
-   "bc": 100,
-   "diff": 57,
-   "points": 12,
-   "nous": false,
-   "stats_partielles": false
-  },
-  {
    "rang": 4,
    "club": "ES BLANQUEFORTAISE HBC 2",
-   "joues": 4,
+   "joues": 5,
    "gagnes": 3,
    "nuls": 0,
-   "perdus": 1,
-   "bp": 142,
-   "bc": 110,
-   "diff": 32,
-   "points": 10,
+   "perdus": 2,
+   "bp": 174,
+   "bc": 144,
+   "diff": 30,
+   "points": 11,
    "nous": false,
    "stats_partielles": false
   },
   {
    "rang": 5,
+   "club": "HBC TEICHOIS",
+   "joues": 4,
+   "gagnes": 3,
+   "nuls": 0,
+   "perdus": 1,
+   "bp": 126,
+   "bc": 103,
+   "diff": 23,
+   "points": 10,
+   "nous": false,
+   "stats_partielles": false
+  },
+  {
+   "rang": 6,
    "club": "CM FLOIRAC CENON HANDBALL 2",
    "joues": 4,
    "gagnes": 3,
@@ -75,7 +89,7 @@
    "stats_partielles": false
   },
   {
-   "rang": 6,
+   "rang": 7,
    "club": "HBC LIBOURNE 3",
    "joues": 5,
    "gagnes": 2,
@@ -84,26 +98,40 @@
    "bp": 155,
    "bc": 175,
    "diff": -20,
-   "points": 8,
+   "points": 9,
    "nous": false,
-   "stats_partielles": true
-  },
-  {
-   "rang": 7,
-   "club": "HBC TEICHOIS",
-   "joues": 4,
-   "gagnes": 3,
-   "nuls": 0,
-   "perdus": 1,
-   "bp": 126,
-   "bc": 103,
-   "diff": 23,
-   "points": 7,
-   "nous": false,
-   "stats_partielles": true
+   "stats_partielles": false
   },
   {
    "rang": 8,
+   "club": "BORDEAUX ETUDIANTS CLUB",
+   "joues": 5,
+   "gagnes": 2,
+   "nuls": 0,
+   "perdus": 3,
+   "bp": 152,
+   "bc": 161,
+   "diff": -9,
+   "points": 9,
+   "nous": false,
+   "stats_partielles": false
+  },
+  {
+   "rang": 9,
+   "club": "HAILLAN HANDBALL 1",
+   "joues": 5,
+   "gagnes": 1,
+   "nuls": 0,
+   "perdus": 4,
+   "bp": 128,
+   "bc": 158,
+   "diff": -30,
+   "points": 7,
+   "nous": false,
+   "stats_partielles": false
+  },
+  {
+   "rang": 10,
    "club": "GRADIGNAN HANDBALL CLUB",
    "joues": 5,
    "gagnes": 1,
@@ -117,7 +145,7 @@
    "stats_partielles": false
   },
   {
-   "rang": 9,
+   "rang": 11,
    "club": "ST MEDARD HANDBALL 2",
    "joues": 5,
    "gagnes": 1,
@@ -127,34 +155,6 @@
    "bc": 167,
    "diff": -27,
    "points": 7,
-   "nous": false,
-   "stats_partielles": false
-  },
-  {
-   "rang": 10,
-   "club": "BORDEAUX ETUDIANTS CLUB",
-   "joues": 4,
-   "gagnes": 1,
-   "nuls": 0,
-   "perdus": 3,
-   "bp": 125,
-   "bc": 135,
-   "diff": -10,
-   "points": 6,
-   "nous": false,
-   "stats_partielles": false
-  },
-  {
-   "rang": 11,
-   "club": "HAILLAN HANDBALL 1",
-   "joues": 4,
-   "gagnes": 1,
-   "nuls": 0,
-   "perdus": 3,
-   "bp": 102,
-   "bc": 131,
-   "diff": -29,
-   "points": 6,
    "nous": false,
    "stats_partielles": false
   },
@@ -559,13 +559,12 @@
    "date": "Dimanche 1er novembre 2026 à 14h00",
    "domicile": "CANEJAN HBC 2",
    "exterieur": "ES BLANQUEFORTAISE HBC 2",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false,
-   "brut": "DIMANCHE 1 NOVEMBRE 2026 À 14H00 CANEJAN HBC 2 - - ES BLANQUEFORTAISE HBC 2 VOIR DÉTAIL DU MATCH"
+   "score_dom": 34,
+   "score_ext": 32,
+   "affiche": "34 – 32",
+   "vainqueur": "dom",
+   "statut": "joué",
+   "nous": false
   },
   {
    "id": "2635490",
@@ -574,11 +573,11 @@
    "date": "Dimanche 1er novembre 2026 à 15h00",
    "domicile": "BORDEAUX ETUDIANTS CLUB",
    "exterieur": "HAILLAN HANDBALL 1",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
+   "score_dom": 27,
+   "score_ext": 26,
+   "affiche": "27 – 26",
+   "vainqueur": "dom",
+   "statut": "joué",
    "nous": false
   },
   {
@@ -2024,5 +2023,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-11-01 14:21"
+ "genere_le": "2026-11-01 23:00"
 }
