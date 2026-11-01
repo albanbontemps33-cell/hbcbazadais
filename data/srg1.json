@@ -1,7 +1,7 @@
 {
  "equipe": "SG1",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-16-masculins-pre-regionale-32457/poule-190872/",
- "source_mise_a_jour": "31 oct. 2026 à 22h36",
+ "source_mise_a_jour": "1 nov. 2026 à 07h02",
  "journees": 22,
  "classement": [
   {
@@ -564,7 +564,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "DIMANCHE 1 NOVEMBRE 2026 À 14H00 CANEJAN HBC 2 - - ES BLANQUEFORTAISE HBC 2 VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2635490",
@@ -2023,5 +2024,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-11-01 02:14"
+ "genere_le": "2026-11-01 14:21"
 }

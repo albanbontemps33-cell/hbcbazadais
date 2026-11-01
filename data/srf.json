@@ -537,7 +537,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "DIMANCHE 1 NOVEMBRE 2026 À 14H00 MEDOC HANDBALL 2 - - AS HB DU FRONSADAIS VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2636284",
@@ -551,7 +552,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "DIMANCHE 1 NOVEMBRE 2026 À 14H00 SA GAZINET CESTAS 2 - - HANDBALL SAINT MEDARD D'EYRANS VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2636285",
@@ -565,7 +567,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "DIMANCHE 1 NOVEMBRE 2026 À 14H00 ARCACHON LA TESTE HBC - - HBC PAYS CASTILLONNAIS VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2636293",
@@ -2024,5 +2027,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-31 22:32"
+ "genere_le": "2026-11-01 14:21"
 }
