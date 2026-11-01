@@ -1,7 +1,7 @@
 {
  "equipe": "SG2",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-16-masculins-promotion-32460/",
- "source_mise_a_jour": "31 oct. 2026 à 19h50",
+ "source_mise_a_jour": "31 oct. 2026 à 22h05",
  "journees": 10,
  "classement": [
   {
@@ -49,30 +49,30 @@
   {
    "rang": 4,
    "club": "HANDBALL CLUB SAINT SYMPHORIEN",
-   "joues": 4,
+   "joues": 5,
    "gagnes": 1,
-   "nuls": 0,
+   "nuls": 1,
    "perdus": 3,
-   "bp": 111,
-   "bc": 119,
+   "bp": 136,
+   "bc": 144,
    "diff": -8,
    "points": 6,
    "nous": false,
-   "stats_partielles": false
+   "stats_partielles": true
   },
   {
    "rang": 5,
    "club": "ST MEDARD HANDBALL 2",
-   "joues": 4,
+   "joues": 5,
    "gagnes": 1,
-   "nuls": 0,
+   "nuls": 1,
    "perdus": 3,
-   "bp": 109,
-   "bc": 122,
+   "bp": 134,
+   "bc": 147,
    "diff": -13,
    "points": 6,
    "nous": false,
-   "stats_partielles": false
+   "stats_partielles": true
   },
   {
    "rang": 6,
@@ -293,13 +293,12 @@
    "date": "Samedi 31 octobre 2026 à 20h30",
    "domicile": "ST MEDARD HANDBALL 2",
    "exterieur": "HANDBALL CLUB SAINT SYMPHORIEN",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false,
-   "brut": "SAMEDI 31 OCTOBRE 2026 À 20H30 ST MEDARD HANDBALL 2 - - HANDBALL CLUB SAINT SYMPHORIEN VOIR DÉTAIL DU MATCH"
+   "score_dom": 25,
+   "score_ext": 25,
+   "affiche": "25 – 25",
+   "vainqueur": "nul",
+   "statut": "joué",
+   "nous": false
   },
   {
    "id": "2676598",
@@ -512,5 +511,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-31 22:32"
+ "genere_le": "2026-11-01 02:14"
 }

@@ -1,7 +1,7 @@
 {
  "equipe": "SG1",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-16-masculins-pre-regionale-32457/poule-190872/",
- "source_mise_a_jour": "31 oct. 2026 à 20h46",
+ "source_mise_a_jour": "31 oct. 2026 à 22h36",
  "journees": 22,
  "classement": [
   {
@@ -20,6 +20,20 @@
   },
   {
    "rang": 2,
+   "club": "AS AMBARESIENNE 2",
+   "joues": 5,
+   "gagnes": 4,
+   "nuls": 0,
+   "perdus": 1,
+   "bp": 173,
+   "bc": 135,
+   "diff": 38,
+   "points": 13,
+   "nous": false,
+   "stats_partielles": false
+  },
+  {
+   "rang": 3,
    "club": "CANEJAN HBC 2",
    "joues": 4,
    "gagnes": 4,
@@ -33,7 +47,7 @@
    "stats_partielles": false
   },
   {
-   "rang": 3,
+   "rang": 4,
    "club": "ES BLANQUEFORTAISE HBC 2",
    "joues": 4,
    "gagnes": 3,
@@ -47,49 +61,7 @@
    "stats_partielles": false
   },
   {
-   "rang": 4,
-   "club": "AS AMBARESIENNE 2",
-   "joues": 4,
-   "gagnes": 3,
-   "nuls": 0,
-   "perdus": 1,
-   "bp": 141,
-   "bc": 111,
-   "diff": 30,
-   "points": 10,
-   "nous": false,
-   "stats_partielles": false
-  },
-  {
    "rang": 5,
-   "club": "HBC LIBOURNE 3",
-   "joues": 4,
-   "gagnes": 2,
-   "nuls": 0,
-   "perdus": 2,
-   "bp": 126,
-   "bc": 140,
-   "diff": -14,
-   "points": 8,
-   "nous": false,
-   "stats_partielles": false
-  },
-  {
-   "rang": 6,
-   "club": "HBC TEICHOIS",
-   "joues": 3,
-   "gagnes": 2,
-   "nuls": 0,
-   "perdus": 1,
-   "bp": 91,
-   "bc": 74,
-   "diff": 17,
-   "points": 7,
-   "nous": false,
-   "stats_partielles": false
-  },
-  {
-   "rang": 7,
    "club": "CM FLOIRAC CENON HANDBALL 2",
    "joues": 4,
    "gagnes": 3,
@@ -98,12 +70,54 @@
    "bp": 114,
    "bc": 85,
    "diff": 29,
-   "points": 6,
+   "points": 9,
+   "nous": false,
+   "stats_partielles": false
+  },
+  {
+   "rang": 6,
+   "club": "HBC LIBOURNE 3",
+   "joues": 5,
+   "gagnes": 2,
+   "nuls": 0,
+   "perdus": 3,
+   "bp": 155,
+   "bc": 175,
+   "diff": -20,
+   "points": 8,
+   "nous": false,
+   "stats_partielles": true
+  },
+  {
+   "rang": 7,
+   "club": "HBC TEICHOIS",
+   "joues": 4,
+   "gagnes": 3,
+   "nuls": 0,
+   "perdus": 1,
+   "bp": 126,
+   "bc": 103,
+   "diff": 23,
+   "points": 7,
    "nous": false,
    "stats_partielles": true
   },
   {
    "rang": 8,
+   "club": "GRADIGNAN HANDBALL CLUB",
+   "joues": 5,
+   "gagnes": 1,
+   "nuls": 0,
+   "perdus": 4,
+   "bp": 138,
+   "bc": 183,
+   "diff": -45,
+   "points": 7,
+   "nous": false,
+   "stats_partielles": false
+  },
+  {
+   "rang": 9,
    "club": "ST MEDARD HANDBALL 2",
    "joues": 5,
    "gagnes": 1,
@@ -112,21 +126,7 @@
    "bp": 140,
    "bc": 167,
    "diff": -27,
-   "points": 6,
-   "nous": false,
-   "stats_partielles": true
-  },
-  {
-   "rang": 9,
-   "club": "HAILLAN HANDBALL 1",
-   "joues": 4,
-   "gagnes": 1,
-   "nuls": 0,
-   "perdus": 3,
-   "bp": 102,
-   "bc": 131,
-   "diff": -29,
-   "points": 6,
+   "points": 7,
    "nous": false,
    "stats_partielles": false
   },
@@ -146,14 +146,14 @@
   },
   {
    "rang": 11,
-   "club": "GRADIGNAN HANDBALL CLUB",
+   "club": "HAILLAN HANDBALL 1",
    "joues": 4,
    "gagnes": 1,
    "nuls": 0,
    "perdus": 3,
-   "bp": 114,
-   "bc": 151,
-   "diff": -37,
+   "bp": 102,
+   "bc": 131,
+   "diff": -29,
    "points": 6,
    "nous": false,
    "stats_partielles": false
@@ -517,13 +517,12 @@
    "date": "Samedi 31 octobre 2026 à 18h30",
    "domicile": "AS AMBARESIENNE 2",
    "exterieur": "GRADIGNAN HANDBALL CLUB",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false,
-   "brut": "SAMEDI 31 OCTOBRE 2026 À 18H30 AS AMBARESIENNE 2 - - GRADIGNAN HANDBALL CLUB VOIR DÉTAIL DU MATCH"
+   "score_dom": 32,
+   "score_ext": 24,
+   "affiche": "32 – 24",
+   "vainqueur": "dom",
+   "statut": "joué",
+   "nous": false
   },
   {
    "id": "2635487",
@@ -546,13 +545,12 @@
    "date": "Samedi 31 octobre 2026 à 21h00",
    "domicile": "HBC TEICHOIS",
    "exterieur": "HBC LIBOURNE 3",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false,
-   "brut": "SAMEDI 31 OCTOBRE 2026 À 21H00 HBC TEICHOIS - - HBC LIBOURNE 3 VOIR DÉTAIL DU MATCH"
+   "score_dom": 35,
+   "score_ext": 29,
+   "affiche": "35 – 29",
+   "vainqueur": "dom",
+   "statut": "joué",
+   "nous": false
   },
   {
    "id": "2635488",
@@ -2025,5 +2023,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-31 22:31"
+ "genere_le": "2026-11-01 02:14"
 }
