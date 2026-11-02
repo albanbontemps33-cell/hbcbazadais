@@ -1,7 +1,7 @@
 {
  "equipe": "-18 F",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u18-feminine-32775/poule-193706/",
- "source_mise_a_jour": "1 nov. 2026 à 15h18",
+ "source_mise_a_jour": "1 nov. 2026 à 23h56",
  "journees": 10,
  "classement": [
   {
@@ -399,6 +399,20 @@
    "nous": false
   },
   {
+   "id": "2699881",
+   "journee": 8,
+   "iso": "2026-11-29T13:10",
+   "date": "Dimanche 29 novembre 2026 à 13h10",
+   "domicile": "GRADIGNAN HANDBALL CLUB",
+   "exterieur": "LEOGNAN HANDBALL",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
    "id": "2699884",
    "journee": 9,
    "iso": "2026-12-05T17:30",
@@ -411,6 +425,20 @@
    "vainqueur": null,
    "statut": "à venir",
    "nous": false
+  },
+  {
+   "id": "2699885",
+   "journee": 9,
+   "iso": "2026-12-05T17:40",
+   "date": "Samedi 5 décembre 2026 à 17h40",
+   "domicile": "GRADIGNAN HANDBALL CLUB",
+   "exterieur": "HBC BAZADAIS",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": true
   },
   {
    "id": "2699883",
@@ -455,34 +483,6 @@
    "nous": false
   },
   {
-   "id": "2699881",
-   "journee": 8,
-   "iso": "",
-   "date": "",
-   "domicile": "GRADIGNAN HANDBALL CLUB",
-   "exterieur": "LEOGNAN HANDBALL",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
-   "id": "2699885",
-   "journee": 9,
-   "iso": "",
-   "date": "",
-   "domicile": "GRADIGNAN HANDBALL CLUB",
-   "exterieur": "HBC BAZADAIS",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": true
-  },
-  {
    "id": "2699887",
    "journee": 10,
    "iso": "",
@@ -511,5 +511,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-11-01 23:01"
+ "genere_le": "2026-11-02 02:31"
 }
