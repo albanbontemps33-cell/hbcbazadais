@@ -1,7 +1,7 @@
 {
  "equipe": "SG1",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-16-masculins-pre-regionale-32457/poule-190872/",
- "source_mise_a_jour": "1 nov. 2026 à 19h30",
+ "source_mise_a_jour": "2 nov. 2026 à 12h52",
  "journees": 22,
  "classement": [
   {
@@ -679,6 +679,20 @@
    "nous": false
   },
   {
+   "id": "2635498",
+   "journee": 7,
+   "iso": "2026-11-14T19:00",
+   "date": "Samedi 14 novembre 2026 à 19h00",
+   "domicile": "AS AMBARESIENNE 2",
+   "exterieur": "CANEJAN HBC 2",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
    "id": "2635500",
    "journee": 7,
    "iso": "2026-11-14T20:00",
@@ -805,6 +819,20 @@
    "nous": true
   },
   {
+   "id": "2635510",
+   "journee": 9,
+   "iso": "2026-12-05T18:45",
+   "date": "Samedi 5 décembre 2026 à 18h45",
+   "domicile": "BORDEAUX ETUDIANTS CLUB",
+   "exterieur": "CANEJAN HBC 2",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
    "id": "2635513",
    "journee": 9,
    "iso": "2026-12-05T19:00",
@@ -895,6 +923,20 @@
    "date": "Samedi 12 décembre 2026 à 21h30",
    "domicile": "ES BLANQUEFORTAISE HBC 2",
    "exterieur": "ST MEDARD HANDBALL 2",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
+   "id": "2635515",
+   "journee": 10,
+   "iso": "2026-12-13T13:00",
+   "date": "Dimanche 13 décembre 2026 à 13h00",
+   "domicile": "BORDEAUX ETUDIANTS CLUB",
+   "exterieur": "HBC TEICHOIS",
    "score_dom": null,
    "score_ext": null,
    "affiche": null,
@@ -1043,54 +1085,12 @@
    "nous": false
   },
   {
-   "id": "2635498",
-   "journee": 7,
-   "iso": "",
-   "date": "",
-   "domicile": "AS AMBARESIENNE 2",
-   "exterieur": "CANEJAN HBC 2",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
    "id": "2635506",
    "journee": 8,
    "iso": "",
    "date": "",
    "domicile": "HAILLAN HANDBALL 1",
    "exterieur": "HBC LIBOURNE 3",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
-   "id": "2635510",
-   "journee": 9,
-   "iso": "",
-   "date": "",
-   "domicile": "BORDEAUX ETUDIANTS CLUB",
-   "exterieur": "CANEJAN HBC 2",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
-   "id": "2635515",
-   "journee": 10,
-   "iso": "",
-   "date": "",
-   "domicile": "BORDEAUX ETUDIANTS CLUB",
-   "exterieur": "HBC TEICHOIS",
    "score_dom": null,
    "score_ext": null,
    "affiche": null,
@@ -2023,5 +2023,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-11-01 23:00"
+ "genere_le": "2026-11-02 16:48"
 }

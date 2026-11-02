@@ -1,7 +1,7 @@
 {
  "equipe": "-15 F",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u15-feminine-32776/poule-194055/",
- "source_mise_a_jour": "14 oct. 2026 à 18h34",
+ "source_mise_a_jour": "2 nov. 2026 à 09h16",
  "journees": 10,
  "classement": [
   {
@@ -301,6 +301,20 @@
    "nous": true
   },
   {
+   "id": "2699854",
+   "journee": 9,
+   "iso": "2026-12-05T14:15",
+   "date": "Samedi 5 décembre 2026 à 14h15",
+   "domicile": "BORDEAUX ETUDIANTS CLUB",
+   "exterieur": "HBC BAZADAIS",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": true
+  },
+  {
    "id": "2699855",
    "journee": 9,
    "iso": "2026-12-05T15:30",
@@ -329,20 +343,6 @@
    "nous": false
   },
   {
-   "id": "2699854",
-   "journee": 9,
-   "iso": "",
-   "date": "",
-   "domicile": "BORDEAUX ETUDIANTS CLUB",
-   "exterieur": "HBC BAZADAIS",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": true
-  },
-  {
    "id": "2699858",
    "journee": 10,
    "iso": "",
@@ -357,5 +357,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-14 23:42"
+ "genere_le": "2026-11-02 16:49"
 }

@@ -1,7 +1,7 @@
 {
  "equipe": "-13 F 2",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u13-feminine-32777/poule-194061/",
- "source_mise_a_jour": "25 oct. 2026 à 14h16",
+ "source_mise_a_jour": "2 nov. 2026 à 09h18",
  "journees": 10,
  "classement": [
   {
@@ -371,6 +371,20 @@
    "nous": false
   },
   {
+   "id": "2699727",
+   "journee": 7,
+   "iso": "2026-11-22T14:00",
+   "date": "Dimanche 22 novembre 2026 à 14h00",
+   "domicile": "AVENIR PAILLETON",
+   "exterieur": "SC MONSEGUR HB",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
    "id": "2699731",
    "journee": 8,
    "iso": "2026-11-28T13:00",
@@ -469,20 +483,6 @@
    "nous": false
   },
   {
-   "id": "2699727",
-   "journee": 7,
-   "iso": "",
-   "date": "",
-   "domicile": "AVENIR PAILLETON",
-   "exterieur": "SC MONSEGUR HB",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
    "id": "2699736",
    "journee": 10,
    "iso": "",
@@ -511,5 +511,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-25 17:18"
+ "genere_le": "2026-11-02 16:49"
 }
