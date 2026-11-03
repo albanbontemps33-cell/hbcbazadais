@@ -1,7 +1,7 @@
 {
  "equipe": "SG1",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-16-masculins-pre-regionale-32457/poule-190872/",
- "source_mise_a_jour": "2 nov. 2026 à 12h52",
+ "source_mise_a_jour": "2 nov. 2026 à 16h26",
  "journees": 22,
  "classement": [
   {
@@ -987,6 +987,20 @@
    "nous": false
   },
   {
+   "id": "2635524",
+   "journee": 11,
+   "iso": "2027-01-09T20:30",
+   "date": "Samedi 9 janvier 2027 à 20h30",
+   "domicile": "CM FLOIRAC CENON HANDBALL 2",
+   "exterieur": "CANEJAN HBC 2",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
    "id": "2635525",
    "journee": 11,
    "iso": "2027-01-09T20:30",
@@ -1147,20 +1161,6 @@
    "date": "",
    "domicile": "SC MONSEGUR HB 1",
    "exterieur": "ES BLANQUEFORTAISE HBC 2",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
-   "id": "2635524",
-   "journee": 11,
-   "iso": "",
-   "date": "",
-   "domicile": "CM FLOIRAC CENON HANDBALL 2",
-   "exterieur": "CANEJAN HBC 2",
    "score_dom": null,
    "score_ext": null,
    "affiche": null,
@@ -2023,5 +2023,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-11-02 16:48"
+ "genere_le": "2026-11-03 01:57"
 }
