@@ -1,7 +1,7 @@
 {
  "equipe": "SF",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-16-feminines-honneur-32465/",
- "source_mise_a_jour": "4 nov. 2026 à 06h42",
+ "source_mise_a_jour": "4 nov. 2026 à 16h20",
  "journees": 22,
  "classement": [
   {
@@ -20,6 +20,20 @@
   },
   {
    "rang": 2,
+   "club": "HAILLAN HANDBALL",
+   "joues": 5,
+   "gagnes": 4,
+   "nuls": 0,
+   "perdus": 1,
+   "bp": 129,
+   "bc": 98,
+   "diff": 31,
+   "points": 13,
+   "nous": false,
+   "stats_partielles": false
+  },
+  {
+   "rang": 3,
    "club": "HBC BAZADAIS",
    "joues": 5,
    "gagnes": 3,
@@ -33,7 +47,7 @@
    "stats_partielles": false
   },
   {
-   "rang": 3,
+   "rang": 4,
    "club": "HANDBALL SAINT MEDARD D'EYRANS",
    "joues": 5,
    "gagnes": 3,
@@ -47,21 +61,21 @@
    "stats_partielles": false
   },
   {
-   "rang": 4,
-   "club": "HAILLAN HANDBALL",
+   "rang": 5,
+   "club": "LORMONT HANDBALL HAUTS DE GARONNE",
    "joues": 4,
    "gagnes": 3,
    "nuls": 0,
    "perdus": 1,
-   "bp": 109,
-   "bc": 84,
-   "diff": 25,
+   "bp": 132,
+   "bc": 81,
+   "diff": 51,
    "points": 10,
    "nous": false,
    "stats_partielles": false
   },
   {
-   "rang": 5,
+   "rang": 6,
    "club": "MEDOC HANDBALL 2",
    "joues": 4,
    "gagnes": 3,
@@ -75,7 +89,7 @@
    "stats_partielles": false
   },
   {
-   "rang": 6,
+   "rang": 7,
    "club": "HBC PAYS CASTILLONNAIS",
    "joues": 4,
    "gagnes": 3,
@@ -84,20 +98,6 @@
    "bp": 93,
    "bc": 84,
    "diff": 9,
-   "points": 10,
-   "nous": false,
-   "stats_partielles": false
-  },
-  {
-   "rang": 7,
-   "club": "LORMONT HANDBALL HAUTS DE GARONNE",
-   "joues": 4,
-   "gagnes": 3,
-   "nuls": 0,
-   "perdus": 1,
-   "bp": 132,
-   "bc": 81,
-   "diff": 51,
    "points": 10,
    "nous": false,
    "stats_partielles": false
@@ -118,6 +118,20 @@
   },
   {
    "rang": 9,
+   "club": "AVENIR PAILLETON 2",
+   "joues": 5,
+   "gagnes": 1,
+   "nuls": 0,
+   "perdus": 4,
+   "bp": 81,
+   "bc": 129,
+   "diff": -48,
+   "points": 7,
+   "nous": false,
+   "stats_partielles": false
+  },
+  {
+   "rang": 10,
    "club": "AS HB DU FRONSADAIS",
    "joues": 5,
    "gagnes": 0,
@@ -126,20 +140,6 @@
    "bp": 116,
    "bc": 154,
    "diff": -38,
-   "points": 6,
-   "nous": false,
-   "stats_partielles": false
-  },
-  {
-   "rang": 10,
-   "club": "AVENIR PAILLETON 2",
-   "joues": 4,
-   "gagnes": 1,
-   "nuls": 0,
-   "perdus": 3,
-   "bp": 67,
-   "bc": 109,
-   "diff": -42,
    "points": 6,
    "nous": false,
    "stats_partielles": false
@@ -517,13 +517,12 @@
    "date": "Samedi 31 octobre 2026 à 21h15",
    "domicile": "AVENIR PAILLETON 2",
    "exterieur": "HAILLAN HANDBALL",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false,
-   "brut": "SAMEDI 31 OCTOBRE 2026 À 21H15 AVENIR PAILLETON 2 - - HAILLAN HANDBALL VOIR DÉTAIL DU MATCH"
+   "score_dom": 14,
+   "score_ext": 20,
+   "affiche": "14 – 20",
+   "vainqueur": "ext",
+   "statut": "joué",
+   "nous": false
   },
   {
    "id": "2636283",
@@ -2024,5 +2023,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-11-04 15:31"
+ "genere_le": "2026-11-05 00:41"
 }
