@@ -1,7 +1,7 @@
 {
  "equipe": "-13 G",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u13-masculin-32827/poule-194151/",
- "source_mise_a_jour": "30 oct. 2026 à 15h12",
+ "source_mise_a_jour": "5 nov. 2026 à 16h46",
  "journees": 10,
  "classement": [
   {
@@ -427,6 +427,20 @@
    "nous": false
   },
   {
+   "id": "2699081",
+   "journee": 9,
+   "iso": "2026-12-05T16:30",
+   "date": "Samedi 5 décembre 2026 à 16h30",
+   "domicile": "CADILLAC - CERONS U13M",
+   "exterieur": "HANDBALL SAINT MEDARD D'EYRANS 2",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
    "id": "2699079",
    "journee": 9,
    "iso": "2026-12-05T18:30",
@@ -495,21 +509,7 @@
    "vainqueur": null,
    "statut": "à venir",
    "nous": true
-  },
-  {
-   "id": "2699081",
-   "journee": 9,
-   "iso": "",
-   "date": "",
-   "domicile": "CADILLAC - CERONS U13M",
-   "exterieur": "HANDBALL SAINT MEDARD D'EYRANS 2",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false
   }
  ],
- "genere_le": "2026-10-30 23:19"
+ "genere_le": "2026-11-06 00:40"
 }

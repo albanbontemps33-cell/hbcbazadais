@@ -1,7 +1,7 @@
 {
  "equipe": "SF",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-16-feminines-honneur-32465/",
- "source_mise_a_jour": "5 nov. 2026 à 06h42",
+ "source_mise_a_jour": "5 nov. 2026 à 18h18",
  "journees": 22,
  "classement": [
   {
@@ -903,6 +903,20 @@
    "nous": false
   },
   {
+   "id": "2636315",
+   "journee": 10,
+   "iso": "2026-12-12T20:00",
+   "date": "Samedi 12 décembre 2026 à 20h00",
+   "domicile": "HBC PAYS CASTILLONNAIS",
+   "exterieur": "HANDBALL SAINT MEDARD D'EYRANS",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
    "id": "2636323",
    "journee": 11,
    "iso": "2027-01-09T18:30",
@@ -1007,20 +1021,6 @@
    "date": "",
    "domicile": "HAILLAN HANDBALL",
    "exterieur": "HANDBALL CUBZAGUAIS",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
-   "id": "2636315",
-   "journee": 10,
-   "iso": "",
-   "date": "",
-   "domicile": "HBC PAYS CASTILLONNAIS",
-   "exterieur": "HANDBALL SAINT MEDARD D'EYRANS",
    "score_dom": null,
    "score_ext": null,
    "affiche": null,
@@ -2023,5 +2023,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-11-05 15:38"
+ "genere_le": "2026-11-06 00:39"
 }
