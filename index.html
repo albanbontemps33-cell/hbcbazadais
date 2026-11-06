@@ -234,7 +234,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--ink);o
 .pcard:hover{background:rgba(234,59,121,.05)}
 .pcard-photo{height:260px;background:linear-gradient(160deg,var(--blue-pale) 0%,rgba(234,59,121,.08) 100%);display:flex;align-items:flex-end;justify-content:center;position:relative;overflow:hidden}
 .pcard-photo img{position:absolute;bottom:0;height:100%;object-fit:cover;object-position:top center;width:100%}
-.pcard-photo-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top center;transition:transform .5s ease;transform-origin:top center}
+.pcard-photo-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top center;transition:transform .5s ease;transform-origin:top center;will-change:transform}
 .pcard:hover .pcard-photo-img{transform:scale(1.07)}
 .pcard-photo-img.alt{opacity:0;transition:opacity .35s ease,transform .5s ease}
 .pcard:hover .pcard-photo-img.alt,.pcard.flip .pcard-photo-img.alt{opacity:1}
@@ -977,7 +977,7 @@ const TEAMS = [
     {fname:'Camille',lname:'Flé',num:'',pos:['Ailière']}]},
   {id:'u15g',cat:'Catégorie U15',name:'-15 Garçons',sheet:'u15g',coach1:{fname:'Prénom coach',lname:'Nom coach',photo:''},coach2:{fname:'Prénom coach',lname:'Nom coach',photo:''},roster:[]},
   {id:'u18f',cat:'Catégorie U18',name:'-18 Filles',sheet:'u18f',coach1:{fname:'Prénom coach',lname:'Nom coach',photo:''},coach2:{fname:'Prénom coach',lname:'Nom coach',photo:''},roster:[]},
-  {id:'u18g',cat:'Catégorie U18',name:'-18 Garçons',sheet:'u18g',coach1:{fname:'Prénom coach',lname:'Nom coach',photo:''},coach2:{fname:'Prénom coach',lname:'Nom coach',photo:''},roster:[{fname:'Hugo',lname:'Descoubes',num:'16',pos:['Gardien']},
+  {id:'u18g',cat:'Catégorie U18',name:'-18 Garçons',sheet:'u18g',coach1:{fname:'Laurent',lname:'ESPAGNET',photo:''},coach2:{fname:'Maxime',lname:'CARLIER',photo:''},roster:[{fname:'Hugo',lname:'Descoubes',num:'16',pos:['Gardien']},
     {fname:'Benjamin',lname:'Cubertafond',num:'12',pos:['Gardien']},
     {fname:'Matisse',lname:'Espagnet',num:'11',pos:['Arrière']},
     {fname:'Mael',lname:'Espagnet',num:'3',pos:['Ailier']},
@@ -1239,6 +1239,11 @@ function backToTeam() {
 
 // Photos joueurs : dossier GitHub = team.folder (par défaut l'id de l'équipe)
 // Fichiers : prenom-nom1.jpg (photo de base) et prenom-nom2.jpg (au survol)
+// La 2e photo ne se charge qu'au premier survol (ou au toucher) : moitié moins de données au départ
+function ffLoadAlt(card) {
+  const i = card.querySelector('img.alt');
+  if (i && i.dataset.src) { i.src = i.dataset.src; delete i.dataset.src; }
+}
 function slugName(v) {
   return String(v || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase()
     .replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
@@ -1249,8 +1254,8 @@ function playerPhotos(team, p) {
   const src1 = p.photo ? GH + p.photo : base + '1.jpg';
   const src2 = p.photo2 ? GH + p.photo2 : base + '2.jpg';
   const alt = ffEsc(p.fname + ' ' + p.lname);
-  return '<img class="pcard-photo-img" src="' + src1 + '" alt="' + alt + '" onerror="this.onerror=function(){this.style.display=\'none\'};this.src=\'' + src2 + '\'" loading="lazy">' +
-         '<img class="pcard-photo-img alt" src="' + src2 + '" alt="" aria-hidden="true" onerror="this.style.display=\'none\'" loading="lazy">';
+  return '<img class="pcard-photo-img" src="' + src1 + '" alt="' + alt + '" onerror="this.onerror=function(){this.style.display=\'none\'};this.src=\'' + src2 + '\'" loading="lazy" decoding="async">' +
+         '<img class="pcard-photo-img alt" data-src="' + src2 + '" alt="" aria-hidden="true" decoding="async" onerror="this.style.display=\'none\'">';
 }
 
 function buildSub(type, team) {
@@ -1294,7 +1299,7 @@ function buildSub(type, team) {
     const numOf = p => { const n = parseInt(p.num); return isNaN(n) ? 9999 : n; };
     const sorted = [...team.roster].sort((a,b) => numOf(a) - numOf(b));
     const cards = sorted.map(p => `
-      <div class="pcard" data-pos="${posList(p).join('|')}" onclick="this.classList.toggle('flip')">
+      <div class="pcard" data-pos="${posList(p).join('|')}" onmouseenter="ffLoadAlt(this)" onclick="ffLoadAlt(this);this.classList.toggle('flip')">
         <div class="pcard-photo">
           ${playerPhotos(team, p)}
           <div class="pcard-photo-placeholder">
