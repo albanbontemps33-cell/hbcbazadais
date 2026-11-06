@@ -977,7 +977,7 @@ const TEAMS = [
     {fname:'Camille',lname:'Flé',num:'',pos:['Ailière']}]},
   {id:'u15g',cat:'Catégorie U15',name:'-15 Garçons',sheet:'u15g',coach1:{fname:'Prénom coach',lname:'Nom coach',photo:''},coach2:{fname:'Prénom coach',lname:'Nom coach',photo:''},roster:[]},
   {id:'u18f',cat:'Catégorie U18',name:'-18 Filles',sheet:'u18f',coach1:{fname:'Prénom coach',lname:'Nom coach',photo:''},coach2:{fname:'Prénom coach',lname:'Nom coach',photo:''},roster:[]},
-  {id:'u18g',cat:'Catégorie U18',name:'-18 Garçons',sheet:'u18g',coach1:{fname:'Laurent',lname:'Espagnet',photo:''},coach2:{fname:'Maxime',lname:'Carlier',photo:''},roster:[{fname:'Hugo',lname:'Descoubes',num:'16',pos:['Gardien']},
+  {id:'u18g',cat:'Catégorie U18',name:'-18 Garçons',sheet:'u18g',coach1:{fname:'Laurent',lname:'Espagnet',photo:''},coach2:{fname:'Maxime',lname:'Carlier',photo:''},coach3:{fname:'Gaëtan',lname:'Cantin',photo:''},roster:[{fname:'Hugo',lname:'Descoubes',num:'16',pos:['Gardien']},
     {fname:'Benjamin',lname:'Cubertafond',num:'12',pos:['Gardien']},
     {fname:'Matisse',lname:'Espagnet',num:'11',pos:['Arrière']},
     {fname:'Mael',lname:'Espagnet',num:'3',pos:['Ailier']},
@@ -1263,6 +1263,7 @@ function buildSub(type, team) {
     const coaches = [
       team.coach1 ? {label:'Coach 1', fname:team.coach1.fname, lname:team.coach1.lname, photo:team.coach1.photo} : null,
       team.coach2 ? {label:'Coach 2', fname:team.coach2.fname, lname:team.coach2.lname, photo:team.coach2.photo} : null,
+      team.coach3 ? {label:'Coach 3', fname:team.coach3.fname, lname:team.coach3.lname, photo:team.coach3.photo} : null,
     ].filter(Boolean);
 
     const coachHTML = coaches.length ? `
