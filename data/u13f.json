@@ -1,7 +1,7 @@
 {
  "equipe": "-13 F 1",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u13-feminine-32777/poule-193722/",
- "source_mise_a_jour": "30 oct. 2026 à 15h36",
+ "source_mise_a_jour": "6 nov. 2026 à 15h13",
  "journees": 10,
  "classement": [
   {
@@ -385,6 +385,20 @@
    "nous": true
   },
   {
+   "id": "2699522",
+   "journee": 8,
+   "iso": "2026-11-28T14:45",
+   "date": "Samedi 28 novembre 2026 à 14h45",
+   "domicile": "HBC CREONNAIS",
+   "exterieur": "STADE LANGONNAIS HB",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
    "id": "2699520",
    "journee": 8,
    "iso": "2026-11-28T15:15",
@@ -469,20 +483,6 @@
    "nous": true
   },
   {
-   "id": "2699522",
-   "journee": 8,
-   "iso": "",
-   "date": "",
-   "domicile": "HBC CREONNAIS",
-   "exterieur": "STADE LANGONNAIS HB",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
    "id": "2699526",
    "journee": 10,
    "iso": "",
@@ -511,5 +511,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-10-30 23:19"
+ "genere_le": "2026-11-07 00:09"
 }

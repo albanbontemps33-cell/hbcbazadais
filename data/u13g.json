@@ -1,7 +1,7 @@
 {
  "equipe": "-13 G",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u13-masculin-32827/poule-194151/",
- "source_mise_a_jour": "5 nov. 2026 à 16h46",
+ "source_mise_a_jour": "6 nov. 2026 à 19h08",
  "journees": 10,
  "classement": [
   {
@@ -441,6 +441,20 @@
    "nous": false
   },
   {
+   "id": "2699080",
+   "journee": 9,
+   "iso": "2026-12-05T17:00",
+   "date": "Samedi 5 décembre 2026 à 17h00",
+   "domicile": "AVENIR PAILLETON",
+   "exterieur": "HBC BAZADAIS",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": true
+  },
+  {
    "id": "2699079",
    "journee": 9,
    "iso": "2026-12-05T18:30",
@@ -495,21 +509,7 @@
    "vainqueur": null,
    "statut": "à venir",
    "nous": false
-  },
-  {
-   "id": "2699080",
-   "journee": 9,
-   "iso": "",
-   "date": "",
-   "domicile": "AVENIR PAILLETON",
-   "exterieur": "HBC BAZADAIS",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": true
   }
  ],
- "genere_le": "2026-11-06 00:40"
+ "genere_le": "2026-11-07 00:08"
 }

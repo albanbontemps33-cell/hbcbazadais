@@ -1,7 +1,7 @@
 {
  "equipe": "SG2",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-16-masculins-promotion-32460/",
- "source_mise_a_jour": "5 nov. 2026 à 10h27",
+ "source_mise_a_jour": "6 nov. 2026 à 19h54",
  "journees": 10,
  "classement": [
   {
@@ -441,6 +441,20 @@
    "nous": false
   },
   {
+   "id": "2676609",
+   "journee": 9,
+   "iso": "2026-12-05T21:00",
+   "date": "Samedi 5 décembre 2026 à 21h00",
+   "domicile": "US MIOS BIGANOS 2",
+   "exterieur": "HANDBALL CLUB SAINT SYMPHORIEN",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
    "id": "2676608",
    "journee": 9,
    "iso": "2026-12-06T16:00",
@@ -495,21 +509,7 @@
    "vainqueur": null,
    "statut": "à venir",
    "nous": false
-  },
-  {
-   "id": "2676609",
-   "journee": 9,
-   "iso": "",
-   "date": "",
-   "domicile": "US MIOS BIGANOS 2",
-   "exterieur": "HANDBALL CLUB SAINT SYMPHORIEN",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false
   }
  ],
- "genere_le": "2026-11-05 15:38"
+ "genere_le": "2026-11-07 00:07"
 }
