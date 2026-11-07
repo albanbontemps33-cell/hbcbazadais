@@ -312,7 +312,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": true
+   "nous": true,
+   "brut": "SAMEDI 7 NOVEMBRE 2026 À 20H00 HANDBALL CLUB SAINT SYMPHORIEN - - HBC BAZADAIS 2 VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2676600",
@@ -511,5 +512,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-11-07 00:07"
+ "genere_le": "2026-11-07 22:49"
 }

@@ -1,50 +1,50 @@
 {
  "equipe": "-18 G",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u18-masculins-32774/poule-194137/",
- "source_mise_a_jour": "5 nov. 2026 à 16h47",
+ "source_mise_a_jour": "7 nov. 2026 à 20h02",
  "journees": 10,
  "classement": [
   {
    "rang": 1,
    "club": "HBC BAZADAIS",
-   "joues": 3,
-   "gagnes": 3,
+   "joues": 4,
+   "gagnes": 4,
    "nuls": 0,
    "perdus": 0,
-   "bp": 100,
-   "bc": 84,
-   "diff": 16,
-   "points": 9,
+   "bp": 143,
+   "bc": 120,
+   "diff": 23,
+   "points": 12,
    "nous": true,
    "stats_partielles": false
   },
   {
    "rang": 2,
    "club": "CADILLAC - CERONS U18M",
-   "joues": 3,
-   "gagnes": 2,
+   "joues": 4,
+   "gagnes": 3,
    "nuls": 0,
    "perdus": 1,
-   "bp": 58,
-   "bc": 63,
-   "diff": -5,
+   "bp": 93,
+   "bc": 89,
+   "diff": 4,
    "points": 7,
    "nous": false,
-   "stats_partielles": false
+   "stats_partielles": true
   },
   {
    "rang": 3,
    "club": "LEOGNAN HANDBALL 2",
-   "joues": 3,
+   "joues": 4,
    "gagnes": 2,
    "nuls": 0,
-   "perdus": 1,
-   "bp": 91,
-   "bc": 95,
-   "diff": -4,
+   "perdus": 2,
+   "bp": 117,
+   "bc": 130,
+   "diff": -13,
    "points": 7,
    "nous": false,
-   "stats_partielles": false
+   "stats_partielles": true
   },
   {
    "rang": 4,
@@ -63,14 +63,14 @@
   {
    "rang": 5,
    "club": "AVENIR PAILLETON",
-   "joues": 3,
+   "joues": 4,
    "gagnes": 0,
    "nuls": 0,
-   "perdus": 3,
-   "bp": 82,
-   "bc": 98,
-   "diff": -16,
-   "points": 3,
+   "perdus": 4,
+   "bp": 118,
+   "bc": 141,
+   "diff": -23,
+   "points": 4,
    "nous": false,
    "stats_partielles": false
   }
@@ -195,11 +195,11 @@
    "date": "Samedi 7 novembre 2026 à 16h30",
    "domicile": "CADILLAC - CERONS U18M",
    "exterieur": "LEOGNAN HANDBALL 2",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
+   "score_dom": 35,
+   "score_ext": 26,
+   "affiche": "35 – 26",
+   "vainqueur": "dom",
+   "statut": "joué",
    "nous": false
   },
   {
@@ -209,11 +209,11 @@
    "date": "Samedi 7 novembre 2026 à 17h00",
    "domicile": "AVENIR PAILLETON",
    "exterieur": "HBC BAZADAIS",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
+   "score_dom": 36,
+   "score_ext": 43,
+   "affiche": "36 – 43",
+   "vainqueur": "ext",
+   "statut": "joué",
    "nous": true
   },
   {
@@ -357,5 +357,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-11-06 00:39"
+ "genere_le": "2026-11-07 22:49"
 }

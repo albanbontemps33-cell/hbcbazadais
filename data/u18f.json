@@ -1,11 +1,39 @@
 {
  "equipe": "-18 F",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u18-feminine-32775/poule-193706/",
- "source_mise_a_jour": "7 nov. 2026 à 10h52",
+ "source_mise_a_jour": "7 nov. 2026 à 20h17",
  "journees": 10,
  "classement": [
   {
    "rang": 1,
+   "club": "CADILLAC - CERONS U18F",
+   "joues": 5,
+   "gagnes": 2,
+   "nuls": 2,
+   "perdus": 1,
+   "bp": 123,
+   "bc": 127,
+   "diff": -4,
+   "points": 11,
+   "nous": false,
+   "stats_partielles": false
+  },
+  {
+   "rang": 2,
+   "club": "HBC BELIN-BELIET",
+   "joues": 5,
+   "gagnes": 4,
+   "nuls": 0,
+   "perdus": 1,
+   "bp": 129,
+   "bc": 70,
+   "diff": 59,
+   "points": 9,
+   "nous": false,
+   "stats_partielles": true
+  },
+  {
+   "rang": 3,
    "club": "LEOGNAN HANDBALL",
    "joues": 4,
    "gagnes": 2,
@@ -19,60 +47,32 @@
    "stats_partielles": false
   },
   {
-   "rang": 2,
-   "club": "CADILLAC - CERONS U18F",
-   "joues": 4,
-   "gagnes": 2,
-   "nuls": 1,
-   "perdus": 1,
-   "bp": 97,
-   "bc": 101,
-   "diff": -4,
-   "points": 9,
-   "nous": false,
-   "stats_partielles": false
-  },
-  {
-   "rang": 3,
-   "club": "HBC BELIN-BELIET",
-   "joues": 4,
-   "gagnes": 3,
-   "nuls": 0,
-   "perdus": 1,
-   "bp": 102,
-   "bc": 49,
-   "diff": 53,
-   "points": 9,
-   "nous": false,
-   "stats_partielles": false
-  },
-  {
    "rang": 4,
-   "club": "GRADIGNAN HANDBALL CLUB",
-   "joues": 3,
+   "club": "HBC BAZADAIS",
+   "joues": 5,
    "gagnes": 1,
    "nuls": 1,
-   "perdus": 1,
-   "bp": 70,
-   "bc": 71,
-   "diff": -1,
-   "points": 6,
-   "nous": false,
+   "perdus": 3,
+   "bp": 117,
+   "bc": 128,
+   "diff": -11,
+   "points": 8,
+   "nous": true,
    "stats_partielles": false
   },
   {
    "rang": 5,
-   "club": "HBC BAZADAIS",
+   "club": "GRADIGNAN HANDBALL CLUB",
    "joues": 4,
    "gagnes": 1,
-   "nuls": 0,
-   "perdus": 3,
+   "nuls": 1,
+   "perdus": 2,
    "bp": 91,
-   "bc": 102,
-   "diff": -11,
+   "bc": 98,
+   "diff": -7,
    "points": 6,
-   "nous": true,
-   "stats_partielles": false
+   "nous": false,
+   "stats_partielles": true
   },
   {
    "rang": 6,
@@ -251,13 +251,12 @@
    "date": "Samedi 7 novembre 2026 à 12h30",
    "domicile": "HBC BAZADAIS",
    "exterieur": "CADILLAC - CERONS U18F",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": true,
-   "brut": "SAMEDI 7 NOVEMBRE 2026 À 12H30 HBC BAZADAIS - - CADILLAC - CERONS U18F VOIR DÉTAIL DU MATCH REMATCH DISPONIBLE"
+   "score_dom": 26,
+   "score_ext": 26,
+   "affiche": "26 – 26",
+   "vainqueur": "nul",
+   "statut": "joué",
+   "nous": true
   },
   {
    "id": "2699873",
@@ -266,11 +265,11 @@
    "date": "Samedi 7 novembre 2026 à 18h45",
    "domicile": "HBC BELIN-BELIET",
    "exterieur": "GRADIGNAN HANDBALL CLUB",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
+   "score_dom": 27,
+   "score_ext": 21,
+   "affiche": "27 – 21",
+   "vainqueur": "dom",
+   "statut": "joué",
    "nous": false
   },
   {
@@ -512,5 +511,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-11-07 13:59"
+ "genere_le": "2026-11-07 22:50"
 }

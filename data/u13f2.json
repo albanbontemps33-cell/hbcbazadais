@@ -1,7 +1,7 @@
 {
  "equipe": "-13 F 2",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u13-feminine-32777/poule-194061/",
- "source_mise_a_jour": "2 nov. 2026 à 09h18",
+ "source_mise_a_jour": "7 nov. 2026 à 17h16",
  "journees": 10,
  "classement": [
   {
@@ -20,43 +20,43 @@
   },
   {
    "rang": 2,
-   "club": "HANDBALL SAINT MEDARD D'EYRANS",
-   "joues": 4,
+   "club": "SC MONSEGUR HB",
+   "joues": 5,
    "gagnes": 3,
-   "nuls": 0,
+   "nuls": 1,
    "perdus": 1,
-   "bp": 103,
-   "bc": 65,
-   "diff": 38,
-   "points": 10,
+   "bp": 93,
+   "bc": 66,
+   "diff": 27,
+   "points": 12,
    "nous": false,
    "stats_partielles": false
   },
   {
    "rang": 3,
-   "club": "SC MONSEGUR HB",
-   "joues": 4,
+   "club": "HANDBALL SAINT MEDARD D'EYRANS",
+   "joues": 5,
    "gagnes": 3,
-   "nuls": 0,
+   "nuls": 1,
    "perdus": 1,
-   "bp": 80,
-   "bc": 53,
-   "diff": 27,
-   "points": 10,
+   "bp": 116,
+   "bc": 78,
+   "diff": 38,
+   "points": 12,
    "nous": false,
    "stats_partielles": false
   },
   {
    "rang": 4,
    "club": "CADILLAC CERONS U13F",
-   "joues": 4,
-   "gagnes": 1,
+   "joues": 5,
+   "gagnes": 2,
    "nuls": 0,
    "perdus": 3,
-   "bp": 55,
-   "bc": 107,
-   "diff": -52,
-   "points": 6,
+   "bp": 83,
+   "bc": 112,
+   "diff": -29,
+   "points": 9,
    "nous": false,
    "stats_partielles": false
   },
@@ -77,14 +77,14 @@
   {
    "rang": 6,
    "club": "HBC BAZADAIS 2",
-   "joues": 4,
+   "joues": 5,
    "gagnes": 0,
    "nuls": 0,
-   "perdus": 4,
-   "bp": 47,
-   "bc": 111,
-   "diff": -64,
-   "points": 4,
+   "perdus": 5,
+   "bp": 52,
+   "bc": 139,
+   "diff": -87,
+   "points": 5,
    "nous": true,
    "stats_partielles": false
   }
@@ -265,13 +265,12 @@
    "date": "Samedi 7 novembre 2026 à 11h00",
    "domicile": "HBC BAZADAIS 2",
    "exterieur": "CADILLAC CERONS U13F",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": true,
-   "brut": "SAMEDI 7 NOVEMBRE 2026 À 11H00 HBC BAZADAIS 2 - - CADILLAC CERONS U13F VOIR DÉTAIL DU MATCH REMATCH DISPONIBLE"
+   "score_dom": 5,
+   "score_ext": 28,
+   "affiche": "5 – 28",
+   "vainqueur": "ext",
+   "statut": "joué",
+   "nous": true
   },
   {
    "id": "2699722",
@@ -295,11 +294,11 @@
    "date": "Samedi 7 novembre 2026 à 16h00",
    "domicile": "HANDBALL SAINT MEDARD D'EYRANS",
    "exterieur": "SC MONSEGUR HB",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
+   "score_dom": 13,
+   "score_ext": 13,
+   "affiche": "13 – 13",
+   "vainqueur": "nul",
+   "statut": "joué",
    "nous": false
   },
   {
@@ -513,5 +512,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-11-07 14:00"
+ "genere_le": "2026-11-07 22:51"
 }

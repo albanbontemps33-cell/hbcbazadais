@@ -20,6 +20,20 @@
   },
   {
    "rang": 2,
+   "club": "LORMONT HANDBALL HAUTS DE GARONNE",
+   "joues": 5,
+   "gagnes": 4,
+   "nuls": 0,
+   "perdus": 1,
+   "bp": 160,
+   "bc": 101,
+   "diff": 59,
+   "points": 13,
+   "nous": false,
+   "stats_partielles": false
+  },
+  {
+   "rang": 3,
    "club": "HAILLAN HANDBALL",
    "joues": 5,
    "gagnes": 4,
@@ -33,7 +47,21 @@
    "stats_partielles": false
   },
   {
-   "rang": 3,
+   "rang": 4,
+   "club": "HANDBALL SAINT MEDARD D'EYRANS",
+   "joues": 6,
+   "gagnes": 3,
+   "nuls": 0,
+   "perdus": 3,
+   "bp": 122,
+   "bc": 136,
+   "diff": -14,
+   "points": 12,
+   "nous": false,
+   "stats_partielles": false
+  },
+  {
+   "rang": 5,
    "club": "HBC BAZADAIS",
    "joues": 5,
    "gagnes": 3,
@@ -44,34 +72,6 @@
    "diff": 3,
    "points": 12,
    "nous": true,
-   "stats_partielles": false
-  },
-  {
-   "rang": 4,
-   "club": "HANDBALL SAINT MEDARD D'EYRANS",
-   "joues": 5,
-   "gagnes": 3,
-   "nuls": 0,
-   "perdus": 2,
-   "bp": 102,
-   "bc": 108,
-   "diff": -6,
-   "points": 11,
-   "nous": false,
-   "stats_partielles": false
-  },
-  {
-   "rang": 5,
-   "club": "LORMONT HANDBALL HAUTS DE GARONNE",
-   "joues": 4,
-   "gagnes": 3,
-   "nuls": 0,
-   "perdus": 1,
-   "bp": 132,
-   "bc": 81,
-   "diff": 51,
-   "points": 10,
-   "nous": false,
    "stats_partielles": false
   },
   {
@@ -91,16 +91,16 @@
   {
    "rang": 7,
    "club": "HBC PAYS CASTILLONNAIS",
-   "joues": 4,
-   "gagnes": 3,
+   "joues": 5,
+   "gagnes": 4,
    "nuls": 0,
    "perdus": 1,
-   "bp": 93,
-   "bc": 84,
-   "diff": 9,
+   "bp": 115,
+   "bc": 93,
+   "diff": 22,
    "points": 10,
    "nous": false,
-   "stats_partielles": false
+   "stats_partielles": true
   },
   {
    "rang": 8,
@@ -119,16 +119,16 @@
   {
    "rang": 9,
    "club": "AVENIR PAILLETON 2",
-   "joues": 5,
+   "joues": 6,
    "gagnes": 1,
    "nuls": 0,
-   "perdus": 4,
-   "bp": 81,
-   "bc": 129,
-   "diff": -48,
+   "perdus": 5,
+   "bp": 90,
+   "bc": 151,
+   "diff": -61,
    "points": 7,
    "nous": false,
-   "stats_partielles": false
+   "stats_partielles": true
   },
   {
    "rang": 10,
@@ -578,7 +578,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": true
+   "nous": true,
+   "brut": "SAMEDI 7 NOVEMBRE 2026 À 19H00 HAILLAN HANDBALL - - HBC BAZADAIS VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2636289",
@@ -587,11 +588,11 @@
    "date": "Samedi 7 novembre 2026 à 19h30",
    "domicile": "HANDBALL SAINT MEDARD D'EYRANS",
    "exterieur": "LORMONT HANDBALL HAUTS DE GARONNE",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
+   "score_dom": 20,
+   "score_ext": 28,
+   "affiche": "20 – 28",
+   "vainqueur": "ext",
+   "statut": "joué",
    "nous": false
   },
   {
@@ -606,7 +607,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "SAMEDI 7 NOVEMBRE 2026 À 19H45 AS HB DU FRONSADAIS - - ARCACHON LA TESTE HBC VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2636292",
@@ -615,11 +617,11 @@
    "date": "Samedi 7 novembre 2026 à 20h00",
    "domicile": "HBC PAYS CASTILLONNAIS",
    "exterieur": "AVENIR PAILLETON 2",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
+   "score_dom": 22,
+   "score_ext": 9,
+   "affiche": "22 – 9",
+   "vainqueur": "dom",
+   "statut": "joué",
    "nous": false
   },
   {
@@ -2023,5 +2025,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-11-07 13:59"
+ "genere_le": "2026-11-07 22:49"
 }

@@ -200,7 +200,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "SAMEDI 7 NOVEMBRE 2026 À 15H30 SC MONSEGUR HB - - HANDBALL SAINT MEDARD D'EYRANS 2 VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2699843",
@@ -214,7 +215,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "SAMEDI 7 NOVEMBRE 2026 À 18H30 BORDEAUX ETUDIANTS CLUB - - CADILLAC CERONS U15F VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2699844",
@@ -357,5 +359,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-11-02 16:49"
+ "genere_le": "2026-11-07 22:50"
 }

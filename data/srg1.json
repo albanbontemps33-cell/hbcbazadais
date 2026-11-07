@@ -91,16 +91,16 @@
   {
    "rang": 7,
    "club": "HBC LIBOURNE 3",
-   "joues": 5,
-   "gagnes": 2,
+   "joues": 6,
+   "gagnes": 3,
    "nuls": 0,
    "perdus": 3,
-   "bp": 155,
-   "bc": 175,
-   "diff": -20,
+   "bp": 187,
+   "bc": 205,
+   "diff": -18,
    "points": 9,
    "nous": false,
-   "stats_partielles": false
+   "stats_partielles": true
   },
   {
    "rang": 8,
@@ -147,16 +147,16 @@
   {
    "rang": 11,
    "club": "ST MEDARD HANDBALL 2",
-   "joues": 5,
+   "joues": 6,
    "gagnes": 1,
    "nuls": 0,
-   "perdus": 4,
-   "bp": 140,
-   "bc": 167,
-   "diff": -27,
+   "perdus": 5,
+   "bp": 170,
+   "bc": 199,
+   "diff": -29,
    "points": 7,
    "nous": false,
-   "stats_partielles": false
+   "stats_partielles": true
   },
   {
    "rang": 12,
@@ -592,7 +592,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "SAMEDI 7 NOVEMBRE 2026 À 18H30 AS AMBARESIENNE 2 - - HBC TEICHOIS VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2635493",
@@ -606,7 +607,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "SAMEDI 7 NOVEMBRE 2026 À 19H00 CANEJAN HBC 2 - - GRADIGNAN HANDBALL CLUB VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2635492",
@@ -615,11 +617,11 @@
    "date": "Samedi 7 novembre 2026 à 19h30",
    "domicile": "ST MEDARD HANDBALL 2",
    "exterieur": "HBC LIBOURNE 3",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
+   "score_dom": 30,
+   "score_ext": 32,
+   "affiche": "30 – 32",
+   "vainqueur": "ext",
+   "statut": "joué",
    "nous": false
   },
   {
@@ -634,7 +636,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "SAMEDI 7 NOVEMBRE 2026 À 19H45 SC MONSEGUR HB 1 - - CM FLOIRAC CENON HANDBALL 2 VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2635495",
@@ -648,7 +651,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "SAMEDI 7 NOVEMBRE 2026 À 21H00 ES BLANQUEFORTAISE HBC 2 - - BORDEAUX ETUDIANTS CLUB VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2635496",
@@ -662,7 +666,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": true
+   "nous": true,
+   "brut": "SAMEDI 7 NOVEMBRE 2026 À 21H00 HAILLAN HANDBALL 1 - - HBC BAZADAIS 1 VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2635499",
@@ -2023,5 +2028,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-11-07 00:07"
+ "genere_le": "2026-11-07 22:49"
 }
