@@ -1,7 +1,7 @@
 {
  "equipe": "-18 F",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u18-feminine-32775/poule-193706/",
- "source_mise_a_jour": "5 nov. 2026 à 14h35",
+ "source_mise_a_jour": "7 nov. 2026 à 10h52",
  "journees": 10,
  "classement": [
   {
@@ -256,7 +256,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": true
+   "nous": true,
+   "brut": "SAMEDI 7 NOVEMBRE 2026 À 12H30 HBC BAZADAIS - - CADILLAC - CERONS U18F VOIR DÉTAIL DU MATCH REMATCH DISPONIBLE"
   },
   {
    "id": "2699873",
@@ -511,5 +512,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-11-06 00:39"
+ "genere_le": "2026-11-07 13:59"
 }

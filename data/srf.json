@@ -1,7 +1,7 @@
 {
  "equipe": "SF",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-16-feminines-honneur-32465/",
- "source_mise_a_jour": "6 nov. 2026 à 19h02",
+ "source_mise_a_jour": "7 nov. 2026 à 10h24",
  "journees": 22,
  "classement": [
   {
@@ -777,6 +777,20 @@
    "nous": true
   },
   {
+   "id": "2636303",
+   "journee": 8,
+   "iso": "2026-11-28T20:00",
+   "date": "Samedi 28 novembre 2026 à 20h00",
+   "domicile": "HAILLAN HANDBALL",
+   "exterieur": "LORMONT HANDBALL HAUTS DE GARONNE",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
    "id": "2636305",
    "journee": 8,
    "iso": "2026-11-28T20:00",
@@ -839,6 +853,20 @@
    "date": "Samedi 5 décembre 2026 à 21h00",
    "domicile": "PE2M HB 2",
    "exterieur": "HANDBALL CUBZAGUAIS",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
+   "id": "2636307",
+   "journee": 9,
+   "iso": "2026-12-05T21:15",
+   "date": "Samedi 5 décembre 2026 à 21h15",
+   "domicile": "AVENIR PAILLETON 2",
+   "exterieur": "ARCACHON LA TESTE HBC",
    "score_dom": null,
    "score_ext": null,
    "affiche": null,
@@ -965,34 +993,6 @@
    "date": "Samedi 13 février 2027 à 18h30",
    "domicile": "PE2M HB 2",
    "exterieur": "LORMONT HANDBALL HAUTS DE GARONNE",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
-   "id": "2636303",
-   "journee": 8,
-   "iso": "",
-   "date": "",
-   "domicile": "HAILLAN HANDBALL",
-   "exterieur": "LORMONT HANDBALL HAUTS DE GARONNE",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
-   "id": "2636307",
-   "journee": 9,
-   "iso": "",
-   "date": "",
-   "domicile": "AVENIR PAILLETON 2",
-   "exterieur": "ARCACHON LA TESTE HBC",
    "score_dom": null,
    "score_ext": null,
    "affiche": null,
@@ -2023,5 +2023,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-11-07 00:08"
+ "genere_le": "2026-11-07 13:59"
 }

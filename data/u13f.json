@@ -1,7 +1,7 @@
 {
  "equipe": "-13 F 1",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u13-feminine-32777/poule-193722/",
- "source_mise_a_jour": "6 nov. 2026 à 15h13",
+ "source_mise_a_jour": "7 nov. 2026 à 10h23",
  "journees": 10,
  "classement": [
   {
@@ -270,7 +270,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": true
+   "nous": true,
+   "brut": "SAMEDI 7 NOVEMBRE 2026 À 12H30 HBC TEICHOIS 1 - - HBC BAZADAIS 1 VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2699511",
@@ -371,6 +372,20 @@
    "nous": false
   },
   {
+   "id": "2699517",
+   "journee": 7,
+   "iso": "2026-11-21T14:30",
+   "date": "Samedi 21 novembre 2026 à 14h30",
+   "domicile": "HBC CREONNAIS",
+   "exterieur": "HBC BAZADAIS 1",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": true
+  },
+  {
    "id": "2699521",
    "journee": 8,
    "iso": "2026-11-28T11:00",
@@ -469,20 +484,6 @@
    "nous": true
   },
   {
-   "id": "2699517",
-   "journee": 7,
-   "iso": "",
-   "date": "",
-   "domicile": "HBC CREONNAIS",
-   "exterieur": "HBC BAZADAIS 1",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": true
-  },
-  {
    "id": "2699526",
    "journee": 10,
    "iso": "",
@@ -511,5 +512,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-11-07 00:09"
+ "genere_le": "2026-11-07 14:00"
 }

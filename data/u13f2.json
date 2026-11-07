@@ -270,7 +270,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": true
+   "nous": true,
+   "brut": "SAMEDI 7 NOVEMBRE 2026 À 11H00 HBC BAZADAIS 2 - - CADILLAC CERONS U13F VOIR DÉTAIL DU MATCH REMATCH DISPONIBLE"
   },
   {
    "id": "2699722",
@@ -284,7 +285,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "SAMEDI 7 NOVEMBRE 2026 À 13H00 PE2M HB 2 - - AVENIR PAILLETON VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2699723",
@@ -511,5 +513,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-11-02 16:49"
+ "genere_le": "2026-11-07 14:00"
 }

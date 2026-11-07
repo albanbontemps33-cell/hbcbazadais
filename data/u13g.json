@@ -270,7 +270,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "SAMEDI 7 NOVEMBRE 2026 À 12H45 CADILLAC - CERONS U13M - - SC MONSEGUR HB VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2699069",
@@ -511,5 +512,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-11-07 00:08"
+ "genere_le": "2026-11-07 13:59"
 }
