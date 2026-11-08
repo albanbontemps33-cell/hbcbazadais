@@ -1,7 +1,7 @@
 {
  "equipe": "-13 F 2",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u13-feminine-32777/poule-194061/",
- "source_mise_a_jour": "8 nov. 2026 à 00h27",
+ "source_mise_a_jour": "8 nov. 2026 à 11h19",
  "journees": 10,
  "classement": [
   {
@@ -14,9 +14,9 @@
    "bp": 191,
    "bc": 68,
    "diff": 123,
-   "points": 12,
+   "points": 15,
    "nous": false,
-   "stats_partielles": true
+   "stats_partielles": false
   },
   {
    "rang": 2,
@@ -70,9 +70,9 @@
    "bp": 53,
    "bc": 125,
    "diff": -72,
-   "points": 6,
+   "points": 7,
    "nous": false,
-   "stats_partielles": true
+   "stats_partielles": false
   },
   {
    "rang": 6,
@@ -511,5 +511,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-11-08 02:29"
+ "genere_le": "2026-11-08 14:24"
 }

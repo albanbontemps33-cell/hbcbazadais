@@ -326,7 +326,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "DIMANCHE 8 NOVEMBRE 2026 À 14H00 ST MEDARD HANDBALL 2 - - HBC TEICHOIS 2 VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2676599",
@@ -511,5 +512,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-11-08 02:27"
+ "genere_le": "2026-11-08 14:23"
 }

@@ -1,7 +1,7 @@
 {
  "equipe": "SF",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-16-feminines-honneur-32465/",
- "source_mise_a_jour": "7 nov. 2026 à 21h29",
+ "source_mise_a_jour": "8 nov. 2026 à 11h28",
  "journees": 22,
  "classement": [
   {
@@ -920,8 +920,8 @@
   {
    "id": "2636317",
    "journee": 10,
-   "iso": "2026-12-12T19:45",
-   "date": "Samedi 12 décembre 2026 à 19h45",
+   "iso": "2026-12-12T19:30",
+   "date": "Samedi 12 décembre 2026 à 19h30",
    "domicile": "AS HB DU FRONSADAIS",
    "exterieur": "LORMONT HANDBALL HAUTS DE GARONNE",
    "score_dom": null,
@@ -2024,5 +2024,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-11-08 02:27"
+ "genere_le": "2026-11-08 14:23"
 }

@@ -298,7 +298,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "DIMANCHE 8 NOVEMBRE 2026 À 13H30 PE2M HB - - AVENIR PAILLETON VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2698116",
@@ -511,5 +512,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-11-08 02:28"
+ "genere_le": "2026-11-08 14:23"
 }
