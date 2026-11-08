@@ -1,7 +1,7 @@
 {
  "equipe": "SG1",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-16-masculins-pre-regionale-32457/poule-190872/",
- "source_mise_a_jour": "6 nov. 2026 à 14h07",
+ "source_mise_a_jour": "7 nov. 2026 à 23h48",
  "journees": 22,
  "classement": [
   {
@@ -48,6 +48,34 @@
   },
   {
    "rang": 4,
+   "club": "CM FLOIRAC CENON HANDBALL 2",
+   "joues": 5,
+   "gagnes": 4,
+   "nuls": 0,
+   "perdus": 1,
+   "bp": 155,
+   "bc": 111,
+   "diff": 44,
+   "points": 12,
+   "nous": false,
+   "stats_partielles": false
+  },
+  {
+   "rang": 5,
+   "club": "HBC LIBOURNE 3",
+   "joues": 6,
+   "gagnes": 3,
+   "nuls": 0,
+   "perdus": 3,
+   "bp": 187,
+   "bc": 205,
+   "diff": -18,
+   "points": 12,
+   "nous": false,
+   "stats_partielles": false
+  },
+  {
+   "rang": 6,
    "club": "ES BLANQUEFORTAISE HBC 2",
    "joues": 5,
    "gagnes": 3,
@@ -61,7 +89,7 @@
    "stats_partielles": false
   },
   {
-   "rang": 5,
+   "rang": 7,
    "club": "HBC TEICHOIS",
    "joues": 4,
    "gagnes": 3,
@@ -70,35 +98,7 @@
    "bp": 126,
    "bc": 103,
    "diff": 23,
-   "points": 10,
-   "nous": false,
-   "stats_partielles": false
-  },
-  {
-   "rang": 6,
-   "club": "CM FLOIRAC CENON HANDBALL 2",
-   "joues": 4,
-   "gagnes": 3,
-   "nuls": 0,
-   "perdus": 1,
-   "bp": 114,
-   "bc": 85,
-   "diff": 29,
-   "points": 9,
-   "nous": false,
-   "stats_partielles": false
-  },
-  {
-   "rang": 7,
-   "club": "HBC LIBOURNE 3",
-   "joues": 6,
-   "gagnes": 3,
-   "nuls": 0,
-   "perdus": 3,
-   "bp": 187,
-   "bc": 205,
-   "diff": -18,
-   "points": 9,
+   "points": 11,
    "nous": false,
    "stats_partielles": true
   },
@@ -118,6 +118,20 @@
   },
   {
    "rang": 9,
+   "club": "ST MEDARD HANDBALL 2",
+   "joues": 6,
+   "gagnes": 1,
+   "nuls": 0,
+   "perdus": 5,
+   "bp": 170,
+   "bc": 199,
+   "diff": -29,
+   "points": 8,
+   "nous": false,
+   "stats_partielles": false
+  },
+  {
+   "rang": 10,
    "club": "HAILLAN HANDBALL 1",
    "joues": 5,
    "gagnes": 1,
@@ -131,7 +145,7 @@
    "stats_partielles": false
   },
   {
-   "rang": 10,
+   "rang": 11,
    "club": "GRADIGNAN HANDBALL CLUB",
    "joues": 5,
    "gagnes": 1,
@@ -145,30 +159,16 @@
    "stats_partielles": false
   },
   {
-   "rang": 11,
-   "club": "ST MEDARD HANDBALL 2",
-   "joues": 6,
-   "gagnes": 1,
-   "nuls": 0,
-   "perdus": 5,
-   "bp": 170,
-   "bc": 199,
-   "diff": -29,
-   "points": 7,
-   "nous": false,
-   "stats_partielles": true
-  },
-  {
    "rang": 12,
    "club": "SC MONSEGUR HB 1",
-   "joues": 5,
+   "joues": 6,
    "gagnes": 0,
    "nuls": 0,
-   "perdus": 5,
-   "bp": 139,
-   "bc": 212,
-   "diff": -73,
-   "points": 5,
+   "perdus": 6,
+   "bp": 165,
+   "bc": 253,
+   "diff": -88,
+   "points": 6,
    "nous": false,
    "stats_partielles": false
   }
@@ -631,13 +631,12 @@
    "date": "Samedi 7 novembre 2026 à 19h45",
    "domicile": "SC MONSEGUR HB 1",
    "exterieur": "CM FLOIRAC CENON HANDBALL 2",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false,
-   "brut": "SAMEDI 7 NOVEMBRE 2026 À 19H45 SC MONSEGUR HB 1 - - CM FLOIRAC CENON HANDBALL 2 VOIR DÉTAIL DU MATCH"
+   "score_dom": 26,
+   "score_ext": 41,
+   "affiche": "26 – 41",
+   "vainqueur": "ext",
+   "statut": "joué",
+   "nous": false
   },
   {
    "id": "2635495",
@@ -2028,5 +2027,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-11-07 22:49"
+ "genere_le": "2026-11-08 02:27"
 }

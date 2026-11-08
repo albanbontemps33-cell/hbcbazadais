@@ -1,11 +1,25 @@
 {
  "equipe": "-13 G",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u13-masculin-32827/poule-194151/",
- "source_mise_a_jour": "7 nov. 2026 à 20h01",
+ "source_mise_a_jour": "7 nov. 2026 à 23h31",
  "journees": 10,
  "classement": [
   {
    "rang": 1,
+   "club": "HANDBALL CLUB SAINT SYMPHORIEN",
+   "joues": 5,
+   "gagnes": 5,
+   "nuls": 0,
+   "perdus": 0,
+   "bp": 164,
+   "bc": 90,
+   "diff": 74,
+   "points": 15,
+   "nous": false,
+   "stats_partielles": false
+  },
+  {
+   "rang": 2,
    "club": "SC MONSEGUR HB",
    "joues": 5,
    "gagnes": 4,
@@ -17,20 +31,6 @@
    "points": 13,
    "nous": false,
    "stats_partielles": false
-  },
-  {
-   "rang": 2,
-   "club": "HANDBALL CLUB SAINT SYMPHORIEN",
-   "joues": 5,
-   "gagnes": 5,
-   "nuls": 0,
-   "perdus": 0,
-   "bp": 164,
-   "bc": 90,
-   "diff": 74,
-   "points": 12,
-   "nous": false,
-   "stats_partielles": true
   },
   {
    "rang": 3,
@@ -62,6 +62,20 @@
   },
   {
    "rang": 5,
+   "club": "HBC BAZADAIS",
+   "joues": 5,
+   "gagnes": 1,
+   "nuls": 0,
+   "perdus": 4,
+   "bp": 109,
+   "bc": 140,
+   "diff": -31,
+   "points": 7,
+   "nous": true,
+   "stats_partielles": false
+  },
+  {
+   "rang": 6,
    "club": "AVENIR PAILLETON",
    "joues": 5,
    "gagnes": 1,
@@ -73,20 +87,6 @@
    "points": 7,
    "nous": false,
    "stats_partielles": false
-  },
-  {
-   "rang": 6,
-   "club": "HBC BAZADAIS",
-   "joues": 5,
-   "gagnes": 1,
-   "nuls": 0,
-   "perdus": 4,
-   "bp": 109,
-   "bc": 140,
-   "diff": -31,
-   "points": 6,
-   "nous": true,
-   "stats_partielles": true
   }
  ],
  "calendrier": [
@@ -511,5 +511,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-11-07 22:50"
+ "genere_le": "2026-11-08 02:28"
 }

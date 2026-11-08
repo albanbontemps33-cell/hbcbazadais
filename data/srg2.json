@@ -1,7 +1,7 @@
 {
  "equipe": "SG2",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-16-masculins-promotion-32460/",
- "source_mise_a_jour": "6 nov. 2026 à 19h54",
+ "source_mise_a_jour": "7 nov. 2026 à 23h41",
  "journees": 10,
  "classement": [
   {
@@ -49,16 +49,16 @@
   {
    "rang": 4,
    "club": "HANDBALL CLUB SAINT SYMPHORIEN",
-   "joues": 5,
+   "joues": 6,
    "gagnes": 1,
    "nuls": 1,
-   "perdus": 3,
-   "bp": 136,
-   "bc": 144,
-   "diff": -8,
+   "perdus": 4,
+   "bp": 160,
+   "bc": 178,
+   "diff": -18,
    "points": 8,
    "nous": false,
-   "stats_partielles": false
+   "stats_partielles": true
   },
   {
    "rang": 5,
@@ -77,16 +77,16 @@
   {
    "rang": 6,
    "club": "HBC BAZADAIS 2",
-   "joues": 5,
-   "gagnes": 0,
+   "joues": 6,
+   "gagnes": 1,
    "nuls": 0,
    "perdus": 5,
-   "bp": 122,
-   "bc": 174,
-   "diff": -52,
+   "bp": 156,
+   "bc": 198,
+   "diff": -42,
    "points": 5,
    "nous": true,
-   "stats_partielles": false
+   "stats_partielles": true
   }
  ],
  "calendrier": [
@@ -307,13 +307,12 @@
    "date": "Samedi 7 novembre 2026 à 20h00",
    "domicile": "HANDBALL CLUB SAINT SYMPHORIEN",
    "exterieur": "HBC BAZADAIS 2",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": true,
-   "brut": "SAMEDI 7 NOVEMBRE 2026 À 20H00 HANDBALL CLUB SAINT SYMPHORIEN - - HBC BAZADAIS 2 VOIR DÉTAIL DU MATCH"
+   "score_dom": 24,
+   "score_ext": 34,
+   "affiche": "24 – 34",
+   "vainqueur": "ext",
+   "statut": "joué",
+   "nous": true
   },
   {
    "id": "2676600",
@@ -512,5 +511,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-11-07 22:49"
+ "genere_le": "2026-11-08 02:27"
 }

@@ -1,7 +1,7 @@
 {
  "equipe": "-15 F",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u15-feminine-32776/poule-194055/",
- "source_mise_a_jour": "2 nov. 2026 à 09h16",
+ "source_mise_a_jour": "7 nov. 2026 à 22h24",
  "journees": 10,
  "classement": [
   {
@@ -21,14 +21,14 @@
   {
    "rang": 2,
    "club": "BORDEAUX ETUDIANTS CLUB",
-   "joues": 3,
-   "gagnes": 2,
+   "joues": 4,
+   "gagnes": 3,
    "nuls": 0,
    "perdus": 1,
-   "bp": 59,
-   "bc": 69,
-   "diff": -10,
-   "points": 7,
+   "bp": 94,
+   "bc": 92,
+   "diff": 2,
+   "points": 10,
    "nous": false,
    "stats_partielles": false
   },
@@ -63,14 +63,14 @@
   {
    "rang": 5,
    "club": "CADILLAC CERONS U15F",
-   "joues": 3,
+   "joues": 4,
    "gagnes": 0,
    "nuls": 0,
-   "perdus": 3,
-   "bp": 36,
-   "bc": 85,
-   "diff": -49,
-   "points": 3,
+   "perdus": 4,
+   "bp": 59,
+   "bc": 120,
+   "diff": -61,
+   "points": 4,
    "nous": false,
    "stats_partielles": false
   }
@@ -210,13 +210,12 @@
    "date": "Samedi 7 novembre 2026 à 18h30",
    "domicile": "BORDEAUX ETUDIANTS CLUB",
    "exterieur": "CADILLAC CERONS U15F",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false,
-   "brut": "SAMEDI 7 NOVEMBRE 2026 À 18H30 BORDEAUX ETUDIANTS CLUB - - CADILLAC CERONS U15F VOIR DÉTAIL DU MATCH"
+   "score_dom": 35,
+   "score_ext": 23,
+   "affiche": "35 – 23",
+   "vainqueur": "dom",
+   "statut": "joué",
+   "nous": false
   },
   {
    "id": "2699844",
@@ -359,5 +358,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-11-07 22:50"
+ "genere_le": "2026-11-08 02:28"
 }

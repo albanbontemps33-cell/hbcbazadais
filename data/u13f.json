@@ -1,7 +1,7 @@
 {
  "equipe": "-13 F 1",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u13-feminine-32777/poule-193722/",
- "source_mise_a_jour": "7 nov. 2026 à 13h40",
+ "source_mise_a_jour": "7 nov. 2026 à 23h21",
  "journees": 10,
  "classement": [
   {
@@ -21,14 +21,14 @@
   {
    "rang": 2,
    "club": "STADE LANGONNAIS HB",
-   "joues": 4,
-   "gagnes": 3,
+   "joues": 5,
+   "gagnes": 4,
    "nuls": 0,
    "perdus": 1,
-   "bp": 141,
-   "bc": 94,
-   "diff": 47,
-   "points": 10,
+   "bp": 189,
+   "bc": 120,
+   "diff": 69,
+   "points": 13,
    "nous": false,
    "stats_partielles": false
   },
@@ -63,14 +63,14 @@
   {
    "rang": 5,
    "club": "SA GAZINET CESTAS",
-   "joues": 4,
+   "joues": 5,
    "gagnes": 1,
    "nuls": 0,
-   "perdus": 3,
-   "bp": 84,
-   "bc": 125,
-   "diff": -41,
-   "points": 6,
+   "perdus": 4,
+   "bp": 110,
+   "bc": 173,
+   "diff": -63,
+   "points": 7,
    "nous": false,
    "stats_partielles": false
   },
@@ -279,13 +279,12 @@
    "date": "Samedi 7 novembre 2026 à 14h00",
    "domicile": "SA GAZINET CESTAS",
    "exterieur": "STADE LANGONNAIS HB",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false,
-   "brut": "SAMEDI 7 NOVEMBRE 2026 À 14H00 SA GAZINET CESTAS - - STADE LANGONNAIS HB VOIR DÉTAIL DU MATCH"
+   "score_dom": 26,
+   "score_ext": 48,
+   "affiche": "26 – 48",
+   "vainqueur": "ext",
+   "statut": "joué",
+   "nous": false
   },
   {
    "id": "2699512",
@@ -513,5 +512,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-11-07 22:50"
+ "genere_le": "2026-11-08 02:28"
 }

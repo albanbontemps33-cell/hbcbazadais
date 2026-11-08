@@ -1,7 +1,7 @@
 {
  "equipe": "SF",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-16-feminines-honneur-32465/",
- "source_mise_a_jour": "7 nov. 2026 à 10h24",
+ "source_mise_a_jour": "7 nov. 2026 à 21h29",
  "journees": 22,
  "classement": [
   {
@@ -20,6 +20,34 @@
   },
   {
    "rang": 2,
+   "club": "HAILLAN HANDBALL",
+   "joues": 6,
+   "gagnes": 4,
+   "nuls": 0,
+   "perdus": 2,
+   "bp": 151,
+   "bc": 122,
+   "diff": 29,
+   "points": 13,
+   "nous": false,
+   "stats_partielles": true
+  },
+  {
+   "rang": 3,
+   "club": "HBC PAYS CASTILLONNAIS",
+   "joues": 5,
+   "gagnes": 4,
+   "nuls": 0,
+   "perdus": 1,
+   "bp": 115,
+   "bc": 93,
+   "diff": 22,
+   "points": 13,
+   "nous": false,
+   "stats_partielles": false
+  },
+  {
+   "rang": 4,
    "club": "LORMONT HANDBALL HAUTS DE GARONNE",
    "joues": 5,
    "gagnes": 4,
@@ -33,21 +61,7 @@
    "stats_partielles": false
   },
   {
-   "rang": 3,
-   "club": "HAILLAN HANDBALL",
-   "joues": 5,
-   "gagnes": 4,
-   "nuls": 0,
-   "perdus": 1,
-   "bp": 129,
-   "bc": 98,
-   "diff": 31,
-   "points": 13,
-   "nous": false,
-   "stats_partielles": false
-  },
-  {
-   "rang": 4,
+   "rang": 5,
    "club": "HANDBALL SAINT MEDARD D'EYRANS",
    "joues": 6,
    "gagnes": 3,
@@ -61,21 +75,21 @@
    "stats_partielles": false
   },
   {
-   "rang": 5,
+   "rang": 6,
    "club": "HBC BAZADAIS",
-   "joues": 5,
-   "gagnes": 3,
+   "joues": 6,
+   "gagnes": 4,
    "nuls": 1,
    "perdus": 1,
-   "bp": 131,
-   "bc": 128,
-   "diff": 3,
+   "bp": 155,
+   "bc": 150,
+   "diff": 5,
    "points": 12,
    "nous": true,
-   "stats_partielles": false
+   "stats_partielles": true
   },
   {
-   "rang": 6,
+   "rang": 7,
    "club": "MEDOC HANDBALL 2",
    "joues": 4,
    "gagnes": 3,
@@ -87,20 +101,6 @@
    "points": 10,
    "nous": false,
    "stats_partielles": false
-  },
-  {
-   "rang": 7,
-   "club": "HBC PAYS CASTILLONNAIS",
-   "joues": 5,
-   "gagnes": 4,
-   "nuls": 0,
-   "perdus": 1,
-   "bp": 115,
-   "bc": 93,
-   "diff": 22,
-   "points": 10,
-   "nous": false,
-   "stats_partielles": true
   },
   {
    "rang": 8,
@@ -126,9 +126,9 @@
    "bp": 90,
    "bc": 151,
    "diff": -61,
-   "points": 7,
+   "points": 8,
    "nous": false,
-   "stats_partielles": true
+   "stats_partielles": false
   },
   {
    "rang": 10,
@@ -573,13 +573,12 @@
    "date": "Samedi 7 novembre 2026 à 19h00",
    "domicile": "HAILLAN HANDBALL",
    "exterieur": "HBC BAZADAIS",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": true,
-   "brut": "SAMEDI 7 NOVEMBRE 2026 À 19H00 HAILLAN HANDBALL - - HBC BAZADAIS VOIR DÉTAIL DU MATCH"
+   "score_dom": 22,
+   "score_ext": 24,
+   "affiche": "22 – 24",
+   "vainqueur": "ext",
+   "statut": "joué",
+   "nous": true
   },
   {
    "id": "2636289",
@@ -2025,5 +2024,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-11-07 22:49"
+ "genere_le": "2026-11-08 02:27"
 }
