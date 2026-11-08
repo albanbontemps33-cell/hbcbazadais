@@ -635,7 +635,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "DIMANCHE 8 NOVEMBRE 2026 À 16H00 SA GAZINET CESTAS 2 - - HANDBALL CUBZAGUAIS VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2636288",
@@ -649,7 +650,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "DIMANCHE 8 NOVEMBRE 2026 À 16H30 MEDOC HANDBALL 2 - - PE2M HB 2 VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2636295",
@@ -2024,5 +2026,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-11-08 14:23"
+ "genere_le": "2026-11-08 23:03"
 }

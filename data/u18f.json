@@ -284,7 +284,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "DIMANCHE 8 NOVEMBRE 2026 À 16H00 LEOGNAN HANDBALL - - SC MONSEGUR HB VOIR DÉTAIL DU MATCH REMATCH DISPONIBLE"
   },
   {
    "id": "2699876",
@@ -511,5 +512,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-11-08 14:23"
+ "genere_le": "2026-11-08 23:03"
 }
