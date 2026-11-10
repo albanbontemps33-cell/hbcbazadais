@@ -1,7 +1,7 @@
 {
  "equipe": "-15 G",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u15-masculin-32826/poule-194103/",
- "source_mise_a_jour": "9 nov. 2026 à 20h29",
+ "source_mise_a_jour": "10 nov. 2026 à 21h00",
  "journees": 10,
  "classement": [
   {
@@ -63,28 +63,28 @@
   {
    "rang": 5,
    "club": "PE2M HB",
-   "joues": 4,
-   "gagnes": 0,
+   "joues": 5,
+   "gagnes": 1,
    "nuls": 1,
    "perdus": 3,
-   "bp": 142,
-   "bc": 151,
-   "diff": -9,
-   "points": 5,
+   "bp": 201,
+   "bc": 175,
+   "diff": 26,
+   "points": 8,
    "nous": false,
    "stats_partielles": false
   },
   {
    "rang": 6,
    "club": "AVENIR PAILLETON",
-   "joues": 4,
+   "joues": 5,
    "gagnes": 0,
    "nuls": 0,
-   "perdus": 4,
-   "bp": 92,
-   "bc": 186,
-   "diff": -94,
-   "points": 4,
+   "perdus": 5,
+   "bp": 116,
+   "bc": 245,
+   "diff": -129,
+   "points": 5,
    "nous": false,
    "stats_partielles": false
   }
@@ -293,13 +293,12 @@
    "date": "Dimanche 8 novembre 2026 à 13h30",
    "domicile": "PE2M HB",
    "exterieur": "AVENIR PAILLETON",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false,
-   "brut": "DIMANCHE 8 NOVEMBRE 2026 À 13H30 PE2M HB - - AVENIR PAILLETON VOIR DÉTAIL DU MATCH"
+   "score_dom": 59,
+   "score_ext": 24,
+   "affiche": "59 – 24",
+   "vainqueur": "dom",
+   "statut": "joué",
+   "nous": false
   },
   {
    "id": "2698116",
@@ -512,5 +511,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-11-10 02:34"
+ "genere_le": "2026-11-11 00:22"
 }
