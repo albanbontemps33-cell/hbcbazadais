@@ -1,7 +1,7 @@
 {
  "equipe": "SG1",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-16-masculins-pre-regionale-32457/poule-190872/",
- "source_mise_a_jour": "8 nov. 2026 à 11h10",
+ "source_mise_a_jour": "8 nov. 2026 à 23h45",
  "journees": 22,
  "classement": [
   {
@@ -777,12 +777,12 @@
    "nous": false
   },
   {
-   "id": "2635508",
+   "id": "2635504",
    "journee": 8,
-   "iso": "2026-11-28T19:00",
-   "date": "Samedi 28 novembre 2026 à 19h00",
-   "domicile": "ES BLANQUEFORTAISE HBC 2",
-   "exterieur": "CM FLOIRAC CENON HANDBALL 2",
+   "iso": "2026-11-28T20:30",
+   "date": "Samedi 28 novembre 2026 à 20h30",
+   "domicile": "SC MONSEGUR HB 1",
+   "exterieur": "ST MEDARD HANDBALL 2",
    "score_dom": null,
    "score_ext": null,
    "affiche": null,
@@ -791,12 +791,12 @@
    "nous": false
   },
   {
-   "id": "2635504",
+   "id": "2635508",
    "journee": 8,
-   "iso": "2026-11-28T20:30",
-   "date": "Samedi 28 novembre 2026 à 20h30",
-   "domicile": "SC MONSEGUR HB 1",
-   "exterieur": "ST MEDARD HANDBALL 2",
+   "iso": "2026-11-29T14:00",
+   "date": "Dimanche 29 novembre 2026 à 14h00",
+   "domicile": "ES BLANQUEFORTAISE HBC 2",
+   "exterieur": "CM FLOIRAC CENON HANDBALL 2",
    "score_dom": null,
    "score_ext": null,
    "affiche": null,
@@ -2023,5 +2023,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-11-08 14:23"
+ "genere_le": "2026-11-10 02:32"
 }
