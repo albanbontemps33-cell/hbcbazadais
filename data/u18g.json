@@ -1,7 +1,7 @@
 {
  "equipe": "-18 G",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u18-masculins-32774/poule-194137/",
- "source_mise_a_jour": "9 nov. 2026 à 21h52",
+ "source_mise_a_jour": "10 nov. 2026 à 23h52",
  "journees": 10,
  "classement": [
   {
@@ -28,9 +28,9 @@
    "bp": 93,
    "bc": 89,
    "diff": 4,
-   "points": 7,
+   "points": 10,
    "nous": false,
-   "stats_partielles": true
+   "stats_partielles": false
   },
   {
    "rang": 3,
@@ -42,9 +42,9 @@
    "bp": 117,
    "bc": 130,
    "diff": -13,
-   "points": 7,
+   "points": 8,
    "nous": false,
-   "stats_partielles": true
+   "stats_partielles": false
   },
   {
    "rang": 4,
@@ -357,5 +357,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-11-10 02:34"
+ "genere_le": "2026-11-12 01:44"
 }
