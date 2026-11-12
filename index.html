@@ -236,6 +236,8 @@ body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--ink);o
 .pcard-photo img{position:absolute;bottom:0;height:100%;object-fit:cover;object-position:top center;width:100%}
 .pcard-photo-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top center;transition:transform .5s ease;transform-origin:top center;will-change:transform}
 .pcard:hover .pcard-photo-img{transform:scale(1.07)}
+.pcard-photo .pcard-photo-img{top:0;left:0;right:auto;bottom:auto;width:100%;height:auto;aspect-ratio:auto 2/3;transform-origin:0 0;transform:translate(var(--tx,0%),var(--ty,0%)) scale(var(--s,1))}
+.pcard:hover .pcard-photo .pcard-photo-img{transform:translate(var(--tx,0%),var(--ty,0%)) scale(calc(var(--s,1)*1.05))}
 .pcard-photo-img.alt{opacity:0;transition:opacity .35s ease,transform .5s ease}
 .pcard:hover .pcard-photo-img.alt,.pcard.flip .pcard-photo-img.alt{opacity:1}
 .pcard{cursor:pointer}
@@ -1006,20 +1008,20 @@ const TEAMS = [
     {fname:'Louis',lname:'Dubar',num:'6',photo:'u18g/noa-dubar1.jpg',photo2:'u18g/noa-dubar2.jpg',pos:['Ailier']},
     {fname:'Noa',lname:'Dubar',num:'7',photo:'u18g/louis-dubar1.jpg',photo2:'u18g/louis-dubar2.jpg',pos:['Demi-centre']},
     {fname:'Mattéo',lname:'Delannoy',num:'2',pos:['Ailier']}]},
-  {id:'srf',cat:'Compétition Senior',name:'Seniors Filles',sheet:'srf',coach1:{fname:'Prénom coach',lname:'Nom coach',photo:''},coach2:{fname:'Prénom coach',lname:'Nom coach',photo:''},roster:[{fname:'Camille',lname:'Léglise',num:'18',pos:['Ailière']},
-    {fname:'Charlotte',lname:'Paillaugue',num:'7',pos:['Ailière']},
-    {fname:'Clémence',lname:'Sorbier',num:'17',pos:['Ailière','Arrière']},
-    {fname:'Célia',lname:'Labarchède',num:'12',pos:['Gardienne']},
-    {fname:'Déborah',lname:'Doux',num:'8',pos:['Pivot']},
-    {fname:'Jessica',lname:'Labrouche',num:'1',pos:['Gardienne']},
+  {id:'srf',cat:'Compétition Senior',name:'Seniors Filles',sheet:'srf',coach1:{fname:'Pierre',lname:'Contant',photo:'srf/coach1.jpg'},coach2:{fname:'Bastien',lname:'Poisson',photo:'srf/coach2.jpg'},roster:[{fname:'Camille',lname:'Léglise',num:'18',fit:[1.486,-24.1,-23.3],fit2:[1,0,-5.6],pos:['Ailière']},
+    {fname:'Charlotte',lname:'Paillaugue',num:'7',fit:[1.072,-7.2,-7.2],fit2:[1,0,-2],pos:['Ailière']},
+    {fname:'Clémence',lname:'Sorbier',num:'17',fit:[1.268,-16.1,-8.9],fit2:[1,0,-5.8],pos:['Ailière','Arrière']},
+    {fname:'Célia',lname:'Labarchède',num:'12',fit:[1.03,0,-0.9],fit2:[1,0,-6.1],pos:['Gardienne']},
+    {fname:'Déborah',lname:'Doux',num:'8',fit:[1.149,-8.4,-7.2],fit2:[1,0,0],pos:['Pivot']},
+    {fname:'Jessica',lname:'Labrouche',num:'1',fit:[1,0,-6.6],fit2:[1,0,-7.5],pos:['Gardienne']},
     {fname:'Laura',lname:'Descacq',num:'',pos:['Ailière']},
-    {fname:'Loriane',lname:'Toutenuit',num:'9',pos:['Demi-centre']},
+    {fname:'Loriane',lname:'Toutenuit',num:'9',fit:[1.351,-20.4,-8.6],fit2:[1,0,-4.7],pos:['Demi-centre']},
     {fname:'Maylis',lname:'Brotet',num:'',pos:['Arrière']},
     {fname:'Sabrina',lname:'Labbe',num:'',pos:['Ailière']},
-    {fname:'Valérie',lname:'Labarchède',num:'13',pos:['Pivot']},
-    {fname:'Victoria',lname:'Moretto',num:'5',pos:['Demi-centre','Arrière']},
-    {fname:'Chloé',lname:'Léglise',num:'3',pos:['Arrière']},
-    {fname:'Noélane',lname:'Brotet',num:'10',pos:['Pivot']}]},
+    {fname:'Valérie',lname:'Labarchède',num:'13',fit:[1.03,0,0],fit2:[1.056,-4.2,-3.4],pos:['Pivot']},
+    {fname:'Victoria',lname:'Moretto',num:'5',fit:[1.005,-0.5,-7],fit2:[1,0,-3],pos:['Demi-centre','Arrière']},
+    {fname:'Chloé',lname:'Léglise',num:'3',fit:[1.169,-8.1,-1.8],fit2:[1,0,-5.3],pos:['Arrière']},
+    {fname:'Noélane',lname:'Brotet',num:'10',fit:[1.444,-18.3,-16.1],fit2:[1,0,-7.7],pos:['Pivot']}]},
   {id:'srg2',cat:'Compétition Senior',name:'Seniors Garçons 2',sheet:'srg2',coach1:{fname:'Prénom coach',lname:'Nom coach',photo:''},coach2:{fname:'Prénom coach',lname:'Nom coach',photo:''},roster:[]},
   {id:'srg1',cat:'Compétition Senior',name:'Seniors Garçons 1',sheet:'srg1',coach1:{fname:'Prénom coach',lname:'Nom coach',photo:''},coach2:{fname:'Prénom coach',lname:'Nom coach',photo:''},roster:[]},
 ];
@@ -1280,8 +1282,10 @@ function playerPhotos(team, p) {
   const src1 = p.photo ? GH + p.photo : base + '1.jpg';
   const src2 = p.photo2 ? GH + p.photo2 : base + '2.jpg';
   const alt = ffEsc((p.fname + ' ' + (p.lname || '')).trim());
-  return '<img class="pcard-photo-img" src="' + src1 + '" alt="' + alt + '" onerror="this.onerror=function(){this.style.display=\'none\'};this.src=\'' + src2 + '\'" loading="lazy" decoding="async">' +
-         '<img class="pcard-photo-img alt" data-src="' + src2 + '" alt="" aria-hidden="true" decoding="async" onerror="this.style.display=\'none\'">';
+  // Cadrage par joueur (visages alignés) : [zoom, décalage X %, décalage Y %]
+  const fitStyle = f => f ? ' style="--s:' + f[0] + ';--tx:' + f[1] + '%;--ty:' + f[2] + '%"' : '';
+  return '<img class="pcard-photo-img"' + fitStyle(p.fit) + ' src="' + src1 + '" alt="' + alt + '" onerror="this.onerror=function(){this.style.display=\'none\'};this.src=\'' + src2 + '\'" loading="lazy" decoding="async">' +
+         '<img class="pcard-photo-img alt"' + fitStyle(p.fit2 || p.fit) + ' data-src="' + src2 + '" alt="" aria-hidden="true" decoding="async" onerror="this.style.display=\'none\'">';
 }
 
 function buildSub(type, team) {
