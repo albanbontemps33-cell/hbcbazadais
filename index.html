@@ -257,7 +257,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--ink);o
 .coach-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
 .coach-card{background:var(--card);border-radius:var(--radius);border:1px solid var(--border-navy);box-shadow:var(--shadow-sm);display:flex;align-items:center;gap:1rem;padding:1rem 1.2rem}
 .coach-photo{width:56px;height:56px;border-radius:50%;overflow:hidden;flex-shrink:0;background:linear-gradient(160deg,var(--blue-pale) 0%,rgba(234,59,121,.08) 100%);display:flex;align-items:center;justify-content:center}
-.coach-photo img{width:100%;height:100%;object-fit:cover;object-position:top center}
+.coach-photo img{width:100%;height:auto;aspect-ratio:auto 2/3;object-fit:cover;align-self:flex-start;flex-shrink:0;transform-origin:0 0;transform:translate(var(--tx,0%),var(--ty,0%)) scale(var(--s,1))}
 .coach-photo svg{width:28px;height:28px;opacity:.3}
 .coach-info-role{font-size:.62rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--rose);margin-bottom:.15rem}
 .coach-info-fname{font-size:.7rem;color:rgba(22,35,63,.4);text-transform:uppercase;letter-spacing:.05em;margin-bottom:.05rem}
@@ -977,15 +977,15 @@ const TEAMS = [
     {fname:'Sacha',lname:'',num:'',pos:['Ailier','Gardien']},
     {fname:'Maël',lname:'',num:'',pos:['Ailier']},
     {fname:'Dario',lname:'',num:'',pos:['Ailier']}]},
-  {id:'u15f',cat:'Catégorie U15',name:'-15 Filles',sheet:'u15f',coach1:{fname:'Nicolas',lname:'Mangeard',photo:''},coach2:null,roster:[{fname:'Chloé',lname:'Robert',num:'13',pos:['Gardienne','Arrière']},
-    {fname:'Andréa',lname:'Coulomb',num:'6',pos:['Arrière']},
-    {fname:'Maëly',lname:'Saint Florin',num:'9',photo:'u15f/maely-saint1.jpg',photo2:'u15f/maely-saint2.jpg',pos:['Gardienne','Ailière']},
+  {id:'u15f',cat:'Catégorie U15',name:'-15 Filles',sheet:'u15f',coach1:{fname:'Nicolas',lname:'Mangeard',photo:''},coach2:null,roster:[{fname:'Chloé',lname:'Robert',num:'13',fit:[1.182,-10.4,-14.1],fit2:[1.396,-17.4,-25],pos:['Gardienne','Arrière']},
+    {fname:'Andréa',lname:'Coulomb',num:'6',fit:[1,0,-13.9],fit2:[1,0,-13.7],pos:['Arrière']},
+    {fname:'Maëly',lname:'Saint Florin',num:'9',fit:[1,0,-2],fit2:[1,0,-2.3],photo:'u15f/maely-saint1.jpg',photo2:'u15f/maely-saint2.jpg',pos:['Gardienne','Ailière']},
     {fname:'Eloa',lname:'Calcas',num:'',pos:['Gardienne','Pivot']},
-    {fname:'Paola',lname:'Teixeira',num:'7',pos:['Ailière','Arrière']},
-    {fname:'Léna',lname:'Corre',num:'11',pos:['Arrière']},
-    {fname:'Julie',lname:'Couthures',num:'10',pos:['Ailière']},
+    {fname:'Paola',lname:'Teixeira',num:'7',fit:[1.072,-4.7,-8.5],fit2:[1.078,-7.8,-1.8],pos:['Ailière','Arrière']},
+    {fname:'Léna',lname:'Corre',num:'11',fit:[1.149,-12.7,-15.1],fit2:[1,0,-8.5],pos:['Arrière']},
+    {fname:'Julie',lname:'Couthures',num:'10',fit:[1.13,-11.3,-17.8],fit2:[1.308,-12.4,-18.3],pos:['Ailière']},
     {fname:'Mallaury',lname:'Bonin',num:'',pos:['Ailière']},
-    {fname:'Pauline',lname:'Barbe',num:'4',pos:['Pivot']},
+    {fname:'Pauline',lname:'Barbe',num:'4',fit:[1.292,-16.6,-17.6],fit2:[1.056,-2.6,0],pos:['Pivot']},
     {fname:'Zelie',lname:'Valas',num:'',pos:['Demi-centre']},
     {fname:'Lilou',lname:'Mangeard',num:'',pos:['Demi-centre']},
     {fname:'Lysia',lname:'Chambon',num:'',pos:['Ailière']},
@@ -1008,7 +1008,7 @@ const TEAMS = [
     {fname:'Louis',lname:'Dubar',num:'6',photo:'u18g/noa-dubar1.jpg',photo2:'u18g/noa-dubar2.jpg',pos:['Ailier']},
     {fname:'Noa',lname:'Dubar',num:'7',photo:'u18g/louis-dubar1.jpg',photo2:'u18g/louis-dubar2.jpg',pos:['Demi-centre']},
     {fname:'Mattéo',lname:'Delannoy',num:'2',pos:['Ailier']}]},
-  {id:'srf',cat:'Compétition Senior',name:'Seniors Filles',sheet:'srf',coach1:{fname:'Pierre',lname:'Contant',photo:'srf/coach1.jpg'},coach2:{fname:'Bastien',lname:'Poisson',photo:'srf/coach2.jpg'},roster:[{fname:'Camille',lname:'Léglise',num:'18',fit:[1.486,-24.1,-23.3],fit2:[1,0,-5.6],pos:['Ailière']},
+  {id:'srf',cat:'Compétition Senior',name:'Seniors Filles',sheet:'srf',coach1:{fname:'Pierre',lname:'Contant',photo:'srf/coach1.jpg',fit:[1.821,-38.5,-19.6]},coach2:{fname:'Bastien',lname:'Poisson',photo:'srf/coach2.jpg',fit:[1.761,-42.6,-21.3]},roster:[{fname:'Camille',lname:'Léglise',num:'18',fit:[1.486,-24.1,-23.3],fit2:[1,0,-5.6],pos:['Ailière']},
     {fname:'Charlotte',lname:'Paillaugue',num:'7',fit:[1.072,-7.2,-7.2],fit2:[1,0,-2],pos:['Ailière']},
     {fname:'Clémence',lname:'Sorbier',num:'17',fit:[1.268,-16.1,-8.9],fit2:[1,0,-5.8],pos:['Ailière','Arrière']},
     {fname:'Célia',lname:'Labarchède',num:'12',fit:[1.03,0,-0.9],fit2:[1,0,-6.1],pos:['Gardienne']},
@@ -1292,9 +1292,9 @@ function buildSub(type, team) {
   const subContainer = document.getElementById('subContent');
   if (type === 'effectif') {
     const coaches = [
-      team.coach1 ? {label:'Coach 1', fname:team.coach1.fname, lname:team.coach1.lname, photo:team.coach1.photo} : null,
-      team.coach2 ? {label:'Coach 2', fname:team.coach2.fname, lname:team.coach2.lname, photo:team.coach2.photo} : null,
-      team.coach3 ? {label:'Coach 3', fname:team.coach3.fname, lname:team.coach3.lname, photo:team.coach3.photo} : null,
+      team.coach1 ? {label:'Coach 1', fname:team.coach1.fname, lname:team.coach1.lname, photo:team.coach1.photo, fit:team.coach1.fit} : null,
+      team.coach2 ? {label:'Coach 2', fname:team.coach2.fname, lname:team.coach2.lname, photo:team.coach2.photo, fit:team.coach2.fit} : null,
+      team.coach3 ? {label:'Coach 3', fname:team.coach3.fname, lname:team.coach3.lname, photo:team.coach3.photo, fit:team.coach3.fit} : null,
     ].filter(Boolean);
 
     const coachHTML = coaches.length ? `
@@ -1305,7 +1305,7 @@ function buildSub(type, team) {
             <div class="coach-card">
               <div class="coach-photo">
                 ${c.photo
-                  ? `<img src="${GH}${c.photo}" alt="${c.fname} ${c.lname}" onerror="this.style.display='none'" loading="lazy">`
+                  ? `<img${c.fit ? ` style="--s:${c.fit[0]};--tx:${c.fit[1]}%;--ty:${c.fit[2]}%"` : ''} src="${GH}${c.photo}" alt="${c.fname} ${c.lname}" onerror="this.style.display='none'" loading="lazy">`
                   : `<svg viewBox="0 0 80 140" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="40" cy="22" rx="18" ry="18" fill="rgba(234,59,121,0.3)"/><path d="M8 120 C8 80 18 65 40 62 C62 65 72 80 72 120" fill="rgba(234,59,121,0.2)"/></svg>`}
               </div>
               <div class="coach-info">
