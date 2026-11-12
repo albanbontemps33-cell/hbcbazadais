@@ -1,7 +1,7 @@
 {
  "equipe": "-15 G",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u15-masculin-32826/poule-194103/",
- "source_mise_a_jour": "10 nov. 2026 à 21h00",
+ "source_mise_a_jour": "13 nov. 2026 à 00h02",
  "journees": 10,
  "classement": [
   {
@@ -469,6 +469,20 @@
    "nous": false
   },
   {
+   "id": "2698131",
+   "journee": 10,
+   "iso": "2026-12-12T17:00",
+   "date": "Samedi 12 décembre 2026 à 17h00",
+   "domicile": "UNION SPORTIVE TALENCE HANDBALL",
+   "exterieur": "CADILLAC/CERONS U15M",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
    "id": "2698129",
    "journee": 10,
    "iso": "2026-12-12T17:30",
@@ -495,21 +509,7 @@
    "vainqueur": null,
    "statut": "à venir",
    "nous": false
-  },
-  {
-   "id": "2698131",
-   "journee": 10,
-   "iso": "",
-   "date": "",
-   "domicile": "UNION SPORTIVE TALENCE HANDBALL",
-   "exterieur": "CADILLAC/CERONS U15M",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false
   }
  ],
- "genere_le": "2026-11-11 00:22"
+ "genere_le": "2026-11-13 00:40"
 }

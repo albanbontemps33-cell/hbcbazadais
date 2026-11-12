@@ -1,7 +1,7 @@
 {
  "equipe": "SG1",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-16-masculins-pre-regionale-32457/poule-190872/",
- "source_mise_a_jour": "11 nov. 2026 à 19h12",
+ "source_mise_a_jour": "12 nov. 2026 à 17h43",
  "journees": 22,
  "classement": [
   {
@@ -931,6 +931,20 @@
    "nous": false
   },
   {
+   "id": "2635516",
+   "journee": 10,
+   "iso": "2026-12-12T20:30",
+   "date": "Samedi 12 décembre 2026 à 20h30",
+   "domicile": "HAILLAN HANDBALL 1",
+   "exterieur": "SC MONSEGUR HB 1",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
    "id": "2635518",
    "journee": 10,
    "iso": "2026-12-12T21:30",
@@ -1105,20 +1119,6 @@
    "date": "Samedi 22 mai 2027 à 18h30",
    "domicile": "AS AMBARESIENNE 2",
    "exterieur": "HBC LIBOURNE 3",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
-   "id": "2635516",
-   "journee": 10,
-   "iso": "",
-   "date": "",
-   "domicile": "HAILLAN HANDBALL 1",
-   "exterieur": "SC MONSEGUR HB 1",
    "score_dom": null,
    "score_ext": null,
    "affiche": null,
@@ -2023,5 +2023,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-11-12 01:43"
+ "genere_le": "2026-11-13 00:38"
 }
