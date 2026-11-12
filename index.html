@@ -962,21 +962,21 @@ const TEAMS = [
   {id:'ecole',cat:'École de Handball',name:'École du Hand',sheet:'ecole du hand',coach1:{fname:'Prénom coach',lname:'Nom coach',photo:''},coach2:{fname:'Prénom coach',lname:'Nom coach',photo:''},roster:[]},
   {id:'u13',cat:'Catégorie U13',name:'-13 Filles 2',sheet:'u13',coach1:{fname:'Prénom coach',lname:'Nom coach',photo:''},coach2:{fname:'Prénom coach',lname:'Nom coach',photo:''},roster:[]},
   {id:'u13f',cat:'Catégorie U13',name:'-13 Filles 1',sheet:'u13f',coach1:{fname:'Prénom coach',lname:'Nom coach',photo:''},coach2:{fname:'Prénom coach',lname:'Nom coach',photo:''},roster:[]},
-  {id:'u13g',cat:'Catégorie U13',name:'-13 Garçons',sheet:'u13g',coach1:{fname:'Prénom coach',lname:'Nom coach',photo:''},coach2:{fname:'Prénom coach',lname:'Nom coach',photo:''},roster:[{fname:'Iloé',lname:'',num:'11',pos:['Demi-centre']},
-    {fname:'Arthur',lname:'',num:'',pos:['Demi-centre']},
-    {fname:'Victor',lname:'',num:'',pos:['Arrière']},
-    {fname:'Lény',lname:'',num:'',pos:['Arrière']},
+  {id:'u13g',cat:'Catégorie U13',name:'-13 Garçons',sheet:'u13g',coach1:{fname:'Prénom coach',lname:'Nom coach',photo:''},coach2:{fname:'Prénom coach',lname:'Nom coach',photo:''},roster:[{fname:'Iloé',lname:'',num:'11',photo:'u13g/iloe-1.jpg',photo2:'u13g/iloe-2.jpg',pos:['Demi-centre']},
+    {fname:'Arthur',lname:'',num:'9',pos:['Demi-centre']},
+    {fname:'Victor',lname:'',num:'4',pos:['Arrière']},
+    {fname:'Lény',lname:'',num:'8',pos:['Arrière']},
     {fname:'Lucien',lname:'',num:'',pos:['Arrière','Gardien']},
-    {fname:'Noha',lname:'',num:'',pos:['Arrière']},
-    {fname:'Solal',lname:'',num:'',pos:['Arrière']},
-    {fname:'Diego',lname:'',num:'',pos:['Pivot']},
-    {fname:'Charles',lname:'',num:'',pos:['Pivot']},
-    {fname:'Timéo',lname:'P.',num:'',pos:['Gardien']},
-    {fname:'Mathéis',lname:'',num:'',pos:['Pivot']},
-    {fname:'Thomas',lname:'',num:'',pos:['Ailier']},
-    {fname:'Sacha',lname:'',num:'',pos:['Ailier','Gardien']},
-    {fname:'Maël',lname:'',num:'',pos:['Ailier']},
-    {fname:'Dario',lname:'',num:'',pos:['Ailier']}]},
+    {fname:'Noha',lname:'',num:'9',pos:['Arrière']},
+    {fname:'Solal',lname:'',num:'3',pos:['Arrière']},
+    {fname:'Diego',lname:'',num:'11',pos:['Pivot']},
+    {fname:'Charles',lname:'',num:'10',pos:['Pivot']},
+    {fname:'Timéo',lname:'P.',num:'5',photo:'u13g/timeo1.jpg',photo2:'u13g/timeo2.jpg',pos:['Gardien']},
+    {fname:'Mathéis',lname:'',num:'14',pos:['Pivot']},
+    {fname:'Thomas',lname:'',num:'5',pos:['Ailier']},
+    {fname:'Sacha',lname:'',num:'6',pos:['Ailier','Gardien']},
+    {fname:'Maël',lname:'',num:'3',pos:['Ailier']},
+    {fname:'Dario',lname:'',num:'13',pos:['Ailier']}]},
   {id:'u15f',cat:'Catégorie U15',name:'-15 Filles',sheet:'u15f',coach1:{fname:'Nicolas',lname:'Mangeard',photo:''},coach2:null,roster:[{fname:'Chloé',lname:'Robert',num:'13',fit:[1.182,-10.4,-14.1],fit2:[1.396,-17.4,-25],pos:['Gardienne','Arrière']},
     {fname:'Andréa',lname:'Coulomb',num:'6',fit:[1,0,-13.9],fit2:[1,0,-13.7],pos:['Arrière']},
     {fname:'Maëly',lname:'Saint Florin',num:'9',fit:[1,0,-2],fit2:[1,0,-2.3],photo:'u15f/maely-saint1.jpg',photo2:'u15f/maely-saint2.jpg',pos:['Gardienne','Ailière']},
@@ -1278,7 +1278,7 @@ function slugName(v) {
 }
 function playerPhotos(team, p) {
   const folder = team.folder || team.id;
-  const base = GH + folder + '/' + slugName(p.fname) + '-' + (slugName(p.lname) ? slugName(p.lname) : '');
+  const base = GH + folder + '/' + slugName(p.fname) + (slugName(p.lname) ? '-' + slugName(p.lname) : '');
   const src1 = p.photo ? GH + p.photo : base + '1.jpg';
   const src2 = p.photo2 ? GH + p.photo2 : base + '2.jpg';
   const alt = ffEsc((p.fname + ' ' + (p.lname || '')).trim());
