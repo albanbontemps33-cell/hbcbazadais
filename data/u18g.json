@@ -1,7 +1,7 @@
 {
  "equipe": "-18 G",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u18-masculins-32774/poule-194137/",
- "source_mise_a_jour": "10 nov. 2026 à 23h52",
+ "source_mise_a_jour": "13 nov. 2026 à 08h35",
  "journees": 10,
  "classement": [
   {
@@ -345,8 +345,8 @@
   {
    "id": "2700924",
    "journee": 10,
-   "iso": "",
-   "date": "",
+   "iso": "2026-12-13T14:00",
+   "date": "Dimanche 13 décembre 2026 à 14h00",
    "domicile": "LEOGNAN HANDBALL 2",
    "exterieur": "CADILLAC - CERONS U18M",
    "score_dom": null,
@@ -357,5 +357,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-11-12 01:44"
+ "genere_le": "2026-11-13 15:36"
 }
