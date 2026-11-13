@@ -1,7 +1,7 @@
 {
  "equipe": "SG2",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-16-masculins-promotion-32460/",
- "source_mise_a_jour": "13 nov. 2026 à 06h47",
+ "source_mise_a_jour": "13 nov. 2026 à 23h04",
  "journees": 10,
  "classement": [
   {
@@ -455,6 +455,20 @@
    "nous": false
   },
   {
+   "id": "2676607",
+   "journee": 9,
+   "iso": "2026-12-05T21:30",
+   "date": "Samedi 5 décembre 2026 à 21h30",
+   "domicile": "ASSOCIATION SPORTIVE DE HANDBALL BRANNAIS",
+   "exterieur": "HBC TEICHOIS 2",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
    "id": "2676608",
    "journee": 9,
    "iso": "2026-12-06T16:00",
@@ -495,21 +509,7 @@
    "vainqueur": null,
    "statut": "à venir",
    "nous": true
-  },
-  {
-   "id": "2676607",
-   "journee": 9,
-   "iso": "",
-   "date": "",
-   "domicile": "ASSOCIATION SPORTIVE DE HANDBALL BRANNAIS",
-   "exterieur": "HBC TEICHOIS 2",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false
   }
  ],
- "genere_le": "2026-11-13 15:34"
+ "genere_le": "2026-11-14 00:32"
 }
