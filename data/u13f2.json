@@ -1,7 +1,7 @@
 {
  "equipe": "-13 F 2",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u13-feminine-32777/poule-194061/",
- "source_mise_a_jour": "8 nov. 2026 à 11h19",
+ "source_mise_a_jour": "14 nov. 2026 à 13h32",
  "journees": 10,
  "classement": [
   {
@@ -312,7 +312,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "SAMEDI 14 NOVEMBRE 2026 À 14H00 SC MONSEGUR HB - - CADILLAC CERONS U13F VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2699725",
@@ -326,7 +327,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": true
+   "nous": true,
+   "brut": "SAMEDI 14 NOVEMBRE 2026 À 14H15 PE2M HB 2 - - HBC BAZADAIS 2 VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2699726",
@@ -511,5 +513,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-11-08 14:24"
+ "genere_le": "2026-11-14 14:35"
 }
