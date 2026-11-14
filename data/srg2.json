@@ -1,22 +1,22 @@
 {
  "equipe": "SG2",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-16-masculins-promotion-32460/",
- "source_mise_a_jour": "13 nov. 2026 à 23h04",
+ "source_mise_a_jour": "14 nov. 2026 à 22h41",
  "journees": 10,
  "classement": [
   {
    "rang": 1,
    "club": "ASSOCIATION SPORTIVE DE HANDBALL BRANNAIS",
-   "joues": 6,
-   "gagnes": 5,
+   "joues": 7,
+   "gagnes": 6,
    "nuls": 0,
    "perdus": 1,
-   "bp": 210,
-   "bc": 177,
-   "diff": 33,
+   "bp": 248,
+   "bc": 193,
+   "diff": 55,
    "points": 16,
    "nous": false,
-   "stats_partielles": false
+   "stats_partielles": true
   },
   {
    "rang": 2,
@@ -49,16 +49,16 @@
   {
    "rang": 4,
    "club": "ST MEDARD HANDBALL 2",
-   "joues": 6,
+   "joues": 7,
    "gagnes": 2,
    "nuls": 1,
-   "perdus": 3,
-   "bp": 164,
-   "bc": 173,
-   "diff": -9,
+   "perdus": 4,
+   "bp": 180,
+   "bc": 211,
+   "diff": -31,
    "points": 11,
    "nous": false,
-   "stats_partielles": false
+   "stats_partielles": true
   },
   {
    "rang": 5,
@@ -354,7 +354,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": true
+   "nous": true,
+   "brut": "SAMEDI 14 NOVEMBRE 2026 À 19H30 HBC BAZADAIS 2 - - US MIOS BIGANOS 2 VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2676603",
@@ -363,11 +364,11 @@
    "date": "Samedi 14 novembre 2026 à 21h00",
    "domicile": "ASSOCIATION SPORTIVE DE HANDBALL BRANNAIS",
    "exterieur": "ST MEDARD HANDBALL 2",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
+   "score_dom": 38,
+   "score_ext": 16,
+   "affiche": "38 – 16",
+   "vainqueur": "dom",
+   "statut": "joué",
    "nous": false
   },
   {
@@ -511,5 +512,5 @@
    "nous": true
   }
  ],
- "genere_le": "2026-11-14 00:32"
+ "genere_le": "2026-11-14 23:25"
 }

@@ -1,62 +1,62 @@
 {
  "equipe": "-13 F 2",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u13-feminine-32777/poule-194061/",
- "source_mise_a_jour": "14 nov. 2026 à 13h32",
+ "source_mise_a_jour": "14 nov. 2026 à 21h23",
  "journees": 10,
  "classement": [
   {
    "rang": 1,
    "club": "AVENIR PAILLETON",
-   "joues": 5,
-   "gagnes": 5,
+   "joues": 6,
+   "gagnes": 6,
    "nuls": 0,
    "perdus": 0,
-   "bp": 191,
-   "bc": 68,
-   "diff": 123,
+   "bp": 218,
+   "bc": 84,
+   "diff": 134,
    "points": 15,
    "nous": false,
-   "stats_partielles": false
+   "stats_partielles": true
   },
   {
    "rang": 2,
    "club": "SC MONSEGUR HB",
-   "joues": 5,
-   "gagnes": 3,
+   "joues": 6,
+   "gagnes": 4,
    "nuls": 1,
    "perdus": 1,
-   "bp": 93,
-   "bc": 66,
-   "diff": 27,
-   "points": 12,
+   "bp": 119,
+   "bc": 76,
+   "diff": 43,
+   "points": 15,
    "nous": false,
    "stats_partielles": false
   },
   {
    "rang": 3,
    "club": "HANDBALL SAINT MEDARD D'EYRANS",
-   "joues": 5,
+   "joues": 6,
    "gagnes": 3,
    "nuls": 1,
-   "perdus": 1,
-   "bp": 116,
-   "bc": 78,
-   "diff": 38,
+   "perdus": 2,
+   "bp": 132,
+   "bc": 105,
+   "diff": 27,
    "points": 12,
    "nous": false,
-   "stats_partielles": false
+   "stats_partielles": true
   },
   {
    "rang": 4,
    "club": "CADILLAC CERONS U13F",
-   "joues": 5,
+   "joues": 6,
    "gagnes": 2,
    "nuls": 0,
-   "perdus": 3,
-   "bp": 83,
-   "bc": 112,
-   "diff": -29,
-   "points": 9,
+   "perdus": 4,
+   "bp": 93,
+   "bc": 138,
+   "diff": -45,
+   "points": 10,
    "nous": false,
    "stats_partielles": false
   },
@@ -307,13 +307,12 @@
    "date": "Samedi 14 novembre 2026 à 14h00",
    "domicile": "SC MONSEGUR HB",
    "exterieur": "CADILLAC CERONS U13F",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false,
-   "brut": "SAMEDI 14 NOVEMBRE 2026 À 14H00 SC MONSEGUR HB - - CADILLAC CERONS U13F VOIR DÉTAIL DU MATCH"
+   "score_dom": 26,
+   "score_ext": 10,
+   "affiche": "26 – 10",
+   "vainqueur": "dom",
+   "statut": "joué",
+   "nous": false
   },
   {
    "id": "2699725",
@@ -337,11 +336,11 @@
    "date": "Samedi 14 novembre 2026 à 17h30",
    "domicile": "HANDBALL SAINT MEDARD D'EYRANS",
    "exterieur": "AVENIR PAILLETON",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
+   "score_dom": 16,
+   "score_ext": 27,
+   "affiche": "16 – 27",
+   "vainqueur": "ext",
+   "statut": "joué",
    "nous": false
   },
   {
@@ -487,8 +486,8 @@
   {
    "id": "2699736",
    "journee": 10,
-   "iso": "",
-   "date": "",
+   "iso": "2026-12-12T15:00",
+   "date": "Samedi 12 décembre 2026 à 15h00",
    "domicile": "CADILLAC CERONS U13F",
    "exterieur": "HBC BAZADAIS 2",
    "score_dom": null,
@@ -513,5 +512,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-11-14 14:35"
+ "genere_le": "2026-11-14 23:30"
 }

@@ -1,20 +1,20 @@
 {
  "equipe": "-15 F",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u15-feminine-32776/poule-194055/",
- "source_mise_a_jour": "14 nov. 2026 à 13h34",
+ "source_mise_a_jour": "14 nov. 2026 à 21h18",
  "journees": 10,
  "classement": [
   {
    "rang": 1,
    "club": "HBC BAZADAIS",
-   "joues": 4,
-   "gagnes": 4,
+   "joues": 5,
+   "gagnes": 5,
    "nuls": 0,
    "perdus": 0,
-   "bp": 154,
-   "bc": 50,
-   "diff": 104,
-   "points": 12,
+   "bp": 200,
+   "bc": 65,
+   "diff": 135,
+   "points": 15,
    "nous": true,
    "stats_partielles": false
   },
@@ -63,14 +63,14 @@
   {
    "rang": 5,
    "club": "CADILLAC CERONS U15F",
-   "joues": 4,
+   "joues": 5,
    "gagnes": 0,
    "nuls": 0,
-   "perdus": 4,
-   "bp": 36,
-   "bc": 85,
-   "diff": -49,
-   "points": 3,
+   "perdus": 5,
+   "bp": 51,
+   "bc": 131,
+   "diff": -80,
+   "points": 4,
    "nous": false,
    "stats_partielles": false
   }
@@ -223,11 +223,11 @@
    "date": "Samedi 14 novembre 2026 à 15h30",
    "domicile": "CADILLAC CERONS U15F",
    "exterieur": "HBC BAZADAIS",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
+   "score_dom": 15,
+   "score_ext": 46,
+   "affiche": "15 – 46",
+   "vainqueur": "ext",
+   "statut": "joué",
    "nous": true
   },
   {
@@ -329,6 +329,20 @@
    "nous": false
   },
   {
+   "id": "2699858",
+   "journee": 10,
+   "iso": "2026-12-12T16:45",
+   "date": "Samedi 12 décembre 2026 à 16h45",
+   "domicile": "CADILLAC CERONS U15F",
+   "exterieur": "BORDEAUX ETUDIANTS CLUB",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
    "id": "2699857",
    "journee": 10,
    "iso": "2026-12-13T10:00",
@@ -341,21 +355,7 @@
    "vainqueur": null,
    "statut": "à venir",
    "nous": false
-  },
-  {
-   "id": "2699858",
-   "journee": 10,
-   "iso": "",
-   "date": "",
-   "domicile": "CADILLAC CERONS U15F",
-   "exterieur": "BORDEAUX ETUDIANTS CLUB",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false
   }
  ],
- "genere_le": "2026-11-14 14:34"
+ "genere_le": "2026-11-14 23:29"
 }

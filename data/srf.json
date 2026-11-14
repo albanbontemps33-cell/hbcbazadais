@@ -1,7 +1,7 @@
 {
  "equipe": "SF",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-16-feminines-honneur-32465/",
- "source_mise_a_jour": "12 nov. 2026 à 12h17",
+ "source_mise_a_jour": "14 nov. 2026 à 20h10",
  "journees": 22,
  "classement": [
   {
@@ -63,16 +63,16 @@
   {
    "rang": 5,
    "club": "MEDOC HANDBALL 2",
-   "joues": 5,
+   "joues": 6,
    "gagnes": 4,
    "nuls": 0,
-   "perdus": 1,
-   "bp": 144,
-   "bc": 107,
-   "diff": 37,
+   "perdus": 2,
+   "bp": 168,
+   "bc": 132,
+   "diff": 36,
    "points": 13,
    "nous": false,
-   "stats_partielles": false
+   "stats_partielles": true
   },
   {
    "rang": 6,
@@ -119,16 +119,16 @@
   {
    "rang": 9,
    "club": "ARCACHON LA TESTE HBC",
-   "joues": 6,
-   "gagnes": 1,
+   "joues": 7,
+   "gagnes": 2,
    "nuls": 0,
    "perdus": 5,
-   "bp": 135,
-   "bc": 180,
-   "diff": -45,
+   "bp": 160,
+   "bc": 204,
+   "diff": -44,
    "points": 8,
    "nous": false,
-   "stats_partielles": false
+   "stats_partielles": true
   },
   {
    "rang": 10,
@@ -657,11 +657,11 @@
    "date": "Samedi 14 novembre 2026 à 18h30",
    "domicile": "ARCACHON LA TESTE HBC",
    "exterieur": "MEDOC HANDBALL 2",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
+   "score_dom": 25,
+   "score_ext": 24,
+   "affiche": "25 – 24",
+   "vainqueur": "dom",
+   "statut": "joué",
    "nous": false
   },
   {
@@ -676,7 +676,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "SAMEDI 14 NOVEMBRE 2026 À 19H30 SA GAZINET CESTAS 2 - - HAILLAN HANDBALL VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2636294",
@@ -690,7 +691,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "SAMEDI 14 NOVEMBRE 2026 À 21H00 PE2M HB 2 - - HANDBALL SAINT MEDARD D'EYRANS VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2636296",
@@ -704,7 +706,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "SAMEDI 14 NOVEMBRE 2026 À 21H00 HANDBALL CUBZAGUAIS - - LORMONT HANDBALL HAUTS DE GARONNE VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2636297",
@@ -718,7 +721,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "SAMEDI 14 NOVEMBRE 2026 À 21H15 AVENIR PAILLETON 2 - - AS HB DU FRONSADAIS VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2636299",
@@ -2023,5 +2027,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-11-12 16:14"
+ "genere_le": "2026-11-14 23:26"
 }

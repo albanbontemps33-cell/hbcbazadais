@@ -1,11 +1,25 @@
 {
  "equipe": "-15 G",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u15-masculin-32826/poule-194103/",
- "source_mise_a_jour": "13 nov. 2026 à 00h02",
+ "source_mise_a_jour": "14 nov. 2026 à 21h23",
  "journees": 10,
  "classement": [
   {
    "rang": 1,
+   "club": "SC MONSEGUR HB",
+   "joues": 6,
+   "gagnes": 5,
+   "nuls": 0,
+   "perdus": 1,
+   "bp": 177,
+   "bc": 148,
+   "diff": 29,
+   "points": 16,
+   "nous": false,
+   "stats_partielles": false
+  },
+  {
+   "rang": 2,
    "club": "UNION SPORTIVE TALENCE HANDBALL",
    "joues": 5,
    "gagnes": 5,
@@ -19,30 +33,16 @@
    "stats_partielles": false
   },
   {
-   "rang": 2,
-   "club": "SC MONSEGUR HB",
-   "joues": 5,
-   "gagnes": 4,
-   "nuls": 0,
-   "perdus": 1,
-   "bp": 134,
-   "bc": 116,
-   "diff": 18,
-   "points": 13,
-   "nous": false,
-   "stats_partielles": false
-  },
-  {
    "rang": 3,
    "club": "CADILLAC/CERONS U15M",
-   "joues": 5,
+   "joues": 6,
    "gagnes": 2,
    "nuls": 1,
-   "perdus": 2,
-   "bp": 148,
-   "bc": 141,
-   "diff": 7,
-   "points": 9,
+   "perdus": 3,
+   "bp": 180,
+   "bc": 184,
+   "diff": -4,
+   "points": 10,
    "nous": false,
    "stats_partielles": false
   },
@@ -307,11 +307,11 @@
    "date": "Samedi 14 novembre 2026 à 16h30",
    "domicile": "SC MONSEGUR HB",
    "exterieur": "CADILLAC/CERONS U15M",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
+   "score_dom": 43,
+   "score_ext": 32,
+   "affiche": "43 – 32",
+   "vainqueur": "dom",
+   "statut": "joué",
    "nous": false
   },
   {
@@ -326,7 +326,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": true
+   "nous": true,
+   "brut": "SAMEDI 14 NOVEMBRE 2026 À 17H45 HBC BAZADAIS - - PE2M HB VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2698114",
@@ -511,5 +512,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-11-13 00:40"
+ "genere_le": "2026-11-14 23:28"
 }

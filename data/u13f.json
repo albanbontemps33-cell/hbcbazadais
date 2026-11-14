@@ -1,34 +1,34 @@
 {
  "equipe": "-13 F 1",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u13-feminine-32777/poule-193722/",
- "source_mise_a_jour": "8 nov. 2026 à 11h18",
+ "source_mise_a_jour": "14 nov. 2026 à 21h08",
  "journees": 10,
  "classement": [
   {
    "rang": 1,
    "club": "HBC TEICHOIS 1",
-   "joues": 5,
-   "gagnes": 4,
+   "joues": 6,
+   "gagnes": 5,
    "nuls": 0,
    "perdus": 1,
-   "bp": 157,
-   "bc": 85,
-   "diff": 72,
-   "points": 13,
+   "bp": 190,
+   "bc": 105,
+   "diff": 85,
+   "points": 16,
    "nous": false,
    "stats_partielles": false
   },
   {
    "rang": 2,
    "club": "HBC CREONNAIS",
-   "joues": 5,
+   "joues": 6,
    "gagnes": 4,
    "nuls": 0,
-   "perdus": 1,
-   "bp": 165,
-   "bc": 121,
-   "diff": 44,
-   "points": 13,
+   "perdus": 2,
+   "bp": 185,
+   "bc": 154,
+   "diff": 31,
+   "points": 14,
    "nous": false,
    "stats_partielles": false
   },
@@ -307,13 +307,12 @@
    "date": "Samedi 14 novembre 2026 à 14h15",
    "domicile": "HBC TEICHOIS 1",
    "exterieur": "HBC CREONNAIS",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false,
-   "brut": "SAMEDI 14 NOVEMBRE 2026 À 14H15 HBC TEICHOIS 1 - - HBC CREONNAIS VOIR DÉTAIL DU MATCH"
+   "score_dom": 33,
+   "score_ext": 20,
+   "affiche": "33 – 20",
+   "vainqueur": "dom",
+   "statut": "joué",
+   "nous": false
   },
   {
    "id": "2699515",
@@ -327,7 +326,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "SAMEDI 14 NOVEMBRE 2026 À 15H30 PE2M HB 1 - - SA GAZINET CESTAS VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2699514",
@@ -341,7 +341,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": true
+   "nous": true,
+   "brut": "SAMEDI 14 NOVEMBRE 2026 À 16H15 HBC BAZADAIS 1 - - STADE LANGONNAIS HB VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2699518",
@@ -512,5 +513,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-11-14 14:35"
+ "genere_le": "2026-11-14 23:29"
 }
