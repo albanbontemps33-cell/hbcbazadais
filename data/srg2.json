@@ -1,7 +1,7 @@
 {
  "equipe": "SG2",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-16-masculins-promotion-32460/",
- "source_mise_a_jour": "15 nov. 2026 à 07h13",
+ "source_mise_a_jour": "15 nov. 2026 à 19h11",
  "journees": 10,
  "classement": [
   {
@@ -28,21 +28,21 @@
    "bp": 228,
    "bc": 188,
    "diff": 40,
-   "points": 16,
+   "points": 19,
    "nous": false,
-   "stats_partielles": true
+   "stats_partielles": false
   },
   {
    "rang": 3,
    "club": "HBC TEICHOIS 2",
-   "joues": 6,
+   "joues": 7,
    "gagnes": 3,
    "nuls": 0,
-   "perdus": 3,
-   "bp": 177,
-   "bc": 171,
-   "diff": 6,
-   "points": 12,
+   "perdus": 4,
+   "bp": 196,
+   "bc": 197,
+   "diff": -1,
+   "points": 13,
    "nous": false,
    "stats_partielles": false
   },
@@ -62,20 +62,6 @@
   },
   {
    "rang": 5,
-   "club": "HANDBALL CLUB SAINT SYMPHORIEN",
-   "joues": 6,
-   "gagnes": 1,
-   "nuls": 1,
-   "perdus": 4,
-   "bp": 160,
-   "bc": 178,
-   "diff": -18,
-   "points": 9,
-   "nous": false,
-   "stats_partielles": false
-  },
-  {
-   "rang": 6,
    "club": "HBC BAZADAIS 2",
    "joues": 7,
    "gagnes": 1,
@@ -84,9 +70,23 @@
    "bp": 176,
    "bc": 228,
    "diff": -52,
-   "points": 8,
+   "points": 9,
    "nous": true,
-   "stats_partielles": true
+   "stats_partielles": false
+  },
+  {
+   "rang": 6,
+   "club": "HANDBALL CLUB SAINT SYMPHORIEN",
+   "joues": 7,
+   "gagnes": 2,
+   "nuls": 1,
+   "perdus": 4,
+   "bp": 186,
+   "bc": 197,
+   "diff": -11,
+   "points": 12,
+   "nous": false,
+   "stats_partielles": false
   }
  ],
  "calendrier": [
@@ -377,11 +377,11 @@
    "date": "Dimanche 15 novembre 2026 à 16h00",
    "domicile": "HBC TEICHOIS 2",
    "exterieur": "HANDBALL CLUB SAINT SYMPHORIEN",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
+   "score_dom": 19,
+   "score_ext": 26,
+   "affiche": "19 – 26",
+   "vainqueur": "ext",
+   "statut": "joué",
    "nous": false
   },
   {
@@ -511,5 +511,5 @@
    "nous": true
   }
  ],
- "genere_le": "2026-11-15 14:57"
+ "genere_le": "2026-11-15 23:50"
 }

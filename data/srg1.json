@@ -1,7 +1,7 @@
 {
  "equipe": "SG1",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-16-masculins-pre-regionale-32457/poule-190872/",
- "source_mise_a_jour": "15 nov. 2026 à 07h13",
+ "source_mise_a_jour": "15 nov. 2026 à 14h55",
  "journees": 22,
  "classement": [
   {
@@ -34,6 +34,20 @@
   },
   {
    "rang": 3,
+   "club": "ES BLANQUEFORTAISE HBC 2",
+   "joues": 7,
+   "gagnes": 4,
+   "nuls": 0,
+   "perdus": 3,
+   "bp": 236,
+   "bc": 205,
+   "diff": 31,
+   "points": 15,
+   "nous": false,
+   "stats_partielles": false
+  },
+  {
+   "rang": 4,
    "club": "HBC LIBOURNE 3",
    "joues": 7,
    "gagnes": 4,
@@ -47,7 +61,7 @@
    "stats_partielles": false
   },
   {
-   "rang": 4,
+   "rang": 5,
    "club": "HBC BAZADAIS 1",
    "joues": 7,
    "gagnes": 4,
@@ -56,12 +70,12 @@
    "bp": 199,
    "bc": 178,
    "diff": 21,
-   "points": 14,
+   "points": 15,
    "nous": true,
-   "stats_partielles": true
+   "stats_partielles": false
   },
   {
-   "rang": 5,
+   "rang": 6,
    "club": "HBC TEICHOIS",
    "joues": 6,
    "gagnes": 4,
@@ -75,7 +89,7 @@
    "stats_partielles": false
   },
   {
-   "rang": 6,
+   "rang": 7,
    "club": "HAILLAN HANDBALL 1",
    "joues": 7,
    "gagnes": 3,
@@ -89,7 +103,7 @@
    "stats_partielles": false
   },
   {
-   "rang": 7,
+   "rang": 8,
    "club": "CM FLOIRAC CENON HANDBALL 2",
    "joues": 6,
    "gagnes": 4,
@@ -103,7 +117,7 @@
    "stats_partielles": false
   },
   {
-   "rang": 8,
+   "rang": 9,
    "club": "BORDEAUX ETUDIANTS CLUB",
    "joues": 6,
    "gagnes": 3,
@@ -115,20 +129,6 @@
    "points": 12,
    "nous": false,
    "stats_partielles": false
-  },
-  {
-   "rang": 9,
-   "club": "ES BLANQUEFORTAISE HBC 2",
-   "joues": 7,
-   "gagnes": 4,
-   "nuls": 0,
-   "perdus": 3,
-   "bp": 236,
-   "bc": 205,
-   "diff": 31,
-   "points": 12,
-   "nous": false,
-   "stats_partielles": true
   },
   {
    "rang": 10,
@@ -2024,5 +2024,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-11-15 14:56"
+ "genere_le": "2026-11-15 23:49"
 }

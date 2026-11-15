@@ -1,7 +1,7 @@
 {
  "equipe": "-18 F",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u18-feminine-32775/poule-193706/",
- "source_mise_a_jour": "15 nov. 2026 à 06h48",
+ "source_mise_a_jour": "15 nov. 2026 à 16h46",
  "journees": 10,
  "classement": [
   {
@@ -21,14 +21,14 @@
   {
    "rang": 2,
    "club": "LEOGNAN HANDBALL",
-   "joues": 5,
+   "joues": 6,
    "gagnes": 3,
    "nuls": 1,
-   "perdus": 1,
-   "bp": 166,
-   "bc": 134,
-   "diff": 32,
-   "points": 12,
+   "perdus": 2,
+   "bp": 189,
+   "bc": 163,
+   "diff": 26,
+   "points": 13,
    "nous": false,
    "stats_partielles": false
   },
@@ -49,42 +49,42 @@
   {
    "rang": 4,
    "club": "HBC BAZADAIS",
-   "joues": 5,
-   "gagnes": 1,
+   "joues": 6,
+   "gagnes": 2,
    "nuls": 1,
    "perdus": 3,
-   "bp": 117,
-   "bc": 128,
-   "diff": -11,
-   "points": 8,
+   "bp": 146,
+   "bc": 151,
+   "diff": -5,
+   "points": 11,
    "nous": true,
    "stats_partielles": false
   },
   {
    "rang": 5,
    "club": "GRADIGNAN HANDBALL CLUB",
-   "joues": 4,
-   "gagnes": 1,
+   "joues": 5,
+   "gagnes": 2,
    "nuls": 1,
    "perdus": 2,
-   "bp": 91,
-   "bc": 98,
-   "diff": -7,
-   "points": 7,
+   "bp": 116,
+   "bc": 118,
+   "diff": -2,
+   "points": 10,
    "nous": false,
    "stats_partielles": false
   },
   {
    "rang": 6,
    "club": "SC MONSEGUR HB",
-   "joues": 4,
+   "joues": 5,
    "gagnes": 0,
    "nuls": 1,
-   "perdus": 3,
-   "bp": 95,
-   "bc": 164,
-   "diff": -69,
-   "points": 5,
+   "perdus": 4,
+   "bp": 115,
+   "bc": 189,
+   "diff": -74,
+   "points": 6,
    "nous": false,
    "stats_partielles": false
   }
@@ -307,13 +307,12 @@
    "date": "Dimanche 15 novembre 2026 à 13h00",
    "domicile": "HBC BAZADAIS",
    "exterieur": "LEOGNAN HANDBALL",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": true,
-   "brut": "DIMANCHE 15 NOVEMBRE 2026 À 13H00 HBC BAZADAIS - - LEOGNAN HANDBALL VOIR DÉTAIL DU MATCH"
+   "score_dom": 29,
+   "score_ext": 23,
+   "affiche": "29 – 23",
+   "vainqueur": "dom",
+   "statut": "joué",
+   "nous": true
   },
   {
    "id": "2699874",
@@ -322,13 +321,12 @@
    "date": "Dimanche 15 novembre 2026 à 14h05",
    "domicile": "GRADIGNAN HANDBALL CLUB",
    "exterieur": "SC MONSEGUR HB",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false,
-   "brut": "DIMANCHE 15 NOVEMBRE 2026 À 14H05 GRADIGNAN HANDBALL CLUB - - SC MONSEGUR HB VOIR DÉTAIL DU MATCH"
+   "score_dom": 25,
+   "score_ext": 20,
+   "affiche": "25 – 20",
+   "vainqueur": "dom",
+   "statut": "joué",
+   "nous": false
   },
   {
    "id": "2699879",
@@ -513,5 +511,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-11-15 14:59"
+ "genere_le": "2026-11-15 23:52"
 }

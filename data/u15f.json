@@ -1,7 +1,7 @@
 {
  "equipe": "-15 F",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u15-feminine-32776/poule-194055/",
- "source_mise_a_jour": "14 nov. 2026 à 21h18",
+ "source_mise_a_jour": "15 nov. 2026 à 18h04",
  "journees": 10,
  "classement": [
   {
@@ -21,14 +21,14 @@
   {
    "rang": 2,
    "club": "BORDEAUX ETUDIANTS CLUB",
-   "joues": 4,
-   "gagnes": 3,
+   "joues": 5,
+   "gagnes": 4,
    "nuls": 0,
    "perdus": 1,
-   "bp": 59,
-   "bc": 69,
-   "diff": -10,
-   "points": 10,
+   "bp": 74,
+   "bc": 81,
+   "diff": -7,
+   "points": 13,
    "nous": false,
    "stats_partielles": false
   },
@@ -49,14 +49,14 @@
   {
    "rang": 4,
    "club": "HANDBALL SAINT MEDARD D'EYRANS 2",
-   "joues": 4,
+   "joues": 5,
    "gagnes": 1,
    "nuls": 0,
-   "perdus": 3,
-   "bp": 53,
-   "bc": 77,
-   "diff": -24,
-   "points": 6,
+   "perdus": 4,
+   "bp": 65,
+   "bc": 92,
+   "diff": -27,
+   "points": 7,
    "nous": false,
    "stats_partielles": false
   },
@@ -237,13 +237,12 @@
    "date": "Dimanche 15 novembre 2026 à 13h30",
    "domicile": "BORDEAUX ETUDIANTS CLUB",
    "exterieur": "HANDBALL SAINT MEDARD D'EYRANS 2",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false,
-   "brut": "DIMANCHE 15 NOVEMBRE 2026 À 13H30 BORDEAUX ETUDIANTS CLUB - - HANDBALL SAINT MEDARD D'EYRANS 2 VOIR DÉTAIL DU MATCH"
+   "score_dom": 15,
+   "score_ext": 12,
+   "affiche": "15 – 12",
+   "vainqueur": "dom",
+   "statut": "joué",
+   "nous": false
   },
   {
    "id": "2699848",
@@ -358,5 +357,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-11-15 15:00"
+ "genere_le": "2026-11-15 23:52"
 }

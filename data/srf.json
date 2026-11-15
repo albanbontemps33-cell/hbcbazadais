@@ -1,11 +1,25 @@
 {
  "equipe": "SF",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-16-feminines-honneur-32465/",
- "source_mise_a_jour": "15 nov. 2026 à 07h17",
+ "source_mise_a_jour": "15 nov. 2026 à 19h52",
  "journees": 22,
  "classement": [
   {
    "rang": 1,
+   "club": "HBC BAZADAIS",
+   "joues": 7,
+   "gagnes": 4,
+   "nuls": 1,
+   "perdus": 2,
+   "bp": 179,
+   "bc": 181,
+   "diff": -2,
+   "points": 16,
+   "nous": true,
+   "stats_partielles": false
+  },
+  {
+   "rang": 2,
    "club": "LORMONT HANDBALL HAUTS DE GARONNE",
    "joues": 6,
    "gagnes": 5,
@@ -19,7 +33,21 @@
    "stats_partielles": false
   },
   {
-   "rang": 2,
+   "rang": 3,
+   "club": "HBC PAYS CASTILLONNAIS",
+   "joues": 6,
+   "gagnes": 5,
+   "nuls": 0,
+   "perdus": 1,
+   "bp": 146,
+   "bc": 117,
+   "diff": 29,
+   "points": 16,
+   "nous": false,
+   "stats_partielles": false
+  },
+  {
+   "rang": 4,
    "club": "HANDBALL CUBZAGUAIS",
    "joues": 7,
    "gagnes": 4,
@@ -33,21 +61,7 @@
    "stats_partielles": false
   },
   {
-   "rang": 3,
-   "club": "HBC BAZADAIS",
-   "joues": 6,
-   "gagnes": 4,
-   "nuls": 1,
-   "perdus": 1,
-   "bp": 155,
-   "bc": 150,
-   "diff": 5,
-   "points": 15,
-   "nous": true,
-   "stats_partielles": false
-  },
-  {
-   "rang": 4,
+   "rang": 5,
    "club": "SA GAZINET CESTAS 2",
    "joues": 7,
    "gagnes": 4,
@@ -61,7 +75,7 @@
    "stats_partielles": false
   },
   {
-   "rang": 5,
+   "rang": 6,
    "club": "HAILLAN HANDBALL",
    "joues": 7,
    "gagnes": 4,
@@ -75,7 +89,7 @@
    "stats_partielles": false
   },
   {
-   "rang": 6,
+   "rang": 7,
    "club": "MEDOC HANDBALL 2",
    "joues": 6,
    "gagnes": 4,
@@ -85,20 +99,6 @@
    "bc": 132,
    "diff": 36,
    "points": 14,
-   "nous": false,
-   "stats_partielles": false
-  },
-  {
-   "rang": 7,
-   "club": "HBC PAYS CASTILLONNAIS",
-   "joues": 5,
-   "gagnes": 4,
-   "nuls": 0,
-   "perdus": 1,
-   "bp": 115,
-   "bc": 93,
-   "diff": 22,
-   "points": 13,
    "nous": false,
    "stats_partielles": false
   },
@@ -132,6 +132,20 @@
   },
   {
    "rang": 10,
+   "club": "AVENIR PAILLETON 2",
+   "joues": 7,
+   "gagnes": 2,
+   "nuls": 0,
+   "perdus": 5,
+   "bp": 119,
+   "bc": 166,
+   "diff": -47,
+   "points": 11,
+   "nous": false,
+   "stats_partielles": false
+  },
+  {
+   "rang": 11,
    "club": "PE2M HB 2",
    "joues": 6,
    "gagnes": 1,
@@ -145,20 +159,6 @@
    "stats_partielles": false
   },
   {
-   "rang": 11,
-   "club": "AVENIR PAILLETON 2",
-   "joues": 7,
-   "gagnes": 2,
-   "nuls": 0,
-   "perdus": 5,
-   "bp": 119,
-   "bc": 166,
-   "diff": -47,
-   "points": 8,
-   "nous": false,
-   "stats_partielles": true
-  },
-  {
    "rang": 12,
    "club": "AS HB DU FRONSADAIS",
    "joues": 7,
@@ -168,9 +168,9 @@
    "bp": 153,
    "bc": 214,
    "diff": -61,
-   "points": 7,
+   "points": 8,
    "nous": false,
-   "stats_partielles": true
+   "stats_partielles": false
   }
  ],
  "calendrier": [
@@ -727,11 +727,11 @@
    "date": "Dimanche 15 novembre 2026 à 15h00",
    "domicile": "HBC BAZADAIS",
    "exterieur": "HBC PAYS CASTILLONNAIS",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
+   "score_dom": 24,
+   "score_ext": 31,
+   "affiche": "24 – 31",
+   "vainqueur": "ext",
+   "statut": "joué",
    "nous": true
   },
   {
@@ -2023,5 +2023,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-11-15 14:58"
+ "genere_le": "2026-11-15 23:51"
 }
