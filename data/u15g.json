@@ -1,7 +1,7 @@
 {
  "equipe": "-15 G",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u15-masculin-32826/poule-194103/",
- "source_mise_a_jour": "14 nov. 2026 à 21h23",
+ "source_mise_a_jour": "15 nov. 2026 à 00h47",
  "journees": 10,
  "classement": [
   {
@@ -49,30 +49,30 @@
   {
    "rang": 4,
    "club": "HBC BAZADAIS",
-   "joues": 5,
-   "gagnes": 2,
+   "joues": 6,
+   "gagnes": 3,
    "nuls": 0,
    "perdus": 3,
-   "bp": 187,
-   "bc": 174,
-   "diff": 13,
+   "bp": 219,
+   "bc": 199,
+   "diff": 20,
    "points": 9,
    "nous": true,
-   "stats_partielles": false
+   "stats_partielles": true
   },
   {
    "rang": 5,
    "club": "PE2M HB",
-   "joues": 5,
+   "joues": 6,
    "gagnes": 1,
    "nuls": 1,
-   "perdus": 3,
-   "bp": 201,
-   "bc": 175,
-   "diff": 26,
+   "perdus": 4,
+   "bp": 226,
+   "bc": 207,
+   "diff": 19,
    "points": 8,
    "nous": false,
-   "stats_partielles": false
+   "stats_partielles": true
   },
   {
    "rang": 6,
@@ -321,13 +321,12 @@
    "date": "Samedi 14 novembre 2026 à 17h45",
    "domicile": "HBC BAZADAIS",
    "exterieur": "PE2M HB",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": true,
-   "brut": "SAMEDI 14 NOVEMBRE 2026 À 17H45 HBC BAZADAIS - - PE2M HB VOIR DÉTAIL DU MATCH"
+   "score_dom": 32,
+   "score_ext": 25,
+   "affiche": "32 – 25",
+   "vainqueur": "dom",
+   "statut": "joué",
+   "nous": true
   },
   {
    "id": "2698114",
@@ -341,7 +340,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "DIMANCHE 15 NOVEMBRE 2026 À 14H00 AVENIR PAILLETON - - UNION SPORTIVE TALENCE HANDBALL VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2698117",
@@ -512,5 +512,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-11-14 23:28"
+ "genere_le": "2026-11-15 15:00"
 }

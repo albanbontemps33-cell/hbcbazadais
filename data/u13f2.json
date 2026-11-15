@@ -1,7 +1,7 @@
 {
  "equipe": "-13 F 2",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u13-feminine-32777/poule-194061/",
- "source_mise_a_jour": "14 nov. 2026 à 21h23",
+ "source_mise_a_jour": "14 nov. 2026 à 23h07",
  "journees": 10,
  "classement": [
   {
@@ -14,9 +14,9 @@
    "bp": 218,
    "bc": 84,
    "diff": 134,
-   "points": 15,
+   "points": 18,
    "nous": false,
-   "stats_partielles": true
+   "stats_partielles": false
   },
   {
    "rang": 2,
@@ -42,9 +42,9 @@
    "bp": 132,
    "bc": 105,
    "diff": 27,
-   "points": 12,
+   "points": 13,
    "nous": false,
-   "stats_partielles": true
+   "stats_partielles": false
   },
   {
    "rang": 4,
@@ -63,28 +63,28 @@
   {
    "rang": 5,
    "club": "PE2M HB 2",
-   "joues": 5,
+   "joues": 6,
    "gagnes": 1,
    "nuls": 0,
-   "perdus": 4,
-   "bp": 53,
-   "bc": 125,
-   "diff": -72,
-   "points": 7,
+   "perdus": 5,
+   "bp": 80,
+   "bc": 158,
+   "diff": -78,
+   "points": 8,
    "nous": false,
    "stats_partielles": false
   },
   {
    "rang": 6,
    "club": "HBC BAZADAIS 2",
-   "joues": 5,
-   "gagnes": 0,
+   "joues": 6,
+   "gagnes": 1,
    "nuls": 0,
    "perdus": 5,
-   "bp": 52,
-   "bc": 139,
-   "diff": -87,
-   "points": 5,
+   "bp": 85,
+   "bc": 166,
+   "diff": -81,
+   "points": 8,
    "nous": true,
    "stats_partielles": false
   }
@@ -321,13 +321,12 @@
    "date": "Samedi 14 novembre 2026 à 14h15",
    "domicile": "PE2M HB 2",
    "exterieur": "HBC BAZADAIS 2",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": true,
-   "brut": "SAMEDI 14 NOVEMBRE 2026 À 14H15 PE2M HB 2 - - HBC BAZADAIS 2 VOIR DÉTAIL DU MATCH"
+   "score_dom": 27,
+   "score_ext": 33,
+   "affiche": "27 – 33",
+   "vainqueur": "ext",
+   "statut": "joué",
+   "nous": true
   },
   {
    "id": "2699726",
@@ -512,5 +511,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-11-14 23:30"
+ "genere_le": "2026-11-15 15:02"
 }

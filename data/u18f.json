@@ -1,7 +1,7 @@
 {
  "equipe": "-18 F",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u18-feminine-32775/poule-193706/",
- "source_mise_a_jour": "14 nov. 2026 à 16h50",
+ "source_mise_a_jour": "15 nov. 2026 à 06h48",
  "journees": 10,
  "classement": [
   {
@@ -312,7 +312,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": true
+   "nous": true,
+   "brut": "DIMANCHE 15 NOVEMBRE 2026 À 13H00 HBC BAZADAIS - - LEOGNAN HANDBALL VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2699874",
@@ -326,7 +327,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "DIMANCHE 15 NOVEMBRE 2026 À 14H05 GRADIGNAN HANDBALL CLUB - - SC MONSEGUR HB VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2699879",
@@ -511,5 +513,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-11-14 23:27"
+ "genere_le": "2026-11-15 14:59"
 }

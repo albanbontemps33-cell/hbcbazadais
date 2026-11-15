@@ -1,7 +1,7 @@
 {
  "equipe": "SG1",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-16-masculins-pre-regionale-32457/poule-190872/",
- "source_mise_a_jour": "14 nov. 2026 à 21h46",
+ "source_mise_a_jour": "15 nov. 2026 à 07h13",
  "journees": 22,
  "classement": [
   {
@@ -49,19 +49,61 @@
   {
    "rang": 4,
    "club": "HBC BAZADAIS 1",
+   "joues": 7,
+   "gagnes": 4,
+   "nuls": 0,
+   "perdus": 3,
+   "bp": 199,
+   "bc": 178,
+   "diff": 21,
+   "points": 14,
+   "nous": true,
+   "stats_partielles": true
+  },
+  {
+   "rang": 5,
+   "club": "HBC TEICHOIS",
    "joues": 6,
    "gagnes": 4,
    "nuls": 0,
    "perdus": 2,
-   "bp": 164,
-   "bc": 140,
-   "diff": 24,
+   "bp": 191,
+   "bc": 157,
+   "diff": 34,
    "points": 14,
-   "nous": true,
+   "nous": false,
    "stats_partielles": false
   },
   {
-   "rang": 5,
+   "rang": 6,
+   "club": "HAILLAN HANDBALL 1",
+   "joues": 7,
+   "gagnes": 3,
+   "nuls": 0,
+   "perdus": 4,
+   "bp": 178,
+   "bc": 205,
+   "diff": -27,
+   "points": 13,
+   "nous": false,
+   "stats_partielles": false
+  },
+  {
+   "rang": 7,
+   "club": "CM FLOIRAC CENON HANDBALL 2",
+   "joues": 6,
+   "gagnes": 4,
+   "nuls": 0,
+   "perdus": 2,
+   "bp": 177,
+   "bc": 135,
+   "diff": 42,
+   "points": 13,
+   "nous": false,
+   "stats_partielles": false
+  },
+  {
+   "rang": 8,
    "club": "BORDEAUX ETUDIANTS CLUB",
    "joues": 6,
    "gagnes": 3,
@@ -75,72 +117,30 @@
    "stats_partielles": false
   },
   {
-   "rang": 6,
-   "club": "CM FLOIRAC CENON HANDBALL 2",
-   "joues": 5,
+   "rang": 9,
+   "club": "ES BLANQUEFORTAISE HBC 2",
+   "joues": 7,
    "gagnes": 4,
    "nuls": 0,
-   "perdus": 1,
-   "bp": 155,
-   "bc": 111,
-   "diff": 44,
-   "points": 12,
-   "nous": false,
-   "stats_partielles": false
-  },
-  {
-   "rang": 7,
-   "club": "ES BLANQUEFORTAISE HBC 2",
-   "joues": 6,
-   "gagnes": 3,
-   "nuls": 0,
    "perdus": 3,
-   "bp": 198,
-   "bc": 170,
-   "diff": 28,
+   "bp": 236,
+   "bc": 205,
+   "diff": 31,
    "points": 12,
    "nous": false,
-   "stats_partielles": false
-  },
-  {
-   "rang": 8,
-   "club": "HBC TEICHOIS",
-   "joues": 5,
-   "gagnes": 3,
-   "nuls": 0,
-   "perdus": 2,
-   "bp": 153,
-   "bc": 134,
-   "diff": 19,
-   "points": 11,
-   "nous": false,
-   "stats_partielles": false
-  },
-  {
-   "rang": 9,
-   "club": "HAILLAN HANDBALL 1",
-   "joues": 6,
-   "gagnes": 2,
-   "nuls": 0,
-   "perdus": 4,
-   "bp": 154,
-   "bc": 183,
-   "diff": -29,
-   "points": 10,
-   "nous": false,
-   "stats_partielles": false
+   "stats_partielles": true
   },
   {
    "rang": 10,
    "club": "ST MEDARD HANDBALL 2",
-   "joues": 6,
+   "joues": 7,
    "gagnes": 1,
    "nuls": 0,
-   "perdus": 5,
-   "bp": 170,
-   "bc": 199,
-   "diff": -29,
-   "points": 8,
+   "perdus": 6,
+   "bp": 193,
+   "bc": 237,
+   "diff": -44,
+   "points": 9,
    "nous": false,
    "stats_partielles": false
   },
@@ -714,13 +714,12 @@
    "date": "Samedi 14 novembre 2026 à 20h30",
    "domicile": "CM FLOIRAC CENON HANDBALL 2",
    "exterieur": "HAILLAN HANDBALL 1",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false,
-   "brut": "SAMEDI 14 NOVEMBRE 2026 À 20H30 CM FLOIRAC CENON HANDBALL 2 - - HAILLAN HANDBALL 1 VOIR DÉTAIL DU MATCH"
+   "score_dom": 22,
+   "score_ext": 24,
+   "affiche": "22 – 24",
+   "vainqueur": "ext",
+   "statut": "joué",
+   "nous": false
   },
   {
    "id": "2635497",
@@ -729,13 +728,12 @@
    "date": "Samedi 14 novembre 2026 à 21h30",
    "domicile": "HBC TEICHOIS",
    "exterieur": "ST MEDARD HANDBALL 2",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false,
-   "brut": "SAMEDI 14 NOVEMBRE 2026 À 21H30 HBC TEICHOIS - - ST MEDARD HANDBALL 2 VOIR DÉTAIL DU MATCH"
+   "score_dom": 38,
+   "score_ext": 23,
+   "affiche": "38 – 23",
+   "vainqueur": "dom",
+   "statut": "joué",
+   "nous": false
   },
   {
    "id": "2635502",
@@ -744,13 +742,12 @@
    "date": "Samedi 14 novembre 2026 à 21h30",
    "domicile": "HBC BAZADAIS 1",
    "exterieur": "ES BLANQUEFORTAISE HBC 2",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": true,
-   "brut": "SAMEDI 14 NOVEMBRE 2026 À 21H30 HBC BAZADAIS 1 - - ES BLANQUEFORTAISE HBC 2 VOIR DÉTAIL DU MATCH"
+   "score_dom": 35,
+   "score_ext": 38,
+   "affiche": "35 – 38",
+   "vainqueur": "ext",
+   "statut": "joué",
+   "nous": true
   },
   {
    "id": "2635505",
@@ -2027,5 +2024,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-11-14 23:24"
+ "genere_le": "2026-11-15 14:56"
 }

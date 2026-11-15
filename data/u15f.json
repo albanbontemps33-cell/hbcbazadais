@@ -242,7 +242,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "DIMANCHE 15 NOVEMBRE 2026 À 13H30 BORDEAUX ETUDIANTS CLUB - - HANDBALL SAINT MEDARD D'EYRANS 2 VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2699848",
@@ -357,5 +358,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-11-14 23:29"
+ "genere_le": "2026-11-15 15:00"
 }

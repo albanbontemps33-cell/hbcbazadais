@@ -1,7 +1,7 @@
 {
  "equipe": "SG2",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-16-masculins-promotion-32460/",
- "source_mise_a_jour": "14 nov. 2026 à 22h41",
+ "source_mise_a_jour": "15 nov. 2026 à 07h13",
  "journees": 10,
  "classement": [
   {
@@ -14,23 +14,23 @@
    "bp": 248,
    "bc": 193,
    "diff": 55,
-   "points": 16,
+   "points": 19,
    "nous": false,
-   "stats_partielles": true
+   "stats_partielles": false
   },
   {
    "rang": 2,
    "club": "US MIOS BIGANOS 2",
-   "joues": 6,
-   "gagnes": 5,
+   "joues": 7,
+   "gagnes": 6,
    "nuls": 0,
    "perdus": 1,
-   "bp": 198,
-   "bc": 168,
-   "diff": 30,
+   "bp": 228,
+   "bc": 188,
+   "diff": 40,
    "points": 16,
    "nous": false,
-   "stats_partielles": false
+   "stats_partielles": true
   },
   {
    "rang": 3,
@@ -56,9 +56,9 @@
    "bp": 180,
    "bc": 211,
    "diff": -31,
-   "points": 11,
+   "points": 12,
    "nous": false,
-   "stats_partielles": true
+   "stats_partielles": false
   },
   {
    "rang": 5,
@@ -77,16 +77,16 @@
   {
    "rang": 6,
    "club": "HBC BAZADAIS 2",
-   "joues": 6,
+   "joues": 7,
    "gagnes": 1,
    "nuls": 0,
-   "perdus": 5,
-   "bp": 156,
-   "bc": 198,
-   "diff": -42,
+   "perdus": 6,
+   "bp": 176,
+   "bc": 228,
+   "diff": -52,
    "points": 8,
    "nous": true,
-   "stats_partielles": false
+   "stats_partielles": true
   }
  ],
  "calendrier": [
@@ -349,13 +349,12 @@
    "date": "Samedi 14 novembre 2026 à 19h30",
    "domicile": "HBC BAZADAIS 2",
    "exterieur": "US MIOS BIGANOS 2",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": true,
-   "brut": "SAMEDI 14 NOVEMBRE 2026 À 19H30 HBC BAZADAIS 2 - - US MIOS BIGANOS 2 VOIR DÉTAIL DU MATCH"
+   "score_dom": 20,
+   "score_ext": 30,
+   "affiche": "20 – 30",
+   "vainqueur": "ext",
+   "statut": "joué",
+   "nous": true
   },
   {
    "id": "2676603",
@@ -512,5 +511,5 @@
    "nous": true
   }
  ],
- "genere_le": "2026-11-14 23:25"
+ "genere_le": "2026-11-15 14:57"
 }

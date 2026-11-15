@@ -21,16 +21,16 @@
   {
    "rang": 2,
    "club": "SC MONSEGUR HB",
-   "joues": 5,
-   "gagnes": 4,
+   "joues": 6,
+   "gagnes": 5,
    "nuls": 0,
    "perdus": 1,
-   "bp": 129,
-   "bc": 103,
-   "diff": 26,
+   "bp": 159,
+   "bc": 124,
+   "diff": 35,
    "points": 13,
    "nous": false,
-   "stats_partielles": false
+   "stats_partielles": true
   },
   {
    "rang": 3,
@@ -77,14 +77,14 @@
   {
    "rang": 6,
    "club": "AVENIR PAILLETON",
-   "joues": 5,
+   "joues": 6,
    "gagnes": 1,
    "nuls": 0,
-   "perdus": 4,
-   "bp": 71,
-   "bc": 108,
-   "diff": -37,
-   "points": 7,
+   "perdus": 5,
+   "bp": 92,
+   "bc": 138,
+   "diff": -46,
+   "points": 8,
    "nous": false,
    "stats_partielles": false
   }
@@ -321,13 +321,12 @@
    "date": "Samedi 14 novembre 2026 à 15h15",
    "domicile": "AVENIR PAILLETON",
    "exterieur": "SC MONSEGUR HB",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false,
-   "brut": "SAMEDI 14 NOVEMBRE 2026 À 15H15 AVENIR PAILLETON - - SC MONSEGUR HB VOIR DÉTAIL DU MATCH"
+   "score_dom": 21,
+   "score_ext": 30,
+   "affiche": "21 – 30",
+   "vainqueur": "ext",
+   "statut": "joué",
+   "nous": false
   },
   {
    "id": "2699071",
@@ -512,5 +511,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-11-14 23:29"
+ "genere_le": "2026-11-15 15:01"
 }
