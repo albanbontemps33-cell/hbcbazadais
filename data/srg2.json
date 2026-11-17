@@ -1,7 +1,7 @@
 {
  "equipe": "SG2",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-16-masculins-promotion-32460/",
- "source_mise_a_jour": "16 nov. 2026 à 07h12",
+ "source_mise_a_jour": "17 nov. 2026 à 12h36",
  "journees": 10,
  "classement": [
   {
@@ -48,6 +48,20 @@
   },
   {
    "rang": 4,
+   "club": "HANDBALL CLUB SAINT SYMPHORIEN",
+   "joues": 7,
+   "gagnes": 2,
+   "nuls": 1,
+   "perdus": 4,
+   "bp": 186,
+   "bc": 197,
+   "diff": -11,
+   "points": 12,
+   "nous": false,
+   "stats_partielles": false
+  },
+  {
+   "rang": 5,
    "club": "ST MEDARD HANDBALL 2",
    "joues": 7,
    "gagnes": 2,
@@ -61,7 +75,7 @@
    "stats_partielles": false
   },
   {
-   "rang": 5,
+   "rang": 6,
    "club": "HBC BAZADAIS 2",
    "joues": 7,
    "gagnes": 1,
@@ -72,20 +86,6 @@
    "diff": -52,
    "points": 9,
    "nous": true,
-   "stats_partielles": false
-  },
-  {
-   "rang": 6,
-   "club": "HANDBALL CLUB SAINT SYMPHORIEN",
-   "joues": 7,
-   "gagnes": 2,
-   "nuls": 1,
-   "perdus": 4,
-   "bp": 186,
-   "bc": 197,
-   "diff": -11,
-   "points": 12,
-   "nous": false,
    "stats_partielles": false
   }
  ],
@@ -511,5 +511,5 @@
    "nous": true
   }
  ],
- "genere_le": "2026-11-16 16:44"
+ "genere_le": "2026-11-17 17:00"
 }

@@ -1,7 +1,7 @@
 {
  "equipe": "SG1",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-16-masculins-pre-regionale-32457/poule-190872/",
- "source_mise_a_jour": "16 nov. 2026 à 14h11",
+ "source_mise_a_jour": "17 nov. 2026 à 15h36",
  "journees": 22,
  "classement": [
   {
@@ -693,21 +693,6 @@
    "nous": false
   },
   {
-   "id": "2635500",
-   "journee": 7,
-   "iso": "2026-11-14T20:00",
-   "date": "Samedi 14 novembre 2026 à 20h00",
-   "domicile": "BORDEAUX ETUDIANTS CLUB",
-   "exterieur": "GRADIGNAN HANDBALL CLUB",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false,
-   "brut": "SAMEDI 14 NOVEMBRE 2026 À 20H00 BORDEAUX ETUDIANTS CLUB - - GRADIGNAN HANDBALL CLUB VOIR DÉTAIL DU MATCH"
-  },
-  {
    "id": "2635501",
    "journee": 7,
    "iso": "2026-11-14T20:30",
@@ -1050,6 +1035,20 @@
    "date": "Samedi 16 janvier 2027 à 21h00",
    "domicile": "HBC TEICHOIS",
    "exterieur": "CM FLOIRAC CENON HANDBALL 2",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
+   "id": "2635500",
+   "journee": 7,
+   "iso": "2027-01-16T21:00",
+   "date": "Samedi 16 janvier 2027 à 21h00",
+   "domicile": "BORDEAUX ETUDIANTS CLUB",
+   "exterieur": "GRADIGNAN HANDBALL CLUB",
    "score_dom": null,
    "score_ext": null,
    "affiche": null,
@@ -2024,5 +2023,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-11-16 16:44"
+ "genere_le": "2026-11-17 17:00"
 }
