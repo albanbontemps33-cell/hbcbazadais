@@ -1,7 +1,7 @@
 {
  "equipe": "SF",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-16-feminines-honneur-32465/",
- "source_mise_a_jour": "16 nov. 2026 à 07h12",
+ "source_mise_a_jour": "16 nov. 2026 à 18h36",
  "journees": 22,
  "classement": [
   {
@@ -945,6 +945,20 @@
    "nous": false
   },
   {
+   "id": "2636316",
+   "journee": 10,
+   "iso": "2026-12-13T12:00",
+   "date": "Dimanche 13 décembre 2026 à 12h00",
+   "domicile": "MEDOC HANDBALL 2",
+   "exterieur": "SA GAZINET CESTAS 2",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
    "id": "2636313",
    "journee": 10,
    "iso": "2026-12-13T15:00",
@@ -965,6 +979,20 @@
    "date": "Samedi 9 janvier 2027 à 18h30",
    "domicile": "LORMONT HANDBALL HAUTS DE GARONNE",
    "exterieur": "MEDOC HANDBALL 2",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
+   "id": "2636318",
+   "journee": 11,
+   "iso": "2027-01-09T21:00",
+   "date": "Samedi 9 janvier 2027 à 21h00",
+   "domicile": "PE2M HB 2",
+   "exterieur": "HAILLAN HANDBALL",
    "score_dom": null,
    "score_ext": null,
    "affiche": null,
@@ -1021,34 +1049,6 @@
    "date": "",
    "domicile": "AVENIR PAILLETON 2",
    "exterieur": "PE2M HB 2",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
-   "id": "2636316",
-   "journee": 10,
-   "iso": "",
-   "date": "",
-   "domicile": "MEDOC HANDBALL 2",
-   "exterieur": "SA GAZINET CESTAS 2",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
-   "id": "2636318",
-   "journee": 11,
-   "iso": "",
-   "date": "",
-   "domicile": "PE2M HB 2",
-   "exterieur": "HAILLAN HANDBALL",
    "score_dom": null,
    "score_ext": null,
    "affiche": null,
@@ -2023,5 +2023,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-11-16 16:46"
+ "genere_le": "2026-11-17 02:55"
 }
