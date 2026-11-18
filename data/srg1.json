@@ -1,7 +1,7 @@
 {
  "equipe": "SG1",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-16-masculins-pre-regionale-32457/poule-190872/",
- "source_mise_a_jour": "17 nov. 2026 à 15h36",
+ "source_mise_a_jour": "17 nov. 2026 à 16h38",
  "journees": 22,
  "classement": [
   {
@@ -863,8 +863,8 @@
   {
    "id": "2635509",
    "journee": 9,
-   "iso": "2026-12-05T21:00",
-   "date": "Samedi 5 décembre 2026 à 21h00",
+   "iso": "2026-12-05T21:30",
+   "date": "Samedi 5 décembre 2026 à 21h30",
    "domicile": "HBC TEICHOIS",
    "exterieur": "SC MONSEGUR HB 1",
    "score_dom": null,
@@ -2023,5 +2023,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-11-17 17:00"
+ "genere_le": "2026-11-18 01:58"
 }
