@@ -1,7 +1,7 @@
 {
  "equipe": "SF",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-16-feminines-honneur-32465/",
- "source_mise_a_jour": "17 nov. 2026 à 07h07",
+ "source_mise_a_jour": "18 nov. 2026 à 20h06",
  "journees": 22,
  "classement": [
   {
@@ -1029,6 +1029,20 @@
    "nous": false
   },
   {
+   "id": "2636333",
+   "journee": 13,
+   "iso": "2027-01-30T19:00",
+   "date": "Samedi 30 janvier 2027 à 19h00",
+   "domicile": "AVENIR PAILLETON 2",
+   "exterieur": "LORMONT HANDBALL HAUTS DE GARONNE",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
    "id": "2636282",
    "journee": 5,
    "iso": "2027-02-13T18:30",
@@ -1217,20 +1231,6 @@
    "date": "",
    "domicile": "AS HB DU FRONSADAIS",
    "exterieur": "HAILLAN HANDBALL",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
-   "id": "2636333",
-   "journee": 13,
-   "iso": "",
-   "date": "",
-   "domicile": "AVENIR PAILLETON 2",
-   "exterieur": "LORMONT HANDBALL HAUTS DE GARONNE",
    "score_dom": null,
    "score_ext": null,
    "affiche": null,
@@ -2023,5 +2023,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-11-17 17:02"
+ "genere_le": "2026-11-19 01:24"
 }

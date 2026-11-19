@@ -1,7 +1,7 @@
 {
  "equipe": "-15 G",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u15-masculin-32826/poule-194103/",
- "source_mise_a_jour": "15 nov. 2026 à 15h16",
+ "source_mise_a_jour": "18 nov. 2026 à 19h56",
  "journees": 10,
  "classement": [
   {
@@ -469,6 +469,20 @@
    "nous": false
   },
   {
+   "id": "2698127",
+   "journee": 10,
+   "iso": "2026-12-12T17:00",
+   "date": "Samedi 12 décembre 2026 à 17h00",
+   "domicile": "AVENIR PAILLETON",
+   "exterieur": "PE2M HB",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": false
+  },
+  {
    "id": "2698131",
    "journee": 10,
    "iso": "2026-12-12T17:00",
@@ -495,21 +509,7 @@
    "vainqueur": null,
    "statut": "à venir",
    "nous": true
-  },
-  {
-   "id": "2698127",
-   "journee": 10,
-   "iso": "",
-   "date": "",
-   "domicile": "AVENIR PAILLETON",
-   "exterieur": "PE2M HB",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false
   }
  ],
- "genere_le": "2026-11-15 23:52"
+ "genere_le": "2026-11-19 01:26"
 }
