@@ -1,7 +1,7 @@
 {
  "equipe": "-13 F 2",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u13-feminine-32777/poule-194061/",
- "source_mise_a_jour": "18 nov. 2026 à 20h23",
+ "source_mise_a_jour": "19 nov. 2026 à 21h09",
  "journees": 10,
  "classement": [
   {
@@ -49,8 +49,8 @@
   {
    "rang": 4,
    "club": "CADILLAC CERONS U13F",
-   "joues": 6,
-   "gagnes": 2,
+   "joues": 7,
+   "gagnes": 3,
    "nuls": 0,
    "perdus": 4,
    "bp": 93,
@@ -58,15 +58,15 @@
    "diff": -45,
    "points": 10,
    "nous": false,
-   "stats_partielles": false
+   "stats_partielles": true
   },
   {
    "rang": 5,
    "club": "PE2M HB 2",
-   "joues": 6,
+   "joues": 7,
    "gagnes": 1,
    "nuls": 0,
-   "perdus": 5,
+   "perdus": 6,
    "bp": 80,
    "bc": 158,
    "diff": -78,
@@ -365,9 +365,9 @@
    "exterieur": "PE2M HB 2",
    "score_dom": null,
    "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
+   "affiche": "10 – FO",
+   "vainqueur": "dom",
+   "statut": "pénalité",
    "nous": false
   },
   {
@@ -511,5 +511,5 @@
    "nous": true
   }
  ],
- "genere_le": "2026-11-19 01:27"
+ "genere_le": "2026-11-20 01:43"
 }
