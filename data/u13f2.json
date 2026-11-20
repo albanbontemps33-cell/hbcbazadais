@@ -1,7 +1,7 @@
 {
  "equipe": "-13 F 2",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u13-feminine-32777/poule-194061/",
- "source_mise_a_jour": "19 nov. 2026 à 21h09",
+ "source_mise_a_jour": "20 nov. 2026 à 11h45",
  "journees": 10,
  "classement": [
   {
@@ -56,9 +56,9 @@
    "bp": 93,
    "bc": 138,
    "diff": -45,
-   "points": 10,
+   "points": 13,
    "nous": false,
-   "stats_partielles": true
+   "stats_partielles": false
   },
   {
    "rang": 5,
@@ -469,20 +469,6 @@
    "nous": false
   },
   {
-   "id": "2699737",
-   "journee": 10,
-   "iso": "2026-12-12T14:00",
-   "date": "Samedi 12 décembre 2026 à 14h00",
-   "domicile": "AVENIR PAILLETON",
-   "exterieur": "PE2M HB 2",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false
-  },
-  {
    "id": "2699738",
    "journee": 10,
    "iso": "2026-12-12T14:30",
@@ -509,7 +495,21 @@
    "vainqueur": null,
    "statut": "à venir",
    "nous": true
+  },
+  {
+   "id": "2699737",
+   "journee": 10,
+   "iso": "2026-12-12T15:15",
+   "date": "Samedi 12 décembre 2026 à 15h15",
+   "domicile": "AVENIR PAILLETON",
+   "exterieur": "PE2M HB 2",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": false
   }
  ],
- "genere_le": "2026-11-20 01:43"
+ "genere_le": "2026-11-20 16:31"
 }
