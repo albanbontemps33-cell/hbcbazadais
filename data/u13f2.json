@@ -1,7 +1,7 @@
 {
  "equipe": "-13 F 2",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u13-feminine-32777/poule-194061/",
- "source_mise_a_jour": "20 nov. 2026 à 11h45",
+ "source_mise_a_jour": "21 nov. 2026 à 19h01",
  "journees": 10,
  "classement": [
   {
@@ -35,14 +35,14 @@
   {
    "rang": 3,
    "club": "HANDBALL SAINT MEDARD D'EYRANS",
-   "joues": 6,
+   "joues": 7,
    "gagnes": 3,
    "nuls": 1,
-   "perdus": 2,
-   "bp": 132,
-   "bc": 105,
-   "diff": 27,
-   "points": 13,
+   "perdus": 3,
+   "bp": 142,
+   "bc": 120,
+   "diff": 22,
+   "points": 14,
    "nous": false,
    "stats_partielles": false
   },
@@ -62,6 +62,20 @@
   },
   {
    "rang": 5,
+   "club": "HBC BAZADAIS 2",
+   "joues": 7,
+   "gagnes": 2,
+   "nuls": 0,
+   "perdus": 5,
+   "bp": 100,
+   "bc": 176,
+   "diff": -76,
+   "points": 11,
+   "nous": true,
+   "stats_partielles": false
+  },
+  {
+   "rang": 6,
    "club": "PE2M HB 2",
    "joues": 7,
    "gagnes": 1,
@@ -72,20 +86,6 @@
    "diff": -78,
    "points": 8,
    "nous": false,
-   "stats_partielles": false
-  },
-  {
-   "rang": 6,
-   "club": "HBC BAZADAIS 2",
-   "joues": 6,
-   "gagnes": 1,
-   "nuls": 0,
-   "perdus": 5,
-   "bp": 85,
-   "bc": 166,
-   "diff": -81,
-   "points": 8,
-   "nous": true,
    "stats_partielles": false
   }
  ],
@@ -349,13 +349,12 @@
    "date": "Samedi 21 novembre 2026 à 12h30",
    "domicile": "HBC BAZADAIS 2",
    "exterieur": "HANDBALL SAINT MEDARD D'EYRANS",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": true,
-   "brut": "SAMEDI 21 NOVEMBRE 2026 À 12H30 HBC BAZADAIS 2 - - HANDBALL SAINT MEDARD D'EYRANS VOIR DÉTAIL DU MATCH"
+   "score_dom": 15,
+   "score_ext": 10,
+   "affiche": "15 – 10",
+   "vainqueur": "dom",
+   "statut": "joué",
+   "nous": true
   },
   {
    "id": "2699728",
@@ -512,5 +511,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-11-21 15:45"
+ "genere_le": "2026-11-22 00:21"
 }

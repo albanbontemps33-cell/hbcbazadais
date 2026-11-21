@@ -1,20 +1,20 @@
 {
  "equipe": "-18 G",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u18-masculins-32774/poule-194137/",
- "source_mise_a_jour": "20 nov. 2026 à 15h22",
+ "source_mise_a_jour": "21 nov. 2026 à 18h55",
  "journees": 10,
  "classement": [
   {
    "rang": 1,
    "club": "HBC BAZADAIS",
-   "joues": 5,
-   "gagnes": 4,
+   "joues": 6,
+   "gagnes": 5,
    "nuls": 1,
    "perdus": 0,
-   "bp": 178,
-   "bc": 155,
-   "diff": 23,
-   "points": 14,
+   "bp": 208,
+   "bc": 183,
+   "diff": 25,
+   "points": 17,
    "nous": true,
    "stats_partielles": false
   },
@@ -49,14 +49,14 @@
   {
    "rang": 4,
    "club": "SC MONSEGUR HB",
-   "joues": 5,
+   "joues": 6,
    "gagnes": 2,
    "nuls": 0,
-   "perdus": 3,
-   "bp": 124,
-   "bc": 109,
-   "diff": 15,
-   "points": 8,
+   "perdus": 4,
+   "bp": 152,
+   "bc": 139,
+   "diff": 13,
+   "points": 9,
    "nous": false,
    "stats_partielles": false
   },
@@ -251,11 +251,11 @@
    "date": "Samedi 21 novembre 2026 à 15h45",
    "domicile": "HBC BAZADAIS",
    "exterieur": "SC MONSEGUR HB",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
+   "score_dom": 30,
+   "score_ext": 28,
+   "affiche": "30 – 28",
+   "vainqueur": "dom",
+   "statut": "joué",
    "nous": true
   },
   {
@@ -357,5 +357,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-11-21 01:03"
+ "genere_le": "2026-11-22 00:18"
 }

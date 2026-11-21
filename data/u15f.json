@@ -1,20 +1,20 @@
 {
  "equipe": "-15 F",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u15-feminine-32776/poule-194055/",
- "source_mise_a_jour": "15 nov. 2026 à 18h04",
+ "source_mise_a_jour": "21 nov. 2026 à 18h56",
  "journees": 10,
  "classement": [
   {
    "rang": 1,
    "club": "HBC BAZADAIS",
-   "joues": 5,
-   "gagnes": 5,
+   "joues": 6,
+   "gagnes": 6,
    "nuls": 0,
    "perdus": 0,
-   "bp": 200,
-   "bc": 65,
-   "diff": 135,
-   "points": 15,
+   "bp": 240,
+   "bc": 85,
+   "diff": 155,
+   "points": 18,
    "nous": true,
    "stats_partielles": false
   },
@@ -35,14 +35,14 @@
   {
    "rang": 3,
    "club": "SC MONSEGUR HB",
-   "joues": 4,
+   "joues": 5,
    "gagnes": 2,
    "nuls": 0,
-   "perdus": 2,
-   "bp": 82,
-   "bc": 103,
-   "diff": -21,
-   "points": 8,
+   "perdus": 3,
+   "bp": 102,
+   "bc": 143,
+   "diff": -41,
+   "points": 9,
    "nous": false,
    "stats_partielles": false
   },
@@ -251,13 +251,12 @@
    "date": "Samedi 21 novembre 2026 à 14h00",
    "domicile": "HBC BAZADAIS",
    "exterieur": "SC MONSEGUR HB",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": true,
-   "brut": "SAMEDI 21 NOVEMBRE 2026 À 14H00 HBC BAZADAIS - - SC MONSEGUR HB VOIR DÉTAIL DU MATCH"
+   "score_dom": 40,
+   "score_ext": 20,
+   "affiche": "40 – 20",
+   "vainqueur": "dom",
+   "statut": "joué",
+   "nous": true
   },
   {
    "id": "2699847",
@@ -358,5 +357,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-11-21 15:44"
+ "genere_le": "2026-11-22 00:19"
 }

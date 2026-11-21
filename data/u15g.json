@@ -354,7 +354,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "SAMEDI 21 NOVEMBRE 2026 À 16H30 SC MONSEGUR HB - - UNION SPORTIVE TALENCE HANDBALL VOIR DÉTAIL DU MATCH REMATCH DISPONIBLE"
   },
   {
    "id": "2698118",
@@ -368,7 +369,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": true
+   "nous": true,
+   "brut": "SAMEDI 21 NOVEMBRE 2026 À 17H00 AVENIR PAILLETON - - HBC BAZADAIS VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2698119",
@@ -382,7 +384,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "SAMEDI 21 NOVEMBRE 2026 À 17H15 PE2M HB - - CADILLAC/CERONS U15M VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2698120",
@@ -511,5 +514,5 @@
    "nous": true
   }
  ],
- "genere_le": "2026-11-19 01:26"
+ "genere_le": "2026-11-22 00:19"
 }

@@ -1,20 +1,20 @@
 {
  "equipe": "-13 G",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u13-masculin-32827/poule-194151/",
- "source_mise_a_jour": "15 nov. 2026 à 18h03",
+ "source_mise_a_jour": "21 nov. 2026 à 18h56",
  "journees": 10,
  "classement": [
   {
    "rang": 1,
    "club": "HANDBALL CLUB SAINT SYMPHORIEN",
-   "joues": 6,
-   "gagnes": 6,
+   "joues": 7,
+   "gagnes": 7,
    "nuls": 0,
    "perdus": 0,
-   "bp": 191,
-   "bc": 108,
-   "diff": 83,
-   "points": 18,
+   "bp": 221,
+   "bc": 126,
+   "diff": 95,
+   "points": 21,
    "nous": false,
    "stats_partielles": false
   },
@@ -34,6 +34,34 @@
   },
   {
    "rang": 3,
+   "club": "CADILLAC - CERONS U13M",
+   "joues": 7,
+   "gagnes": 3,
+   "nuls": 0,
+   "perdus": 4,
+   "bp": 160,
+   "bc": 183,
+   "diff": -23,
+   "points": 13,
+   "nous": false,
+   "stats_partielles": false
+  },
+  {
+   "rang": 4,
+   "club": "HBC BAZADAIS",
+   "joues": 7,
+   "gagnes": 2,
+   "nuls": 0,
+   "perdus": 5,
+   "bp": 154,
+   "bc": 187,
+   "diff": -33,
+   "points": 11,
+   "nous": true,
+   "stats_partielles": false
+  },
+  {
+   "rang": 5,
    "club": "HANDBALL SAINT MEDARD D'EYRANS 2",
    "joues": 6,
    "gagnes": 2,
@@ -47,44 +75,16 @@
    "stats_partielles": false
   },
   {
-   "rang": 4,
-   "club": "HBC BAZADAIS",
-   "joues": 6,
-   "gagnes": 2,
-   "nuls": 0,
-   "perdus": 4,
-   "bp": 139,
-   "bc": 165,
-   "diff": -26,
-   "points": 10,
-   "nous": true,
-   "stats_partielles": false
-  },
-  {
-   "rang": 5,
-   "club": "CADILLAC - CERONS U13M",
-   "joues": 6,
-   "gagnes": 2,
-   "nuls": 0,
-   "perdus": 4,
-   "bp": 138,
-   "bc": 168,
-   "diff": -30,
-   "points": 10,
-   "nous": false,
-   "stats_partielles": false
-  },
-  {
    "rang": 6,
    "club": "AVENIR PAILLETON",
-   "joues": 6,
+   "joues": 7,
    "gagnes": 1,
    "nuls": 0,
-   "perdus": 5,
-   "bp": 92,
-   "bc": 138,
-   "diff": -46,
-   "points": 8,
+   "perdus": 6,
+   "bp": 110,
+   "bc": 168,
+   "diff": -58,
+   "points": 9,
    "nous": false,
    "stats_partielles": false
   }
@@ -349,13 +349,12 @@
    "date": "Samedi 21 novembre 2026 à 11h00",
    "domicile": "HBC BAZADAIS",
    "exterieur": "CADILLAC - CERONS U13M",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": true,
-   "brut": "SAMEDI 21 NOVEMBRE 2026 À 11H00 HBC BAZADAIS - - CADILLAC - CERONS U13M VOIR DÉTAIL DU MATCH"
+   "score_dom": 15,
+   "score_ext": 22,
+   "affiche": "15 – 22",
+   "vainqueur": "ext",
+   "statut": "joué",
+   "nous": true
   },
   {
    "id": "2699075",
@@ -364,13 +363,12 @@
    "date": "Samedi 21 novembre 2026 à 14h00",
    "domicile": "HANDBALL CLUB SAINT SYMPHORIEN",
    "exterieur": "AVENIR PAILLETON",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false,
-   "brut": "SAMEDI 21 NOVEMBRE 2026 À 14H00 HANDBALL CLUB SAINT SYMPHORIEN - - AVENIR PAILLETON VOIR DÉTAIL DU MATCH"
+   "score_dom": 30,
+   "score_ext": 18,
+   "affiche": "30 – 18",
+   "vainqueur": "dom",
+   "statut": "joué",
+   "nous": false
   },
   {
    "id": "2699073",
@@ -514,5 +512,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-11-21 15:44"
+ "genere_le": "2026-11-22 00:20"
 }
