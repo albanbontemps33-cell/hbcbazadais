@@ -354,7 +354,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "SAMEDI 21 NOVEMBRE 2026 À 13H00 STADE LANGONNAIS HB - - PE2M HB 1 VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2699519",
@@ -368,7 +369,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "SAMEDI 21 NOVEMBRE 2026 À 13H20 SA GAZINET CESTAS - - HBC TEICHOIS 1 VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2699517",
@@ -382,7 +384,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": true
+   "nous": true,
+   "brut": "SAMEDI 21 NOVEMBRE 2026 À 14H30 HBC CREONNAIS - - HBC BAZADAIS 1 VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2699521",
@@ -511,5 +514,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-11-18 02:02"
+ "genere_le": "2026-11-21 15:45"
 }

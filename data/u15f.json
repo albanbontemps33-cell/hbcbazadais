@@ -256,7 +256,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": true
+   "nous": true,
+   "brut": "SAMEDI 21 NOVEMBRE 2026 À 14H00 HBC BAZADAIS - - SC MONSEGUR HB VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2699847",
@@ -357,5 +358,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-11-15 23:52"
+ "genere_le": "2026-11-21 15:44"
 }

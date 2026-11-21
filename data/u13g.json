@@ -354,7 +354,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": true
+   "nous": true,
+   "brut": "SAMEDI 21 NOVEMBRE 2026 À 11H00 HBC BAZADAIS - - CADILLAC - CERONS U13M VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2699075",
@@ -368,7 +369,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "SAMEDI 21 NOVEMBRE 2026 À 14H00 HANDBALL CLUB SAINT SYMPHORIEN - - AVENIR PAILLETON VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2699073",
@@ -382,7 +384,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "SAMEDI 21 NOVEMBRE 2026 À 15H15 SC MONSEGUR HB - - HANDBALL SAINT MEDARD D'EYRANS 2 VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2699076",
@@ -511,5 +514,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-11-15 23:53"
+ "genere_le": "2026-11-21 15:44"
 }
