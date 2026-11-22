@@ -1,7 +1,7 @@
 {
  "equipe": "-18 G",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u18-masculins-32774/poule-194137/",
- "source_mise_a_jour": "22 nov. 2026 à 06h48",
+ "source_mise_a_jour": "22 nov. 2026 à 18h10",
  "journees": 10,
  "classement": [
   {
@@ -21,14 +21,14 @@
   {
    "rang": 2,
    "club": "CADILLAC - CERONS U18M",
-   "joues": 4,
-   "gagnes": 3,
+   "joues": 5,
+   "gagnes": 4,
    "nuls": 0,
    "perdus": 1,
-   "bp": 93,
-   "bc": 89,
-   "diff": 4,
-   "points": 10,
+   "bp": 147,
+   "bc": 118,
+   "diff": 29,
+   "points": 13,
    "nous": false,
    "stats_partielles": false
   },
@@ -63,14 +63,14 @@
   {
    "rang": 5,
    "club": "AVENIR PAILLETON",
-   "joues": 5,
+   "joues": 6,
    "gagnes": 0,
    "nuls": 0,
-   "perdus": 5,
-   "bp": 148,
-   "bc": 177,
-   "diff": -29,
-   "points": 5,
+   "perdus": 6,
+   "bp": 177,
+   "bc": 231,
+   "diff": -54,
+   "points": 6,
    "nous": false,
    "stats_partielles": false
   }
@@ -265,11 +265,11 @@
    "date": "Dimanche 22 novembre 2026 à 16h00",
    "domicile": "AVENIR PAILLETON",
    "exterieur": "CADILLAC - CERONS U18M",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
+   "score_dom": 29,
+   "score_ext": 54,
+   "affiche": "29 – 54",
+   "vainqueur": "ext",
+   "statut": "joué",
    "nous": false
   },
   {
@@ -357,5 +357,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-11-22 15:36"
+ "genere_le": "2026-11-23 00:39"
 }

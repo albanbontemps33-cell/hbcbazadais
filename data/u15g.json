@@ -1,7 +1,7 @@
 {
  "equipe": "-15 G",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u15-masculin-32826/poule-194103/",
- "source_mise_a_jour": "22 nov. 2026 à 05h25",
+ "source_mise_a_jour": "22 nov. 2026 à 18h51",
  "journees": 10,
  "classement": [
   {
@@ -49,14 +49,14 @@
   {
    "rang": 4,
    "club": "HBC BAZADAIS",
-   "joues": 6,
+   "joues": 7,
    "gagnes": 3,
    "nuls": 0,
-   "perdus": 3,
-   "bp": 219,
-   "bc": 199,
-   "diff": 20,
-   "points": 12,
+   "perdus": 4,
+   "bp": 244,
+   "bc": 233,
+   "diff": 11,
+   "points": 13,
    "nous": true,
    "stats_partielles": false
   },
@@ -77,14 +77,14 @@
   {
    "rang": 6,
    "club": "AVENIR PAILLETON",
-   "joues": 6,
-   "gagnes": 0,
+   "joues": 7,
+   "gagnes": 1,
    "nuls": 0,
    "perdus": 6,
-   "bp": 124,
-   "bc": 286,
-   "diff": -162,
-   "points": 6,
+   "bp": 158,
+   "bc": 311,
+   "diff": -153,
+   "points": 9,
    "nous": false,
    "stats_partielles": false
   }
@@ -363,13 +363,12 @@
    "date": "Samedi 21 novembre 2026 à 17h00",
    "domicile": "AVENIR PAILLETON",
    "exterieur": "HBC BAZADAIS",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": true,
-   "brut": "SAMEDI 21 NOVEMBRE 2026 À 17H00 AVENIR PAILLETON - - HBC BAZADAIS VOIR DÉTAIL DU MATCH"
+   "score_dom": 34,
+   "score_ext": 25,
+   "affiche": "34 – 25",
+   "vainqueur": "dom",
+   "statut": "joué",
+   "nous": true
   },
   {
    "id": "2698119",
@@ -512,5 +511,5 @@
    "nous": true
   }
  ],
- "genere_le": "2026-11-22 15:37"
+ "genere_le": "2026-11-23 00:40"
 }

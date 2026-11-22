@@ -1,34 +1,34 @@
 {
  "equipe": "-13 F 2",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u13-feminine-32777/poule-194061/",
- "source_mise_a_jour": "21 nov. 2026 à 19h01",
+ "source_mise_a_jour": "22 nov. 2026 à 18h36",
  "journees": 10,
  "classement": [
   {
    "rang": 1,
    "club": "AVENIR PAILLETON",
-   "joues": 6,
-   "gagnes": 6,
+   "joues": 7,
+   "gagnes": 7,
    "nuls": 0,
    "perdus": 0,
-   "bp": 218,
-   "bc": 84,
-   "diff": 134,
-   "points": 18,
+   "bp": 238,
+   "bc": 97,
+   "diff": 141,
+   "points": 21,
    "nous": false,
    "stats_partielles": false
   },
   {
    "rang": 2,
    "club": "SC MONSEGUR HB",
-   "joues": 6,
+   "joues": 7,
    "gagnes": 4,
    "nuls": 1,
-   "perdus": 1,
-   "bp": 119,
-   "bc": 76,
-   "diff": 43,
-   "points": 15,
+   "perdus": 2,
+   "bp": 132,
+   "bc": 96,
+   "diff": 36,
+   "points": 16,
    "nous": false,
    "stats_partielles": false
   },
@@ -377,13 +377,12 @@
    "date": "Dimanche 22 novembre 2026 à 14h00",
    "domicile": "AVENIR PAILLETON",
    "exterieur": "SC MONSEGUR HB",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": false,
-   "brut": "DIMANCHE 22 NOVEMBRE 2026 À 14H00 AVENIR PAILLETON - - SC MONSEGUR HB VOIR DÉTAIL DU MATCH"
+   "score_dom": 20,
+   "score_ext": 13,
+   "affiche": "20 – 13",
+   "vainqueur": "dom",
+   "statut": "joué",
+   "nous": false
   },
   {
    "id": "2699731",
@@ -512,5 +511,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-11-22 15:39"
+ "genere_le": "2026-11-23 00:42"
 }
