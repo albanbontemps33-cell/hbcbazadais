@@ -1,7 +1,7 @@
 {
  "equipe": "-18 F",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u18-feminine-32775/poule-193706/",
- "source_mise_a_jour": "21 nov. 2026 à 18h36",
+ "source_mise_a_jour": "22 nov. 2026 à 10h07",
  "journees": 10,
  "classement": [
   {
@@ -34,6 +34,20 @@
   },
   {
    "rang": 3,
+   "club": "HBC BAZADAIS",
+   "joues": 7,
+   "gagnes": 3,
+   "nuls": 1,
+   "perdus": 3,
+   "bp": 178,
+   "bc": 172,
+   "diff": 6,
+   "points": 14,
+   "nous": true,
+   "stats_partielles": false
+  },
+  {
+   "rang": 4,
    "club": "GRADIGNAN HANDBALL CLUB",
    "joues": 6,
    "gagnes": 3,
@@ -47,7 +61,7 @@
    "stats_partielles": false
   },
   {
-   "rang": 4,
+   "rang": 5,
    "club": "CADILLAC - CERONS U18F",
    "joues": 7,
    "gagnes": 2,
@@ -61,30 +75,16 @@
    "stats_partielles": false
   },
   {
-   "rang": 5,
-   "club": "HBC BAZADAIS",
-   "joues": 6,
-   "gagnes": 2,
-   "nuls": 1,
-   "perdus": 3,
-   "bp": 146,
-   "bc": 151,
-   "diff": -5,
-   "points": 11,
-   "nous": true,
-   "stats_partielles": false
-  },
-  {
    "rang": 6,
    "club": "SC MONSEGUR HB",
-   "joues": 5,
+   "joues": 6,
    "gagnes": 0,
    "nuls": 1,
-   "perdus": 4,
-   "bp": 115,
-   "bc": 189,
-   "diff": -74,
-   "points": 6,
+   "perdus": 5,
+   "bp": 136,
+   "bc": 221,
+   "diff": -85,
+   "points": 7,
    "nous": false,
    "stats_partielles": false
   }
@@ -363,13 +363,12 @@
    "date": "Samedi 21 novembre 2026 à 18h00",
    "domicile": "SC MONSEGUR HB",
    "exterieur": "HBC BAZADAIS",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": true,
-   "brut": "SAMEDI 21 NOVEMBRE 2026 À 18H00 SC MONSEGUR HB - - HBC BAZADAIS VOIR DÉTAIL DU MATCH"
+   "score_dom": 21,
+   "score_ext": 32,
+   "affiche": "21 – 32",
+   "vainqueur": "ext",
+   "statut": "joué",
+   "nous": true
   },
   {
    "id": "2699880",
@@ -512,5 +511,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-11-22 00:19"
+ "genere_le": "2026-11-22 15:37"
 }

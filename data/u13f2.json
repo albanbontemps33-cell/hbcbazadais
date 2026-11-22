@@ -382,7 +382,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "DIMANCHE 22 NOVEMBRE 2026 À 14H00 AVENIR PAILLETON - - SC MONSEGUR HB VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2699731",
@@ -511,5 +512,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-11-22 00:21"
+ "genere_le": "2026-11-22 15:39"
 }

@@ -1,7 +1,7 @@
 {
  "equipe": "-15 F",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u15-feminine-32776/poule-194055/",
- "source_mise_a_jour": "21 nov. 2026 à 18h56",
+ "source_mise_a_jour": "22 nov. 2026 à 12h50",
  "journees": 10,
  "classement": [
   {
@@ -49,28 +49,28 @@
   {
    "rang": 4,
    "club": "HANDBALL SAINT MEDARD D'EYRANS 2",
-   "joues": 5,
+   "joues": 6,
    "gagnes": 1,
    "nuls": 0,
-   "perdus": 4,
-   "bp": 65,
-   "bc": 92,
-   "diff": -27,
-   "points": 7,
+   "perdus": 5,
+   "bp": 82,
+   "bc": 112,
+   "diff": -30,
+   "points": 8,
    "nous": false,
    "stats_partielles": false
   },
   {
    "rang": 5,
    "club": "CADILLAC CERONS U15F",
-   "joues": 5,
-   "gagnes": 0,
+   "joues": 6,
+   "gagnes": 1,
    "nuls": 0,
    "perdus": 5,
-   "bp": 51,
-   "bc": 131,
-   "diff": -80,
-   "points": 4,
+   "bp": 71,
+   "bc": 148,
+   "diff": -77,
+   "points": 7,
    "nous": false,
    "stats_partielles": false
   }
@@ -265,11 +265,11 @@
    "date": "Dimanche 22 novembre 2026 à 11h30",
    "domicile": "HANDBALL SAINT MEDARD D'EYRANS 2",
    "exterieur": "CADILLAC CERONS U15F",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
+   "score_dom": 17,
+   "score_ext": 20,
+   "affiche": "17 – 20",
+   "vainqueur": "ext",
+   "statut": "joué",
    "nous": false
   },
   {
@@ -357,5 +357,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-11-22 00:19"
+ "genere_le": "2026-11-22 15:38"
 }

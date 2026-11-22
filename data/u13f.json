@@ -35,19 +35,33 @@
   {
    "rang": 3,
    "club": "HBC CREONNAIS",
-   "joues": 6,
+   "joues": 7,
    "gagnes": 4,
    "nuls": 0,
-   "perdus": 2,
-   "bp": 185,
-   "bc": 154,
-   "diff": 31,
-   "points": 14,
+   "perdus": 3,
+   "bp": 206,
+   "bc": 196,
+   "diff": 10,
+   "points": 15,
    "nous": false,
    "stats_partielles": false
   },
   {
    "rang": 4,
+   "club": "HBC BAZADAIS 1",
+   "joues": 7,
+   "gagnes": 3,
+   "nuls": 0,
+   "perdus": 4,
+   "bp": 177,
+   "bc": 202,
+   "diff": -25,
+   "points": 13,
+   "nous": true,
+   "stats_partielles": false
+  },
+  {
+   "rang": 5,
    "club": "PE2M HB 1",
    "joues": 7,
    "gagnes": 2,
@@ -58,20 +72,6 @@
    "diff": -76,
    "points": 11,
    "nous": false,
-   "stats_partielles": false
-  },
-  {
-   "rang": 5,
-   "club": "HBC BAZADAIS 1",
-   "joues": 6,
-   "gagnes": 2,
-   "nuls": 0,
-   "perdus": 4,
-   "bp": 135,
-   "bc": 181,
-   "diff": -46,
-   "points": 10,
-   "nous": true,
    "stats_partielles": false
   },
   {
@@ -377,13 +377,12 @@
    "date": "Samedi 21 novembre 2026 à 14h30",
    "domicile": "HBC CREONNAIS",
    "exterieur": "HBC BAZADAIS 1",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": true,
-   "brut": "SAMEDI 21 NOVEMBRE 2026 À 14H30 HBC CREONNAIS - - HBC BAZADAIS 1 VOIR DÉTAIL DU MATCH"
+   "score_dom": 21,
+   "score_ext": 42,
+   "affiche": "21 – 42",
+   "vainqueur": "ext",
+   "statut": "joué",
+   "nous": true
   },
   {
    "id": "2699521",
@@ -512,5 +511,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-11-22 00:20"
+ "genere_le": "2026-11-22 15:39"
 }
