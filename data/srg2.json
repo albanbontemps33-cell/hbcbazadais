@@ -1,7 +1,7 @@
 {
  "equipe": "SG2",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-16-masculins-promotion-32460/",
- "source_mise_a_jour": "22 nov. 2026 à 06h53",
+ "source_mise_a_jour": "25 nov. 2026 à 07h52",
  "journees": 10,
  "classement": [
   {
@@ -455,6 +455,20 @@
    "nous": false
   },
   {
+   "id": "2676608",
+   "journee": 9,
+   "iso": "2026-12-05T21:15",
+   "date": "Samedi 5 décembre 2026 à 21h15",
+   "domicile": "ST MEDARD HANDBALL 2",
+   "exterieur": "HBC BAZADAIS 2",
+   "score_dom": null,
+   "score_ext": null,
+   "affiche": null,
+   "vainqueur": null,
+   "statut": "à venir",
+   "nous": true
+  },
+  {
    "id": "2676607",
    "journee": 9,
    "iso": "2026-12-05T21:30",
@@ -467,20 +481,6 @@
    "vainqueur": null,
    "statut": "à venir",
    "nous": false
-  },
-  {
-   "id": "2676608",
-   "journee": 9,
-   "iso": "2026-12-06T16:00",
-   "date": "Dimanche 6 décembre 2026 à 16h00",
-   "domicile": "ST MEDARD HANDBALL 2",
-   "exterieur": "HBC BAZADAIS 2",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
-   "nous": true
   },
   {
    "id": "2676612",
@@ -511,5 +511,5 @@
    "nous": true
   }
  ],
- "genere_le": "2026-11-22 15:34"
+ "genere_le": "2026-11-25 18:14"
 }
