@@ -1,7 +1,7 @@
 {
  "equipe": "SG1",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-16-masculins-pre-regionale-32457/poule-190872/",
- "source_mise_a_jour": "25 nov. 2026 à 17h46",
+ "source_mise_a_jour": "26 nov. 2026 à 09h07",
  "journees": 22,
  "classement": [
   {
@@ -933,8 +933,8 @@
   {
    "id": "2635518",
    "journee": 10,
-   "iso": "2026-12-12T21:30",
-   "date": "Samedi 12 décembre 2026 à 21h30",
+   "iso": "2026-12-12T21:00",
+   "date": "Samedi 12 décembre 2026 à 21h00",
    "domicile": "ES BLANQUEFORTAISE HBC 2",
    "exterieur": "ST MEDARD HANDBALL 2",
    "score_dom": null,
@@ -2023,5 +2023,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-11-26 02:48"
+ "genere_le": "2026-11-26 17:53"
 }
