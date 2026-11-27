@@ -1,7 +1,7 @@
 {
  "equipe": "-13 F 2",
  "source": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/departemental/gironde-u13-feminine-32777/poule-194061/",
- "source_mise_a_jour": "26 nov. 2026 à 13h35",
+ "source_mise_a_jour": "27 nov. 2026 à 09h03",
  "journees": 10,
  "classement": [
   {
@@ -20,6 +20,20 @@
   },
   {
    "rang": 2,
+   "club": "HANDBALL SAINT MEDARD D'EYRANS",
+   "joues": 8,
+   "gagnes": 4,
+   "nuls": 1,
+   "perdus": 3,
+   "bp": 142,
+   "bc": 120,
+   "diff": 22,
+   "points": 17,
+   "nous": false,
+   "stats_partielles": false
+  },
+  {
+   "rang": 3,
    "club": "SC MONSEGUR HB",
    "joues": 7,
    "gagnes": 4,
@@ -31,20 +45,6 @@
    "points": 16,
    "nous": false,
    "stats_partielles": false
-  },
-  {
-   "rang": 3,
-   "club": "HANDBALL SAINT MEDARD D'EYRANS",
-   "joues": 8,
-   "gagnes": 4,
-   "nuls": 1,
-   "perdus": 3,
-   "bp": 142,
-   "bc": 120,
-   "diff": 22,
-   "points": 14,
-   "nous": false,
-   "stats_partielles": true
   },
   {
    "rang": 4,
@@ -511,5 +511,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-11-26 17:58"
+ "genere_le": "2026-11-27 17:44"
 }
