@@ -35,19 +35,33 @@
   {
    "rang": 3,
    "club": "CADILLAC - CERONS U13M",
-   "joues": 7,
+   "joues": 8,
    "gagnes": 3,
    "nuls": 0,
-   "perdus": 4,
-   "bp": 160,
-   "bc": 183,
-   "diff": -23,
-   "points": 13,
+   "perdus": 5,
+   "bp": 179,
+   "bc": 212,
+   "diff": -33,
+   "points": 14,
    "nous": false,
    "stats_partielles": false
   },
   {
    "rang": 4,
+   "club": "AVENIR PAILLETON",
+   "joues": 8,
+   "gagnes": 2,
+   "nuls": 0,
+   "perdus": 6,
+   "bp": 139,
+   "bc": 187,
+   "diff": -48,
+   "points": 12,
+   "nous": false,
+   "stats_partielles": false
+  },
+  {
+   "rang": 5,
    "club": "HANDBALL SAINT MEDARD D'EYRANS 2",
    "joues": 7,
    "gagnes": 2,
@@ -61,7 +75,7 @@
    "stats_partielles": false
   },
   {
-   "rang": 5,
+   "rang": 6,
    "club": "HBC BAZADAIS",
    "joues": 7,
    "gagnes": 2,
@@ -72,20 +86,6 @@
    "diff": -33,
    "points": 11,
    "nous": true,
-   "stats_partielles": false
-  },
-  {
-   "rang": 6,
-   "club": "AVENIR PAILLETON",
-   "joues": 7,
-   "gagnes": 1,
-   "nuls": 0,
-   "perdus": 6,
-   "bp": 110,
-   "bc": 168,
-   "diff": -58,
-   "points": 9,
-   "nous": false,
    "stats_partielles": false
   }
  ],
@@ -391,11 +391,11 @@
    "date": "Samedi 28 novembre 2026 à 14h00",
    "domicile": "CADILLAC - CERONS U13M",
    "exterieur": "AVENIR PAILLETON",
-   "score_dom": null,
-   "score_ext": null,
-   "affiche": null,
-   "vainqueur": null,
-   "statut": "à venir",
+   "score_dom": 19,
+   "score_ext": 29,
+   "affiche": "19 – 29",
+   "vainqueur": "ext",
+   "statut": "joué",
    "nous": false
   },
   {
@@ -410,7 +410,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": true
+   "nous": true,
+   "brut": "SAMEDI 28 NOVEMBRE 2026 À 14H15 SC MONSEGUR HB - - HBC BAZADAIS VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2699077",
@@ -511,5 +512,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-11-22 15:38"
+ "genere_le": "2026-11-28 16:34"
 }

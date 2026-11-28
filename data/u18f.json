@@ -382,7 +382,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": true
+   "nous": true,
+   "brut": "SAMEDI 28 NOVEMBRE 2026 À 14H15 HBC BAZADAIS - - HBC BELIN-BELIET VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2699882",
@@ -511,5 +512,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-11-27 17:42"
+ "genere_le": "2026-11-28 16:33"
 }

@@ -396,7 +396,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": true
+   "nous": true,
+   "brut": "SAMEDI 28 NOVEMBRE 2026 À 11H00 HBC BAZADAIS 1 - - SA GAZINET CESTAS VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2699522",
@@ -410,7 +411,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "SAMEDI 28 NOVEMBRE 2026 À 14H45 HBC CREONNAIS - - STADE LANGONNAIS HB VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2699520",
@@ -424,7 +426,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "SAMEDI 28 NOVEMBRE 2026 À 15H15 PE2M HB 1 - - HBC TEICHOIS 1 VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2699524",
@@ -511,5 +514,5 @@
    "nous": false
   }
  ],
- "genere_le": "2026-11-22 15:39"
+ "genere_le": "2026-11-28 16:35"
 }

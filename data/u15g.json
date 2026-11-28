@@ -396,7 +396,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": true
+   "nous": true,
+   "brut": "SAMEDI 28 NOVEMBRE 2026 À 12H30 HBC BAZADAIS - - CADILLAC/CERONS U15M VOIR DÉTAIL DU MATCH"
   },
   {
    "id": "2698121",
@@ -410,7 +411,8 @@
    "affiche": null,
    "vainqueur": null,
    "statut": "à venir",
-   "nous": false
+   "nous": false,
+   "brut": "SAMEDI 28 NOVEMBRE 2026 À 15H15 UNION SPORTIVE TALENCE HANDBALL - - PE2M HB VOIR DÉTAIL DU MATCH REMATCH DISPONIBLE"
   },
   {
    "id": "2698122",
@@ -511,5 +513,5 @@
    "nous": true
   }
  ],
- "genere_le": "2026-11-23 00:40"
+ "genere_le": "2026-11-28 16:34"
 }
